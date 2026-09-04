@@ -221,13 +221,17 @@ def main():
         config['Independent Variable']='Only the preregistered B1 general instruction; same policy weights and seed 42'
     write(out/'config.json',config)
     build=json.loads((ROOT/'bundle_manifest.json').read_text())
+    integrity=json.loads((ROOT/'model_integrity.json').read_text())
+    if integrity['revision']!=config['model_revision'] or not integrity['all_match']:
+        raise RuntimeError('Pinned model weight integrity has not passed')
     packages={}
     for name in ('torch','transformers','accelerate','tokenizers','pandas','numpy','jsonschema'):
         packages[name]=importlib.metadata.version(name)
     identity={'experiment_id':args.run_id,'started_at':datetime.now(timezone.utc).isoformat(),
               'code_commit':build['code_commit'],'bundle_manifest':build,'model_revision':config['model_revision'],
               'seeds':[42] if args.condition!='B0' else config['seeds'],'packages':packages,
-              'kind':'REAL_MODEL_GPU_QUALIFICATION_NO_PARAMETER_UPDATE','weights_manifest':'model_integrity.json'}
+              'kind':'REAL_MODEL_GPU_QUALIFICATION_NO_PARAMETER_UPDATE','weights_manifest':'model_integrity.json',
+              'weights_manifest_sha256':hashlib.sha256((ROOT/'model_integrity.json').read_bytes()).hexdigest()}
     write(out/'identity.json',identity)
     if not (ROOT/'experiments').exists():(ROOT/'experiments').mkdir()
     append(ROOT/'experiments/registry.jsonl',{'experiment_id':args.run_id,'event':'started','identity':identity})
