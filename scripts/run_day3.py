@@ -79,6 +79,8 @@ def inference_trajectory(model,tokenizer,row,config,seed,condition):
             remaining=config['max_output_tokens_per_trajectory']-result['output_tokens']
             context_remaining=config['max_context_tokens']-input_count
             if context_remaining<=0:
+                result['context_limit_attempt']={'turn':turn,'input_tokens':input_count,
+                                                 'max_context_tokens':config['max_context_tokens']}
                 termination='context_limit';break
             if remaining<=0:
                 termination='trajectory_output_limit';break
