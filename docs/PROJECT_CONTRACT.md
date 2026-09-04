@@ -6,6 +6,8 @@
 
 2026-09-04：完成租 GPU 前全部可做工作；结束后提供适合学习一个月的新手的学习材料，并考核。允许小型官方源码、任务数据、CPU 依赖和 tokenizer 准备；不租 GPU、不下载大模型、不使用付费模型 API、不做训练、不自动进入后续阶段。
 
+后续授权：用户提供个人 AutoDL SSH 访问并明确要求完成 Day 3 全流程，允许在该实例准备环境、下载固定模型、执行 smoke、48 条 B0 与满足预登记条件时的 24 条 B1。继续保留单次预计超过 RMB 30 的审批线；不做 SFT/DPO/RL 参数更新，不扩大模型/卡数/context/seed。凭据不进入项目、Git、日志或聊天回显。
+
 ## 固定边界
 
 - 单卡上限 1×A800 80GB；候选约 8B，LoRA/QLoRA，有限 context。
@@ -30,4 +32,3 @@
 维护 PROJECT_STATE、ENVIRONMENT_AUDIT、EXPERIMENT_PROTOCOL、FAILURE_TAXONOMY、DECISIONS、HYPOTHESES、COMPUTE_BUDGET、experiments/registry.jsonl 和 docs/daily/YYYY-MM-DD-learning-handoff.md。
 
 每日结束停止新实验，handoff 应包含核心问题、前后状态、执行、变量、结果、代表轨迹、结论/推测、3–5 个代码函数导读、学习点、5 个无答案面试题、路线分叉及证据身份。
-
