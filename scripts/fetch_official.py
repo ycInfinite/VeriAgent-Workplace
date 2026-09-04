@@ -27,6 +27,11 @@ def get(url: str) -> bytes:
 
 def main():
     commit = CONFIG['gym_commit']
+    existing_path = ROOT / 'evidence/sources/manifest.json'
+    existing = json.loads(existing_path.read_text()) if existing_path.exists() else None
+    if existing and existing['config'] != CONFIG:
+        raise RuntimeError('Source identity changed: use a new audited snapshot instead of overwriting the manifest')
+    expected_hashes = {x['path']:x['sha256'] for x in existing['files']} if existing else {}
     tree_url = f"https://api.github.com/repos/{CONFIG['gym_repo']}/git/trees/{commit}?recursive=1"
     tree_bytes = get(tree_url)
     tree = json.loads(tree_bytes)
@@ -64,6 +69,10 @@ def main():
     def fetch(item):
         url, target, blob_sha = item
         payload = target.read_bytes() if target.exists() else get(url)
+        relative = str(target.relative_to(ROOT)).replace('\\','/')
+        actual_sha = hashlib.sha256(payload).hexdigest()
+        if relative in expected_hashes and actual_sha != expected_hashes[relative]:
+            raise RuntimeError(f'Pinned source integrity mismatch: {relative}')
         if blob_sha:
             actual = hashlib.sha1(f'blob {len(payload)}\0'.encode() + payload).hexdigest()
             if actual != blob_sha:
@@ -72,14 +81,18 @@ def main():
         if not target.exists():
             with target.open('xb') as f:
                 f.write(payload)
-        return {'url':url, 'path':str(target.relative_to(ROOT)).replace('\\','/'),
-                'bytes':len(payload), 'sha256':hashlib.sha256(payload).hexdigest(), 'git_blob_sha':blob_sha}
+        return {'url':url, 'path':relative,
+                'bytes':len(payload), 'sha256':actual_sha, 'git_blob_sha':blob_sha}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         manifest = list(pool.map(fetch, files))
     out = ROOT / 'evidence/sources'
     out.mkdir(parents=True, exist_ok=True)
-    (out / 'manifest.json').write_text(json.dumps({'config':CONFIG,'files':sorted(manifest,key=lambda x:x['path'])},indent=2),encoding='utf-8')
-    (out / 'gym-tree.json').write_bytes(tree_bytes)
+    result = {'config':CONFIG,'files':sorted(manifest,key=lambda x:x['path'])}
+    if existing and result != existing:
+        raise RuntimeError('Pinned source inventory changed; preserve previous evidence and investigate')
+    if not existing:
+        (out / 'manifest.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+        (out / 'gym-tree.json').write_bytes(tree_bytes)
     print(json.dumps({'files':len(manifest),'bytes':sum(x['bytes'] for x in manifest),'manifest':'evidence/sources/manifest.json'}))
 
 if __name__ == '__main__':

@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-04",
+  "kind": "SETUP_EVENTS_NOT_MODEL_OR_RESEARCH_RUN_RESULTS",
+  "events": [
+    {
+      "event": "git_ownership_mismatch",
+      "impact": "Initial git status and sandbox helper setup failed because sandbox and directory owner differed",
+      "resolution": "Backed up newly created empty .git into .cache/bootstrap-git, initialized metadata as directory owner, and used owner context for commits and experiment identity",
+      "global_git_config_changed": false,
+      "old_tau2_project_touched": false
+    },
+    {
+      "event": "powershell_search_syntax_errors",
+      "impact": "Several read-only discovery searches failed from brace/glob syntax or files still downloading",
+      "resolution": "Used explicit paths and rg directory filters; no research run metrics affected"
+    },
+    {
+      "event": "starlette_httpx_deprecation_warning",
+      "impact": "Warning during in-process HTTP contract test; all eight checks passed",
+      "resolution": "Recorded tested versions; did not upgrade packages during the experiment",
+      "infrastructure_invalid": false
+    }
+  ]
+}

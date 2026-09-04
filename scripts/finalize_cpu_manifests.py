@@ -30,7 +30,7 @@ def run(run_id):
         dev=[r for r in records if r['pool']=='development']
         bins=defaultdict(list)
         for r in sorted(dev,key=lambda r:(r['reference_action_count'],r['source_row_index'])):
-            if r['reference_action_count']>0:
+            if 0<r['reference_action_count']<=4:
                 bins[r['category']].append(r)
         selected=[]
         while len(selected)<20 and any(bins.values()):
@@ -60,11 +60,13 @@ def run(run_id):
             'similarity_evidence':'Q0-CONTRACT-20260904-001','previous_exposed_train_indices':sorted(exposed)})
         write_json(exp.path/'pilot_dev24.json',{'source_split':'train','indices':[r['source_row_index'] for r in selected],
             'tasks':selected,'selection':'deterministic category/reference-length strata after conservative exclusion',
+            'reference_action_count_screen': 'At most 4 reference calls, reserving two of six model rounds for lookup/termination; not a proof of full task solvability',
             'requires_model_qualification':True})
         result={'pool_counts':dict(Counter(r['pool'] for r in records)),'remaining_flagged_training_edges':len(remaining),
                 'quarantined_template_groups':len(blocked_templates),'exposed_final_relatives_quarantined':len(blocked_validation),
                 'pilot_tasks':len(selected),'pilot_nonempty_reference':sum(r['reference_action_count']>0 for r in selected),
                 'pilot_empty_reference':sum(r['reference_action_count']==0 for r in selected),
+                'pilot_max_reference_calls':max(r['reference_action_count'] for r in selected),
                 'pilot_categories':dict(Counter(r['category'] for r in selected)),
                 'gpu_gate':'NOT_APPROVED; composition research scope requires user decision; model evidence absent'}
         assert not remaining

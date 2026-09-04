@@ -1,0 +1,17 @@
+{
+  "official_source_hashes_verified": 193,
+  "tokenizer_config_hashes_verified": 4,
+  "local_markdown_links_valid": true,
+  "completed_cpu_run_directories": [
+    "Q0-CONTRACT-20260904-001",
+    "Q0-DATA-20260904-001",
+    "Q0-ENV-20260904-001",
+    "Q0-SPLIT-20260904-001",
+    "Q0-SPLIT-20260904-002",
+    "Q0-TOKENS-20260904-001"
+  ],
+  "model_weights_downloaded": false,
+  "assessment_not_falsely_marked_passed": true,
+  "learning_cli_trace_and_mask": "executed successfully, read-only",
+  "python_compileall": "passed"
+}
