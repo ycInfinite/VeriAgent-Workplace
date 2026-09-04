@@ -1,0 +1,26 @@
+{
+  "pool_counts": {
+    "development": 85,
+    "quarantine_lexical_overlap_or_template_relative": 153,
+    "training_candidate": 743,
+    "composition_reserve_UNQUALIFIED": 181,
+    "checkpoint_validation": 93,
+    "official_validation_SEALED": 540,
+    "official_validation_exposed_relative_QUARANTINE": 5
+  },
+  "remaining_flagged_training_edges": 0,
+  "quarantined_template_groups": 138,
+  "exposed_final_relatives_quarantined": 5,
+  "pilot_tasks": 24,
+  "pilot_nonempty_reference": 20,
+  "pilot_empty_reference": 4,
+  "pilot_max_reference_calls": 4,
+  "pilot_categories": {
+    "workplace_assistant_analytics": 6,
+    "workplace_assistant_calendar": 5,
+    "workplace_assistant_customer_relationship_manager": 4,
+    "workplace_assistant_email": 4,
+    "workplace_assistant_project_management": 5
+  },
+  "gpu_gate": "NOT_APPROVED; composition research scope requires user decision; model evidence absent"
+}

@@ -21,7 +21,7 @@
 .venv\Scripts\python.exe scripts/audit_contracts.py --run-id YOUR-NEW-CONTRACT-ID
 ```
 
-后续脚本默认引用本次已提交的 Q0-DATA 清单，目的是精确复查本次选择，不能假装自动跟随新的数据实验。改变清单要明确传入/修改 config 并记录 code identity。模型阶段只使用 `configs/model_qualification_plan.json` 指定的 SPLIT-002，尚无执行授权。
+后续脚本默认引用本次已提交的 Q0-DATA 清单，目的是精确复查本次选择，不能假装自动跟随新的数据实验。改变清单要明确传入/修改 config 并记录 code identity。模型阶段只使用 `configs/model_qualification_plan.json` 指定的 SPLIT-003，尚无执行授权。
 
 目录说明：vendor=未改动官方源码（Git 忽略）；data/raw=原始公开数据（Git 忽略）；data/tokenizer=无权重 tokenizer（Git 忽略）；experiments=本项目原始审计证据；docs/learning=学习与考核。不要将有脚本生产或 dev 标记的 fixture 当成训练集。
 

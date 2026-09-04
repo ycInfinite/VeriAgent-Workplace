@@ -38,7 +38,7 @@
 | 同上 | 6/24 空动作也得分；unknown-prefix+reference 24/24 得分 | reward 不保证前置观察或无错误过程 |
 | Q0-TOKENS-20260904-001 | 955 个 training/dev 初始输入 4112–4153 tokens；学习轨迹 4536 tokens，其中 89 supervised、4447 context；9 个检查通过 | 这些输入及学习轨迹适合 8K；不是所有模型轨迹的长度保证 |
 | Q0-CONTRACT-20260904-001 | 8 个接口/字段检查通过；208 个跨 split 高词面相似候选，涉及 148 个 train rows | 本地适配器契约可用；相似性需要保守处理，不等同泄漏证明 |
-| Q0-SPLIT-20260904-002 | 保守隔离后剩余 flagged training edges=0 | 已发现的风险边被排除；仍不能证明不存在其他语义近重复 |
+| Q0-SPLIT-20260904-003 | 保守隔离后剩余 flagged training edges=0；pilot reference 最多 4 次调用 | 已发现的风险边被排除；仍不能证明不存在其他语义近重复或额外前置步骤 |
 
 原始结果在同名 `experiments/<ID>/` 下，均含 config、identity、result。所有轨迹显式标记 SCRIPTED，不计任何 LLM task success。
 
@@ -50,7 +50,7 @@ reference 与自己重放得到 1 也不是语义真值证明：同一个错误 
 
 ## 数据清单最终状态
 
-以 `experiments/Q0-SPLIT-20260904-002/split_manifest.json` 为当前候选清单：
+以 `experiments/Q0-SPLIT-20260904-003/split_manifest.json` 为当前候选清单：
 
 | Pool | 数量 | 状态 |
 |---|---:|---|
@@ -62,7 +62,7 @@ reference 与自己重放得到 1 也不是语义真值证明：同一个错误 
 | official_validation_SEALED | 540 | 项目过滤子集，不是完整官方 545 条成绩 |
 | 已暴露 dev 的官方验证亲缘任务隔离 | 5 | 保留暴露历史与原任务 |
 
-原始清单未改写。SPLIT-001 的 pilot 因 no-op 抽样过度偏向 Analytics 被 SPLIT-002 取代，不是模型失败或无效基础设施 run。新 pilot=20 个非空 reference+4 个空 reference，类别分布 Analytics 6、Calendar 5、CRM 4、Email 4、Project 5。
+原始清单未改写。SPLIT-001 因 no-op 抽样过度偏向 Analytics 被 SPLIT-002 取代；交付审查又发现其中有 7 次 reference 调用的任务，SPLIT-003 在模型运行前将 reference 调用上限设为 4，为查询/结束预留轮次。这些是计划修订，不是模型失败或无效基础设施 run。最终 pilot=20 个非空 reference+4 个空 reference，类别分布 Analytics 6、Calendar 5、CRM 4、Email 4、Project 5。该筛选仍不保证所有任务的额外 prerequisite 均能在六轮内完成，必须单独归因预算限制。
 
 ## 组合泛化结论：未通过资格门槛
 

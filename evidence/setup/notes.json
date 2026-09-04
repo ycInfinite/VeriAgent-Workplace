@@ -19,6 +19,12 @@
       "impact": "Warning during in-process HTTP contract test; all eight checks passed",
       "resolution": "Recorded tested versions; did not upgrade packages during the experiment",
       "infrastructure_invalid": false
+    },
+    {
+      "event": "raw_evidence_CRLF_whitespace_check",
+      "impact": "Default git diff --check treated preserved Windows CRLF as trailing whitespace",
+      "resolution": "Used process-local cr-at-eol with other whitespace checks retained; did not normalize or overwrite raw experiment files",
+      "research_results_affected": false
     }
   ]
 }

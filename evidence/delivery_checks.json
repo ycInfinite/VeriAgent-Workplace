@@ -8,10 +8,14 @@
     "Q0-ENV-20260904-001",
     "Q0-SPLIT-20260904-001",
     "Q0-SPLIT-20260904-002",
+    "Q0-SPLIT-20260904-003",
     "Q0-TOKENS-20260904-001"
   ],
   "model_weights_downloaded": false,
   "assessment_not_falsely_marked_passed": true,
   "learning_cli_trace_and_mask": "executed successfully, read-only",
-  "python_compileall": "passed"
+  "python_compileall": "passed",
+  "current_pilot_manifest_valid": true,
+  "current_pilot_reference_calls_at_most_4": true,
+  "git_whitespace_check": "passed with CRLF recognized as line endings; raw experiment bytes preserved"
 }

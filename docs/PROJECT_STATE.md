@@ -23,7 +23,8 @@ GPU rental/model weights/training: NOT AUTHORIZED. No LLM has run. All current t
 | Q0-TOKENS-20260904-001 | Tokenizer/mask and dev learning fixture |
 | Q0-CONTRACT-20260904-001 | HTTP/schema/no-op/lexical overlap diagnostics |
 | Q0-SPLIT-20260904-001 | Preserved earlier pilot draft, superseded for model selection |
-| Q0-SPLIT-20260904-002 | Current candidate pools and model dev24 manifest |
+| Q0-SPLIT-20260904-002 | Preserved domain-balanced pilot, superseded after round-budget screening |
+| Q0-SPLIT-20260904-003 | Current candidate pools and dev24; reference actions at most 4 |
 
 Current pools: training 743; dev 85; checkpoint validation 93; composition reserve UNQUALIFIED 181; quarantined train relatives 153; sealed filtered official validation 540; quarantined final relatives of exposed dev examples 5.
 

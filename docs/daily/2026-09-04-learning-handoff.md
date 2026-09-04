@@ -40,6 +40,6 @@
 
 12. **下次需要用户确认的路线分叉**：是否收窄为 grounded lookup/state mutation 的数据选择研究；是否坚持严格 composition 并另外审计补充数据；或重新比较环境。先完成学习与考核，未自动决定。
 
-13. **身份/配置/日志**：所有 run 在 experiments/registry.jsonl。DATA-001 的 code commit `2ef3f3b`，ENV-001=`d38cb53`，TOKENS-001=`a76fa59`，CONTRACT-001=`5b4dab5`，SPLIT-001=`3577631`，SPLIT-002=`8ceae72`；完整 SHA 在各 identity.json。配置均为各目录 config.json，原始轨迹为 ENV 的 trajectories.jsonl；对应 result.json 为摘要。所有正式 CPU run 有记录；SPLIT-001 仅被替代，未删除。没有正式 infrastructure-invalid run；Git 所有权与 shell 语法设置问题另记在 evidence/setup/notes.json。
+13. **身份/配置/日志**：所有 run 在 experiments/registry.jsonl。DATA-001 的 code commit `2ef3f3b`，ENV-001=`d38cb53`，TOKENS-001=`a76fa59`，CONTRACT-001=`5b4dab5`，SPLIT-001=`3577631`，SPLIT-002=`8ceae72`，最终 SPLIT-003=`41ec3e3`；完整 SHA 在各 identity.json。最后一版还把 pilot reference 调用上限设为 4，避免七次必要写调用与六轮预算的明显冲突。配置均为各目录 config.json，原始轨迹为 ENV 的 trajectories.jsonl；对应 result.json 为摘要。所有正式 CPU run 有记录；SPLIT-001/002 仅被替代，未删除。没有正式 infrastructure-invalid run；Git 所有权与 shell 语法设置问题另记在 evidence/setup/notes.json。
 
 考核状态：未开始。已提供 A/B/C 题目和评分标准，等待用户提交 A1–A5；不得提前宣称通过。
