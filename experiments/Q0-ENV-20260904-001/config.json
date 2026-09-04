@@ -1,0 +1,22 @@
+{
+  "Research Question": "Do official tools mutate/reset/isolate state, and what does reward actually measure?",
+  "Hypothesis": "Reference actions execute deterministically; state-matching ignores some process/answer defects",
+  "Independent Variable": "Scripted action sequence: reference, omission, invalid prefix, unrelated mutation",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "reward by variant",
+    "state changes",
+    "reset/isolation",
+    "online/replay agreement",
+    "exceptions"
+  ],
+  "Evidence Gate": "Separate executable state properties from unverified semantic correctness",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "seed": 20260904
+}

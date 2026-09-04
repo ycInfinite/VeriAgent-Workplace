@@ -1,0 +1,36 @@
+{
+  "tasks": 24,
+  "variant_counts": {
+    "reference:reward=1": 24,
+    "reference_repeat:reward=1": 24,
+    "empty:reward=0": 18,
+    "omit_last:reward=0": 18,
+    "unknown_then_reference:reward=1": 24,
+    "unrelated_extra_write:reward=0": 24,
+    "empty:reward=1": 6
+  },
+  "invalid_record_count": 0,
+  "reset_restores_state": true,
+  "independent_instances_isolated": true,
+  "write_actually_changes_state": true,
+  "online_replay_agreement_count": 138,
+  "online_replay_checked": 138,
+  "reference_no_state_change_tasks": [
+    122,
+    12,
+    709,
+    385,
+    173,
+    420
+  ],
+  "reference_with_python_exceptions": [],
+  "wall_seconds": 21.378896200098097,
+  "gpu_hours": 0,
+  "claims_not_supported": [
+    "LLM task success",
+    "correct final natural language",
+    "identifier grounding",
+    "native NeMo service compatibility"
+  ],
+  "failures": []
+}

@@ -1,0 +1,253 @@
+[
+  {
+    "task_id": 0,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Email replied successfully."
+    ]
+  },
+  {
+    "task_id": 1,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Event updated successfully."
+    ]
+  },
+  {
+    "task_id": 122,
+    "reference_actions": 0,
+    "state_changed": false,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": []
+  },
+  {
+    "task_id": 510,
+    "reference_actions": 3,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Event deleted successfully.",
+      "Event deleted successfully.",
+      "Event deleted successfully."
+    ]
+  },
+  {
+    "task_id": 184,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Customer deleted successfully."
+    ]
+  },
+  {
+    "task_id": 356,
+    "reference_actions": 2,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Email forwarded successfully.",
+      "Email forwarded successfully."
+    ]
+  },
+  {
+    "task_id": 12,
+    "reference_actions": 0,
+    "state_changed": false,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": []
+  },
+  {
+    "task_id": 669,
+    "reference_actions": 2,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "plots/2023-09-05_2023-11-30_session_duration_seconds_bar.png",
+      "plots/2023-09-05_2023-11-30_total_visits_bar.png"
+    ]
+  },
+  {
+    "task_id": 709,
+    "reference_actions": 0,
+    "state_changed": false,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": []
+  },
+  {
+    "task_id": 676,
+    "reference_actions": 7,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully."
+    ]
+  },
+  {
+    "task_id": 156,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Email deleted successfully."
+    ]
+  },
+  {
+    "task_id": 740,
+    "reference_actions": 4,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Task updated successfully.",
+      "Task updated successfully.",
+      "Task updated successfully.",
+      "Task updated successfully."
+    ]
+  },
+  {
+    "task_id": 385,
+    "reference_actions": 0,
+    "state_changed": false,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": []
+  },
+  {
+    "task_id": 1219,
+    "reference_actions": 2,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Event deleted successfully.",
+      "Event deleted successfully."
+    ]
+  },
+  {
+    "task_id": 220,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "00000200"
+    ]
+  },
+  {
+    "task_id": 1112,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Email forwarded successfully."
+    ]
+  },
+  {
+    "task_id": 173,
+    "reference_actions": 0,
+    "state_changed": false,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": []
+  },
+  {
+    "task_id": 561,
+    "reference_actions": 2,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "plots/2023-10-12_2023-10-21_session_duration_seconds_histogram.png",
+      "plots/2023-10-12_2023-10-21_user_engaged_histogram.png"
+    ]
+  },
+  {
+    "task_id": 18,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Event updated successfully."
+    ]
+  },
+  {
+    "task_id": 4,
+    "reference_actions": 5,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully.",
+      "Customer updated successfully."
+    ]
+  },
+  {
+    "task_id": 300,
+    "reference_actions": 1,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Email replied successfully."
+    ]
+  },
+  {
+    "task_id": 314,
+    "reference_actions": 4,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Task updated successfully.",
+      "Task updated successfully.",
+      "Task updated successfully.",
+      "Task updated successfully."
+    ]
+  },
+  {
+    "task_id": 420,
+    "reference_actions": 0,
+    "state_changed": false,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": []
+  },
+  {
+    "task_id": 1090,
+    "reference_actions": 2,
+    "state_changed": true,
+    "reward": 1.0,
+    "tool_exceptions": 0,
+    "observations": [
+      "Event deleted successfully.",
+      "Event deleted successfully."
+    ]
+  }
+]
