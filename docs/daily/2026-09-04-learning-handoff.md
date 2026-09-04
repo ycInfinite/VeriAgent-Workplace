@@ -43,3 +43,5 @@
 13. **身份/配置/日志**：所有 run 在 experiments/registry.jsonl。DATA-001 的 code commit `2ef3f3b`，ENV-001=`d38cb53`，TOKENS-001=`a76fa59`，CONTRACT-001=`5b4dab5`，SPLIT-001=`3577631`，SPLIT-002=`8ceae72`，最终 SPLIT-003=`41ec3e3`；完整 SHA 在各 identity.json。最后一版还把 pilot reference 调用上限设为 4，避免七次必要写调用与六轮预算的明显冲突。配置均为各目录 config.json，原始轨迹为 ENV 的 trajectories.jsonl；对应 result.json 为摘要。所有正式 CPU run 有记录；SPLIT-001/002 仅被替代，未删除。没有正式 infrastructure-invalid run；Git 所有权与 shell 语法设置问题另记在 evidence/setup/notes.json。
 
 考核状态：未开始。已提供 A/B/C 题目和评分标准，等待用户提交 A1–A5；不得提前宣称通过。
+
+后续补充：用户允许继续推进。已新增 GPU_HANDOFF.md、只读 gpu_preflight.py，并准备三个 dev tasks 的独立加载/接口 smoke 实验卡。脚本通过语法检查；尚无个人平台、实际报价或 GPU 实例，因此未租卡、未下载权重、未运行任何模型。学习考核记录不变。单卡建议为 A800 80GB/A100 80GB，实际选型取决于报价与镜像兼容性。

@@ -12,6 +12,7 @@ Current stage: Q0 CPU audit completed; learning and assessment next. Strict comp
 - CPU findings: [docs/ENVIRONMENT_AUDIT.md](docs/ENVIRONMENT_AUDIT.md)
 - Reproduce / view evidence: [docs/REPRODUCE_CPU.md](docs/REPRODUCE_CPU.md)
 - Assessment: [docs/learning/ASSESSMENT.md](docs/learning/ASSESSMENT.md)
+- Next GPU preparation: [docs/GPU_HANDOFF.md](docs/GPU_HANDOFF.md)
 - Today’s handoff: [docs/daily/2026-09-04-learning-handoff.md](docs/daily/2026-09-04-learning-handoff.md)
 
 Public personal project. No company materials. The earlier tau2 audit is a separate preserved project.

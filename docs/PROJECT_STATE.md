@@ -35,4 +35,4 @@ Current pools: training 743; dev 85; checkpoint validation 93; composition reser
 3. Semantic absence of leakage is not proven; known lexical candidates were conservatively removed. The 540-item filtered final subset must not be reported as the full official benchmark.
 4. Learner assessment is awaiting A1–A5 answers; score/pass remain null.
 
-Next: read docs/learning/START_HERE.md, submit assessment section A, then review the composition-scope branch. No automatic new experiment or GPU rental.
+Latest user steering: continue progress; preparing the single-GPU handoff and requesting personal platform/instance pricing details. See docs/GPU_HANDOFF.md and scripts/gpu_preflight.py. This does not authorize paid rental, model downloads or training. Learning and assessment remain pending; no pass is claimed. Composition scope still needs resolution before formal generalization claims.

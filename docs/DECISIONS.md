@@ -12,5 +12,6 @@
 | D008 | strict composition held-out 不成立为已验证事实；181 条只是预留 | 需用户路线决定 |
 | D009 | 无 GPU、无模型权重、无训练；接下来先学习、考核 | 当前停点 |
 | D010 | 模型 pilot reference 调用最多 4 次，排除明显不适合六轮预算的任务；保留原 draft | SPLIT-003；不保证额外 prerequisite 总长度 |
+| D011 | 用户允许继续推进；先准备单卡选型、只读远端 preflight 和独立 smoke 计划 | 待个人平台/实例报价；付费与后续阶段边界不变 |
 
 待用户选择：A. 保留 Workplace 做 grounded lookup→state mutation 的数据选择研究，收窄泛化主张；B. 后续独立设计少量受控 composition 任务并审计其语义；C. 若严格组合泛化不可让步，比较其他环境。未自动选择 B/C 或开始生成任务。
