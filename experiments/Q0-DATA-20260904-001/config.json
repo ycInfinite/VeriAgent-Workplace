@@ -1,0 +1,21 @@
+{
+  "Research Question": "Are task records and candidate splits usable without leakage?",
+  "Hypothesis": "Pinned data are structurally valid; exact duplicates can be isolated; composition coverage may be insufficient",
+  "Independent Variable": "Official source split and task/reference structure",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "row/unique counts",
+    "schema distributions",
+    "exact/template overlap",
+    "reference composition coverage"
+  ],
+  "Evidence Gate": "No silent duplicate leakage; any composition claim requires independent prerequisite annotation",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "seed": 20260904
+}

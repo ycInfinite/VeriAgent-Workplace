@@ -1,0 +1,173 @@
+{
+  "splits": {
+    "train": {
+      "rows": 1255,
+      "id_unique": 1255,
+      "categories": {
+        "workplace_assistant_email": 251,
+        "workplace_assistant_calendar": 251,
+        "workplace_assistant_customer_relationship_manager": 251,
+        "workplace_assistant_project_management": 251,
+        "workplace_assistant_analytics": 251
+      },
+      "normalized_unique_questions": 1255,
+      "template_groups": 1158,
+      "reference_distinct_tool_count_distribution": {
+        "1": 1085,
+        "0": 170
+      },
+      "reference_action_count_distribution": {
+        "1": 785,
+        "3": 53,
+        "4": 46,
+        "5": 15,
+        "0": 170,
+        "2": 174,
+        "6": 7,
+        "8": 3,
+        "7": 2
+      },
+      "reference_signatures": {
+        "email_reply_email": 53,
+        "calendar_update_event": 69,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 13,
+        "customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer": 1,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 6,
+        "customer_relationship_manager_delete_customer": 40,
+        "project_management_update_task": 83,
+        "email_forward_email": 88,
+        "calendar_create_event": 30,
+        "project_management_create_task": 30,
+        "": 170,
+        "analytics_create_plot": 120,
+        "customer_relationship_manager_update_customer": 90,
+        "customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer": 11,
+        "email_delete_email": 36,
+        "analytics_create_plot -> analytics_create_plot": 61,
+        "calendar_delete_event -> calendar_delete_event": 20,
+        "calendar_delete_event": 90,
+        "customer_relationship_manager_add_customer": 30,
+        "email_forward_email -> email_forward_email": 29,
+        "email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email": 3,
+        "calendar_delete_event -> calendar_delete_event -> calendar_delete_event": 7,
+        "project_management_update_task -> project_management_update_task": 31,
+        "email_delete_email -> email_delete_email": 8,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 14,
+        "calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event": 9,
+        "project_management_update_task -> project_management_update_task -> project_management_update_task -> project_management_update_task": 18,
+        "email_send_email": 26,
+        "email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email": 1,
+        "customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer": 2,
+        "project_management_update_task -> project_management_update_task -> project_management_update_task": 30,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 4,
+        "project_management_update_task -> project_management_update_task -> project_management_update_task -> project_management_update_task -> project_management_update_task": 7,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 15,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 2,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 2,
+        "calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event": 2,
+        "email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email": 1,
+        "email_delete_email -> email_delete_email -> email_delete_email": 1,
+        "calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event": 2
+      },
+      "tool_schema_count_distribution": {
+        "27": 1255
+      }
+    },
+    "validation": {
+      "rows": 545,
+      "id_unique": 545,
+      "categories": {
+        "workplace_assistant_analytics": 109,
+        "workplace_assistant_customer_relationship_manager": 109,
+        "workplace_assistant_project_management": 109,
+        "workplace_assistant_calendar": 109,
+        "workplace_assistant_email": 109
+      },
+      "normalized_unique_questions": 545,
+      "template_groups": 518,
+      "reference_distinct_tool_count_distribution": {
+        "1": 474,
+        "0": 71
+      },
+      "reference_action_count_distribution": {
+        "1": 338,
+        "0": 71,
+        "2": 84,
+        "3": 25,
+        "4": 15,
+        "7": 2,
+        "6": 5,
+        "5": 4,
+        "8": 1
+      },
+      "reference_signatures": {
+        "analytics_create_plot": 58,
+        "": 71,
+        "project_management_update_task": 44,
+        "customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer": 6,
+        "calendar_delete_event": 30,
+        "analytics_create_plot -> analytics_create_plot": 24,
+        "customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer": 2,
+        "email_delete_email": 16,
+        "email_reply_email": 27,
+        "customer_relationship_manager_update_customer": 31,
+        "calendar_create_event": 16,
+        "email_forward_email -> email_forward_email": 12,
+        "calendar_delete_event -> calendar_delete_event": 12,
+        "project_management_create_task": 15,
+        "email_send_email": 14,
+        "customer_relationship_manager_delete_customer": 17,
+        "customer_relationship_manager_add_customer": 15,
+        "calendar_update_event": 24,
+        "project_management_update_task -> project_management_update_task": 16,
+        "email_forward_email": 31,
+        "calendar_delete_event -> calendar_delete_event -> calendar_delete_event": 5,
+        "project_management_update_task -> project_management_update_task -> project_management_update_task -> project_management_update_task": 8,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 2,
+        "project_management_update_task -> project_management_update_task -> project_management_update_task": 12,
+        "email_delete_email -> email_delete_email": 3,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 5,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 2,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 4,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 11,
+        "calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event": 2,
+        "email_delete_email -> email_delete_email -> email_delete_email": 2,
+        "customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer -> customer_relationship_manager_delete_customer": 2,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 1,
+        "email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email": 1,
+        "customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer -> customer_relationship_manager_update_customer": 2,
+        "email_delete_email -> email_delete_email -> email_delete_email -> email_delete_email": 1,
+        "calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event -> calendar_delete_event": 1
+      },
+      "tool_schema_count_distribution": {
+        "27": 545
+      }
+    }
+  },
+  "cross_official_exact_train_rows": 0,
+  "cross_official_template_train_rows": 98,
+  "template_overlap_is_a_warning_not_proof_of_identical_tasks": true,
+  "near_semantic_duplicate_review": "NOT_COMPLETED_BY_THIS_HEURISTIC",
+  "pool_counts": {
+    "development": 100,
+    "training_candidate": 855,
+    "composition_reserve_UNQUALIFIED": 200,
+    "checkpoint_validation": 100,
+    "official_validation_SEALED": 545
+  },
+  "pilot_tasks": 24,
+  "pilot_categories": {
+    "workplace_assistant_email": 5,
+    "workplace_assistant_calendar": 6,
+    "workplace_assistant_analytics": 5,
+    "workplace_assistant_customer_relationship_manager": 4,
+    "workplace_assistant_project_management": 4
+  },
+  "assertions": {
+    "internal_template_groups_disjoint": true,
+    "exact_final_overlap_removed_from_training": true,
+    "all_reference_arguments_are_json_objects": true,
+    "pilot_is_dev_only": true
+  },
+  "composition_qualification": "REQUIRES_PREREQUISITE_GRAPH_REVIEW"
+}
