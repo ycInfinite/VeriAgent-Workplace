@@ -111,4 +111,4 @@ B0/B1 Torch allocated 峰值分别为 17.16/17.17 GiB，nvidia-smi 采样 used �
 - 真实 preference 学习演示：`evidence/day3/real_preference_learning_pair.json`；来自 dev，training_eligible=false。
 - 学习：`docs/learning/04-day3-real-trajectories.md`。
 
-交付状态补充：全部文件已保存，实验运行所用代码 commit 已在运行前固定。最终将新增报告/原始产物提交到本地 Git 的两次尝试都因自动权限审核超时而在进程创建前被阻止，没有执行提交；这不是实验失败或安全性判定。未再重试，新增产物目前仍在工作区，等待后续完成版本提交。
+交付状态补充：新增报告、原始产物和学习材料已提交，交付 commit 为 5a5dec8aa8c4980a8ef218e78828918c27183167。此前两次提交尝试因自动权限审核超时而未创建进程，该临时阻碍已解除，历史记录保留在 evidence/day3/final_commit_status.json。实验运行所用代码仍为 cb4067c，不把交付提交当作新的实验。

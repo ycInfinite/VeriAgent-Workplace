@@ -44,4 +44,4 @@
 
 学习入口：docs/learning/04-day3-real-trajectories.md。考核状态仍是未开始、未评分；提交该页五题后再逐题评分与追问。先前 CPU 记录保留，不能把脚本轨迹和真实模型轨迹混算。
 
-交付补充：最终本地 Git 提交的自动权限审核两次超时，命令未执行。文件均已保存，但新增产物尚未提交；实验运行前的代码 commit 已固定。这个版本保存阻碍不计入模型 invalid run，也没有产生新的 GPU 费用。
+交付补充：Day 3 新增产物已提交，交付 commit 为 5a5dec8aa8c4980a8ef218e78828918c27183167。此前自动权限审核两次超时的临时阻碍已解除，保留历史记录；它不计入模型 invalid run，也没有产生新的 GPU 费用。用户指定项目远端为 https://github.com/ycInfinite/VeriAgent-Workplace.git；实验代码身份仍以运行前固定的 cb4067c 为准。

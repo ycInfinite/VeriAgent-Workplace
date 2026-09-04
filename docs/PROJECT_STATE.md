@@ -15,7 +15,7 @@ All model jobs finished; 75 real-model trajectories were downloaded and hash-ver
 
 Authoritative report: docs/DAY3_REPORT.md. Semantic labels: reports/day3-reviewed-v2 (Codex review, not independently human-adjudicated). Caveats: evidence/day3/metadata_notes.json. Raw results unchanged.
 
-Delivery Git status: final staging/commit attempts timed out twice in automatic permission review before process creation. The new evidence/reports are saved in the working directory but not committed. GPU-run source commit remains correctly recorded; do not claim a final delivery commit exists.
+Delivery Git status: Day 3 evidence, reviewed results and learning materials are committed in 5a5dec8aa8c4980a8ef218e78828918c27183167. Two earlier attempts timed out before process creation; that temporary block is resolved. The user supplied https://github.com/ycInfinite/VeriAgent-Workplace.git as the project remote. GPU-run source identity remains cb4067c; the delivery commit does not represent a rerun.
 
 Hardware/real-tool execution passed for this inference configuration. B0 failed the minimum unique successful state-changing task count (3 versus 4). B1 is a conditional candidate (5 successes/15 failures in one seed); CRM/Project Management state-changing tasks remain all failures. B1 repeatability is not established by a second seed.
 

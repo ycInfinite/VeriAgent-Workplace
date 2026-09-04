@@ -1,11 +1,19 @@
 {
-  "status": "not_executed_automatic_approval_review_timeout",
-  "attempts": 2,
-  "process_created": false,
-  "unsafe_action_determination": false,
+  "status": "delivery_committed",
+  "resolved_on": "2026-09-04",
+  "previous_block": {
+    "status": "not_executed_automatic_approval_review_timeout",
+    "attempts": 2,
+    "process_created": false,
+    "unsafe_action_determination": false
+  },
   "files_saved_in_workspace": true,
   "experiment_code_commits_already_recorded": true,
-  "final_delivery_commit_created": false,
+  "final_delivery_commit_created": true,
+  "delivery_commit": "5a5dec8aa8c4980a8ef218e78828918c27183167",
+  "gpu_execution_code_commit": "cb4067c3e0dd21723d5664e7ccd27cdd3120c51e",
+  "user_selected_remote": "https://github.com/ycInfinite/VeriAgent-Workplace.git",
+  "branch": "master",
   "gpu_still_running": false,
-  "next_action": "Complete local version commit after review service recovery or explicit user guidance; do not rerun experiments"
+  "next_action": "Learning and research-route review; no experiments are rerun by publishing these files"
 }
