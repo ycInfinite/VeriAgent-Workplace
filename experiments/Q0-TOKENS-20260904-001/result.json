@@ -1,0 +1,65 @@
+{
+  "tokenizer": {
+    "model_id": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "weights_downloaded": false,
+    "tokenizer_path": "data/tokenizer/b968826d9c46dd6066d109eabc6255188de91218",
+    "files": [
+      {
+        "name": "tokenizer.json",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/tokenizer.json",
+        "bytes": 11422654,
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json",
+        "bytes": 9732,
+        "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+      },
+      {
+        "name": "config.json",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+        "bytes": 728,
+        "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+      },
+      {
+        "name": "generation_config.json",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/generation_config.json",
+        "bytes": 239,
+        "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+      }
+    ]
+  },
+  "initial_context_count": 955,
+  "initial_tokens_min": 4112,
+  "initial_tokens_median": 4127,
+  "initial_tokens_p95": 4140,
+  "initial_tokens_max": 4153,
+  "initial_over_8192": 0,
+  "fixture_tokens": 4536,
+  "fixture_supervised_tokens": 89,
+  "fixture_context_tokens": 4447,
+  "checks": {
+    "nonzero_assistant_targets": true,
+    "all_system_user_tool_context_masked": true,
+    "ids_labels_equal_lengths": true,
+    "context_logprob_changes_do_not_change_policy_score": true,
+    "target_logprob_changes_change_policy_score": true,
+    "tokenizer_reload_ids_identical": true,
+    "fixture_reward_is_one": true,
+    "full_fixture_fits_8192": true,
+    "boundary_injection_rejected": true
+  },
+  "toy_CE_loss": 2.0,
+  "toy_DPO_loss": 0.65394696731759,
+  "not_tested": [
+    "actual model forward/CE",
+    "LoRA parameter count/update",
+    "trainer collator equivalence",
+    "checkpoint saving/reload",
+    "GPU memory/time",
+    "all policy trajectory lengths"
+  ],
+  "mask_scope": "Pinned Qwen Jinja + Rust tokenizer; explicit boundary rejection; not generic across model families"
+}

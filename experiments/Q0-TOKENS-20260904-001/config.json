@@ -1,0 +1,21 @@
+{
+  "Research Question": "Can we encode actual tool trajectories and mask context correctly within 8K?",
+  "Hypothesis": "Initial prompts fit 8K; assistant-only masks exclude user/tool text; model/trainer checks remain untested",
+  "Independent Variable": "Message role, actual tool observation, log-prob values on context versus target tokens",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "token lengths",
+    "supervised/context token count",
+    "mask assertions",
+    "masked log-prob invariance"
+  ],
+  "Evidence Gate": "Nonzero assistant targets, zero supervised context, deterministic tokenizer reload; no weight-update claim",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "seed": 20260904
+}
