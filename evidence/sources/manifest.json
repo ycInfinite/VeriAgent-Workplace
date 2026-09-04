@@ -1,0 +1,1367 @@
+{
+  "config": {
+    "audit_date": "2026-09-04",
+    "gym_repo": "NVIDIA-NeMo/Gym",
+    "gym_commit": "83b3980b9c04379d72bbf59592d7846630f706bf",
+    "dataset_repo": "nvidia/Nemotron-RL-agent-workplace_assistant",
+    "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+    "bfcl_repo": "ShishirPatil/gorilla",
+    "bfcl_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+    "bfcl_leaderboard_commit": "f7cf7359b7ac615a0b294831c5ba2bc95ee4a000",
+    "nemo_rl_commit": "4601ba2c646ec40e5928c780fc0051a842328eba",
+    "download_model_weights": false
+  },
+  "files": [
+    {
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-RL-agent-workplace_assistant/resolve/c86a908379e0a361a573c395e175d3c1aa128e6c/README.md",
+      "path": "data/raw/c86a908379e0a361a573c395e175d3c1aa128e6c/README.md",
+      "bytes": 2340,
+      "sha256": "afb783d398188a18a54222f9f124930bbf6de051587ce3c4949684bb9da8931a",
+      "git_blob_sha": null
+    },
+    {
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-RL-agent-workplace_assistant/resolve/c86a908379e0a361a573c395e175d3c1aa128e6c/train.jsonl",
+      "path": "data/raw/c86a908379e0a361a573c395e175d3c1aa128e6c/train.jsonl",
+      "bytes": 20923674,
+      "sha256": "cb64a4eca977c049f5b64a5d3346fcb560ed20cdf186b31135a9b332320c26c8",
+      "git_blob_sha": null
+    },
+    {
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-RL-agent-workplace_assistant/resolve/c86a908379e0a361a573c395e175d3c1aa128e6c/validation.jsonl",
+      "path": "data/raw/c86a908379e0a361a573c395e175d3c1aa128e6c/validation.jsonl",
+      "bytes": 9086774,
+      "sha256": "6cce92f9cd8807983c4aa8f1006d5fab5e8c4f16ae28b90222739d98905df01b",
+      "git_blob_sha": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/README.md",
+      "path": "vendor/BFCL-docs/README.md",
+      "bytes": 17311,
+      "sha256": "c6c95683cce9653788c8b3f3f5002d2f5c27b95a1288544fe82c2a2faf5e12d0",
+      "git_blob_sha": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/TEST_CATEGORIES.md",
+      "path": "vendor/BFCL-docs/TEST_CATEGORIES.md",
+      "bytes": 3551,
+      "sha256": "dfdf449b1500a6452eab142433bf641bb8e5b7208d0631ce7c009ea09bef32a6",
+      "git_blob_sha": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/pyproject.toml",
+      "path": "vendor/BFCL-docs/pyproject.toml",
+      "bytes": 2013,
+      "sha256": "21233eb88f9d5ba195ff935766e9e13106043dfb0ef6a1a5637b6a4246abdfc4",
+      "git_blob_sha": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/LICENSE",
+      "path": "vendor/Gym/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/README.md",
+      "path": "vendor/Gym/README.md",
+      "bytes": 211035,
+      "sha256": "f734d68ca7da1d0df0d62984f38836460bb041b240f53b71c01fee3301faf484",
+      "git_blob_sha": "14ca5bbe7b52ff075491238c3e69b93b566f00de"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/environments/workplace_assistant/config.yaml",
+      "path": "vendor/Gym/environments/workplace_assistant/config.yaml",
+      "bytes": 1000,
+      "sha256": "8403fc7e2b777b1697bf4b903072ed0d412cce7910056276569cf38185f0891d",
+      "git_blob_sha": "86bcf15eaef2f380fa9fa7f8452fe3ead3950426"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/environments/workplace_assistant/prepare.py",
+      "path": "vendor/Gym/environments/workplace_assistant/prepare.py",
+      "bytes": 3784,
+      "sha256": "db95c25323dc2b2065f51a34562c2f1c7eb100a08dbe83179b3b4ffbef2988da",
+      "git_blob_sha": "b88a5db5da52294251dec2f942731ebd3c4eb78d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/fern/versions/latest/pages/training-tutorials/nemo-rl-grpo/multi-node-training.mdx",
+      "path": "vendor/Gym/fern/versions/latest/pages/training-tutorials/nemo-rl-grpo/multi-node-training.mdx",
+      "bytes": 5333,
+      "sha256": "78b3ada9dce4d5e33f1f116bd8a4ed80d82935f48a0e2bc17e7b015775fedce5",
+      "git_blob_sha": "e1b057da656507cff3f91aa88e10ed18240f2647"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/fern/versions/latest/pages/training-tutorials/offline-training-w-rollouts.mdx",
+      "path": "vendor/Gym/fern/versions/latest/pages/training-tutorials/offline-training-w-rollouts.mdx",
+      "bytes": 12350,
+      "sha256": "48f11ff665f20fd7593d9e3cb3edaeff85fc73dbdd48db07aad71b6e3c09a558",
+      "git_blob_sha": "b7450bee5f843d30f78638c2a96bf22ecbbe9a6b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/__init__.py",
+      "path": "vendor/Gym/nemo_gym/__init__.py",
+      "bytes": 9884,
+      "sha256": "a7d495b7057874ea7c6ea849623d789a1d2939c7a1aac47c0aeabaf849490188",
+      "git_blob_sha": "c07b16e03cdb40a0f3f9791174c1388bac1de0f7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/_config_aliases.py",
+      "path": "vendor/Gym/nemo_gym/_config_aliases.py",
+      "bytes": 2150,
+      "sha256": "ed6cd73799db80edeae513c66c894a830f5c8373eb1c819405533b6865ad853d",
+      "git_blob_sha": "ac5d6689b5260ee102bcff1a980087db074c5acb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/agent_registry.py",
+      "path": "vendor/Gym/nemo_gym/agent_registry.py",
+      "bytes": 7753,
+      "sha256": "c928a0d17677c805da9bd67bb938d852e20eba08ce36fdc8ee2930c7ae05973c",
+      "git_blob_sha": "164ad3b884c0548ffd641f8dff1c491aa7db39e9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/anthropic_converter.py",
+      "path": "vendor/Gym/nemo_gym/anthropic_converter.py",
+      "bytes": 37091,
+      "sha256": "c6411342a375ea43bbbf92c9e7c46ea437d07872e3314e505b85fdc2e9003a54",
+      "git_blob_sha": "e1cc6ad4a3272a39e831158134e0d8777d0927a2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/anthropic_utils.py",
+      "path": "vendor/Gym/nemo_gym/anthropic_utils.py",
+      "bytes": 4832,
+      "sha256": "e586a8f527dee498c9f1b6151a8e9f1bf0204c9549e88d699f3773893dff6cc9",
+      "git_blob_sha": "40402bd6fb0bd364d11570535cb3c7bcff59bca7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/base_resources_server.py",
+      "path": "vendor/Gym/nemo_gym/base_resources_server.py",
+      "bytes": 8054,
+      "sha256": "a3dab607f219de4efd608e20db03657c999130360b035c996cbdcfd573d65b74",
+      "git_blob_sha": "edc502c7d3c24974c2b239e0a5c5a6808bbc0238"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/base_responses_api_agent.py",
+      "path": "vendor/Gym/nemo_gym/base_responses_api_agent.py",
+      "bytes": 9599,
+      "sha256": "bd064b16b49b3e438c3c546fd1a1b95a797a0f99e6d68d342ee4a97a6e691652",
+      "git_blob_sha": "b701e38191ec7648d1ed4f57aeb9ac4924572543"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/base_responses_api_model.py",
+      "path": "vendor/Gym/nemo_gym/base_responses_api_model.py",
+      "bytes": 69988,
+      "sha256": "9389bdabac7ba5b7faefcbe46579fe5103d4edca84af108a3a1845265c3b7c11",
+      "git_blob_sha": "f6c43e2291c35b79bb06d18ceeb8490c2a54f9b9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/benchmarks.py",
+      "path": "vendor/Gym/nemo_gym/benchmarks.py",
+      "bytes": 9112,
+      "sha256": "96af05539ca004e07c5e8e8adfa7dcf1e2d7900f08de1dd65a4ca3963622840e",
+      "git_blob_sha": "43cbaf32d749f76c0ed04402115f9ad5fc2e03ac"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/chat_streaming.py",
+      "path": "vendor/Gym/nemo_gym/chat_streaming.py",
+      "bytes": 7617,
+      "sha256": "0cc19eec5864c767b649e4beb6d6c9b22ec5ffe8dee09c973ace64fa4f3cd271",
+      "git_blob_sha": "ae9a4898737274b29f34bb19b97f2228525fd672"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/__init__.py",
+      "path": "vendor/Gym/nemo_gym/cli/__init__.py",
+      "bytes": 2192,
+      "sha256": "9f04a85c63e2e196fcb1d7df400eaf4418d3c2d5f5f786fd83899d7d9f30f9c6",
+      "git_blob_sha": "43f54bc66820345f773241acbbe7e6b17c56e3b6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/_compat.py",
+      "path": "vendor/Gym/nemo_gym/cli/_compat.py",
+      "bytes": 2387,
+      "sha256": "a8b5364ab87337baad65dc39ca7b00c0d4a10016b67d9143d01114ea36532e9d",
+      "git_blob_sha": "f3c6934796b43265397c04d4c1dba2c14ae258d9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/agents.py",
+      "path": "vendor/Gym/nemo_gym/cli/agents.py",
+      "bytes": 4241,
+      "sha256": "7632e489149ffba2ac8891ec0b77ce0ef92024f40023deb4325a307571fc0f6d",
+      "git_blob_sha": "83a9d0eb657f7bdc4d0205966d5e1b73bcad3ac8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/dataset.py",
+      "path": "vendor/Gym/nemo_gym/cli/dataset.py",
+      "bytes": 4061,
+      "sha256": "2006b1bdbc795f601906a0a0cfec5bf7a5caead73e54d685ded7b18495e17246",
+      "git_blob_sha": "bb2d211d504c2b05af80309cbae4e390c0fac0b6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/dev.py",
+      "path": "vendor/Gym/nemo_gym/cli/dev.py",
+      "bytes": 1233,
+      "sha256": "82f238cfb54147c93930a0717400c214198c2c752f76e665fdd71dc175519de2",
+      "git_blob_sha": "f0f5ca41fc330828f3dd61783328ef884754462e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/env.py",
+      "path": "vendor/Gym/nemo_gym/cli/env.py",
+      "bytes": 68731,
+      "sha256": "b7686207336c4a28821801f18def96be521ac7e219fa842459a2b03181c2dea7",
+      "git_blob_sha": "f497c2a89162cf761c2e8cd7d6fc3914fbc46889"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/eval.py",
+      "path": "vendor/Gym/nemo_gym/cli/eval.py",
+      "bytes": 25583,
+      "sha256": "c7665a537ac979e129e52a60045c4fbe6a771af7f31dbbd330e966313b2d3f5a",
+      "git_blob_sha": "fbb0fc895807f0d82aad80f94362c14d7d4a2f5c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/general.py",
+      "path": "vendor/Gym/nemo_gym/cli/general.py",
+      "bytes": 3407,
+      "sha256": "0f7231baf46058ee0d540e9648af785c36695d55626c01fb1728012667d0efc4",
+      "git_blob_sha": "f785a4740f3cb9eb0dccaa2e0aa53e2130f53f1e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/legacy.py",
+      "path": "vendor/Gym/nemo_gym/cli/legacy.py",
+      "bytes": 3739,
+      "sha256": "681a41c30a78df60f18511f02c8d59873ca5c7babd8f608b8480069b4b8a2b88",
+      "git_blob_sha": "5e5d80f1726587eeadea560d783742af7808cab1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/main.py",
+      "path": "vendor/Gym/nemo_gym/cli/main.py",
+      "bytes": 57375,
+      "sha256": "40206190d55a9597d45be5044ac5a32dab141fbb0f958d384da8cc578612082d",
+      "git_blob_sha": "ebd41f9a4bfb28a237e575cd0d39ce62bc37287e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/models.py",
+      "path": "vendor/Gym/nemo_gym/cli/models.py",
+      "bytes": 3779,
+      "sha256": "550198666bc4e883747807d41d341c8e7be0fab00813751ff42fdbf5c4eaf9d3",
+      "git_blob_sha": "24eb6845d81b174658b24ef06bae96c2fa183c20"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/resources_servers.py",
+      "path": "vendor/Gym/nemo_gym/cli/resources_servers.py",
+      "bytes": 4131,
+      "sha256": "4791f59186b01fc76a516a4d311d2ace7da65b56e51b740e45ce197e355e97f7",
+      "git_blob_sha": "a79e5126fd194aa6ce7ed88783fac2663d06732d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/setup_command.py",
+      "path": "vendor/Gym/nemo_gym/cli/setup_command.py",
+      "bytes": 9911,
+      "sha256": "6e976fe8491e8ddc9770dc553f93ef46a5545760cf9f3ce5396369c0e9945a71",
+      "git_blob_sha": "a3d19cb75b5ae236c60a9417d8839bafe4b3f23a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli/utils.py",
+      "path": "vendor/Gym/nemo_gym/cli/utils.py",
+      "bytes": 6089,
+      "sha256": "212d01d03a31467f61f3a0d70dd7b03fca0bdb7d020808afe4d61e2ea1c2fa32",
+      "git_blob_sha": "0edf7b72d2a69591de7798df1373161f98ee6e51"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/cli_setup_command.py",
+      "path": "vendor/Gym/nemo_gym/cli_setup_command.py",
+      "bytes": 1145,
+      "sha256": "292247c0b70d2c48aeb0c3d6712b0930e2179d9fd454d0da568e6e00865129dd",
+      "git_blob_sha": "9d112ab2513ee5df62480715f4a0378ae176ee50"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/comparison/__init__.py",
+      "path": "vendor/Gym/nemo_gym/comparison/__init__.py",
+      "bytes": 190,
+      "sha256": "dee18fb5a5ebb684348b7f792659be842640d226bd620d033e709fbc12bdd5b8",
+      "git_blob_sha": "b0f2bfb5eb5de6fadafa620d747d01c934432135"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/comparison/diff.py",
+      "path": "vendor/Gym/nemo_gym/comparison/diff.py",
+      "bytes": 15945,
+      "sha256": "cdec52e6ce4afa86a31fbc64a58f494282c4940c32eb489013e743572b79cda3",
+      "git_blob_sha": "b1f467f37b5ca37176c05e6b74e411c04f70b5ea"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/comparison/loading.py",
+      "path": "vendor/Gym/nemo_gym/comparison/loading.py",
+      "bytes": 10543,
+      "sha256": "9a4c5cecd70fdcc387ecec84bceb88c3fd7a815c66efd5ea147249e9ad1004a9",
+      "git_blob_sha": "a409e2c3b3cafca8f4b42f90791bd4676d886090"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/comparison/report.py",
+      "path": "vendor/Gym/nemo_gym/comparison/report.py",
+      "bytes": 14818,
+      "sha256": "8b69898bc8a25997bac8a57a962a68d8f13754ffd2d5820a3cf001dbfd8d126e",
+      "git_blob_sha": "7628d8bd7fbdfff417dbc2fe2c534176c73f35fe"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/comparison/runner.py",
+      "path": "vendor/Gym/nemo_gym/comparison/runner.py",
+      "bytes": 4425,
+      "sha256": "a6942bed14a5e9f3dc82380c85f92a5bc19ebfdbeae462d6ca12a1ac9a4960f0",
+      "git_blob_sha": "7013793e3e9245d1f97eb73de3d868c2462d81d7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/comparison/schema.py",
+      "path": "vendor/Gym/nemo_gym/comparison/schema.py",
+      "bytes": 9452,
+      "sha256": "a7eb2b63b5d85c03e9a8005f18324f58077557a84e1291dc19526a023e9632a5",
+      "git_blob_sha": "2eb424c36b9a2ee36eac33b7bb5d2197983aadd2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/config_types.py",
+      "path": "vendor/Gym/nemo_gym/config_types.py",
+      "bytes": 34134,
+      "sha256": "638d631db571c53b9334fce6c74d6f15ccd31053815cc69388124c0df7854513",
+      "git_blob_sha": "a920594e0aa02f6acfb9bb9efc07dbd0917630f7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/dataset_orchestrator.py",
+      "path": "vendor/Gym/nemo_gym/dataset_orchestrator.py",
+      "bytes": 2769,
+      "sha256": "8c75784bd44ebf2f5fd569e834c32bcce282bedb78d52d661bde63e546b43097",
+      "git_blob_sha": "baf6686c442f84c224e72baf86a7cb7e14c6042e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/decorators.py",
+      "path": "vendor/Gym/nemo_gym/decorators.py",
+      "bytes": 1090,
+      "sha256": "37953fd71c77d6128e420dd2d67b219c0d80fb0f1a0ac9a211b96090b69e8ccb",
+      "git_blob_sha": "39a2bfcfaca208534fb834a5f107f21bb9a07e43"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/discovery.py",
+      "path": "vendor/Gym/nemo_gym/discovery.py",
+      "bytes": 8112,
+      "sha256": "ea04311e2d7f48a23d51abfa7942ff3523d2594bc5f5a87ecd60c0024d1e67b8",
+      "git_blob_sha": "e11fc80de72708948dd92a59212c32c5245a5265"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/environment/__init__.py",
+      "path": "vendor/Gym/nemo_gym/environment/__init__.py",
+      "bytes": 188,
+      "sha256": "1cb801063fe06e7482bb61625136c4d6e3c818849ef6e9b7775a0fd2ded08693",
+      "git_blob_sha": "3229879e78f2d0dec365cae59b975aeb65600a1b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/environment/_verifier_runner.py",
+      "path": "vendor/Gym/nemo_gym/environment/_verifier_runner.py",
+      "bytes": 1755,
+      "sha256": "141f4af4f54afbad98615039f0b9aeb8d12776ff4baed6f8a242860e73108d7f",
+      "git_blob_sha": "0097fc43b94218cac06e57142009a5e02291e3a6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/environment/manifest.py",
+      "path": "vendor/Gym/nemo_gym/environment/manifest.py",
+      "bytes": 11715,
+      "sha256": "5061f7ccbce3edb37d199ad09de2dc4917b21215326d12c43ad0598b8f1a2ac6",
+      "git_blob_sha": "e2ec4a7e5dcd74f0d3b41cd5905704b5122643a8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/environment/onboarding.py",
+      "path": "vendor/Gym/nemo_gym/environment/onboarding.py",
+      "bytes": 10212,
+      "sha256": "8f4bb152f599ccf44bb91137055a2d474a637877a37501cda1853be985b0aba1",
+      "git_blob_sha": "6c62a514828dbaac990641a08dc5619ffd814d34"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/environment/publication.py",
+      "path": "vendor/Gym/nemo_gym/environment/publication.py",
+      "bytes": 4279,
+      "sha256": "79822a317f23c378acaaeed0c08519f14e5c6918d3f5a60b8bc53d78fd3b2e47",
+      "git_blob_sha": "aa02cf5b0994462145b80711137f3b9b7fdc26fe"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/environment/scaffold.py",
+      "path": "vendor/Gym/nemo_gym/environment/scaffold.py",
+      "bytes": 35439,
+      "sha256": "06eb13771ce46266ab8337507e0d62c3efae0db3bba7b6ccf13c8b504b6416ea",
+      "git_blob_sha": "48634912fa0b1e81b330272530da5d956f7fc29f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/environment/validation.py",
+      "path": "vendor/Gym/nemo_gym/environment/validation.py",
+      "bytes": 26796,
+      "sha256": "4480fc91893e5d61996ed34c14006f47149b1088ea20cd2e403e5db039511d39",
+      "git_blob_sha": "96e5b9bff08fe50998c616387732ecfc3caaa004"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/exporters/__init__.py",
+      "path": "vendor/Gym/nemo_gym/exporters/__init__.py",
+      "bytes": 4028,
+      "sha256": "df4e628bdac8c51b1c4d69dfa3f4fd2c56331d152e1d1213cb531907e5b57789",
+      "git_blob_sha": "cab7f798ef3ae993b5a70f42142045325af0d15d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/exporters/base.py",
+      "path": "vendor/Gym/nemo_gym/exporters/base.py",
+      "bytes": 3691,
+      "sha256": "d73544b3f02394dce579e0d37223d83400685ada6a4be379a211e5aebc34d885",
+      "git_blob_sha": "1e0082916a8d9b50ba7d10c39bd56230604c495d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/exporters/mlflow.py",
+      "path": "vendor/Gym/nemo_gym/exporters/mlflow.py",
+      "bytes": 9037,
+      "sha256": "ef983713509ccb8de67a590eb245b09ff72e77e5f1e287e447739c1108ddc70c",
+      "git_blob_sha": "916b16f14db2cfb65772c850f1edcd4e9165a418"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/exporters/wandb.py",
+      "path": "vendor/Gym/nemo_gym/exporters/wandb.py",
+      "bytes": 3058,
+      "sha256": "eb21026c92beb76d19454e57c7a97468db3164e5dccc7d789449e0e7972ff962",
+      "git_blob_sha": "e8300dfc3e3b57d252b54071a8c8481fab1b7f52"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/gitlab_utils.py",
+      "path": "vendor/Gym/nemo_gym/gitlab_utils.py",
+      "bytes": 4600,
+      "sha256": "c160a1669fb245418ee1ac7a0ca30446e39d6e7c7746275ab2c8b0e0c948c892",
+      "git_blob_sha": "0c7cb3084c6d72bf7a3c35c3596b662c7e1e9298"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/global_config.py",
+      "path": "vendor/Gym/nemo_gym/global_config.py",
+      "bytes": 90111,
+      "sha256": "c046a9f5f9392692c49c8fd3ade638fbfc72f447be8912871d73783e621d7e6b",
+      "git_blob_sha": "0f6e0a7c6bc7ff5163e4c354d5fb1be6d2c29c9c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/health/__init__.py",
+      "path": "vendor/Gym/nemo_gym/health/__init__.py",
+      "bytes": 186,
+      "sha256": "4dd2f0fd176cebac99c0fb72455707a7f203c2e029f8b69dbe5304c0820b7c75",
+      "git_blob_sha": "4871361c94ec536ee544a9943b73854bd5dfabc1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/health/checks.py",
+      "path": "vendor/Gym/nemo_gym/health/checks.py",
+      "bytes": 22713,
+      "sha256": "dec9a0a311d63eb3f8a28b102171a900d846213b4b1cd378fff80578a78a2d50",
+      "git_blob_sha": "1f628b6007cff180a27e549f1bf960c79f23589b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/health/types.py",
+      "path": "vendor/Gym/nemo_gym/health/types.py",
+      "bytes": 4372,
+      "sha256": "1b20845a8f2442e82b2fca2693dcf059af1b0a025cea0b08acd1452bcbf474b4",
+      "git_blob_sha": "1aadf2f16f8353a80e1799541cde5c76712e6f21"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/hf_utils.py",
+      "path": "vendor/Gym/nemo_gym/hf_utils.py",
+      "bytes": 7812,
+      "sha256": "3ec75d3e803be35d2b07b9b52682ebde0b210a01e0ee474f9acb28f8f952b2dc",
+      "git_blob_sha": "201852c36be2aa421c9213e8a107ef0a7b585d23"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/judge.py",
+      "path": "vendor/Gym/nemo_gym/judge.py",
+      "bytes": 4574,
+      "sha256": "636d9403775a19c4114b16d176249c6137c10e44a239a8fd74f8b91c18efde1d",
+      "git_blob_sha": "3756e2d9cb251e5a0c06d654ff72d6914428f36a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/mcp_auto_exposure.py",
+      "path": "vendor/Gym/nemo_gym/mcp_auto_exposure.py",
+      "bytes": 43179,
+      "sha256": "f36e48e42e49a31348ce09ffd63a877b241ee9bd1d46c5021c3e4920b61ce2d9",
+      "git_blob_sha": "1ca8abbbee9c1b0a48db331bf08816e6641ae2ab"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/model_registry.py",
+      "path": "vendor/Gym/nemo_gym/model_registry.py",
+      "bytes": 2859,
+      "sha256": "08edb02f70af94e3a4951de4ed5c5a8db89e3933fa5c3725894c5bd3293c1b38",
+      "git_blob_sha": "11f15abd4d79c735c1c1384e1299acc7c24f3e3b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/openai_utils.py",
+      "path": "vendor/Gym/nemo_gym/openai_utils.py",
+      "bytes": 43741,
+      "sha256": "cdc02502571f186f97896f735f30b6c80b8e928079115583e1689b32ebb5c3bb",
+      "git_blob_sha": "0fcbd47c3bea0052edaf9383695b1ac275a365fc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/__init__.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/__init__.py",
+      "bytes": 679,
+      "sha256": "c4dc0cf54a15db963e684ed996a7ceb38a3737390327929f05930ac903f33514",
+      "git_blob_sha": "467079831e16b82ab14d173aa9f6b5fe840fd5ed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/api.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/api.py",
+      "bytes": 13078,
+      "sha256": "c4ec17ca2c8fa54cde0154742975e4c2c05e7a81312aca1bce89b5e4e637149e",
+      "git_blob_sha": "4bfddb8a0d9c77e1bb9fa3ecd125d22a6a582a68"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/executors/__init__.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/executors/__init__.py",
+      "bytes": 679,
+      "sha256": "c4dc0cf54a15db963e684ed996a7ceb38a3737390327929f05930ac903f33514",
+      "git_blob_sha": "467079831e16b82ab14d173aa9f6b5fe840fd5ed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/executors/base.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/executors/base.py",
+      "bytes": 895,
+      "sha256": "4b1c6ae5082c1acbaf94500cbc0521202d044edec6b76212726cba8463f0872c",
+      "git_blob_sha": "8eb95dce6ded4f8733c31a7fa3db42f71e6782ba"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/executors/connection.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/executors/connection.py",
+      "bytes": 5425,
+      "sha256": "f6f13943c3b8007d971ce6d0ab57b110eb7c401e239d8e3e7dd4c810d6ebb0f6",
+      "git_blob_sha": "3282cd2871052ac6fed8531af492895481c301be"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/executors/script_templates.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/executors/script_templates.py",
+      "bytes": 4657,
+      "sha256": "68ab0a44aa5a5dfb679c444a10f8520422f46dedb0a92dba44b4cfb21c4b18c7",
+      "git_blob_sha": "02d5e77ce82fe38aeef2556e51f67639a26eb710"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/executors/slurm.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/executors/slurm.py",
+      "bytes": 4964,
+      "sha256": "9bc0ed12ae66918e7c7ef2599854d0e319a4fc2504d91e0c101b4ea2f043fa50",
+      "git_blob_sha": "ae96686cf3d165af68be1ec58d6efca19c6c8be1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/executors/slurm_script.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/executors/slurm_script.py",
+      "bytes": 12198,
+      "sha256": "9111b6a06f9ace0d0882e7972892c0a92af6cdd32ed63929d077b01bbeaa7fde",
+      "git_blob_sha": "030e8c4953129bbcdd96970a63f9a47ecb2698f5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/executors/utils.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/executors/utils.py",
+      "bytes": 1337,
+      "sha256": "bdb2448e3d4bd15ce50e2bf310f18bc1a4ad20f604a7f2b12a792f06820118af",
+      "git_blob_sha": "f4d779d7226587d5f40684d0f4d24a749d7f33fc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/orchestration/submit.py",
+      "path": "vendor/Gym/nemo_gym/orchestration/submit.py",
+      "bytes": 1135,
+      "sha256": "2fed4ce8094c06e5fa36f2510649a8d5a95e7baccc5b0fd39c0c2c3d138bcffd",
+      "git_blob_sha": "b15f778039d89e803c8cbd618cdd64766ea53bc8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/package_info.py",
+      "path": "vendor/Gym/nemo_gym/package_info.py",
+      "bytes": 1451,
+      "sha256": "462bd04098da190f53e845eedb009c48fa4b93889dd0206a57b05df45e6d1db4",
+      "git_blob_sha": "e6812632d3bd51f15a2f0c67afd08293c7c17d5c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/path_utils.py",
+      "path": "vendor/Gym/nemo_gym/path_utils.py",
+      "bytes": 1242,
+      "sha256": "c832aa742190747fe6ee3313c954a5dddf56193066492fbbc09686bfd0ee5747",
+      "git_blob_sha": "2ba0fa8ff1a1e29a8b5f06acb66239c96e0a325f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/profiling.py",
+      "path": "vendor/Gym/nemo_gym/profiling.py",
+      "bytes": 3767,
+      "sha256": "09ff24ffd8f37f2505860416ebab52bc85b1335e734196f476515b5540870e0a",
+      "git_blob_sha": "404bd6f465c1ac4de98a70c8d71148578a45f36f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/prompt.py",
+      "path": "vendor/Gym/nemo_gym/prompt.py",
+      "bytes": 6502,
+      "sha256": "d0c71dd3f3b6bed0faba4df02108e743127911d27d9f8717ce88265f67412ec0",
+      "git_blob_sha": "dc5d48e304f0ea6b20d8df0290d46fd5fae05ad1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/registry.py",
+      "path": "vendor/Gym/nemo_gym/registry.py",
+      "bytes": 14528,
+      "sha256": "b67ee86c988858fcabbba167f94026a4737c374386fdc7737709c130509e0281",
+      "git_blob_sha": "56b6279aae80ff79a3b23232863507e0554bad7d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/resources_server_registry.py",
+      "path": "vendor/Gym/nemo_gym/resources_server_registry.py",
+      "bytes": 4809,
+      "sha256": "87a56931f272305bb3778cfce35ace5e783790f3851169da45b1555f27544434",
+      "git_blob_sha": "467e859a1880a8764422a3bdbbc6c04184ae789b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/responses_converter.py",
+      "path": "vendor/Gym/nemo_gym/responses_converter.py",
+      "bytes": 38998,
+      "sha256": "ad0b981d91c2b8f3d1e485a25e5b984a2d606f3af51ae6d17ba3203baf6fcdec",
+      "git_blob_sha": "826cf0bfde8a0bb27063137c81efb8ab3de3b40b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/responses_streaming.py",
+      "path": "vendor/Gym/nemo_gym/responses_streaming.py",
+      "bytes": 13720,
+      "sha256": "64845c7e908d8f03119148c73ad4dabc56fbb4408d3803fda4c5ff6050fad042",
+      "git_blob_sha": "d58f2a5ef204272ed5ed12c946ea29464cd3ba59"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/reward_profile.py",
+      "path": "vendor/Gym/nemo_gym/reward_profile.py",
+      "bytes": 45048,
+      "sha256": "87a570de96102232eb63957820289caac96ef7bfdb8181f363b83fc3d4c8928d",
+      "git_blob_sha": "ae4b5a803196213e3c82d6ff89cb7ddc18b3e1fb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/rollout_collection.py",
+      "path": "vendor/Gym/nemo_gym/rollout_collection.py",
+      "bytes": 103727,
+      "sha256": "04a651231f3515d655b9d7be4b1bbc6f8dc059a35e3842ffb087149709e3a046",
+      "git_blob_sha": "9215abcbdaeb05c502195e8fe775d8799fc71f4e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/rollout_correlation.py",
+      "path": "vendor/Gym/nemo_gym/rollout_correlation.py",
+      "bytes": 4320,
+      "sha256": "98f5ade6e5992e65f91034485bf851f5890dbc636d7972902a2d183646db0ebf",
+      "git_blob_sha": "91874c57085018e4f9da592638d4045c8ef4e7ef"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/rollout_health.py",
+      "path": "vendor/Gym/nemo_gym/rollout_health.py",
+      "bytes": 22223,
+      "sha256": "e89a09129bed0eb67cc5c6802c880335da1b50be60666fe764235dcddd5ccb9a",
+      "git_blob_sha": "87b06aaffd587a996c9b2b4f52f2f5c680364d84"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/rollout_observability.py",
+      "path": "vendor/Gym/nemo_gym/rollout_observability.py",
+      "bytes": 18321,
+      "sha256": "d917fd9bb86ad799143bda57742485c7b45e5321d1c4e523b5f56f098f73b005",
+      "git_blob_sha": "52a2bd2ff33d80ea26d5091879a8b23d14d9d8b0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/rollout_reverification.py",
+      "path": "vendor/Gym/nemo_gym/rollout_reverification.py",
+      "bytes": 38924,
+      "sha256": "7e1d5ca92d9d9295220c859fe89f8be7ba6c409cecc7b4dbb81b002676d55d6b",
+      "git_blob_sha": "20e1ebe28b4db2f2167f5027c4ddda9433a2ec2a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/__init__.py",
+      "bytes": 2049,
+      "sha256": "86e81ef8c2b81a2e4af6ae3cdbb6ec3db3c81faada88e9230ecd3dc4ea0ec71c",
+      "git_blob_sha": "faa4583d6f5ff7e48aa42b48c401b1a5e496ba48"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/api.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/api.py",
+      "bytes": 31241,
+      "sha256": "009987248a3648b71f085cee66252d84a24ce9bb8e8fadf8f7277c806aa7c7d3",
+      "git_blob_sha": "8397430304332f3560dcf081831776978cce7547"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/attribution.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/attribution.py",
+      "bytes": 6042,
+      "sha256": "84d5fbe7b431ff321d7264a08050476016e4e440ad090d234ab81cb71337a42a",
+      "git_blob_sha": "dcbffc0a5a47540013236602906bce73fc9d2052"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/config.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/config.py",
+      "bytes": 7077,
+      "sha256": "36a113ab9e6be02b5e46c8ec535cb6f761409ab6295d7dcdad48f13026de740a",
+      "git_blob_sha": "c0da2d73bd0961e2f1401baa32c816a05dc26fd1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/__init__.py",
+      "bytes": 1759,
+      "sha256": "bdba2e6f5c7c27c35b3bd8169079cbb53d40f2b3a325114bf341722272f1d06e",
+      "git_blob_sha": "145c2ddb18860a3e8556376d3a1ff5eec53ba6cb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/apptainer/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/apptainer/__init__.py",
+      "bytes": 1066,
+      "sha256": "d0e095239a0e03653cbaf4b521af4deaab84b08da7d67636485823abd7fc04fb",
+      "git_blob_sha": "196d4a71aed6fb483380e3655deade525d7b82e0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/apptainer/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/apptainer/provider.py",
+      "bytes": 30122,
+      "sha256": "d1a432c7bad84adb1140ae4871c0b8ab031a72ecf686a7324f98b798c179dc7f",
+      "git_blob_sha": "c0c71a6460b009da4ba1c08613fb0a431183c954"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/base.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/base.py",
+      "bytes": 14437,
+      "sha256": "d251b8a284875bff3f5012c8ffcbd98a82223b8e88b03865d1a9d6dacc27d1b9",
+      "git_blob_sha": "2ae61abebb2ee516c7f4e9e348fc9283460ed7b7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/daytona/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/daytona/__init__.py",
+      "bytes": 1206,
+      "sha256": "491a9644d69f87abec110b4ba82416db8ab76082f725ac9af1a07b8d92e167a3",
+      "git_blob_sha": "086b96966b61eb66fda2a5c8392cb697e50eda13"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/daytona/configs/daytona.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/daytona/configs/daytona.yaml",
+      "bytes": 1522,
+      "sha256": "e1c5dc6978ef6c3eb3f5aeca305d12d2db6ad2ee9d3d72747fd952825589f456",
+      "git_blob_sha": "8342c8f1b915de5c79bccb4bb1994ff68abd233e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/daytona/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/daytona/provider.py",
+      "bytes": 42315,
+      "sha256": "0b161a47a67199b1b58ca35fa59a5551abb69bbcefd7894ead65b1cb9f2031ea",
+      "git_blob_sha": "e62d3b5528c081be59a20e28bc91f50e6b55b99f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/docker/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/docker/__init__.py",
+      "bytes": 1024,
+      "sha256": "96e498c3fee65f545c6b6b92a886429032e2f296d10b15899a50957254c63453",
+      "git_blob_sha": "38d40602e91fecb95719346b2d2e66af23a99ca4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/docker/configs/docker.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/docker/configs/docker.yaml",
+      "bytes": 2193,
+      "sha256": "ab69cde2c684ac5bb3e7f2a901e074b5d940e1bd6756b3fbbc265a7a022e2b26",
+      "git_blob_sha": "786ae348a7a02d5ab62840bef71435ee96bcd65e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/docker/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/docker/provider.py",
+      "bytes": 22917,
+      "sha256": "9c9eebddca4dbec181d7c9b6b94447938f4a08eefebc5c94e5f64c8b433c550b",
+      "git_blob_sha": "7c97f028399c56d7d7d68b82f6eb271f21cceebe"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/e2b/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/e2b/__init__.py",
+      "bytes": 1045,
+      "sha256": "e2faa046c8c1c89a91b4e079f8386b29855cf2a7dc53000a5840b6e0ec6a1b96",
+      "git_blob_sha": "a97b7ebcd18f56a22d83c48e3fe8db1f14eda374"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/e2b/_sdk.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/e2b/_sdk.py",
+      "bytes": 3862,
+      "sha256": "f3c2a6cde3102125e315a24bb6e36c846cf7abdd929557a81e90f54e082af605",
+      "git_blob_sha": "4b2dce4692345706a602d3fb9c787408977fb7d7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/e2b/build.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/e2b/build.py",
+      "bytes": 12212,
+      "sha256": "bd3e868a1220c7e0b299fddaf1aaadd50db0affb6e69f25b55206a3c7315c9c8",
+      "git_blob_sha": "0c2531dffe6d24963082af1e04d20e83f6b660f1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/e2b/configs/e2b.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/e2b/configs/e2b.yaml",
+      "bytes": 5111,
+      "sha256": "a2f807bd9e5062c47364af585ad9315dd5f4be4f81168e2065402c920cf21ab7",
+      "git_blob_sha": "4c4fefe191bc353ebe18cb92021d4d91752ad25e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/e2b/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/e2b/provider.py",
+      "bytes": 30066,
+      "sha256": "f490b8b6b5e5df16d480b23bc16c82cdcaaef7d58689ec4a10b8ba9f2821af23",
+      "git_blob_sha": "5999e80394fdbc44f6df0aa96db1c249cb39cc8f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/ecs_fargate/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/ecs_fargate/__init__.py",
+      "bytes": 1006,
+      "sha256": "aea99643cf5e81f32b3a575ba0bd3f07853e1c4e53c72a955078084dbf361043",
+      "git_blob_sha": "a37bc4d8b25455971b738ba808439c658f00fd1d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/ecs_fargate/configs/ecs_fargate.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/ecs_fargate/configs/ecs_fargate.yaml",
+      "bytes": 1550,
+      "sha256": "8d42d001af49f174dc4c75293984fcd6b1af09edc8e02367c2ee116d9d2280c7",
+      "git_blob_sha": "84e90469612737f213708e55fbec4450485f6653"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/ecs_fargate/engine.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/ecs_fargate/engine.py",
+      "bytes": 104725,
+      "sha256": "692144ba112996704c5b3821520c03d18e3ad668faaca9173460d748c8600b98",
+      "git_blob_sha": "863b3e18b2e27d0e6e9f46838bac67939993062f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/ecs_fargate/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/ecs_fargate/provider.py",
+      "bytes": 10674,
+      "sha256": "97302dab9c7d8706e2d2547126cb88ec337f894917ab9f6fa6358f5f875788f8",
+      "git_blob_sha": "b58636394022d6e272f2d72ad752c67b8d4bbb2e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/enroot/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/enroot/__init__.py",
+      "bytes": 1024,
+      "sha256": "389adc8bb646d13aaa362b42e9faef387c06c00c0e0a405abd73329c959aad2d",
+      "git_blob_sha": "cb79c29dd808a956ff8755695a01dd17ad3bf63c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/enroot/configs/enroot.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/enroot/configs/enroot.yaml",
+      "bytes": 2318,
+      "sha256": "37b7e8251d6db7b57fa6aaddbeede9286baa6f7f9d34c819f8ac5cf4a7826946",
+      "git_blob_sha": "294eae7c03bce25d84e21636e35af974cc8ced8c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/enroot/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/enroot/provider.py",
+      "bytes": 38785,
+      "sha256": "b3b750ef1ae91cc4df62326e14ef00ee72e7291f3e2291c502c7f41b41f45d7f",
+      "git_blob_sha": "01e7f92a0ae05230a8e4d918bc5533fdd5857dfa"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/local/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/local/__init__.py",
+      "bytes": 783,
+      "sha256": "4078e78349ddb5e34369998416f27921078a75aae605615f4810e7dc66c31129",
+      "git_blob_sha": "dc4108dea521473e974dc3d152328764e0833594"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/local/configs/local.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/local/configs/local.yaml",
+      "bytes": 678,
+      "sha256": "28ee3d6b018f31c1e1b19072bed25c321cfda894131bb2e0ce397b54e1337e0e",
+      "git_blob_sha": "d5a58ba7dc5ebb94c50a3de88a28e1612f135913"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/local/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/local/provider.py",
+      "bytes": 6150,
+      "sha256": "362fa38d54ad39c10235172be8a606486c81008ec9b60a4a82bfd1821bbd8dfc",
+      "git_blob_sha": "6f42595b7e30b2d1fd3a2098de0b38d895a87dc9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/opensandbox/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/opensandbox/__init__.py",
+      "bytes": 1314,
+      "sha256": "d60363bc3ff17c443d529ff9ccc747d52ae2624b0c878d6fd746deaea2fe7208",
+      "git_blob_sha": "25f0cd973fd97e1cb94b5731293ef7fd5f784532"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/opensandbox/cleanup_sandboxes.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/opensandbox/cleanup_sandboxes.py",
+      "bytes": 9874,
+      "sha256": "88f5c81a446832cf06c060992e2d5618db6bbdfd8852520781073290500b8ff2",
+      "git_blob_sha": "10b989fb22d7f7366fd9cf6f644eaf3fc50733a3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/opensandbox/configs/opensandbox.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/opensandbox/configs/opensandbox.yaml",
+      "bytes": 4789,
+      "sha256": "5519ec7e4118943e479151c9e0b593990e6c6344ba830257322e0ca614e98437",
+      "git_blob_sha": "06e32a63f10ec6781a4ab010391385bcb5a34f96"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/opensandbox/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/opensandbox/provider.py",
+      "bytes": 71973,
+      "sha256": "6e0d92c67cd4aa6c6f3ecd3b55ee2ae6028a91cbb3a2f77d5ee6ddcd5d438531",
+      "git_blob_sha": "4d347ea36e4d0e143938c7b4a54a340a5025386f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/opensandbox/pty.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/opensandbox/pty.py",
+      "bytes": 30968,
+      "sha256": "8014b9cec0aef2a37022a8ed6deadda2e751380ca0520515dd904c5b34417677",
+      "git_blob_sha": "bbb411022b0cfee535ab483d519b954f7a7fb356"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/openshell/__init__.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/openshell/__init__.py",
+      "bytes": 1264,
+      "sha256": "dc6193d0355bfa98cc69f8997fb861f5b153b4c927e5a89a4d599c2e527beded",
+      "git_blob_sha": "24f2fa4422fb6b12585b12957d99cc372988a114"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/openshell/configs/openshell.yaml",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/openshell/configs/openshell.yaml",
+      "bytes": 3455,
+      "sha256": "2191b56d654938e356a8a7512313fbb0c0592d2c0e9bc2853b89dc6aef413dfa",
+      "git_blob_sha": "4a6e43ce296428421378c1fe206e424cffae9f0d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/openshell/provider.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/openshell/provider.py",
+      "bytes": 33502,
+      "sha256": "39bdb54769b33880061b60f2ed83abdcb376c66a91c73d132dce1cbc7b1f9b04",
+      "git_blob_sha": "6d8472771cc688575a4605f474351c414a46e634"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/registry.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/registry.py",
+      "bytes": 7269,
+      "sha256": "0b429724ae8c65fe53658bbf3c51c7067e3f42dcb908f87f9f0dbfa6ef0e2a3d",
+      "git_blob_sha": "e0f5b82b5111ac1fca0811a7a75760d09eaab996"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/providers/utils.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/providers/utils.py",
+      "bytes": 1904,
+      "sha256": "8886197cee7a269f87a6a7b8243d70ffb5ccd69d3d508e969a8c5cf0667ee76a",
+      "git_blob_sha": "bc68b6eabe050189514f24932df02afc56795549"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/sandbox/utils.py",
+      "path": "vendor/Gym/nemo_gym/sandbox/utils.py",
+      "bytes": 2640,
+      "sha256": "1ddb0432801fbbb458f5d54acd2fe74c8462204332d4a474ef974b892db1d79a",
+      "git_blob_sha": "f9dd70a9c1e950ac98fd10c00ee18234df606633"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/secret_utils.py",
+      "path": "vendor/Gym/nemo_gym/secret_utils.py",
+      "bytes": 2273,
+      "sha256": "93b1ac8dd9af18e4448a131958ac5220285fcd47e6f9aeccea9e36b2fc25af27",
+      "git_blob_sha": "22d9cffcc876d35c25c846b948ef2b8668a5316f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/server_metadata.py",
+      "path": "vendor/Gym/nemo_gym/server_metadata.py",
+      "bytes": 2768,
+      "sha256": "3fa9888dceebb174c922c024b5384d585444b36f951f069bf517fe8831c84e8a",
+      "git_blob_sha": "aa84cacc9bf6fbb1e3fce1c5018f17368412154a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/server_status.py",
+      "path": "vendor/Gym/nemo_gym/server_status.py",
+      "bytes": 4416,
+      "sha256": "bcf8850e726e2ecf3734ed33e304a7468677948c9af79284a6f664007544c226",
+      "git_blob_sha": "2ab6b05a85bf16566907e2ff4c265d3bd6810586"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/server_utils.py",
+      "path": "vendor/Gym/nemo_gym/server_utils.py",
+      "bytes": 48141,
+      "sha256": "6658ac48f3698f368894ba82e8441f53a1a4fed7647aa96da92b5405504856fa",
+      "git_blob_sha": "8f079c1911586d1a896a9d0744a975e9c4d87886"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/skills.py",
+      "path": "vendor/Gym/nemo_gym/skills.py",
+      "bytes": 8313,
+      "sha256": "3522e4d7d71b49e61f7893470c104e6ebab0d4ea7b41059d03ef9675861b0cbd",
+      "git_blob_sha": "f5de25f1f3e5917b776bf55b231669d1897a9e1d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/task_data.py",
+      "path": "vendor/Gym/nemo_gym/task_data.py",
+      "bytes": 13330,
+      "sha256": "dae44bae7dee6e3ea039e6fee1c4f83e1c32708dff5e7f112be4339c7bd4bc81",
+      "git_blob_sha": "eb6fbdcc593b9dc891e4aa3d3e8ef7fab2fc4edb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/__init__.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/__init__.py",
+      "bytes": 2847,
+      "sha256": "2fd9eac76c1810cc4897f198e1f8484482746eec7d67cbe300ee800e86bf54a0",
+      "git_blob_sha": "5fcfa6d0c053d530f1066960ec62401b3edf40b7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/_fallbacks.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/_fallbacks.py",
+      "bytes": 3011,
+      "sha256": "95d29f5af50e48cfceb1763592d56df92271c34befa5087dd69d1926927c22e2",
+      "git_blob_sha": "95cb8b5335d6d4faa86dbf1e4d71e080a18459eb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/config.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/config.py",
+      "bytes": 5686,
+      "sha256": "6b30fc263b71e9292bc1a3c62a2cfa7389398c5a3d00fc0e7e3a87d2b5fb1be9",
+      "git_blob_sha": "bc2cca32bffa322100c6acd7d4aca132e222cdc9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/contrib.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/contrib.py",
+      "bytes": 3350,
+      "sha256": "8526e406f65f53176e0f39c92a0afd573a4538ba8c466b736df73768e660e271",
+      "git_blob_sha": "bf17d61ab6780c31f88fdd406e2ecf1617265a19"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/endpoints.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/endpoints.py",
+      "bytes": 6087,
+      "sha256": "ef38154594a5130b907ea38c0fec4f834710ebd084bf0b183bbe01eb162e691a",
+      "git_blob_sha": "1dda6d5c72cfa28354dc33c021321625f60ee383"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/metrics.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/metrics.py",
+      "bytes": 5643,
+      "sha256": "0bae4dfecd34328456b9439317f481217099a8cfc2f5a56f617fae5eca665e47",
+      "git_blob_sha": "298cf7b0d0e226e38a444d274da31ceae46a593f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/setup.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/setup.py",
+      "bytes": 19674,
+      "sha256": "622d92697634717e834bf728526596dd7b75e1b3887597e5a012f159c1f94cdb",
+      "git_blob_sha": "0de44cbab65db4725dec8377fa341f9a67bfcf39"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/span_groups.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/span_groups.py",
+      "bytes": 6960,
+      "sha256": "e15d3337f7b1753a4b5c4824bc8777027c73be690f4b5bbee9c2f2aa29d2198a",
+      "git_blob_sha": "8a6339814d2cdc65c0d7cb611afcc63a58d670cf"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/telemetry/spans.py",
+      "path": "vendor/Gym/nemo_gym/telemetry/spans.py",
+      "bytes": 3219,
+      "sha256": "d2b28c6f3ee07f70a0c8064fbff36f10536507dcdc7ce842524f158f7db2166e",
+      "git_blob_sha": "ad2b1adcae5fbec29ee77423f5535e8e05e19824"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/__init__.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/__init__.py",
+      "bytes": 4829,
+      "sha256": "cb4cb8f363b0fd61209d751107947ea5568c92472678f65ac83072809785ed8e",
+      "git_blob_sha": "5d2d2729602518948054a1270522583861f46850"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/builder.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/builder.py",
+      "bytes": 28898,
+      "sha256": "f6d54c667b00b78c4ad3c603190b48c020b31cc3cf08be14564a16f21123a622",
+      "git_blob_sha": "7d66335e4069c929382865be17407bbc815325c4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/config.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/config.py",
+      "bytes": 12100,
+      "sha256": "0ccdcf67a2cff8f419f2fd790a416e2adf5edcf9bd514a373a3a5c9853cabaf8",
+      "git_blob_sha": "d5d999b293592832fc598ec437a0745b6c79ca7c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/conformance.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/conformance.py",
+      "bytes": 14030,
+      "sha256": "e57bec06d1e00a70094564bcbd6c991b93d7ab3f13fca31e296e8f8ec7ad72f4",
+      "git_blob_sha": "c4dedb08b8fdd6a4b4589c485e93d95907a23973"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/consumer.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/consumer.py",
+      "bytes": 11699,
+      "sha256": "77197cc2fe2e58fc42d07a427c3f2261a4634e90f9798cace2f13600a713f63f",
+      "git_blob_sha": "b88adb2164ab9351f368ca5a384f74565dee38cf"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/delivery.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/delivery.py",
+      "bytes": 9866,
+      "sha256": "2cb2b4be341f8ac1cdf64fc9e90f81776d233ec81cf648b665a4c4243c7e5313",
+      "git_blob_sha": "0e2d5c03a02a9f130b86e8ff5241d0410ad478ba"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/fingerprint.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/fingerprint.py",
+      "bytes": 10243,
+      "sha256": "b5460e9050dd76830189a588e3a476d4fc4b194414c94c14be1cd564aa710c2b",
+      "git_blob_sha": "efa661c3de8bfa910d6c23d164244f65ba0c83d9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/lineage.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/lineage.py",
+      "bytes": 25816,
+      "sha256": "c2efd4f57b737ca1234937ec7c140d31a13c544e352acf5c99a86c39ccc29706",
+      "git_blob_sha": "4521e9cec1864780c7e45b5c35964710ed7ff1ef"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/protocols.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/protocols.py",
+      "bytes": 10287,
+      "sha256": "99304594ac38394b3ec5b2d0d9b72cae12184c833da2da4a2c0be3d30f6dba4d",
+      "git_blob_sha": "0acebc946e8bd6c2335d96fa488ec3fb43cd1a8c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/records.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/records.py",
+      "bytes": 13938,
+      "sha256": "5155c79c1a9c850b12c4cbe456d9aa6420399a15b04324f5cc307947c960f00b",
+      "git_blob_sha": "368d9da23f84d257568b7343b901e6013dffcf7c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/sink.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/sink.py",
+      "bytes": 15912,
+      "sha256": "9fe840420c4ff2838c0d220f0fc6365c090faf03961691f7b7f4f51073cd765d",
+      "git_blob_sha": "926a808e93e11303a39d7a2bc54b22889a21122d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/store.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/store.py",
+      "bytes": 19865,
+      "sha256": "3c18a94d5f02f202a7cf6edc4a7a3bfa4ebb38bc2d7c1e0cdf7472572b7e31a7",
+      "git_blob_sha": "1d30bb3670ff8876bbafa61e640861ff5f7298a6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/token_id_capture/terminal.py",
+      "path": "vendor/Gym/nemo_gym/token_id_capture/terminal.py",
+      "bytes": 11329,
+      "sha256": "41b082db4ef9df50816130f2845e864527be19cc9b9031b0586a3b48143c3932",
+      "git_blob_sha": "bd303484d50782455aaceb4a61ec7e5314599e63"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/train_data_utils.py",
+      "path": "vendor/Gym/nemo_gym/train_data_utils.py",
+      "bytes": 45425,
+      "sha256": "2f6c1857b1a10248e6f5500d95770264140513548fd8988bacd72fac9582a5a1",
+      "git_blob_sha": "636e4220c26196e0b977400d5fb5f66d8c614c27"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/nemo_gym/verifier_fixture.py",
+      "path": "vendor/Gym/nemo_gym/verifier_fixture.py",
+      "bytes": 10651,
+      "sha256": "640d85908b3719b0ded55d0e3d6155de4c4a24f00966ee74dc45234edab3943c",
+      "git_blob_sha": "03213aca12247c8190d3267876aa3a374b59455f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/pyproject.toml",
+      "path": "vendor/Gym/pyproject.toml",
+      "bytes": 33283,
+      "sha256": "918bd35cddb7356cec975b85fc2e2362da404a45ec86f530106ac79d30ba3c83",
+      "git_blob_sha": "2e364037ad777c597b43faf08b753eddc17884e2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/README.md",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/README.md",
+      "bytes": 1374,
+      "sha256": "6474b9c0fbac58eb7974b7f519575531c2d6e6d0b78909968c10a7ad0706648f",
+      "git_blob_sha": "216bdca56ee770d37047e70a7ebcc4fd6b3794c9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/app.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/app.py",
+      "bytes": 4930,
+      "sha256": "06dc285a48b0cf51d538b0bc8dacee7a7f68b5b071bf2859b4494b5485625d7c",
+      "git_blob_sha": "2eea41839e9bcc5aae9a398487a02c9954ab9b23"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/client.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/client.py",
+      "bytes": 1116,
+      "sha256": "afb2b490900028b69e70ad3b90a8dbbc8853df2c1fb3d67f251ffb779a681724",
+      "git_blob_sha": "8e9c4d323d7f31a19c3b8a02de2ced1cb3a9110b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/configs/workplace_assistant.yaml",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/configs/workplace_assistant.yaml",
+      "bytes": 1298,
+      "sha256": "d738507eb02c5e144accf1e6c50931942f563d40f3d892dff411d8e611f95990",
+      "git_blob_sha": "f86c5f0e79bb7536c4beef489f765551a3c2bc80"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/analytics_data.csv",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/analytics_data.csv",
+      "bytes": 36012,
+      "sha256": "4a0df10aabc07980f1cc074dc9ab36406ce98dead7e14fe11f72a9f1ba788688",
+      "git_blob_sha": "bfdaf1e69fe5be89bd3653b1cd9ea0c856631b7f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/calendar_events.csv",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/calendar_events.csv",
+      "bytes": 23619,
+      "sha256": "6c9df1872d54d0b0d068d1b066766a8ddbc29c3933f1d56c9efd554926312295",
+      "git_blob_sha": "f306ebf3155838893e80db3b2df41aa828807b54"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/customer_relationship_manager_data.csv",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/customer_relationship_manager_data.csv",
+      "bytes": 35969,
+      "sha256": "599057e4eec3a7c25ac04b4d655ea2c034b7b7782205dc367a28122756e04c41",
+      "git_blob_sha": "59a8cc50b2a584c48090edc199f11d3387b39d3a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/emails.csv",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/emails.csv",
+      "bytes": 163260,
+      "sha256": "1809e341a0e4f1fd78cf1b759964a42abd28db8c9b9dca364456efc31f82bb31",
+      "git_blob_sha": "a24d94f5092117b926d38afab0c94ae85590ceb7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/project_tasks.csv",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/project_tasks.csv",
+      "bytes": 28503,
+      "sha256": "fa0c05d5609f49e905342bd12592b09f23eff6147dcf607b808703f45ddbeaeb",
+      "git_blob_sha": "ca2eeaf251ee010da2d185baf09fd1d9d6c3bf02"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/raw/email_addresses.csv",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/email_addresses.csv",
+      "bytes": 449,
+      "sha256": "1f3465b92eb41b90a973a9b00f35757a23d16839652b5e352e9d217d8e404b0b",
+      "git_blob_sha": "8de61e2fd293e52eeda17c2cee1367f6990fe713"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/raw/events.csv",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/events.csv",
+      "bytes": 1159,
+      "sha256": "04ba8c0dddd619bce9683dd3f2565dc0f83ef7ebc07699b62391171df497b548",
+      "git_blob_sha": "29be6961167e854d0222911e6e15c42c8fab968e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/data/.gitignore",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/data/.gitignore",
+      "bytes": 101,
+      "sha256": "a236501133d1d7ecf878d6851782f780ee0b3a2c16e5a07a8e0db616a5fc0b8c",
+      "git_blob_sha": "4424b6fde073b7129c8c182e0eaced827eee2424"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/data/example.jsonl",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/data/example.jsonl",
+      "bytes": 84165,
+      "sha256": "2df8a2537121aa40041b46a96683f0397cc945bf5de83062b76ca6e3eaf6296d",
+      "git_blob_sha": "b39e9c4c794abeab670ed7f0b41d81b4db50461a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/data/example_metrics.json",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/data/example_metrics.json",
+      "bytes": 1301,
+      "sha256": "c7192f32a7aebfd76a5f43fb124d1f0a05aeccfdc7d646a665af22637234b2d5",
+      "git_blob_sha": "6c86836151618d83d4c7bdd3537a03557a5a9ec9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/data/example_rollouts.jsonl",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/data/example_rollouts.jsonl",
+      "bytes": 173884,
+      "sha256": "b8265d1307e22f86b86a169034e10490399dbf19e1d5736991d6b86a10bc2d03",
+      "git_blob_sha": "7f1c23e174ca3e3d2ce4b1640a6a9155f103ca2c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/data/train_metrics.json",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/data/train_metrics.json",
+      "bytes": 1444,
+      "sha256": "15294fe8b51f0e146e96d3dc20f58efa715fd14f99f8c3378bc86ecb39579718",
+      "git_blob_sha": "7850fa47d24c04342501e793732e9cd79e45425d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/data/validation_metrics.json",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/data/validation_metrics.json",
+      "bytes": 1456,
+      "sha256": "fc6dc1999527aa018d02c692c35d96d50b07c69f1397fde9c2f4fec5e7fdfb7f",
+      "git_blob_sha": "062145269adc7601ab678b434a4fb8b01ad6618f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/dataset_preprocess.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/dataset_preprocess.py",
+      "bytes": 5589,
+      "sha256": "1815ee6279d18e03f1e1e00a9c9ee37dec28a05044bb8d7c777c8a3b934f94bd",
+      "git_blob_sha": "c2db6afa5e478dd402b61fae24ff06f38b88dff7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/requirements.txt",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/requirements.txt",
+      "bytes": 25,
+      "sha256": "c8bae669009f55b1e55747a628eb128ab13bdd7132549c478782066b24fe9a25",
+      "git_blob_sha": "bb164755119efeb5eef56282d020d9272456f57b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/task_data.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/task_data.py",
+      "bytes": 2396,
+      "sha256": "352b5739ca9daf89615a46eefa2abd81e604c83e269fb556dbcf99fd7dc7c482",
+      "git_blob_sha": "f846eb007dacb5ed4bcab17a3b2130021c9ff4ac"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/tests/test_app.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/tests/test_app.py",
+      "bytes": 70148,
+      "sha256": "cae956bd78baa335e7073c10ab0b2da7933bab6da30ed653bda0d3052b6d9e4a",
+      "git_blob_sha": "3e58b585ca85af76670ab2954673432c0a23eae7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/tests/test_docs_counts.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/tests/test_docs_counts.py",
+      "bytes": 3570,
+      "sha256": "7640e276ae31cda19755f38cb35e5f361b7e70f51f3b1e41e201cbb715fed03b",
+      "git_blob_sha": "b0bb9150c236d6481c494e33a7a01d3cb9ea9388"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/utils.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/utils.py",
+      "bytes": 9216,
+      "sha256": "3d0f578251c25226a006c45ea2988eed61de45d8858a5eed79cc74ac63dce5d6",
+      "git_blob_sha": "6c23925949626d4b0e0c6bd43f1efef5d425a5ff"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/analytics.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/analytics.py",
+      "bytes": 9864,
+      "sha256": "96fc35e61ceed6dc323485960cdf644ec8c7390421bb65eadab86b28a6a919e0",
+      "git_blob_sha": "a7e17357cf7dad23a1eefc7f5066c42623409693"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/calendar.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/calendar.py",
+      "bytes": 11780,
+      "sha256": "88016c51f7fcecc98897c1a4060bece2ee3804d60b5f85a80f85869303088fef",
+      "git_blob_sha": "d112fd8b8e4c7c898fb765f46315642aff636b79"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/company_directory.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/company_directory.py",
+      "bytes": 2268,
+      "sha256": "7d5f3bbe1b2e6d6f41d1b8a06db0bc1c4eaacb423915b44e058af15fcd09c7dd",
+      "git_blob_sha": "db0885f81f37855bc8dfd98479e859923005c010"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/customer_relationship_manager.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/customer_relationship_manager.py",
+      "bytes": 12468,
+      "sha256": "1db9d57324ce097aeb41cbdde06655442de0a34138293e90bdfeca6ae44a2b2c",
+      "git_blob_sha": "9729de4a9f3f29edffd8cd51823ad47d42cc22ca"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/email.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/email.py",
+      "bytes": 12120,
+      "sha256": "2c710f6cc5d6d7d3b2830b4567dec8ab34bb04b2249765152bc41f2864a64ac5",
+      "git_blob_sha": "64e38dc09e62c62708a2dc6146eb6e6fd9134167"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/project_management.py",
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/project_management.py",
+      "bytes": 10181,
+      "sha256": "1eccec5636e01dee6fcda583dbb6189b3a998c3f5572c2038194ac223995dbc9",
+      "git_blob_sha": "24e49406ac2a199792f6036b4ec5717b1e5ec18d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/responses_api_agents/simple_agent/app.py",
+      "path": "vendor/Gym/responses_api_agents/simple_agent/app.py",
+      "bytes": 15043,
+      "sha256": "ea8179439c54962fdd48de3b0f64caed61049848a7801f1a63d0c1d0fd0ab97a",
+      "git_blob_sha": "26a3c5c5ecbddea822fbc84c36154d7d2d7cf39c"
+    }
+  ]
+}

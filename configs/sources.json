@@ -1,0 +1,12 @@
+{
+  "audit_date": "2026-09-04",
+  "gym_repo": "NVIDIA-NeMo/Gym",
+  "gym_commit": "83b3980b9c04379d72bbf59592d7846630f706bf",
+  "dataset_repo": "nvidia/Nemotron-RL-agent-workplace_assistant",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "bfcl_repo": "ShishirPatil/gorilla",
+  "bfcl_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "bfcl_leaderboard_commit": "f7cf7359b7ac615a0b294831c5ba2bc95ee4a000",
+  "nemo_rl_commit": "4601ba2c646ec40e5928c780fc0051a842328eba",
+  "download_model_weights": false
+}
