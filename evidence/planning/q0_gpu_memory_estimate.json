@@ -1,0 +1,19 @@
+{
+  "kind": "ANALYTIC_PLANNING_ESTIMATE_NOT_GPU_MEASUREMENT",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "assumptions": [
+    "Qwen3 dense no-bias projections",
+    "untied embedding and lm_head",
+    "BF16 weights and KV cache",
+    "one 8192-token sequence",
+    "runtime activation/workspace/CUDA graph overhead excluded"
+  ],
+  "estimated_parameters": 8190735360,
+  "bf16_weight_bytes": 16381470720,
+  "bf16_weight_gib": 15.256433486938477,
+  "kv_cache_bytes": 1207959552,
+  "kv_cache_gib": 1.125,
+  "peak_vram_measured": null,
+  "candidate_gpu": "RTX 4090 24GB",
+  "max_concurrent_sequences": 1
+}

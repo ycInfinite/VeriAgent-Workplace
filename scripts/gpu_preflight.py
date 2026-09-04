@@ -35,8 +35,10 @@ def inspect_host():
             result['nvidia_smi_error_type']=type(exc).__name__
     else:
         result['nvidia_smi_returncode']=None
-    result['requested_profile']={'visible_gpu_count':1,'full_gpu_memory_target_gb':80,
-                                 'host_ram_gb_recommended':64,'free_disk_gib_recommended':100}
+    result['requested_profile']={'phase':'Q0_INFERENCE_ONLY','visible_gpu_count':1,
+                                 'full_gpu_memory_target_gb':24,'max_concurrent_sequences':1,
+                                 'host_ram_gb_recommended':64,'free_disk_gib_recommended':100,
+                                 'note':'No-card preparation intentionally has no GPU; 24GB fit remains unmeasured'}
     result['limitations']=['Does not verify GPU compute or package interoperability',
                           'Does not verify MIG allocation, billing, host RAM or model endpoint',
                           'No permission to rent/start an experiment is implied']
