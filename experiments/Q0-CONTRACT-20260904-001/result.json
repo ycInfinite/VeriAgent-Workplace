@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "seed_does_not_expose_ground_truth": true,
+    "step_exposes_only_tool_output": true,
+    "http_grounded_task_reward_one": true,
+    "verified_session_is_cleaned": true,
+    "bad_wire_shape_rejected": true,
+    "tool_error_visible_at_http_200": true,
+    "nvidia_task_top_level_contract_valid": true,
+    "new_prepare_shape_rejected_by_current_task_contract": true
+  },
+  "http_transport": "in-process ASGI TestClient, not a deployed native NeMo server",
+  "near_duplicate_pairs_jaccard_ge_0_9": 208,
+  "near_duplicate_train_rows": 148,
+  "near_duplicates_semantically_adjudicated": false,
+  "native_nemo_service": "NOT_RUN: CPU path deliberately imports official tools/verifier only",
+  "noop_blind_and_lookup_reward_equal": true,
+  "plot_file_actually_created": false,
+  "runtime": {
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "pydantic": "2.13.4",
+    "fastapi": "0.141.1",
+    "starlette": "1.3.1",
+    "httpx": "0.28.1",
+    "jinja2": "3.1.6",
+    "tokenizers": "0.23.1"
+  }
+}

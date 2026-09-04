@@ -1,0 +1,21 @@
+{
+  "Research Question": "Are the minimal HTTP boundary and task-data contract correct, and are no-op rewards explainable?",
+  "Hypothesis": "Project adapter preserves real observations; new upstream prepare shape needs adaptation; empty reference is not proof of a bad task",
+  "Independent Variable": "Session, request shape, actual lookup versus blind no-op",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "HTTP/schema checks",
+    "lookup evidence",
+    "near-duplicate candidates",
+    "runtime identity"
+  ],
+  "Evidence Gate": "Do not label the native NeMo stack or final split qualified; expose remaining limitations",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "seed": 20260904
+}

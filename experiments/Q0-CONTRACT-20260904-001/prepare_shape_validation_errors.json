@@ -1,0 +1,26 @@
+[
+  {
+    "type": "missing",
+    "loc": [
+      "ground_truth"
+    ],
+    "msg": "Field required",
+    "url": "https://errors.pydantic.dev/2.13/v/missing"
+  },
+  {
+    "type": "missing",
+    "loc": [
+      "category"
+    ],
+    "msg": "Field required",
+    "url": "https://errors.pydantic.dev/2.13/v/missing"
+  },
+  {
+    "type": "missing",
+    "loc": [
+      "environment_name"
+    ],
+    "msg": "Field required",
+    "url": "https://errors.pydantic.dev/2.13/v/missing"
+  }
+]

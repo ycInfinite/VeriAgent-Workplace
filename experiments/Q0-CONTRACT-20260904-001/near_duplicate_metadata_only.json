@@ -1,0 +1,1250 @@
+[
+  {
+    "train_index": 2,
+    "official_validation_index": 153,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 2,
+    "official_validation_index": 419,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 3,
+    "official_validation_index": 354,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 4,
+    "official_validation_index": 486,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 23,
+    "official_validation_index": 203,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 48,
+    "official_validation_index": 489,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 54,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 57,
+    "official_validation_index": 390,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 57,
+    "official_validation_index": 470,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 58,
+    "official_validation_index": 123,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 90,
+    "official_validation_index": 401,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 104,
+    "official_validation_index": 121,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 104,
+    "official_validation_index": 244,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 104,
+    "official_validation_index": 348,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 104,
+    "official_validation_index": 487,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 115,
+    "official_validation_index": 310,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 146,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 147,
+    "official_validation_index": 344,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 152,
+    "official_validation_index": 125,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 154,
+    "official_validation_index": 464,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 160,
+    "official_validation_index": 25,
+    "jaccard": 0.9130434782608695,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 162,
+    "official_validation_index": 193,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 170,
+    "official_validation_index": 233,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 171,
+    "official_validation_index": 266,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 172,
+    "official_validation_index": 310,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 175,
+    "official_validation_index": 202,
+    "jaccard": 0.9285714285714286,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 200,
+    "official_validation_index": 253,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 216,
+    "official_validation_index": 431,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 218,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 233,
+    "official_validation_index": 351,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 233,
+    "official_validation_index": 352,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 233,
+    "official_validation_index": 504,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 248,
+    "official_validation_index": 197,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 275,
+    "official_validation_index": 99,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 282,
+    "official_validation_index": 524,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 295,
+    "official_validation_index": 244,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 302,
+    "official_validation_index": 530,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 308,
+    "official_validation_index": 362,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 312,
+    "official_validation_index": 405,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 317,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 317,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 319,
+    "official_validation_index": 154,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 321,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 323,
+    "official_validation_index": 405,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 333,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 333,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 352,
+    "official_validation_index": 1,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 352,
+    "official_validation_index": 67,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 352,
+    "official_validation_index": 251,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 352,
+    "official_validation_index": 345,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 353,
+    "official_validation_index": 428,
+    "jaccard": 0.9285714285714286,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 366,
+    "official_validation_index": 55,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 366,
+    "official_validation_index": 504,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 367,
+    "official_validation_index": 400,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 386,
+    "official_validation_index": 197,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 395,
+    "official_validation_index": 538,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 397,
+    "official_validation_index": 125,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 400,
+    "official_validation_index": 72,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 400,
+    "official_validation_index": 205,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 403,
+    "official_validation_index": 121,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 403,
+    "official_validation_index": 390,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 403,
+    "official_validation_index": 470,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 403,
+    "official_validation_index": 487,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 407,
+    "official_validation_index": 337,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 407,
+    "official_validation_index": 401,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 407,
+    "official_validation_index": 468,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 418,
+    "official_validation_index": 328,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 451,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 451,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 456,
+    "official_validation_index": 351,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 456,
+    "official_validation_index": 437,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 456,
+    "official_validation_index": 525,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 459,
+    "official_validation_index": 390,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 459,
+    "official_validation_index": 487,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 463,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 464,
+    "official_validation_index": 392,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 477,
+    "official_validation_index": 337,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 480,
+    "official_validation_index": 478,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 489,
+    "official_validation_index": 528,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 496,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 496,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 498,
+    "official_validation_index": 225,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 500,
+    "official_validation_index": 522,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 540,
+    "official_validation_index": 52,
+    "jaccard": 0.9166666666666666,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 540,
+    "official_validation_index": 310,
+    "jaccard": 0.9130434782608695,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 541,
+    "official_validation_index": 328,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 543,
+    "official_validation_index": 405,
+    "jaccard": 0.9166666666666666,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 562,
+    "official_validation_index": 392,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 567,
+    "official_validation_index": 193,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 568,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 577,
+    "official_validation_index": 535,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 579,
+    "official_validation_index": 174,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 580,
+    "official_validation_index": 442,
+    "jaccard": 1.0,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 581,
+    "official_validation_index": 119,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 610,
+    "official_validation_index": 376,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 611,
+    "official_validation_index": 72,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 611,
+    "official_validation_index": 205,
+    "jaccard": 1.0,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 612,
+    "official_validation_index": 225,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 617,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 617,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 621,
+    "official_validation_index": 193,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 633,
+    "official_validation_index": 528,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 637,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 637,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 642,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 654,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 656,
+    "official_validation_index": 345,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 656,
+    "official_validation_index": 427,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 658,
+    "official_validation_index": 201,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 658,
+    "official_validation_index": 207,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 664,
+    "official_validation_index": 247,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 664,
+    "official_validation_index": 457,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 668,
+    "official_validation_index": 152,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 668,
+    "official_validation_index": 500,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 699,
+    "official_validation_index": 159,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 699,
+    "official_validation_index": 266,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 714,
+    "official_validation_index": 121,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 714,
+    "official_validation_index": 390,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 726,
+    "official_validation_index": 253,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 728,
+    "official_validation_index": 299,
+    "jaccard": 0.9166666666666666,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 729,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 730,
+    "official_validation_index": 310,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 736,
+    "official_validation_index": 166,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 740,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 756,
+    "official_validation_index": 279,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 756,
+    "official_validation_index": 525,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 762,
+    "official_validation_index": 366,
+    "jaccard": 0.9130434782608695,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 773,
+    "official_validation_index": 509,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 774,
+    "official_validation_index": 31,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 778,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 778,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 779,
+    "official_validation_index": 244,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 779,
+    "official_validation_index": 348,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 779,
+    "official_validation_index": 470,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 779,
+    "official_validation_index": 487,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 785,
+    "official_validation_index": 154,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 798,
+    "official_validation_index": 405,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 805,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 805,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 807,
+    "official_validation_index": 470,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 809,
+    "official_validation_index": 292,
+    "jaccard": 0.9428571428571428,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 812,
+    "official_validation_index": 207,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 816,
+    "official_validation_index": 52,
+    "jaccard": 0.9166666666666666,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 829,
+    "official_validation_index": 251,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 829,
+    "official_validation_index": 345,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 829,
+    "official_validation_index": 486,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 830,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 830,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 850,
+    "official_validation_index": 279,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 850,
+    "official_validation_index": 525,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 854,
+    "official_validation_index": 104,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 855,
+    "official_validation_index": 345,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 858,
+    "official_validation_index": 494,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 869,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 880,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 892,
+    "official_validation_index": 241,
+    "jaccard": 1.0,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 908,
+    "official_validation_index": 25,
+    "jaccard": 0.9130434782608695,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 916,
+    "official_validation_index": 478,
+    "jaccard": 1.0,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 919,
+    "official_validation_index": 104,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 922,
+    "official_validation_index": 176,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 924,
+    "official_validation_index": 528,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 930,
+    "official_validation_index": 328,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 933,
+    "official_validation_index": 468,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 958,
+    "official_validation_index": 104,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 974,
+    "official_validation_index": 139,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 974,
+    "official_validation_index": 197,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 986,
+    "official_validation_index": 400,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 987,
+    "official_validation_index": 55,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 987,
+    "official_validation_index": 437,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1001,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1001,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1017,
+    "official_validation_index": 202,
+    "jaccard": 0.9285714285714286,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1030,
+    "official_validation_index": 153,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1030,
+    "official_validation_index": 419,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1032,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1055,
+    "official_validation_index": 153,
+    "jaccard": 1.0,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1070,
+    "official_validation_index": 83,
+    "jaccard": 0.9583333333333334,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1074,
+    "official_validation_index": 348,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1075,
+    "official_validation_index": 125,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1075,
+    "official_validation_index": 538,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1078,
+    "official_validation_index": 148,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1078,
+    "official_validation_index": 266,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1095,
+    "official_validation_index": 121,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1095,
+    "official_validation_index": 244,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1095,
+    "official_validation_index": 470,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1102,
+    "official_validation_index": 361,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1116,
+    "official_validation_index": 384,
+    "jaccard": 1.0,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1136,
+    "official_validation_index": 538,
+    "jaccard": 0.9230769230769231,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1144,
+    "official_validation_index": 468,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1157,
+    "official_validation_index": 244,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1157,
+    "official_validation_index": 390,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1171,
+    "official_validation_index": 3,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1171,
+    "official_validation_index": 489,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1171,
+    "official_validation_index": 522,
+    "jaccard": 0.9,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1174,
+    "official_validation_index": 176,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1176,
+    "official_validation_index": 55,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1176,
+    "official_validation_index": 279,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1176,
+    "official_validation_index": 352,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1176,
+    "official_validation_index": 437,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1187,
+    "official_validation_index": 310,
+    "jaccard": 1.0,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1220,
+    "official_validation_index": 55,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1220,
+    "official_validation_index": 437,
+    "jaccard": 0.9259259259259259,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1236,
+    "official_validation_index": 159,
+    "jaccard": 0.9090909090909091,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1238,
+    "official_validation_index": 153,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1240,
+    "official_validation_index": 405,
+    "jaccard": 0.92,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1249,
+    "official_validation_index": 153,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1251,
+    "official_validation_index": 355,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  },
+  {
+    "train_index": 1251,
+    "official_validation_index": 404,
+    "jaccard": 0.9047619047619048,
+    "status": "LEXICAL_CANDIDATE_NOT_PROOF_OF_LEAKAGE"
+  }
+]

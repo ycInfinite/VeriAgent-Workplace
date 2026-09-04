@@ -1,0 +1,28 @@
+{
+  "task_id": 709,
+  "producer": "SCRIPTED_DEV_DIAGNOSTIC",
+  "query": "Please remove all upcoming supply chain enhancement workshop meetings from my calendar",
+  "lookup_event": {
+    "step": 1,
+    "tool_call": {
+      "name": "calendar_search_events",
+      "arguments": "{\"query\": \"supply chain enhancement workshop\", \"time_min\": \"2023-12-01\"}"
+    },
+    "observation": "No events found.",
+    "exception": null,
+    "state_changes": {},
+    "state_before_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+    "state_after_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+    "latency_seconds": 0.019576500169932842
+  },
+  "lookup_then_stop_verifier": {
+    "official_reward": 1.0,
+    "replay_stdout": "",
+    "latency_seconds": 0.03810280002653599
+  },
+  "blind_stop_verifier": {
+    "official_reward": 1.0,
+    "replay_stdout": "",
+    "latency_seconds": 0.035618700087070465
+  }
+}
