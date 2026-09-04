@@ -1,0 +1,41 @@
+{
+  "experiment_id": "Q0-SPLIT-20260904-001",
+  "started_at": "2026-09-04T03:25:39.843570+00:00",
+  "code": {
+    "commit": "3577631007778518874ac2167d4b2248bf01d9f5",
+    "git_error": null,
+    "tracked_dirty": false,
+    "script_sha256": {
+      "scripts\\audit_contracts.py": "b454e0928155fe0ec95b49ce0249b2919d9058203acf8c13d5d323bb62caa677",
+      "scripts\\audit_dataset.py": "ad572fa09adb1c38900a410ebfe08a505e3def78f549dd2d15d1610192c88b38",
+      "scripts\\audit_environment.py": "3978299b8f2fc385a67ccbac9bc88c033ea25d21f8f8aef39006767a34b1de2c",
+      "scripts\\audit_tokens.py": "89a76da4735bf021d32ec013bde5c3460bf7536980740453c3e9713a6fb19148",
+      "scripts\\common.py": "c0d7ec4715d54bde93b38ecb91106f8acd80f397ad3cac3cbf9a70c330e2e07f",
+      "scripts\\fetch_official.py": "3d4cc9d7bef53aee7c0d64452d591adf5901a5288a0dc4989c3e36604b732b0e",
+      "scripts\\fetch_tokenizer.py": "37e82facfc828df19271695c59a5939527cee2a9ff08aef2fec60663d50bfa0f",
+      "scripts\\finalize_cpu_manifests.py": "b746486e835f18582af7a31e8b8360131cd667d2c6a0c7ead69d3e8e4fb842a3",
+      "veriagent\\environment.py": "a7b4cbf2cd2e654654da20270a50a68da0ab7d5d619f05bd1d6a3db728de5aa2",
+      "veriagent\\http_adapter.py": "37c8470f1f6474d1c5f337770ee831a648c30f0b06bacab91053865e37b42067",
+      "veriagent\\token_mask.py": "4e3c73226eb147b770e43d9112e55aac03ae2255734c0c41641c727da4bd5a06",
+      "veriagent\\__init__.py": "a9991fa4705bb728df1394a8e9594eb845524cbc517f6aef642a79aab9f99d97"
+    }
+  },
+  "sources": {
+    "audit_date": "2026-09-04",
+    "gym_repo": "NVIDIA-NeMo/Gym",
+    "gym_commit": "83b3980b9c04379d72bbf59592d7846630f706bf",
+    "dataset_repo": "nvidia/Nemotron-RL-agent-workplace_assistant",
+    "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+    "bfcl_repo": "ShishirPatil/gorilla",
+    "bfcl_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+    "bfcl_leaderboard_commit": "f7cf7359b7ac615a0b294831c5ba2bc95ee4a000",
+    "nemo_rl_commit": "4601ba2c646ec40e5928c780fc0051a842328eba",
+    "download_model_weights": false
+  },
+  "python": "3.14.6",
+  "policy_model": null,
+  "seed": 20260904,
+  "gpu_hours": 0,
+  "paid_cost_rmb": 0,
+  "kind": "CPU_ENVIRONMENT_AUDIT_NOT_MODEL_EVAL"
+}

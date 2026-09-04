@@ -33,12 +33,19 @@ def run(run_id):
             if r['reference_action_count']>0:
                 bins[r['category']].append(r)
         selected=[]
-        while len(selected)<18 and any(bins.values()):
+        while len(selected)<20 and any(bins.values()):
             for k in sorted(bins):
-                if bins[k] and len(selected)<18:
+                if bins[k] and len(selected)<20:
                     selected.append(bins[k].pop(0 if len(selected)%2==0 else -1))
-        noops=sorted([r for r in dev if r['reference_action_count']==0],key=lambda x:(x['category'],x['source_row_index']))
-        selected+=noops[:6]
+        noops=defaultdict(list)
+        for r in sorted(dev,key=lambda x:x['source_row_index']):
+            if r['reference_action_count']==0:
+                noops[r['category']].append(r)
+        # Four no-op cases across available domains, not simply the first alphabetic category.
+        while len(selected)<24 and any(noops.values()):
+            category_counts=Counter(r['category'] for r in selected)
+            key=min((k for k in noops if noops[k]),key=lambda k:(category_counts[k],k))
+            selected.append(noops[key].pop(0))
         for r in dev:
             if len(selected)>=24:
                 break

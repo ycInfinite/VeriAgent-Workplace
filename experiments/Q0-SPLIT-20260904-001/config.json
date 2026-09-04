@@ -1,0 +1,20 @@
+{
+  "Research Question": "Can flagged lexical overlap be quarantined without rewriting official tasks?",
+  "Hypothesis": "A conservative manifest can exclude all flagged training relatives and final relatives of already exposed dev cases",
+  "Independent Variable": "Membership only, using pre-existing similarity metadata",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "pool counts",
+    "remaining flagged edges",
+    "pilot write/no-op strata"
+  ],
+  "Evidence Gate": "Zero retained flagged edges; composition reserve remains unqualified; no claim of zero semantic overlap",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "seed": 20260904
+}
