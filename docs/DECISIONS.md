@@ -15,5 +15,10 @@
 | D011 | 用户允许继续推进；先准备单卡选型、只读远端 preflight 和独立 smoke 计划 | 待个人平台/实例报价；付费与后续阶段边界不变 |
 | D012 | 用户明确 AutoDL 与 Day 3 纯推理范围；24GB 4090 单并发优先，80GB 留作后续训练规划 | 工程估算，需实测；无卡模式用于文件/轻量准备，不加载 8B |
 | D013 | 按用户重申的 Day 3 范围准备资格测试；学习/考核和组合泛化保留为独立待办，不额外充当付费审批条件 | 实际价格/预算确认仍必需；未授权参数更新 |
+| D014 | 用户授权个人实例 Day 3 全流程，确认 1.98 元/小时；复用 torch 2.8+cu128，选 Transformers 4.56.2/SDPA | 单卡运行完成；无 vLLM/Ray/参数更新 |
+| D015 | B0 48 条有效，动作任务成功不足；按预登记条件只执行一次 B1 | paired seed 42 净增 3 个恢复成功；不再调 prompt |
+| D016 | 75 条证据取回并核验后执行关机，SSH 被远端关闭 | 约 1.73 元会话估算；不含先前开机/独立存储 |
+| D017 | 语义标签由 Codex 逐条复核，保留自动候选及 v1 分析；v2 修正 reviewer 说明和两个 B1 primary labels | 不宣称独立人工复核；原始结果不变 |
+| D018 | 发现四个强制 non-thinking prefill tokens 与 policy 输出/target 的差异 | SFT/DPO 前必须做逐轮 conditioning / trainer mask 对齐 |
 
 待用户选择：A. 保留 Workplace 做 grounded lookup→state mutation 的数据选择研究，收窄泛化主张；B. 后续独立设计少量受控 composition 任务并审计其语义；C. 若严格组合泛化不可让步，比较其他环境。未自动选择 B/C 或开始生成任务。

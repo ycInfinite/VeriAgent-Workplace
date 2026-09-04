@@ -1,0 +1,91 @@
+{
+  "crm_wrong_owner_rows": [
+    {
+      "customer_id": "00000060",
+      "assigned_to_email": "akira.sato@atlas.com",
+      "status": "Won",
+      "product_interest": "Consulting"
+    },
+    {
+      "customer_id": "00000171",
+      "assigned_to_email": "raj.patel@atlas.com",
+      "status": "Won",
+      "product_interest": "Consulting"
+    },
+    {
+      "customer_id": "00000119",
+      "assigned_to_email": "lena.schmidt@atlas.com",
+      "status": "Won",
+      "product_interest": "Consulting"
+    },
+    {
+      "customer_id": "00000104",
+      "assigned_to_email": "nadia.moreau@atlas.com",
+      "status": "Won",
+      "product_interest": "Consulting"
+    },
+    {
+      "customer_id": "00000145",
+      "assigned_to_email": "akira.sato@atlas.com",
+      "status": "Won",
+      "product_interest": "Consulting"
+    }
+  ],
+  "pm_wrong_owner_rows": [
+    {
+      "task_id": "00000191",
+      "assigned_to_email": "nia.johnson@atlas.com",
+      "list_name": "In Review"
+    },
+    {
+      "task_id": "00000230",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "In Review"
+    },
+    {
+      "task_id": "00000228",
+      "assigned_to_email": "olga.petrova@atlas.com",
+      "list_name": "In Review"
+    }
+  ],
+  "past_calendar_rows": [
+    {
+      "event_id": "00000159",
+      "participant_email": "sofia.santos@atlas.com",
+      "event_start": "2023-11-03 14:30:00"
+    },
+    {
+      "event_id": "00000142",
+      "participant_email": "sofia.santos@atlas.com",
+      "event_start": "2023-11-06 11:30:00"
+    },
+    {
+      "event_id": "00000026",
+      "participant_email": "sofia.santos@atlas.com",
+      "event_start": "2023-11-14 12:30:00"
+    },
+    {
+      "event_id": "00000024",
+      "participant_email": "sofia.santos@atlas.com",
+      "event_start": "2023-11-27 10:00:00"
+    },
+    {
+      "event_id": "00000005",
+      "participant_email": "sofia.santos@atlas.com",
+      "event_start": "2023-11-27 14:00:00"
+    },
+    {
+      "event_id": "00000027",
+      "participant_email": "sofia.santos@atlas.com",
+      "event_start": "2023-11-30 14:30:00"
+    }
+  ],
+  "extra_email_row": [
+    {
+      "email_id": "00000278",
+      "sender/recipient": "raj.patel@atlas.com",
+      "sent_datetime": "2023-11-18 14:45:20"
+    }
+  ],
+  "scope": "Post-hoc checks against the frozen initial state; no model rerun and no new policy data"
+}

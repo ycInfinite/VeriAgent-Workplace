@@ -1,0 +1,266 @@
+{
+  "B0_all": {
+    "rollouts": 48,
+    "success": {
+      "numerator": 11,
+      "denominator": 48,
+      "rate": 0.22916666666666666
+    },
+    "wrong_tool": {
+      "numerator": 0,
+      "denominator": 91,
+      "rate": 0.0
+    },
+    "wrong_argument_semantic_review": {
+      "numerator": 50,
+      "denominator": 91,
+      "rate": 0.5494505494505495
+    },
+    "record_id_grounding_error": {
+      "numerator": 5,
+      "denominator": 25,
+      "rate": 0.2
+    },
+    "nonexistent_record_id": {
+      "numerator": 4,
+      "denominator": 25,
+      "rate": 0.16
+    },
+    "email_slot_grounding_error": {
+      "numerator": 18,
+      "denominator": 18,
+      "rate": 1.0
+    },
+    "combined_identifier_grounding_error": {
+      "numerator": 23,
+      "denominator": 37,
+      "rate": 0.6216216216216216
+    },
+    "grounding_affected_trajectories": {
+      "numerator": 19,
+      "denominator": 48,
+      "rate": 0.3958333333333333
+    },
+    "redundant_action": {
+      "numerator": 5,
+      "denominator": 91,
+      "rate": 0.054945054945054944
+    },
+    "retry_loop": {
+      "numerator": 0,
+      "denominator": 48,
+      "rate": 0.0
+    },
+    "premature_termination_reviewed": {
+      "numerator": 21,
+      "denominator": 48,
+      "rate": 0.4375
+    },
+    "successful_recoveries": 1,
+    "unsound_noop_successes": 2,
+    "primary_failure_counts": {
+      "capability_denial_no_action": 4,
+      "identifier_type_confusion": 2,
+      "ungrounded_recipient": 2,
+      "schema_argument_error": 2,
+      "metric_argument_error_then_context_limit": 2,
+      "target_value_used_as_lookup_filter": 3,
+      "filter_composition_error": 2,
+      "missing_lookup_and_nonexistent_id": 2,
+      "ungrounded_assignee": 4,
+      "temporal_argument_error": 2,
+      "unsupported_attribute_completion": 2,
+      "ungrounded_recipient_and_target_scope": 2,
+      "metric_and_plot_type_error": 2,
+      "target_constraint_omission": 2,
+      "unbounded_read_context_limit": 2,
+      "unverified_condition_and_temporal_error": 2
+    },
+    "avg_tool_steps": 1.8958333333333333,
+    "input_tokens": 503144,
+    "output_tokens": 6623,
+    "avg_latency_seconds": 6.511263402411714,
+    "gpu_samples": {
+      "sample_count": 299,
+      "mean_utilization_pct": 60.72240802675585,
+      "max_sampled_used_gib": 18.9580078125,
+      "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+    }
+  },
+  "B0_seed42": {
+    "rollouts": 24,
+    "success": {
+      "numerator": 5,
+      "denominator": 24,
+      "rate": 0.20833333333333334
+    },
+    "wrong_tool": {
+      "numerator": 0,
+      "denominator": 43,
+      "rate": 0.0
+    },
+    "wrong_argument_semantic_review": {
+      "numerator": 25,
+      "denominator": 43,
+      "rate": 0.5813953488372093
+    },
+    "record_id_grounding_error": {
+      "numerator": 3,
+      "denominator": 12,
+      "rate": 0.25
+    },
+    "nonexistent_record_id": {
+      "numerator": 2,
+      "denominator": 12,
+      "rate": 0.16666666666666666
+    },
+    "email_slot_grounding_error": {
+      "numerator": 9,
+      "denominator": 9,
+      "rate": 1.0
+    },
+    "combined_identifier_grounding_error": {
+      "numerator": 12,
+      "denominator": 18,
+      "rate": 0.6666666666666666
+    },
+    "grounding_affected_trajectories": {
+      "numerator": 10,
+      "denominator": 24,
+      "rate": 0.4166666666666667
+    },
+    "redundant_action": {
+      "numerator": 2,
+      "denominator": 43,
+      "rate": 0.046511627906976744
+    },
+    "retry_loop": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    },
+    "premature_termination_reviewed": {
+      "numerator": 11,
+      "denominator": 24,
+      "rate": 0.4583333333333333
+    },
+    "successful_recoveries": 0,
+    "unsound_noop_successes": 1,
+    "primary_failure_counts": {
+      "capability_denial_no_action": 2,
+      "identifier_type_confusion": 1,
+      "ungrounded_recipient": 1,
+      "schema_argument_error": 1,
+      "metric_argument_error_then_context_limit": 1,
+      "target_value_used_as_lookup_filter": 2,
+      "filter_composition_error": 1,
+      "missing_lookup_and_nonexistent_id": 1,
+      "ungrounded_assignee": 2,
+      "temporal_argument_error": 1,
+      "unsupported_attribute_completion": 1,
+      "ungrounded_recipient_and_target_scope": 1,
+      "metric_and_plot_type_error": 1,
+      "target_constraint_omission": 1,
+      "unbounded_read_context_limit": 1,
+      "unverified_condition_and_temporal_error": 1
+    },
+    "avg_tool_steps": 1.7916666666666667,
+    "input_tokens": 239685,
+    "output_tokens": 3193,
+    "avg_latency_seconds": 6.267297138071929
+  },
+  "B1_seed42": {
+    "rollouts": 24,
+    "success": {
+      "numerator": 8,
+      "denominator": 24,
+      "rate": 0.3333333333333333
+    },
+    "wrong_tool": {
+      "numerator": 0,
+      "denominator": 70,
+      "rate": 0.0
+    },
+    "wrong_argument_semantic_review": {
+      "numerator": 34,
+      "denominator": 70,
+      "rate": 0.4857142857142857
+    },
+    "record_id_grounding_error": {
+      "numerator": 2,
+      "denominator": 30,
+      "rate": 0.06666666666666667
+    },
+    "nonexistent_record_id": {
+      "numerator": 2,
+      "denominator": 30,
+      "rate": 0.06666666666666667
+    },
+    "email_slot_grounding_error": {
+      "numerator": 9,
+      "denominator": 9,
+      "rate": 1.0
+    },
+    "combined_identifier_grounding_error": {
+      "numerator": 11,
+      "denominator": 37,
+      "rate": 0.2972972972972973
+    },
+    "grounding_affected_trajectories": {
+      "numerator": 8,
+      "denominator": 24,
+      "rate": 0.3333333333333333
+    },
+    "redundant_action": {
+      "numerator": 7,
+      "denominator": 70,
+      "rate": 0.1
+    },
+    "retry_loop": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    },
+    "premature_termination_reviewed": {
+      "numerator": 6,
+      "denominator": 24,
+      "rate": 0.25
+    },
+    "successful_recoveries": 3,
+    "unsound_noop_successes": 1,
+    "primary_failure_counts": {
+      "capability_denial_no_action": 1,
+      "identifier_type_confusion": 1,
+      "ungrounded_recipient": 1,
+      "schema_argument_error": 1,
+      "metric_argument_error_then_context_limit": 1,
+      "filter_composition_error": 1,
+      "target_constraint_omission_after_partial_progress": 2,
+      "temporal_argument_error": 1,
+      "unsupported_attribute_completion": 1,
+      "ungrounded_recipient_and_target_scope": 1,
+      "ungrounded_assignee": 1,
+      "metric_and_plot_type_error": 1,
+      "target_constraint_omission": 1,
+      "unbounded_read_context_limit": 1,
+      "unverified_condition_and_temporal_error": 1
+    },
+    "avg_tool_steps": 2.9166666666666665,
+    "input_tokens": 368264,
+    "output_tokens": 4184,
+    "avg_latency_seconds": 8.453070735520063,
+    "gpu_samples": {
+      "sample_count": 198,
+      "mean_utilization_pct": 63.32828282828283,
+      "max_sampled_used_gib": 19.7998046875,
+      "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+    }
+  },
+  "paired_exploratory": {
+    "improved": 3,
+    "regressed": 0,
+    "n": 24,
+    "exact_two_sided_p": 0.25,
+    "interpretation": "Small selected development cohort; do not claim a general or significant gain"
+  }
+}

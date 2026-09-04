@@ -1,0 +1,37 @@
+{
+  "kind": "READ_ONLY_HOST_PREFLIGHT_NOT_MODEL_EXPERIMENT",
+  "platform": "Linux-5.15.0-91-generic-x86_64-with-glibc2.35",
+  "python": "3.12.3",
+  "free_disk_gib": 34.3,
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "vllm": null,
+    "tokenizers": "0.22.2",
+    "pandas": "3.0.3"
+  },
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_mib": 24564,
+      "driver": "580.105.08"
+    }
+  ],
+  "gpu_workload_started": false,
+  "model_loaded": false,
+  "nvidia_smi_returncode": 0,
+  "requested_profile": {
+    "phase": "Q0_INFERENCE_ONLY",
+    "visible_gpu_count": 1,
+    "full_gpu_memory_target_gb": 24,
+    "max_concurrent_sequences": 1,
+    "host_ram_gb_recommended": 64,
+    "free_disk_gib_recommended": 100,
+    "note": "No-card preparation intentionally has no GPU; 24GB fit remains unmeasured"
+  },
+  "limitations": [
+    "Does not verify GPU compute or package interoperability",
+    "Does not verify MIG allocation, billing, host RAM or model endpoint",
+    "No permission to rent/start an experiment is implied"
+  ]
+}

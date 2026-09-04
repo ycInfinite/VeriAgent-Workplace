@@ -1,0 +1,3677 @@
+{
+  "method": "Post-hoc human review of all 161 calls and 72 trajectories, plus typed-ID/state checks; development only",
+  "limitations": [
+    "One reviewer; no inter-annotator reliability estimate",
+    "Cohort-specific semantic labels, not a universal oracle",
+    "Grounded ID can still identify the wrong target; this is counted as a semantic argument/scope error",
+    "Partial progress is diagnostic; official success remains binary"
+  ],
+  "B0": [
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 205,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 510,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [],
+      "primary_failure": "capability_denial_no_action",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 184,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Display name substituted for customer_id; no such record ID",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "Quinn Taylor",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "identifier_type_confusion",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 356,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient addresses; recipient resolution was not performed",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000472",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com, carlos.gonzalez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_recipient",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 414,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported pagination kwargs and an unresolved assignee name in an email field",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported pagination kwargs and an unresolved assignee name in an email field",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "schema_argument_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 669,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_get_average_session_duration",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric name rejected by create_plot",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "metric_argument_error_then_context_limit",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": true
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Searches the desired new event name rather than locating the existing event",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "target_value_used_as_lookup_filter",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 684,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_search_customers",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Comma-joined status values are not a supported OR filter in this tool",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "filter_composition_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 0,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_reply_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Nonexistent placeholder/numeric email ID used before successful lookup",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "last_email_id",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "missing_lookup_and_nonexistent_id",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 314,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 uses an invented assignee email; B1 later modifies tasks owned by other people",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_assignee",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 363,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval covers fewer than the requested four weeks",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "temporal_argument_error",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1219,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [],
+      "primary_failure": "capability_denial_no_action",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 220,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_add_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 invents contact/assignee attributes; B1 supplies the name Nadia as an email address",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "nadia@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            },
+            {
+              "field": "customer_email",
+              "kind": "email_slot",
+              "value": "rahul.taylor@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "unsupported_attribute_completion",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1112,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient; B0 also forwards an email from a different sender",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000226",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient; B0 also forwards an email from a different sender",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000278",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_recipient_and_target_scope",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 918,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_assignee",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 561,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_get_average_session_duration",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric identifiers and incorrect plot type for the reference goal",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric identifiers and incorrect plot type for the reference goal",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "metric_and_plot_type_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 18,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_get_event_information_by_id",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000000",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Search uses desired new name as an existing-name filter",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "target_value_used_as_lookup_filter",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1063,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_search_customers",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000060",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000171",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000119",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000104",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000145",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": "target_constraint_omission",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 156,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_delete_email",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000204",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 952,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "unbounded_read_context_limit",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 122,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 709,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 12,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email; official no-op reward nevertheless equals one",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": true,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 385,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval is not six weeks; acts without establishing the required condition",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval is not six weeks; acts without establishing the required condition",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "unverified_condition_and_temporal_error",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 205,
+      "seed": 43,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 510,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [],
+      "primary_failure": "capability_denial_no_action",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 184,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Display name substituted for customer_id; no such record ID",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "Quinn Taylor",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "identifier_type_confusion",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 356,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient addresses; recipient resolution was not performed",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000472",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com, carlos.gonzalez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_recipient",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 414,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported pagination kwargs and an unresolved assignee name in an email field",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported pagination kwargs and an unresolved assignee name in an email field",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "schema_argument_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 669,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_get_average_session_duration",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric name rejected by create_plot",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "metric_argument_error_then_context_limit",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": true
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Searches the desired new event name rather than locating the existing event",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "target_value_used_as_lookup_filter",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 684,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_search_customers",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Comma-joined status values are not a supported OR filter in this tool",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "filter_composition_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 0,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_reply_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Nonexistent placeholder/numeric email ID used before successful lookup",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "last_email_id",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "missing_lookup_and_nonexistent_id",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 314,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 uses an invented assignee email; B1 later modifies tasks owned by other people",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_assignee",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 363,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 5,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval covers fewer than the requested four weeks",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "temporal_argument_error",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1219,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [],
+      "primary_failure": "capability_denial_no_action",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 220,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_add_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 invents contact/assignee attributes; B1 supplies the name Nadia as an email address",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "nadia@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            },
+            {
+              "field": "customer_email",
+              "kind": "email_slot",
+              "value": "rahul.taylor@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "unsupported_attribute_completion",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1112,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient; B0 also forwards an email from a different sender",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000226",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient; B0 also forwards an email from a different sender",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000278",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_recipient_and_target_scope",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 918,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_assignee",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 561,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_get_average_session_duration",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric identifiers and incorrect plot type for the reference goal",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric identifiers and incorrect plot type for the reference goal",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "metric_and_plot_type_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 18,
+      "seed": 43,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Search uses desired new name as an existing-name filter",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "calendar_get_event_information_by_id",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000253",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "calendar_update_event",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000253",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": true,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 1063,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_search_customers",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000060",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000171",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000119",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000104",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000145",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": "target_constraint_omission",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 156,
+      "seed": 43,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_delete_email",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000204",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 952,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "unbounded_read_context_limit",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 122,
+      "seed": 43,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 709,
+      "seed": 43,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 12,
+      "seed": 43,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email; official no-op reward nevertheless equals one",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": true,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B0-20260904-001",
+      "task_id": 385,
+      "seed": 43,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval is not six weeks; acts without establishing the required condition",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval is not six weeks; acts without establishing the required condition",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "unverified_condition_and_temporal_error",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    }
+  ],
+  "B1": [
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 205,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 510,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [],
+      "primary_failure": "capability_denial_no_action",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 184,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Display name substituted for customer_id; no such record ID",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "Quinn Taylor",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "identifier_type_confusion",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 356,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_get_email_information_by_id",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000472",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "email_get_email_information_by_id",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000472",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient addresses; recipient resolution was not performed",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000472",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com, carlos.gonzalez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_recipient",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 414,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported pagination kwargs and an unresolved assignee name in an email field",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported pagination kwargs and an unresolved assignee name in an email field",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "schema_argument_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 669,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_get_average_session_duration",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric name rejected by create_plot",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "metric_argument_error_then_context_limit",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": true
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 1,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Searches the desired new event name rather than locating the existing event",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "calendar_get_event_information_by_id",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000252",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "calendar_update_event",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000252",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": true,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 684,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_search_customers",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Comma-joined status values are not a supported OR filter in this tool",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "filter_composition_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 0,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_reply_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Nonexistent placeholder/numeric email ID used before successful lookup",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "12345678",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "email_reply_email",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000057",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": true,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 314,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "project_management_update_task",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "task_id",
+              "kind": "record_id",
+              "value": "00000113",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "project_management_update_task",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "task_id",
+              "kind": "record_id",
+              "value": "00000157",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "project_management_update_task",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 uses an invented assignee email; B1 later modifies tasks owned by other people",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "task_id",
+              "kind": "record_id",
+              "value": "00000191",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "name": "project_management_update_task",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 uses an invented assignee email; B1 later modifies tasks owned by other people",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "task_id",
+              "kind": "record_id",
+              "value": "00000230",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "name": "project_management_update_task",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 uses an invented assignee email; B1 later modifies tasks owned by other people",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "task_id",
+              "kind": "record_id",
+              "value": "00000228",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": "target_constraint_omission_after_partial_progress",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": true
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 363,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_total_visits_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 5,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval covers fewer than the requested four weeks",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "temporal_argument_error",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 1219,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000179",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000082",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B1 deletes past events although the request is limited to upcoming meetings",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000027",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B1 deletes past events although the request is limited to upcoming meetings",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000005",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B1 deletes past events although the request is limited to upcoming meetings",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000024",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 7,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B1 deletes past events although the request is limited to upcoming meetings",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000026",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 8,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B1 deletes past events although the request is limited to upcoming meetings",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000142",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 9,
+          "name": "calendar_delete_event",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B1 deletes past events although the request is limited to upcoming meetings",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000159",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": "target_constraint_omission_after_partial_progress",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": true
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 220,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_add_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "B0 invents contact/assignee attributes; B1 supplies the name Nadia as an email address",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "Nadia",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "unsupported_attribute_completion",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 1112,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_forward_email",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented recipient; B0 also forwards an email from a different sender",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000226",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_recipient_and_target_scope",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 918,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": "ungrounded_assignee",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 561,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_get_average_session_duration",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric identifiers and incorrect plot type for the reference goal",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 4,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Unsupported metric identifiers and incorrect plot type for the reference goal",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "metric_and_plot_type_error",
+      "premature_termination_confirmed": true,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 18,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Search uses desired new name as an existing-name filter",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 3,
+          "name": "calendar_get_event_information_by_id",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000253",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "calendar_update_event",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "event_id",
+              "kind": "record_id",
+              "value": "00000253",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": true,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 1063,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "customer_relationship_manager_search_customers",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000060",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000171",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000119",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000104",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "name": "customer_relationship_manager_delete_customer",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Deletes customers belonging to people other than Sofia",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "00000145",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": "target_constraint_omission",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 156,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "email_search_emails",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "email_delete_email",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000204",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "confirmed_error": false
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 952,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "unbounded_read_context_limit",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 122,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_engaged_users_count",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 709,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "calendar_search_events",
+          "wrong_argument_confirmed": false,
+          "argument_reason": null,
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 12,
+      "seed": 42,
+      "official_reward": 1.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email; official no-op reward nevertheless equals one",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "name": "project_management_search_tasks",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Invented assignee email; official no-op reward nevertheless equals one",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": true,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "confirmed_error": true
+            }
+          ]
+        }
+      ],
+      "primary_failure": null,
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": true,
+      "confirmed_complete_subaction_before_failure": false
+    },
+    {
+      "run_id": "Q0-B1-20260904-001",
+      "task_id": 385,
+      "seed": 42,
+      "official_reward": 0.0,
+      "source_pool": "development",
+      "training_eligible": false,
+      "calls": [
+        {
+          "step": 1,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval is not six weeks; acts without establishing the required condition",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        },
+        {
+          "step": 2,
+          "name": "analytics_create_plot",
+          "wrong_argument_confirmed": true,
+          "argument_reason": "Plot interval is not six weeks; acts without establishing the required condition",
+          "wrong_tool_confirmed": false,
+          "wrong_tool_scope": "Unknown or functionally incompatible tool; premature use of a relevant tool is classified as missing prerequisite instead",
+          "redundant_confirmed": false,
+          "redundancy_scope": "Exact ineffective retry or re-reading unchanged facts already present; broader useful queries are not penalized merely for differing from reference",
+          "identifier_fields": []
+        }
+      ],
+      "primary_failure": "unverified_condition_and_temporal_error",
+      "premature_termination_confirmed": false,
+      "premature_scope": "Voluntary abandonment after errors/failed lookup or unnecessary capability denial; caps and completed-but-wrong mutations separately reported",
+      "successful_recovery": false,
+      "unsound_noop_success": false,
+      "confirmed_complete_subaction_before_failure": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "base_run": "Q0-B0-20260904-001",
+  "attempted": 48,
+  "valid": 48,
+  "unique_tasks": 24,
+  "macro_pass_at_1": 0.22916666666666666,
+  "task_cluster_bootstrap_95pct": [
+    0.08333333333333333,
+    0.3958333333333333
+  ],
+  "bootstrap_scope": "Resamples 24 task clusters, retaining their two seeds. Exploratory cohort uncertainty, not proof of population generalization.",
+  "per_seed": {
+    "42": {
+      "n": 24,
+      "successes": 5
+    },
+    "43": {
+      "n": 24,
+      "successes": 6
+    }
+  },
+  "tasks_with_any_nonempty_success": 3,
+  "tasks_with_any_nonempty_failure": 18,
+  "noop_rollouts_without_tools": 0,
+  "semantic_review_status": "PENDING; do not equate candidate heuristics to confirmed rates",
+  "paired_B1_vs_B0_seed42": {
+    "n": 24,
+    "success_delta": 0.125,
+    "improved_task_ids": [
+      1,
+      0,
+      18
+    ],
+    "regressed_task_ids": []
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "attempted_rollouts": 3,
+  "valid_rollouts": 3,
+  "infra_invalid_rollouts": 0,
+  "verified_successes": 1,
+  "success_rate": 0.3333333333333333,
+  "strata": {
+    "nonempty_reference": {
+      "n": 3,
+      "successes": 1
+    },
+    "empty_reference": {
+      "n": 0,
+      "successes": 0
+    }
+  },
+  "tool_calls": 4,
+  "parse_error_attempts": 0,
+  "executable_tool_calls": 4,
+  "executable_tool_call_rate": 1.0,
+  "unknown_tool_calls": 0,
+  "schema_invalid_calls": 0,
+  "identifier_bearing_calls": 1,
+  "ungrounded_identifier_candidate_calls": 1,
+  "repeated_same_state_call_candidates": 0,
+  "retry_loop_trajectories": 0,
+  "premature_termination_candidates": 2,
+  "termination_counts": {
+    "assistant_final": 3
+  },
+  "input_tokens": 29570,
+  "output_tokens": 379,
+  "average_tool_steps": 1.3333333333333333,
+  "average_trajectory_seconds": 6.035724002867937,
+  "peak_torch_allocated_gib": 16.31636381149292,
+  "candidate_metrics_require_semantic_review": true,
+  "sampled_weights_unchanged": true,
+  "run_wall_seconds": 29.231256931088865,
+  "gpu_hours": 0.008119793591969128,
+  "cost_estimate_rmb": 0.016077191312098876,
+  "cost_per_verified_success": 0.016077191312098876,
+  "cost_scope": "Run wall time including model load; excludes earlier instance uptime/download/install/storage"
+}

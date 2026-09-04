@@ -1,0 +1,21 @@
+{
+  "raw_files_unchanged": true,
+  "corrections": [
+    {
+      "field": "run config.model_weights_present=false",
+      "explanation": "Inherited stale local-planning flag, not an accurate statement of the GPU host. All runs loaded 8,190,735,360 parameters; identity, weight hashes and model outputs are authoritative."
+    },
+    {
+      "field": "condition in smoke trajectory is B0",
+      "explanation": "This denotes the B0 prompt condition; its experiment phase is SMOKE. Smoke is excluded from B0/B1 formal metrics."
+    },
+    {
+      "field": "parallel_tool_calls=false in original task/plan",
+      "explanation": "Native Transformers has no API-level parallel-tool switch. Well-formed calls in one generation execute sequentially; the bound is six model rounds, not six total tool calls. This handling was recorded before the runs."
+    },
+    {
+      "field": "reports/day3-reviewed method text",
+      "explanation": "Superseded by day3-reviewed-v2: reviewer was Codex, not a human; two B1 primary labels updated to match the observed changed errors."
+    }
+  ]
+}

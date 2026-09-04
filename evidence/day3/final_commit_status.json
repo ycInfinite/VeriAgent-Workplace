@@ -1,0 +1,11 @@
+{
+  "status": "not_executed_automatic_approval_review_timeout",
+  "attempts": 2,
+  "process_created": false,
+  "unsafe_action_determination": false,
+  "files_saved_in_workspace": true,
+  "experiment_code_commits_already_recorded": true,
+  "final_delivery_commit_created": false,
+  "gpu_still_running": false,
+  "next_action": "Complete local version commit after review service recovery or explicit user guidance; do not rerun experiments"
+}

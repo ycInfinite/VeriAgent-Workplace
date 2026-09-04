@@ -1,0 +1,50 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.03it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.02it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.01it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.45it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.24it/s]
+{"task_id": 205, "seed": 42, "reward": 1.0, "termination": "assistant_final", "tokens": 194, "steps": 2, "completed": 1, "infra_invalid": false}
+{"task_id": 510, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 62, "steps": 0, "completed": 2, "infra_invalid": false}
+{"task_id": 184, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 52, "steps": 1, "completed": 3, "infra_invalid": false}
+{"task_id": 356, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 107, "steps": 2, "completed": 4, "infra_invalid": false}
+{"task_id": 414, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 138, "steps": 2, "completed": 5, "infra_invalid": false}
+{"task_id": 669, "seed": 42, "reward": 0.0, "termination": "context_limit", "tokens": 227, "steps": 4, "completed": 6, "infra_invalid": false}
+{"task_id": 1, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 117, "steps": 1, "completed": 7, "infra_invalid": false}
+{"task_id": 684, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 85, "steps": 1, "completed": 8, "infra_invalid": false}
+{"task_id": 0, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 68, "steps": 1, "completed": 9, "infra_invalid": false}
+{"task_id": 314, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 74, "steps": 1, "completed": 10, "infra_invalid": false}
+{"task_id": 363, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 175, "steps": 2, "completed": 11, "infra_invalid": false}
+{"task_id": 1219, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 54, "steps": 0, "completed": 12, "infra_invalid": false}
+{"task_id": 220, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 166, "steps": 1, "completed": 13, "infra_invalid": false}
+{"task_id": 1112, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 180, "steps": 3, "completed": 14, "infra_invalid": false}
+{"task_id": 918, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 85, "steps": 1, "completed": 15, "infra_invalid": false}
+{"task_id": 561, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 289, "steps": 4, "completed": 16, "infra_invalid": false}
+{"task_id": 18, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 161, "steps": 2, "completed": 17, "infra_invalid": false}
+{"task_id": 1063, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 220, "steps": 6, "completed": 18, "infra_invalid": false}
+{"task_id": 156, "seed": 42, "reward": 1.0, "termination": "assistant_final", "tokens": 120, "steps": 2, "completed": 19, "infra_invalid": false}
+{"task_id": 952, "seed": 42, "reward": 0.0, "termination": "context_limit", "tokens": 24, "steps": 1, "completed": 20, "infra_invalid": false}
+{"task_id": 122, "seed": 42, "reward": 1.0, "termination": "assistant_final", "tokens": 182, "steps": 2, "completed": 21, "infra_invalid": false}
+{"task_id": 709, "seed": 42, "reward": 1.0, "termination": "assistant_final", "tokens": 88, "steps": 1, "completed": 22, "infra_invalid": false}
+{"task_id": 12, "seed": 42, "reward": 1.0, "termination": "assistant_final", "tokens": 82, "steps": 1, "completed": 23, "infra_invalid": false}
+{"task_id": 385, "seed": 42, "reward": 0.0, "termination": "assistant_final", "tokens": 243, "steps": 2, "completed": 24, "infra_invalid": false}
+{"task_id": 205, "seed": 43, "reward": 1.0, "termination": "assistant_final", "tokens": 176, "steps": 2, "completed": 25, "infra_invalid": false}
+{"task_id": 510, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 71, "steps": 0, "completed": 26, "infra_invalid": false}
+{"task_id": 184, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 51, "steps": 1, "completed": 27, "infra_invalid": false}
+{"task_id": 356, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 106, "steps": 2, "completed": 28, "infra_invalid": false}
+{"task_id": 414, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 135, "steps": 2, "completed": 29, "infra_invalid": false}
+{"task_id": 669, "seed": 43, "reward": 0.0, "termination": "context_limit", "tokens": 227, "steps": 4, "completed": 30, "infra_invalid": false}
+{"task_id": 1, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 117, "steps": 1, "completed": 31, "infra_invalid": false}
+{"task_id": 684, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 79, "steps": 1, "completed": 32, "infra_invalid": false}
+{"task_id": 0, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 72, "steps": 1, "completed": 33, "infra_invalid": false}
+{"task_id": 314, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 88, "steps": 1, "completed": 34, "infra_invalid": false}
+{"task_id": 363, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 313, "steps": 5, "completed": 35, "infra_invalid": false}
+{"task_id": 1219, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 54, "steps": 0, "completed": 36, "infra_invalid": false}
+{"task_id": 220, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 165, "steps": 1, "completed": 37, "infra_invalid": false}
+{"task_id": 1112, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 179, "steps": 3, "completed": 38, "infra_invalid": false}
+{"task_id": 918, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 85, "steps": 1, "completed": 39, "infra_invalid": false}
+{"task_id": 561, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 290, "steps": 4, "completed": 40, "infra_invalid": false}
+{"task_id": 18, "seed": 43, "reward": 1.0, "termination": "assistant_final", "tokens": 275, "steps": 4, "completed": 41, "infra_invalid": false}
+{"task_id": 1063, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 220, "steps": 6, "completed": 42, "infra_invalid": false}
+{"task_id": 156, "seed": 43, "reward": 1.0, "termination": "assistant_final", "tokens": 120, "steps": 2, "completed": 43, "infra_invalid": false}
+{"task_id": 952, "seed": 43, "reward": 0.0, "termination": "context_limit", "tokens": 24, "steps": 1, "completed": 44, "infra_invalid": false}
+{"task_id": 122, "seed": 43, "reward": 1.0, "termination": "assistant_final", "tokens": 180, "steps": 2, "completed": 45, "infra_invalid": false}
+{"task_id": 709, "seed": 43, "reward": 1.0, "termination": "assistant_final", "tokens": 88, "steps": 1, "completed": 46, "infra_invalid": false}
+{"task_id": 12, "seed": 43, "reward": 1.0, "termination": "assistant_final", "tokens": 72, "steps": 1, "completed": 47, "infra_invalid": false}
+{"task_id": 385, "seed": 43, "reward": 0.0, "termination": "assistant_final", "tokens": 243, "steps": 2, "completed": 48, "infra_invalid": false}
+{"event": "RUN_COMPLETED", "result": {"attempted_rollouts": 48, "valid_rollouts": 48, "infra_invalid_rollouts": 0, "verified_successes": 11, "success_rate": 0.22916666666666666, "strata": {"nonempty_reference": {"n": 40, "successes": 5}, "empty_reference": {"n": 8, "successes": 6}}, "tool_calls": 91, "parse_error_attempts": 0, "executable_tool_calls": 87, "executable_tool_call_rate": 0.9560439560439561, "unknown_tool_calls": 0, "schema_invalid_calls": 4, "identifier_bearing_calls": 33, "ungrounded_identifier_candidate_calls": 17, "repeated_same_state_call_candidates": 2, "retry_loop_trajectories": 0, "premature_termination_candidates": 33, "termination_counts": {"assistant_final": 44, "context_limit": 4}, "input_tokens": 503144, "output_tokens": 6623, "average_tool_steps": 1.8958333333333333, "average_trajectory_seconds": 6.511263402411714, "peak_torch_allocated_gib": 17.161483764648438, "candidate_metrics_require_semantic_review": true, "sampled_weights_unchanged": true, "run_wall_seconds": 324.6572761917487, "gpu_hours": 0.09018257671993019, "cost_estimate_rmb": 0.17856150190546177, "cost_per_verified_success": 0.016232863809587435, "cost_scope": "Run wall time including model load; excludes earlier instance uptime/download/install/storage"}}

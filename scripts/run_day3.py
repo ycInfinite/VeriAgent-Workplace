@@ -212,6 +212,8 @@ def main():
         'B1_trigger':'B0 >=46 valid; nonempty-reference success below 80%; at least 3 tasks with reviewed policy failures; no unresolved systemic infrastructure fault',
         'native_parallel_call_handling':'All well-formed calls in a model turn execute sequentially; no automatic name/argument repair',
         'generation_top_k':0,'generation_repetition_penalty':1.0,'trajectory_wall_seconds':180,'model_call_wall_seconds':90})
+    config['local_planning_weights_present']=config.pop('model_weights_present',config.get('local_model_weights_present',False))
+    config['weights_present_on_execution_host']=(ROOT/'models/Qwen3-8B/model.safetensors.index.json').exists()
     config['hourly_rate_source']='User-confirmed exact instance price in this Day 3 session (2026-09-04)'
     if args.condition=='SMOKE':
         config['Research Question']='Can this single GPU load the fixed BF16 policy and complete a real tool/observation/verifier loop?'
@@ -261,6 +263,8 @@ def main():
                 if time.perf_counter()-start+180>args.max_wall_seconds:
                     raise TimeoutError('Run wall-time envelope reached before next trajectory')
                 record=inference_trajectory(model,tokenizer,row,config,seed,'B1' if args.condition=='B1' else 'B0')
+                record['experiment_id']=args.run_id
+                record['experiment_phase']=args.condition
                 records.append(record);append(out/'trajectories.jsonl',record)
                 progress=summarize(records);write(out/'progress.json',progress)
                 print(json.dumps({'task_id':row['id'],'seed':seed,'reward':record['verifier']['official_reward'],

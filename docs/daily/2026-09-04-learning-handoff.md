@@ -1,49 +1,47 @@
-# 2026-09-04 Learning Handoff
+# 2026-09-04 Learning Handoff：CPU 审计与 Day 3
 
-停止新实验：CPU 部分已收尾。接下来学习/考核和路线讨论，不租 GPU。
+今天的模型实验已结束。75 条真实轨迹已取回，关机命令成功且 SSH 由远端关闭；接下来只做学习、考核和路线讨论，不自动训练。此前 CPU/preparation handoff 保存在 2026-09-04-cpu-handoff-history.md。
 
-1. **今天回答的核心问题**：Workplace 核心是否可执行？reward 到底检查什么？数据能否直接做组合 held-out？真实 tokenizer 的输入和监督量有多大？
+1. **核心问题**：Qwen3-8B 是否能在单张 4090 上完成真实工具循环？B0/B1 的失败是什么？通用提示的收益来自哪里？这些轨迹能否直接用于训练？
 
-2. **开始前状态**：空项目目录；只有上一轮官方只读审计，无本地实验，无模型。用户授权完成所有租卡前可做工作，并要求学习材料和考核。
+2. **开始前状态**：CPU 工具/verifier/split/tokenizer 已审计，没有实际模型运行。用户随后提供个人 AutoDL 实例并要求完成 Day 3，确认 1.98 元/小时。既定 24 题、两个 B0 seeds、一次条件 B1，不做参数更新。
 
-3. **实际执行**：建立 Git/项目约定；固定 193 个官方源码/数据/文档文件；下载 tokenizer/config 无权重；完成结构、环境、token、HTTP/数据契约、词面相似及保守切分审计；整理学习材料。
+3. **实际执行与文件**：远端复用 torch 2.8+cu128，安装 Transformers 4.56.2 等轻量所需依赖；下载并验证固定模型；上传白名单源码/24 条 dev；运行 smoke/B0/B1；取回校验、语义复核、关机。主要代码为 scripts/run_day3.py、build_day3_bundle.py、verify_model_integrity.py、veriagent/policy_protocol.py、review_day3_metrics.py；主报告是 docs/DAY3_REPORT.md。
 
-4. **变量/控制**：环境测试改变动作序列（正确/省略/空动作/错误前缀/无关写入）；其余固定源码、初始 CSV、任务和 CPU runtime。token 测试改变 role 与 context/target log-prob。没有模型自变量或参数更新。
+4. **变量/控制**：B0 为固定 policy 的 seed 42/43；B1 只增加此前登记的通用 system 指令，使用 seed 42。同模型 revision、工具、世界状态、用户任务、8K context、6 个模型轮次、累计 2048 output tokens。B1 24 条初始消息逐一核对，其他输入未改变。
 
-5. **原始结果**：1255 train+545 validation；每个 split 五类等量。138 条脚本轨迹 0 无效；reference/repeat 各 24/24 reward=1，漏必要动作 18/18 为 0，无关写入 24/24 为 0；reset/isolation/138 次重放一致。955 个初始 prompt 为 4112–4153 tokens；学习 fixture 为 4536/89 processed/supervised。9 个 mask 检查、8 个接口检查通过。
+5. **原始结果**：smoke 1/3；B0 11/48，动作任务 5/40；B1 8/24，动作任务 5/20。主要配对为 B0 seed42 5/24 → B1 8/24，改善 task 0/1/18，无退化。75/75 轨迹有效且 online/replay 一致。Torch allocated 峰值 17.17 GiB，采样 GPU used 峰值 19.80 GiB。会话约 52.3 分钟、1.73 元估算；模型运行部分 9.47 分钟、0.31 元，已包含在会话费用中。
 
-6. **代表轨迹**：成功结构在 `Q0-TOKENS-20260904-001/grounded_fixture_DEV_ONLY.json`，实际 search→取 ID→reply，reward=1；失败结构在同目录 preference_mechanics_fixture 中，直接 Done，reward=0；`Q0-CONTRACT-20260904-001/noop_lookup_DEV_ONLY.json` 展示查询无会议后停止与盲停都得 1。所有 producer=SCRIPTED，不是 LLM trajectories。
+6. **代表轨迹**：task 0 的 B1 先猜 ID 再查到真实 ID 后成功；task 18 的 B0 seed43 是成功恢复，seed42 是失败；task 12 在虚构邮箱查询后仍 reward=1；task 1063 使用真实但不符合用户条件的客户 ID；task 669/952 的输入超过 context。源文件均为三个模型实验目录中的 trajectories.jsonl。真实 preference 学习 pair 在 evidence/day3/real_preference_learning_pair.json，明确 training_eligible=false。
 
-7. **路线级结论**：可使用轻量适配器执行官方工具核心；binary state reward 适合结果检查，但不足以单独代表 grounded 决策。严格组合泛化未资格化，暂缓 GPU。当前清单 training/dev/checkpoint/组合预留=743/85/93/181，另保留 540 条过滤 final；原数据未变。
+7. **路线结论**：硬件/真实交互链通过。B0 单独未通过成功任务数量门槛。B1 是有条件候选，收益主要是恢复；CRM/PM 动作任务仍全失败，B1 仅单 seed。不能直接开始大规模数据生成或把本批 dev 数据投入 SFT。严格组合泛化仍未合格。
 
-8. **尚未支持的推测**：Qwen 能否成功、主要 failure 是什么、S2 是否优于 S1、DPO 是否有效、单卡实际速度/显存、RL 收益，全部未知。并未证明 170 条空 reference 标错；也未证明语义泄漏为零。
+8. **尚未支持**：没有 SFT/DPO/GRPO 参数更新；没有证明 B1 的一般性或显著收益；没有证明全局无泄漏；没有 BFCL/final 泛化成绩。语义标签由 Codex 逐条复核，没有独立人工标注。没有访问真实账单，费用未计入更早的实例开机和独立存储。
 
-9. **晚上最该读的五处函数**：
+9. **最应该读的五处函数**：
 
 | 文件 → 函数 | 输入 → 输出 | pipeline 作用 |
 |---|---|---|
-| veriagent/environment.py → WorkplaceEnv.step | action → observation/error/diff | 可执行工具边界 |
-| vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/email.py → search_emails / reply_email | query/ID/body → 数据/状态 | lookup 与写操作 |
-| vendor/Gym/resources_servers/workplace_assistant/utils.py → is_correct | 两组 actions → bool | reward 语义 |
-| veriagent/token_mask.py → TokenMaskInspector.inspect | messages/tools → ids/labels | supervised/context 分离 |
-| scripts/audit_dataset.py → run | 数据+seed → 统计/manifest | 数据用途与隔离 |
+| scripts/run_day3.py → inference_trajectory | policy/task/seed → 完整轨迹 | 模型决策、上下文和预算循环 |
+| veriagent/policy_protocol.py → parse_tool_calls | 模型文本 → calls/errors | 结构化可执行请求 |
+| veriagent/environment.py → WorkplaceEnv.step | action → observation/error/diff | 执行真实官方工具 |
+| vendor/Gym/resources_servers/workplace_assistant/utils.py → is_correct | 预测/参考动作 → bool | executable reward |
+| veriagent/token_mask.py → TokenMaskInspector.inspect | messages/tools → ids/labels | 训练 target 边界检查 |
 
-10. **今晚三个知识点**：state 与 observation；reward 的充分性/必要性与反例；assistant-only loss mask 及 DPO 分支的条件概率。先读 docs/learning/START_HERE.md。
+10. **今晚三个知识点**：typed grounding 与目标约束的区别；reward、恢复和高质量轨迹的区别；逐轮 policy 输入/输出与 SFT/DPO target 的对齐。新发现：真实 pair 的生成 token 为 275/161，而 canonical targets 为 279/165，四个强制 non-thinking prefill tokens 在实际生成时属于输入。这是训练前必须处理的门槛。
 
-11. **五个面试追问（不附答案）**：
+11. **五个面试追问，不附答案**：
 
-- reference replay 全通过，为什么不能等同于 oracle 的语义正确性？
-- 没有写操作的任务，如何避免一个“总是结束”的 policy 被错误资格化？
-- tool output 不参与 CE，为什么仍然会影响后续动作的训练？
-- DPO chosen/rejected 的 observation 不同，序列 log-prob 应如何定义？
-- 为什么“27 个工具定义都在 prompt”不足以证明工具组合泛化？
+- 为什么结构可执行调用率 95.6%，任务成功率却只有 22.9%？
+- 如何从原始日志证明 B1 改善的是恢复，而不是第一次决策？
+- 一个 ID 来自 observation，为什么仍可能操作错误对象？
+- 为什么 grounding 错误比例下降时，还必须报告绝对错误数和分母？
+- 为什么四个模板插入的 token 会影响对 SFT/DPO 数据完整性的判断？
 
-12. **下次需要用户确认的路线分叉**：是否收窄为 grounded lookup/state mutation 的数据选择研究；是否坚持严格 composition 并另外审计补充数据；或重新比较环境。先完成学习与考核，未自动决定。
+12. **下次路线分叉**：是否将 B1 冻结为共同 baseline；如何为姓名→邮箱、目标约束、查询粒度取得合格的 training-pool 轨迹；如何补足 composition split；训练 cost probe 前怎样解决逐轮模板/mask 对齐。不自动增加 B1 seed、换大模型或开启训练。
 
-13. **身份/配置/日志**：所有 run 在 experiments/registry.jsonl。DATA-001 的 code commit `2ef3f3b`，ENV-001=`d38cb53`，TOKENS-001=`a76fa59`，CONTRACT-001=`5b4dab5`，SPLIT-001=`3577631`，SPLIT-002=`8ceae72`，最终 SPLIT-003=`41ec3e3`；完整 SHA 在各 identity.json。最后一版还把 pilot reference 调用上限设为 4，避免七次必要写调用与六轮预算的明显冲突。配置均为各目录 config.json，原始轨迹为 ENV 的 trajectories.jsonl；对应 result.json 为摘要。所有正式 CPU run 有记录；SPLIT-001/002 仅被替代，未删除。没有正式 infrastructure-invalid run；Git 所有权与 shell 语法设置问题另记在 evidence/setup/notes.json。
+13. **证据身份**：模型运行代码 commit cb4067c3e0dd21723d5664e7ccd27cdd3120c51e；模型 revision b968826d9c46dd6066d109eabc6255188de91218；Gym commit 83b3980b9c04379d72bbf59592d7846630f706bf。实验 ID：Q0-SMOKE-20260904-001、Q0-B0-20260904-001、Q0-B1-20260904-001。各目录含 config.json、identity.json、trajectories.jsonl、gpu_samples.jsonl、result.json。完整账本 experiments/registry.jsonl；当前复核 reports/day3-reviewed-v2；费用/完整性 evidence/day3。准备阶段一次 Hub 元数据校验失败保留在 setup_attempts.jsonl 和原始日志中，没有模型 invalid run。
 
-考核状态：未开始。已提供 A/B/C 题目和评分标准，等待用户提交 A1–A5；不得提前宣称通过。
+学习入口：docs/learning/04-day3-real-trajectories.md。考核状态仍是未开始、未评分；提交该页五题后再逐题评分与追问。先前 CPU 记录保留，不能把脚本轨迹和真实模型轨迹混算。
 
-后续补充：用户允许继续推进。已新增 GPU_HANDOFF.md、只读 gpu_preflight.py，并准备三个 dev tasks 的独立加载/接口 smoke 实验卡。脚本通过语法检查；尚无个人平台、实际报价或 GPU 实例，因此未租卡、未下载权重、未运行任何模型。学习考核记录不变。单卡建议为 A800 80GB/A100 80GB，实际选型取决于报价与镜像兼容性。
-
-再次补充：用户确认平台为 AutoDL、可无卡传文件，重申 Day 3 不更新参数。针对这一限定修正选型为 RTX 4090 24GB/并发 1；80GB 是后续训练规划，不是这次推理必需。AutoDL 官方无卡模式为 0.5 核、2GB RAM、0.1 元/小时，会释放 GPU。已记录静态显存估算，未加载权重或实测显存；实例/价格/镜像仍待提供。此前推荐保留为决策历史。
+交付补充：最终本地 Git 提交的自动权限审核两次超时，命令未执行。文件均已保存，但新增产物尚未提交；实验运行前的代码 commit 已固定。这个版本保存阻碍不计入模型 invalid run，也没有产生新的 GPU 费用。

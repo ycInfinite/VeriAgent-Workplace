@@ -1,0 +1,21 @@
+{
+  "managed_session_start_utc": "2026-09-04T04:33:21.379108+00:00",
+  "start_source": "Creation time of the exact user-authorized SSH process",
+  "shutdown_requested_utc": "2026-09-04T05:25:40+00:00",
+  "shutdown_command_exit_code": 0,
+  "ssh_closed_by_remote_host_confirmed": true,
+  "hourly_rmb": 1.98,
+  "price_source": "User confirmed",
+  "managed_seconds_to_shutdown_request": 3138.620892,
+  "managed_gpu_hours_estimate": 0.8718391366666667,
+  "managed_session_cost_estimate_rmb": 1.7262414906,
+  "model_run_seconds_including_load": 567.954846910201,
+  "model_run_cost_estimate_rmb": 0.3123751658006106,
+  "cost_limitations": [
+    "Exact provider invoice not accessed",
+    "Excludes user uptime before the first SSH connection and separate storage charges",
+    "Shutdown completion may lag the request by seconds"
+  ],
+  "model_trajectories_downloaded_and_verified": 75,
+  "no_parameter_updates": true
+}

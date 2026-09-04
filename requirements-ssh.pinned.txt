@@ -1,0 +1,2 @@
+# Local operational transport only; never deployed as a policy tool.
+paramiko==5.0.0

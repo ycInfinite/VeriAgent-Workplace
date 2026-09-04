@@ -1,6 +1,6 @@
 # 单卡训练可行性：事实、估算与缺失证据
 
-当前从未加载模型权重，所有显存/速度/参数更新判断都是计划或估算。CPU 检查不能代替真实训练 gate。
+更新：Day 3 已加载模型做纯推理，实测单张 4090 的 Torch allocated 峰值约 17.17 GiB、nvidia-smi 采样 used 峰值约 19.80 GiB。以下训练显存/速度仍是估算，尚无参数更新；不能由推理显存推出训练显存。
 
 优先链路：官方 Workplace 工具/状态/verifier → 可审计轨迹 → Transformers/PEFT，按需要使用 TRL。rollout serving 可以独立，避免把 Gym/BFCL/训练的依赖装进同一个环境。暂不引入 NeMo RL/verl/分布式训练作为主线。
 
@@ -33,6 +33,8 @@
 4. S1/S2 对齐 processed/supervised token 预算、步数、adapter、seed 和 eval；保留不同选择策略的采集费用。
 5. DPO reference 是指定的冻结 checkpoint；两支 observation 仅作 context；不以长度或基础设施失败决定 rejected。
 6. 实测 SFT/DPO step time、VRAM/utilization、GPU-hours，更新预算后才批准正式训练。
+
+7. Day 3 已发现 canonical role-mask 与实际生成输出相差四个强制 non-thinking prefill tokens。还需核对每轮真实输入与生成输出的 conditioning、消息重序列化以及强制前缀。详见 evidence/day3/serialization_alignment_note.json；仅通过 assistant-role mask 检查不代表真实 trainer 对齐已通过。
 
 ## Optional online RL 的下一层 gate
 

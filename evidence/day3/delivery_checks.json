@@ -1,0 +1,15 @@
+{
+  "model_trajectory_counts": {
+    "Q0-SMOKE-20260904-001": 3,
+    "Q0-B0-20260904-001": 48,
+    "Q0-B1-20260904-001": 24
+  },
+  "total_real_model_trajectories": 75,
+  "formal_B0_B1_calls_reviewed": 161,
+  "markdown_links_valid": true,
+  "reviewer_attribution_correct": true,
+  "assessment_not_marked_passed": true,
+  "private_endpoint_or_private_key_material_in_public_artifacts": false,
+  "raw_results_preserved": true,
+  "shutdown_requested_and_remote_ssh_closed": true
+}

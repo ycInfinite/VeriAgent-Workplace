@@ -1,0 +1,47 @@
+{
+  "status": "TRAINER_ALIGNMENT_GATE_PENDING_NOT_A_DAY3_INFERENCE_FAILURE",
+  "task_id": 18,
+  "forced_non_thinking_prefill": "<think>\n\n</think>\n\n",
+  "prefill_tokens": 4,
+  "chosen_generated_output_tokens": 275,
+  "chosen_canonical_supervised_tokens": 279,
+  "rejected_generated_output_tokens": 161,
+  "rejected_canonical_supervised_tokens": 165,
+  "per_turn_reconstruction": [
+    {
+      "seed": 42,
+      "per_turn_prompt_hashes_match": true,
+      "turns": 3
+    },
+    {
+      "seed": 43,
+      "per_turn_prompt_hashes_match": true,
+      "turns": 5
+    }
+  ],
+  "finding": "The full-conversation role-only mask includes four renderer-inserted final assistant prefill tokens. Actual generation receives these as input, not sampled output. Full-conversation serialization can also normalize earlier tool-call history.",
+  "required_before_SFT_DPO": "Declare canonical SFT formatting explicitly; verify actual collator targets. For policy-trajectory DPO likelihood, align scoring with each saved model input and generated output, or explicitly justify a different canonical objective. Do not assume flattening messages is exact rollout-policy scoring.",
+  "training_performed": false,
+  "exact_target_id_sequence_check": [
+    {
+      "seed": 42,
+      "canonical_targets_equal_actual_outputs_after_removing_forced_prefill": true,
+      "prefill_token_ids": [
+        151667,
+        271,
+        151668,
+        271
+      ]
+    },
+    {
+      "seed": 43,
+      "canonical_targets_equal_actual_outputs_after_removing_forced_prefill": true,
+      "prefill_token_ids": [
+        151667,
+        271,
+        151668,
+        271
+      ]
+    }
+  ]
+}

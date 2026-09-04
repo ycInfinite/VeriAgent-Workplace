@@ -1,5 +1,5 @@
 {
-  "status": "DAY3_SCOPE_AUTHORIZED_ON_USER_PROVIDED_INSTANCE_WITH_RMB30_LIMIT",
+  "status": "DAY3_COMPLETED_NO_PARAMETER_UPDATES_NO_AUTOMATIC_NEXT_STAGE",
   "Research Question": "Does Qwen3-8B show repeatable, grounded multi-step successes and policy failures on state-changing development tasks under a fixed budget?",
   "Hypothesis": "At least four of twenty nonempty-reference tasks succeed and at least four fail, with grounded multi-step success and repeatable policy-attributable failures",
   "Independent Variable": "B0 fixed policy; an optional B1 changes only general task/tool instructions after review",
@@ -10,7 +10,8 @@
   "Failure Branch": "Retain invalid runs, diagnose interface versus policy versus task issues, report branch to user; do not automatically enlarge model/context/seeds or train",
   "model_id": "Qwen/Qwen3-8B",
   "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
-  "model_weights_present": false,
+  "local_model_weights_present": false,
+  "remote_model_weights_verified": true,
   "serving_plan": {
     "provider": "AutoDL",
     "candidate_gpu": "1x RTX 4090 24GB",
@@ -23,7 +24,9 @@
     "transformers_version": "4.56.2",
     "attention_implementation": "sdpa",
     "vllm_version": null,
-    "gpu_fit_measured": false,
+    "gpu_fit_measured": true,
+    "observed_max_torch_allocated_gib": 17.17368459701538,
+    "observed_max_sampled_gpu_used_gib": 19.7998046875,
     "note": "User instance has torch 2.8.0+cu128; use direct Transformers single-sequence inference to reuse installed stack, without vLLM/Ray"
   },
   "pilot_manifest": "experiments/Q0-SPLIT-20260904-003/pilot_dev24.json",

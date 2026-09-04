@@ -1,0 +1,107 @@
+{
+  "code_commit": "480f39da2f67b46467dbc64d7779902aa07dff6a",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gym_commit": "83b3980b9c04379d72bbf59592d7846630f706bf",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "task_count": 24,
+  "seed_protocol": [
+    42,
+    43
+  ],
+  "sealed_data_included": false,
+  "files": [
+    {
+      "path": "configs/sources.json",
+      "sha256": "6e89739f24c7b7f4ecadad20bc99b9cc4b647c9e39f0e8f7532a35f57fb658dc"
+    },
+    {
+      "path": "configs/tokenizer.json",
+      "sha256": "46bb4709257575c4af0572c574736233b74002fce4d8401ffa495a83cf4209c8"
+    },
+    {
+      "path": "configs/model_qualification_plan.json",
+      "sha256": "e81323a2e8697cb8a82b2f8217a7911eea749a9b4ffe149bbef2e0b805525565"
+    },
+    {
+      "path": "veriagent/__init__.py",
+      "sha256": "a9991fa4705bb728df1394a8e9594eb845524cbc517f6aef642a79aab9f99d97"
+    },
+    {
+      "path": "veriagent/environment.py",
+      "sha256": "a7b4cbf2cd2e654654da20270a50a68da0ab7d5d619f05bd1d6a3db728de5aa2"
+    },
+    {
+      "path": "veriagent/policy_protocol.py",
+      "sha256": "c91a9bff787e1b4871e752f82ca54c0f5e948a821048fe0ca648cd9ef453c5f3"
+    },
+    {
+      "path": "scripts/run_day3.py",
+      "sha256": "6021b4f2bd0e753edcd914583d39f196b3e46d278e1b82de7c83720284a03051"
+    },
+    {
+      "path": "scripts/gpu_preflight.py",
+      "sha256": "c96a477db7a0093ef03ecf8f748d9133e4865f8623d590c9eaaca18fa159d132"
+    },
+    {
+      "path": "scripts/verify_model_integrity.py",
+      "sha256": "870edbbc7b0d1acc172a53e77c0fcac15938b3279ee9a646f6b75cd9d22eab8f"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/utils.py",
+      "sha256": "3d0f578251c25226a006c45ea2988eed61de45d8858a5eed79cc74ac63dce5d6"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/analytics.py",
+      "sha256": "96fc35e61ceed6dc323485960cdf644ec8c7390421bb65eadab86b28a6a919e0"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/calendar.py",
+      "sha256": "88016c51f7fcecc98897c1a4060bece2ee3804d60b5f85a80f85869303088fef"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/company_directory.py",
+      "sha256": "7d5f3bbe1b2e6d6f41d1b8a06db0bc1c4eaacb423915b44e058af15fcd09c7dd"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/customer_relationship_manager.py",
+      "sha256": "1db9d57324ce097aeb41cbdde06655442de0a34138293e90bdfeca6ae44a2b2c"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/email.py",
+      "sha256": "2c710f6cc5d6d7d3b2830b4567dec8ab34bb04b2249765152bc41f2864a64ac5"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/project_management.py",
+      "sha256": "1eccec5636e01dee6fcda583dbb6189b3a998c3f5572c2038194ac223995dbc9"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/analytics_data.csv",
+      "sha256": "4a0df10aabc07980f1cc074dc9ab36406ce98dead7e14fe11f72a9f1ba788688"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/calendar_events.csv",
+      "sha256": "6c9df1872d54d0b0d068d1b066766a8ddbc29c3933f1d56c9efd554926312295"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/customer_relationship_manager_data.csv",
+      "sha256": "599057e4eec3a7c25ac04b4d655ea2c034b7b7782205dc367a28122756e04c41"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/emails.csv",
+      "sha256": "1809e341a0e4f1fd78cf1b759964a42abd28db8c9b9dca364456efc31f82bb31"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/project_tasks.csv",
+      "sha256": "fa0c05d5609f49e905342bd12592b09f23eff6147dcf607b808703f45ddbeaeb"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/email_addresses.csv",
+      "sha256": "1f3465b92eb41b90a973a9b00f35757a23d16839652b5e352e9d217d8e404b0b"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/events.csv",
+      "sha256": "04ba8c0dddd619bce9683dd3f2565dc0f83ef7ebc07699b62391171df497b548"
+    }
+  ],
+  "dev_data_sha256": "ce5fea88c6bcb1d026d533c7e25b08f41bd5ea70e5ac14b1458c64726ff87278"
+}

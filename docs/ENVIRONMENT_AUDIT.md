@@ -1,5 +1,7 @@
 # Q0 CPU 环境审计（2026-09-04）
 
+历史阶段说明：本页记录 GPU 前的 CPU 审计。后续用户授权的 Day 3 已完成，最新结论见 [DAY3_REPORT.md](DAY3_REPORT.md) 和 PROJECT_STATE.md；不要把本页历史授权状态当作当前状态。
+
 结论：官方工具核心可在本地 CPU 运行；数据、状态和 tokenizer 准备已完成。严格 tool-combination held-out 尚未获得资格，GPU 阶段不放行。没有运行 LLM，也没有更新参数。
 
 ## 版本与来源

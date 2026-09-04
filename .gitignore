@@ -9,5 +9,15 @@ __pycache__/
 build/
 dist/
 *.part
+models/
+checkpoints/
+*.safetensors
+.env
+.env.*
+!.env.example
+.ssh/
+*.pem
+*.key
 *.log
-
+!evidence/day3/remote/logs/*.log
+!evidence/day3/remote/remote_logs/*.log

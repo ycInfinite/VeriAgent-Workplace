@@ -1,0 +1,26 @@
+{
+  "verified_after_runs_at_utc": "2026-09-04T05:24:46.084153+00:00",
+  "all_match": true,
+  "files": [
+    {
+      "file": "tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "matches_pinned_config": true
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "matches_pinned_config": true
+    },
+    {
+      "file": "config.json",
+      "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "matches_pinned_config": true
+    },
+    {
+      "file": "generation_config.json",
+      "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+      "matches_pinned_config": true
+    }
+  ]
+}

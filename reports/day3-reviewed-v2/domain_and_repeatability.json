@@ -1,0 +1,73 @@
+{
+  "identical_action_observation_task_ids_across_B0_seeds": [
+    205,
+    510,
+    184,
+    356,
+    414,
+    669,
+    1,
+    0,
+    314,
+    1219,
+    220,
+    1112,
+    918,
+    561,
+    1063,
+    156,
+    952,
+    122,
+    709,
+    12,
+    385
+  ],
+  "directory_tool_calls_B0": 0,
+  "directory_tool_calls_B1": 0,
+  "domains": {
+    "B0_all": {
+      "workplace_assistant_analytics": {
+        "state_changing_n": 8,
+        "successes": 2
+      },
+      "workplace_assistant_calendar": {
+        "state_changing_n": 8,
+        "successes": 1
+      },
+      "workplace_assistant_customer_relationship_manager": {
+        "state_changing_n": 8,
+        "successes": 0
+      },
+      "workplace_assistant_email": {
+        "state_changing_n": 8,
+        "successes": 2
+      },
+      "workplace_assistant_project_management": {
+        "state_changing_n": 8,
+        "successes": 0
+      }
+    },
+    "B1": {
+      "workplace_assistant_analytics": {
+        "state_changing_n": 4,
+        "successes": 1
+      },
+      "workplace_assistant_calendar": {
+        "state_changing_n": 4,
+        "successes": 2
+      },
+      "workplace_assistant_customer_relationship_manager": {
+        "state_changing_n": 4,
+        "successes": 0
+      },
+      "workplace_assistant_email": {
+        "state_changing_n": 4,
+        "successes": 2
+      },
+      "workplace_assistant_project_management": {
+        "state_changing_n": 4,
+        "successes": 0
+      }
+    }
+  }
+}

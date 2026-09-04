@@ -1,5 +1,34 @@
 # Project state
 
+## Current: Day 3 completed (2026-09-04)
+
+All model jobs finished; 75 real-model trajectories were downloaded and hash-verified. AutoDL shutdown command succeeded and SSH was closed by the remote host. No parameter updates; no automatic next stage.
+
+- Model: Qwen/Qwen3-8B b968826d9c46dd6066d109eabc6255188de91218; official Gym core 83b3980b9c04379d72bbf59592d7846630f706bf.
+- GPU-run code commit: cb4067c3e0dd21723d5664e7ccd27cdd3120c51e. Later changes are offline analysis/metadata improvements, not reruns.
+- Q0-SMOKE-20260904-001: 3 valid rollouts, 1 success.
+- Q0-B0-20260904-001: 48/48 valid, 11/48 success; state-changing stratum 5/40; seeds 42/43.
+- Q0-B1-20260904-001: 24/24 valid, 8/24 success; state-changing stratum 5/20; seed 42.
+- Paired B1 vs B0 seed 42: 8/24 vs 5/24, three improvements (0,1,18), no regressions. All gains are recoveries after an initial error.
+- All 75 have online/replay agreement; weight hashes and unchanged parameter samples verified; trainable parameter count=0.
+- Allocated peak 17.17 GiB; sampled GPU used peak 19.80 GiB. Managed-session cost estimate ~RMB 1.73 at user-confirmed RMB 1.98/hour; model-run part ~RMB 0.31, included in that total.
+
+Authoritative report: docs/DAY3_REPORT.md. Semantic labels: reports/day3-reviewed-v2 (Codex review, not independently human-adjudicated). Caveats: evidence/day3/metadata_notes.json. Raw results unchanged.
+
+Delivery Git status: final staging/commit attempts timed out twice in automatic permission review before process creation. The new evidence/reports are saved in the working directory but not committed. GPU-run source commit remains correctly recorded; do not claim a final delivery commit exists.
+
+Hardware/real-tool execution passed for this inference configuration. B0 failed the minimum unique successful state-changing task count (3 versus 4). B1 is a conditional candidate (5 successes/15 failures in one seed); CRM/Project Management state-changing tasks remain all failures. B1 repeatability is not established by a second seed.
+
+Current split remains Q0-SPLIT-20260904-003: training 743; dev 85; checkpoint validation 93; composition reserve UNQUALIFIED 181; quarantined train relatives 153; filtered sealed final 540; quarantined exposed relatives 5. No final/BFCL evaluation. Semantic leakage freedom is not proven.
+
+All Day 3 trajectories and the real preference learning pair are DEV data, not training eligible. A verified no-op can still use bad grounding. B0/B1 system prompts differ and must not silently become a common-prompt preference pair.
+
+Training gate added: canonical role-only targets include four forced non-thinking prefill tokens that were inputs during generation. Align actual trainer labels and per-turn conditioning before SFT/DPO. No CE/LoRA update/save-reload/online RL claims are established.
+
+Next: read docs/learning/04-day3-real-trajectories.md and submit its five answers (assessment still pending, score/pass null), then decide baseline prompt, weak-domain training-data source and composition protocol. New runs/training require a new instruction and the RMB 30 rule.
+
+## Historical CPU/preflight snapshot (superseded by the current state above)
+
 Updated: 2026-09-04. Stage: CPU preparation/audit completed; learning handoff prepared; waiting for learner answers and a research-scope decision.
 
 GPU rental/model weights/training: NOT AUTHORIZED. No LLM has run. All current trajectories are scripted CPU evidence, excluded from post-training eligibility.

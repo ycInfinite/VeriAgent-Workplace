@@ -1,0 +1,33 @@
+{
+  "base_run": "Q0-B0-20260904-001",
+  "decision": "TRIGGER_PREREGISTERED_B1",
+  "criteria": {
+    "valid_rollouts_at_least_46": true,
+    "nonempty_reference_success_below_80pct": true,
+    "no_infrastructure_invalid_runs": true
+  },
+  "reviewed_policy_failure_evidence": [
+    {
+      "task_id": 0,
+      "seed": 42,
+      "evidence": "email_reply_email(email_id=last_email_id) before lookup; Email not found; stops"
+    },
+    {
+      "task_id": 1,
+      "seed": 42,
+      "evidence": "Searches desired new event name instead of locating current last event; stops after no match"
+    },
+    {
+      "task_id": 184,
+      "seed": 42,
+      "evidence": "Uses person name Quinn Taylor as customer_id; Customer not found; stops"
+    }
+  ],
+  "prompt_changed_after_observing_results": false,
+  "b1_tasks": 24,
+  "b1_seed": 42,
+  "comparison": "paired B0 seed 42",
+  "price_rmb_per_hour": 1.98,
+  "wall_limit_seconds": 2400,
+  "parameter_updates": false
+}

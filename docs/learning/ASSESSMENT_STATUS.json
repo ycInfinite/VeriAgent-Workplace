@@ -2,7 +2,9 @@
   "status": "awaiting_learning_and_user_answers",
   "score": null,
   "passed": null,
-  "current_section": "A",
+  "current_section": "Day3 mechanism questions (or CPU A if foundational review is needed)",
+  "day3_model_experiments_completed": true,
+  "next_material": "docs/learning/04-day3-real-trajectories.md",
   "assessment_version": "2026-09-04",
   "gpu_authorized": false
 }

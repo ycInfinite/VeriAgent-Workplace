@@ -1,0 +1,67 @@
+{
+  "same_initial_template_hash_as_cpu_inspector": 24,
+  "checked_initial_templates": 24,
+  "B1_only_initial_system_addition_verified": true,
+  "same_weight_sample_fingerprint_across_all_three_runs": true,
+  "all_trainable_parameter_counts_zero": true,
+  "all_75_rollouts_within_generation_caps": true,
+  "context_rejections": [
+    {
+      "run": "Q0-B0-20260904-001",
+      "task": 669,
+      "seed": 42,
+      "turn": 3,
+      "input_tokens": 8206,
+      "max_context_tokens": 8192
+    },
+    {
+      "run": "Q0-B0-20260904-001",
+      "task": 952,
+      "seed": 42,
+      "turn": 2,
+      "input_tokens": 17890,
+      "max_context_tokens": 8192
+    },
+    {
+      "run": "Q0-B0-20260904-001",
+      "task": 669,
+      "seed": 43,
+      "turn": 3,
+      "input_tokens": 8206,
+      "max_context_tokens": 8192
+    },
+    {
+      "run": "Q0-B0-20260904-001",
+      "task": 952,
+      "seed": 43,
+      "turn": 2,
+      "input_tokens": 17890,
+      "max_context_tokens": 8192
+    },
+    {
+      "run": "Q0-B1-20260904-001",
+      "task": 669,
+      "seed": 42,
+      "turn": 3,
+      "input_tokens": 8268,
+      "max_context_tokens": 8192
+    },
+    {
+      "run": "Q0-B1-20260904-001",
+      "task": 952,
+      "seed": 42,
+      "turn": 2,
+      "input_tokens": 17952,
+      "max_context_tokens": 8192
+    }
+  ],
+  "runtime_packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "accelerate": "1.10.1",
+    "tokenizers": "0.22.2",
+    "pandas": "3.0.3",
+    "numpy": "2.3.2",
+    "jsonschema": "4.25.0"
+  }
+}

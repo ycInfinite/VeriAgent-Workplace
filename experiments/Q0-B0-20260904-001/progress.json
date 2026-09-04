@@ -1,0 +1,38 @@
+{
+  "attempted_rollouts": 48,
+  "valid_rollouts": 48,
+  "infra_invalid_rollouts": 0,
+  "verified_successes": 11,
+  "success_rate": 0.22916666666666666,
+  "strata": {
+    "nonempty_reference": {
+      "n": 40,
+      "successes": 5
+    },
+    "empty_reference": {
+      "n": 8,
+      "successes": 6
+    }
+  },
+  "tool_calls": 91,
+  "parse_error_attempts": 0,
+  "executable_tool_calls": 87,
+  "executable_tool_call_rate": 0.9560439560439561,
+  "unknown_tool_calls": 0,
+  "schema_invalid_calls": 4,
+  "identifier_bearing_calls": 33,
+  "ungrounded_identifier_candidate_calls": 17,
+  "repeated_same_state_call_candidates": 2,
+  "retry_loop_trajectories": 0,
+  "premature_termination_candidates": 33,
+  "termination_counts": {
+    "assistant_final": 44,
+    "context_limit": 4
+  },
+  "input_tokens": 503144,
+  "output_tokens": 6623,
+  "average_tool_steps": 1.8958333333333333,
+  "average_trajectory_seconds": 6.511263402411714,
+  "peak_torch_allocated_gib": 17.161483764648438,
+  "candidate_metrics_require_semantic_review": true
+}
