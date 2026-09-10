@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "bundle_sha256": "d6a58ad1ecc34d67bf22e4b4e48b209ba7b56bd5a30ca7aad06e998a3df8ac38",
+  "archive_members": 31,
+  "verified_hashed_members": 30,
+  "training_tasks": 20,
+  "dev_final_bfcl_tasks": 0,
+  "model_weights_included": false,
+  "credentials_or_ssh_transport_included": false,
+  "collector_input_negative_controls": [
+    "wrong_pool",
+    "tampered_task",
+    "duplicate_task"
+  ],
+  "checks_scope": "Local packaging and fixed task provenance only; GPU collector not executed"
+}
