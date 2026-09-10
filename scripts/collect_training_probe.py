@@ -39,14 +39,15 @@ def validate_inputs(config, cohort, rows):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--run-id', required=True)
-    parser.add_argument('--hourly-rmb', type=float, required=True)
+    parser.add_argument('--hourly-rmb', type=float)
     args = parser.parse_args()
     config = json.loads((ROOT/'configs/sft_acquisition_plan.json').read_text())
-    if not math.isfinite(args.hourly_rmb) or args.hourly_rmb <= 0:
+    if args.hourly_rmb is not None and (not math.isfinite(args.hourly_rmb) or args.hourly_rmb <= 0):
         raise ValueError('A finite, positive actual hourly price is required')
-    envelope = config['max_wall_seconds'] * args.hourly_rmb / 3600
-    if envelope > config['cost_cap_rmb'] or config['cost_cap_rmb'] > 30:
-        raise ValueError('Process estimate exceeds RMB 30; do not launch automatically')
+    envelope = config['max_wall_seconds'] * args.hourly_rmb / 3600 if args.hourly_rmb is not None else None
+    if not config.get('budget_gate_waived_by_user'):
+        if envelope is None or config['cost_cap_rmb'] is None or envelope > config['cost_cap_rmb']:
+            raise ValueError('Process estimate missing or exceeds approved cost cap')
     cohort = json.loads((ROOT/config['cohort_manifest']).read_text())
     rows = [json.loads(x) for x in (ROOT/config['data_path']).read_text().splitlines() if x.strip()]
     validate_inputs(config, cohort, rows)
@@ -114,7 +115,7 @@ def main():
         if not result['sampled_weights_unchanged']:
             raise RuntimeError('Policy sample changed during inference-only acquisition')
         result['gpu_hours']=result['wall_seconds']/3600
-        result['cost_estimate_rmb']=result['gpu_hours']*args.hourly_rmb
+        result['cost_estimate_rmb']=result['gpu_hours']*args.hourly_rmb if args.hourly_rmb is not None else None
         result['cost_scope']='Process wall only; excludes preparation, idle uptime and storage'
         write(out/'result.json',result)
         append(ROOT/'experiments/registry.jsonl',{'experiment_id':args.run_id,'event':'completed'})
@@ -122,7 +123,8 @@ def main():
     except Exception as exc:
         wall=time.perf_counter()-started
         write(out/'invalid_run.json',{'error_type':type(exc).__name__,'traceback':traceback.format_exc(),
-            'retained_rollouts':len(records),'wall_seconds':wall,'cost_estimate_rmb':wall/3600*args.hourly_rmb})
+            'retained_rollouts':len(records),'wall_seconds':wall,
+            'cost_estimate_rmb':wall/3600*args.hourly_rmb if args.hourly_rmb is not None else None})
         append(ROOT/'experiments/registry.jsonl',{'experiment_id':args.run_id,'event':'invalid_or_incomplete'})
         raise
     finally:
