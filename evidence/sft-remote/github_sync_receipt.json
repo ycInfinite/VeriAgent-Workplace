@@ -1,0 +1,119 @@
+{
+  "status": "GITHUB_SYNC_VERIFIED",
+  "repository": "ycInfinite/VeriAgent-Workplace",
+  "git_commit": "bc5aa55c3b97174822893c789b236cf5e43fcaf3",
+  "transport": "Execution host downloads pinned files directly from GitHub",
+  "private_repository": true,
+  "synced_file_count": 20,
+  "changed_files": [
+    "configs/tokenizer.json",
+    "veriagent/policy_protocol.py"
+  ],
+  "account_credential_sent_to_remote": false,
+  "temporary_urls_persisted": false,
+  "dev_or_final_cases_downloaded": false,
+  "weights_or_venv_modified": false,
+  "source_files": [
+    {
+      "path": "configs/sources.json",
+      "sha256": "6e89739f24c7b7f4ecadad20bc99b9cc4b647c9e39f0e8f7532a35f57fb658dc",
+      "git_blob_sha": "f5fdea58306585cd2f6b97cb40e3416492125f9e"
+    },
+    {
+      "path": "configs/tokenizer.json",
+      "sha256": "bc15f350f025c9686071482519498f160f0d2168ff8638c02bdd8bc5c7a1c59a",
+      "git_blob_sha": "dfa75f41d2b233da7cc7de899786cca5ca444035"
+    },
+    {
+      "path": "configs/sft_acquisition_plan.json",
+      "sha256": "43dd7093f468e23aab443690b665a49e902d9cb418ec8662d17bbf2a1bdcc6d6",
+      "git_blob_sha": "cd69156519e1fe2717bf1b50f088b8b0e7c3639c"
+    },
+    {
+      "path": "veriagent/__init__.py",
+      "sha256": "a9991fa4705bb728df1394a8e9594eb845524cbc517f6aef642a79aab9f99d97",
+      "git_blob_sha": "b2d080d87eab79fac765e3548e08dd17705ae6b1"
+    },
+    {
+      "path": "veriagent/environment.py",
+      "sha256": "a7b4cbf2cd2e654654da20270a50a68da0ab7d5d619f05bd1d6a3db728de5aa2",
+      "git_blob_sha": "f8b11ba0d5b6b65b66248784281ac724f3d00458"
+    },
+    {
+      "path": "veriagent/policy_protocol.py",
+      "sha256": "021846099e0ac1622e412fd4ed6127245f0b9b00983de1acc4acca65dc0e9818",
+      "git_blob_sha": "875bc7e54e5095851bea8cec5c268fd03af0444c"
+    },
+    {
+      "path": "veriagent/token_mask.py",
+      "sha256": "4e3c73226eb147b770e43d9112e55aac03ae2255734c0c41641c727da4bd5a06",
+      "git_blob_sha": "ca0f1aa6e6a04d483395010757f2c64817e0bd8b"
+    },
+    {
+      "path": "veriagent/sft_data.py",
+      "sha256": "01148d1c209ef02a35e672b42977e509ea13087134202b01e3efdb8f4ae2fe60",
+      "git_blob_sha": "79ea9bbc5c4b9e51b29e4d5223b81adee39e1e11"
+    },
+    {
+      "path": "scripts/run_day3.py",
+      "sha256": "b6204f780b70d8f6bdda09a878a8b793d7597ef33334282dccdbadeb6d405e90",
+      "git_blob_sha": "b97a14f7f11384fb8c94512e773298b1da607543"
+    },
+    {
+      "path": "scripts/collect_training_probe.py",
+      "sha256": "947404d8d0d99f857fb94097e3f21a86bccefd4bd9e85a0bc9057b802085483a",
+      "git_blob_sha": "270ee4dcc6470548091b5c4c0070067153f25d25"
+    },
+    {
+      "path": "scripts/verify_model_integrity.py",
+      "sha256": "397950f039fb685587071fd82d559bb64d239e5972eeeadb1b251269bb11270e",
+      "git_blob_sha": "075668c1b50120a18b40be1f8f45aadb2c85d778"
+    },
+    {
+      "path": "scripts/prepare_sft_model_files.py",
+      "sha256": "4a61eeb5a59f2784c6c7cadec27f46c8cf9bc185b277cda61143566d0ab7f4aa",
+      "git_blob_sha": "7610546415953db99db1da559775c5a7a443d5a4"
+    },
+    {
+      "path": "scripts/validate_sft_no_card.py",
+      "sha256": "28ce248f416e741ca0992bbf0709515ac73253cbbe2cc1f12d426f04330bcc44",
+      "git_blob_sha": "418cc96096331e02e383f765943a04e260da8bbf"
+    },
+    {
+      "path": "scripts/run_sft_probe.py",
+      "sha256": "7830d567d02d5b99257726703cb4575e0d461f9fea1b4819d46a782142c2b024",
+      "git_blob_sha": "c303b35e81cc29931986710b67159ca6e4e6a9b9"
+    },
+    {
+      "path": "configs/sft_probe_plan.json",
+      "sha256": "9c8b60fc539d66d071b1d714ff962dedf69e4cb1dd25eea8357b85a26ec79db7",
+      "git_blob_sha": "e399cef45bca3fcb5dd8186770d46157e5f393d9"
+    },
+    {
+      "path": "requirements-sft-probe.pinned.txt",
+      "sha256": "3aad62152e489c42314cff0721532139464c9806366a9e720ded369a9519cb93",
+      "git_blob_sha": "446f2fd549537d179284618ebf993b29f63b02c0"
+    },
+    {
+      "path": "scripts/gpu_preflight.py",
+      "sha256": "c96a477db7a0093ef03ecf8f748d9133e4865f8623d590c9eaaca18fa159d132",
+      "git_blob_sha": "dab320fccfe3af0f3a44fbf7c8f5e9aed5ac643e"
+    },
+    {
+      "path": "requirements-day3-remote.pinned.txt",
+      "sha256": "30f418f14dd929c28ff0a6f1b26afe04ad836c0fc1131324d005252ff2153ea7",
+      "git_blob_sha": "a89a81d30646163d5beabeb16b4f8f8f30f3c12c"
+    },
+    {
+      "path": "requirements-sft-acquisition.pinned.txt",
+      "sha256": "f524d45b0b2cc51a082267fd3d5e19e07dd56a0773d3a6340e0a3548eb332136",
+      "git_blob_sha": "f150f63594b8e1e0046fe41b06432a8aa5ba8d91"
+    },
+    {
+      "path": "experiments/SFT-PREP-20260910-001/acquisition_manifest.json",
+      "sha256": "3efb4d9d43a10e167be7b6ce1ca8bcacf062d936f94e3a33e23f690880429951",
+      "git_blob_sha": "083e1ca99438b7b85b03139cae1912bff3066f72"
+    }
+  ],
+  "manifest_sha256": "a800d26ad31cd29052fde901de44ce5ebe9d09af9d126c963ebc385bb3d828e5"
+}

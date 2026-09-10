@@ -1,0 +1,2 @@
+{"kind": "anonymous_git_clone", "status": "failed", "reason": "Private repository; host has no GitHub authentication; terminal prompts disabled", "execution_files_modified": false, "model_run": false}
+{"kind": "fixed_ref_github_file_download", "status": "passed", "files": 20, "commit": "bc5aa55c3b97174822893c789b236cf5e43fcaf3", "account_credential_sent_to_remote": false, "temporary_urls_persisted": false, "model_run": false}

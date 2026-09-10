@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "changes": [
+    {
+      "path": "configs/tokenizer.json",
+      "difference": "CRLF/LF normalization only",
+      "semantic_content_unchanged": true
+    },
+    {
+      "path": "veriagent/policy_protocol.py",
+      "difference": "CRLF/LF normalization only",
+      "semantic_content_unchanged": true
+    }
+  ],
+  "source": "Compare preserved pre-GitHub deployment bundle with exact Git commit blobs"
+}
