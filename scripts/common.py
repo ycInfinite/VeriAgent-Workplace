@@ -49,7 +49,7 @@ class Run:
         identity={'experiment_id':run_id,'started_at':datetime.now(timezone.utc).isoformat(),
                   'code':code_identity(),'sources':SOURCES,'python':platform.python_version(),
                   'policy_model':None,'seed':config.get('seed'), 'gpu_hours':0,'paid_cost_rmb':0,
-                  'kind':'CPU_ENVIRONMENT_AUDIT_NOT_MODEL_EVAL'}
+                  'kind':config.get('experiment_kind','CPU_ENVIRONMENT_AUDIT_NOT_MODEL_EVAL')}
         write_json(self.path/'identity.json',identity)
         registry({'experiment_id':run_id,'event':'started','identity':identity})
 

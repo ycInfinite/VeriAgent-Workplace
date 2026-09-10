@@ -3,7 +3,7 @@
 Read docs/PROJECT_CONTRACT.md and docs/PROJECT_STATE.md before work.
 
 - Learning LLM Agent post-training is the first priority. Keep infrastructure minimal.
-- The user authorized Day 3 end-to-end on the provided personal AutoDL SSH instance on 2026-09-04: remote setup, fixed model download, smoke, B0 (24 tasks x 2 seeds), and conditionally preregistered B1 (24 tasks). The RMB 30 per-experiment approval rule still applies. No parameter updates, later training or expanded GPU rental is authorized.
+- Day 3 authorization on 2026-09-04 covered inference only and is historically complete. On 2026-09-10 the user explicitly requested direct experiment progress toward SFT with coarse teaching. Proceed with local data/encoding/runner preparation and make the next bounded SFT probe concrete. Learning quizzes are not execution gates. GPU execution requires an available user-provided single-GPU instance, its actual price, eligible training data, passed integrity gates and a preregistered bounded run; do not automatically rent or start an instance. Keep the RMB 30 rule and do not infer authorization for a full S1/S2 sweep, DPO or online RL from this first-probe request.
 - No single experiment expected to cost over RMB 30 without explicit approval. No automatic multigpu, larger models, longer contexts, sweeps or many seeds.
 - Preserve the old tau2 project; do not access or modify it for this project.
 - Never use company code, data, credentials, prompts, tools, cases or conclusions. Public official sources only.
