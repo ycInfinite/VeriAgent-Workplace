@@ -1,5 +1,11 @@
 # 单卡训练可行性：事实、估算与缺失证据
 
+2026-09-10 远端准备已完成：实际 Torch2.8.0+cu128/Transformers4.56.2/PEFT0.17.1/Accelerate1.10.1 导入成功，固定权重/辅助文件已校验；`run_sft_probe.py` 与8步配置已部署。当前无卡，没有模型加载、GPU forward/backward、训练显存或重载证据。详见 SFT_NO_CARD_HANDOFF.md；金额门槛已被用户覆盖，单卡与数据/完整性门槛保持。
+
+2026-09-10 工程进展：逐轮真实输入/生成 IDs 的 CPU 编码审计已通过 200/200，固定 prefill 不作为 policy target；训练准入阻止 dev/错误来源/未审查数据。仅解决编码准备层，真实 Transformers trainer CE/LoRA update/reload 仍待 probe。下一轮先采集固定 20 条 training-pool rollout，详见 SFT_PREPARATION_REPORT.md。
+
+2026-09-10：新增 [第一次 LoRA SFT 学习课](learning/05-first-lora-sft.md)，包含未执行的 PEFT、batch、update 和 save/reload 示例。它用于理解下列训练门槛，不表示 trainer 已实现、版本组合已验证或 cost probe 已获批。
+
 更新：Day 3 已加载模型做纯推理，实测单张 4090 的 Torch allocated 峰值约 17.17 GiB、nvidia-smi 采样 used 峰值约 19.80 GiB。以下训练显存/速度仍是估算，尚无参数更新；不能由推理显存推出训练显存。
 
 优先链路：官方 Workplace 工具/状态/verifier → 可审计轨迹 → Transformers/PEFT，按需要使用 TRL。rollout serving 可以独立，避免把 Gym/BFCL/训练的依赖装进同一个环境。暂不引入 NeMo RL/verl/分布式训练作为主线。

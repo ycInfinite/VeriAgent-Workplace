@@ -1,10 +1,21 @@
 {
-  "status": "awaiting_learning_and_user_answers",
+  "status": "sft_learning_in_progress_ungraded",
   "score": null,
   "passed": null,
-  "current_section": "Day3 mechanism questions (or CPU A if foundational review is needed)",
+  "current_section": "SFT-A: LoRA, forward/backward/optimizer update, parameter-change evidence and save/reload",
+  "pending_question_id": null,
+  "pending_question": null,
+  "superseded_warmup": {
+    "question_id": "LEARNING-20260910-Q1",
+    "topic": "Deleting masked tokens versus retaining them as context",
+    "reason": "User reports pre-Day3 material mostly understood and requests SFT learning; no answer graded"
+  },
+  "learner_self_report": "Material before Day 3 is mostly understood; this is not an assessed pass",
   "day3_model_experiments_completed": true,
-  "next_material": "docs/learning/04-day3-real-trajectories.md",
-  "assessment_version": "2026-09-04",
-  "gpu_authorized": false
+  "next_material": "docs/learning/05-first-lora-sft.md",
+  "learning_mode": "Phone/GPT only: source excerpts, trajectories and token evidence embedded in one Markdown file",
+  "assessment_version": "2026-09-10-SFT-learning",
+  "gpu_execution_status": "no_card_preparation_complete_waiting_for_gpu_mode; monetary gate waived by user",
+  "delivery_preference": "Experiment-first with coarse teaching; assessment is not an execution gate",
+  "execution_authorization_source": "See PROJECT_CONTRACT latest 2026-09-10 instruction; this assessment file does not determine GPU approval"
 }

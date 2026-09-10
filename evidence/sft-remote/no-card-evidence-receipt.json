@@ -1,0 +1,98 @@
+{
+  "archive": "no-card-evidence.tar.gz",
+  "sha256": "9814b5a13147f1fb7972abb3b49c3d32d9f2bd4e34ad05e87d3815764ddb80d3",
+  "bytes": 7345,
+  "files": [
+    {
+      "path": "model_integrity.json",
+      "sha256": "3e5df5511af2ead55bf47d898343cb9da721fbc6397cb5268a658352b10d86ce",
+      "bytes": 1992
+    },
+    {
+      "path": "model_aux_integrity.json",
+      "sha256": "77820b877b98693940e5df9a426758894f16f82f05238ba350f464a51ef176b9",
+      "bytes": 731
+    },
+    {
+      "path": "bundle_manifest.json",
+      "sha256": "44f34d5c14db7b8ee11c02ce86f5488152b2537ebea4be7d2c863931fb223940",
+      "bytes": 6389
+    },
+    {
+      "path": "logs/cpu_validation.log",
+      "sha256": "b137f0310362ef71bf00edfac19605d23f3d2d8df0e670669d1697b21e908844",
+      "bytes": 742
+    },
+    {
+      "path": "logs/current_stage.txt",
+      "sha256": "d3be030801b90ea8057d3997d9845c7f850cc7b784450645d5ec2811cc927d7a",
+      "bytes": 10
+    },
+    {
+      "path": "logs/host_preflight.json",
+      "sha256": "e851366128a0812f021b81170881326b7c2cf5490262d4b32a80535a4eab45d3",
+      "bytes": 663
+    },
+    {
+      "path": "logs/install.log",
+      "sha256": "ec3fcec632ee179e5895668ca41b3a40ebbe5315cdd26cc20b61d6596e17b95e",
+      "bytes": 12389
+    },
+    {
+      "path": "logs/model_download.log",
+      "sha256": "749c64af3e75d2f629548e590f309b624c677cab0d4945c1f7532b71eeedc340",
+      "bytes": 290
+    },
+    {
+      "path": "logs/no_card_validation.json",
+      "sha256": "b6c37a2fc499ce440d6b8d39287dc4675caf5d673604d5390ddd9d97c9ba0d2b",
+      "bytes": 835
+    },
+    {
+      "path": "logs/peft_install.log",
+      "sha256": "257ef3d859cec2062ae6b2a4076369ba0761ab8e2696893e920b5151b0e8c475",
+      "bytes": 9961
+    },
+    {
+      "path": "logs/preparation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "logs/preparation_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "logs/preparation_launch.json",
+      "sha256": "6a56d7d27be817e8ffdb95afcdfba280f2f922b5afdc3121db62c8dfeeedb869",
+      "bytes": 117
+    },
+    {
+      "path": "logs/training_import_check.json",
+      "sha256": "291e4fa73f465fcde0d3a5a2203fde44eb5b84d9962aebd0d6a3427ac36c77b2",
+      "bytes": 357
+    },
+    {
+      "path": "logs/upload_verification-4e5f9102.json",
+      "sha256": "814cf518cc5d33d07fb269317a9260f933e5fa13152fab189865059d93a0a713",
+      "bytes": 195
+    },
+    {
+      "path": "logs/upload_verification.json",
+      "sha256": "4dfb5239d17fcdb4ed5278f8c39984a3e074fcf02edd56e1e395a52e94fd0903",
+      "bytes": 219
+    },
+    {
+      "path": "logs/weight_integrity.log",
+      "sha256": "1c2688193fc5165afbe0513f5344b6d857483e7a623ca227756f490d31a7f2c2",
+      "bytes": 61
+    }
+  ],
+  "mode": "no_card",
+  "model_loaded": false,
+  "parameter_updates": 0,
+  "hourly_price_rmb": null,
+  "cost_estimate_rmb": null,
+  "price_note": "User waived monetary gate; no actual price or invoice available"
+}

@@ -1,0 +1,2 @@
+{"event": "download_started", "revision": "b968826d9c46dd6066d109eabc6255188de91218", "model_loaded": false, "time_utc": "2026-09-10T01:32:21.802947+00:00"}
+{"event": "download_finished", "auxiliary_files_verified": 4, "model_loaded": false, "time_utc": "2026-09-10T01:39:32.723325+00:00"}

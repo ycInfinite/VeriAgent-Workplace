@@ -1,0 +1,34 @@
+{
+  "status": "NO_CARD_READY_FOR_USER_GPU_MODE",
+  "remote_workspace": "/root/autodl-tmp/veriagent-workplace-sft-20260910",
+  "code_commit": "4e5f9102aadf01eb35d6f852e496e466442a75d3",
+  "weights_files": 5,
+  "weights_bytes": 16381516776,
+  "weight_hashes_verified": true,
+  "tokenizer_and_config_hashes_verified": true,
+  "training_tasks": 20,
+  "actual_prompt_and_token_matches": 20,
+  "scripted_tool_smoke_passed": true,
+  "training_packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "cuda_initialized": false,
+  "model_loaded": false,
+  "parameter_updates": 0,
+  "training_probe_steps_prepared": 8,
+  "acquisition_rollouts_prepared": 20,
+  "hourly_rmb": null,
+  "cost_estimate_rmb": null,
+  "budget_gate_waived_by_user": true,
+  "gpu_mode_switch_performed": false,
+  "evidence_archive_sha256": "9814b5a13147f1fb7972abb3b49c3d32d9f2bd4e34ad05e87d3815764ddb80d3",
+  "checks_not_established": [
+    "GPU hardware/model-load compatibility",
+    "quality-approved training trajectories",
+    "SFT loss/backward/update/reload runtime",
+    "Agent success after training"
+  ]
+}

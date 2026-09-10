@@ -1,0 +1,30 @@
+{
+  "status": "NO_CARD_PREPARATION_CHECKS_PASSED",
+  "model_loaded": false,
+  "parameter_updates": 0,
+  "actual_transformers_prompt_matches": 20,
+  "actual_token_id_matches": 20,
+  "initial_tokens_min": 4177,
+  "initial_tokens_max": 4204,
+  "scripted_tool_smoke": {
+    "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:565",
+    "reward": 1.0,
+    "state_changed": true,
+    "reset_equal": true,
+    "producer": "SCRIPTED_CPU_NOT_POLICY_TRAINING_DATA"
+  },
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "tokenizers": "0.22.2",
+    "pandas": "3.0.3",
+    "numpy": "2.3.2",
+    "huggingface-hub": "0.36.2",
+    "jinja2": "3.1.6"
+  },
+  "limitations": [
+    "No GPU compatibility or real model load tested",
+    "No model trajectory collected",
+    "No SFT trainer/CE/update/reload tested"
+  ]
+}

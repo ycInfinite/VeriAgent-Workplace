@@ -1,0 +1,11 @@
+{
+  "status": "PUSH_NOT_EXECUTED_AUTOMATIC_REVIEW_REQUIRES_EXPLICIT_DISCLOSURE_APPROVAL",
+  "destination": "https://github.com/ycInfinite/VeriAgent-Workplace.git",
+  "process_created_for_rejected_command": false,
+  "push_executed": false,
+  "review_reason_summary": "The automatic reviewer considered a repository URL insufficient authorization for bulk external publication of experiment records/metadata and requested explicit approval of that disclosure scope.",
+  "pre_push_checks": {"files_checked": 214, "credential_pattern_findings": 0, "model_weights_excluded": true},
+  "scope_requiring_clarification": "Current project code, learning documents and public-environment experiment/preparation evidence; no model weights, caches or credentials",
+  "unaffected_work_completed": "Remote no-card setup, file integrity checks, CPU validation and local evidence preservation",
+  "gpu_progress_blocked_by_publication": false
+}

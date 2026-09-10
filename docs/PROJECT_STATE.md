@@ -1,5 +1,31 @@
 # Project state
 
+## Latest: no-card remote preparation completed (2026-09-10)
+
+Publication pending: automatic permission review rejected the GitHub push before command execution, requesting explicit authorization for external disclosure of this experiment/metadata batch. No push occurred; local preservation proceeds. See evidence/sft-remote/git_publication_status.json. Do not bypass the rejection; GPU experiments can proceed independently once the user enables GPU mode.
+
+User supplied a new personal AutoDL no-card host and waived monetary gating for current SFT progression. All fixed model files (5 shards, 16,381,516,776 bytes) and four tokenizer/config artifacts verified. Independent venv uses Torch 2.8.0+cu128, Transformers4.56.2, PEFT0.17.1; imports passed without initializing CUDA or constructing a model. Training20 actual Transformers prompt/token checks and a scripted training-task tool/reset smoke passed. Final deployed code 4e5f9102aadf01eb35d6f852e496e466442a75d3; evidence in evidence/sft-remote. Details: docs/SFT_NO_CARD_HANDOFF.md.
+
+Remaining external step is user switching the prepared instance to GPU mode; do not ask again for monetary approval or a mandatory price. Then verify one 80GB-class GPU, collect fixed training20, explicitly review quality, and execute the prepared eight-update LoRA integrity probe if its data gates pass. Price/cost remain null when unavailable. No new model trajectories or updates have occurred yet; no automatic S1/S2/DPO/RL expansion. Older price/approval statements below are historical and overridden for this current scope.
+
+## Current experiment progress: SFT data preparation (2026-09-10)
+
+User explicitly requested experiment progress with coarse teaching. CPU experiment SFT-PREP-20260910-001 passed: 75 existing trajectories / 200 generations reconstructed; 200 prompt hashes and exact generated targets matched; fixed prefill stays masked in the input; all 75 dev trajectories rejected from training; 7 negative controls passed. No parameters updated. Fixed 20 training_candidate tasks (4 per domain), all initial prompts 4177–4204 tokens. Acquisition bundle dist/sft-acquisition-537b1876.tar.gz is ready and validated. See docs/SFT_PREPARATION_REPORT.md.
+
+Next execution: user-provided single A800/A100 80GB instance and actual price → fixed B1-candidate training-only collection (20 tasks, seed42, 1800-second process bound, <=RMB30) → explicit success/grounding/target-scope review → eligible data export → first bounded LoRA integrity/cost probe. No new model rollout, approved training corpus or SFT trainer execution yet. Do not ask the learner to complete fine-grained quizzes before progressing. Historical Q0 limitations remain; this preparation does not establish formal B1/composition qualification.
+
+The following learning/Day 3 entries are retained context, superseded where the current execution direction above differs.
+
+Learning correction (2026-09-10): the user reports the material before Day 3 is mostly understood and wants to move into SFT. The earlier context/mask warm-up question is superseded, not a blocker and not graded as passed. Current learning is SFT-A: LoRA structure, forward/backward/optimizer update, parameter-change evidence and save/reload. The new self-contained lesson is docs/learning/05-first-lora-sft.md; code is educational and unexecuted. No parameter update or new GPU execution is inferred from this learning request.
+
+Latest competition steering (2026-09-08): the user targets internship applications from December, is already working on ARC-AGI-3, and prefers waiting for Milestone 2 publication before further focused work. Do not treat BDCI as their selected contest. Official rules require milestone prize candidates to open-source notebooks by the milestone deadline; Milestone 1 winner methods were published in the July 6 official article. Waiting for Milestone 2 open solutions is a plausible interpretation, not a user-confirmed detail. No new experiment authorization.
+
+Competition scouting (2026-09-08): public-source screening is saved in docs/learning/2026-09-08-agent-competition-shortlist.md. CCF BDCI CareerSim is the leading domestic candidate; AWS Agents for Humans is an international application candidate. Final-result dates, entry deadlines, and participant-count units are distinguished. No registration, external message, experiment, training, or research-stage transition occurred.
+
+Learning update (2026-09-08): the user returned after a three-day gap and requested a consolidated learning file. docs/learning/2026-09-08-return-to-project.md integrates lessons 1–4, Day 3 evidence, code walkthroughs and staged assessment. No new model experiments, remote connections or parameter updates. Assessment remains ungraded; start with the new A1–A5. The research state below is unchanged.
+
+Learning delivery preference: the user studies with GPT on a phone at night without opening the laptop. The same learning file now embeds 21 source excerpts with explanations, task 0/task 18 evidence and real token/label rows. Both mechanism and code-tracing questions can be answered from that single document. Source code is distinguished from unexecuted teaching examples; no learner answers have been graded.
+
 ## Current: Day 3 completed (2026-09-04)
 
 All model jobs finished; 75 real-model trajectories were downloaded and hash-verified. AutoDL shutdown command succeeded and SSH was closed by the remote host. No parameter updates; no automatic next stage.
@@ -25,7 +51,7 @@ All Day 3 trajectories and the real preference learning pair are DEV data, not t
 
 Training gate added: canonical role-only targets include four forced non-thinking prefill tokens that were inputs during generation. Align actual trainer labels and per-turn conditioning before SFT/DPO. No CE/LoRA update/save-reload/online RL claims are established.
 
-Next: read docs/learning/04-day3-real-trajectories.md and submit its five answers (assessment still pending, score/pass null), then decide baseline prompt, weak-domain training-data source and composition protocol. New runs/training require a new instruction and the RMB 30 rule.
+Next learning: docs/learning/05-first-lora-sft.md, starting with LoRA and the full update sequence. Old A/B/C assessment remains ungraded and does not block the user's requested learning progression. Next engineering decisions remain baseline prompt, weak-domain training-data source, composition protocol and actual trainer alignment; new paid runs/parameter updates still require authorization and the RMB 30 rule.
 
 ## Historical CPU/preflight snapshot (superseded by the current state above)
 

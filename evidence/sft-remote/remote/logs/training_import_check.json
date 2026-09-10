@@ -1,0 +1,15 @@
+{
+  "status": "TRAINING_IMPORTS_ONLY_PASSED",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "model_instantiated": false,
+  "parameter_updates": 0,
+  "cuda_initialized": false,
+  "files_verified": 35,
+  "disk_free_gib": 34.49,
+  "/sys/fs/cgroup/memory.current": 1957179392
+}

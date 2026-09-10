@@ -1,0 +1,6 @@
+{"attempt": "host_inventory_1", "status": "command_not_found", "exit_code": 127, "cause": "Non-login SSH command did not have python on PATH", "model_run": false}
+{"attempt": "host_inventory_2", "status": "command_not_found", "exit_code": 127, "cause": "System /usr/bin/python3 absent; actual runtime is /root/miniconda3/bin/python", "model_run": false}
+{"attempt": "host_inventory_3", "status": "inventory_exception", "exit_code": 1, "cause": "nvidia-smi permission denied in user-selected no-card mode; handled as unavailable GPU rather than bypassed", "model_run": false}
+{"attempt": "host_inventory_4", "status": "completed", "cause": "Explicit existing Python runtime and handled no-card GPU-query restriction", "evidence": "host_preflight.json", "model_run": false}
+{"attempt": "packaging_verifier_config_review", "status": "corrected_before_remote_execution", "cause": "Legacy verifier default referenced Day3-only config; added explicit --config and model_id for SFT plan", "model_run": false}
+{"attempt": "sft_training_admission_checks", "status": "passed", "checks": ["empty corpus rejected", "dev trajectory rejected"], "model_loaded": false, "parameter_updates": 0}

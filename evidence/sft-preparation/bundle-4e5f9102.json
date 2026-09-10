@@ -1,0 +1,162 @@
+{
+  "bundle": "dist\\sft-acquisition-4e5f9102.tar.gz",
+  "bytes": 88481,
+  "sha256": "517db248550dcea9a7ee9bbfa5871fc7d0aa27fbe77456cb8b86d2187afd0e0e",
+  "manifest": {
+    "code_commit": "4e5f9102aadf01eb35d6f852e496e466442a75d3",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "gym_commit": "83b3980b9c04379d72bbf59592d7846630f706bf",
+    "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+    "purpose": "TRAINING_POOL_REAL_POLICY_ACQUISITION_NOT_PARAMETER_UPDATE",
+    "task_count": 20,
+    "source_pool": "training_candidate",
+    "seed": 42,
+    "contains_dev_tasks": false,
+    "contains_final_tasks": false,
+    "contains_bfcl_cases": false,
+    "contains_model_weights": false,
+    "contains_credentials": false,
+    "files": [
+      {
+        "path": "configs/sources.json",
+        "sha256": "6e89739f24c7b7f4ecadad20bc99b9cc4b647c9e39f0e8f7532a35f57fb658dc"
+      },
+      {
+        "path": "configs/tokenizer.json",
+        "sha256": "46bb4709257575c4af0572c574736233b74002fce4d8401ffa495a83cf4209c8"
+      },
+      {
+        "path": "configs/sft_acquisition_plan.json",
+        "sha256": "43dd7093f468e23aab443690b665a49e902d9cb418ec8662d17bbf2a1bdcc6d6"
+      },
+      {
+        "path": "veriagent/__init__.py",
+        "sha256": "a9991fa4705bb728df1394a8e9594eb845524cbc517f6aef642a79aab9f99d97"
+      },
+      {
+        "path": "veriagent/environment.py",
+        "sha256": "a7b4cbf2cd2e654654da20270a50a68da0ab7d5d619f05bd1d6a3db728de5aa2"
+      },
+      {
+        "path": "veriagent/policy_protocol.py",
+        "sha256": "c91a9bff787e1b4871e752f82ca54c0f5e948a821048fe0ca648cd9ef453c5f3"
+      },
+      {
+        "path": "veriagent/token_mask.py",
+        "sha256": "4e3c73226eb147b770e43d9112e55aac03ae2255734c0c41641c727da4bd5a06"
+      },
+      {
+        "path": "veriagent/sft_data.py",
+        "sha256": "01148d1c209ef02a35e672b42977e509ea13087134202b01e3efdb8f4ae2fe60"
+      },
+      {
+        "path": "scripts/run_day3.py",
+        "sha256": "b6204f780b70d8f6bdda09a878a8b793d7597ef33334282dccdbadeb6d405e90"
+      },
+      {
+        "path": "scripts/collect_training_probe.py",
+        "sha256": "947404d8d0d99f857fb94097e3f21a86bccefd4bd9e85a0bc9057b802085483a"
+      },
+      {
+        "path": "scripts/verify_model_integrity.py",
+        "sha256": "397950f039fb685587071fd82d559bb64d239e5972eeeadb1b251269bb11270e"
+      },
+      {
+        "path": "scripts/prepare_sft_model_files.py",
+        "sha256": "4a61eeb5a59f2784c6c7cadec27f46c8cf9bc185b277cda61143566d0ab7f4aa"
+      },
+      {
+        "path": "scripts/validate_sft_no_card.py",
+        "sha256": "28ce248f416e741ca0992bbf0709515ac73253cbbe2cc1f12d426f04330bcc44"
+      },
+      {
+        "path": "scripts/run_sft_probe.py",
+        "sha256": "7830d567d02d5b99257726703cb4575e0d461f9fea1b4819d46a782142c2b024"
+      },
+      {
+        "path": "configs/sft_probe_plan.json",
+        "sha256": "9c8b60fc539d66d071b1d714ff962dedf69e4cb1dd25eea8357b85a26ec79db7"
+      },
+      {
+        "path": "requirements-sft-probe.pinned.txt",
+        "sha256": "3aad62152e489c42314cff0721532139464c9806366a9e720ded369a9519cb93"
+      },
+      {
+        "path": "scripts/gpu_preflight.py",
+        "sha256": "c96a477db7a0093ef03ecf8f748d9133e4865f8623d590c9eaaca18fa159d132"
+      },
+      {
+        "path": "requirements-day3-remote.pinned.txt",
+        "sha256": "30f418f14dd929c28ff0a6f1b26afe04ad836c0fc1131324d005252ff2153ea7"
+      },
+      {
+        "path": "requirements-sft-acquisition.pinned.txt",
+        "sha256": "f524d45b0b2cc51a082267fd3d5e19e07dd56a0773d3a6340e0a3548eb332136"
+      },
+      {
+        "path": "experiments/SFT-PREP-20260910-001/acquisition_manifest.json",
+        "sha256": "3efb4d9d43a10e167be7b6ce1ca8bcacf062d936f94e3a33e23f690880429951"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/utils.py",
+        "sha256": "3d0f578251c25226a006c45ea2988eed61de45d8858a5eed79cc74ac63dce5d6"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/analytics.py",
+        "sha256": "96fc35e61ceed6dc323485960cdf644ec8c7390421bb65eadab86b28a6a919e0"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/calendar.py",
+        "sha256": "88016c51f7fcecc98897c1a4060bece2ee3804d60b5f85a80f85869303088fef"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/company_directory.py",
+        "sha256": "7d5f3bbe1b2e6d6f41d1b8a06db0bc1c4eaacb423915b44e058af15fcd09c7dd"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/customer_relationship_manager.py",
+        "sha256": "1db9d57324ce097aeb41cbdde06655442de0a34138293e90bdfeca6ae44a2b2c"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/email.py",
+        "sha256": "2c710f6cc5d6d7d3b2830b4567dec8ab34bb04b2249765152bc41f2864a64ac5"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/project_management.py",
+        "sha256": "1eccec5636e01dee6fcda583dbb6189b3a998c3f5572c2038194ac223995dbc9"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/analytics_data.csv",
+        "sha256": "4a0df10aabc07980f1cc074dc9ab36406ce98dead7e14fe11f72a9f1ba788688"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/calendar_events.csv",
+        "sha256": "6c9df1872d54d0b0d068d1b066766a8ddbc29c3933f1d56c9efd554926312295"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/customer_relationship_manager_data.csv",
+        "sha256": "599057e4eec3a7c25ac04b4d655ea2c034b7b7782205dc367a28122756e04c41"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/emails.csv",
+        "sha256": "1809e341a0e4f1fd78cf1b759964a42abd28db8c9b9dca364456efc31f82bb31"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/project_tasks.csv",
+        "sha256": "fa0c05d5609f49e905342bd12592b09f23eff6147dcf607b808703f45ddbeaeb"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/email_addresses.csv",
+        "sha256": "1f3465b92eb41b90a973a9b00f35757a23d16839652b5e352e9d217d8e404b0b"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/events.csv",
+        "sha256": "04ba8c0dddd619bce9683dd3f2565dc0f83ef7ebc07699b62391171df497b548"
+      },
+      {
+        "path": "data/sft_probe_train20.jsonl",
+        "sha256": "b45deb25860d7cd247c8b2be9c865f91a1577dfa3ceecca1c0499bf1ee669ccc"
+      }
+    ]
+  }
+}

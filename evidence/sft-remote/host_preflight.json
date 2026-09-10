@@ -1,0 +1,25 @@
+{
+  "python": "3.12.3",
+  "executable": "/root/miniconda3/bin/python",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "disk_free_gib": 50.0,
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": null,
+    "peft": null,
+    "accelerate": null,
+    "tokenizers": null,
+    "pandas": null,
+    "numpy": "2.3.2",
+    "huggingface-hub": null,
+    "safetensors": null,
+    "jsonschema": "4.25.0",
+    "jinja2": "3.1.6"
+  },
+  "/sys/fs/cgroup/memory.max": "2147483648",
+  "/sys/fs/cgroup/cpu.max": "50000 100000",
+  "gpu_query": {
+    "error_type": "PermissionError",
+    "message": "[Errno 13] Permission denied: '/usr/bin/nvidia-smi'"
+  }
+}
