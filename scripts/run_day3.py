@@ -50,17 +50,19 @@ def weight_sample(model):
         h.update(name.encode());h.update(p.detach().reshape(-1)[:32].contiguous().view(__import__('torch').uint8).cpu().numpy().tobytes())
     return h.hexdigest()
 
-def inference_trajectory(model,tokenizer,row,config,seed,condition):
+def inference_trajectory(model,tokenizer,row,config,seed,condition,source_pool='development'):
     import torch
     from transformers import set_seed
     from jsonschema import Draft202012Validator
+    if source_pool not in ('development', 'training_candidate'):
+        raise ValueError('Unsupported task pool for this rollout runner')
     set_seed(seed)
     env=WorkplaceEnv();messages=deepcopy(row['responses_create_params']['input'])
     if condition=='B1':messages[0]['content']+='\n\n'+config['B1_addition']
     schemas=deepcopy(row['responses_create_params']['tools'])
     validators={s['name']:Draft202012Validator(s['parameters']) for s in schemas}
     initial_messages=deepcopy(messages)
-    result={'task_id':row['id'],'task_uid':row['task_uid'],'source_pool':'development',
+    result={'task_id':row['id'],'task_uid':row['task_uid'],'source_pool':source_pool,
             'condition':condition,'seed':seed,'producer':'Qwen/Qwen3-8B_REAL_MODEL',
             'model_revision':config['model_revision'],'initial_messages':initial_messages,'tool_schemas':schemas,
             'rounds':[],'call_diagnostics':[],'parse_errors':[],'infra_invalid':False,

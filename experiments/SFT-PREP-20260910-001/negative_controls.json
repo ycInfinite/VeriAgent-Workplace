@@ -1,0 +1,37 @@
+[
+  {
+    "name": "tampered_prompt_hash",
+    "passed": true,
+    "reason": "Recorded prompt hash mismatch"
+  },
+  {
+    "name": "tampered_generated_ids",
+    "passed": true,
+    "reason": "Raw generation and output token IDs disagree"
+  },
+  {
+    "name": "incomplete_generation",
+    "passed": true,
+    "reason": "Incomplete generation is not a supervised example"
+  },
+  {
+    "name": "infrastructure_invalid",
+    "passed": true,
+    "reason": "Infrastructure-invalid or unspecified trajectory"
+  },
+  {
+    "name": "wrong_model_revision",
+    "passed": true,
+    "reason": "Model/tokenizer revision mismatch"
+  },
+  {
+    "name": "development_pool_even_if_uid_allowed",
+    "passed": true,
+    "reason": "Only training_candidate trajectories can enter SFT"
+  },
+  {
+    "name": "relabelled_dev_as_training_task",
+    "passed": true,
+    "reason": "Initial messages do not match approved training task"
+  }
+]

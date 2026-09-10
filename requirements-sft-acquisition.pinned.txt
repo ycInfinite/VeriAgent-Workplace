@@ -1,0 +1,4 @@
+# Inference-only acquisition; reuse the validated Day 3 stack where compatible.
+# The new host still requires a compatibility preflight. This is not an SFT trainer stack.
+-r requirements-day3-remote.pinned.txt
+Jinja2==3.1.6

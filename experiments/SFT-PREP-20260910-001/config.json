@@ -1,0 +1,44 @@
+{
+  "Research Question": "Can per-turn SFT examples exactly preserve recorded rollout inputs and actual generated target IDs, while preventing development data from becoming training data?",
+  "Hypothesis": "Every complete valid Day 3 generation can be reconstructed with its pinned prompt hash and output IDs; strict training admission rejects all development trajectories; a fixed balanced training-only acquisition cohort fits existing initial context limits.",
+  "Independent Variable": "Per-turn recorded-input/output encoding instead of whole-conversation assistant-role encoding; no policy parameter change",
+  "Controlled Variables": [
+    "fixed tokenizer and model revision",
+    "unchanged Day 3 raw trajectories",
+    "fixed SPLIT-003 manifest",
+    "8192 context",
+    "one preregistered B1 prompt",
+    "deterministic task-selection seed"
+  ],
+  "Metrics": [
+    "prompt hash match per actual generation",
+    "target ID and raw decoding match",
+    "context/output/target counts",
+    "fixed prefill masking",
+    "negative-control rejection",
+    "training-only pool membership",
+    "initial prompt coverage by domain"
+  ],
+  "Evidence Gate": "All actual complete generations reconstruct; development and invalid/unreviewed trajectories fail training admission; all 20 fixed training tasks fit 8192 initially without truncation. CPU pass does not establish trainer CE/update/reload or data quality.",
+  "Cost Bound": "CPU only, GPU-hours=0, paid API=0, max wall time 600 seconds; read recorded dev outputs only for diagnostic encoding, no final case contents",
+  "Failure Branch": "Preserve all outputs and failed checks. Do not modify raw evidence or export development targets as training data; stop GPU progression if encoding/admission fails.",
+  "experiment_kind": "CPU_SFT_DATA_PREPARATION_NOT_TRAINING",
+  "seed": 20260910,
+  "model_id": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "split_manifest": "experiments/Q0-SPLIT-20260904-003/split_manifest.json",
+  "source_runs": [
+    "Q0-SMOKE-20260904-001",
+    "Q0-B0-20260904-001",
+    "Q0-B1-20260904-001"
+  ],
+  "max_context_tokens": 8192,
+  "max_wall_seconds": 600,
+  "acquisition_tasks_per_domain": 4,
+  "acquisition_reference_call_min": 1,
+  "acquisition_reference_call_max": 4,
+  "acquisition_prompt_condition": "B1_PROBE_CANDIDATE_NOT_FINAL_BASELINE",
+  "acquisition_seed": 42,
+  "acquisition_max_rollouts": 20,
+  "data_export": "Only selected training tasks may be bundled later; audited dev token arrays remain diagnostic and are not exported as a training corpus"
+}

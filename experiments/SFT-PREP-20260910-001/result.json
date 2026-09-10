@@ -1,0 +1,39 @@
+{
+  "status": "CPU_PREPARATION_PASSED_GPU_COLLECTION_AND_TRAINER_PENDING",
+  "trajectories_audited": 75,
+  "development_trajectories_rejected_from_training": 75,
+  "model_turns_audited": 200,
+  "prompt_hash_matches": 200,
+  "exact_generated_target_matches": 200,
+  "forced_prefill_masked_as_input": 200,
+  "processed_tokens": 912164,
+  "supervised_tokens": 11186,
+  "prefix_tokens": 900978,
+  "max_processed_tokens_per_turn": 8176,
+  "max_supervised_tokens_per_turn": 232,
+  "negative_controls_passed": 7,
+  "negative_controls_total": 7,
+  "training_acquisition_task_count": 20,
+  "training_acquisition_by_domain": {
+    "workplace_assistant_analytics": 4,
+    "workplace_assistant_calendar": 4,
+    "workplace_assistant_customer_relationship_manager": 4,
+    "workplace_assistant_email": 4,
+    "workplace_assistant_project_management": 4
+  },
+  "initial_context_coverage": 1.0,
+  "acquisition_initial_tokens_min": 4177,
+  "acquisition_initial_tokens_max": 4204,
+  "eligible_training_trajectories_collected": 0,
+  "dev_training_export_count": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0,
+  "paid_cost_rmb": 0,
+  "elapsed_seconds": 3.9666732000000593,
+  "limitations": [
+    "CPU reconstruction is not a trainer forward/CE/update/reload check",
+    "one training example per model turn repeats context and defines a declared SFT objective",
+    "quality approval and complete training provenance are still required",
+    "B1 is a probe candidate; full qualification/composition questions remain"
+  ]
+}
