@@ -31,6 +31,7 @@ def main():
         'veriagent/__init__.py','veriagent/environment.py','veriagent/policy_protocol.py',
         'veriagent/token_mask.py','veriagent/sft_data.py',
         'scripts/run_day3.py','scripts/collect_training_probe.py','scripts/verify_model_integrity.py',
+        'scripts/prepare_sft_model_files.py','scripts/validate_sft_no_card.py',
         'scripts/gpu_preflight.py','requirements-day3-remote.pinned.txt','requirements-sft-acquisition.pinned.txt',
         config['cohort_manifest'],
     ]

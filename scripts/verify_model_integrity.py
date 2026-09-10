@@ -1,5 +1,6 @@
 """Stream-check public model weight LFS SHA256 against pinned official Hub metadata."""
 import hashlib
+import argparse
 import json
 from pathlib import Path
 from datetime import datetime,timezone
@@ -8,7 +9,10 @@ from huggingface_hub import HfApi,get_hf_file_metadata,hf_hub_url
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    cfg=json.loads((ROOT/'configs/model_qualification_plan.json').read_text())
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--config',default='configs/model_qualification_plan.json')
+    args=parser.parse_args()
+    cfg=json.loads((ROOT/args.config).read_text())
     info=HfApi().model_info(cfg['model_id'],revision=cfg['model_revision'],files_metadata=True,token=False)
     if info.sha!=cfg['model_revision']:raise RuntimeError('Model revision mismatch')
     records=[]

@@ -11,6 +11,7 @@
   "preparation_run": "SFT-PREP-20260910-001",
   "cohort_manifest": "experiments/SFT-PREP-20260910-001/acquisition_manifest.json",
   "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "model_id": "Qwen/Qwen3-8B",
   "source_pool": "training_candidate",
   "condition": "B1",
   "seed": 42,
