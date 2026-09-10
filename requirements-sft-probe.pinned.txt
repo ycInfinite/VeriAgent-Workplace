@@ -1,0 +1,3 @@
+# Candidate single-GPU BF16 LoRA probe stack. GPU interoperability is not yet measured.
+-r requirements-sft-acquisition.pinned.txt
+peft==0.17.1
