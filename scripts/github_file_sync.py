@@ -22,6 +22,8 @@ from remote_session import PinnedKey
 
 ROOT=Path(__file__).resolve().parents[1]
 REPOSITORY='ycInfinite/VeriAgent-Workplace'
+TEACHER_FILES = ['configs/teacher_acquisition_plan.json', 'veriagent/teacher_data.py',
+                 'veriagent/teacher_rollout.py', 'scripts/collect_teacher_probe.py']
 
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,urllib.request,urllib.parse
@@ -37,7 +39,11 @@ try:
         path=(root/entry['path']).resolve();assert path.is_relative_to(root)
         assert hashlib.sha256(path.read_bytes()).hexdigest()==entry['sha256']
     allowed={x['path'] for x in manifest['files'] if not x['path'].startswith(('vendor/','data/'))}
-    assert {x['path'] for x in plan['files']}==allowed
+    teacher_files={'configs/teacher_acquisition_plan.json','veriagent/teacher_data.py',
+                   'veriagent/teacher_rollout.py','scripts/collect_teacher_probe.py'}
+    additions=set(plan.get('additional_paths',[]))
+    assert not additions or additions==teacher_files
+    assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     for entry in plan['files']:
         url=urllib.parse.urlsplit(entry['download_url'])
@@ -57,15 +63,19 @@ try:
     changed=[]
     for entry in plan['files']:
         path=(root/entry['path']).resolve();data=(staging/entry['path']).read_bytes()
-        if path.read_bytes()!=data:
-            backup=root/'logs/pre_github_files'/plan['commit']/entry['path']
-            backup.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,backup)
+        if not path.exists() or path.read_bytes()!=data:
+            if path.exists():
+                backup=root/'logs/pre_github_files'/plan['commit']/entry['path']
+                backup.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,backup)
+            path.parent.mkdir(parents=True,exist_ok=True)
             path.write_bytes(data);changed.append(entry['path'])
     old_receipt=root/'logs/deployment_manifest_before_github.json'
     if not old_receipt.exists():old_receipt.write_bytes(original)
     manifest['previous_bundle_manifest_sha256']=hashlib.sha256(original).hexdigest()
     manifest['code_commit']=plan['commit'];manifest['code_transport']='GitHub fixed-ref temporary raw-file downloads'
     manifest['git_repository']='https://github.com/'+plan['repository']+'.git'
+    existing={x['path'] for x in manifest['files']}
+    manifest['files'].extend({'path':path} for path in sorted(additions-existing))
     for entry in manifest['files']:entry['sha256']=hashlib.sha256((root/entry['path']).read_bytes()).hexdigest()
     (root/'bundle_manifest.json').write_text(json.dumps(manifest,indent=2))
     receipt={'status':'GITHUB_SYNC_VERIFIED','repository':plan['repository'],'git_commit':plan['commit'],
@@ -95,12 +105,14 @@ def main():
     parser.add_argument('--host',required=True);parser.add_argument('--port',required=True,type=int)
     parser.add_argument('--pin',required=True);parser.add_argument('--commit',required=True)
     parser.add_argument('--remote-root',required=True);parser.add_argument('--receipt',required=True)
+    parser.add_argument('--include-teacher',action='store_true',help='Add only the four reviewed teacher execution files')
     args=parser.parse_args()
     destination=ROOT/args.receipt
     if destination.exists():raise FileExistsError('Refusing to overwrite sync receipt')
     commit=git('rev-parse',args.commit).decode().strip()
     bundle=json.loads((ROOT/'evidence/sft-preparation/bundle-4e5f9102.json').read_text())['manifest']
     paths=[x['path'] for x in bundle['files'] if not x['path'].startswith(('vendor/','data/'))]
+    if args.include_teacher:paths=sorted(set(paths)|set(TEACHER_FILES))
     # Capture existing Git authentication inside this process; never print it.
     credential=subprocess.run(['git','-c','credential.interactive=never','credential','fill'],cwd=ROOT,
         input='protocol=https\nhost=github.com\npath='+REPOSITORY+'.git\n\n',text=True,capture_output=True,timeout=30)
@@ -130,7 +142,8 @@ def main():
     try:
         command='source /etc/network_turbo >/dev/null 2>&1 && /root/miniconda3/bin/python -c '+shlex.quote(REMOTE_CODE)
         stdin,stdout,stderr=client.exec_command(command,timeout=180,get_pty=False)
-        stdin.write(json.dumps({'remote_root':args.remote_root,'repository':REPOSITORY,'commit':commit,'files':files}));stdin.flush()
+        stdin.write(json.dumps({'remote_root':args.remote_root,'repository':REPOSITORY,'commit':commit,'files':files,
+                               'additional_paths':TEACHER_FILES if args.include_teacher else []}));stdin.flush()
         stdin.channel.shutdown_write()
         response=stdout.read().decode();errors=stderr.read();code=stdout.channel.recv_exit_status()
         files.clear();errors=None
