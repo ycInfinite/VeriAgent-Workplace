@@ -1,0 +1,66 @@
+{
+  "source": "https://www.autodl.com/market/list",
+  "observed_date": "2026-09-16",
+  "recorded_at_utc": "2026-09-16T00:49:23.926806+00:00",
+  "method": "Visible official AutoDL market UI in logged-in browser; hourly billing; per-GPU offers",
+  "quotes": [
+    {
+      "gpu": "A800-80GB",
+      "memory_gb": 80,
+      "region": "A800专区",
+      "member_display_rmb_per_hour": 5.59,
+      "list_rmb_per_hour": 5.88,
+      "example_machine": "043",
+      "cpu_cores": 14,
+      "host_ram_gb": 120,
+      "driver": "595.71.05",
+      "free_gpus_observed": 1
+    },
+    {
+      "gpu": "RTX PRO 6000",
+      "memory_gb": 96,
+      "region": "北京B区",
+      "member_display_rmb_per_hour": 6.98,
+      "list_rmb_per_hour": 7.35,
+      "example_machine": "A22",
+      "cpu_cores": 25,
+      "host_ram_gb": 120,
+      "driver": "595.58.03",
+      "data_disk_gb": 50,
+      "expandable_data_gb": 2395,
+      "free_gpus_observed": 1
+    },
+    {
+      "gpu": "A800-80GB-NVLink",
+      "memory_gb": 80,
+      "region": "北京B区",
+      "member_display_rmb_per_hour": 7.98,
+      "list_rmb_per_hour": 8.4,
+      "example_machine": "932",
+      "cpu_cores": 16,
+      "host_ram_gb": 120,
+      "driver": "580.126.09",
+      "free_gpus_observed": 1
+    },
+    {
+      "gpu": "H800",
+      "memory_gb": 80,
+      "region": "西北B区",
+      "member_display_rmb_per_hour": 9.98,
+      "list_rmb_per_hour": 10.5,
+      "example_machine": "A23",
+      "cpu_cores": 20,
+      "host_ram_gb": 120,
+      "driver": "580.82.07",
+      "free_gpus_observed": 3
+    }
+  ],
+  "membership_entitlement_confirmed": false,
+  "quotes_are_not_bookings": true,
+  "performance_measured": false,
+  "break_even_speedups": {
+    "pro_vs_plain_a800": 1.2486583184257605,
+    "h800_vs_pro": 1.4297994269340975
+  },
+  "no_instance_state_changed": true
+}

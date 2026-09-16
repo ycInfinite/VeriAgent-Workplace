@@ -1,5 +1,7 @@
 # Project state
 
+Pricing review (2026-09-16): inspected live AutoDL hourly listings in the user's logged-in browser. PRO6000 96GB is the suggested balanced candidate (member/list RMB6.98/7.35 per hour); plain A800 in its dedicated zone is the lowest-hourly-cost checked option (5.59/5.88). Beijing-B A800-NVLink is7.98/8.40; northwest-B H8009.98/10.50. No instance rented, started, migrated or benchmarked; prepared host state was not changed. Price/performance remains an inference pending workload measurements. See docs/GPU_PRICE_CHECK_20260916.md.
+
 ## Latest: no-card remote preparation completed (2026-09-10)
 
 GitHub transfer completed: private repo metadata/owner verified; local commit bc5aa55c3b97174822893c789b236cf5e43fcaf3 pushed successfully and the host downloaded 20 approved execution files directly from GitHub at that exact ref. SHA256 and Git blob IDs matched. No dev/final cases or account credential sent; temporary URLs not persisted. Remote bundle_manifest now records GitHub as code transport and that commit, retaining prior deployment manifest. See docs/GITHUB_TRANSFER.md and evidence/sft-remote/github_sync_receipt.json. The original anonymous clone attempt failed for lack of host GitHub authentication and was preserved; fixed-ref authenticated download succeeded without repository visibility/credential-storage changes.
