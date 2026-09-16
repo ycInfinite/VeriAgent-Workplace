@@ -1,0 +1,2 @@
+{"event": "github_sync_failed", "commit": "a4efa2c", "attempt": 1, "credentials_disclosed": false, "old_manifest_hashes_verified_after_failure": true, "provider_requests": 0}
+{"event": "remote_install_and_mcp_discovery_passed", "commit": "a4efa2c12ec14fa92072dd1bd9a501bd266dbc8a", "qwen_version": "0.23.4", "node_version": "24.19.0", "mcp_version": "1.30.0", "official_client_output": "workplace (stdio) - Connected", "provider_requests": 0, "note": "MCP discovery only; no get_task/model prompt/rollout"}

@@ -1,0 +1,5 @@
+{
+  "note": "The first evidence-copy implementation reused identity.json/result.json names. Existing identity.json contains session identity; original audit identity is preserved in the append-only registry and recovered here in audit_identity_from_registry.json. session_result.json preserves the tool verifier result. Earlier files were not changed. Future audit copies use separate session_ names.",
+  "new_model_requests": 0,
+  "test_outcome_changed": false
+}

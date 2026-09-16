@@ -7,6 +7,12 @@
         "baseUrl": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
         "envKey": "BAILIAN_TOKEN_PLAN_API_KEY",
         "generationConfig": {
+          "contextWindowSize": 8192,
+          "maxRetries": 0,
+          "samplingParams": {
+            "max_tokens": 256,
+            "temperature": 0.2
+          },
           "extra_body": {
             "enable_thinking": false
           }

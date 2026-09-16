@@ -38,6 +38,8 @@ INTERACTIVE_FILES = ['configs/qwen_code_token_plan.example.json',
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,urllib.request,urllib.parse
 from pathlib import Path
+phase='parse_plan'
+failed_path=None
 try:
     # The short-lived URL plan is not echoed or serialized to any file.
     os.environ['VERIAGENT_GITHUB_SYNC_PLAN']=sys.stdin.read()
@@ -45,9 +47,11 @@ try:
     root=Path(plan['remote_root']).resolve()
     assert root.is_dir() and root.is_relative_to(Path('/root/autodl-tmp'))
     original=(root/'bundle_manifest.json').read_bytes();manifest=json.loads(original)
+    phase='verify_existing'
     for entry in manifest['files']:
         path=(root/entry['path']).resolve();assert path.is_relative_to(root)
         assert hashlib.sha256(path.read_bytes()).hexdigest()==entry['sha256']
+    phase='verify_whitelist'
     allowed={x['path'] for x in manifest['files'] if not x['path'].startswith(('vendor/','data/'))}
     teacher_files={'configs/teacher_acquisition_plan.json','veriagent/teacher_data.py',
                    'veriagent/teacher_rollout.py','scripts/collect_teacher_probe.py'}
@@ -63,7 +67,9 @@ try:
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     reused_verified=[]
+    phase='download_verified_files'
     for entry in plan['files']:
+        failed_path=entry['path']
         url=urllib.parse.urlsplit(entry['download_url'])
         assert url.scheme=='https' and url.hostname=='raw.githubusercontent.com'
         target=(staging/entry['path']).resolve();assert target.is_relative_to(staging.resolve())
@@ -85,6 +91,7 @@ try:
         blob=hashlib.sha1(b'blob '+str(len(data)).encode()+bytes([0])+data).hexdigest()
         assert blob==entry['git_blob_sha']
         if not target.exists():target.write_bytes(data)
+    phase='apply_verified_files'
     changed=[]
     for entry in plan['files']:
         path=(root/entry['path']).resolve();data=(staging/entry['path']).read_bytes()
@@ -116,7 +123,8 @@ try:
     print(json.dumps(receipt))
 except Exception as exc:
     os.environ.pop('VERIAGENT_GITHUB_SYNC_PLAN',None)
-    print(json.dumps({'status':'GITHUB_SYNC_FAILED','error_type':type(exc).__name__}))
+    print(json.dumps({'status':'GITHUB_SYNC_FAILED','error_type':type(exc).__name__,
+                      'phase':phase,'failed_path':failed_path}))
     sys.exit(1)
 '''
 
@@ -187,7 +195,17 @@ def main():
         stdin.channel.shutdown_write()
         response=stdout.read().decode();errors=stderr.read();code=stdout.channel.recv_exit_status()
         files.clear();errors=None
-        if code:raise RuntimeError('Remote GitHub sync failed; no secret diagnostics printed')
+        if code:
+            exc=RuntimeError('Remote GitHub sync failed; no secret diagnostics printed')
+            try:
+                failure=json.loads(response)
+                if failure.get('status')=='GITHUB_SYNC_FAILED':
+                    exc.remote_error_type=failure.get('error_type')
+                    exc.remote_phase=failure.get('phase')
+                    exc.failed_path=failure.get('failed_path')
+            except (ValueError,TypeError):
+                pass
+            raise exc
         receipt=json.loads(response)
         if receipt.get('status')!='GITHUB_SYNC_VERIFIED':raise RuntimeError('Missing verified receipt')
         destination.parent.mkdir(parents=True,exist_ok=True)
@@ -203,5 +221,7 @@ if __name__=='__main__':
         print(json.dumps({'status':'SYNC_FAILED','error_type':type(exc).__name__,
             'reason_type':type(getattr(exc,'reason',None)).__name__,
             'failed_path':getattr(exc,'failed_path',None),
+            'remote_error_type':getattr(exc,'remote_error_type',None),
+            'remote_phase':getattr(exc,'remote_phase',None),
             'details':'Suppressed to prevent credential/temporary-URL disclosure'}),flush=True)
         raise SystemExit(1)

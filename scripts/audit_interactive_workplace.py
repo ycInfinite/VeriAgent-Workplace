@@ -99,7 +99,8 @@ async def main(run_id):
         check('actual_final_state_matches_old_fixture', raw['final_state_sha256'] == fixture['final_state_sha256'])
         for name in ['identity.json','task_request.json','action_intents.jsonl','tool_events.jsonl',
                      'termination.json','result.json']:
-            (run.path/name).write_bytes((log_root/name).read_bytes())
+            destination = ('session_' + name) if name in ('identity.json','result.json') else name
+            (run.path/destination).write_bytes((log_root/name).read_bytes())
         run.finish({'status':'passed', 'checks':len(checks), 'model_rollouts':0,
                     'api_requests':0,'gpu_hours':0,'parameter_updates':0,
                     'training_approved':0,'mcp_version':importlib.metadata.version('mcp'),

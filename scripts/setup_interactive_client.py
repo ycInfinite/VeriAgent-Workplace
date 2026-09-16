@@ -85,10 +85,20 @@ def main():
         'cwd':str(ROOT),'trust':False, 'timeout':60000,
         'env':{'PYTHONIOENCODING':'utf-8','BAILIAN_TOKEN_PLAN_API_KEY':'','OPENAI_API_KEY':''}}}
     settings_path = client_home/'settings.json'
+    previous = destination/'installation.json'
+    previous_receipt = json.loads(previous.read_text()) if previous.exists() else {}
     if settings_path.exists() and json.loads(settings_path.read_text()) != settings:
-        raise FileExistsError('Existing isolated client settings differ; review rather than overwrite')
+        old = settings_path.read_bytes()
+        old_hash = hashlib.sha256(old).hexdigest()
+        if old_hash != previous_receipt.get('settings_sha256'):
+            raise FileExistsError('Client settings changed since our receipt; review rather than overwrite')
+        backup = client_home/('settings.before-'+old_hash[:12]+'.json')
+        if not backup.exists():
+            backup.write_bytes(old)
     settings_path.write_text(json.dumps(settings,indent=2),encoding='utf-8')
     (destination/'mcp.json').write_text(json.dumps({'mcpServers':settings['mcpServers']},indent=2),encoding='utf-8')
+    if node_sha is None and previous_receipt.get('node') == str(node):
+        node_sha = previous_receipt.get('node_archive_sha256')
     receipt = {'node':str(node),'node_version':NODE_VERSION,'node_archive_sha256':node_sha,
                'qwen_cli':str(cli),'qwen_version':QWEN_VERSION,'qwen_integrity':QWEN_INTEGRITY,
                'python':sys.executable,'sdk_version':'1.30.0','workspace':str(workspace),

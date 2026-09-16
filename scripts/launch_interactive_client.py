@@ -26,6 +26,8 @@ def main():
     env['OPENAI_MODEL'] = 'qwen3.8-max'
     env['QWEN_CODE_DISABLE_CRON'] = '1'
     env['QWEN_CODE_DISABLE_WORKFLOWS'] = '1'
+    env['QWEN_CODE_MAX_OUTPUT_TOKENS'] = '256'
+    env['QWEN_DISABLE_AUTO_TITLE'] = '1'
     env['PATH'] = str(Path(receipt['node']).parent)+os.pathsep+env.get('PATH','')
     key = None
     transcript = destination/('client-events-'+uuid.uuid4().hex+'.jsonl')
