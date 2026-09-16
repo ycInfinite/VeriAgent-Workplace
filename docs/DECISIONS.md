@@ -1,6 +1,6 @@
 # Decisions
 
-[GPU_WATCH_LAST_CHECK] 2026-09-16T04:06:04.963206+00:00 — No route/configuration change: preserve existing instances, do not rent or duplicate runs; continue the existing15-minute monitoring.
+[GPU_WATCH_LAST_CHECK] 2026-09-16T04:23:24.825434+00:00 — No route/configuration change: preserve existing instances, do not rent or duplicate runs; continue the existing15-minute monitoring.
 
 2026-09-16 定时监控：应用户要求创建当前对话15分钟heartbeat `veriagent-gpu-sft-probe`，优先检查既有A800并兼查PRO6000。复用已授权的两条完整轨迹/8步单卡probe，先查registry/进程防重复，完成保全证据并关机后暂停监控；无新租赁或扩大阶段。库存不变不通知；本地机器/App/浏览器登录不可用时不虚称监控成功。
 
