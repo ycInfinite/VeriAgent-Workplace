@@ -1,5 +1,7 @@
 # Project state
 
+Official-data clarification(2026-09-16): pinnedtrain1255 rows were rechecked:input roles are system+user,ground_truth is a reference action list,not complete assistant/tool interactions. Official full demonstrations or causally grounded reference reconstructions can be valid SFT sources; the current probe producer allowlist is not a universal model-generated-data requirement. Recommend auditing reuse/reconstruction before assuming all future samples need paidteacher. No new source admitted,run,parameter update or stage transition. SeeOFFICIAL_REFERENCE_VS_TRAJECTORY.md.
+
 Teacher-cost advice(2026-09-16): recommend ordinaryAPI for the next bounded collection; current undiscounted estimate≈RMB0.332 per quality-approved trajectory. Existing responses show89.37percent input-token cache hits, but model-specific cache price and invoice remain unverified. Open-teacher self-hosting requires separate quality and all-in cost qualification. SeeTEACHER_COST_COMPARISON_20260916.md. This was advice only; no new run, machine startup or stage transition.
 
 ## Current: first real8-update LoRA probe passed; checkpoint verified and all instances off (2026-09-16)

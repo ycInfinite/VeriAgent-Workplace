@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-09-16",
+  "kind": "PINNED_OFFICIAL_TRAIN_STRUCTURE_RECHECK_NOT_ROLLOUT",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "gym_commit": "83b3980b9c04379d72bbf59592d7846630f706bf",
+  "train_file_sha256": "cb64a4eca977c049f5b64a5d3346fcb560ed20cdf186b31135a9b332320c26c8",
+  "train_rows": 1255,
+  "input_role_patterns": {
+    "system,user": 1255
+  },
+  "ground_truth_type": "list of reference tool actions",
+  "input_contains_full_assistant_tool_trajectory_rows": 0,
+  "examined_examples": [
+    {
+      "id": 565,
+      "user_task": "Plot the distribution of average session duration on September 27",
+      "reference_actions": [
+        {
+          "name": "analytics_create_plot",
+          "arguments": "{\"time_min\": \"2023-09-27\", \"time_max\": \"2023-09-27\", \"value_to_plot\": \"session_duration_seconds\", \"plot_type\": \"histogram\"}"
+        }
+      ]
+    },
+    {
+      "id": 707,
+      "user_task": "We've got a new customer that's moved to proposal status. Can you update Kerry Moore to proposal in the crm?",
+      "reference_actions": [
+        {
+          "name": "customer_relationship_manager_update_customer",
+          "arguments": "{\"customer_id\": \"00000046\", \"field\": \"status\", \"new_value\": \"Proposal\"}"
+        }
+      ]
+    },
+    {
+      "id": 965,
+      "user_task": "dmitri is on vacation now so move all their work in progress tasks to the backlog.",
+      "reference_actions": [
+        {
+          "name": "project_management_update_task",
+          "arguments": "{\"task_id\": \"00000009\", \"field\": \"list_name\", \"new_value\": \"Backlog\"}"
+        }
+      ]
+    }
+  ],
+  "meaning": "Reference actions define target state through official replay; they do not supply all lookup decisions and observations",
+  "training_interpretation": "Official full demonstrations and carefully reconstructed references can be SFT data; current probe producer allowlist is not a universal requirement that demonstrations be model-generated",
+  "boundary": "Use only project training pool; preserve source identity; reconstructed scripts are not real model rollouts or onlineRL",
+  "new_api_calls": 0,
+  "gpu_hours": 0,
+  "new_tool_executions": 0,
+  "raw_experiment_records_changed": false,
+  "sources": [
+    "https://huggingface.co/datasets/nvidia/Nemotron-RL-agent-workplace_assistant",
+    "https://github.com/NVIDIA-NeMo/Gym/blob/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/README.md"
+  ],
+  "reference_action_key_shapes": {
+    "arguments,name": 1631
+  }
+}
