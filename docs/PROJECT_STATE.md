@@ -1,5 +1,15 @@
 # Project state
 
+## Current: teacher data qualified; authorized SFT probe blocked by GPU inventory (2026-09-16)
+
+TEACHER-ACQUIRE-20260916-001 completed on the new host in no-card mode atccc890d:20 valid,18 official successes,63/63 executable calls,80 API requests,202.121sec,387839 input/9023 output provider tokens,estimatedRMB4.978896. Full Codex quality review approves15 complete trajectories/57 assistant turns; five held/failed(331,1183,980,518,1175). No independent human adjudication. Raw reward/records unchanged.
+
+TEACHER-ADMISSION-CPU-20260916-001 at5fd411b passed16/16 negative controls. The exact probe chooses whole tasks707/965:8 turns,35972 processed/582 supervised tokens,max4741. Remote d429eb6 deployment27-file hash check and validate-only admission passed. New local exact-selection assertions require these same source/task/token identities before a future run. Teacher raw IDs are not passed off as student sampled IDs.
+
+User authorized routine operations, and after an approval interruption explicitly authorized the existing A800 to perform the two-task/eight-step LoRA probe and shutdown. PRO6000 and then A800 both returned0 available GPUs. Neither GPU started; both instances are powered off, no-card session ended, no new rental. SFT-PROBE-20260916-001 remains planned/unexecuted, optimizer updates=0. This is an external inventory blocker, not a remaining quiz, data gate or GPU-start authorization requirement for that A800 probe. Do not re-ask its same authorization; check availability and redeploy latest source when execution resumes. No S1/S2/DPO/RL expansion.
+
+Report: docs/TEACHER_ACQUISITION_REPORT_20260916.md; current handoff: docs/daily/2026-09-16-learning-handoff.md. GitHub data-provenance rejection was resolved with public NVIDIA source hashes/220 email-address matches; a later A800 startup rejection was resolved by explicit user approval, after which actual inventory was checked. Known deployment network failures retained in operational_events.json. No company material/final/BFCL cases used, no secrets saved.
+
 ## Latest: ordinary API collector ready; no-card startup and hidden key entry pending (2026-09-16)
 
 User confirmed ordinary pay-as-you-go API access and supplied the Beijing workspace endpoint. Implemented CPU-only Bailian collector, fixed20 preregistration and an explicit four-file GitHub deployment extension. TEACHER-COLLECTOR-CPU-20260916-001 at16a36e9 passed55/55 offline controls using old training707 solely as a replay fixture. No external request, new teacher rollout, quality approval or parameter update. Both instances were again observed off in AutoDL this turn. Remaining handoff: user-authorized no-card startup → GitHub fixed-ref sync and remote preflight → user hidden terminal key entry → bounded acquisition and full-quality review. No autoGPU/SFT. See docs/TEACHER_API_HANDOFF_20260916.md. User-pasted credential was not stored or tested; rotation was recommended.

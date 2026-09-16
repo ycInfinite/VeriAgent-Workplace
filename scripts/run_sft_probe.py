@@ -57,6 +57,13 @@ def prepare_examples(config,trajectory_path,review_path,source_format='recorded-
         raise ValueError('Probe requires two to four distinct approved training tasks')
     if task_count!=len(selected):raise ValueError('Use one trajectory per task for this probe')
     if not 1<=len(examples)<=config['max_examples']:raise ValueError('Example-count bound exceeded')
+    if source_format=='canonical-teacher':
+        if ([r['task_id'] for r in selected]!=config.get('selected_tasks')
+                or trajectory_path.parent.name!=config.get('selected_source_run')
+                or len(examples)!=config.get('selected_full_assistant_turns')
+                or sum(x['supervised_tokens'] for x in examples)!=config.get('selected_supervised_tokens')
+                or sum(x['processed_tokens'] for x in examples)!=config.get('selected_processed_tokens')):
+            raise ValueError('Teacher input differs from the exact preregistered two-trajectory probe')
     return selected,examples,encoder
 
 

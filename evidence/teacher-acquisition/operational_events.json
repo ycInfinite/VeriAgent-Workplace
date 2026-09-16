@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-16",
+  "scope": "Authorized fixed20 teacher acquisition and conditional8-step LoRA probe",
+  "user_routine_operation_override": true,
+  "no_card_instance": "apsh5z8vl9-f264ae73",
+  "no_card_started_observed_at_utc": "2026-09-16T02:09:29Z",
+  "no_card_shutdown_requested_before_utc": "2026-09-16T02:32:06Z",
+  "no_card_hourly_rmb_observed": 0.1,
+  "no_card_minimum_charge_rmb_observed": 0.01,
+  "no_card_compute_used": "CPU only; no8B weights loaded",
+  "startup_time_note": "Approximate platform navigation/status observation; not invoice timestamps",
+  "deployment_attempts": [
+    {
+      "stage": "publish ccc890d",
+      "failure": "GitHub HTTPS handshake failure",
+      "resolved": "Same commit push succeeded on retry"
+    },
+    {
+      "stage": "publish d429eb6",
+      "failure": "Automatic approval review rejected uncertain workplace/email data provenance",
+      "resolved": "Verified13 official source hashes,220/220 addresses in public source CSVs, exact initial state and absence of credential patterns; same GitHub action approved"
+    },
+    {
+      "stage": "sync d429eb6",
+      "failure": "Two URLError metadata-read failures before SSH",
+      "resolved": "Public api.github.com GET200; bounded retries for read-only GitHub metadata;27-file sync succeeded"
+    }
+  ],
+  "model_api_retries": 0,
+  "model_infrastructure_invalid_trajectories": 0,
+  "api_key_written_to_project_or_logs": false,
+  "old_a800_state": "remained powered off",
+  "additional_gpu_rental": false,
+  "no_card_off_observed_at_utc": "2026-09-16T02:33:00Z",
+  "no_card_observed_window_cost_estimate_rmb": 0.0392,
+  "cost_estimate_not_invoice": true,
+  "gpu_attempts": [
+    {
+      "instance": "apsh5z8vl9-f264ae73",
+      "gpu": "RTX PRO6000",
+      "result": "AutoDL reports0 free GPUs; no GPU started"
+    },
+    {
+      "instance": "e894yfdpks-aa29b5a4",
+      "gpu": "A800",
+      "result": "Automatic approval rejected startup-control click before action; explicit authorization requested"
+    },
+    {
+      "instance": "e894yfdpks-aa29b5a4",
+      "gpu": "A800",
+      "result": "After explicit user authorization, AutoDL reports0 free GPUs; no GPU started"
+    }
+  ],
+  "parameter_updates": 0,
+  "current_instance_states": {
+    "new_PRO6000": "powered off",
+    "old_A800": "powered off"
+  },
+  "a800_explicit_user_authorization": "Existing A800 single GPU;2 full trajectories;8 LoRA steps;shutdown after",
+  "current_blocker": "Both existing hosts have0 available GPUs",
+  "new_gpu_experiments_started": 0
+}

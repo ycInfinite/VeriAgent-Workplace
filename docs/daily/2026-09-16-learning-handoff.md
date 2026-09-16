@@ -1,6 +1,6 @@
 # 2026-09-16 Handoff：采集质量审核与教师准备
 
-**最新停点：用户确认百炼普通按量API和workspace端点。教师采集器已实现、55/55无网络检查通过，等待用户允许无卡启动和远端终端隐藏Key输入。没有教师调用或SFT更新，两台实例本轮再次确认关机。下面查价与采集停止是较早记录，最新交接见末尾。**
+**最新停点：20条真实教师轨迹采集完成，18条官方成功，15条完整示范获批；两条整轨迹/8轮/582监督tokens的SFT输入与远端准入通过。用户已明确授权已有A800执行8步，但PRO6000和A800均无GPU库存，两台关机，参数更新仍0。本轮API与无卡会话合计估算约5.02元，非账单。下面较早停点是历史，最终交接见末尾。**
 
 1. **核心问题**：对当前单卡8B LoRA方案，市场上哪些配置更值得选？
 2. **开始状态**：无卡准备与GitHub同步已完成，GPU训练尚未执行；用户要求直接查看AutoDL，而非让其转述价格。
@@ -114,3 +114,68 @@ labels = [-100] * len(prefix_ids) + target_ids
 11. **五个追问**：为何401不能算模型任务失败？为何截断JSON即使看似完整也不执行？为何工具strict字段不能静默删除？为何供应商tokens不能替代学生tokens？为何55项通过不意味着SFT数据已合格？
 12. **下一步**：用户允许新实例无卡开机后，GitHub同步/远端预检/隐藏Key输入/固定20题采集。Key不再发聊天，GPU保持关闭，不自动进入SFT。
 13. **证据**：TEACHER-COLLECTOR-CPU-20260916-001；代码16a36e9；实验config/identity/checks/replay_fixture/result；下一采集配置configs/teacher_acquisition_plan.json；操作文档TEACHER_API_HANDOFF_20260916.md。无无效CPU run，无教师运行或费用，学习未评分。
+
+## 本轮最终交接：教师数据够了，首次参数更新等待 GPU 库存
+
+1. **今天回答的问题**：更强教师能否补齐原8B无法提供的完整合格示范？本次固定training20上可以：15条完整轨迹通过审核，够做首次完整性probe。
+2. **开始状态**：8B采集20条中3条官方成功，但0完整示范；用户拒绝只监督正确片段，教师API尚未执行。
+3. **实际执行**：按新授权开启PRO6000无卡模式；GitHub固定提交同步/哈希核对；隐藏输入将Key交给远端进程；真实API→真实工具/状态→官方verifier与独立replay；取回压缩包验SHA；审核20条；实现完整教师训练准入及16项负向检查；远端validate-only通过；结束无卡并尝试既有GPU。PRO6000和A800均报告0空闲GPU，未加载训练模型或更新。
+4. **变量/控制**：教师策略及API协议替代原本地8B采样；固定20题、B1、工具、初始时钟/状态、参考验证语义、任务预算、学生revision不变。不同tokenizer/API序列化不可当严格单变量性能比较，seed请求不保证闭源后端重现。
+5. **原始结果**：20有效/0infra-invalid，18官方成功/15完整审核批准，63/63工具调用可执行，80次API、0重试，387839输入/9023输出，202.121秒。API原价估算4.978896元，无卡观察窗口约0.0392元；合计约5.02元。SFT步时/峰值显存/更新/重载均未测，不能写成0耗时成功。
+6. **代表轨迹**：707先查唯一customer ID再改Proposal，3轮；965查邮箱和全部任务、改Backlog、验证空集再确认，5轮。331超学生8K；1175单次输出截断；1183正确状态但没有最终回答；980/518只读邮件第一页就声称全局最新，状态成功也不批准。
+7. **路线结论**：已经越过“没有完整高质量SFT数据”的阻塞。原首次probe选完整707+965，所有8轮各训练一次，582目标tokens。当前阻塞是GPU库存，非数据、权限、基础学习考试或预算；A800这次8步已有明确授权。
+8. **尚未支持的推测**：没有证明SFT提高Agent成功率；教师18/20不是学生训练成绩；15条审核未做独立人工复核；不能推广为S1优于S2或DPO有效。两条小样本只用于梯度/权重/重载完整性，不用于正式泛化结论。
+9. **今晚看懂的五处代码**：
+
+| 文件 → 函数 | 输入 → 输出 | pipeline作用 |
+|---|---|---|
+| veriagent/teacher_rollout.py → teacher_trajectory | training任务+普通API → 全轨迹/events/reward/usage | 实际已经跑过20题 |
+| veriagent/teacher_data.py → CanonicalTeacherEncoder.encode | 历史+完整可见assistant → 学生ids/labels | context和非思考prefill为-100，完整assistant决策监督 |
+| veriagent/teacher_data.py → export_teacher_turns | 原始轨迹+审核hash+固定任务 → 全部已批准样本 | 已通过15条/57轮，不删错误片段后冒充完整示范 |
+| scripts/run_sft_probe.py → prepare_examples | 两条完整轨迹+审核/config → 8样本 | 本地与远端CPU均通过，锁定source/task/token数 |
+| scripts/run_sft_probe.py → main的训练循环 | 样本+Qwen3-8B/LoRA → loss/梯度/更新/checkpoint | 代码准备好，GPU尚未执行 |
+
+实际已执行的学生样本结构可以概括为以下原代码逻辑；目标来自教师的完整可见输出，但tokenizer是学生的：
+
+```python
+prefix = self.inspector.render(prefix_messages, tools, generate=True)
+complete = self.inspector.render(
+    prefix_messages + [assistant_message], tools, generate=False
+)
+if not complete.startswith(prefix):
+    raise ValueError('Canonical assistant prefix is not a continuation of the input')
+target_text = complete[len(prefix):][:-1]  # 仅去EOS后的分隔换行
+prefix_ids = self.inspector.tokenizer.encode(prefix, add_special_tokens=False).ids
+target_ids = self.inspector.tokenizer.encode(target_text, add_special_tokens=False).ids
+input_ids = prefix_ids + target_ids
+labels = [-100] * len(prefix_ids) + target_ids
+```
+
+`-100`表示这些位置不是直接CE目标，context仍参与前向计算；不能理解成把用户/工具观察从输入删掉。每轮会重用历史，所以本probe共有35972 processed tokens而只有582 supervised tokens。教师与学生tokenizer不同，供应商9023输出tokens也不能当学生训练tokens。
+
+下面摘自准备好的GPU训练循环，**本轮未执行**。不要把读懂代码或CPU检查通过说成完成了参数更新：
+
+```python
+optimizer.zero_grad(set_to_none=True)
+output = model(**batch, use_cache=False)
+loss = output.loss
+if not loss.requires_grad or not torch.isfinite(loss).item():
+    raise ValueError('Invalid model CE/gradient graph')
+loss.backward()
+grads = [p.grad for p in trainable.values() if p.grad is not None]
+if not grads or not all(torch.isfinite(g).all().item() for g in grads):
+    raise ValueError('Missing/nonfinite gradients')
+norm = torch.nn.utils.clip_grad_norm_(
+    list(trainable.values()), config['max_grad_norm'], error_if_nonfinite=True
+)
+optimizer.step()
+```
+
+未来还必须检查：首步模型CE与手动shift后的CE相同；LoRA有非零梯度和实际参数变化；冻结基座抽样不变；adapter保存重载后的固定输入logits/greedy IDs一致。即使这些全过，也只是证明训练过程可信，仍需后续Agent评测证明行为改善。
+
+10. **今晚三个学习点**：成功轨迹与可模仿示范不同；跨模型示范用学生格式完整重编码；训练完整性和Agent效果是不同证据层级。
+11. **五个面试追问（不附答案）**：为什么18条成功只批准15条？邮件排序在源码中正确，为什么模型仍可能缺少选择最新邮件的依据？为何用两条完整轨迹而不是从多条失败里摘8个好动作？35972与582分别决定什么成本？8步loss下降能否证明Agent规划更好？
+12. **下一步分叉**：已有A800有库存则按已明确授权执行8步probe并关机，部署最新固定提交；若仍无库存，等待或由用户选择新实例路线。没有自动新租、扩大模型/context/数据或进入DPO/RL。学习测验不阻挡实验，尚未评分。
+13. **身份/证据**：采集TEACHER-ACQUIRE-20260916-001@ccc890d；CPU准入TEACHER-ADMISSION-CPU-20260916-001@5fd411b；远端复核部署d429eb6。采集config/identity/api_events/trajectories/result、完整审核、两题approval、CPU负向检查和样本均在对应实验目录；传输/费用/操作异常在evidence/teacher-acquisition。SFT-PROBE-20260916-001只是未执行计划，没有SFT成功记录。官方数据来源核验解决了GitHub自动审批疑虑；A800点击审批由用户明确回复解决，之后被实际库存阻塞。
+
+总报告：[教师采集与输入资格](../TEACHER_ACQUISITION_REPORT_20260916.md)。结束新实验，保留两台实例数据和全部失败记录；本轮无GPU运行账单主张。

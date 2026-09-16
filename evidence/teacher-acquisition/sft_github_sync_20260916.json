@@ -1,0 +1,156 @@
+{
+  "status": "GITHUB_SYNC_VERIFIED",
+  "repository": "ycInfinite/VeriAgent-Workplace",
+  "git_commit": "d429eb66eded750e252a1e4880187d6c67a1940a",
+  "transport": "Execution host downloads pinned files directly from GitHub",
+  "private_repository": true,
+  "synced_file_count": 27,
+  "changed_files": [
+    "configs/sft_probe_plan.json",
+    "experiments/TEACHER-ACQUIRE-20260916-001/probe_quality_approvals.json",
+    "scripts/run_sft_probe.py",
+    "veriagent/teacher_data.py"
+  ],
+  "account_credential_sent_to_remote": false,
+  "temporary_urls_persisted": false,
+  "dev_or_final_cases_downloaded": false,
+  "weights_or_venv_modified": false,
+  "source_files": [
+    {
+      "path": "configs/sft_acquisition_plan.json",
+      "sha256": "43dd7093f468e23aab443690b665a49e902d9cb418ec8662d17bbf2a1bdcc6d6",
+      "git_blob_sha": "cd69156519e1fe2717bf1b50f088b8b0e7c3639c"
+    },
+    {
+      "path": "configs/sft_probe_plan.json",
+      "sha256": "521e70957d8e8533fa51419719208e718348667cd86be1267a7040321e2f93c5",
+      "git_blob_sha": "2ebefee8cafb65bb2dbf559aaa0dea4e2d35a596"
+    },
+    {
+      "path": "configs/sources.json",
+      "sha256": "6e89739f24c7b7f4ecadad20bc99b9cc4b647c9e39f0e8f7532a35f57fb658dc",
+      "git_blob_sha": "f5fdea58306585cd2f6b97cb40e3416492125f9e"
+    },
+    {
+      "path": "configs/teacher_acquisition_plan.json",
+      "sha256": "e1191f1370cdc9ce43040685ad935b899cfa520cb558b42dd7b0d702fcc99351",
+      "git_blob_sha": "896be977e991437edf47747696ef665e62fa7b50"
+    },
+    {
+      "path": "configs/tokenizer.json",
+      "sha256": "bc15f350f025c9686071482519498f160f0d2168ff8638c02bdd8bc5c7a1c59a",
+      "git_blob_sha": "dfa75f41d2b233da7cc7de899786cca5ca444035"
+    },
+    {
+      "path": "experiments/SFT-PREP-20260910-001/acquisition_manifest.json",
+      "sha256": "3efb4d9d43a10e167be7b6ce1ca8bcacf062d936f94e3a33e23f690880429951",
+      "git_blob_sha": "083e1ca99438b7b85b03139cae1912bff3066f72"
+    },
+    {
+      "path": "experiments/TEACHER-ACQUIRE-20260916-001/config.json",
+      "sha256": "e648ae138109ec93bf0c727ef56475e274fd58e1a652a5cfe0aabac05b0794d7",
+      "git_blob_sha": "1e6672f8ab57f1903b3a4d0d89df7e24fcf047dd"
+    },
+    {
+      "path": "experiments/TEACHER-ACQUIRE-20260916-001/probe_quality_approvals.json",
+      "sha256": "059236284b89ddb49eb174ee0e91e9ca2a4935f32993e224219c0e5e6bf61150",
+      "git_blob_sha": "ab63557402a1f5c9d9663bede96facffd40e07dc"
+    },
+    {
+      "path": "experiments/TEACHER-ACQUIRE-20260916-001/trajectories.jsonl",
+      "sha256": "cde2b4784ee533e2039eab6b2a7fd0594467607ad407753c005f730a944db207",
+      "git_blob_sha": "82393cee581606838c63dcb9382be0c07142ad84"
+    },
+    {
+      "path": "requirements-day3-remote.pinned.txt",
+      "sha256": "30f418f14dd929c28ff0a6f1b26afe04ad836c0fc1131324d005252ff2153ea7",
+      "git_blob_sha": "a89a81d30646163d5beabeb16b4f8f8f30f3c12c"
+    },
+    {
+      "path": "requirements-sft-acquisition.pinned.txt",
+      "sha256": "f524d45b0b2cc51a082267fd3d5e19e07dd56a0773d3a6340e0a3548eb332136",
+      "git_blob_sha": "f150f63594b8e1e0046fe41b06432a8aa5ba8d91"
+    },
+    {
+      "path": "requirements-sft-probe.pinned.txt",
+      "sha256": "3aad62152e489c42314cff0721532139464c9806366a9e720ded369a9519cb93",
+      "git_blob_sha": "446f2fd549537d179284618ebf993b29f63b02c0"
+    },
+    {
+      "path": "scripts/collect_teacher_probe.py",
+      "sha256": "0b0759f4369d68b34495c4c2438cc289e12973aa5d35c1fc55ae2c9db360eee2",
+      "git_blob_sha": "35e9a5e6886e3c3a2b471ecc3e3e0f00f56f008d"
+    },
+    {
+      "path": "scripts/collect_training_probe.py",
+      "sha256": "947404d8d0d99f857fb94097e3f21a86bccefd4bd9e85a0bc9057b802085483a",
+      "git_blob_sha": "270ee4dcc6470548091b5c4c0070067153f25d25"
+    },
+    {
+      "path": "scripts/gpu_preflight.py",
+      "sha256": "c96a477db7a0093ef03ecf8f748d9133e4865f8623d590c9eaaca18fa159d132",
+      "git_blob_sha": "dab320fccfe3af0f3a44fbf7c8f5e9aed5ac643e"
+    },
+    {
+      "path": "scripts/prepare_sft_model_files.py",
+      "sha256": "4a61eeb5a59f2784c6c7cadec27f46c8cf9bc185b277cda61143566d0ab7f4aa",
+      "git_blob_sha": "7610546415953db99db1da559775c5a7a443d5a4"
+    },
+    {
+      "path": "scripts/run_day3.py",
+      "sha256": "b6204f780b70d8f6bdda09a878a8b793d7597ef33334282dccdbadeb6d405e90",
+      "git_blob_sha": "b97a14f7f11384fb8c94512e773298b1da607543"
+    },
+    {
+      "path": "scripts/run_sft_probe.py",
+      "sha256": "f9dc29fb213eaf934df04ad5e73ed353331d1bc4a52e70ebe69aaf42c240d652",
+      "git_blob_sha": "ba4e071ef38f837f73fbe5a8924d6381d490d23d"
+    },
+    {
+      "path": "scripts/validate_sft_no_card.py",
+      "sha256": "28ce248f416e741ca0992bbf0709515ac73253cbbe2cc1f12d426f04330bcc44",
+      "git_blob_sha": "418cc96096331e02e383f765943a04e260da8bbf"
+    },
+    {
+      "path": "scripts/verify_model_integrity.py",
+      "sha256": "397950f039fb685587071fd82d559bb64d239e5972eeeadb1b251269bb11270e",
+      "git_blob_sha": "075668c1b50120a18b40be1f8f45aadb2c85d778"
+    },
+    {
+      "path": "veriagent/__init__.py",
+      "sha256": "a9991fa4705bb728df1394a8e9594eb845524cbc517f6aef642a79aab9f99d97",
+      "git_blob_sha": "b2d080d87eab79fac765e3548e08dd17705ae6b1"
+    },
+    {
+      "path": "veriagent/environment.py",
+      "sha256": "a7b4cbf2cd2e654654da20270a50a68da0ab7d5d619f05bd1d6a3db728de5aa2",
+      "git_blob_sha": "f8b11ba0d5b6b65b66248784281ac724f3d00458"
+    },
+    {
+      "path": "veriagent/policy_protocol.py",
+      "sha256": "021846099e0ac1622e412fd4ed6127245f0b9b00983de1acc4acca65dc0e9818",
+      "git_blob_sha": "875bc7e54e5095851bea8cec5c268fd03af0444c"
+    },
+    {
+      "path": "veriagent/sft_data.py",
+      "sha256": "01148d1c209ef02a35e672b42977e509ea13087134202b01e3efdb8f4ae2fe60",
+      "git_blob_sha": "79ea9bbc5c4b9e51b29e4d5223b81adee39e1e11"
+    },
+    {
+      "path": "veriagent/teacher_data.py",
+      "sha256": "0b38cce42dfda134aad9a7bb05a52aaf338a96330f7796e6035e6cb68fd78d12",
+      "git_blob_sha": "d39b1dfbda21147c46d4d7392e249fa9c3ed08dd"
+    },
+    {
+      "path": "veriagent/teacher_rollout.py",
+      "sha256": "51eb0cce86171876567701fd755dbca429605287d64e9ab4a7d30c6e8cd11bcd",
+      "git_blob_sha": "e8397dc32a0c34a36ea2b55b481906892dc51ba6"
+    },
+    {
+      "path": "veriagent/token_mask.py",
+      "sha256": "4e3c73226eb147b770e43d9112e55aac03ae2255734c0c41641c727da4bd5a06",
+      "git_blob_sha": "ca0f1aa6e6a04d483395010757f2c64817e0bd8b"
+    }
+  ],
+  "manifest_sha256": "1be3b27c16f816b4f239bc3bfa1183abe3038f1e5220e8ee77a18106c11bd6c9"
+}

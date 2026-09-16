@@ -1,0 +1,1 @@
+{"status": "DATA_ADMISSION_PASSED", "tasks": 2, "examples": 8, "source_format": "canonical-teacher", "processed_tokens": 35972, "supervised_tokens": 582, "model_loaded": false}

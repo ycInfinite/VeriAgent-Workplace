@@ -14,6 +14,8 @@ from pathlib import Path
 import shlex
 import subprocess
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -133,7 +135,14 @@ def main():
         api='https://api.github.com/repos/'+REPOSITORY+'/contents/'+urllib.parse.quote(path,safe='/')+'?ref='+commit
         request=urllib.request.Request(api,headers={'Authorization':'Bearer '+token,
             'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'VeriAgent-pinned-file-sync'})
-        with urllib.request.urlopen(request,timeout=30) as response:info=json.load(response)
+        # Retry only read-only GitHub metadata transport, never a model request.
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(request,timeout=30) as response:info=json.load(response)
+                break
+            except (urllib.error.URLError,TimeoutError):
+                if attempt==2:raise
+                time.sleep(attempt+1)
         data=git('show',commit+':'+path)
         expected_blob=git('rev-parse',commit+':'+path).decode().strip()
         if info['sha']!=expected_blob:raise ValueError('GitHub/local blob identity mismatch')
