@@ -1,5 +1,7 @@
 # Project state
 
+Teacher-cost advice(2026-09-16): recommend ordinaryAPI for the next bounded collection; current undiscounted estimate≈RMB0.332 per quality-approved trajectory. Existing responses show89.37percent input-token cache hits, but model-specific cache price and invoice remain unverified. Open-teacher self-hosting requires separate quality and all-in cost qualification. SeeTEACHER_COST_COMPARISON_20260916.md. This was advice only; no new run, machine startup or stage transition.
+
 ## Current: first real8-update LoRA probe passed; checkpoint verified and all instances off (2026-09-16)
 
 SFT-PROBE-20260916-001 executed on the user-authorized replacement904 PRO6000 single GPU atcommit0a7eba87b1d2fe04320ee67803951e4af6169295. All8 updates completed on whole tasks707/965(8 turns,35972 processed/582 supervised tokens). Trainable parameters43646976; first manual/model CE difference0; all gradients finite,504 adapter tensors changed; frozen parameter samples unchanged. Adapter reload logits max difference0 and greedy IDs identical. Training validity gate passed; no infrastructure-invalid training run.

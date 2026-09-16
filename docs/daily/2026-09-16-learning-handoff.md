@@ -263,3 +263,9 @@ output_ok = expected_ids == actual_ids
 13. **身份、日志、费用与checkpoint**：SFT-PROBE-20260916-001@0a7eba87b1d2fe04320ee67803951e4af6169295；实验目录的config/identity/steps/training_examples/reload_check/adapter_changes/gpu_samples/result/run_stdout/launch为原始证据。证据包SHA为929b108499160b922a45007cd4e637512536153f6b717ba5f2abbe180c5b1b32。本地checkpoints/SFT-PROBE-20260916-001/adapter下3文件174661796字节已与远端SHA匹配，不入Git；receipt在evidence/sft-probe。模型revision仍b968826d9c46dd6066d109eabc6255188de91218。进程0.00930387GPU-h≈0.064941元，整机会话估算约4.58–5.04元至关机请求（小额关机延迟可能另增），包含进程费，非账单；三机已关。一次原凭据认证失败和GitHub传输失败均为准备阶段事件，已保留，不算训练invalid或模型失败。
 
 完整报告：[首次真实LoRA probe](../SFT_FIRST_PROBE_REPORT_20260916.md)。本轮结束，不启动新实验。
+
+### 教师成本咨询补充
+
+用户询问下一轮教师采样用API还是部署。当前建议API：20条得到15条完整批准示范，按原价估算约0.332元/合格轨迹；同长度/通过率预算100、300、500条合格约33、100、166元。关键分母是“合格示范”，不是原始rollout数。本地8B原批次虽然推理进程便宜，但0条整轨迹批准，不能直接当等质量替代。
+
+还从已有80次响应发现346624/387839输入tokens命中缓存(89.37%)；当前模型的具体缓存单价未核验，不套通用折扣，不把4.98元原价估算说成实际账单。自部署需要另选质量合格的开放教师，并比较每个计费小时的合格产出；按6.98元/小时，超过约21条/小时才低于此未折扣API基线，缓存优惠会提高这个门槛。没有新采样、部署、GPU使用或考试评分。

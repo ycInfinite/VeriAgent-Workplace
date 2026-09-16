@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-16",
+  "kind": "COST_ANALYSIS_OF_EXISTING_EVIDENCE_NOT_NEW_EXPERIMENT",
+  "source_run": "TEACHER-ACQUIRE-20260916-001",
+  "source_api_events_sha256": "69e3a16f8840f35b34e99199e3a3a930c9a353e885c578f2f11f3a44dc9b646f",
+  "responses": 80,
+  "prompt_tokens": 387839,
+  "completion_tokens": 9023,
+  "observed_cached_tokens": 346624,
+  "observed_cached_input_fraction": 0.8937316773197126,
+  "implicit_cache_inference": "Requests had no explicit cache_control; response usage reports cached_tokens",
+  "input_rmb_per_million": 12,
+  "output_rmb_per_million": 36,
+  "cached_input_rmb_per_million": null,
+  "cached_price_caveat": "Official docs exclude qwen3.8-max from generic10percent/20percent cache pricing; specific rate needs console verification",
+  "undiscounted_api_estimate_rmb": 4.978896,
+  "quality_approved_trajectories": 15,
+  "undiscounted_rmb_per_approved": 0.3319264,
+  "cache_cost_formula": {
+    "noncached_input_plus_output_rmb": 0.819408,
+    "cached_token_millions": 0.346624,
+    "expression": "noncached_input_plus_output_rmb + cached_token_millions * actual_cached_input_rmb_per_million"
+  },
+  "planning_only_approved_trajectory_costs_rmb": {
+    "100": 33.192640000000004,
+    "300": 99.57792,
+    "500": 165.9632
+  },
+  "planning_assumptions": "Same average token length and15/20 full-quality yield as this small cohort; no guaranteed yield or bill",
+  "local_gpu_hourly_rmb_reference": 6.98,
+  "local_break_even_approved_per_billed_hour_vs_undiscounted_api": 21.02875818253685,
+  "local_8b_comparison": {
+    "source_run": "SFT-ACQUIRE-20260916-001",
+    "attempts": 20,
+    "full_quality_approvals": 0,
+    "inference_process_only_cost_rmb": 0.17066345020996201,
+    "does_not_establish_other_open_teachers_quality": true
+  },
+  "recommendation": "Keep ordinary API teacher for next bounded collection; consider deployment only after an open teacher passes equal-quality qualification and all-in cost probe",
+  "sources": [
+    "https://help.aliyun.com/zh/model-studio/model-pricing",
+    "https://help.aliyun.com/zh/model-studio/context-cache"
+  ],
+  "invoice_verified": false,
+  "new_api_calls": 0,
+  "new_gpu_hours": 0
+}
