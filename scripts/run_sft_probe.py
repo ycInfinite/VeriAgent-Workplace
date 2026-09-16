@@ -28,7 +28,7 @@ def append(path,value):
         handle.write(json.dumps(value,ensure_ascii=False)+'\n');handle.flush()
 
 
-def prepare_examples(config,trajectory_path,review_path):
+def prepare_examples(config,trajectory_path,review_path,source_format='recorded-policy'):
     cohort=json.loads((ROOT/config['cohort_manifest']).read_text())
     approved_tasks={x['task_uid']:x for x in cohort['tasks']}
     raw=[json.loads(x) for x in trajectory_path.read_text().splitlines() if x.strip()]
@@ -36,12 +36,21 @@ def prepare_examples(config,trajectory_path,review_path):
     reviews=json.loads(review_path.read_text())['approved']
     if len({x['trajectory_sha256'] for x in reviews})!=len(reviews):
         raise ValueError('Duplicate quality approval')
-    selected=[];examples=[];encoder=TurnEncoder(config['max_context_tokens'])
+    selected=[];examples=[]
+    if source_format=='canonical-teacher':
+        from veriagent.teacher_data import CanonicalTeacherEncoder,export_teacher_turns
+        encoder=CanonicalTeacherEncoder(config['max_context_tokens'])
+        teacher_config=json.loads((trajectory_path.parent/'config.json').read_text())
+    elif source_format=='recorded-policy':
+        encoder=TurnEncoder(config['max_context_tokens'])
+    else:raise ValueError('Unknown source format')
     for review in reviews:
         record=by_hash.get(review['trajectory_sha256'])
         if record is None:raise ValueError('Reviewed trajectory missing from raw artifact')
         if record['condition']!='B1':raise ValueError('Unexpected prompt condition')
-        examples.extend(export_training_turns(record,review,approved_tasks,encoder))
+        if source_format=='canonical-teacher':
+            examples.extend(export_teacher_turns(record,review,approved_tasks,encoder,teacher_config))
+        else:examples.extend(export_training_turns(record,review,approved_tasks,encoder))
         selected.append(record)
     task_count=len({r['task_uid'] for r in selected})
     if not config['min_training_tasks']<=task_count<=config['max_training_tasks']:
@@ -67,15 +76,18 @@ def main():
     parser.add_argument('--reviews',required=True)
     parser.add_argument('--hourly-rmb',type=float)
     parser.add_argument('--validate-only',action='store_true')
+    parser.add_argument('--source-format',choices=['recorded-policy','canonical-teacher'],default='recorded-policy')
     args=parser.parse_args()
     config=json.loads((ROOT/'configs/sft_probe_plan.json').read_text())
     if args.hourly_rmb is not None and (not math.isfinite(args.hourly_rmb) or args.hourly_rmb<=0):
         raise ValueError('Invalid actual price')
     trajectory_path=ROOT/args.trajectories;review_path=ROOT/args.reviews
-    selected,examples,encoder=prepare_examples(config,trajectory_path,review_path)
+    selected,examples,encoder=prepare_examples(config,trajectory_path,review_path,args.source_format)
     if args.validate_only:
         print(json.dumps({'status':'DATA_ADMISSION_PASSED','tasks':len(selected),
-            'examples':len(examples),'model_loaded':False}));return
+            'examples':len(examples),'source_format':args.source_format,
+            'processed_tokens':sum(x['processed_tokens'] for x in examples),
+            'supervised_tokens':sum(x['supervised_tokens'] for x in examples),'model_loaded':False}));return
     integrity=json.loads((ROOT/'model_integrity.json').read_text())
     if integrity.get('revision')!=config['model_revision'] or not integrity.get('all_match'):
         raise ValueError('Weight integrity gate missing')
@@ -83,7 +95,7 @@ def main():
     if packages!=config['required_packages']:raise ValueError('Unqualified training package versions')
     out=ROOT/'experiments'/args.run_id;out.mkdir(parents=True,exist_ok=False)
     config.update({'hourly_rmb':args.hourly_rmb,'trajectory_artifact':args.trajectories,
-        'review_artifact':args.reviews,'status':'RUNNING'})
+        'review_artifact':args.reviews,'source_format':args.source_format,'status':'RUNNING'})
     write(out/'config.json',config)
     manifest=json.loads((ROOT/'bundle_manifest.json').read_text())
     for entry in manifest['files']:
@@ -118,14 +130,24 @@ def main():
         set_seed(config['seed'])
         path=ROOT/config['weights_path']
         tokenizer=AutoTokenizer.from_pretrained(path,local_files_only=True)
+        by_turn={(ex['task_uid'],ex['turn']):ex for ex in examples}
         for record in selected:
             for turn in record['rounds']:
                 prompt=tokenizer.apply_chat_template(turn['input_messages'],tools=record['tool_schemas'],
                     tokenize=False,add_generation_prompt=True,enable_thinking=False)
-                if hashlib.sha256(prompt.encode()).hexdigest()!=turn['input_sha256']:
+                ex=by_turn[(record['task_uid'],turn['turn'])]
+                if hashlib.sha256(prompt.encode()).hexdigest()!=ex['input_sha256']:
                     raise ValueError('Actual trainer tokenizer prompt differs from recorded rollout')
                 if tokenizer(prompt,add_special_tokens=False)['input_ids']!=encoder.inspector.tokenizer.encode(prompt,add_special_tokens=False).ids:
                     raise ValueError('Actual trainer tokenizer IDs differ')
+                if args.source_format=='canonical-teacher':
+                    complete=tokenizer.apply_chat_template(turn['input_messages']+[turn['assistant_message']],
+                        tools=record['tool_schemas'],tokenize=False,add_generation_prompt=False,enable_thinking=False)
+                    if not complete.startswith(prompt) or not complete.endswith('<|im_end|>\n'):
+                        raise ValueError('Actual trainer canonical template differs')
+                    target=tokenizer(complete[len(prompt):-1],add_special_tokens=False)['input_ids']
+                    if target!=ex['labels'][ex['prefix_tokens']:]:
+                        raise ValueError('Actual trainer canonical target IDs differ')
         def load_base():
             return AutoModelForCausalLM.from_pretrained(path,local_files_only=True,dtype=torch.bfloat16,
                 device_map={'':0},attn_implementation='sdpa',low_cpu_mem_usage=True)

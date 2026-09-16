@@ -1,0 +1,33 @@
+{
+  "approved": [
+    {
+      "task_id": 707,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:707",
+      "trajectory_sha256": "5b515edb6e4a8079c358af5b925a722e55b87942975c4c4f4fc713917d585763",
+      "official_reward": 1.0,
+      "reviewer": "Codex",
+      "independent_human_review": false,
+      "decision": "approved_for_sft_probe",
+      "rationale": "Lookup returns unique Kerry Moore ID00000046 and Qualified status; correct Proposal update; no invented ID or failed prefix.",
+      "grounding_checked": true,
+      "target_scope_checked": true,
+      "all_supervised_turns_acceptable": true
+    },
+    {
+      "task_id": 965,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965",
+      "trajectory_sha256": "0868987d0d148aab9b460a023eb902f9fe3408018cab1579ff79d9b93edc69f9",
+      "official_reward": 1.0,
+      "reviewer": "Codex",
+      "independent_human_review": false,
+      "decision": "approved_for_sft_probe",
+      "rationale": "Directory and complete task search ground all matching work; only listed task updated; follow-up empty search confirms completion. Verification lookup is not a repeated unchanged-state action.",
+      "grounding_checked": true,
+      "target_scope_checked": true,
+      "all_supervised_turns_acceptable": true
+    }
+  ],
+  "selection_reason": "First bounded integrity probe uses2 complete grounded trajectories in CRM/PM, prior weak domains;3+5 turns exactly cover8 updates once each. Not S1/S2 selection-effect evidence; no selective-turn targets.",
+  "source_quality_report": "quality_review_full_trajectory.json",
+  "source_run": "TEACHER-ACQUIRE-20260916-001"
+}
