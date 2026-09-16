@@ -1,5 +1,7 @@
 # Hypotheses
 
+[GPU_WATCH_LAST_CHECK] 2026-09-16T03:10:26.809803+00:00 — Inventory-only check; no new model/parameter-update evidence; existing hypotheses unchanged.
+
 2026-09-16 创建GPU库存heartbeat仅改变后续检查方式，不产生新模型、训练或泛化证据。当前SFT仍未执行，研究假设状态不变。
 
 2026-09-16 TEACHER-ACQUIRE-20260916-001支持本批数据来源假设：固定20题中得到15条可完整模仿的成功示范，超过首次probe至少2题门槛。18/20仅是闭源教师在本training cohort的官方状态成功，不是学生泛化或SFT收益。两条其他reward1邮件轨迹缺少跨页最新性依据、1183缺少最终终止，仍未批准。CPU准入支持完整可见行为可编码和伪造/缺失证据可拒绝；GPU无库存导致SFT仍未执行，H5/H6/H7继续未测。

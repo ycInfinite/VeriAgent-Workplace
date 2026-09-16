@@ -1,5 +1,7 @@
 # Decisions
 
+[GPU_WATCH_LAST_CHECK] 2026-09-16T03:10:26.809803+00:00 — No route/configuration change: preserve existing instances, do not rent or duplicate runs; continue the existing15-minute monitoring.
+
 2026-09-16 定时监控：应用户要求创建当前对话15分钟heartbeat `veriagent-gpu-sft-probe`，优先检查既有A800并兼查PRO6000。复用已授权的两条完整轨迹/8步单卡probe，先查registry/进程防重复，完成保全证据并关机后暂停监控；无新租赁或扩大阶段。库存不变不通知；本地机器/App/浏览器登录不可用时不虚称监控成功。
 
 2026-09-16 真实教师与库存停点：普通百炼qwen3.8-max固定20题18成功，15完整轨迹批准；学生输入严格采用完整707/965两条、共8轮/582目标tokens，保留上下文mask，不使用此前被拒的选择性片段。16项负向CPU准入与远端检查通过。按用户常规操作授权结束无卡模式，PRO6000库存0；自动审批曾拦A800入口，用户明确允许A800执行8步，随后A800也显示库存0。两机关机、参数更新0，等待既有GPU可用；不重复同一A800审批、不租新实例、不扩大实验。

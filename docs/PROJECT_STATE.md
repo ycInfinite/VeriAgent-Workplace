@@ -1,5 +1,7 @@
 # Project state
 
+[GPU_WATCH_LAST_CHECK] 2026-09-16T03:10:26.809803+00:00 — A800 and PRO6000 both still have0 available GPUs and remain powered off; authorized8-step SFT probe unexecuted; monitor remains active.
+
 Monitoring update(2026-09-16): user requested ongoing GPU checks. Active current-thread heartbeat `veriagent-gpu-sft-probe`,every15 minutes; existing A800 prioritized, existing PRO6000 also checked. It may continue the already authorized bounded8-step probe when inventory permits, with duplicate-run checks and shutdown afterward. No new rental or expanded phase. Unchanged inventory remains quiet; stop/pause after probe completion or actionable training failure. Creation is verified in the app; no new inventory result or training run is implied. Computer/app and authenticated local browser are required.
 
 ## Current: teacher data qualified; authorized SFT probe blocked by GPU inventory (2026-09-16)
