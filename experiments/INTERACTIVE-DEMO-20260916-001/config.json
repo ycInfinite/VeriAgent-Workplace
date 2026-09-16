@@ -1,0 +1,24 @@
+{
+  "Research Question": "Did the user-initiated Token Plan demo perform grounded real actions, and is its data eligible?",
+  "Hypothesis": "Tool execution may succeed even when client settings or recording are unsuitable for controlled SFT.",
+  "Independent Variable": "Official interactive client and MCP wrapper, replacing the existing teacher collector",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "tool/verifier/state agreement",
+    "grounding",
+    "observed provider usage",
+    "configuration deviations",
+    "recording completeness and training eligibility"
+  ],
+  "Evidence Gate": "Separate actual task success from admission and comparability; no automatic training.",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "experiment_kind": "POSTHOC_CPU_AUDIT_OF_USER_INITIATED_DEMO",
+  "registration_timing": "after user execution; NOT a preregistered B1 run",
+  "source_execution_commit": "318e23376f5f8358e52fa3dead81227021597fb1"
+}

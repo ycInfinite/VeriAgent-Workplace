@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "official_cli_version": "0.23.4",
+  "original_bare": {
+    "contextWindowSize": 1000000,
+    "enable_thinking": null,
+    "output_tokens": null,
+    "maxRetries": null
+  },
+  "fixed": {
+    "contextWindowSize": 8192,
+    "enable_thinking": false,
+    "output_tokens": 256,
+    "maxRetries": 0
+  },
+  "followup_suggestions": false,
+  "source_inspected": "llm-PJU4VT3K.js:createMinimalSettings branch",
+  "scope": "pure config resolver; not a model payload/cost qualification",
+  "model_requests": 0
+}

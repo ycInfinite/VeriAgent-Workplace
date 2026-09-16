@@ -73,7 +73,8 @@ def main():
     lock = json.loads((cache/'qwen-code/package-lock.json').read_text())
     if lock['packages']['node_modules/@qwen-code/qwen-code']['integrity'] != QWEN_INTEGRITY:
         raise ValueError('Qwen Code registry package integrity differs from the checked version')
-    destination = cache/'interactive-client'
+    # Keep the v1 profile and all user-session evidence intact.
+    destination = cache/'interactive-client-v2'
     client_home = destination/'client-home'
     workspace = destination/'workspace'
     client_home.mkdir(parents=True,exist_ok=True)

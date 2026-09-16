@@ -178,19 +178,19 @@ def main():
                                   idempotentHint=False, openWorldHint=False)
 
     @server.tool(annotations=annotations)
-    def get_task() -> dict:
+    def get_task() -> str:
         """Begin one fixed training task; get its user request and original tool schemas."""
-        return session.get_task()
+        return json.dumps(session.get_task(), ensure_ascii=False, separators=(',', ':'))
 
     @server.tool(annotations=annotations)
-    def execute_workplace_tool(name: str, arguments: dict) -> dict:
+    def execute_workplace_tool(name: str, arguments: dict) -> str:
         """Execute one named Workplace tool with its original arguments; return real observation."""
-        return session.execute(name, arguments)
+        return json.dumps(session.execute(name, arguments), ensure_ascii=False, separators=(',', ':'))
 
     @server.tool(annotations=annotations)
-    def finish_task(answer: str) -> dict:
+    def finish_task(answer: str) -> str:
         """Submit the final answer, close the session permanently and run the official verifier."""
-        return session.finish(answer)
+        return json.dumps(session.finish(answer), ensure_ascii=False, separators=(',', ':'))
 
     try:
         server.run(transport='stdio')

@@ -1,0 +1,137 @@
+{
+  "files": [
+    {
+      "source_path": ".cache/interactive-client/mcp.json",
+      "bytes": 540,
+      "sha256": "945e1782d50ab9b1ce52d74832619120e865ac180aa4947658d5ab172df34c23",
+      "local_file": "raw/00-mcp.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/installation.json",
+      "bytes": 1076,
+      "sha256": "2c1d672c2c121d7cc13039e954bb172920699a35a9b290a5f130c0667a164992",
+      "local_file": "raw/01-installation.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/installation.before-bounds.json",
+      "bytes": 969,
+      "sha256": "2afdcdc9ac20838a2e2b6e6428e35aeb11afae313f2598420099d4fd4ddd8bd1",
+      "local_file": "raw/02-installation.before-bounds.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-events-65f42dd63e7e46f7bd1f0f9617bd4350.jsonl",
+      "bytes": 700,
+      "sha256": "a84560ebcc0b484580bac79ef95839b8eb6d47b038209bdf1b88e0483dc4f2c6",
+      "local_file": "raw/03-client-events-65f42dd63e7e46f7bd1f0f9617bd4350.jsonl"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-events-887b50d35b8e40deb0e2afe71dbc89b0.jsonl",
+      "bytes": 82778,
+      "sha256": "7a647131614f31a530d74d1be283bb04516ea8dfe14dd133175c1ac31e5b72e0",
+      "local_file": "raw/04-client-events-887b50d35b8e40deb0e2afe71dbc89b0.jsonl"
+    },
+    {
+      "source_path": ".cache/interactive-client/credential_scan.json",
+      "bytes": 136,
+      "sha256": "4583d222acd5d01700d67d5ecb557833c56c1db8ada9211f41a41babf5bafeef",
+      "local_file": "raw/05-credential_scan.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/settings.before-bounds.json",
+      "bytes": 1139,
+      "sha256": "918511dd62c886ceb1484522aa75282e0cdb026dda2016cdb4ca774674d05702",
+      "local_file": "raw/06-settings.before-bounds.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/settings.json",
+      "bytes": 1471,
+      "sha256": "bac7bcbd55b2b8f0d3933bb4de990bc43ff71e8f63057150d1d25041966c3e36",
+      "local_file": "raw/07-settings.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/usage_record.jsonl",
+      "bytes": 869,
+      "sha256": "ec45791ba9e40609dccba48e0ea0a3918a908ea2d3505a11cb5312d7e38ea0d9",
+      "local_file": "raw/08-usage_record.jsonl"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/extensions/extension-enablement.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "local_file": "raw/09-extension-enablement.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/extension-store/state.json",
+      "bytes": 151,
+      "sha256": "ba873559697359376b0516eac37417b45f7ced6415556fcf69e21bf0e453c4fc",
+      "local_file": "raw/10-state.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/usage/token-usage-2026-09.jsonl",
+      "bytes": 2263,
+      "sha256": "06904dd38205222c2c48ba7d06881df9d87f65f5beca733025579ccdfac843a4",
+      "local_file": "raw/11-token-usage-2026-09.jsonl"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/projects/-root-autodl-tmp-veriagent-workplace-sft-20260910--cache-interactive-client-workspace/chats/0f5d9487-13d8-4672-90f2-d07a9f0c124c.runtime.json",
+      "bytes": 313,
+      "sha256": "c2c736f4623f8dc0120683070daeb0bc76f15138c7267a5bf808348e11655abf",
+      "local_file": "raw/12-0f5d9487-13d8-4672-90f2-d07a9f0c124c.runtime.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/projects/-root-autodl-tmp-veriagent-workplace-sft-20260910--cache-interactive-client-workspace/chats/e0f6ff46-e9c7-4ff6-af6a-185f7a031bf2.runtime.json",
+      "bytes": 313,
+      "sha256": "b7538b155d2dfa70e180c19bee33c3a9605a9470ded8ac4e99f9741665e926f9",
+      "local_file": "raw/13-e0f6ff46-e9c7-4ff6-af6a-185f7a031bf2.runtime.json"
+    },
+    {
+      "source_path": ".cache/interactive-client/client-home/projects/-root-autodl-tmp-veriagent-workplace-sft-20260910--cache-interactive-client-workspace/chats/e0f6ff46-e9c7-4ff6-af6a-185f7a031bf2.jsonl",
+      "bytes": 79897,
+      "sha256": "53e5dfba6bb6ced72f2510ed2a1e869a82db9154c26ca3a675ac3a8a2a093112",
+      "local_file": "raw/14-e0f6ff46-e9c7-4ff6-af6a-185f7a031bf2.jsonl"
+    },
+    {
+      "source_path": ".cache/interactive-sessions/INTERACTIVE-20260916T084345-9e606799/identity.json",
+      "bytes": 1351,
+      "sha256": "0f7e238a9270e1ae3620173ebb7349b5c7e57f0c4941f4112d7af0e3c23257d9",
+      "local_file": "raw/15-identity.json"
+    },
+    {
+      "source_path": ".cache/interactive-sessions/INTERACTIVE-20260916T084345-9e606799/initial_state.json",
+      "bytes": 347049,
+      "sha256": "769d9384300b28d957b83c884aff5c29036128b6543e4af203a623679f22f7ac",
+      "local_file": "raw/16-initial_state.json"
+    },
+    {
+      "source_path": ".cache/interactive-sessions/INTERACTIVE-20260916T084345-9e606799/task_request.json",
+      "bytes": 16565,
+      "sha256": "c84ea941d46096a9b3945d7f4917d9e000c46d386495a109dfc332041a447168",
+      "local_file": "raw/17-task_request.json"
+    },
+    {
+      "source_path": ".cache/interactive-sessions/INTERACTIVE-20260916T084345-9e606799/action_intents.jsonl",
+      "bytes": 861,
+      "sha256": "029fd4596a72636a5bf6eaccbd764393bd9f6db3b3b91632f1b361bb8dc144fa",
+      "local_file": "raw/18-action_intents.jsonl"
+    },
+    {
+      "source_path": ".cache/interactive-sessions/INTERACTIVE-20260916T084345-9e606799/tool_events.jsonl",
+      "bytes": 5276,
+      "sha256": "dce6144e87cf3b3e89b0382f1c17c336b1cb68ea7bb271fbd016d551b677a0a1",
+      "local_file": "raw/19-tool_events.jsonl"
+    },
+    {
+      "source_path": ".cache/interactive-sessions/INTERACTIVE-20260916T084345-9e606799/termination.json",
+      "bytes": 657,
+      "sha256": "364d862711925c735ae7370c66f7ec67e0703481cd60865f8946c99016854c78",
+      "local_file": "raw/20-termination.json"
+    },
+    {
+      "source_path": ".cache/interactive-sessions/INTERACTIVE-20260916T084345-9e606799/result.json",
+      "bytes": 479,
+      "sha256": "6c08a04396190bd5aa2e39548fb02561a696bfa75509b5eb410f863e5be30b59",
+      "local_file": "raw/21-result.json"
+    }
+  ],
+  "archive_sha256": "e40576625c1a0bc524716f09a32b808a5a4945465815ba93eb265403a2dc3888"
+}

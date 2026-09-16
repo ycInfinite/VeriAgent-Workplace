@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     if sys.platform != 'linux' or not sys.stdin.isatty() or not sys.stdout.isatty():
         raise RuntimeError('Use the personal remote Linux terminal interactively; do not pipe prompts')
-    destination = ROOT/'.cache/interactive-client'
+    destination = ROOT/'.cache/interactive-client-v2'
     receipt = json.loads((destination/'installation.json').read_text())
     key = getpass.getpass('Token Plan key (hidden; process environment only): ')
     if not key.startswith('sk-sp-') or any(c.isspace() for c in key):
@@ -28,6 +28,9 @@ def main():
     env['QWEN_CODE_DISABLE_WORKFLOWS'] = '1'
     env['QWEN_CODE_MAX_OUTPUT_TOKENS'] = '256'
     env['QWEN_DISABLE_AUTO_TITLE'] = '1'
+    # --bare/QWEN_CODE_SIMPLE makes the official CLI discard provider settings,
+    # including context size and enable_thinking. Isolation is explicit instead.
+    env.pop('QWEN_CODE_SIMPLE', None)
     env['PATH'] = str(Path(receipt['node']).parent)+os.pathsep+env.get('PATH','')
     key = None
     transcript = destination/('client-events-'+uuid.uuid4().hex+'.jsonl')
@@ -36,8 +39,9 @@ def main():
     excluded = ['read_file','zoom_image','write_file','edit','notebook_edit','glob','grep_search',
                 'run_shell_command','list_directory','read_mcp_resource','web_fetch','web_search',
                 'todo_write','save_memory','lsp','cron_create','cron_list','cron_delete','loop_wakeup',
-                'create_sub_session','monitor','agent','skill','send_message','computer_use','code_mode']
-    command = [receipt['node'], receipt['qwen_cli'], '--bare', '--auth-type','openai',
+                'create_sub_session','monitor','agent','skill','send_message','computer_use','code_mode',
+                'tool_search','ask_user_question','enter_plan_mode','exit_plan_mode','task_stop']
+    command = [receipt['node'], receipt['qwen_cli'], '--auth-type','openai',
                '--openai-base-url',env['OPENAI_BASE_URL'],'--model','qwen3.8-max',
                '--mcp-config',str(destination/'mcp.json'),'--allowed-mcp-server-names','workplace',
                '--approval-mode','default','--max-session-turns','6','--max-tool-calls','8',

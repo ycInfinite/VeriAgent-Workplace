@@ -27,5 +27,26 @@
   },
   "model": {
     "name": "qwen3.8-max"
+  },
+  "ui": {
+    "enableFollowupSuggestions": false,
+    "enableSpeculation": false,
+    "enableCacheSharing": false
+  },
+  "context": {
+    "fileName": "VERIAGENT_INTERACTIVE_CONTEXT.md",
+    "includeDirectories": [],
+    "loadFromIncludeDirectories": false
+  },
+  "disableAllHooks": true,
+  "memory": {
+    "enableManagedAutoMemory": false,
+    "enableManagedAutoDream": false,
+    "enableTeamMemory": false,
+    "enableTeamMemorySync": false,
+    "enableAutoSkill": false
+  },
+  "tools": {
+    "toolSearch": {"enabled": false}
   }
 }

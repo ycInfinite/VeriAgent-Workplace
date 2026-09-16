@@ -1,5 +1,7 @@
 # 2026-09-16 Handoff：采集质量审核与教师准备
 
+最新审核：用户已发起并完成真实Token Plan交互707，3个业务动作、grounded ID、官方reward1。旧--bare导致配置未加载，实际输入最高9805且thinking255，SFT准入保持false。已保存原始22文件归档，修复配置和紧凑JSON通过离线/CPU004检查，未追加模型采样或训练。见 INTERACTIVE_DEMO_REVIEW_20260916.md。今晚应理解：配置文件存在≠运行配置生效；任务成功≠数据符合受控实验协议；主线用量≠客户端全部用量。
+
 最新交互交接：318e233已通过GitHub部署，远端Qwen Code0.23.4已在Edge/JupyterLab的“Qwen - workspace”终端等待用户输入，workplace connected已实见。工具桥CPU003通过18项，保留001/002及传输失败；未由Codex发送模型任务、未产生新rollout/SFT批准。904仅无卡0.10元/小时，17:15自动关机已确认，预计整个CPU窗口≈0.11元。接手文本与证据限制见 INTERACTIVE_CLIENT_READY_20260916.md。学习重点：客户端/环境/训练准入是三个独立门槛，工具协议测试不能当模型能力成绩。
 
 交互接入实施更新：新工具桥 serve_workplace_interactive.py 已通过18项CPU检查（003）。001本地缺训练20文件、002官方verifier需要JSON字符串参数，这两次接入失败均保留；修复的是边界序列化，未改上游工具/reward。Qwen Code0.23.4本地已安装，904已无卡启动，下一步为GitHub部署与远端安装。无新模型rollout或参数更新。此处覆盖下方较早“尚未实现/安装”的准备状态。

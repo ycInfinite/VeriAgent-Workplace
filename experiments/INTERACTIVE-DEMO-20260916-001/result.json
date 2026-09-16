@@ -1,0 +1,68 @@
+{
+  "status": "real_task_success_but_hold_for_controlled_training",
+  "source": "user-initiated official Qwen Code session; no collector API automation",
+  "task_id": 707,
+  "task_pool": "training_candidate",
+  "model_requested": "qwen3.8-max",
+  "model_revision": null,
+  "client_session": "e0f6ff46-e9c7-4ff6-af6a-185f7a031bf2",
+  "main_assistant_turns": 6,
+  "workplace_calls": 3,
+  "mcp_calls_with_begin_finish": 5,
+  "tool_errors": 0,
+  "official_reward": 1,
+  "grounding_checked": true,
+  "actual_and_replay_states_match": true,
+  "only_changed_field": "status",
+  "readback_classification": "optional post-write confirmation; not a retry loop",
+  "main_recorded_usage": {
+    "inputTokens": 48280,
+    "outputTokens": 796,
+    "cachedTokens": 38445,
+    "thoughtsTokens": 255,
+    "apiDurationMs": 22984
+  },
+  "main_recorded_responses": 6,
+  "client_aggregate_usage": {
+    "requests": 7,
+    "inputTokens": 58620,
+    "outputTokens": 798,
+    "cachedTokens": 38445,
+    "thoughtsTokens": 255,
+    "totalTokens": 59418,
+    "totalLatencyMs": 24467
+  },
+  "unreconciled_extra_usage": {
+    "requests": 1,
+    "inputTokens": 10340,
+    "outputTokens": 2,
+    "latencyMs": 1483,
+    "interpretation": "consistent with default follow-up suggestion; no per-request response evidence for strict attribution"
+  },
+  "max_recorded_input_tokens": 9805,
+  "recorded_context_windows": [
+    1000000
+  ],
+  "inputs_over_8192": 5,
+  "thinking_observed": true,
+  "formal_B1_eligible": false,
+  "training_eligible": false,
+  "infra_invalid": false,
+  "protocol_invalid_for_controlled_non_thinking_8k": true,
+  "admission_holds": [
+    "generation settings ignored by --bare",
+    "actual inputs exceed8192; thinking active",
+    "wrapper protocol and missing complete wire request differ from admitted source",
+    "extra aggregate request not present in main response log"
+  ],
+  "compact_return_probe": {
+    "old_task_return_student_tokens": 5306,
+    "compact_task_return_student_tokens": 3371,
+    "scope": "only equivalent tool-return text; not a complete new provider request"
+  },
+  "gpu_hours": 0,
+  "new_parameter_updates": 0,
+  "token_plan_credits": null,
+  "incremental_model_rmb": null,
+  "research_claim": "one selected debug task; no generalization or before/after improvement claim"
+}

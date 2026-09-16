@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "pid": 1802,
+  "session_id": "e0f6ff46-e9c7-4ff6-af6a-185f7a031bf2",
+  "work_dir": "/root/autodl-tmp/veriagent-workplace-sft-20260910/.cache/interactive-client/workspace",
+  "hostname": "autodl-container-kl7wef5luq-6927b33c",
+  "started_at": 1789548219.288,
+  "qwen_version": "0.23.4"
+}
