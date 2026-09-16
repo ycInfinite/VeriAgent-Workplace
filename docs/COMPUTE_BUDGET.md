@@ -1,6 +1,6 @@
 # Compute budget
 
-[GPU_WATCH_LAST_CHECK] 2026-09-16T04:23:24.825434+00:00 — Inventory-only check; new GPU-hours/model-API calls/paid experiment charges=0; Codex account usage not included.
+[GPU_WATCH_LAST_CHECK] 2026-09-16T04:40:52.480358+00:00 — Inventory-only check; new GPU-hours/model-API calls/paid experiment charges=0; Codex account usage not included.
 
 2026-09-16 定时检查：创建15分钟库存heartbeat，没有启动GPU或发模型API请求，本次新增GPU/API实验费用0。后台检查会使用Codex账户配额，未将该产品用量折算成GPU费用；有卡执行时按实际设备价格记录，完成后关机。无新租赁或套餐变更。
 
