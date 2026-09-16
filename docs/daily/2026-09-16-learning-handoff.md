@@ -275,3 +275,7 @@ output_ok = expected_ids == actual_ids
 官方数据能用，SFT并不要求示范必须由模型生成。我们锁定的1255条train输入均只有system/user；ground_truth是用于重放目标状态的动作列表，没有查询/观察全过程。707参考直接update ID00000046，但用户只给客户名Kerry Moore，完整grounding示范需要先查再更新。565这种可从问题直接确定参数的reference则可能真实执行后低成本封装。
 
 直接使用训练集标签不等于泄漏；把隐藏答案放入评测输入、或混入dev/final才是另一类问题。官方完整示范、人工或脚本重建均可作为候选SFT来源，但要明确source、真实执行工具并审核，不能冒充模型rollout或onlineRL。当前producer白名单只是既有probe的审计边界；未来接入新来源需另登记，不静默放行旧脚本。之前API-vs部署比较漏讲了reference重建路线，现已澄清。没有新采样、训练或学习评分。
+
+### 最新渠道要求与停点
+
+用户要求后续teacher使用Token Plan。已记录不得擅自回退到普通按量API。复核官方[更多工具](https://help.aliyun.com/zh/model-studio/more-tools)及[个人版FAQ](https://help.aliyun.com/zh/model-studio/token-plan-personal-faq)，自定义自动化脚本仍不在允许用途内；未启用套餐批量采集、未移除现有保护、未伪装客户端、未请求Key或启动实例。需要适用的服务使用路径；没有新模型/API费用或能力结论。首次8步SFT完成状态不变。
