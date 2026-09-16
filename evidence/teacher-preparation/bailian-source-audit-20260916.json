@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-09-16",
+  "kind": "OFFICIAL_DOCUMENT_REVIEW_NOT_API_EXECUTION",
+  "user_requested_model": "qwen3.8-max",
+  "user_reported_channel": "Bailian Token Plan",
+  "plan_edition": null,
+  "snapshot_model_listed_by_official_pricing": "qwen3.8-max-0902",
+  "effective_model_revision": null,
+  "sources": [
+    {"url": "https://help.aliyun.com/zh/model-studio/qwen-function-calling", "finding": "Official examples document qwen3.8-max tools and enable_thinking=False", "status": "VERIFIED_DOCUMENTED_SUPPORT_NOT_ACCOUNT_TEST", "commit": null},
+    {"url": "https://help.aliyun.com/zh/model-studio/token-plan-personal-faq", "finding": "Personal Token Plan excludes noninteractive batch scripts", "status": "VERIFIED_FACT", "commit": null},
+    {"url": "https://help.aliyun.com/zh/model-studio/more-tools", "finding": "Both personal and team Token Plan exclude custom automated-script API usage; ordinary pay-as-you-go is a separate route", "status": "VERIFIED_FACT", "commit": null},
+    {"url": "https://help.aliyun.com/zh/model-studio/model-pricing", "finding": "Beijing qwen3.8-max and qwen3.8-max-0902 listed at RMB12 input / RMB36 output per million tokens", "status": "VERIFIED_PRICE_SNAPSHOT_NOT_INVOICE", "commit": null}
+  ],
+  "ordinary_api_access": "UNRESOLVED",
+  "credential_handling": "Remote process environment only; no key requested in chat or stored",
+  "api_calls": 0,
+  "new_rollouts": 0,
+  "parameter_updates": 0,
+  "estimate": {
+    "currency": "RMB",
+    "input_per_million": 12,
+    "output_per_million": 36,
+    "previous_student_run_volume_proxy": {"input_tokens": 306647, "output_tokens": 3310, "rmb": 3.798924},
+    "planning_scenario": {"input_tokens": 1000000, "output_tokens": 40960, "rmb": 13.47456},
+    "hard_cost_bound": false,
+    "free_quota_or_cache_discount_assumed": false,
+    "caveat": "Teacher tokenizer and trajectory length differ. Usage must be measured. Student8192 bound is not a provider token bound. No account entitlement or billing-route switch assumed."
+  }
+}

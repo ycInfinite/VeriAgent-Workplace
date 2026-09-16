@@ -1,0 +1,36 @@
+{
+  "Research Question": "Can the fixed training20 be prepared for a stronger teacher without leaking reference answers, and can every visible assistant turn be canonically encoded for the unchanged Qwen3 student?",
+  "Hypothesis": "All20 initial prompts/tools remain identical to the B1 cohort with no oracle field; canonical per-turn targets preserve all assistant decisions, exclude input/prefill/observations and fit the existing8K bound in the recorded format stress test.",
+  "Independent Variable": "Data-source preparation and canonical cross-model formatting; no policy update or new model sampling",
+  "Controlled Variables": [
+    "same20 training tasks",
+    "same B1 system/user/tools",
+    "same world/clock and verifier",
+    "fixed student/tokenizer revision",
+    "8192 context",
+    "whole-trajectory quality requirement",
+    "preserved prior rejection decisions"
+  ],
+  "Metrics": [
+    "request prompt/tool identity matches",
+    "oracle-field rejection",
+    "all visible assistant turns encoded",
+    "prefix masks and EOS",
+    "student processed/supervised tokens",
+    "canonical versus source-token differences"
+  ],
+  "Evidence Gate": "20/20 request identities match; oracle/nontraining/tampered requests rejected; no selective-turn dropping. Formatting pass is not data approval or teacher qualification.",
+  "Cost Bound": "CPU only; no paid API, no GPU, no model weights instantiated; max600 seconds",
+  "Failure Branch": "Preserve failed preparation evidence. Do not relabel old unapproved trajectories as high-quality teacher data, relax quality gates, start an instance, or call an unspecified/unapproved API.",
+  "experiment_kind": "CPU_TEACHER_DATA_PREPARATION_NOT_MODEL_RUN",
+  "seed": 42,
+  "cohort_manifest": "experiments/SFT-PREP-20260910-001/acquisition_manifest.json",
+  "format_stress_source": "experiments/SFT-ACQUIRE-20260916-001/trajectories.jsonl",
+  "max_context_tokens": 8192,
+  "max_wall_seconds": 600,
+  "teacher_provider": null,
+  "teacher_model": null,
+  "api_key_handling": "Remote process environment only; never chat/files/Git/logs",
+  "student_model_id": "Qwen/Qwen3-8B",
+  "student_model_revision": "b968826d9c46dd6066d109eabc6255188de91218"
+}

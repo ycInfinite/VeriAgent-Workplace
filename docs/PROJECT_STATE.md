@@ -1,5 +1,11 @@
 # Project state
 
+## Current: teacher preparation passed; ordinary API access pending (2026-09-16)
+
+User resumed progress and named Bailian qwen3.8-max via Token Plan. TEACHER-PREP-20260916-001 at b1f67b34b5fc18dd8e607ade68524332d58c4193 passed CPU checks:20/20 fixed training prompt/tool identities,69/69 visible turns encoded without dropping turns,5/5 negative controls. Existing unapproved trajectories were format fixtures only; training approvals remain0. One canonical target differs from the original sampled IDs, so cross-model formatting is explicitly distinguished from exact generation reconstruction.
+
+Official Token Plan personal/team rules exclude custom batch scripts. Ordinary pay-as-you-go access is needed for the proposed teacher collector; no silent billing switch. No API call, new model rollout, GPU startup or parameter update occurred in this preparation. API collector and teacher-aware trainer admission are not yet end-to-end implemented or validated. Report: docs/TEACHER_PREPARATION_REPORT_20260916.md. Both instances' last confirmed state remains powered off. The earlier stop remains historical; selective-turn supervision is still declined and full-trajectory quality requirements remain active.
+
 ## Current stop: full-trajectory SFT quality gate failed (2026-09-16)
 
 User authorized cross-instance copy from old A800 to new PRO6000, then explicitly approved startup and fixed20 acquisition/conditional8-step SFT. Copy and35-file/5-weight rechecks passed; PRO6000 Blackwell BF16 runtime passed. SFT-ACQUIRE-20260916-001 at commit bc5aa55:20/20 valid,3/20 official successes (450,1183,707),88.021sec,3310 output tokens,~RMB0.1707 process estimate. Raw results unchanged.

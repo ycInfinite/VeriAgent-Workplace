@@ -1,0 +1,27 @@
+[
+  {
+    "name": "oracle_field",
+    "passed": true,
+    "reason": "Unexpected request field, including verifier/oracle data"
+  },
+  {
+    "name": "changed_task_prompt",
+    "passed": true,
+    "reason": "Initial task/prompt differs from fixed B1 cohort"
+  },
+  {
+    "name": "development_pool",
+    "passed": true,
+    "reason": "Non-training task"
+  },
+  {
+    "name": "non_assistant_target",
+    "passed": true,
+    "reason": "Only a visible assistant turn can be a target"
+  },
+  {
+    "name": "template_boundary_injection",
+    "passed": true,
+    "reason": "Literal ChatML boundary in content: unsupported; manual review required"
+  }
+]

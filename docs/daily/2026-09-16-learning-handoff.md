@@ -1,6 +1,6 @@
-# 2026-09-16 Handoff：AutoDL 性价比核对
+# 2026-09-16 Handoff：采集质量审核与教师准备
 
-**当日最终停点：迁移与20条真实training采集已完成；3条官方成功，但0条整轨迹SFT批准。用户要求保持原方案，停在审核。没有SFT更新，两台实例已确认关机。下面的查价部分是较早记录，最新实验交接见末尾。**
+**最新停点：用户已要求继续并指定百炼qwen3.8-max。CPU教师输入隔离/完整格式审计通过，但Token Plan不支持本轮自定义批量脚本，普通按量API接入待落实。没有教师调用或SFT更新，两台实例最后确认状态仍关机。下面查价与采集停止是较早记录，最新交接见末尾。**
 
 1. **核心问题**：对当前单卡8B LoRA方案，市场上哪些配置更值得选？
 2. **开始状态**：无卡准备与GitHub同步已完成，GPU训练尚未执行；用户要求直接查看AutoDL，而非让其转述价格。
@@ -42,3 +42,50 @@
 13. **身份、证据、费用**：执行commit bc5aa55c3b97174822893c789b236cf5e43fcaf3；模型revision b968826d9c46dd6066d109eabc6255188de91218。实验目录含config/identity/trajectories/gpu_samples/result、完整审核、未采用提案和用户决定。迁移GPU preflight与原始日志在evidence/sft-acquisition；copy/lifecycle在evidence/migration/2026-09-16。采集运行估算0.1707元，保守观察窗口线性估算1.96元，两项不可相加且非实际账单。新旧机均确认关机、源数据未删除。
 
 总报告：[SFT采集与质量门槛](../SFT_ACQUISITION_REPORT_20260916.md)。原始失败与成功全部保留，未修改旧tau2或封闭评测内容。
+
+## 最新交接：完整教师轨迹的 CPU 准备
+
+1. **核心问题**：保留完整轨迹监督目标，能否准备隔离答案的教师输入及学生训练格式？用户指定的百炼Token Plan能否用于采集？
+2. **开始状态**：原20条中3条官方成功但0条获整轨迹批准，选择性正确片段方案已拒绝。用户恢复下一步推进。
+3. **实际执行**：实现请求隔离与canonical学生编码；CPU运行TEACHER-PREP-20260916-001；核验百炼工具调用、渠道规则与价格；没有接触Key、开机、发API或训练。
+4. **变量/控制**：只变数据来源准备和格式，不改20题/B1/工具/学生revision/整轨迹质量门槛；旧轨迹仅格式压力样本。
+5. **原始结果**：20/20请求哈希匹配；69/69轮编码、无删轮；processed309957/supervised3310，最大5316；5/5负向检查通过；1轮canonical IDs不同于原采样。CPU2.0213秒、付费实验0元。
+6. **代表证据**：oracle字段被拒绝；dev请求被拒绝；旧450错枚举和707假ID仍不能整条监督，1183范围问题仍保留。没有新教师success/failure轨迹。
+7. **路线结论**：输入隔离与已有样本格式可行。Token Plan个人/团队均排除自定义批量脚本，先落实普通按量API；不能把编程套餐暗中用于此次采集。来源见[报告](../TEACHER_PREPARATION_REPORT_20260916.md)。
+8. **未支持推测**：尚未证明qwen3.8-max能稳定完成本环境；尚未获得可训练示范、真实CE/梯度/adapter保存重载结果。API采集器与教师准入尚未完成端到端实现。
+9. **今晚理解的代码**：
+
+| 文件 → 函数 | 输入 → 输出 | 作用 |
+|---|---|---|
+| veriagent/teacher_data.py → teacher_request | training行+固定manifest+B1 → messages/tools | 明确只送任务与工具，不送ground_truth |
+| veriagent/teacher_data.py → validate_request | 请求+任务manifest → 通过或ValueError | 拒绝额外oracle字段、错pool、改prompt/tools |
+| veriagent/teacher_data.py → CanonicalTeacherEncoder.encode | 历史messages+tools+完整assistant轮 → input_ids/labels | 学生tokenizer重编码，历史mask，完整决策作为target |
+| scripts/prepare_teacher_data.py → main | 固定20题/旧格式样本 → audit/result | 记录证据和负向检查，不请求模型 |
+| veriagent/sft_data.py → admit_training_trajectory | 轨迹+身份+质量审核 → 准入/拒绝 | 当前旧准入不会自动放行新的API教师数据 |
+
+实际编码中的核心部分如下；已经在CPU格式样本上执行，但不是训练结果：
+
+```python
+prefix = self.inspector.render(prefix_messages, tools, generate=True)
+complete = self.inspector.render(
+    prefix_messages + [assistant_message], tools, generate=False
+)
+if not complete.startswith(prefix):
+    raise ValueError('Canonical assistant prefix is not a continuation of the input')
+suffix = complete[len(prefix):]
+if not suffix.endswith('<|im_end|>\n'):
+    raise ValueError('Unexpected canonical assistant termination')
+target_text = suffix[:-1]  # 仅去EOS后的模板分隔换行，不删除动作或轮次
+prefix_ids = self.inspector.tokenizer.encode(prefix, add_special_tokens=False).ids
+target_ids = self.inspector.tokenizer.encode(target_text, add_special_tokens=False).ids
+# 返回值中的训练表示：
+input_ids = prefix_ids + target_ids
+labels = [-100] * len(prefix_ids) + target_ids
+```
+
+这里的target_ids是学生重编码后的示范目标，不是闭源教师生成时的token IDs；保留全体assistant轮次也不意味着它们已获质量批准。
+
+10. **学习点**：格式合格与行为合格是两道门槛；跨模型SFT要用学生tokenizer；APIusage成本tokens与学生监督tokens要分开。
+11. **五个追问（不附答案）**：为什么不能向教师发送ground_truth？为什么需要每轮真实observation？教师token IDs和学生target IDs为何不能混用？69轮编码通过为何仍0条可训练？更强教师的轨迹能否保证SFT后Agent更强？
+12. **下一步路线分叉**：是否已有普通按量百炼API访问；只告知可用性，Key不发聊天。确定接入后实现/登记固定20题采集，再做完整质量审核。此时无需GPU；不自动扩大到S1/S2/DPO/RL。
+13. **身份与路径**：CPU代码b1f67b34b5fc18dd8e607ade68524332d58c4193；config为configs/teacher_preparation_audit.json及实验目录快照；原始日志为request_manifest.jsonl、format_audit.jsonl、negative_controls.json，汇总result.json，身份identity.json。模型/data保持固定revision；官方网页核验日期2026-09-16、无公开commit。没有新无效运行。学习测验未评分，不作为推进门槛。

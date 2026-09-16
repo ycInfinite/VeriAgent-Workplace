@@ -1,0 +1,27 @@
+{
+  "status": "CPU_TEACHER_PREPARATION_PASSED_PROVIDER_PENDING",
+  "fixed_training_requests": 20,
+  "prompt_tool_identity_matches": 20,
+  "recorded_trajectories_used_for_format_stress": 20,
+  "visible_assistant_turns_encoded": 69,
+  "turns_dropped": 0,
+  "processed_tokens": 309957,
+  "canonical_supervised_tokens": 3310,
+  "canonical_targets_different_from_original": 1,
+  "max_sequence_tokens": 5316,
+  "negative_controls_passed": 5,
+  "negative_controls_total": 5,
+  "teacher_api_calls": 0,
+  "new_model_rollouts": 0,
+  "new_training_approvals": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0,
+  "paid_cost_rmb": 0,
+  "elapsed_seconds": 2.021300499967765,
+  "source_sha256": "2b6a5995c158668372148010323403019f1db4b061d7b6213deeffdb7e36be87",
+  "limitations": [
+    "Teacher provider/model/access still needs user information",
+    "Canonical student targets do not reproduce a different teachers sampled token IDs or likelihood",
+    "Prior full-trajectory rejections remain unchanged; no selective-turn supervision"
+  ]
+}
