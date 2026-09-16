@@ -1,0 +1,15 @@
+{
+  "instance": "kl7wef5luq-6927b33c",
+  "mode": "CPU_NO_CARD",
+  "rate_rmb_hour": 0.1,
+  "minimum_rmb": 0.01,
+  "observed_start_after_utc": "2026-09-16T08:09:35Z",
+  "shutdown_scheduled_local": "2026-09-16T17:15:00+08:00",
+  "shutdown_scheduled_utc": "2026-09-16T09:15:00Z",
+  "shutdown_schedule_verified_in_AutoDL_UI": true,
+  "shutdown_completed": false,
+  "approx_cost_if_left_until_timer_rmb": 0.11,
+  "actual_invoice_rmb": null,
+  "gpu_hours": 0,
+  "note": "Start timestamp is a UI observation, not provider billing timestamp. Timer has been saved; completion not yet observed."
+}

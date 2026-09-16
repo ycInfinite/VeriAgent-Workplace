@@ -1,0 +1,20 @@
+{
+  "status": "USER_VISIBLE_INTERACTIVE_CLIENT_READY_DRAFT_NOT_SUBMITTED",
+  "execution_commit": "318e23376f5f8358e52fa3dead81227021597fb1",
+  "client": "Qwen Code 0.23.4",
+  "model_requested": "qwen3.8-max",
+  "node": "24.19.0",
+  "mcp": "1.30.0",
+  "interface": "Edge JupyterLab terminal Qwen - workspace",
+  "browser_tab_id": "1158208431",
+  "workplace_status_observed": "connected",
+  "pending_user_action": "Review the prepared single-task prompt and press Enter in the actual client",
+  "model_prompts_submitted_by_agent": 0,
+  "new_model_rollouts": 0,
+  "training_approved": 0,
+  "gpu_hours": 0,
+  "provider_authentication_with_real_inference": "unverified",
+  "cpu_shutdown_scheduled": "2026-09-16T17:15:00+08:00",
+  "automatic_gpu_monitor": "paused",
+  "full_trajectory_quality_gate": "unchanged"
+}

@@ -36,7 +36,7 @@ INTERACTIVE_FILES = ['configs/qwen_code_token_plan.example.json',
                      'scripts/launch_interactive_client.py']
 
 REMOTE_CODE=r'''
-import hashlib,json,os,shutil,sys,urllib.request,urllib.parse
+import hashlib,json,os,shutil,sys,time,urllib.request,urllib.parse,urllib.error
 from pathlib import Path
 phase='parse_plan'
 failed_path=None
@@ -84,8 +84,17 @@ try:
                 # Reusing identical bytes avoids unnecessary network transfers.
                 data=candidate;reused_verified.append(entry['path'])
             else:
-                with urllib.request.urlopen(entry['download_url'],timeout=45) as response:
-                    data=response.read(2000001)
+                for attempt in range(3):
+                    try:
+                        with urllib.request.urlopen(entry['download_url'],timeout=45) as response:
+                            data=response.read(2000001)
+                        break
+                    except urllib.error.HTTPError as exc:
+                        if exc.code not in (429,500,502,503,504) or attempt==2:raise
+                        time.sleep(attempt+1)
+                    except (urllib.error.URLError,TimeoutError):
+                        if attempt==2:raise
+                        time.sleep(attempt+1)
                 assert len(data)<=2000000
         assert hashlib.sha256(data).hexdigest()==entry['sha256']
         blob=hashlib.sha1(b'blob '+str(len(data)).encode()+bytes([0])+data).hexdigest()
@@ -124,7 +133,7 @@ try:
 except Exception as exc:
     os.environ.pop('VERIAGENT_GITHUB_SYNC_PLAN',None)
     print(json.dumps({'status':'GITHUB_SYNC_FAILED','error_type':type(exc).__name__,
-                      'phase':phase,'failed_path':failed_path}))
+                      'phase':phase,'failed_path':failed_path,'http_status':getattr(exc,'code',None)}))
     sys.exit(1)
 '''
 
@@ -202,6 +211,7 @@ def main():
                 if failure.get('status')=='GITHUB_SYNC_FAILED':
                     exc.remote_error_type=failure.get('error_type')
                     exc.remote_phase=failure.get('phase')
+                    exc.remote_http_status=failure.get('http_status')
                     exc.failed_path=failure.get('failed_path')
             except (ValueError,TypeError):
                 pass
@@ -223,5 +233,6 @@ if __name__=='__main__':
             'failed_path':getattr(exc,'failed_path',None),
             'remote_error_type':getattr(exc,'remote_error_type',None),
             'remote_phase':getattr(exc,'remote_phase',None),
+            'remote_http_status':getattr(exc,'remote_http_status',None),
             'details':'Suppressed to prevent credential/temporary-URL disclosure'}),flush=True)
         raise SystemExit(1)

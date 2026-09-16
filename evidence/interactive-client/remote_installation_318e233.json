@@ -1,0 +1,17 @@
+{
+  "node": "/root/autodl-tmp/veriagent-workplace-sft-20260910/.cache/node-v24.19.0-linux-x64/bin/node",
+  "node_version": "24.19.0",
+  "node_archive_sha256": "14b342e71204f811bde6153be8e04b62aef63c236fef92b55f9c83154b409647",
+  "qwen_cli": "/root/autodl-tmp/veriagent-workplace-sft-20260910/.cache/qwen-code/node_modules/@qwen-code/qwen-code/cli.js",
+  "qwen_version": "0.23.4",
+  "qwen_integrity": "sha512-qrM7Lwp9S6LfIx8Mh9sAr4aBPyUa9W0k72uOQJPsJ6Z8ClAzoEQzkdLD1TrchioJicgSckM1PLyendibyXHElA==",
+  "python": "/root/autodl-tmp/veriagent-workplace-sft-20260910/.venv/bin/python",
+  "sdk_version": "1.30.0",
+  "workspace": "/root/autodl-tmp/veriagent-workplace-sft-20260910/.cache/interactive-client/workspace",
+  "client_home": "/root/autodl-tmp/veriagent-workplace-sft-20260910/.cache/interactive-client/client-home",
+  "provider_requests": 0,
+  "credentials_persisted": false,
+  "settings_sha256": "e0ee325e183404d16eb90e84dc3aedcd92dc784d7b0d879d98ed94e76c3faaa8",
+  "applied_config_commit": "318e23376f5f8358e52fa3dead81227021597fb1",
+  "schema_metadata_retained": true
+}

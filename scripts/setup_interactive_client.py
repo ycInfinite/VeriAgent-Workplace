@@ -87,6 +87,12 @@ def main():
     settings_path = client_home/'settings.json'
     previous = destination/'installation.json'
     previous_receipt = json.loads(previous.read_text()) if previous.exists() else {}
+    if settings_path.exists():
+        existing = json.loads(settings_path.read_text())
+        # The official CLI adds a schema-version marker on first use. Preserve it;
+        # it is not a user preference or a credential. Other changes still fail closed.
+        if '$version' in existing:
+            settings['$version'] = existing['$version']
     if settings_path.exists() and json.loads(settings_path.read_text()) != settings:
         old = settings_path.read_bytes()
         old_hash = hashlib.sha256(old).hexdigest()

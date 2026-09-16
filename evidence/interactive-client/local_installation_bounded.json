@@ -1,0 +1,15 @@
+{
+  "node": "C:\\Users\\infinite\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+  "node_version": "24.19.0",
+  "node_archive_sha256": null,
+  "qwen_cli": "D:\\study\\master\\self\\work\\intership\\self\\train\\VeriAgent-Workplace\\.cache\\qwen-code\\node_modules\\@qwen-code\\qwen-code\\cli.js",
+  "qwen_version": "0.23.4",
+  "qwen_integrity": "sha512-qrM7Lwp9S6LfIx8Mh9sAr4aBPyUa9W0k72uOQJPsJ6Z8ClAzoEQzkdLD1TrchioJicgSckM1PLyendibyXHElA==",
+  "python": "D:\\study\\master\\self\\work\\intership\\self\\train\\VeriAgent-Workplace\\.venv\\Scripts\\python.exe",
+  "sdk_version": "1.30.0",
+  "workspace": "D:\\study\\master\\self\\work\\intership\\self\\train\\VeriAgent-Workplace\\.cache\\interactive-client\\workspace",
+  "client_home": "D:\\study\\master\\self\\work\\intership\\self\\train\\VeriAgent-Workplace\\.cache\\interactive-client\\client-home",
+  "provider_requests": 0,
+  "credentials_persisted": false,
+  "settings_sha256": "7dab66cd41aedeb12575cd198bc49663d4c58d71452c5243ff85f98995001fb5"
+}
