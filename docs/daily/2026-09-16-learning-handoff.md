@@ -179,3 +179,7 @@ optimizer.step()
 13. **身份/证据**：采集TEACHER-ACQUIRE-20260916-001@ccc890d；CPU准入TEACHER-ADMISSION-CPU-20260916-001@5fd411b；远端复核部署d429eb6。采集config/identity/api_events/trajectories/result、完整审核、两题approval、CPU负向检查和样本均在对应实验目录；传输/费用/操作异常在evidence/teacher-acquisition。SFT-PROBE-20260916-001只是未执行计划，没有SFT成功记录。官方数据来源核验解决了GitHub自动审批疑虑；A800点击审批由用户明确回复解决，之后被实际库存阻塞。
 
 总报告：[教师采集与输入资格](../TEACHER_ACQUISITION_REPORT_20260916.md)。结束新实验，保留两台实例数据和全部失败记录；本轮无GPU运行账单主张。
+
+### 后续监控安排
+
+用户随后要求持续监控。已创建当前对话每15分钟检查的heartbeat `veriagent-gpu-sft-probe`；不变时安静，有库存则按既有授权和数据/代码门槛继续8步probe，完成后关机并暂停监控。它不代表已经再次检查出库存或执行训练；SFT状态仍为未执行。依赖本地电脑和应用运行、AutoDL浏览器登录；无新的知识/能力评分或实验费用证据。

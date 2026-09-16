@@ -1,0 +1,22 @@
+{
+  "automation_id": "veriagent-gpu-sft-probe",
+  "kind": "heartbeat",
+  "destination": "current_thread",
+  "status_at_creation": "ACTIVE",
+  "interval_minutes": 15,
+  "requested_on": "2026-09-16",
+  "request": "User requested ongoing monitoring of GPU availability",
+  "existing_instances": ["e894yfdpks-aa29b5a4", "apsh5z8vl9-f264ae73"],
+  "priority": "existing A800",
+  "allowed_followup": "Previously authorized fixed2-trajectory8-update single-GPU LoRA probe and shutdown",
+  "new_rental_allowed": false,
+  "duplicate_run_prevention": "Check registry, experiment artifacts and remote processes before starting",
+  "stop_condition": "Pause after completion or a training failure needing user route decision",
+  "notifications": "Meaningful state changes, completion, new failure or required user action",
+  "credentials_stored": false,
+  "new_inventory_observation_in_this_creation": false,
+  "new_training_runs": 0,
+  "new_gpu_hours": 0,
+  "runtime_dependency": "Local computer/app and authenticated AutoDL browser available",
+  "official_runtime_source": "https://learn.chatgpt.com/docs/automations?surface=app"
+}

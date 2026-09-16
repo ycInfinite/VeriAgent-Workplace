@@ -1,5 +1,7 @@
 # Project state
 
+Monitoring update(2026-09-16): user requested ongoing GPU checks. Active current-thread heartbeat `veriagent-gpu-sft-probe`,every15 minutes; existing A800 prioritized, existing PRO6000 also checked. It may continue the already authorized bounded8-step probe when inventory permits, with duplicate-run checks and shutdown afterward. No new rental or expanded phase. Unchanged inventory remains quiet; stop/pause after probe completion or actionable training failure. Creation is verified in the app; no new inventory result or training run is implied. Computer/app and authenticated local browser are required.
+
 ## Current: teacher data qualified; authorized SFT probe blocked by GPU inventory (2026-09-16)
 
 TEACHER-ACQUIRE-20260916-001 completed on the new host in no-card mode atccc890d:20 valid,18 official successes,63/63 executable calls,80 API requests,202.121sec,387839 input/9023 output provider tokens,estimatedRMB4.978896. Full Codex quality review approves15 complete trajectories/57 assistant turns; five held/failed(331,1183,980,518,1175). No independent human adjudication. Raw reward/records unchanged.
