@@ -1,5 +1,9 @@
 # Project state
 
+## Latest: ordinary API collector ready; no-card startup and hidden key entry pending (2026-09-16)
+
+User confirmed ordinary pay-as-you-go API access and supplied the Beijing workspace endpoint. Implemented CPU-only Bailian collector, fixed20 preregistration and an explicit four-file GitHub deployment extension. TEACHER-COLLECTOR-CPU-20260916-001 at16a36e9 passed55/55 offline controls using old training707 solely as a replay fixture. No external request, new teacher rollout, quality approval or parameter update. Both instances were again observed off in AutoDL this turn. Remaining handoff: user-authorized no-card startup → GitHub fixed-ref sync and remote preflight → user hidden terminal key entry → bounded acquisition and full-quality review. No autoGPU/SFT. See docs/TEACHER_API_HANDOFF_20260916.md. User-pasted credential was not stored or tested; rotation was recommended.
+
 ## Current: teacher preparation passed; ordinary API access pending (2026-09-16)
 
 User resumed progress and named Bailian qwen3.8-max via Token Plan. TEACHER-PREP-20260916-001 at b1f67b34b5fc18dd8e607ade68524332d58c4193 passed CPU checks:20/20 fixed training prompt/tool identities,69/69 visible turns encoded without dropping turns,5/5 negative controls. Existing unapproved trajectories were format fixtures only; training approvals remain0. One canonical target differs from the original sampled IDs, so cross-model formatting is explicitly distinguished from exact generation reconstruction.

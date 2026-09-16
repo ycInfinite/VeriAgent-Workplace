@@ -1,6 +1,6 @@
 # 2026-09-16 Handoff：采集质量审核与教师准备
 
-**最新停点：用户已要求继续并指定百炼qwen3.8-max。CPU教师输入隔离/完整格式审计通过，但Token Plan不支持本轮自定义批量脚本，普通按量API接入待落实。没有教师调用或SFT更新，两台实例最后确认状态仍关机。下面查价与采集停止是较早记录，最新交接见末尾。**
+**最新停点：用户确认百炼普通按量API和workspace端点。教师采集器已实现、55/55无网络检查通过，等待用户允许无卡启动和远端终端隐藏Key输入。没有教师调用或SFT更新，两台实例本轮再次确认关机。下面查价与采集停止是较早记录，最新交接见末尾。**
 
 1. **核心问题**：对当前单卡8B LoRA方案，市场上哪些配置更值得选？
 2. **开始状态**：无卡准备与GitHub同步已完成，GPU训练尚未执行；用户要求直接查看AutoDL，而非让其转述价格。
@@ -89,3 +89,28 @@ labels = [-100] * len(prefix_ids) + target_ids
 11. **五个追问（不附答案）**：为什么不能向教师发送ground_truth？为什么需要每轮真实observation？教师token IDs和学生target IDs为何不能混用？69轮编码通过为何仍0条可训练？更强教师的轨迹能否保证SFT后Agent更强？
 12. **下一步路线分叉**：是否已有普通按量百炼API访问；只告知可用性，Key不发聊天。确定接入后实现/登记固定20题采集，再做完整质量审核。此时无需GPU；不自动扩大到S1/S2/DPO/RL。
 13. **身份与路径**：CPU代码b1f67b34b5fc18dd8e607ade68524332d58c4193；config为configs/teacher_preparation_audit.json及实验目录快照；原始日志为request_manifest.jsonl、format_audit.jsonl、negative_controls.json，汇总result.json，身份identity.json。模型/data保持固定revision；官方网页核验日期2026-09-16、无公开commit。没有新无效运行。学习测验未评分，不作为推进门槛。
+
+## 补充交接：普通 API 采集器就绪
+
+1. **问题**：能否在不开GPU、无Key落盘的条件下，准备真实教师→工具→状态→verifier采集？
+2. **起点**：已有输入/格式隔离模块；普通API渠道此前待落实。
+3. **执行**：用户确认普通Key和workspace端点；新增transport/采集器/八字段配置；扩展4文件GitHub白名单；运行CPU回归。聊天所贴密钥未写入项目/日志，建议换新后远端隐藏输入。
+4. **变量/控制**：改变采集接口，保持20题/B1/工具语义/学生revision和预算；无模型实验。
+5. **结果**：55/55检查通过；网络请求0、新模型轨迹0、新数据批准0、更新0、GPU-h0。
+6. **代表轨迹**：仅重放旧training707四轮，动作与最终状态相同；截断fixture不执行动作，401 fixture不重试且usage未知，非法JSON仍是policy格式失败。
+7. **结论**：CPU采集器可进入远端预检；不代表教师能产出高质量成功示范。
+8. **待证**：账号权限、真实API兼容性、模型质量、教师canonical数据训练准入、CE/LoRA完整性均未实测。
+9. **代码导读**：
+
+| 文件 → 函数 | 输入 → 输出 | pipeline作用 |
+|---|---|---|
+| veriagent/teacher_rollout.py → request_body | messages/原始schema/config → HTTP JSON body | 只改协议外壳，不给参考答案 |
+| veriagent/teacher_rollout.py → BailianTransport.__call__ | body/超时 → API JSON或安全错误 | 普通API、无自动重试、无Key日志 |
+| veriagent/teacher_rollout.py → teacher_trajectory | 固定任务/transport → 全轨迹、状态、verifier | 真实工具闭环，未自动批准训练 |
+| scripts/collect_teacher_probe.py → preflight/main | GitHub部署清单/Key → 有界实验目录 | 校验、隐藏输入、费用记录及停止 |
+| scripts/audit_teacher_collector.py → run | 旧707 fixture → 55项检查结果 | 无网络验证协议和状态，不是新rollout |
+
+10. **学习点**：HTTP body与Authorization header分离；模型参数错误与API基础设施错误不同；已知usage费用与未知请求费用分别记录。
+11. **五个追问**：为何401不能算模型任务失败？为何截断JSON即使看似完整也不执行？为何工具strict字段不能静默删除？为何供应商tokens不能替代学生tokens？为何55项通过不意味着SFT数据已合格？
+12. **下一步**：用户允许新实例无卡开机后，GitHub同步/远端预检/隐藏Key输入/固定20题采集。Key不再发聊天，GPU保持关闭，不自动进入SFT。
+13. **证据**：TEACHER-COLLECTOR-CPU-20260916-001；代码16a36e9；实验config/identity/checks/replay_fixture/result；下一采集配置configs/teacher_acquisition_plan.json；操作文档TEACHER_API_HANDOFF_20260916.md。无无效CPU run，无教师运行或费用，学习未评分。

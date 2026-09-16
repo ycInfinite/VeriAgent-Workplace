@@ -1,0 +1,23 @@
+{
+  "Research Question": "Does the CPU teacher collector preserve tools/state and stop safely at API/format boundaries?",
+  "Hypothesis": "Replayed fixtures exercise the real environment without any network or quality approval.",
+  "Independent Variable": "New teacher collector implementation, recorded fixtures only",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "wire-schema identity",
+    "replay equality",
+    "truncated-call nonexecution",
+    "invalid-cost attribution",
+    "negative controls"
+  ],
+  "Evidence Gate": "All controls pass; zero external requests; fixtures explicitly ineligible",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "experiment_kind": "CPU_COLLECTOR_FIXTURE_AUDIT_NOT_MODEL_EVALUATION",
+  "seed": 42
+}

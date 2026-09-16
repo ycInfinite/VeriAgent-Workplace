@@ -1,0 +1,222 @@
+[
+  {
+    "name": "wire_schema_identity_565",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_565",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_331",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_331",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_450",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_450",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_972",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_972",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_1183",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_1183",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_247",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_247",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_859",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_859",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_123",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_123",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_770",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_770",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_271",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_271",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_20",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_20",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_707",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_707",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_980",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_980",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_518",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_518",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_177",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_177",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_76",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_76",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_965",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_965",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_687",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_687",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_8",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_8",
+    "passed": true
+  },
+  {
+    "name": "wire_schema_identity_1175",
+    "passed": true
+  },
+  {
+    "name": "wire_only_allowed_fields_1175",
+    "passed": true
+  },
+  {
+    "name": "workspace_endpoint",
+    "passed": true
+  },
+  {
+    "name": "subscription_endpoint",
+    "passed": true
+  },
+  {
+    "name": "foreign_endpoint",
+    "passed": true
+  },
+  {
+    "name": "url_credentials",
+    "passed": true
+  },
+  {
+    "name": "usage_unavailable",
+    "passed": true
+  },
+  {
+    "name": "real_state_and_replay",
+    "passed": true
+  },
+  {
+    "name": "same_official_actions",
+    "passed": true
+  },
+  {
+    "name": "same_final_state",
+    "passed": true
+  },
+  {
+    "name": "fixture_not_eligible",
+    "passed": true
+  },
+  {
+    "name": "all_turns_retained",
+    "passed": true
+  },
+  {
+    "name": "truncated_calls_not_executed",
+    "passed": true
+  },
+  {
+    "name": "api_error_excluded",
+    "passed": true
+  },
+  {
+    "name": "api_error_no_retry",
+    "passed": true
+  },
+  {
+    "name": "malformed_policy_call_not_infra",
+    "passed": true
+  },
+  {
+    "name": "thinking_disabled_contract",
+    "passed": true
+  }
+]

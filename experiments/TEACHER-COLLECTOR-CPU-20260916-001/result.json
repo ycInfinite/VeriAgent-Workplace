@@ -1,0 +1,12 @@
+{
+  "status": "CPU_COLLECTOR_CHECKS_PASSED",
+  "checks_passed": 55,
+  "checks_total": 55,
+  "external_api_requests": 0,
+  "new_model_rollouts": 0,
+  "new_training_approvals": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0,
+  "paid_cost_rmb": 0,
+  "fixture_scope": "Previously unapproved training707 replay only; not teacher quality or training evidence"
+}
