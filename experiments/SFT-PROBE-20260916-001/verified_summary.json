@@ -1,0 +1,15 @@
+{
+  "status": "EVIDENCE_ARCHIVE_VERIFIED",
+  "archive_sha256": "929b108499160b922a45007cd4e637512536153f6b717ba5f2abbe180c5b1b32",
+  "source_code_commit": "0a7eba87b1d2fe04320ee67803951e4af6169295",
+  "trainable_parameters": 43646976,
+  "steps": 8,
+  "mean_step_seconds": 1.4882835010066628,
+  "sum_step_seconds": 11.906268008053303,
+  "sample_count": 30,
+  "peak_sampled_gpu_memory_mib": 60175.0,
+  "mean_sampled_gpu_utilization_pct": 47.7,
+  "saved_reloaded_greedy_text": "<tool_call>\n{\"name\": \"customer_relationship_manager_update_customer\", \"arguments\": {\"customer_id\": \"12345678\", \"field\": \"status\", \"new_value\": \"Proposal\"}}\n</tool_call><|im_end|>",
+  "readout_scope": "One trained-policy fixed-input reload identity readout, not executable Agent evaluation or before-after capability comparison",
+  "raw_results_modified": false
+}

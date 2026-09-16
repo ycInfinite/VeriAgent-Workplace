@@ -1,0 +1,11 @@
+{
+  "run_id": "SFT-PROBE-20260916-001",
+  "pid": 2254,
+  "launched_at_utc": "2026-09-16T06:25:04.673578+00:00",
+  "instance": "kl7wef5luq-6927b33c",
+  "code_commit": "0a7eba87b1d2fe04320ee67803951e4af6169295",
+  "hourly_rmb": 6.98,
+  "max_updates": 8,
+  "max_process_seconds": 1800,
+  "log_path": "/root/autodl-tmp/veriagent-workplace-sft-20260910/logs/SFT-PROBE-20260916-001.log"
+}

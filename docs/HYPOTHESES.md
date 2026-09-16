@@ -1,5 +1,7 @@
 # Hypotheses
 
+2026-09-16 SFT-PROBE-20260916-001支持训练完整性假设：8有效更新、首步CE差0、43,646,976可训练参数、504adapter张量变化、冻结参数抽样不变、重载logits差0且greedy IDs相同。仅2整轨迹/582目标tokens，不支持H5随机vs定向SFT对比，也不支持Agent成功率提升；固定输入读出仍生成无依据ID，但未做完整Agent执行/训练前匹配对照。H6/H7仍未测。
+
 2026-09-16 用户授权改用有库存的同架构替代PRO6000，平台克隆完成；只支持资源获取与数据复制进度，不升级任何SFT效果、梯度更新或模型泛化结论。仍待执行既定8步完整性probe。
 
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — Inventory-only check; no new model/parameter-update evidence; existing hypotheses unchanged.

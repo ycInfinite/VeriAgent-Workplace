@@ -1,0 +1,42 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.06it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.17it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.21it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.34it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.77it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.47it/s]
+{"step": 1, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:707", "turn": 1, "loss": 1.4800398349761963, "manual_ce_abs_diff": 0.0, "gradient_norm_before_clip": 5.488296031951904, "nonzero_gradient_tensors": 252, "processed_tokens": 4240, "supervised_tokens": 47, "seconds": 1.9635155349969864}
+{"step": 2, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:707", "turn": 2, "loss": 0.508132815361023, "manual_ce_abs_diff": null, "gradient_norm_before_clip": 3.19820499420166, "nonzero_gradient_tensors": 504, "processed_tokens": 4541, "supervised_tokens": 79, "seconds": 1.4370866902172565}
+{"step": 3, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:707", "turn": 3, "loss": 1.3874837160110474, "manual_ce_abs_diff": null, "gradient_norm_before_clip": 6.695039749145508, "nonzero_gradient_tensors": 504, "processed_tokens": 4602, "supervised_tokens": 44, "seconds": 1.437384732067585}
+{"step": 4, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965", "turn": 1, "loss": 0.6902675628662109, "manual_ce_abs_diff": null, "gradient_norm_before_clip": 2.8288614749908447, "nonzero_gradient_tensors": 504, "processed_tokens": 4260, "supervised_tokens": 73, "seconds": 1.4205882176756859}
+{"step": 5, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965", "turn": 2, "loss": 0.3842392563819885, "manual_ce_abs_diff": null, "gradient_norm_before_clip": 2.5770435333251953, "nonzero_gradient_tensors": 504, "processed_tokens": 4364, "supervised_tokens": 80, "seconds": 1.303646843880415}
+{"step": 6, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965", "turn": 3, "loss": 0.5072802305221558, "manual_ce_abs_diff": null, "gradient_norm_before_clip": 1.9658112525939941, "nonzero_gradient_tensors": 504, "processed_tokens": 4563, "supervised_tokens": 111, "seconds": 1.426504798233509}
+{"step": 7, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965", "turn": 4, "loss": 0.6686447858810425, "manual_ce_abs_diff": null, "gradient_norm_before_clip": 1.6992591619491577, "nonzero_gradient_tensors": 504, "processed_tokens": 4661, "supervised_tokens": 81, "seconds": 1.4481743909418583}
+{"step": 8, "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965", "turn": 5, "loss": 0.7546651363372803, "manual_ce_abs_diff": null, "gradient_norm_before_clip": 2.2228951454162598, "nonzero_gradient_tensors": 504, "processed_tokens": 4741, "supervised_tokens": 67, "seconds": 1.4693668000400066}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.23it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.37it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.41it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.54it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.04it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.70it/s]
+{
+  "status": "SFT_INTEGRITY_PROBE_PASSED",
+  "optimizer_updates": 8,
+  "training_tasks": 2,
+  "available_per_turn_examples": 8,
+  "sample_order": "stored approval order, then model turn; cycle if more updates than examples",
+  "processed_tokens": 35972,
+  "supervised_tokens": 582,
+  "step_seconds": [
+    1.9635155349969864,
+    1.4370866902172565,
+    1.437384732067585,
+    1.4205882176756859,
+    1.303646843880415,
+    1.426504798233509,
+    1.4481743909418583,
+    1.4693668000400066
+  ],
+  "changed_adapter_tensors": 504,
+  "frozen_samples_unchanged": true,
+  "peak_training_allocated_gib": 26.53152084350586,
+  "peak_training_reserved_gib": 58.091796875,
+  "peak_full_probe_allocated_gib": 26.53152084350586,
+  "reload_passed": true,
+  "wall_seconds": 33.493945226073265,
+  "gpu_hours": 0.00930387367390924,
+  "cost_estimate_rmb": 0.0649410382438865,
+  "agent_evaluation": "NOT_PERFORMED",
+  "generalization_claim": false,
+  "cost_scope": "Process wall, excluding earlier preparation/idle/storage"
+}

@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-09-16T06:27:22.799682+00:00",
+  "run_id": "SFT-PROBE-20260916-001",
+  "files": [
+    {
+      "path": "adapter/README.md",
+      "bytes": 5284,
+      "sha256": "f36a6a7e988ab2ff1d77d04b8cfaae41b938f9792dd329448268823073ba4bdb"
+    },
+    {
+      "path": "adapter/adapter_config.json",
+      "bytes": 976,
+      "sha256": "aa9159311a834155622aa80f7de2e324bb8285e62a17e545d2f9c5888082c9f3"
+    },
+    {
+      "path": "adapter/adapter_model.safetensors",
+      "bytes": 174655536,
+      "sha256": "18edc268f1bc31c7e9b5444bf0c53e831d645dad3faf6e8bf3c0838edc8332e3"
+    }
+  ],
+  "weights_excluded_from_git": true
+}

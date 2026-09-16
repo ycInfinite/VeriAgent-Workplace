@@ -1,5 +1,13 @@
 # Project state
 
+## Current: first real8-update LoRA probe passed; checkpoint verified and all instances off (2026-09-16)
+
+SFT-PROBE-20260916-001 executed on the user-authorized replacement904 PRO6000 single GPU atcommit0a7eba87b1d2fe04320ee67803951e4af6169295. All8 updates completed on whole tasks707/965(8 turns,35972 processed/582 supervised tokens). Trainable parameters43646976; first manual/model CE difference0; all gradients finite,504 adapter tensors changed; frozen parameter samples unchanged. Adapter reload logits max difference0 and greedy IDs identical. Training validity gate passed; no infrastructure-invalid training run.
+
+Mean step1.4883sec,8 updates11.9063sec,full probe33.4939sec,allocated peak26.5315GiB,reserved peak58.0918GiB,sampled GPU used peak60175MiB,30-sample utilization mean47.7percent. Process GPU-hours0.00930387,estimatedRMB0.064941 at6.98/h; this is included in total instance uptime and not additive. Model revisions/package identities and raw records are preserved. Report:docs/SFT_FIRST_PROBE_REPORT_20260916.md.
+
+This proves parameter-update and save/reload integrity, not Agent improvement. The one trained-policy fixed-input greedy readout still invents customer_id12345678 without lookup; no tool execution/task verifier or matched pretraining greedy baseline was run for that readout. No fullS1/S2,DPO or RL. Teacher acquisition was not repeated. Monitor remains PAUSED. All3 adapter files(174661796bytes) passed local/remoteSHA256 comparison underignoredcheckpoints/. New904 and both old instances are confirmed powered off, data retained. Full instance session estimatedRMB4.58-5.04 to the shutdown request (not invoice; small completion lag possible); processRMB0.064941 is included, not additive. Receipts:evidence/sft-probe/adapter_backup_receipt.json and lifecycle_and_cost.json. Stop here pending the next research-stage decision.
+
 ## Latest: user-authorized replacement cloned and running; SSH endpoint handoff pending (2026-09-16)
 
 User said "直接重新找一个空闲的吧，懒得等了", superseding the earlier existing-instance-only restriction for one replacement single GPU. Paused the old inventory heartbeat to avoid duplicate starts. Selected available BeijingB904 PRO6000 96GB atRMB6.98/h (single GPU,22CPU,110GB RAM,driver590.44.01), cloned system+data disk from the prepared PRO6000. New instance kl7wef5luq-6927b33c is running; platform data-copy indicator cleared and disk usage matches source31.03percent; old source and A800 remain off/preserved. No paid disk expansion, no new model data collection or parameter update.

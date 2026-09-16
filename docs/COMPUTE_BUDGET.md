@@ -1,5 +1,9 @@
 # Compute budget
 
+2026-09-16 本次会话已收尾：新904实例与旧两台都已确认关机。用创建观察时间区间05:56:21–06:00:15UTC和关机请求UI时间06:39:39.186UTC，按6.98元/小时估算整机会话约4.58–5.04元，关机完成延迟可能增加少量费用，非实际账单。此范围包含0.064941元训练进程费，不能相加；本轮没有新教师API费用。约175MB adapter本地与远端备份哈希一致，不入Git。
+
+2026-09-16 首次SFT实测：PRO6000单卡8步，平均1.4883秒/步；实际更新总计11.9063秒，完整probe含加载/保存/重载33.4939秒=0.00930387GPU-h，按6.98元/小时估算0.064941元。allocated峰值26.5315GiB、reserved峰值58.0918GiB、sampled used峰值60175MiB，30点平均利用率47.7percent（整个probe范围）。实际实例开机包含迁移、认证、GitHub重试和adapter备份，最终窗口见evidence/sft-probe/lifecycle_and_cost.json；进程费用包含其中，不能相加。没有再次调用教师API。
+
 2026-09-16 替代实例：用户明确授权另找空闲单卡，创建并克隆北京B904 PRO6000 96GB。创建页最终费用6.98元/小时，免费50GB数据盘，付费扩容0，日常磁盘加价0。复制/准备/等待计入新实例运行费用；8步训练进程仍最多1800秒，即按此价至多3.49元进程费用，其他上线时间另计。旧两机均关机，没有双GPU训练。最终会话时长及账单待收尾。
 
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — Inventory-only check; new GPU-hours/model-API calls/paid experiment charges=0; Codex account usage not included.

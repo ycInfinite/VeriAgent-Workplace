@@ -1,0 +1,31 @@
+{
+  "status": "SFT_INTEGRITY_PROBE_PASSED",
+  "optimizer_updates": 8,
+  "training_tasks": 2,
+  "available_per_turn_examples": 8,
+  "sample_order": "stored approval order, then model turn; cycle if more updates than examples",
+  "processed_tokens": 35972,
+  "supervised_tokens": 582,
+  "step_seconds": [
+    1.9635155349969864,
+    1.4370866902172565,
+    1.437384732067585,
+    1.4205882176756859,
+    1.303646843880415,
+    1.426504798233509,
+    1.4481743909418583,
+    1.4693668000400066
+  ],
+  "changed_adapter_tensors": 504,
+  "frozen_samples_unchanged": true,
+  "peak_training_allocated_gib": 26.53152084350586,
+  "peak_training_reserved_gib": 58.091796875,
+  "peak_full_probe_allocated_gib": 26.53152084350586,
+  "reload_passed": true,
+  "wall_seconds": 33.493945226073265,
+  "gpu_hours": 0.00930387367390924,
+  "cost_estimate_rmb": 0.0649410382438865,
+  "agent_evaluation": "NOT_PERFORMED",
+  "generalization_claim": false,
+  "cost_scope": "Process wall, excluding earlier preparation/idle/storage"
+}

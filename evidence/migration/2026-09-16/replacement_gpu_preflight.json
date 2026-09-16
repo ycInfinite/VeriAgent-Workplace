@@ -1,0 +1,52 @@
+{
+  "status": "REPLACEMENT_GPU_PREFLIGHT_PASSED",
+  "checked_at_utc": "2026-09-16T06:15:58.112157+00:00",
+  "instance": "kl7wef5luq-6927b33c",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_memory_gib": 94.97296142578125,
+  "capability": [
+    12,
+    0
+  ],
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "deployment_files_verified": 42,
+  "source_commit_before_sync": "d429eb66eded750e252a1e4880187d6c67a1940a",
+  "weight_files": [
+    {
+      "file": "model-00001-of-00005.safetensors",
+      "sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+      "match": true
+    },
+    {
+      "file": "model-00002-of-00005.safetensors",
+      "sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+      "match": true
+    },
+    {
+      "file": "model-00003-of-00005.safetensors",
+      "sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+      "match": true
+    },
+    {
+      "file": "model-00004-of-00005.safetensors",
+      "sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+      "match": true
+    },
+    {
+      "file": "model-00005-of-00005.safetensors",
+      "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+      "match": true
+    }
+  ],
+  "bf16_matmul_passed": true,
+  "duplicate_training_found": false,
+  "free_disk_gib": 34.48268127441406,
+  "elapsed_seconds": 14.64631262794137,
+  "model_loaded": false,
+  "parameter_updates": 0
+}

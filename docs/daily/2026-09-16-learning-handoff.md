@@ -2,7 +2,7 @@
 
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — 本次定时检查：A800与PRO6000均0空闲卡、均关机；未启动SFT，监控继续，无变化不通知。
 
-**最新停点：20条真实教师轨迹采集完成，18条官方成功，15条完整示范获批；两条整轨迹/8轮/582监督tokens的SFT输入与远端准入通过。用户已明确授权已有A800执行8步，但PRO6000和A800均无GPU库存，两台关机，参数更新仍0。本轮API与无卡会话合计估算约5.02元，非账单。下面较早停点是历史，最终交接见末尾。**
+**最新停点：用户授权另找空闲单卡后，已在替代904 PRO6000上完成首次真实8步LoRA SFT，CE/梯度/参数变化/保存重载门槛全部通过。两条整轨迹、8轮、582监督tokens；平均1.49秒/步，完整probe33.49秒。adapter本地/远端备份SHA匹配，三台实例均关机、监控暂停。仍没有Agent效果提升证据，固定读出仍有无依据ID。下面较早停点是历史，真正最终交接见末尾。**
 
 1. **核心问题**：对当前单卡8B LoRA方案，市场上哪些配置更值得选？
 2. **开始状态**：无卡准备与GitHub同步已完成，GPU训练尚未执行；用户要求直接查看AutoDL，而非让其转述价格。
@@ -185,3 +185,81 @@ optimizer.step()
 ### 后续监控安排
 
 用户随后要求持续监控。已创建当前对话每15分钟检查的heartbeat `veriagent-gpu-sft-probe`；不变时安静，有库存则按既有授权和数据/代码门槛继续8步probe，完成后关机并暂停监控。它不代表已经再次检查出库存或执行训练；SFT状态仍为未执行。依赖本地电脑和应用运行、AutoDL浏览器登录；无新的知识/能力评分或实验费用证据。
+
+## 最终实验交接：首次真实参数更新完成
+
+1. **今天回答的核心问题**：完整高质量轨迹能否真的进入学生训练，并留下可信的参数变化和可重载checkpoint？本次8步probe已回答“可以”。它尚未回答Agent是否变强。
+2. **开始前状态**：教师20题18成功/15质量批准；707和965共8完整轮次已准入；旧两台长期无库存，参数更新0。用户随后明确要求另找空闲实例。
+3. **实际执行**：暂停旧监控；创建北京B904 PRO6000单卡并克隆原系统+数据盘；完整核验42部署文件/5模型分片/框架版本/BF16/无重复run；GitHub固定0a7eba8同步；数据validate-only；8步LoRA训练；保存重载；取回原始记录并验包SHA；备份3个adapter文件并逐项验SHA；关闭新机。旧两机数据保留且关机。
+4. **唯一变量/控制**：probe比较更新前后的权重；固定Qwen3-8B revision、两条完整training轨迹、chat template/mask、rank16/alpha32、7类projection、seed42、lr5e-5、microbatch1、8步、8K上限。没有prompt搜索、重采样、dev混训或新seed。
+5. **原始结果**：8有效更新、0训练invalid；43,646,976可训练参数；manual/model首步CE差0；504adapter张量变化；冻结参数抽样不变；重载logits差0、greedy IDs相同。35972 processed/582 supervised tokens，8步11.906秒、平均1.488秒，完整probe33.494秒。allocated峰值26.532GiB，reserved58.092GiB，nvidia-smi sampled used峰值60175MiB，30采样点平均GPU利用率47.7%（含加载/保存/重载）。
+6. **代表成功/失败证据**：教师707先lookup再更新，965查邮箱/全体任务→改状态→验证空集→确认，整条保留。训练后保存/重载的固定输入读出仍跳过lookup并生成customer_id=12345678。这是单次读出问题信号，没有继续执行工具/verifier，不记成完整Agent失败，也没有匹配的训练前greedy对照。
+7. **路线级结论**：从“数据准备”走到了“真实SFT完整性与成本探针已通过”。下一步才是有明确学习目标/足够训练token的小规模SFT效果实验和development Agent评测。正式S1/S2应保持同一原始Base与初始化协议，不能把本probe的额外更新悄悄算入某个实验组。
+8. **尚未支持的推测**：不同样本loss首尾差不是学习曲线；重载一致不表示行为正确；冻结抽样不变不是整份基座内存逐字节证明；本次PRO6000结果不替代A800实测；未测试DPO、在线RL、外部BFCL或组合泛化。
+9. **今晚最值得理解的5处函数/代码**：
+
+| 文件 → 函数 | 输入 → 输出 | pipeline作用 |
+|---|---|---|
+| veriagent/teacher_data.py → export_teacher_turns | 完整raw trajectory+质量审核+manifest → 全部student per-turn样本 | 检查来源、API原始输出、上下文连续性及真实observation，不删轮 |
+| scripts/run_sft_probe.py → prepare_examples | 707/965轨迹与config → 恰好8样本 | 锁定任务/source/processed/supervised tokens，阻止数据替换 |
+| scripts/run_sft_probe.py → main中的LoraConfig/get_peft_model | 固定8B基座+rank16等配置 → 43,646,976可训练参数 | 只训练LoRA，不把基座一起放开 |
+| scripts/run_sft_probe.py → main中的8步循环 | ids/labels/attention_mask → loss、grad、optimizer update、steps.jsonl | 本次真正执行了的参数后训练 |
+| scripts/run_sft_probe.py → probe_output/save_pretrained/PeftModel.from_pretrained | 训练权重+固定输入 → 两次logits/IDs | 验证adapter保存与重载，不是Agent任务评测 |
+
+本次**真正执行**的核心CE/更新代码如下；把它与上述582个监督token对应起来理解：
+
+```python
+batch = {
+    key: torch.tensor([ex[key]], dtype=torch.long, device='cuda')
+    for key in ('input_ids', 'labels', 'attention_mask')
+}
+optimizer.zero_grad(set_to_none=True)
+output = model(**batch, use_cache=False)
+loss = output.loss
+
+if index == 0:
+    labels = batch['labels'][:, 1:]
+    mask = labels != -100
+    manual = F.cross_entropy(
+        output.logits[:, :-1, :].detach()[mask].float(), labels[mask]
+    )
+    # 本次实测：manual与model loss绝对差为0。
+    if not torch.allclose(manual, loss.detach(), atol=1e-4, rtol=1e-4):
+        raise ValueError('Manual/model CE mismatch')
+
+loss.backward()
+grads = [p.grad for p in trainable.values() if p.grad is not None]
+if not grads or not all(torch.isfinite(g).all().item() for g in grads):
+    raise ValueError('Missing/nonfinite gradients')
+torch.nn.utils.clip_grad_norm_(
+    list(trainable.values()), config['max_grad_norm'], error_if_nonfinite=True
+)
+optimizer.step()
+```
+
+`[:, :-1]`的logits预测`[:, 1:]`的token；`-100`位置不直接计CE。历史观察仍进入前向计算，影响assistant目标的预测。`backward()`生成梯度，`step()`才实际更新LoRA参数。首步252个非零梯度张量、后续504个，与LoRA零初始化一侧在首步的梯度结构相容，不应据此误判训练失败。
+
+实际保存重载顺序是：
+
+```python
+expected_logits, expected_ids = probe_output(model)
+model.save_pretrained(adapter_dir, safe_serialization=True)
+del optimizer, trainable, before, model
+gc.collect()
+torch.cuda.empty_cache()
+
+reloaded = PeftModel.from_pretrained(load_base(), adapter_dir, is_trainable=False)
+reloaded.eval()
+actual_logits, actual_ids = probe_output(reloaded)
+logit_ok = torch.allclose(expected_logits, actual_logits, atol=0.001, rtol=0.001)
+output_ok = expected_ids == actual_ids
+```
+
+两次都生成错误ID也可以完全一致。因此这项检查证明保存/加载没有改变当前policy，不能证明policy完成任务。
+
+10. **今晚三个知识点**：labels mask与shifted CE；LoRA梯度/optimizer update/可训练参数的关系；训练完整性、行为评测与显存/费用口径的区别。
+11. **5个项目面试追问（不附答案）**：为什么第1步252个非零梯度张量、第2步504个可能正常？为什么35972输入处理tokens只有582监督tokens？重载输出正确匹配却仍编造ID，分别说明什么？allocated26.5GiB为何不等于整卡只需要26.5GiB？怎样设计下一轮实验，才能判断SFT真的修复了identifier grounding？
+12. **明天的路线分叉**：优先登记一轮小规模SFT学习实验+开发集前后Agent评测，或先独立复核这15条示范和训练目标质量；两者都不能直接宣称S1/S2结论。原8步任务已经完成，不自动加步数/追加教师采样/DPO/RL。监控保持暂停，用户此前考试不作为执行门槛；没有评分或“已掌握”结论。
+13. **身份、日志、费用与checkpoint**：SFT-PROBE-20260916-001@0a7eba87b1d2fe04320ee67803951e4af6169295；实验目录的config/identity/steps/training_examples/reload_check/adapter_changes/gpu_samples/result/run_stdout/launch为原始证据。证据包SHA为929b108499160b922a45007cd4e637512536153f6b717ba5f2abbe180c5b1b32。本地checkpoints/SFT-PROBE-20260916-001/adapter下3文件174661796字节已与远端SHA匹配，不入Git；receipt在evidence/sft-probe。模型revision仍b968826d9c46dd6066d109eabc6255188de91218。进程0.00930387GPU-h≈0.064941元，整机会话估算约4.58–5.04元至关机请求（小额关机延迟可能另增），包含进程费，非账单；三机已关。一次原凭据认证失败和GitHub传输失败均为准备阶段事件，已保留，不算训练invalid或模型失败。
+
+完整报告：[首次真实LoRA probe](../SFT_FIRST_PROBE_REPORT_20260916.md)。本轮结束，不启动新实验。

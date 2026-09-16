@@ -24,10 +24,36 @@
   "source_and_old_A800_remain_off": true,
   "platform_data_copy_completed": true,
   "copy_completion_evidence": "Copying indicator removed; target data disk31.03percent matching source; source returned powered off",
-  "target_running": true,
+  "target_running": false,
   "weights_or_dependencies_redownloaded": false,
-  "parameter_updates": 0,
+  "parameter_updates": 8,
   "old_stock_heartbeat": "PAUSED",
   "credentials_recorded": false,
-  "pending": "Non-secret SSH endpoint retrieval; browser copy interface returned empty text"
+  "pending": null,
+  "ssh_host": "connect.bjb1.seetacloud.com",
+  "ssh_port": 22471,
+  "final_status": "SFT_PROBE_PASSED_BACKUP_VERIFIED_INSTANCE_OFF",
+  "operational_events": [
+    {
+      "event": "Browser SSH-command copy interface returned empty; only host/port requested from user"
+    },
+    {
+      "event": "Full-tooltip output rejected by automatic approval; no complete tooltip or credential was emitted; field-only safe read returned no endpoint"
+    },
+    {
+      "event": "Source-instance credential failed once on new instance; user-provided replacement credential succeeded through non-echoing stdin; not persisted"
+    },
+    {
+      "event": "One remote GitHub transfer failed with source deployment unchanged; later local metadata URLError failed before SSH; staged bytes preserved"
+    },
+    {
+      "event": "Hash-and-Git-blob verified reuse avoided redundant downloads; final27-file sync at0a7eba8 passed"
+    },
+    {
+      "event": "42 deployment hashes,5 weight hashes,BF16 and package checks passed; no duplicate run"
+    },
+    {
+      "event": "8 LoRA updates passed; evidence and3-file adapter backup verified; all3 instances confirmed off"
+    }
+  ]
 }

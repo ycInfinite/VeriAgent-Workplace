@@ -1,0 +1,26 @@
+{
+  "instance": "kl7wef5luq-6927b33c",
+  "gpu": "NVIDIA RTX PRO6000 Blackwell Server Edition",
+  "hourly_rmb": 6.98,
+  "creation_bracket_utc": [
+    "2026-09-16T05:56:21+00:00",
+    "2026-09-16T06:00:15+00:00"
+  ],
+  "shutdown_request_ui_timestamp_utc": "2026-09-16T06:39:39.186000+00:00",
+  "shutdown_confirmed_in_official_ui": true,
+  "closure_recorded_at_utc": "2026-09-16T06:44:11.418042+00:00",
+  "all_three_instances_powered_off": true,
+  "process_wall_seconds": 33.493945226073265,
+  "process_gpu_hours": 0.00930387367390924,
+  "process_cost_estimate_rmb": 0.0649410382438865,
+  "estimated_session_rmb_to_shutdown_request_range": [
+    4.583893966666667,
+    5.037593966666667
+  ],
+  "session_scope": "Creation/copy, SSH handoff, GitHub failures/retry, preflight, training, checkpoint backup and idle waiting; shutdown completion lag may add a small amount",
+  "invoice_verified": false,
+  "not_additive": "Process cost is included in the session estimate; do not add it again",
+  "adapter_backup_verified": true,
+  "monitor_status": "PAUSED",
+  "old_instances_preserved": true
+}

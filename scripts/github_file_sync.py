@@ -53,6 +53,7 @@ try:
     assert not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
+    reused_verified=[]
     for entry in plan['files']:
         url=urllib.parse.urlsplit(entry['download_url'])
         assert url.scheme=='https' and url.hostname=='raw.githubusercontent.com'
@@ -61,9 +62,16 @@ try:
         if target.exists():
             data=target.read_bytes()
         else:
-            with urllib.request.urlopen(entry['download_url'],timeout=45) as response:
-                data=response.read(2000001)
-            assert len(data)<=2000000
+            existing=(root/entry['path']).resolve();assert existing.is_relative_to(root)
+            candidate=existing.read_bytes() if existing.is_file() else None
+            if candidate is not None and hashlib.sha256(candidate).hexdigest()==entry['sha256']:
+                # GitHub metadata already pins this exact blob at the requested ref.
+                # Reusing identical bytes avoids unnecessary network transfers.
+                data=candidate;reused_verified.append(entry['path'])
+            else:
+                with urllib.request.urlopen(entry['download_url'],timeout=45) as response:
+                    data=response.read(2000001)
+                assert len(data)<=2000000
         assert hashlib.sha256(data).hexdigest()==entry['sha256']
         blob=hashlib.sha1(b'blob '+str(len(data)).encode()+bytes([0])+data).hexdigest()
         assert blob==entry['git_blob_sha']
@@ -89,6 +97,7 @@ try:
     receipt={'status':'GITHUB_SYNC_VERIFIED','repository':plan['repository'],'git_commit':plan['commit'],
         'transport':'Execution host downloads pinned files directly from GitHub',
         'private_repository':True,'synced_file_count':len(plan['files']),'changed_files':changed,
+        'unchanged_files_reused_after_hash_and_git_blob_checks':reused_verified,
         'account_credential_sent_to_remote':False,'temporary_urls_persisted':False,
         'dev_or_final_cases_downloaded':False,'weights_or_venv_modified':False,
         'source_files':[{k:v for k,v in x.items() if k!='download_url'} for x in plan['files']],
@@ -140,8 +149,10 @@ def main():
             try:
                 with urllib.request.urlopen(request,timeout=30) as response:info=json.load(response)
                 break
-            except (urllib.error.URLError,TimeoutError):
-                if attempt==2:raise
+            except (urllib.error.URLError,TimeoutError) as exc:
+                if attempt==2:
+                    exc.failed_path=path
+                    raise
                 time.sleep(attempt+1)
         data=git('show',commit+':'+path)
         expected_blob=git('rev-parse',commit+':'+path).decode().strip()
@@ -179,5 +190,7 @@ if __name__=='__main__':
     try:main()
     except Exception as exc:
         print(json.dumps({'status':'SYNC_FAILED','error_type':type(exc).__name__,
+            'reason_type':type(getattr(exc,'reason',None)).__name__,
+            'failed_path':getattr(exc,'failed_path',None),
             'details':'Suppressed to prevent credential/temporary-URL disclosure'}),flush=True)
         raise SystemExit(1)

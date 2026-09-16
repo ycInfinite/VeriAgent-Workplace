@@ -1,5 +1,7 @@
 # Decisions
 
+2026-09-16 首次SFT已完成：在替代904 PRO6000上按固定0a7eba8执行原2条整轨迹/8步LoRA probe，全部完整性门槛通过。真实参数更新与checkpoint重载成立；不以不同样本loss首尾变化推导能力提升，不把仍有假ID的单次greedy读出算完整Agent评测。保存adapter及原始证据后关机，监控保持暂停，后续正式学习/评测阶段不自动启动。
+
 2026-09-16 替代单卡：用户不再等待旧机库存，明确要求找新空闲实例。选择同地区904机PRO6000 96GB、6.98元/小时，克隆原PRO6000系统盘和数据盘，避免重配Torch/权重；同区A800-NVLink报价7.98且不必更换已验证架构。仅1卡、不付费扩容，源机保留关机，旧库存heartbeat暂停。复制完成，尚未更新参数。
 
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — No route/configuration change: preserve existing instances, do not rent or duplicate runs; continue the existing15-minute monitoring.
