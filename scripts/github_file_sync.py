@@ -29,6 +29,11 @@ TEACHER_FILES = ['configs/teacher_acquisition_plan.json', 'veriagent/teacher_dat
 TEACHER_PROBE_FILES = ['experiments/TEACHER-ACQUIRE-20260916-001/config.json',
                        'experiments/TEACHER-ACQUIRE-20260916-001/trajectories.jsonl',
                        'experiments/TEACHER-ACQUIRE-20260916-001/probe_quality_approvals.json']
+INTERACTIVE_FILES = ['configs/qwen_code_token_plan.example.json',
+                     'requirements-interactive.pinned.txt',
+                     'scripts/serve_workplace_interactive.py',
+                     'scripts/setup_interactive_client.py',
+                     'scripts/launch_interactive_client.py']
 
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,urllib.request,urllib.parse
@@ -49,8 +54,12 @@ try:
     teacher_probe_files={'experiments/TEACHER-ACQUIRE-20260916-001/config.json',
                          'experiments/TEACHER-ACQUIRE-20260916-001/trajectories.jsonl',
                          'experiments/TEACHER-ACQUIRE-20260916-001/probe_quality_approvals.json'}
+    interactive_files={'configs/qwen_code_token_plan.example.json','requirements-interactive.pinned.txt',
+                       'scripts/serve_workplace_interactive.py','scripts/setup_interactive_client.py',
+                       'scripts/launch_interactive_client.py'}
     additions=set(plan.get('additional_paths',[]))
-    assert not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
+    assert (not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
+            or additions==teacher_files|teacher_probe_files|interactive_files)
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     reused_verified=[]
@@ -124,14 +133,16 @@ def main():
     parser.add_argument('--remote-root',required=True);parser.add_argument('--receipt',required=True)
     parser.add_argument('--include-teacher',action='store_true',help='Add only the four reviewed teacher execution files')
     parser.add_argument('--include-teacher-probe-data',action='store_true',help='Also verify the fixed teacher run and its two-task approval')
+    parser.add_argument('--include-interactive',action='store_true',help='Add the five reviewed interactive client files; preserve existing teacher files')
     args=parser.parse_args()
     destination=ROOT/args.receipt
     if destination.exists():raise FileExistsError('Refusing to overwrite sync receipt')
     commit=git('rev-parse',args.commit).decode().strip()
     bundle=json.loads((ROOT/'evidence/sft-preparation/bundle-4e5f9102.json').read_text())['manifest']
     paths=[x['path'] for x in bundle['files'] if not x['path'].startswith(('vendor/','data/'))]
-    additions=TEACHER_FILES if args.include_teacher or args.include_teacher_probe_data else []
-    if args.include_teacher_probe_data:additions=additions+TEACHER_PROBE_FILES
+    additions=TEACHER_FILES if args.include_teacher or args.include_teacher_probe_data or args.include_interactive else []
+    if args.include_teacher_probe_data or args.include_interactive:additions=additions+TEACHER_PROBE_FILES
+    if args.include_interactive:additions=additions+INTERACTIVE_FILES
     paths=sorted(set(paths)|set(additions))
     # Capture existing Git authentication inside this process; never print it.
     credential=subprocess.run(['git','-c','credential.interactive=never','credential','fill'],cwd=ROOT,

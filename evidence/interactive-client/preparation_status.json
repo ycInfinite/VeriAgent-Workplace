@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-16",
+  "status": "LOCAL_CLIENT_AND_CPU_MCP_READY_REMOTE_DEPLOYMENT_PENDING",
+  "invalid_runs": {
+    "INTERACTIVE-MCP-CPU-20260916-001": "missing local training bundle member; restored existing hash-verified training20 file",
+    "INTERACTIVE-MCP-CPU-20260916-002": "MCP argument objects were not serialized for official replay; adapter boundary fixed, original result preserved"
+  },
+  "passed_run": "INTERACTIVE-MCP-CPU-20260916-003",
+  "checks": 18,
+  "provider_calls": 0,
+  "gpu_hours": 0,
+  "new_model_rollouts": 0,
+  "training_approved": 0,
+  "no_card_instance": "kl7wef5luq-6927b33c",
+  "cpu_price_rmb_hour": 0.1
+}

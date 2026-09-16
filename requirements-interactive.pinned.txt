@@ -1,0 +1,2 @@
+# Installed into .cache/interactive-python; leave training dependencies untouched.
+mcp==1.30.0

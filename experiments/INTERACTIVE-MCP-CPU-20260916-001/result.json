@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "error_type": "FileNotFoundError",
+  "checks": [
+    {
+      "name": "outside_training_cohort_rejected",
+      "passed": true
+    }
+  ],
+  "model_rollouts": 0,
+  "api_requests": 0,
+  "gpu_hours": 0
+}

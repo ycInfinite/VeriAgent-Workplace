@@ -1,0 +1,25 @@
+{
+  "Research Question": "Can the interactive tool bridge execute real Workplace tools and preserve evidence?",
+  "Hypothesis": "One fixed training task can be exposed without reference disclosure or provider calls.",
+  "Independent Variable": "MCP tool transport instead of direct Python invocation",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "protocol tool listing",
+    "real observation equality",
+    "state change",
+    "official reward",
+    "no reset after finish",
+    "training-only gate",
+    "tool-call bound"
+  ],
+  "Evidence Gate": "All CPU controls pass; never interpret a scripted fixture as a model rollout.",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "experiment_kind": "CPU_MCP_INTEGRATION_NOT_MODEL_EVAL",
+  "seed": null
+}

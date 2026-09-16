@@ -1,0 +1,65 @@
+{
+  "status": "failed",
+  "error_type": "ExceptionGroup",
+  "checks": [
+    {
+      "name": "outside_training_cohort_rejected",
+      "passed": true
+    },
+    {
+      "name": "action_before_get_task_rejected",
+      "passed": true
+    },
+    {
+      "name": "reference_not_in_public_task",
+      "passed": true
+    },
+    {
+      "name": "seventh_call_rejected",
+      "passed": true
+    },
+    {
+      "name": "lookup_calls_preserve_state",
+      "passed": true
+    },
+    {
+      "name": "disconnect_preserves_termination",
+      "passed": true
+    },
+    {
+      "name": "three_explicit_tools",
+      "passed": true
+    },
+    {
+      "name": "no_automatic_replay_annotations",
+      "passed": true
+    },
+    {
+      "name": "mcp_task_request_succeeded",
+      "passed": true
+    },
+    {
+      "name": "mcp_original_schemas_preserved",
+      "passed": true
+    },
+    {
+      "name": "real_observation_1",
+      "passed": true
+    },
+    {
+      "name": "real_observation_2",
+      "passed": true
+    },
+    {
+      "name": "get_task_does_not_reset",
+      "passed": true
+    },
+    {
+      "name": "official_verifier_success",
+      "passed": false
+    }
+  ],
+  "model_rollouts": 0,
+  "api_requests": 0,
+  "gpu_hours": 0
+}
