@@ -1,0 +1,24 @@
+{
+  "status": "CPU_TEACHER_ADMISSION_PASSED",
+  "approved_tasks": 15,
+  "full_assistant_turns": 57,
+  "turns_dropped": 0,
+  "probe_tasks": [
+    707,
+    965
+  ],
+  "probe_examples": 8,
+  "probe_processed_tokens": 35972,
+  "probe_supervised_tokens": 582,
+  "probe_max_sequence_tokens": 4741,
+  "negative_controls_passed": 16,
+  "negative_controls_total": 16,
+  "api_calls": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0,
+  "paid_cost_rmb": 0,
+  "limitations": [
+    "No actual Transformers/CE/gradient/update/reload in this CPU gate",
+    "Teacher alias and HTTP model label do not establish immutable closed-model weights"
+  ]
+}

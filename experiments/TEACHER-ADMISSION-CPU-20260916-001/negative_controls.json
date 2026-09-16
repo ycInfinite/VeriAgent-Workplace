@@ -1,0 +1,77 @@
+[
+  {
+    "name": "development_pool",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "scripted_producer",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "infra_invalid",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "failed_reward",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "missing_full_turn",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "altered_observation",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "altered_api_response",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "wrong_request_hash",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "wrong_student_revision",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "wrong_usage",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "missing_quality_approval",
+    "passed": true,
+    "error_type": "ValueError"
+  },
+  {
+    "name": "held_task_331",
+    "passed": true
+  },
+  {
+    "name": "held_task_1183",
+    "passed": true
+  },
+  {
+    "name": "held_task_980",
+    "passed": true
+  },
+  {
+    "name": "held_task_518",
+    "passed": true
+  },
+  {
+    "name": "held_task_1175",
+    "passed": true
+  }
+]

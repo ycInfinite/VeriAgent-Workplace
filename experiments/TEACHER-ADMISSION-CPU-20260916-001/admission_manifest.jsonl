@@ -1,0 +1,15 @@
+{"task_id": 565, "turns": 2, "processed_tokens": 8590, "supervised_tokens": 123, "all_prefix_labels_masked": true}
+{"task_id": 450, "turns": 3, "processed_tokens": 14369, "supervised_tokens": 625, "all_prefix_labels_masked": true}
+{"task_id": 972, "turns": 2, "processed_tokens": 8900, "supervised_tokens": 314, "all_prefix_labels_masked": true}
+{"task_id": 247, "turns": 3, "processed_tokens": 12892, "supervised_tokens": 137, "all_prefix_labels_masked": true}
+{"task_id": 859, "turns": 4, "processed_tokens": 19895, "supervised_tokens": 707, "all_prefix_labels_masked": true}
+{"task_id": 123, "turns": 3, "processed_tokens": 13802, "supervised_tokens": 343, "all_prefix_labels_masked": true}
+{"task_id": 770, "turns": 3, "processed_tokens": 13028, "supervised_tokens": 204, "all_prefix_labels_masked": true}
+{"task_id": 271, "turns": 4, "processed_tokens": 18056, "supervised_tokens": 299, "all_prefix_labels_masked": true}
+{"task_id": 20, "turns": 6, "processed_tokens": 27671, "supervised_tokens": 522, "all_prefix_labels_masked": true}
+{"task_id": 707, "turns": 3, "processed_tokens": 13383, "supervised_tokens": 170, "all_prefix_labels_masked": true}
+{"task_id": 177, "turns": 6, "processed_tokens": 30273, "supervised_tokens": 432, "all_prefix_labels_masked": true}
+{"task_id": 76, "turns": 3, "processed_tokens": 13922, "supervised_tokens": 339, "all_prefix_labels_masked": true}
+{"task_id": 965, "turns": 5, "processed_tokens": 22589, "supervised_tokens": 412, "all_prefix_labels_masked": true}
+{"task_id": 687, "turns": 5, "processed_tokens": 23045, "supervised_tokens": 496, "all_prefix_labels_masked": true}
+{"task_id": 8, "turns": 5, "processed_tokens": 22646, "supervised_tokens": 424, "all_prefix_labels_masked": true}

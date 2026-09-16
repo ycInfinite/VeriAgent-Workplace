@@ -1,0 +1,105 @@
+{
+  "status": "PUBLIC_BENCHMARK_PROVENANCE_VERIFIED",
+  "reason": "Resolve automated publication review uncertainty before retrying the same authorized GitHub push",
+  "destination": "https://github.com/ycInfinite/VeriAgent-Workplace.git",
+  "destination_visibility_last_verified": "private",
+  "user_authorization": "Use the specified GitHub repo for project code/configuration and authorized public project records; user explicitly requested GitHub transfer",
+  "official_sources": [
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/analytics_data.csv",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/analytics_data.csv",
+      "sha256": "4a0df10aabc07980f1cc074dc9ab36406ce98dead7e14fe11f72a9f1ba788688",
+      "git_blob_sha": "bfdaf1e69fe5be89bd3653b1cd9ea0c856631b7f"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/calendar_events.csv",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/calendar_events.csv",
+      "sha256": "6c9df1872d54d0b0d068d1b066766a8ddbc29c3933f1d56c9efd554926312295",
+      "git_blob_sha": "f306ebf3155838893e80db3b2df41aa828807b54"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/customer_relationship_manager_data.csv",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/customer_relationship_manager_data.csv",
+      "sha256": "599057e4eec3a7c25ac04b4d655ea2c034b7b7782205dc367a28122756e04c41",
+      "git_blob_sha": "59a8cc50b2a584c48090edc199f11d3387b39d3a"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/emails.csv",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/emails.csv",
+      "sha256": "1809e341a0e4f1fd78cf1b759964a42abd28db8c9b9dca364456efc31f82bb31",
+      "git_blob_sha": "a24d94f5092117b926d38afab0c94ae85590ceb7"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/project_tasks.csv",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/processed/project_tasks.csv",
+      "sha256": "fa0c05d5609f49e905342bd12592b09f23eff6147dcf607b808703f45ddbeaeb",
+      "git_blob_sha": "ca2eeaf251ee010da2d185baf09fd1d9d6c3bf02"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/email_addresses.csv",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/raw/email_addresses.csv",
+      "sha256": "1f3465b92eb41b90a973a9b00f35757a23d16839652b5e352e9d217d8e404b0b",
+      "git_blob_sha": "8de61e2fd293e52eeda17c2cee1367f6990fe713"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/events.csv",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/csv_data/raw/events.csv",
+      "sha256": "04ba8c0dddd619bce9683dd3f2565dc0f83ef7ebc07699b62391171df497b548",
+      "git_blob_sha": "29be6961167e854d0222911e6e15c42c8fab968e"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/analytics.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/analytics.py",
+      "sha256": "96fc35e61ceed6dc323485960cdf644ec8c7390421bb65eadab86b28a6a919e0",
+      "git_blob_sha": "a7e17357cf7dad23a1eefc7f5066c42623409693"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/calendar.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/calendar.py",
+      "sha256": "88016c51f7fcecc98897c1a4060bece2ee3804d60b5f85a80f85869303088fef",
+      "git_blob_sha": "d112fd8b8e4c7c898fb765f46315642aff636b79"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/company_directory.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/company_directory.py",
+      "sha256": "7d5f3bbe1b2e6d6f41d1b8a06db0bc1c4eaacb423915b44e058af15fcd09c7dd",
+      "git_blob_sha": "db0885f81f37855bc8dfd98479e859923005c010"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/customer_relationship_manager.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/customer_relationship_manager.py",
+      "sha256": "1db9d57324ce097aeb41cbdde06655442de0a34138293e90bdfeca6ae44a2b2c",
+      "git_blob_sha": "9729de4a9f3f29edffd8cd51823ad47d42cc22ca"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/email.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/email.py",
+      "sha256": "2c710f6cc5d6d7d3b2830b4567dec8ab34bb04b2249765152bc41f2864a64ac5",
+      "git_blob_sha": "64e38dc09e62c62708a2dc6146eb6e6fd9134167"
+    },
+    {
+      "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/project_management.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Gym/83b3980b9c04379d72bbf59592d7846630f706bf/resources_servers/workplace_assistant/workplace_assistant_tools/project_management.py",
+      "sha256": "1eccec5636e01dee6fcda583dbb6189b3a998c3f5572c2038194ac223995dbc9",
+      "git_blob_sha": "24e49406ac2a199792f6036b4ec5717b1e5ec18d"
+    }
+  ],
+  "initial_state_equals_pinned_public_environment": true,
+  "output_email_addresses_checked": 220,
+  "output_email_addresses_outside_public_csv": 0,
+  "credential_like_patterns_found": 0,
+  "company_or_personal_dataset_inputs_used": false,
+  "final_or_bfcl_cases_in_new_artifacts": false,
+  "teacher_data_scope": "20 preapproved training_candidate tasks; full API responses are public-benchmark-derived research records, not company messages",
+  "rejected_action": "git commit and push of teacher admission evidence",
+  "original_rejection_reason": "Uncertain public provenance of workplace/email fields",
+  "credentials_in_proof": false,
+  "official_dataset_card_verified": {
+    "url": "https://huggingface.co/datasets/nvidia/Nemotron-RL-agent-workplace_assistant",
+    "checked_on": "2026-09-16",
+    "owner": "NVIDIA",
+    "collection_method": "Synthetic",
+    "license": "CC BY 4.0",
+    "intended_usage": "post-training LLMs"
+  }
+}

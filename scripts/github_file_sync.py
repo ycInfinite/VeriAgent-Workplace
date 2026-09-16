@@ -24,6 +24,9 @@ ROOT=Path(__file__).resolve().parents[1]
 REPOSITORY='ycInfinite/VeriAgent-Workplace'
 TEACHER_FILES = ['configs/teacher_acquisition_plan.json', 'veriagent/teacher_data.py',
                  'veriagent/teacher_rollout.py', 'scripts/collect_teacher_probe.py']
+TEACHER_PROBE_FILES = ['experiments/TEACHER-ACQUIRE-20260916-001/config.json',
+                       'experiments/TEACHER-ACQUIRE-20260916-001/trajectories.jsonl',
+                       'experiments/TEACHER-ACQUIRE-20260916-001/probe_quality_approvals.json']
 
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,urllib.request,urllib.parse
@@ -41,8 +44,11 @@ try:
     allowed={x['path'] for x in manifest['files'] if not x['path'].startswith(('vendor/','data/'))}
     teacher_files={'configs/teacher_acquisition_plan.json','veriagent/teacher_data.py',
                    'veriagent/teacher_rollout.py','scripts/collect_teacher_probe.py'}
+    teacher_probe_files={'experiments/TEACHER-ACQUIRE-20260916-001/config.json',
+                         'experiments/TEACHER-ACQUIRE-20260916-001/trajectories.jsonl',
+                         'experiments/TEACHER-ACQUIRE-20260916-001/probe_quality_approvals.json'}
     additions=set(plan.get('additional_paths',[]))
-    assert not additions or additions==teacher_files
+    assert not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     for entry in plan['files']:
@@ -106,13 +112,16 @@ def main():
     parser.add_argument('--pin',required=True);parser.add_argument('--commit',required=True)
     parser.add_argument('--remote-root',required=True);parser.add_argument('--receipt',required=True)
     parser.add_argument('--include-teacher',action='store_true',help='Add only the four reviewed teacher execution files')
+    parser.add_argument('--include-teacher-probe-data',action='store_true',help='Also verify the fixed teacher run and its two-task approval')
     args=parser.parse_args()
     destination=ROOT/args.receipt
     if destination.exists():raise FileExistsError('Refusing to overwrite sync receipt')
     commit=git('rev-parse',args.commit).decode().strip()
     bundle=json.loads((ROOT/'evidence/sft-preparation/bundle-4e5f9102.json').read_text())['manifest']
     paths=[x['path'] for x in bundle['files'] if not x['path'].startswith(('vendor/','data/'))]
-    if args.include_teacher:paths=sorted(set(paths)|set(TEACHER_FILES))
+    additions=TEACHER_FILES if args.include_teacher or args.include_teacher_probe_data else []
+    if args.include_teacher_probe_data:additions=additions+TEACHER_PROBE_FILES
+    paths=sorted(set(paths)|set(additions))
     # Capture existing Git authentication inside this process; never print it.
     credential=subprocess.run(['git','-c','credential.interactive=never','credential','fill'],cwd=ROOT,
         input='protocol=https\nhost=github.com\npath='+REPOSITORY+'.git\n\n',text=True,capture_output=True,timeout=30)
@@ -143,7 +152,7 @@ def main():
         command='source /etc/network_turbo >/dev/null 2>&1 && /root/miniconda3/bin/python -c '+shlex.quote(REMOTE_CODE)
         stdin,stdout,stderr=client.exec_command(command,timeout=180,get_pty=False)
         stdin.write(json.dumps({'remote_root':args.remote_root,'repository':REPOSITORY,'commit':commit,'files':files,
-                               'additional_paths':TEACHER_FILES if args.include_teacher else []}));stdin.flush()
+                               'additional_paths':additions}));stdin.flush()
         stdin.channel.shutdown_write()
         response=stdout.read().decode();errors=stderr.read();code=stdout.channel.recv_exit_status()
         files.clear();errors=None

@@ -1,0 +1,23 @@
+{
+  "Research Question": "Can reviewed whole API trajectories pass student provenance/mask admission?",
+  "Hypothesis": "All approved full trajectories encode without skipped turns; invalid provenance and altered events are rejected.",
+  "Independent Variable": "Canonical teacher admission path; no optimization",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "approved tasks/turns admitted",
+    "student token budgets",
+    "prefix masking",
+    "negative controls",
+    "eight-example probe selection"
+  ],
+  "Evidence Gate": "Every approved trajectory passes, all negative controls reject, probe contains2 full trajectories/8 turns",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "experiment_kind": "CPU_TEACHER_SFT_ADMISSION_NOT_PARAMETER_UPDATE",
+  "seed": 42
+}
