@@ -1,5 +1,7 @@
 # Decisions
 
+2026-09-16 替代单卡：用户不再等待旧机库存，明确要求找新空闲实例。选择同地区904机PRO6000 96GB、6.98元/小时，克隆原PRO6000系统盘和数据盘，避免重配Torch/权重；同区A800-NVLink报价7.98且不必更换已验证架构。仅1卡、不付费扩容，源机保留关机，旧库存heartbeat暂停。复制完成，尚未更新参数。
+
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — No route/configuration change: preserve existing instances, do not rent or duplicate runs; continue the existing15-minute monitoring.
 
 2026-09-16 定时监控：应用户要求创建当前对话15分钟heartbeat `veriagent-gpu-sft-probe`，优先检查既有A800并兼查PRO6000。复用已授权的两条完整轨迹/8步单卡probe，先查registry/进程防重复，完成保全证据并关机后暂停监控；无新租赁或扩大阶段。库存不变不通知；本地机器/App/浏览器登录不可用时不虚称监控成功。

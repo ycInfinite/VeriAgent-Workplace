@@ -1,5 +1,7 @@
 # Hypotheses
 
+2026-09-16 用户授权改用有库存的同架构替代PRO6000，平台克隆完成；只支持资源获取与数据复制进度，不升级任何SFT效果、梯度更新或模型泛化结论。仍待执行既定8步完整性probe。
+
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — Inventory-only check; no new model/parameter-update evidence; existing hypotheses unchanged.
 
 2026-09-16 创建GPU库存heartbeat仅改变后续检查方式，不产生新模型、训练或泛化证据。当前SFT仍未执行，研究假设状态不变。

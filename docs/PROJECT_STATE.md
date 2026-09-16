@@ -1,5 +1,11 @@
 # Project state
 
+## Latest: user-authorized replacement cloned and running; SSH endpoint handoff pending (2026-09-16)
+
+User said "直接重新找一个空闲的吧，懒得等了", superseding the earlier existing-instance-only restriction for one replacement single GPU. Paused the old inventory heartbeat to avoid duplicate starts. Selected available BeijingB904 PRO6000 96GB atRMB6.98/h (single GPU,22CPU,110GB RAM,driver590.44.01), cloned system+data disk from the prepared PRO6000. New instance kl7wef5luq-6927b33c is running; platform data-copy indicator cleared and disk usage matches source31.03percent; old source and A800 remain off/preserved. No paid disk expansion, no new model data collection or parameter update.
+
+Browser clipboard reads returned empty after copying the SSH command. Requested only the new host/port from user; no password/API key requested. Once accessible: verify copied artifacts/runtime, GitHub sync current fixed commit, duplicate-run check and remote validate-only, then execute the same2-whole-trajectory8-update probe and shut down. No research-scope expansion. Record: evidence/migration/2026-09-16/replacement_clone.json. Older zero-stock monitoring entries below are historical; monitoring is paused for this manual continuation.
+
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — A800 and PRO6000 both still have0 available GPUs and remain powered off; authorized8-step SFT probe unexecuted; monitor remains active.
 
 Monitoring update(2026-09-16): user requested ongoing GPU checks. Active current-thread heartbeat `veriagent-gpu-sft-probe`,every15 minutes; existing A800 prioritized, existing PRO6000 also checked. It may continue the already authorized bounded8-step probe when inventory permits, with duplicate-run checks and shutdown afterward. No new rental or expanded phase. Unchanged inventory remains quiet; stop/pause after probe completion or actionable training failure. Creation is verified in the app; no new inventory result or training run is implied. Computer/app and authenticated local browser are required.

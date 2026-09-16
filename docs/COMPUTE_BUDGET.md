@@ -1,5 +1,7 @@
 # Compute budget
 
+2026-09-16 替代实例：用户明确授权另找空闲单卡，创建并克隆北京B904 PRO6000 96GB。创建页最终费用6.98元/小时，免费50GB数据盘，付费扩容0，日常磁盘加价0。复制/准备/等待计入新实例运行费用；8步训练进程仍最多1800秒，即按此价至多3.49元进程费用，其他上线时间另计。旧两机均关机，没有双GPU训练。最终会话时长及账单待收尾。
+
 [GPU_WATCH_LAST_CHECK] 2026-09-16T05:50:52.910422+00:00 — Inventory-only check; new GPU-hours/model-API calls/paid experiment charges=0; Codex account usage not included.
 
 2026-09-16 定时检查：创建15分钟库存heartbeat，没有启动GPU或发模型API请求，本次新增GPU/API实验费用0。后台检查会使用Codex账户配额，未将该产品用量折算成GPU费用；有卡执行时按实际设备价格记录，完成后关机。无新租赁或套餐变更。
