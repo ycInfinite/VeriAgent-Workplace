@@ -1,0 +1,75 @@
+{
+  "status": "PROPOSED_NOT_AUTHORIZED_NOT_EXPORTED_FOR_TRAINING",
+  "scope": "First eight-update integrity probe only; not S1/S2 or generalization experiment",
+  "change": "Explicitly select verified correct decision/recovery turns; preserve each selected turn original recorded prefix including prior errors as masked context",
+  "raw_trajectories_rewritten": false,
+  "new_rollouts": 0,
+  "tasks": [
+    {
+      "task_id": 450,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:450",
+      "trajectory_sha256": "7da4e4c570e550149f9490c1ea98f5750d128ad9f63599df952ad97cda98aaf0",
+      "selected_turns": [
+        1,
+        3
+      ],
+      "examples": [
+        {
+          "turn": 1,
+          "prefix_tokens": 4196,
+          "supervised_tokens": 49,
+          "processed_tokens": 4245,
+          "input_sha256": "efb7496c4ff91dcdd734221c5fb5d0e556eca3e82835fd33e759d3861788778c"
+        },
+        {
+          "turn": 3,
+          "prefix_tokens": 4644,
+          "supervised_tokens": 104,
+          "processed_tokens": 4748,
+          "input_sha256": "e27748ac98d11514e1f653f33fee94186985142ddabe660fd215f0e92c18f3f1"
+        }
+      ],
+      "rationale": "Observed engaged-user counts establish the condition; corrected plot enum comes from actual tool feedback. Do not supervise wrong enum or the final rendered-image claim."
+    },
+    {
+      "task_id": 707,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:707",
+      "trajectory_sha256": "17156876171ed33525caea424ec373ce98622125a634407ea2440b334461df05",
+      "selected_turns": [
+        2,
+        3,
+        4
+      ],
+      "examples": [
+        {
+          "turn": 2,
+          "prefix_tokens": 4254,
+          "supervised_tokens": 27,
+          "processed_tokens": 4281,
+          "input_sha256": "b582a7c25ea2add9c0af4c14b32bfc0d13563ed11e9e95d9f6b6d9c76a2c0ff5"
+        },
+        {
+          "turn": 3,
+          "prefix_tokens": 4503,
+          "supervised_tokens": 44,
+          "processed_tokens": 4547,
+          "input_sha256": "fd7651994b5ba136d7b16006859536733ae1d7764102f0bd279a9c511af392d2"
+        },
+        {
+          "turn": 4,
+          "prefix_tokens": 4564,
+          "supervised_tokens": 21,
+          "processed_tokens": 4585,
+          "input_sha256": "3ad9feef59f460db3f1985fdb110d5aa692b1516a2424e498a77f6c16f132868"
+        }
+      ],
+      "rationale": "Search uses the user-provided customer name; its unique observed ID is used in the correct status update; final confirmation follows successful tool execution. Do not supervise initial guessed ID."
+    }
+  ],
+  "distinct_tasks": 2,
+  "examples": 5,
+  "supervised_tokens": 245,
+  "processed_tokens": 22406,
+  "limitation": "Tests training integrity on selected decisions; does not teach every initial decision or prove Agent improvement",
+  "requires_user_route_decision": true
+}

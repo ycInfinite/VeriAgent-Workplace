@@ -1,0 +1,16 @@
+{
+  "observed_window_start_utc": "2026-09-16T01:02:55+00:00",
+  "observed_window_end_utc": "2026-09-16T01:19:44.252637+00:00",
+  "window_description": "Conservative observation window from before startup confirmation through confirmed shutdown; includes some non-running time",
+  "observed_window_seconds": 1009.252637,
+  "hourly_rmb": 6.98,
+  "hourly_source": "AutoDL startup confirmation dialog",
+  "linear_cost_over_observation_window_rmb": 1.9568287239611113,
+  "actual_invoice_accessed": false,
+  "not_a_billing_guarantee": true,
+  "acquisition_process_gpu_hours": 0.024450351032945846,
+  "acquisition_process_cost_estimate_rmb": 0.17066345020996201,
+  "sft_updates": 0,
+  "both_instances_shutdown_confirmed": true,
+  "cost_scopes_not_additive": true
+}

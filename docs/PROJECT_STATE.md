@@ -1,5 +1,13 @@
 # Project state
 
+## Current stop: full-trajectory SFT quality gate failed (2026-09-16)
+
+User authorized cross-instance copy from old A800 to new PRO6000, then explicitly approved startup and fixed20 acquisition/conditional8-step SFT. Copy and35-file/5-weight rechecks passed; PRO6000 Blackwell BF16 runtime passed. SFT-ACQUIRE-20260916-001 at commit bc5aa55:20/20 valid,3/20 official successes (450,1183,707),88.021sec,3310 output tokens,~RMB0.1707 process estimate. Raw results unchanged.
+
+Full-trajectory quality approvals=0:450 contains an invalid enum before recovery;707 invents an ID before recovery;1183 deletes correct records but its visible scope evidence does not justify limiting all future meetings to December. Codex review, no independent human adjudication. User declined a two-task/five-correct-turn alternative and chose to retain the original objective, stopping at data review. Do not adopt selective targets, add sampling, relax gates or update parameters without new direction. SFT started=false; updates=0.
+
+Both new PRO6000 and old A800 are confirmed powered off; data retained. Report: docs/SFT_ACQUISITION_REPORT_20260916.md. Earlier preparation/startup permissions below are historical, not permission to restart after this stop decision.
+
 Pricing review (2026-09-16): inspected live AutoDL hourly listings in the user's logged-in browser. PRO6000 96GB is the suggested balanced candidate (member/list RMB6.98/7.35 per hour); plain A800 in its dedicated zone is the lowest-hourly-cost checked option (5.59/5.88). Beijing-B A800-NVLink is7.98/8.40; northwest-B H8009.98/10.50. No instance rented, started, migrated or benchmarked; prepared host state was not changed. Price/performance remains an inference pending workload measurements. See docs/GPU_PRICE_CHECK_20260916.md.
 
 ## Latest: no-card remote preparation completed (2026-09-10)

@@ -1,0 +1,48 @@
+{
+  "status": "FULL_TRAJECTORY_QUALITY_GATE_NOT_PASSED",
+  "reviewed_at_utc": "2026-09-16T01:14:58.645195+00:00",
+  "source_run": "SFT-ACQUIRE-20260916-001",
+  "policy": "All recorded assistant generations would be targets in the existing exporter",
+  "verified_successes": 3,
+  "approved": [],
+  "rejected_or_held": [
+    {
+      "task_id": 450,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:450",
+      "trajectory_sha256": "7da4e4c570e550149f9490c1ea98f5750d128ad9f63599df952ad97cda98aaf0",
+      "official_reward": 1.0,
+      "reviewer": "Codex",
+      "decision": "not_approved_for_full_trajectory_sft",
+      "failure_category": "wrong_argument_in_supervised_prefix",
+      "rationale": "Round 2 generates unsupported value_to_plot=engaged_users_count; round 3 recovers using user_engaged, but supervising every generated round teaches the bad enum. Plot artifact is a simulated path, not proof of a rendered PNG.",
+      "all_supervised_turns_acceptable": false
+    },
+    {
+      "task_id": 1183,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1183",
+      "trajectory_sha256": "5e00f47355ae526ecbbe6cc9e8e777f6b71f5ff93ad8e16e6ab2a23c5812066e",
+      "official_reward": 1.0,
+      "reviewer": "Codex",
+      "decision": "not_approved_for_full_trajectory_sft",
+      "failure_category": "unsupported_scope_restriction",
+      "rationale": "The user asks all future Yuki meetings, but the policy searches only today and December 2023, then claims all future meetings cancelled. IDs and deletions match current state, yet the policy-visible context does not establish the arbitrary upper bound or global completeness.",
+      "all_supervised_turns_acceptable": false
+    },
+    {
+      "task_id": 707,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:707",
+      "trajectory_sha256": "17156876171ed33525caea424ec373ce98622125a634407ea2440b334461df05",
+      "official_reward": 1.0,
+      "reviewer": "Codex",
+      "decision": "not_approved_for_full_trajectory_sft",
+      "failure_category": "hallucinated_identifier_in_supervised_prefix",
+      "rationale": "Round 1 invents customer_id=12345678 before lookup; rounds 2-4 recover correctly. Full-trajectory SFT would supervise the invented ID.",
+      "all_supervised_turns_acceptable": false
+    }
+  ],
+  "minimum_distinct_tasks_required": 2,
+  "approved_distinct_tasks": 0,
+  "infra_invalid_trajectories": 0,
+  "raw_trajectories_modified": false,
+  "independent_human_review": false
+}

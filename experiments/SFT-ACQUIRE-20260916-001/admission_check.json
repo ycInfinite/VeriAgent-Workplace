@@ -1,0 +1,6 @@
+{
+  "status": "EXPECTED_REJECTION",
+  "reason": "Probe requires two to four distinct approved training tasks",
+  "model_loaded": false,
+  "parameter_updates": 0
+}

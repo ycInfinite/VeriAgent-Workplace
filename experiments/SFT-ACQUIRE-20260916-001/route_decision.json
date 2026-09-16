@@ -1,0 +1,12 @@
+{
+  "status": "USER_CHOSE_STOP_AT_DATA_REVIEW",
+  "user_instruction": "Keep the original plan; stop at data review for now",
+  "full_trajectory_quality_gate_passed": false,
+  "selective_turn_proposal_accepted": false,
+  "approved_training_tasks": 0,
+  "sft_started": false,
+  "parameter_updates": 0,
+  "additional_rollouts": 0,
+  "raw_evidence_retained": true,
+  "recorded_at_utc": "2026-09-16T01:18:43.443747+00:00"
+}

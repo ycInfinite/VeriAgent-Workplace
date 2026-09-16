@@ -1,0 +1,1 @@
+{"attempt": 1, "stage": "ssh_public_key_before_start_confirmation", "status": "failed", "error_type": "SSHException", "reason": "SSH banner unavailable while startup confirmation was still pending; no credentials transmitted", "model_run": false}

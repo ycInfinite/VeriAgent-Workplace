@@ -2,7 +2,9 @@
 
 Data-efficient post-training for stateful multi-step tool agents.
 
-Current stage: remote no-card SFT preparation completed. Fixed Qwen3-8B files, dependencies, 20 training tasks and the bounded eight-update LoRA probe entry are ready; hashes, tokenizer and CPU tool checks passed. Awaiting GPU mode for collection, quality review and the first update probe. No parameter updates yet.
+Current stage: training data review. Migration and20-task real-policy acquisition completed on PRO6000:3 official successes,0 full-trajectory SFT approvals. User chose to retain the original objective and stop; both instances are powered off. No parameter updates.
+
+- **Latest result: [Acquisition and quality-gate report](docs/SFT_ACQUISITION_REPORT_20260916.md)**
 
 - **Latest experiment progress: [SFT preparation report](docs/SFT_PREPARATION_REPORT.md)**
 - **Remote no-card preparation: [status and next execution](docs/SFT_NO_CARD_HANDOFF.md)**

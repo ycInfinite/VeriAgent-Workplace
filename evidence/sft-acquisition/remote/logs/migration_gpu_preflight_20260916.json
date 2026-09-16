@@ -1,0 +1,54 @@
+{
+  "status": "MIGRATION_AND_GPU_PREFLIGHT_PASSED",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_memory_gib": 94.97296142578125,
+  "capability": [
+    12,
+    0
+  ],
+  "bf16_matmul_passed": true,
+  "weight_files": [
+    {
+      "file": "model-00001-of-00005.safetensors",
+      "sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+      "match": true
+    },
+    {
+      "file": "model-00002-of-00005.safetensors",
+      "sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+      "match": true
+    },
+    {
+      "file": "model-00003-of-00005.safetensors",
+      "sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+      "match": true
+    },
+    {
+      "file": "model-00004-of-00005.safetensors",
+      "sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+      "match": true
+    },
+    {
+      "file": "model-00005-of-00005.safetensors",
+      "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+      "match": true
+    }
+  ],
+  "deployment_files_verified": 35,
+  "code_commit": "bc5aa55c3b97174822893c789b236cf5e43fcaf3",
+  "python": "3.12.3",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "tokenizers": "0.22.2",
+    "pandas": "3.0.3",
+    "numpy": "2.3.2"
+  },
+  "nvidia_smi": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 590.44.01",
+  "free_disk_gib": 34.48834228515625,
+  "elapsed_seconds": 17.02058232575655,
+  "model_loaded": false,
+  "parameter_updates": 0
+}

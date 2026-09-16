@@ -1,0 +1,8 @@
+{
+  "run_id": "SFT-ACQUIRE-20260916-001",
+  "pid": 1554,
+  "gpu": "PRO6000_96GB",
+  "hourly_rmb": 6.98,
+  "rate_source": "AutoDL startup confirmation",
+  "scope": "fixed20 B1 seed42 acquisition only"
+}

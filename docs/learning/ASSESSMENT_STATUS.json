@@ -15,7 +15,7 @@
   "next_material": "docs/learning/05-first-lora-sft.md",
   "learning_mode": "Phone/GPT only: source excerpts, trajectories and token evidence embedded in one Markdown file",
   "assessment_version": "2026-09-10-SFT-learning",
-  "gpu_execution_status": "no_card_preparation_complete_waiting_for_gpu_mode; monetary gate waived by user",
+  "gpu_execution_status": "both_instances_shutdown_after_training_acquisition; user_stopped_at_full_trajectory_quality_review; no_SFT_updates",
   "delivery_preference": "Experiment-first with coarse teaching; assessment is not an execution gate",
   "execution_authorization_source": "See PROJECT_CONTRACT latest 2026-09-10 instruction; this assessment file does not determine GPU approval"
 }

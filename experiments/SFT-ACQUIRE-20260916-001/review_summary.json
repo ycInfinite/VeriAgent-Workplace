@@ -1,0 +1,11 @@
+{
+  "sampled_peak_gpu_used_mib": 18547.0,
+  "sampled_mean_gpu_utilization_percent": 78.10588235294118,
+  "gpu_sample_count": 85,
+  "valid_rollouts": 20,
+  "official_successes": 3,
+  "full_trajectory_sft_approvals": 0,
+  "reviewer": "Codex",
+  "independent_human_adjudication": false,
+  "interpretation": "Quality rejection is not infrastructure invalidation; all20 capability runs remain valid"
+}

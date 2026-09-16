@@ -1,5 +1,7 @@
 # 单卡训练可行性：事实、估算与缺失证据
 
+2026-09-16：PRO6000 Blackwell Server Edition实际BF16运行与20题采集通过，推理allocated峰值16.519GiB；整轨迹质量门槛未过，用户选择停止。SFT未执行，无训练step time、训练峰值显存、CE/backward/update/reload实测，不以推理通过替代训练资格。
+
 2026-09-10 远端准备已完成：实际 Torch2.8.0+cu128/Transformers4.56.2/PEFT0.17.1/Accelerate1.10.1 导入成功，固定权重/辅助文件已校验；`run_sft_probe.py` 与8步配置已部署。当前无卡，没有模型加载、GPU forward/backward、训练显存或重载证据。详见 SFT_NO_CARD_HANDOFF.md；金额门槛已被用户覆盖，单卡与数据/完整性门槛保持。
 
 2026-09-10 工程进展：逐轮真实输入/生成 IDs 的 CPU 编码审计已通过 200/200，固定 prefill 不作为 policy target；训练准入阻止 dev/错误来源/未审查数据。仅解决编码准备层，真实 Transformers trainer CE/LoRA update/reload 仍待 probe。下一轮先采集固定 20 条 training-pool rollout，详见 SFT_PREPARATION_REPORT.md。

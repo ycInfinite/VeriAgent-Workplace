@@ -22,3 +22,4 @@ checkpoints/
 !evidence/day3/remote/logs/*.log
 !evidence/day3/remote/remote_logs/*.log
 !evidence/sft-remote/remote/logs/*.log
+!evidence/sft-acquisition/remote/logs/*.log

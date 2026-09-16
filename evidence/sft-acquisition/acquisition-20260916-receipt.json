@@ -1,0 +1,47 @@
+{
+  "archive": "acquisition-evidence-20260916.tar.gz",
+  "sha256": "871c42be83bcfb98f50798daa15ed94f683a8a044e0f7def517bc714ad533387",
+  "bytes": 116351,
+  "files": [
+    {
+      "path": "experiments/SFT-ACQUIRE-20260916-001/config.json",
+      "sha256": "31627314b19c482b080bdad9113af6034ed61c819dba9b3618a3641cb2490064"
+    },
+    {
+      "path": "experiments/SFT-ACQUIRE-20260916-001/identity.json",
+      "sha256": "f18ed19020a5c753c0f59e1e4e6453e3c06ca49efeb10f940f322ec41ac0a78d"
+    },
+    {
+      "path": "experiments/SFT-ACQUIRE-20260916-001/gpu_samples.jsonl",
+      "sha256": "10b14c12872c984fbe78b172a28ae73f0d084a9c01af75f9589ff7c84a6c5501"
+    },
+    {
+      "path": "experiments/SFT-ACQUIRE-20260916-001/initial_state.json",
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958"
+    },
+    {
+      "path": "experiments/SFT-ACQUIRE-20260916-001/trajectories.jsonl",
+      "sha256": "2b6a5995c158668372148010323403019f1db4b061d7b6213deeffdb7e36be87"
+    },
+    {
+      "path": "experiments/SFT-ACQUIRE-20260916-001/progress.json",
+      "sha256": "0b5a516f01dacfab345fded3c82fcfb937478695ae1cf615584b8b10935fa07a"
+    },
+    {
+      "path": "experiments/SFT-ACQUIRE-20260916-001/result.json",
+      "sha256": "805f650f067eba18df366e1bd1d230bc00acb57fd7e8f8d887d90562841a2c7a"
+    },
+    {
+      "path": "logs/SFT-ACQUIRE-20260916-001.log",
+      "sha256": "95b2076bec186a791bcb096bbd1c9a95073f6a28e907838646d5140be6770cf8"
+    },
+    {
+      "path": "logs/SFT-ACQUIRE-20260916-001-launch.json",
+      "sha256": "2a5a5feb47b1be0664f9ed169c37de5a6c7721ac9c78f476a9286a43e32e3a24"
+    },
+    {
+      "path": "logs/migration_gpu_preflight_20260916.json",
+      "sha256": "92db96d5b80808c15a652ef509ca5a19b5434507a4f0892eb954dc8371836103"
+    }
+  ]
+}

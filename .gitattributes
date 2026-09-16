@@ -2,4 +2,4 @@
 *.py text eol=lf
 *.md text eol=lf
 experiments/** -text
-
+evidence/sft-acquisition/remote/** -text
