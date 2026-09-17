@@ -51,3 +51,8 @@ Added noon acquisition preparation: full project training743 minus original20 =7
 ### Actual queue verified 2026-09-17
 
 Latest handoff at10:31: actual723worker nowARMED at2ca291c,notacquired. ExperimentDEEPSEEK-SFTDATA-20260917-001; configconfigs/deepseek_window_acquisition.json; queueevidence/deepseek/window_schedule_receipt.json. Timer12:00start/14:00stop. Zero new modelcalls atverification. No new representative trajectories yet; use earlier20 qualificationexamples untilthisrunfinishes. Next fork afterresults is full semantic/encoding quality review and training protocol design,notautomaticSFT. Window includes83empty-reference cases,which may reward1 without establishing requested semantic completion.
+
+
+### 2026-09-17 first running observation
+
+2026-09-17 noon collection RUNNING: actual start 2026-09-17T04:00:00.008623+00:00 (12:00:00 China), PID1398/start_ticks1926709082/boot646ab369-44aa-4cde-b48b-2ff7d518caca matches the queued worker. Snapshot 2026-09-17T04:05:25.710978+00:00: 82/723 completed,0 infrastructure-invalid,75 official successes; quality approvals remain0 and these are interim acquisition counts,not SFT results. No duplicate launch/redeployment. Keep14:00 cutoff/shutdown and currentmonitor; localSSHclosed. Evidence:evidence/deepseek/window_monitor/20260917T0405-progress.json. No new training stage. The observed start time distinguishes a queued process from actual API execution; raw trajectory quality review comes after preservation.

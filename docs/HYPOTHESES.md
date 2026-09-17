@@ -75,3 +75,8 @@ H-next: qualified DeepSeek Flash provides useful whole demonstrations beyond ori
 ### Actual queue verified 2026-09-17
 
 Scheduling/initial-coverage checks passed; no inference has occurred for723 and no additional quality success claim is supported. Distribution expansion/empty reference risks remain open.
+
+
+### 2026-09-17 first running observation
+
+Actual collection has started; interim reward counts do not establish semantic quality or improvement after training. Full-pool hypothesis remains pending.

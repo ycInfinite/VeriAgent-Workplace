@@ -98,3 +98,8 @@ Noon723 API extrapolation from20: cache-matched2.102445RMB; no-cache11.883698RMB
 ### Actual queue verified 2026-09-17
 
 Actual model/API usage at10:30:55 =0; CPU-only instance awaitingstart,0.10RMB/h. Startupapproximately10:14,shutdownlatest14:00 givesrough0.38RMB CPUwindow excludingstorage; actual end/costpending. GitHub transfersfailed once404 butrecovered; includeCPUwaitinginfinalcost.
+
+
+### 2026-09-17 first running observation
+
+Running snapshot: 266 requests,1233564 input/30873 output,known API tariff estimate0.23098112RMB; CPU session excluded/not invoice. GPU0/updates0. Final totals pending.

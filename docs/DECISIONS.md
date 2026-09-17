@@ -82,3 +82,8 @@ Select ALL remaining training723 using domain-interleaved frozen order,exclude p
 ### Actual queue verified 2026-09-17
 
 The one-shot worker is actually armed at2ca291c,with hard UTCwindow and duplicate directory guard. App follow-up exists and expires today; platform14:00 shutdown set. Private GitHub publication and deployment succeeded after preserved TLS/404 and stale-authorization review failures. Do not redeploy the waiting worker.
+
+
+### 2026-09-17 first running observation
+
+User said开始; verified the original worker instead of launching another. Same source/protocol/window, no experiment-variable changes.
