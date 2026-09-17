@@ -1,0 +1,21 @@
+{
+  "status": "HOST_PREPARATION_COMPLETE_INSTANCE_OFF",
+  "code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "CPU_rate_RMB_per_hour": 0.1,
+  "CPU_start_UTC_approx": "2026-09-17T06:26:00+00:00",
+  "shutdown_request_UTC": "2026-09-17T06:42:51+00:00",
+  "all_three_instances_off_observed": true,
+  "backup_1455_timer_cancelled": true,
+  "CPU_session_RMB_estimate_approx": 0.03,
+  "cost_note": "Estimate includes GitHub retries,waiting,preflight and retrieval;not invoice,storage excluded. Process52.73s is included,not additive.",
+  "GPU_hours": 0,
+  "new_model_API_requests": 0,
+  "parameter_updates": 0,
+  "preflight_seconds": 52.727893348783255,
+  "GitHub_synced_files": 54,
+  "total_deployment_hashes_checked": 69,
+  "weights_aux_hashes_checked": 9,
+  "local_evidence_hashes_verified": 3,
+  "SSH_sessions_closed": true,
+  "monitors_remain_paused": true
+}

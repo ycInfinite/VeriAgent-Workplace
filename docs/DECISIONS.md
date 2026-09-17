@@ -97,3 +97,8 @@ Completed exactly723 once. Keep all59 official failures and all raw successes. M
 ## 2026-09-17 pre-SFT readiness
 
 FirstboundedSFTcomparison uses fixed150manualreview candidates(30/domain),137 approved. S1/S2each50wholetrajectories/155turns,2epochs310updates;whole-target policy unchanged. Domain-stratifiedrandom versus frozenfailurecoverage heuristic;MILP onlymatchesdata/stepbudget,no modeloutcometuning.13holds include6pagination,3math,1dateboundary,1crossdomainID,1out-of-rangepage,1unexecutedverificationplan. Unreviewedremainingdata held,notdeclaredwrong. NoGPUexecutionorremotedepoyment; nextstartrequires userdirection.
+
+
+### Final actual-host SFT preparation
+
+Finaloperationalpreparation completed on904CPU/no-card withf9d45c2.54GitHubfilesplus15existingvendor/data allhashchecked,actualtokenizer155+155matches,9modelaux/weightchecks. No packageinstallation/modelconstruction/API/GPU/training. Hostoff,timerremoved. Preserve2rawdownload404attempts and3rdsuccess.

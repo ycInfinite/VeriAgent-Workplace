@@ -90,3 +90,8 @@ Fullpool bounded-cost acquisition hypothesis supported:723completedin50m28.69s,6
 ## 2026-09-17 pre-SFT readiness
 
 SFT-readiness hypothesis supported by137whole approvals and20CPUadmissionchecks; 3paired-statistics fixturechecks validate reporting only. MainS2>S1behaviorhypothesis remainsuntested. Bothgroups50tasks/155turns; feature score258vs339; processedtokens -0.67percent,targettokens+1.99percent. Must discloseapproximatebudget anddevelopment-only scope; no capability/causal/generalization claim from selectionscore.
+
+
+### Final actual-host SFT preparation
+
+Actualhostdata/template/package/weightreadiness supported bySFT-REMOTE-PREP-20260917-001;52.73sCPUonly. This furthernarrows preparation risk butdoesnotestablishlongersequenceGPUfit,310updatetrainingorAgentimprovement.

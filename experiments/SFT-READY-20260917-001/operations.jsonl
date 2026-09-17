@@ -1,2 +1,5 @@
 {"event": "review_display_encoding_failure", "cause": "Windows GBK console could not print emoji in task564 final response", "resolution": "ASCII JSON full-trace display; unread remainder reopened and reviewed before judgment", "model_or_training_run": false}
 {"event": "dev24_local_expanded_file_absent", "resolution": "Reconstructed only frozen24 from originalpinnedtrainfile; all24prompt/toolidentities match actual oldB1 logs", "heldout_cases_exposed": false}
+{"event": "GitHub_preparation_publication", "commit": "f9d45c2", "first_push": "TLS_connection_failure", "same_commit_retry": "succeeded", "remote_gpu_execution": false}
+{"event": "first_stage_GitHub_deployment_failed", "commit": "f9d45c2", "http_status": 404, "failed_path": "experiments/SFT-READY-20260917-001/review_manifest.json", "partial_staging_preserved": true, "model_loaded": false, "parameter_updates": 0}
+{"event": "second_stage_GitHub_deployment_failed", "commit": "f9d45c2", "http_status": 404, "failed_path": "experiments/SFT-READY-20260917-001/selection_policy.json", "partial_staging_preserved": true, "model_loaded": false, "parameter_updates": 0}

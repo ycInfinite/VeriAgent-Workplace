@@ -21,6 +21,7 @@ complete = self.inspector.render(
 )
 suffix = complete[len(prefix):]
 target_text = suffix[:-1]  # 去掉模板的分隔换行，保留 <|im_end|>
+tokenizer = self.inspector.tokenizer
 prefix_ids = tokenizer.encode(prefix, add_special_tokens=False).ids
 target_ids = tokenizer.encode(target_text, add_special_tokens=False).ids
 
@@ -61,7 +62,9 @@ manual = F.cross_entropy(
 assert torch.allclose(manual, loss.detach(), atol=1e-4, rtol=1e-4)
 
 loss.backward()
-torch.nn.utils.clip_grad_norm_(trainable_parameters, 1.0)
+torch.nn.utils.clip_grad_norm_(
+    list(trainable.values()), cfg["max_grad_norm"], error_if_nonfinite=True
+)
 optimizer.step()
 ```
 

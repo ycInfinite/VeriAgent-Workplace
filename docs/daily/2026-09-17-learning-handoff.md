@@ -116,3 +116,8 @@ Latest handoff at10:31: actual723worker nowARMED at2ca291c,notacquired. Experime
 明天需决定的路线：是否启动冻结的首轮S1/S2和对应dev评估；整池扩展、严格组合泛化、DPO/RL另属后续阶段，不自动进入。成本规划约0.75–1.5GPUh（工程估计），新最大序列必须在真正开训时测显存，OOM后不自动扩卡/缩上下文。
 
 证据：`SFT-READY-20260917-001`；配置`configs/sft_comparison_plan.json`；审核`semantic_judgments.json/quality_approvals.json`；数据` s1_examples.jsonl.gz / s2_examples.jsonl.gz`；结果`result.json`；CPU检查`cpu_readiness_checks.json/comparison_cpu_checks.json`；部署清单`deployment_plan.json`。source-base commit1255b06，新源码执行字节hash在identity.json，准备完成后统一发布GitHub；没有声称旧commit包含尚未提交的新代码。
+
+
+### Final actual-host SFT preparation
+
+Finalremoteaddition: deployedfixedf9d45c2toexisting904CPU/no-card;SFT-REMOTE-PREP-20260917-001 passed155+155actualTransformerschecks,9weight/aux hashes andpinnedpackages.54GitHubfiles/69totaldeploymenthashes;3receiptfilesverifiedlocally. CPUabout0.03RMB; noGPU/API/update. Hostoff andbackuptimercancelled; nextstartdoesnotneedfiletransferagain. Evidence:experiments/SFT-REMOTE-PREP-20260917-001/,evidence/sft-ready/. The earlierlocal-only/no-startstatement remains a historicalsnapshot,notfinalstate.

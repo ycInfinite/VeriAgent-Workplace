@@ -1,0 +1,23 @@
+{
+  "experiment_id": "SFT-REMOTE-PREP-20260917-001",
+  "kind": "CPU_HOST_PREFLIGHT_NO_MODEL_CONSTRUCTION",
+  "Research Question": "Does the actual existing no-card host match frozen SFT data,weights,packages and Transformers tokenizer?",
+  "Hypothesis": "The existing qualified runtime can admit both new whole-trajectory datasets without installing frameworks or loading a model.",
+  "Independent Variable": "Local preparation versus existing-host actual runtime validation",
+  "Controlled Variables": [
+    "fixed GitHub commit",
+    "frozen reviewed S1/S2 datasets",
+    "existing weights and venv",
+    "no GPU mode/no model construction"
+  ],
+  "Metrics": [
+    "deployment hashes",
+    "weight/tokenizer hashes",
+    "package identities",
+    "actual template/IDs/targets",
+    "CUDA uninitialized"
+  ],
+  "Evidence Gate": "Botharms pass admission and actual installedtokenizer;9pinned weight/aux files match;noGPUdevice/model/update.",
+  "Cost Bound": "Existing904 no-card0.10RMB/h,at most30min platform window;no new rental/API/GPU/parameterupdates.",
+  "Failure Branch": "Keepfailedreceiptandstop;noinstall,modeldownload,GPUstartup,automaticretryortraining."
+}
