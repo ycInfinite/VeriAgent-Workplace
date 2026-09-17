@@ -1,5 +1,7 @@
 # Project state
 
+Immediate DeepSeek qualification prepared (2026-09-17): user explicitly cancelled the noon window and authorized the original training20 once now. DEEPSEEK-CPU-20260917-001 passed56 offline controls; all20 initial student contexts fit,max4204. Separate official DeepSeek request builder sends thinking.type=disabled and no unsupported seed; old Bailian request semantics preserved. DEEPSEEK-QUAL-20260917-001 preregistered, not yet executed. Existing904 CPU/no-card deployment next; no scheduler/GPU/training or automatic admission.
+
 GitHub publication recovery (2026-09-17): push of5bc4d15 succeeded and includes the previously unpushed8405b54 demo audit/fixes. This resolves publication only; it does not imply deployment, new model calls or renewed interactive-client work. Current direction is ordinary API teacher qualification advice.
 
 Latest direction (2026-09-17): user returns to ordinary API collection and nominates DeepSeek Flash. Token-Plan-only preference is superseded; stop further interactive-client work. Official Chinese pricing checked today: deepseek-flash currently maps to V4.1-Flash; off-peak RMB1/cache-miss input,0.02/cache-hit input,4/output per million,peak2x. Same historical20-attempt token volume projectsRMB0.424-0.848 without cache; quality unknown. No DeepSeek calls/credentials/configured transport or new GPU/training. See DEEPSEEK_FLASH_ASSESSMENT_20260917.md.

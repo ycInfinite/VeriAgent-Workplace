@@ -1,0 +1,226 @@
+[
+  {
+    "name": "schema_565",
+    "passed": true
+  },
+  {
+    "name": "mode_565",
+    "passed": true
+  },
+  {
+    "name": "schema_331",
+    "passed": true
+  },
+  {
+    "name": "mode_331",
+    "passed": true
+  },
+  {
+    "name": "schema_450",
+    "passed": true
+  },
+  {
+    "name": "mode_450",
+    "passed": true
+  },
+  {
+    "name": "schema_972",
+    "passed": true
+  },
+  {
+    "name": "mode_972",
+    "passed": true
+  },
+  {
+    "name": "schema_1183",
+    "passed": true
+  },
+  {
+    "name": "mode_1183",
+    "passed": true
+  },
+  {
+    "name": "schema_247",
+    "passed": true
+  },
+  {
+    "name": "mode_247",
+    "passed": true
+  },
+  {
+    "name": "schema_859",
+    "passed": true
+  },
+  {
+    "name": "mode_859",
+    "passed": true
+  },
+  {
+    "name": "schema_123",
+    "passed": true
+  },
+  {
+    "name": "mode_123",
+    "passed": true
+  },
+  {
+    "name": "schema_770",
+    "passed": true
+  },
+  {
+    "name": "mode_770",
+    "passed": true
+  },
+  {
+    "name": "schema_271",
+    "passed": true
+  },
+  {
+    "name": "mode_271",
+    "passed": true
+  },
+  {
+    "name": "schema_20",
+    "passed": true
+  },
+  {
+    "name": "mode_20",
+    "passed": true
+  },
+  {
+    "name": "schema_707",
+    "passed": true
+  },
+  {
+    "name": "mode_707",
+    "passed": true
+  },
+  {
+    "name": "schema_980",
+    "passed": true
+  },
+  {
+    "name": "mode_980",
+    "passed": true
+  },
+  {
+    "name": "schema_518",
+    "passed": true
+  },
+  {
+    "name": "mode_518",
+    "passed": true
+  },
+  {
+    "name": "schema_177",
+    "passed": true
+  },
+  {
+    "name": "mode_177",
+    "passed": true
+  },
+  {
+    "name": "schema_76",
+    "passed": true
+  },
+  {
+    "name": "mode_76",
+    "passed": true
+  },
+  {
+    "name": "schema_965",
+    "passed": true
+  },
+  {
+    "name": "mode_965",
+    "passed": true
+  },
+  {
+    "name": "schema_687",
+    "passed": true
+  },
+  {
+    "name": "mode_687",
+    "passed": true
+  },
+  {
+    "name": "schema_8",
+    "passed": true
+  },
+  {
+    "name": "mode_8",
+    "passed": true
+  },
+  {
+    "name": "schema_1175",
+    "passed": true
+  },
+  {
+    "name": "mode_1175",
+    "passed": true
+  },
+  {
+    "name": "endpoint_http://api.deepseek.com",
+    "passed": true
+  },
+  {
+    "name": "endpoint_https://api.deepseek.com.evil.test",
+    "passed": true
+  },
+  {
+    "name": "endpoint_https://secret@api.deepseek.com",
+    "passed": true
+  },
+  {
+    "name": "endpoint_https://api.deepseek.com?key=x",
+    "passed": true
+  },
+  {
+    "name": "endpoint_https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+    "passed": true
+  },
+  {
+    "name": "endpoint_exact",
+    "passed": true
+  },
+  {
+    "name": "replay_success",
+    "passed": true
+  },
+  {
+    "name": "state_identity",
+    "passed": true
+  },
+  {
+    "name": "not_approved",
+    "passed": true
+  },
+  {
+    "name": "thinking_stops",
+    "passed": true
+  },
+  {
+    "name": "truncated_no_action",
+    "passed": true
+  },
+  {
+    "name": "cache_sum_mismatch",
+    "passed": true
+  },
+  {
+    "name": "reasoning_usage_rejected",
+    "passed": true
+  },
+  {
+    "name": "invalid_reasoning_still_costed",
+    "passed": true
+  },
+  {
+    "name": "tariff_boundary",
+    "passed": true
+  },
+  {
+    "name": "old_provider_unchanged",
+    "passed": true
+  }
+]

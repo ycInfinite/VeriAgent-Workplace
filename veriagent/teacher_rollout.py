@@ -151,7 +151,8 @@ def assistant_from_response(response):
 
 
 def teacher_trajectory(row, task, cohort, config, transport, remaining_seconds,
-                       response_sink=lambda item: None, producer='BAILIAN_REAL_API'):
+                       response_sink=lambda item: None, producer='BAILIAN_REAL_API',
+                       body_builder=request_body, response_validator=None):
     request = teacher_request(row, task, cohort['B1_addition'])
     messages, schemas = request['messages'], request['tools']
     encoder = CanonicalTeacherEncoder(config['max_context_tokens'])
@@ -182,7 +183,7 @@ def teacher_trajectory(row, task, cohort, config, transport, remaining_seconds,
             if record['student_supervised_tokens'] >= config['max_output_tokens_per_trajectory']:
                 termination = 'student_output_limit'; break
             cap = min(config['max_output_tokens_per_model_call'], remaining)
-            body = request_body(messages, schemas, config, cap)
+            body = body_builder(messages, schemas, config, cap)
             current = {'turn': turn, 'input_messages': deepcopy(messages),
                        'student_prefix_tokens': prefix_count, 'provider_output_cap': cap,
                        'request_body_sha256': digest(body)}
@@ -196,6 +197,8 @@ def teacher_trajectory(row, task, cohort, config, transport, remaining_seconds,
             current['model_latency_seconds'] = time.perf_counter() - call_start
             response_sink({'task_id': row['id'], 'turn': turn, 'event': 'response', 'body': response})
             current['raw_response'] = response
+            if response_validator is not None:
+                response_validator(response)
             input_count, output_count = read_usage(response)
             record['usage_unknown_requests'] -= 1
             record['input_tokens'] += input_count; record['output_tokens'] += output_count

@@ -34,6 +34,8 @@ INTERACTIVE_FILES = ['configs/qwen_code_token_plan.example.json',
                      'scripts/serve_workplace_interactive.py',
                      'scripts/setup_interactive_client.py',
                      'scripts/launch_interactive_client.py']
+DEEPSEEK_FILES = ['configs/deepseek_acquisition_plan.json', 'veriagent/deepseek_teacher.py',
+                  'scripts/collect_deepseek_probe.py']
 
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,time,urllib.request,urllib.parse,urllib.error
@@ -61,9 +63,12 @@ try:
     interactive_files={'configs/qwen_code_token_plan.example.json','requirements-interactive.pinned.txt',
                        'scripts/serve_workplace_interactive.py','scripts/setup_interactive_client.py',
                        'scripts/launch_interactive_client.py'}
+    deepseek_files={'configs/deepseek_acquisition_plan.json','veriagent/deepseek_teacher.py',
+                    'scripts/collect_deepseek_probe.py'}
     additions=set(plan.get('additional_paths',[]))
     assert (not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
-            or additions==teacher_files|teacher_probe_files|interactive_files)
+            or additions==teacher_files|teacher_probe_files|interactive_files
+            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files)
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     reused_verified=[]
@@ -151,15 +156,17 @@ def main():
     parser.add_argument('--include-teacher',action='store_true',help='Add only the four reviewed teacher execution files')
     parser.add_argument('--include-teacher-probe-data',action='store_true',help='Also verify the fixed teacher run and its two-task approval')
     parser.add_argument('--include-interactive',action='store_true',help='Add the five reviewed interactive client files; preserve existing teacher files')
+    parser.add_argument('--include-deepseek',action='store_true',help='Add three reviewed ordinary DeepSeek qualification files; preserve previous deployment')
     args=parser.parse_args()
     destination=ROOT/args.receipt
     if destination.exists():raise FileExistsError('Refusing to overwrite sync receipt')
     commit=git('rev-parse',args.commit).decode().strip()
     bundle=json.loads((ROOT/'evidence/sft-preparation/bundle-4e5f9102.json').read_text())['manifest']
     paths=[x['path'] for x in bundle['files'] if not x['path'].startswith(('vendor/','data/'))]
-    additions=TEACHER_FILES if args.include_teacher or args.include_teacher_probe_data or args.include_interactive else []
-    if args.include_teacher_probe_data or args.include_interactive:additions=additions+TEACHER_PROBE_FILES
-    if args.include_interactive:additions=additions+INTERACTIVE_FILES
+    additions=TEACHER_FILES if args.include_teacher or args.include_teacher_probe_data or args.include_interactive or args.include_deepseek else []
+    if args.include_teacher_probe_data or args.include_interactive or args.include_deepseek:additions=additions+TEACHER_PROBE_FILES
+    if args.include_interactive or args.include_deepseek:additions=additions+INTERACTIVE_FILES
+    if args.include_deepseek:additions=additions+DEEPSEEK_FILES
     paths=sorted(set(paths)|set(additions))
     # Capture existing Git authentication inside this process; never print it.
     credential=subprocess.run(['git','-c','credential.interactive=never','credential','fill'],cwd=ROOT,

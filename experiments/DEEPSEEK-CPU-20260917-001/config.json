@@ -1,0 +1,22 @@
+{
+  "Research Question": "Does the new provider adapter preserve fixed training data and enforce request/usage boundaries?",
+  "Hypothesis": "Provider changes need no environment/reward changes and must not enable reasoning/retries.",
+  "Independent Variable": "DeepSeek request envelope and usage accounting",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "schema identity",
+    "credential endpoint restriction",
+    "mode/usage checks",
+    "real fixture replay"
+  ],
+  "Evidence Gate": "All offline controls pass before any real provider call",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "experiment_kind": "CPU_FORMAT_FIXTURE_NOT_MODEL_EVAL",
+  "seed": null
+}
