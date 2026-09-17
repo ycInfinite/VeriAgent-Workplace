@@ -56,3 +56,44 @@ Latest handoff at10:31: actual723worker nowARMED at2ca291c,notacquired. Experime
 ### 2026-09-17 first running observation
 
 2026-09-17 noon collection RUNNING: actual start 2026-09-17T04:00:00.008623+00:00 (12:00:00 China), PID1398/start_ticks1926709082/boot646ab369-44aa-4cde-b48b-2ff7d518caca matches the queued worker. Snapshot 2026-09-17T04:05:25.710978+00:00: 82/723 completed,0 infrastructure-invalid,75 official successes; quality approvals remain0 and these are interim acquisition counts,not SFT results. No duplicate launch/redeployment. Keep14:00 cutoff/shutdown and currentmonitor; localSSHclosed. Evidence:evidence/deepseek/window_monitor/20260917T0405-progress.json. No new training stage. The observed start time distinguishes a queued process from actual API execution; raw trajectory quality review comes after preservation.
+
+
+# 午间全量采集完成后的学习交接
+
+1. **核心问题**：普通 DeepSeek Flash 能否在单次午间窗口内，把全部剩余 training 任务变成可审查的真实 trajectory？采集与完整性证据回答“能”；最终 SFT 语义质量尚待审查。
+2. **开始前**：原20题资格测试完成；723新题已冻结，12:00排队开始；第一次8步LoRA probe是昨日已完成的独立实验。
+3. **实际执行**：今天12:00:00至12:50:28，723题各一次、2443次API请求，真实执行工具和state verifier。之后本地重放723条并核对2443对wire请求/响应。全部原始证据已下载并核验，三台实例均关机，两项监控暂停。
+4. **变量与控制**：扩大的是training任务覆盖；teacher/B1/tool/state/verifier、6轮、8192学生context、2048输出不变。这不是学生模型前后对照，不能据此声称能力提升。
+5. **原始结果**：664/723官方成功；0infra-invalid；2411/2438executable calls；API约2.12元，含无卡等待与部署总计约2.40元。83空reference任务中80成功。机械未标记629条，94条被标记；最终新增语义批准0条，参数更新0次。
+6. **代表轨迹**：task691先查average session duration，再按条件作line plot，reward1；工具返回的是环境模拟的plot路径，不能说已经生成真实图片。task751先查September15与之后日期的engaged users，再按“区间平均值”判断不画图，reward0；属于条件解释/聚合方式的待确认failure候选，不是最终taxonomy标签。原始messages、observations、reference均在trajectory JSONL中。
+7. **路线结论**：教师采集通道与完整证据链已建立，全743个training任务均有DeepSeek尝试记录。新增723的整条质量审核是下一步，完成后才能冻结SFT数据；没有自动进入训练。
+8. **尚未支持**：629条机械未标记不等于629条可训练。不能证明grounding完全正确、分页完整、自然语言答案正确、学生success提升或held-out composition泛化。官方reward=1和训练可用性是不同门槛。
+
+## 今晚值得理解的四个代码入口
+
+| 文件 → 函数 | 输入 | 输出 | 在流程中的作用 |
+|---|---|---|---|
+| `scripts/prepare_remaining_teacher_pool.py` → `main` | 冻结split和已尝试20题 | 723名单、schema bank、初始token覆盖 | 保证只选training、不根据新模型成绩换题 |
+| `scripts/collect_deepseek_window.py` → `run_worker` | 固定config、名单、临时环境凭据 | 原始API/trajectory JSONL、progress/result/remaining | 到12:00才开始，14:00硬截止；每题后落盘，基础设施错立即停止 |
+| `veriagent/teacher_rollout.py` → `teacher_trajectory` | 单任务、真实API transport、时间余额 | 完整messages、tool events、state hashes、reward | 模型决定调用，环境真实执行，把response与新observation再交给模型 |
+| `scripts/audit_deepseek_pool_acquisition.py` → `main` | 下载的原始API和trajectory、原名单 | `integrity_summary.json`与`mechanical_screen.json` | 核对请求、重新执行工具并重算学生编码；不批准语义质量 |
+
+核心区别：`env.step(tool_call)` 执行真实动作；`env.verify(reference)` 检查环境结果；`encoder.encode(context, tools, assistant)` 检查学生能否把该assistant决策作为监督目标。三者回答不同的问题，不能用其中一个替代其他两个。
+
+## 今晚三个知识点
+
+- **Verifier覆盖范围**：数据库状态正确，为什么不一定意味着最终回答正确？空reference的任务尤其值得看。
+- **整条监督与上下文预算**：API teacher能够回答，不代表Qwen3学生8192token以内装得下全部context与target；不能为通过审核悄悄删掉错误前缀。
+- **机械检查与语义审核**：schema正确只证明参数形状合法；筛选未报警还必须核对查询范围、分页、条件解释与事实陈述。
+
+## 五个面试追问（不给答案）
+
+1. 664条reward1为什么最后不一定能得到664条SFT数据？
+2. 83条空reference任务应如何评价，为什么不能直接删掉或全部放行？
+3. task751的工具调用都能执行，为什么最终仍失败？
+4. 如何证明保存的trajectory确实对应当时发出的请求及真实环境状态？
+5. processed tokens与supervised tokens为什么差这么多，对S1/S2公平比较有什么影响？
+
+明天路线分叉：先做整条语义审核和DeepSeek学生导出准入；质量通过后讨论正式S1/S2的训练token预算及固定eval。不要直接把全部机械候选拿去训练。
+
+证据：`DEEPSEEK-SFTDATA-20260917-001`；execution commit `2ca291cde64b5c96baec2c9ebeb91e853665ae0a`；配置 `configs/deepseek_window_acquisition.json`；完整原始归档 `evidence/deepseek/DEEPSEEK-SFTDATA-20260917-001-evidence.tar.gz`；派生审核与费用位于同名experiments目录。报告 `docs/TEACHER_FULL_POOL_RESULT_20260917.md`。离线审核首次GBK解码失败已保留为工具故障，未污染模型成绩；没有重发API。

@@ -39,3 +39,8 @@ CPU 发现的 noop blindness、未评分的自然语言、plot-path simulation �
 | 不必要的能力否认/提前停止 | task 510/1219 的 B0 | 工具实际可用；不能把模型的否认当作基础设施不可用 |
 
 原始自动计数是 candidate：字符串出现检查会漏掉“姓名当 ID”，failed-finalization 也不等于所有情况都是提前停止。复核后的提前停止排除预算 cap 和“做错修改后结束”；每个口径及分母在 DAY3_REPORT 中说明。成功恢复中的错误保留在 call-level 指标，但不把整条轨迹改成官方失败。
+
+
+## 2026-09-17 completed723 acquisition
+
+Full723 acquisition preliminary diagnostics (not finalized semantictaxonomy):27 schemaargumenterrorcalls on26trajectories;unknownnames0;2samestate-repeatcalls;0three-callloops;0unobservedIDcandidates/1181(notproofnoIDerrors). Terminations702assistantfinal/15contextlimit/3roundlimit/1generationincomplete/2encodingrejected. Example751 is conditional interpretation candidate:comparesperiodaverageinstead of checkingdailythreshold,doesnotplot,reward0. Must review usersemantics/observations before finalfailurelabels.

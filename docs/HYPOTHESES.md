@@ -80,3 +80,8 @@ Scheduling/initial-coverage checks passed; no inference has occurred for723 and 
 ### 2026-09-17 first running observation
 
 Actual collection has started; interim reward counts do not establish semantic quality or improvement after training. Full-pool hypothesis remains pending.
+
+
+## 2026-09-17 completed723 acquisition
+
+Fullpool bounded-cost acquisition hypothesis supported:723completedin50m28.69s,664officialsuccesses,API2.12RMB. Semanticdatayield/studentimprovement/compositiongeneralization untested. Emptyreference80/83reward1 requires separate interpretation;mechanicalclean629 maystill contain scope/pagination/math errors.

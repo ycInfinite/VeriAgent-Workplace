@@ -1,0 +1,69 @@
+{
+  "status": "INTEGRITY_PASSED_SEMANTIC_REVIEW_PENDING",
+  "reviewed_at": "2026-09-17T05:04:10.483390+00:00",
+  "audit_script_sha256": "fe2bc7d595eca452ac0deb8f8ec46a680c49d45ceda5f7cea7615ba1bda7d5cc",
+  "trajectories": 723,
+  "state_observation_verifier_replays_passed": 723,
+  "request_response_pairs_checked": 2443,
+  "initial_task_identity_checks_passed": 723,
+  "successes": 664,
+  "by_domain": {
+    "workplace_assistant_analytics": {
+      "tasks": 132,
+      "official_successes": 122
+    },
+    "workplace_assistant_calendar": {
+      "tasks": 169,
+      "official_successes": 152
+    },
+    "workplace_assistant_customer_relationship_manager": {
+      "tasks": 115,
+      "official_successes": 111
+    },
+    "workplace_assistant_email": {
+      "tasks": 153,
+      "official_successes": 150
+    },
+    "workplace_assistant_project_management": {
+      "tasks": 154,
+      "official_successes": 129
+    }
+  },
+  "empty_reference": {
+    "tasks": 83,
+    "official_successes": 80
+  },
+  "termination_counts": {
+    "assistant_final": 702,
+    "student_context_limit": 15,
+    "round_limit": 3,
+    "generation_incomplete": 1,
+    "student_encoding_rejected": 2
+  },
+  "executable_calls": 2411,
+  "call_denominator": 2438,
+  "unknown_tool_calls": 0,
+  "schema_argument_error_calls": 27,
+  "identifier_candidate_denominator": 1181,
+  "unobserved_identifier_candidates": 0,
+  "same_call_same_state": 2,
+  "three_call_loop": 0,
+  "responses_with_explicit_reasoning_usage": 0,
+  "reasoning_usage_note": "Absent internal reasoning usage is unavailable,not measured zero; visible reasoning_content empty.",
+  "mechanically_unflagged_pending_semantics": 629,
+  "mechanically_flagged": 94,
+  "mechanical_flag_counts": {
+    "official_reward_not_one": 59,
+    "not_normal_assistant_final": 21,
+    "nonexecutable_call": 26,
+    "whole_target_encoding_rejected": 2
+  },
+  "unflagged_empty_reference_pending_semantics": 54,
+  "unflagged_processed_tokens": 9850846,
+  "unflagged_target_tokens": 195473,
+  "encoded_assistant_turns": 2441,
+  "training_approved_trajectories": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0,
+  "semantic_limitation": "No whole-trajectory semantic approval. Automated identifier flags are diagnostic; absence of flags does not prove grounding,scope,pagination or correct final answers."
+}

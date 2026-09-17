@@ -4,3 +4,4 @@
 {"recorded_at": "2026-09-17T02:28:05.659037+00:00", "event": "auto_review_rejected_daily_heartbeat", "resolution": "finite_until_today14:00 supported after authorization recheck"}
 {"recorded_at": "2026-09-17T02:28:05.659045+00:00", "event": "bounded_daily_schedule_no_future_occurrence", "resolution": "finite MINUTELY schedule accepted; automation veriagent-9-17"}
 {"recorded_at": "2026-09-17T02:28:05.659052+00:00", "event": "github_sync_attempt1_failed", "commit": "2ca291c", "http_status": 404, "failed_path": "experiments/DEEPSEEK-POOL-PREP-20260917-001/tasks.jsonl", "model_requests": 0}
+{"event": "offline_integrity_audit_attempt1_invalid", "error_type": "UnicodeDecodeError", "cause": "Windows defaultGBK; explicitUTF8 missing in new local audit reader", "model_rollouts_invalidated": false, "paid_requests": 0, "fix": "Read official JSON and model evidence with explicitUTF8"}

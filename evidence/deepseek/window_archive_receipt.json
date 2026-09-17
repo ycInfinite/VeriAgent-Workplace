@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-09-17T04:56:26.796632+00:00",
+  "archive_path": "/root/autodl-tmp/veriagent-workplace-sft-20260910/logs/DEEPSEEK-SFTDATA-20260917-001-evidence.tar.gz",
+  "archive_bytes": 4909385,
+  "archive_sha256": "2b8062044fc1f555cf20feef03482f6bc42367378ff17f9adb30ca8c2e69f782",
+  "members": [
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/api_events.jsonl",
+      "bytes": 48726792,
+      "sha256": "2055029f45fc730e8580e4e55722c94ab6b110cfce8b59a3073be5f71602508d"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/armed.json",
+      "bytes": 316,
+      "sha256": "64430a0ba1af6790d7d72837c97d72c53767c95a0eff873415b1c6b8ac2937d0"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/config.json",
+      "bytes": 4091,
+      "sha256": "d0cfa8d605f3b7feb2936008bfb1fb380868bde52ef892eea9f4916c35fb65b0"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/coverage.json",
+      "bytes": 47808,
+      "sha256": "4ba2e338d31e8ecc74ad91bb91ccf8ec9a594b196adb52a8a84b06f27b532025"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/identity.json",
+      "bytes": 11070,
+      "sha256": "7000ae3630e9fccc8617b9955b82f0cf042cd0dec489a4ada00f3ec1b08da70f"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/initial_state.json",
+      "bytes": 508460,
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/progress.json",
+      "bytes": 1100,
+      "sha256": "b90bc0bee8452db78574e7f158c9b4f9a17bbdc0ea96e9512fbafe85f2acf58f"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/queue_verification.json",
+      "bytes": 2092,
+      "sha256": "1c53363fbc9f26ed0f842a414e92ed9a5a7a32f1b45b2c074c634efade19d465"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/remaining.json",
+      "bytes": 98,
+      "sha256": "a7bccc5b3d60c625c54a92da91ae3c669bbf2f47170451c9794dc8764e1db9b2"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/result.json",
+      "bytes": 1100,
+      "sha256": "b90bc0bee8452db78574e7f158c9b4f9a17bbdc0ea96e9512fbafe85f2acf58f"
+    },
+    {
+      "path": "experiments/DEEPSEEK-SFTDATA-20260917-001/trajectories.jsonl",
+      "bytes": 32690712,
+      "sha256": "cacc8fb71eb7c3efb087ba1d3b113469239e7c39a422a60f8df05aea986d0cda"
+    }
+  ],
+  "worker_exited": true,
+  "completed_rollouts": 723
+}

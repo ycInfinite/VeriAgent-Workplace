@@ -23,3 +23,7 @@ checkpoints/
 !evidence/day3/remote/remote_logs/*.log
 !evidence/sft-remote/remote/logs/*.log
 !evidence/sft-acquisition/remote/logs/*.log
+
+# Full noon raw JSONL remains local/remote; exact bytes are also in the tracked verified archive.
+experiments/DEEPSEEK-SFTDATA-20260917-001/api_events.jsonl
+experiments/DEEPSEEK-SFTDATA-20260917-001/trajectories.jsonl

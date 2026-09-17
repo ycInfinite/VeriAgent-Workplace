@@ -87,3 +87,8 @@ The one-shot worker is actually armed at2ca291c,with hard UTCwindow and duplicat
 ### 2026-09-17 first running observation
 
 User said开始; verified the original worker instead of launching another. Same source/protocol/window, no experiment-variable changes.
+
+
+## 2026-09-17 completed723 acquisition
+
+Completed exactly723 once. Keep all59 official failures and all raw successes. Mechanical629 are NOT approvedSFT;94 flagged needreview. Noautomaticresampling/training. Savedexactarchiveplusmemberhashes,insteadofduplicating81MB expandedJSONL inGit. CPUoffandbothmonitorspaused;timerremoved.

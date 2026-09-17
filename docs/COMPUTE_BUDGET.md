@@ -103,3 +103,8 @@ Actual model/API usage at10:30:55 =0; CPU-only instance awaitingstart,0.10RMB/h.
 ### 2026-09-17 first running observation
 
 Running snapshot: 266 requests,1233564 input/30873 output,known API tariff estimate0.23098112RMB; CPU session excluded/not invoice. GPU0/updates0. Final totals pending.
+
+
+## 2026-09-17 completed723 acquisition
+
+Final新增723:2443calls,input11374350/output283925,cachehit10601856/miss772494,knownmodelestimate2.12023112RMB,unknownusage0. CPUwaiting+deployment+collection+retrievalapprox0.28,totalapprox2.40excludingstorage/notinvoice. Acquisition3028.688734s,modelcostperofficialsuccess0.00319312RMB;qualityapproved-costnull. GPU0/updates0. Earlier20qualificationcostseparate. OfflineUTF8auditfailurepreserved,noAPIorGPUcost.
