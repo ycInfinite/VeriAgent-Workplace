@@ -1,5 +1,7 @@
 # Project state
 
+GitHub publication recovery (2026-09-17): push of5bc4d15 succeeded and includes the previously unpushed8405b54 demo audit/fixes. This resolves publication only; it does not imply deployment, new model calls or renewed interactive-client work. Current direction is ordinary API teacher qualification advice.
+
 Latest direction (2026-09-17): user returns to ordinary API collection and nominates DeepSeek Flash. Token-Plan-only preference is superseded; stop further interactive-client work. Official Chinese pricing checked today: deepseek-flash currently maps to V4.1-Flash; off-peak RMB1/cache-miss input,0.02/cache-hit input,4/output per million,peak2x. Same historical20-attempt token volume projectsRMB0.424-0.848 without cache; quality unknown. No DeepSeek calls/credentials/configured transport or new GPU/training. See DEEPSEEK_FLASH_ASSESSMENT_20260917.md.
 
 Interrupted-turn closure recovered: on2026-09-16 the AutoDL UI was refreshed after17:15 and all3 instances were observed off. Raw interactive-demo archive was verified and saved locally. Local commit8405b54 includes review and v2 fixes; four GitHub push attempts failed TLS handshake, so its publication and remote deployment were not confirmed then. Last verified remote execution remains318e233; old GPU monitor stays paused. Do not restart the outdated interactive route.
