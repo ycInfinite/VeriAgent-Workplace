@@ -65,3 +65,8 @@ ARC后续澄清仅更新求职目标与赛事偏好；未读取用户ARC方案�
 | H8 | 一版通用 B1 提示能减少失败 | 当前 paired cohort 从 5/24 到 8/24，三条都是恢复；不构成一般或显著收益证明，冗余和 tokens 增加 |
 
 Day 3 不涉及 H5/H6/H7 的参数更新。初始 prompt 都能放进 8K，不代表完整 rollout 能放进；两任务的部分轨迹触发 context cap。官网/API 支持能力不替代真实实验结果。
+
+
+## 2026-09-17 remaining-pool window preparation
+
+H-next: qualified DeepSeek Flash provides useful whole demonstrations beyond original20. Untested on remaining723; quality/reward and distribution shifts must be reported separately.

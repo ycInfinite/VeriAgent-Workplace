@@ -88,3 +88,8 @@ AutoDL 补充（2026-09-04）：实际 1×4090 24GB、并发 1 已完成测试�
 2026-09-08赛事筛选：仅公开网页与规则检索，新增付费GPU/API实验费用为0；不含本对话产品用量。未购买算力、未报名付费赛事，未来参赛训练成本未估算或授权。
 
 同日ARC Milestone规则补查仍为公开网页只读检索，新增付费GPU/API实验费用0。
+
+
+## 2026-09-17 remaining-pool window preparation
+
+Noon723 API extrapolation from20: cache-matched2.102445RMB; no-cache11.883698RMB; runtime3184.10s. These are estimates,not caps or invoices. CPU/no-card0.10RMB/h including waiting/preflight; no GPU. At14:00 preserve partial/unknown usage. User current budget waiver retained.

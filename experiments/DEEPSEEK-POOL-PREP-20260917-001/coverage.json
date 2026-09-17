@@ -1,0 +1,23 @@
+{
+  "total": 723,
+  "initial_fits": 723,
+  "max_initial_student_tokens": 4215,
+  "by_domain": {
+    "workplace_assistant_analytics": 132,
+    "workplace_assistant_calendar": 169,
+    "workplace_assistant_customer_relationship_manager": 115,
+    "workplace_assistant_email": 153,
+    "workplace_assistant_project_management": 154
+  },
+  "empty_reference_tasks": 83,
+  "reference_action_count_histogram": {
+    "1": 497,
+    "3": 20,
+    "2": 91,
+    "0": 83,
+    "5": 5,
+    "4": 23,
+    "6": 3,
+    "8": 1
+  }
+}

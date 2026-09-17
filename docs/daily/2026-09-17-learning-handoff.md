@@ -41,3 +41,8 @@
 11. **五个追问（无答案）**：为什么331成功却不能训练？为什么980/518要保守hold？1175是ID幻觉还是日期语义问题？为什么不能给本轮与Max宣传确定费用倍数？同15题多一份teacher轨迹为什么不等于多15题覆盖？
 12. **下一路线分叉**：先完成DeepSeek训练导出准入，再登记数据扩展或SFT效果实验。没有自动重跑这20题、扩大context或进入DPO/RL。
 13. **身份与路径**：`DEEPSEEK-QUAL-20260917-001`，执行commit`1ded6b7d2b1cd510dd9adf77ea8076e1e16bac83`；`configs/deepseek_acquisition_plan.json`；实验目录`api_events.jsonl`、`trajectories.jsonl`、`quality_review.json`、`review_summary.json`、`lifecycle_and_cost.json`。4次部署404属于运行前操作故障；模型运行0基础设施无效。完整报告`docs/DEEPSEEK_QUALIFICATION_REPORT_20260917.md`。
+
+
+## 2026-09-17 remaining-pool window preparation
+
+Added noon acquisition preparation: full project training743 minus original20 =723 new tasks,83 with empty references. CPU schema roundtrip and initial student tokenizer coverage723/723,max4215. No new model data yet. Study scripts/prepare_remaining_teacher_pool.py::main (split→frozen training-only cohort),scripts/collect_deepseek_window.py::preflight (hashes/cohort→eligibility),run_worker (key in memory+clock→raw trajectories),teacher_trajectory (task→real tools/state/verifier). Question: why can empty-reference reward1 be insufficient? Why exclude prior20 without deleting their failures? Why does8192 student limit matter for an API teacher? Why record inflight unknown costs? Why is scheduling collection not permission for SFT?

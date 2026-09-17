@@ -1,0 +1,23 @@
+{
+  "Research Question": "Can all remaining training candidates be frozen without split leakage?",
+  "Hypothesis": "The743-member training pool minus the20 attempted tasks leaves723 new tasks.",
+  "Independent Variable": "Expand acquisition coverage to all remaining training candidates",
+  "Controlled Variables": [
+    "pinned upstream code",
+    "pinned data",
+    "fresh per-rollout state",
+    "CPU runtime"
+  ],
+  "Metrics": [
+    "pool membership",
+    "deduplication",
+    "schema roundtrip",
+    "initial token coverage",
+    "domain counts"
+  ],
+  "Evidence Gate": "All selected cases are frozen training members,none overlap prior20,and every initial input fits8192.",
+  "Cost Bound": "CPU only; GPU=0; paid API=0",
+  "Failure Branch": "Keep raw evidence, mark invalid when applicable, stop GPU progression",
+  "experiment_kind": "CPU_POOL_FREEZE_NOT_MODEL_EVAL",
+  "seed": 20260917
+}

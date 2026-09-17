@@ -1,0 +1,60 @@
+{
+  "status": "PASSED",
+  "kind": "OFFLINE_PREDEPLOYMENT_CHECK_NOT_MODEL_EVAL",
+  "tasks": 723,
+  "initial_context_fits": 723,
+  "max_initial_tokens": 4215,
+  "boundary_and_negative_controls": [
+    {
+      "time": "2026-09-17T03:59:59+00:00",
+      "expected": [
+        1,
+        7201
+      ],
+      "passed": true
+    },
+    {
+      "time": "2026-09-17T04:00:00+00:00",
+      "expected": [
+        0,
+        7200
+      ],
+      "passed": true
+    },
+    {
+      "time": "2026-09-17T06:00:00+00:00",
+      "expected": [
+        -7200,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": "2026-09-18T04:00:00+00:00",
+      "expected": [
+        -86400,
+        -79200
+      ],
+      "passed": true
+    },
+    {
+      "reject_changed_field": "max_tasks",
+      "passed": true
+    },
+    {
+      "reject_changed_field": "max_context_tokens",
+      "passed": true
+    },
+    {
+      "reject_changed_field": "enable_thinking",
+      "passed": true
+    },
+    {
+      "reject_changed_field": "start_at_utc",
+      "passed": true
+    }
+  ],
+  "model_requests": 0,
+  "parameter_updates": 0,
+  "script_sha256": "cec6cd824b8e475541bdea2a8841d0ab40a9c2a52e4020678db342f3f26b8c8f"
+}

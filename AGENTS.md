@@ -1,5 +1,7 @@
 # VeriAgent-Workplace operating contract
 
+2026-09-17 scheduled full-training acquisition: user explicitly requested today Beijing12:00-14:00 and then all training tasks. New bounded authorization covers all743 training candidates minus20 already attempted =723,ordinary DeepSeek Flash API,unchanged B1/8192/6rounds/2048 output,no retries,CPU/no-card only. Includes83 empty-reference cases flagged for semantic review. New DEEPSEEK-SFTDATA-20260917-001 is distinct from completed qualification; do not repeat20 or enter SFT/GPU/DPO/RL. Preregistered one-shot remote process and app follow-up are being prepared; do not claim armed until a remote receipt exists. Original old GPU heartbeat remains paused.
+
 Read docs/PROJECT_CONTRACT.md and docs/PROJECT_STATE.md before work.
 
 - Learning LLM Agent post-training is the first priority. Keep infrastructure minimal.

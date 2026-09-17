@@ -1,5 +1,7 @@
 # 项目约定
 
+2026-09-17 scheduled full-training acquisition: user explicitly requested today Beijing12:00-14:00 and then all training tasks. New bounded authorization covers all743 training candidates minus20 already attempted =723,ordinary DeepSeek Flash API,unchanged B1/8192/6rounds/2048 output,no retries,CPU/no-card only. Includes83 empty-reference cases flagged for semantic review. New DEEPSEEK-SFTDATA-20260917-001 is distinct from completed qualification; do not repeat20 or enter SFT/GPU/DPO/RL. Preregistered one-shot remote process and app follow-up are being prepared; do not claim armed until a remote receipt exists. Original old GPU heartbeat remains paused.
+
 用户目标：真正掌握 trajectory → eval/failure analysis → post-training data → SFT/LoRA → DPO → 可选 online RL → generalization/cost 的完整机制。核心对照为相同训练预算的 random verified SFT 与 failure-targeted SFT。RL 不是项目成立条件。
 
 ## 当前授权

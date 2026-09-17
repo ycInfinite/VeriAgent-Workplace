@@ -1,0 +1,44 @@
+{
+  "status": "PASSED",
+  "coverage": {
+    "total": 723,
+    "initial_fits": 723,
+    "max_initial_student_tokens": 4215,
+    "by_domain": {
+      "workplace_assistant_analytics": 132,
+      "workplace_assistant_calendar": 169,
+      "workplace_assistant_customer_relationship_manager": 115,
+      "workplace_assistant_email": 153,
+      "workplace_assistant_project_management": 154
+    },
+    "empty_reference_tasks": 83,
+    "reference_action_count_histogram": {
+      "1": 497,
+      "3": 20,
+      "2": 91,
+      "0": 83,
+      "5": 5,
+      "4": 23,
+      "6": 3,
+      "8": 1
+    }
+  },
+  "payloads": {
+    "cohort.json": {
+      "sha256": "81b2bbbda58c99c67a7b664de2c5904687549b07690c3ac9f929fecd5f05c123",
+      "bytes": 850717
+    },
+    "tasks.jsonl": {
+      "sha256": "4a67e830b2b828651c3780f5ab5f7d7d621a670d9f7274bf3b2ab09020888c75",
+      "bytes": 696168
+    },
+    "tool_schemas.json": {
+      "sha256": "8219072d28e4d50c24436f9c264bf9d9286dd7fa882be56250012b680ff1e760",
+      "bytes": 23612
+    }
+  },
+  "model_requests": 0,
+  "dev_validation_final_bfcl_cases_selected": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0
+}

@@ -72,3 +72,8 @@
 | D022 / 2026-09-08 | 用户补充目标是12月投实习、已做ARC-AGI-3并等待Milestone2发布；据此撤回把BDCI作为默认主赛的建议 | 核实里程碑奖金要求截止前开源；等待开源方案是合理推断，具体M2公告发布日期未查到 |
 
 待用户选择：A. 保留 Workplace 做 grounded lookup→state mutation 的数据选择研究，收窄泛化主张；B. 后续独立设计少量受控 composition 任务并审计其语义；C. 若严格组合泛化不可让步，比较其他环境。未自动选择 B/C 或开始生成任务。
+
+
+## 2026-09-17 remaining-pool window preparation
+
+Select ALL remaining training723 using domain-interleaved frozen order,exclude prior20,include empty-reference83 with held admission. User explicitly expanded acquisition scope. Hard stop today14:00; no resumption/next day or parameter update.
