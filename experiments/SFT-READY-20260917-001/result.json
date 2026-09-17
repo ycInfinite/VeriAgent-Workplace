@@ -1,0 +1,72 @@
+{
+  "experiment_id": "SFT-READY-20260917-001",
+  "status": "PRE_SFT_PREPARATION_COMPLETE_NO_GPU_EXECUTION",
+  "completed_at": "2026-09-17T06:05:39.354988+00:00",
+  "whole_reviewed": 150,
+  "whole_approved": 137,
+  "reviewed_held": 13,
+  "remaining_unreviewed_or_mechanically_held": 573,
+  "all_new_source_tasks": 723,
+  "arms": {
+    "S1": {
+      "tasks": 50,
+      "examples": 155,
+      "epochs": 2,
+      "planned_updates": 310,
+      "planned_processed_tokens": 1425440,
+      "planned_supervised_tokens": 28546,
+      "feature_counts": {
+        "directory_grounding": 23,
+        "entity_lookup_before_action": 30,
+        "multiple_target_entities": 10,
+        "composed_scope_predicate": 23,
+        "temporal_scope": 15
+      },
+      "data_sha256": "14686dda75f25b3677865613f4f8bf81f40a439e847a70f844b73555ff04607f"
+    },
+    "S2": {
+      "tasks": 50,
+      "examples": 155,
+      "epochs": 2,
+      "planned_updates": 310,
+      "planned_processed_tokens": 1415914,
+      "planned_supervised_tokens": 29114,
+      "feature_counts": {
+        "directory_grounding": 26,
+        "entity_lookup_before_action": 39,
+        "multiple_target_entities": 19,
+        "composed_scope_predicate": 31,
+        "temporal_scope": 19
+      },
+      "data_sha256": "2be928ba8edd2ad33540f22560c4b4f05c4d0c70e355d0fa6960872dbd02d4d4"
+    }
+  },
+  "token_differences": {
+    "processed_tokens": -0.006682848804579639,
+    "supervised_tokens": 0.019897708960975268
+  },
+  "unique_training_tasks": 84,
+  "overlap_tasks": 16,
+  "cpu_admission_checks_passed": 20,
+  "paired_comparison_fixture_checks_passed": 3,
+  "deployment_additions_validated": 13,
+  "deployment_performed": false,
+  "instance_startups": 0,
+  "model_loaded": false,
+  "paid_api_requests": 0,
+  "gpu_hours": 0,
+  "parameter_updates": 0,
+  "runtime_remaining": [
+    "GPU/package/weight revalidation",
+    "realCE/gradients/310updates",
+    "newadapterreload",
+    "matchedliveAgentdev24evaluation",
+    "newsemanticerrorannotations"
+  ],
+  "research_limitations": [
+    "137of723 approved byCodex,no independenthumanreview",
+    "firststagebalanced50taskarms,notfull137training",
+    "approximatelytokenmatched,notexactlyequal",
+    "sharedinitialDB and exposeddev24;strictcomposition/heldout claimsnotqualified"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "task_id": 22,
+  "turn": 1,
+  "prefix_tokens": 4195,
+  "supervised_tokens": 132,
+  "boundary": [
+    {
+      "index": 4192,
+      "token_id": 271,
+      "decoded_piece": "\n\n",
+      "label": -100
+    },
+    {
+      "index": 4193,
+      "token_id": 151668,
+      "decoded_piece": "</think>",
+      "label": -100
+    },
+    {
+      "index": 4194,
+      "token_id": 271,
+      "decoded_piece": "\n\n",
+      "label": -100
+    },
+    {
+      "index": 4195,
+      "token_id": 40,
+      "decoded_piece": "I",
+      "label": 40
+    },
+    {
+      "index": 4196,
+      "token_id": 3278,
+      "decoded_piece": "'ll",
+      "label": 3278
+    },
+    {
+      "index": 4197,
+      "token_id": 1492,
+      "decoded_piece": " help",
+      "label": 1492
+    },
+    {
+      "index": 4198,
+      "token_id": 498,
+      "decoded_piece": " you",
+      "label": 498
+    },
+    {
+      "index": 4199,
+      "token_id": 4637,
+      "decoded_piece": " forward",
+      "label": 4637
+    },
+    {
+      "index": 4200,
+      "token_id": 1846,
+      "decoded_piece": " those",
+      "label": 1846
+    }
+  ]
+}

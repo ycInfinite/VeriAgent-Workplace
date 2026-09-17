@@ -1,0 +1,615 @@
+{
+  "945": {
+    "decision": "approve",
+    "rationale": "Kerry Moore46 to observed Nadia; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "747": {
+    "decision": "approve",
+    "rationale": "Shannon Garcia36 to observed Raj; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "105": {
+    "decision": "approve",
+    "rationale": "Jordan Harris148 to observed Nadia; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "979": {
+    "decision": "approve",
+    "rationale": "Alex Garcia49 to observed Akira; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "458": {
+    "decision": "approve",
+    "rationale": "Cameron Robinson77 to observed Nadia; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "538": {
+    "decision": "approve",
+    "rationale": "Morgan Robinson125 to observed Nadia; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "1005": {
+    "decision": "approve",
+    "rationale": "Jamie Miller132 to observed Raj; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "95": {
+    "decision": "approve",
+    "rationale": "Riley Johnson131 to observed Nadia; unique fully paginated customer result and directory observation ground both identifiers; only assigned_to_email changed; all visible assistant claims agree."
+  },
+  "647": {
+    "decision": "approve",
+    "rationale": "Jamie Taylor/Sofia; resolves employee before creating exact requested Lead; no fabricated optional contact fields; returned200 grounds final ID; all turns acceptable."
+  },
+  "657": {
+    "decision": "approve",
+    "rationale": "Dakota Taylor/Sofia; resolves employee before creating exact requested Lead; no fabricated optional contact fields; returned200 grounds final ID; all turns acceptable."
+  },
+  "545": {
+    "decision": "approve",
+    "rationale": "Parker Martin/Nadia; resolves employee before creating exact requested Lead; no fabricated optional contact fields; returned200 grounds final ID; all turns acceptable."
+  },
+  "715": {
+    "decision": "approve",
+    "rationale": "Avery Jackson/Lena; resolves employee before creating exact requested Lead; no fabricated optional contact fields; returned200 grounds final ID; all turns acceptable."
+  },
+  "766": {
+    "decision": "approve",
+    "rationale": "Rahul Jackson150; complete unique name search before deletion, correct ID, successful observed removal and accurate final."
+  },
+  "91": {
+    "decision": "approve",
+    "rationale": "Cameron Martinez126; complete unique name search before deletion, correct ID, successful observed removal and accurate final."
+  },
+  "690": {
+    "decision": "approve",
+    "rationale": "Reese Wilson139; complete unique name search before deletion, correct ID, successful observed removal and accurate final."
+  },
+  "79": {
+    "decision": "approve",
+    "rationale": "Taylor Jackson189; complete unique name search before deletion, correct ID, successful observed removal and accurate final."
+  },
+  "1246": {
+    "decision": "approve",
+    "rationale": "Dakota Davis161; complete unique name search before deletion, correct ID, successful observed removal and accurate final."
+  },
+  "556": {
+    "decision": "approve",
+    "rationale": "Rahul Martinez3 Lost->Won; one-page exact lookup grounds target; requested field/value only; final old/new summary and any copied fields match observation."
+  },
+  "564": {
+    "decision": "approve",
+    "rationale": "Dakota Wilson76 Lead->Won; one-page exact lookup grounds target; requested field/value only; final old/new summary and any copied fields match observation."
+  },
+  "168": {
+    "decision": "approve",
+    "rationale": "Jamie Martin193 Won->Lost; one-page exact lookup grounds target; requested field/value only; final old/new summary and any copied fields match observation."
+  },
+  "823": {
+    "decision": "approve",
+    "rationale": "Casey Jackson25 Lead->Won; one-page exact lookup grounds target; requested field/value only; final old/new summary and any copied fields match observation."
+  },
+  "1161": {
+    "decision": "approve",
+    "rationale": "Jessie Thomas149 Lead->Won; one-page exact lookup grounds target; requested field/value only; final old/new summary and any copied fields match observation."
+  },
+  "1071": {
+    "decision": "approve",
+    "rationale": "Peyton Williams164 Lost->Qualified; one-page exact lookup grounds target; requested field/value only; final old/new summary and any copied fields match observation."
+  },
+  "689": {
+    "decision": "approve",
+    "rationale": "Both employee emails resolved; separate Qualified/Proposal queries cover both software predicates completely (one page each); updates only observed1/147 to Sofia; final two customers and statuses match."
+  },
+  "1068": {
+    "decision": "approve",
+    "rationale": "Sofia lookup then exact owner/Qualified/Hardware filters return102/159 on complete single page; both and only these deleted; final fields match."
+  },
+  "769": {
+    "decision": "approve",
+    "rationale": "Explicitly disambiguates Jordan Martin106 from substring match Jordan Martinez71; deletes exact name only, with complete observed result and accurate final distinction."
+  },
+  "55": {
+    "decision": "approve",
+    "rationale": "Raj email grounded; Won+Consulting+owner query complete1page1record171; deletes only171, final count/name/predicate match."
+  },
+  "973": {
+    "decision": "approve",
+    "rationale": "Both directory emails grounded; Nadia+Lead+Consulting complete query returns31 only; reassigns to Lena and accurately describes scoped completeness."
+  },
+  "643": {
+    "decision": "approve",
+    "rationale": "Unique Alex Jackson38 is already assigned to directory-resolved Raj. Correct grounded no-change decision and truthful final; nonempty official reference is idempotent and no actual write is necessary."
+  },
+  "223": {
+    "decision": "approve",
+    "rationale": "Directory-grounded Raj/Lena; Lead+Services+owner query returns all4 records154/149/100/108 in1page; every requested reassignment succeeds; final table copied correctly."
+  },
+  "1098": {
+    "decision": "approve",
+    "rationale": "Dmitri9->In Review; broad initial read then explicit scoped confirmation. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "1155": {
+    "decision": "approve",
+    "rationale": "Dmitri9->Backlog; broad read followed by scoped confirmation. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "765": {
+    "decision": "approve",
+    "rationale": "Jinsoo267/214->Backlog. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "741": {
+    "decision": "approve",
+    "rationale": "Anaya196/159->In Review. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "433": {
+    "decision": "approve",
+    "rationale": "Anaya115/198->Completed. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "260": {
+    "decision": "approve",
+    "rationale": "Nia120/191/126/197->Completed. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "947": {
+    "decision": "approve",
+    "rationale": "Jinsoo203/279/265/230->Completed. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "1126": {
+    "decision": "approve",
+    "rationale": "Leila113/157/118/121->Completed. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "686": {
+    "decision": "approve",
+    "rationale": "Yuki7/12->Completed. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "839": {
+    "decision": "approve",
+    "rationale": "Fatima74/75/2->In Review. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "382": {
+    "decision": "approve",
+    "rationale": "Kofi219/270/217->Completed. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "902": {
+    "decision": "approve",
+    "rationale": "Anaya196/159->Backlog. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "738": {
+    "decision": "approve",
+    "rationale": "Olga278->In Review. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "1114": {
+    "decision": "approve",
+    "rationale": "Jinsoo267/214->Backlog. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "1047": {
+    "decision": "approve",
+    "rationale": "Santiago116/199->Completed. Directory-grounded identity and complete unpaginated task lists; all/only matched tasks updated; assistant rationale and final fields/counts agree. Confirmation reads accepted,not claimed minimal-cost."
+  },
+  "240": {
+    "decision": "approve",
+    "rationale": "Luis/Back end/Implement responsive layout for homepage/Dec2. Resolves employee then creates exact user-specified name,board,Backlog,due date; returned300 grounds final ID; no fabricated optional fields."
+  },
+  "501": {
+    "decision": "approve",
+    "rationale": "Jinsoo/Design/Design UI for settings page/Dec5. Resolves employee then creates exact user-specified name,board,Backlog,due date; returned300 grounds final ID; no fabricated optional fields."
+  },
+  "421": {
+    "decision": "approve",
+    "rationale": "Aisha/Design/Develop prototype for report generation/Dec5. Resolves employee then creates exact user-specified name,board,Backlog,due date; returned300 grounds final ID; no fabricated optional fields."
+  },
+  "10": {
+    "decision": "approve",
+    "rationale": "Jinsoo/Design/Fix alignment issue in landing page/Dec5. Resolves employee then creates exact user-specified name,board,Backlog,due date; returned300 grounds final ID; no fabricated optional fields."
+  },
+  "848": {
+    "decision": "approve",
+    "rationale": "Kofi/Front end/Integrate REST API with frontend/Dec3. Resolves employee then creates exact user-specified name,board,Backlog,due date; returned300 grounds final ID; no fabricated optional fields."
+  },
+  "1232": {
+    "decision": "approve",
+    "rationale": "Jinsoo/Back end/Optimize database query for data export/Dec1. Resolves employee then creates exact user-specified name,board,Backlog,due date; returned300 grounds final ID; no fabricated optional fields."
+  },
+  "263": {
+    "decision": "hold",
+    "category": "cross_domain_identifier_misuse",
+    "rationale": "Uses task203 as calendar event203 in an irrelevant calendar_get_event_information_by_id call; type/domain confusion despite schema validity/reward1. Also invents tie-breaking priority. Whole trajectory held,no selective masking."
+  },
+  "183": {
+    "decision": "approve",
+    "rationale": "Leila directory identity; complete Backlog13tasks; only149/151/190 beforeNov30,othersDec1+; updates those3 and accurately reports full scope. No due-today borderline present."
+  },
+  "1146": {
+    "decision": "approve",
+    "rationale": "Olga grounded; fullBacklog12tasks; only258/294 overdueNov27,othersDec1+; correctly updates2 and leavesfutureitems. No due-today borderline present."
+  },
+  "791": {
+    "decision": "approve",
+    "rationale": "Both Luis/Jinsoo resolved; allLuis tasks visible; selectsBacklog293/299/275 beforeNov30 and excludesalready-started249plusfutureitems; all3reassignments/finaltable correct. No due-today borderline present."
+  },
+  "1150": {
+    "decision": "approve",
+    "rationale": "Carlos/Jinsoo directory grounded; complete InProgress+Carlos query returns86 only; changesowneronly and finalscopeaccurate."
+  },
+  "126": {
+    "decision": "approve",
+    "rationale": "Jinsoo/Kofi grounded; complete InProgress query returns267/214; bothownerupdates matchrequest,finalnames/datescorrect."
+  },
+  "907": {
+    "decision": "approve",
+    "rationale": "Nia/Dmitri grounded; fulltasklist shows earlierdatesallCompleted;162 is unique earliest incomplete dueNov30; explicitreasonable urgency interpretation,correct reassignment and final."
+  },
+  "1003": {
+    "decision": "approve",
+    "rationale": "Santiago/Aisha grounded; complete tasklist194 uniquelyearliestNov28; sameentity detail confirmation is redundantbutcorrect,changesonlyassignee,allrationale/finalfactsagree."
+  },
+  "666": {
+    "decision": "approve",
+    "rationale": "Santiago/Amir grounded; complete tasklist194 uniquelyearliestactiveNov28; correctsingleassigneeupdate and explicitdate-basedurgencyreason."
+  },
+  "1160": {
+    "decision": "hold",
+    "category": "unproven_latest_pagination",
+    "rationale": "Acts on latest email using page1 of4,without a schema-promised ordering or complete later-date query. Correct eventual ID/reward1 does not demonstrate grounded latest selection. Whole trace held."
+  },
+  "1204": {
+    "decision": "hold",
+    "category": "unproven_latest_pagination",
+    "rationale": "Acts on latest email using page1 of2,without a schema-promised ordering or complete later-date query. Correct eventual ID/reward1 does not demonstrate grounded latest selection. Whole trace held."
+  },
+  "615": {
+    "decision": "hold",
+    "category": "unproven_latest_pagination",
+    "rationale": "Acts on latest email using page1 of9,without a schema-promised ordering or complete later-date query. Correct eventual ID/reward1 does not demonstrate grounded latest selection. Whole trace held."
+  },
+  "1100": {
+    "decision": "hold",
+    "category": "unproven_latest_pagination",
+    "rationale": "Acts on latest email using page1 of2,without a schema-promised ordering or complete later-date query. Correct eventual ID/reward1 does not demonstrate grounded latest selection. Whole trace held."
+  },
+  "415": {
+    "decision": "hold",
+    "category": "unproven_latest_pagination",
+    "rationale": "Acts on latest email using page1 of4,without a schema-promised ordering or complete later-date query. Correct eventual ID/reward1 does not demonstrate grounded latest selection. Whole trace held."
+  },
+  "1123": {
+    "decision": "hold",
+    "category": "unproven_latest_pagination",
+    "rationale": "Acts on latest email using page1 of6,without a schema-promised ordering or complete later-date query. Correct eventual ID/reward1 does not demonstrate grounded latest selection. Whole trace held."
+  },
+  "1045": {
+    "decision": "hold",
+    "category": "relative_date_boundary_unresolved",
+    "rationale": "last3days interpretedNov28-30,withoutcheckingNov27 under projecttoday-minus-N date convention. No scope evidence resolves boundary; laterexactemailquery repeatsnarrowrange. Hold as ambiguity,not infrastructure fault."
+  },
+  "989": {
+    "decision": "approve",
+    "rationale": "Carlos/task-update-design-logo-blog/bodycarlos; recipient obtained from directory before send; exact user subject/body preserved; observed success and final truthful."
+  },
+  "92": {
+    "decision": "approve",
+    "rationale": "Olga/digital-transformation-conference/bodyolga; recipient obtained from directory before send; exact user subject/body preserved; observed success and final truthful."
+  },
+  "479": {
+    "decision": "approve",
+    "rationale": "Kofi/retrospective-meeting/bodykofi; recipient obtained from directory before send; exact user subject/body preserved; observed success and final truthful."
+  },
+  "1224": {
+    "decision": "approve",
+    "rationale": "Jinsoo/feedback-discussion/bodyjinsoo; recipient obtained from directory before send; exact user subject/body preserved; observed success and final truthful."
+  },
+  "917": {
+    "decision": "approve",
+    "rationale": "Santiago/improve-UX-onboarding/bodysantiago; recipient obtained from directory before send; exact user subject/body preserved; observed success and final truthful."
+  },
+  "61": {
+    "decision": "approve",
+    "rationale": "Leila,Nov28-30,52/349,2records1page. Uses declareddate-basedtoday-minus-N bounds; exhaustiveobservedresults allinbox/fromrequestedperson; collectsallpagesbeforedeleting; all/only IDs deleted andfinalcount/subjects accurate. Calendar-date interpretation,notprecise48-hour claim."
+  },
+  "1108": {
+    "decision": "approve",
+    "rationale": "Akira,Nov25-30,429/422/12,3records1page. Uses declareddate-basedtoday-minus-N bounds; exhaustiveobservedresults allinbox/fromrequestedperson; collectsallpagesbeforedeleting; all/only IDs deleted andfinalcount/subjects accurate. Calendar-date interpretation,notprecise48-hour claim."
+  },
+  "46": {
+    "decision": "approve",
+    "rationale": "Luis,Nov27-30,275/116/276/63,4records1page. Uses declareddate-basedtoday-minus-N bounds; exhaustiveobservedresults allinbox/fromrequestedperson; collectsallpagesbeforedeleting; all/only IDs deleted andfinalcount/subjects accurate. Calendar-date interpretation,notprecise48-hour claim."
+  },
+  "88": {
+    "decision": "approve",
+    "rationale": "Anaya,Nov24-30,166/456,2records1page. Uses declareddate-basedtoday-minus-N bounds; exhaustiveobservedresults allinbox/fromrequestedperson; collectsallpagesbeforedeleting; all/only IDs deleted andfinalcount/subjects accurate. Calendar-date interpretation,notprecise48-hour claim."
+  },
+  "746": {
+    "decision": "approve",
+    "rationale": "Raj,Nov23-30,436/245/421/140/199/402/288/143,8records2pages. Uses declareddate-basedtoday-minus-N bounds; exhaustiveobservedresults allinbox/fromrequestedperson; collectsallpagesbeforedeleting; all/only IDs deleted andfinalcount/subjects accurate. Calendar-date interpretation,notprecise48-hour claim."
+  },
+  "45": {
+    "decision": "approve",
+    "rationale": "Readsall14fuzzyresultsacross3pages,filters exactrequestedsubject;460Nov24 islatestmatching acrossallpages; resolvesAmir/Dmitri andforwardsonly460 toboth; finalsupported."
+  },
+  "1227": {
+    "decision": "approve",
+    "rationale": "Initial page leaves5pages,butbeforedelete makes unboundedlater-date queryNov23+ returning only68 on1page; this establishes no later Carlos email withoutassumingorder; deletes68/finalcorrect."
+  },
+  "429": {
+    "decision": "approve",
+    "rationale": "Readsall19Niaemails across4pages beforedelete;66Nov28 islatest amongall; finalcount19andsubjectdate agree."
+  },
+  "1036": {
+    "decision": "approve",
+    "rationale": "ResolvesSofia/Carlos; readsall13topicemails3pages;explicitlastcalendarweekNov20-26; onlySofia438Nov25qualifies,excludesSofia231/309October; exactlyoneforward andtablecorrect."
+  },
+  "30": {
+    "decision": "approve",
+    "rationale": "Aisha/Yuki grounded; bothpagescover6topicemails; lastweekNov20-26 admitsAisha401Nov21,excludes40Nov19 andothersenders; finaldetailevidencecorrect."
+  },
+  "406": {
+    "decision": "approve",
+    "rationale": "Complete3email1page supports225Nov8latesttopic; Amir directorygrounded; correctforward andaccuratefinal."
+  },
+  "22": {
+    "decision": "approve",
+    "rationale": "Bothdirectory identities plusNov20-26topicquerycomplete3records; onlyLeila433matches,excludesYuki149/Aisha315; forwards433toChenwei andtruthfullyexplains scope."
+  },
+  "685": {
+    "decision": "approve",
+    "rationale": "Reads2pagesall7topicemails beforelatestdecision;288Nov24latest; bothLuis/Olga resolved thenforwardscorrectIDtoeach,finalsupported."
+  },
+  "1226": {
+    "decision": "approve",
+    "rationale": "ExplicitlastcalendarweekNov20-26 andtopic queryreturnsone308,confirmedNiasender; bothidentitiesgrounded; oneforwardtoYuki finalaccurate."
+  },
+  "1130": {
+    "decision": "approve",
+    "rationale": "Onlyoneemail366existsforquotedtopic in complete1page; directory-resolvedDmitri/Raj bothreceiveforward; finaldate/sender/recipientcopycorrect."
+  },
+  "1179": {
+    "decision": "approve",
+    "rationale": "Two pagescoverall7topicemails; Raj288Nov24 onlysenderandlastweekmatch; resolvedAmirgetsoneforward,correctexclusion explanation."
+  },
+  "1006": {
+    "decision": "approve",
+    "rationale": "Complete6topicemails2pages establish327Nov25latest; Sofiaidentitygrounded; finalbriefdatabase-integration/brainstorm summaryfaithful tobody."
+  },
+  "1072": {
+    "decision": "approve",
+    "rationale": "Complete4topicemails1page; Fatima56Nov8latestamongcorrectsender,excludes407/336olderandJinsoo427; replyexactrequestedtext,finalsupported."
+  },
+  "1194": {
+    "decision": "approve",
+    "rationale": "CompleteDec21day4events;170at15:30last; renamesonlyevent_name toCustomer Insight Forum,finalold/newexact. All visible assistant turns reviewed against user and observations."
+  },
+  "937": {
+    "decision": "approve",
+    "rationale": "Unboundedfuturetopicquerycompleteone121Dec7; renamesexact weekly summary. All visible assistant turns reviewed against user and observations."
+  },
+  "1242": {
+    "decision": "approve",
+    "rationale": "CompleteDec19day3events;96at10:00earliest,deleteonlyit; remainingtwoanddurationcorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "1019": {
+    "decision": "approve",
+    "rationale": "Santiago directorylookup;exacttitle/Dec7 12:30/60minmeeting;12:30-13:30within9-18,returned300andfinalcorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "1057": {
+    "decision": "approve",
+    "rationale": "CompleteDec11day4events;12at14:30last; onlynamechangedtoHealth & Wellness Expo. All visible assistant turns reviewed against user and observations."
+  },
+  "661": {
+    "decision": "approve",
+    "rationale": "CompleteSofiaDec15queryone179; verified10:30/60min,postponesexact2h to12:30; end13:30allowed,finalcorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "1214": {
+    "decision": "approve",
+    "rationale": "CompleteCarlosDec12queryone205; verified11:30/30min,postpones30mto12:00; end12:30fits9-18. Finalno-conflictsphrasing interpretedonlyexplicitbusiness-hourconstraints,not independent calendar overlap audit. All visible assistant turns reviewed against user and observations."
+  },
+  "473": {
+    "decision": "approve",
+    "rationale": "Nadiadirectoryresolved;futurequeryunboundedendcompleteone161Dec11; correctdeleteandfinal. All visible assistant turns reviewed against user and observations."
+  },
+  "1181": {
+    "decision": "approve",
+    "rationale": "CompleteNov30day4events;20009:30earliest; requesteddatedpastappointmentdeletionallowed; remainingthreeexact. All visible assistant turns reviewed against user and observations."
+  },
+  "228": {
+    "decision": "approve",
+    "rationale": "All15Anayaevents3pagesread;future152Dec13only;deleteonly152 withaccuratepast/futuresummary. All visible assistant turns reviewed against user and observations."
+  },
+  "120": {
+    "decision": "approve",
+    "rationale": "CompleteNov30day4events;20009:30earliest;explicitdatecriterion,allremainingmeetingscorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "87": {
+    "decision": "approve",
+    "rationale": "UnboundedfutureKofiquerycomplete86/109; detailconfirmationsredundantbutfaithful; bothandonlyfutureeventsdeleted. All visible assistant turns reviewed against user and observations."
+  },
+  "349": {
+    "decision": "approve",
+    "rationale": "Complete4futureProjectInitiationevents;60Dec5earliestnotfirstlistentry; renameonly60 tointroductory call. All visible assistant turns reviewed against user and observations."
+  },
+  "413": {
+    "decision": "approve",
+    "rationale": "Complete2futurequarterlytechroundup;294Dec15before119Dec21; correctrenameonly294,explainsremainingeventaccurately. All visible assistant turns reviewed against user and observations."
+  },
+  "278": {
+    "decision": "approve",
+    "rationale": "CompleteunboundedfutureQuarterlySalesReviewone121;deleteonly121,accuratedetails. All visible assistant turns reviewed against user and observations."
+  },
+  "380": {
+    "decision": "approve",
+    "rationale": "Completeunboundedfutureprojectprogressqueryone256Dec13; exactrenameonlyto monthly overview. All visible assistant turns reviewed against user and observations."
+  },
+  "368": {
+    "decision": "approve",
+    "rationale": "CompleteChenweiDec8one185;15:30+2h=17:30,duration30ends18:00allowed; accurateupdateandfinal. All visible assistant turns reviewed against user and observations."
+  },
+  "38": {
+    "decision": "approve",
+    "rationale": "All6topicmeetings2pagesread;91Dec1onlyfuture;correctdeleteandtruthfulfivepastleft. All visible assistant turns reviewed against user and observations."
+  },
+  "739": {
+    "decision": "approve",
+    "rationale": "CompleteDec18twoevents;47at13:30earliest; correctdelete/remaining160at15:30. All visible assistant turns reviewed against user and observations."
+  },
+  "131": {
+    "decision": "approve",
+    "rationale": "Completeunboundedfuturetopicqueryone91Dec1;deleteonly91,factsagree. All visible assistant turns reviewed against user and observations."
+  },
+  "137": {
+    "decision": "approve",
+    "rationale": "CompleteDec5threeevents;28709:00earliest;correctdeleteonly,other64/60leftandtimescorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "732": {
+    "decision": "approve",
+    "rationale": "Completeunboundedfutureretrospectiveone93Dec1;correctdelete;Dec1Friday/time/durationagree. All visible assistant turns reviewed against user and observations."
+  },
+  "956": {
+    "decision": "approve",
+    "rationale": "All9Carlosmeetings2pagesvisible;54Dec7earliestfuturebefore205Dec12; actualdetailconfirmation,correctdeletion/remainingfutureclaimed. All visible assistant turns reviewed against user and observations."
+  },
+  "1182": {
+    "decision": "approve",
+    "rationale": "CompleteunboundedfutureProductLaunchone236;sameeventstartconfirmation;correctdeleteandfinal. All visible assistant turns reviewed against user and observations."
+  },
+  "1069": {
+    "decision": "approve",
+    "rationale": "Carlosidentitygrounded;completefuture54/205;earliest54selected,onlyitdeleted; correctlystates205remains. All visible assistant turns reviewed against user and observations."
+  },
+  "80": {
+    "decision": "approve",
+    "rationale": "CompleteDec18twoevents;47at13:30earliest;onlyitdeletedand16015:30remainingcorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "71": {
+    "decision": "approve",
+    "rationale": "Unboundedfutureexacttopiccomplete4events266/100/62/261; allandonlythose deleted; finalIDs/dates/participantscorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "144": {
+    "decision": "approve",
+    "rationale": "CompleteDec19threeevents;96at10:00earliest;onlyitdeletedandremaining131/20timescorrect. All visible assistant turns reviewed against user and observations."
+  },
+  "1079": {
+    "decision": "hold",
+    "category": "unnecessary_out_of_range_pagination",
+    "rationale": "Aftercomplete1pagefutureAnaya result,requestsdeclarednonexistentpage2 plusnarroweremailqueryasbroaderverification. Allstatecorrect,but avoidteaching this unnecessaryout-of-rangeworkflow inwholetrajectory."
+  },
+  "1124": {
+    "decision": "hold",
+    "category": "unexecuted_verification_plan",
+    "rationale": "CorrectunboundedfuturesearchandthreeLeiladeletions,butassistantannouncesbroaderverificationthenimmediatelydeleteswithoutperformingthatannouncedcheck. Conservativewhole-qualityhold;officialsuccessunchanged."
+  },
+  "847": {
+    "decision": "approve",
+    "rationale": "Engagedusers histogram Nov6; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "1211": {
+    "decision": "approve",
+    "rationale": "Totalvisits+engagedusers histograms Oct13-Nov5; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "961": {
+    "decision": "approve",
+    "rationale": "Engagedusers+sessionduration bars Nov24-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "482": {
+    "decision": "approve",
+    "rationale": "Sessionduration+totalvisits histograms Sep24-Nov11; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "795": {
+    "decision": "approve",
+    "rationale": "Totalvisits bar Nov24-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "526": {
+    "decision": "approve",
+    "rationale": "Sessionduration bar Oct11-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "549": {
+    "decision": "approve",
+    "rationale": "Totalvisits bar Oct20-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "293": {
+    "decision": "approve",
+    "rationale": "Engagedusers scatter Oct4-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "1173": {
+    "decision": "approve",
+    "rationale": "Sessionduration+totalvisits bars Oct3-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "1099": {
+    "decision": "approve",
+    "rationale": "Totalvisits bar todayNov30only; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "509": {
+    "decision": "approve",
+    "rationale": "Engagedusers+totalvisits bars Sep6-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "698": {
+    "decision": "approve",
+    "rationale": "Sessionduration+engagedusers bars Nov11-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "179": {
+    "decision": "approve",
+    "rationale": "Engagedusers+totalvisits bars Sep20-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "469": {
+    "decision": "approve",
+    "rationale": "Sessionduration bar Sep26-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "34": {
+    "decision": "approve",
+    "rationale": "Engagedusers histogram Sep24; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "174": {
+    "decision": "approve",
+    "rationale": "Totalvisits+engagedusers bars Oct8-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "1088": {
+    "decision": "approve",
+    "rationale": "Sessionduration histogram Oct26; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "1085": {
+    "decision": "approve",
+    "rationale": "Engagedusers+totalvisits histograms Oct31-Nov3; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "852": {
+    "decision": "approve",
+    "rationale": "Totalvisits+sessionduration histograms Oct19-Nov24; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "544": {
+    "decision": "approve",
+    "rationale": "Totalvisits+sessionduration bars Oct6-today; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "1199": {
+    "decision": "approve",
+    "rationale": "Sessionduration histogram Nov10; exactuser metric/date/charttype mapping; everyrequestedplot called,observedreturnedpaths faithfully reported. Approved within official simulated-plot tool semantics; no physicalimage existence claimed by auditor."
+  },
+  "1076": {
+    "decision": "approve",
+    "rationale": "All4sourcequeriesexactNov16-30; independent arithmetic82/14/16/30matchesallassistanttotals;directmaxthenvisits_direct line;finalpathcorrect."
+  },
+  "1106": {
+    "decision": "approve",
+    "rationale": "All4sourcesNov30only4/1/0/2 observed;directmaxandcorrectlineplot;finaltableexact."
+  },
+  "24": {
+    "decision": "approve",
+    "rationale": "User says currentengagedusers vsOct12; explicitlatest-value interpretation uses observed6thenNov30=4;33%roundeddecline>5%;lineplotincludesOct12-today. Allrationalefacts andtargetconsistent; no mean fabricated."
+  },
+  "259": {
+    "decision": "approve",
+    "rationale": "Fiveweeks dateoffsetOct26-Nov30; full36dailyvalues showonlyOct29/Nov14/Nov20equal10,noneabove,min1Nov13; conditionalplotandfinal claimsaccurate."
+  },
+  "1082": {
+    "decision": "approve",
+    "rationale": "AllthreeNov28-30sessionvalues>2; displayed20.32/20.67/18.14correctrounding; lineplotexactmetricandrange. alltimes refers to provided daily aggregate observations."
+  },
+  "691": {
+    "decision": "approve",
+    "rationale": "FullOct21-Nov30series:onlyNov16>=41,value41.857;remainingmin5.428/max30.083matchrounded5.4..30.1; existenceconditionmet,lineplotcorrect."
+  },
+  "802": {
+    "decision": "hold",
+    "category": "unsupported_numeric_aggregation",
+    "rationale": "Choosescorrectdirectplot,butreportsapprox283/57/60/148; exactobservedsums289/55/59/144. These are not consistent integer rounding; inaccurateintermediateandfinalnumeric targets held whole."
+  },
+  "83": {
+    "decision": "hold",
+    "category": "wrong_numeric_aggregation",
+    "rationale": "Claims source totals248/48/49/104,but observationssum246/46/48/109. Correctplotandreward1 do not validate faulty supervised calculations."
+  },
+  "764": {
+    "decision": "hold",
+    "category": "wrong_numeric_aggregation",
+    "rationale": "Claims75-day sum1490.36/mean19.87; actualsum1449.8386/mean19.33118. MonthlyOctober567.875not588.75,November601.204not620.85; wrongarithmetic plusunjustifiedperiodaveragecomparison. Holdwhole."
+  }
+}

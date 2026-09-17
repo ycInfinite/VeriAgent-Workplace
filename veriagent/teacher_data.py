@@ -75,7 +75,8 @@ class CanonicalTeacherEncoder:
             'teacher_token_ids_used':False,'training_eligible':False}
 
 
-def export_teacher_turns(record, review, approved_tasks, encoder, teacher_config):
+def export_teacher_turns(record, review, approved_tasks, encoder, teacher_config,
+                         *, source_provider='bailian', required_decision='approved_for_sft_probe'):
     """Admit a whole reviewed API trajectory, retaining every visible decision.
 
     Separate from the exact sampled-ID admission path for the original 8B policy.
@@ -84,12 +85,27 @@ def export_teacher_turns(record, review, approved_tasks, encoder, teacher_config
     """
     from veriagent.teacher_rollout import assistant_from_response, request_body, read_usage
     from veriagent.environment import digest
+    response_validator = None
+    if source_provider == 'deepseek':
+        from veriagent.deepseek_teacher import request_body, validate_response, endpoint
+        endpoint(teacher_config['base_url'])
+        if (teacher_config['model'] != 'deepseek-flash'
+                or teacher_config['enable_thinking'] is not False
+                or teacher_config['seed'] is not None
+                or required_decision != 'approved_for_sft'):
+            raise ValueError('Unqualified DeepSeek source or approval scope')
+        response_validator = validate_response
+        expected_producer = 'DEEPSEEK_REAL_API'
+    elif source_provider == 'bailian' and required_decision == 'approved_for_sft_probe':
+        expected_producer = 'BAILIAN_REAL_API'
+    else:
+        raise ValueError('Unknown or mismatched teacher admission scope')
     task = approved_tasks.get(record.get('task_uid'))
     if (not task or task['pool'] != 'training_candidate' or task['source_split'] != 'train'
             or record.get('source_pool') != 'training_candidate' or record.get('task_id') != task['source_id']):
         raise ValueError('Teacher trajectory is not in the fixed training cohort')
     validate_request({'messages': record['initial_messages'], 'tools': record['tool_schemas']}, task)
-    if (record.get('producer') != 'BAILIAN_REAL_API' or record.get('requested_model') != teacher_config['model']
+    if (record.get('producer') != expected_producer or record.get('requested_model') != teacher_config['model']
             or record.get('student_model_revision') != encoder.checked.model_revision
             or record.get('condition') != 'B1' or record.get('seed') != teacher_config['seed']):
         raise ValueError('Teacher/student provenance mismatch')
@@ -98,7 +114,7 @@ def export_teacher_turns(record, review, approved_tasks, encoder, teacher_config
             or record.get('termination') != 'assistant_final' or record.get('parse_errors')):
         raise ValueError('Teacher execution is unsuccessful, incomplete, or invalid')
     if (review.get('trajectory_sha256') != content_sha256(record)
-            or review.get('decision') != 'approved_for_sft_probe'
+            or review.get('decision') != required_decision
             or not review.get('reviewer') or not review.get('rationale')
             or any(review.get(k) is not True for k in
                 ('grounding_checked', 'target_scope_checked', 'all_supervised_turns_acceptable'))):
@@ -115,6 +131,8 @@ def export_teacher_turns(record, review, approved_tasks, encoder, teacher_config
         if turn['turn'] != index or turn['input_messages'] != messages[:cursor]:
             raise ValueError('A whole teacher turn is missing or altered')
         response = turn['raw_response']
+        if response_validator is not None:
+            response_validator(response)
         assistant, finish, errors = assistant_from_response(response)
         if (errors or finish not in ('stop', 'tool_calls') or finish != turn['finish_reason']
                 or assistant != turn['assistant_message'] or assistant != messages[cursor]

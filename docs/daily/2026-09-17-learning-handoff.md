@@ -97,3 +97,22 @@ Latest handoff at10:31: actual723worker nowARMED at2ca291c,notacquired. Experime
 明天路线分叉：先做整条语义审核和DeepSeek学生导出准入；质量通过后讨论正式S1/S2的训练token预算及固定eval。不要直接把全部机械候选拿去训练。
 
 证据：`DEEPSEEK-SFTDATA-20260917-001`；execution commit `2ca291cde64b5c96baec2c9ebeb91e853665ae0a`；配置 `configs/deepseek_window_acquisition.json`；完整原始归档 `evidence/deepseek/DEEPSEEK-SFTDATA-20260917-001-evidence.tar.gz`；派生审核与费用位于同名experiments目录。报告 `docs/TEACHER_FULL_POOL_RESULT_20260917.md`。离线审核首次GBK解码失败已保留为工具故障，未污染模型成绩；没有重发API。
+
+
+# 首轮 SFT 准备完成交接
+
+核心问题：能否把新教师轨迹变成真实可执行、可审查、近似匹配预算的 S1/S2 输入？开始前只有629条机械候选、没有新数据语义准入。现在冻结审核150条（每域30），完整检查后137通过、13暂缓；剩余573未纳入本轮整条审查或未过机械/空reference门槛。审核者Codex，未独立人工复核。
+
+实际执行：记录逐条理由及原轨迹hash；导出policy-only labels；冻结两组各50任务/155轮、2epochs/310updates，准备CPU准入、训练、dev24真实推理和配对统计入口。新增实例启动0、API调用0、GPU0、参数更新0，服务器未在本轮启动。唯一计划变量为随机分层选择vsfailure-targeted选择；模型/LoRA/seed/域配额/更新次数固定，processed token差-0.67%、target token差+1.99%，不能称完全同token预算。
+
+结果：20项核心CPU检查通过，3项统计fixture检查通过；旧Bailian两轨迹8轮/582targets导出未变化。两组共84个不同任务、16个重合。最大完整训练序列7208。S1目标28546tokens/processed1425440；S2目标29114/processed1415914。这些是准备好的输入，不是已完成训练的用量。
+
+代表证据：task945通过（先查Kerry Moore和Nadia，再改分配）；task263暂缓（用task ID查calendarevent）；task83暂缓（plot正确但流量加总不对）；task22的真实mask边界prefix4195、targets132，空thinking prefill被mask。它们的原始reward都没有改写。
+
+路线级结论：首轮SFT开发对照的开训前准备完成，下一步是得到开训指示后使用既有单卡、同一GitHub提交执行冻结方案。尚未支持：这次310步runner的GPU运行资格、实际显存/步时、参数变化与重载、Agent收益、严格composition泛化。旧8步probe证据不能冒充本轮训练完成。
+
+晚上读的新文件：`docs/learning/06-sft-comparison-ready.md`，已直接贴出真实mask/CE/准入代码片段，附4个文件→函数→输入→输出→作用，3个知识点和5个无答案追问。当前学习考核未进行。
+
+明天需决定的路线：是否启动冻结的首轮S1/S2和对应dev评估；整池扩展、严格组合泛化、DPO/RL另属后续阶段，不自动进入。成本规划约0.75–1.5GPUh（工程估计），新最大序列必须在真正开训时测显存，OOM后不自动扩卡/缩上下文。
+
+证据：`SFT-READY-20260917-001`；配置`configs/sft_comparison_plan.json`；审核`semantic_judgments.json/quality_approvals.json`；数据` s1_examples.jsonl.gz / s2_examples.jsonl.gz`；结果`result.json`；CPU检查`cpu_readiness_checks.json/comparison_cpu_checks.json`；部署清单`deployment_plan.json`。source-base commit1255b06，新源码执行字节hash在identity.json，准备完成后统一发布GitHub；没有声称旧commit包含尚未提交的新代码。

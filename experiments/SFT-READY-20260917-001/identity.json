@@ -1,0 +1,22 @@
+{
+  "kind": "LOCAL_CPU_PREPARATION_AUDIT_NOT_MODEL_TRAINING",
+  "base_repository_commit_before_preparation": "1255b06",
+  "code_state": "new/modified preparation source was audited before publication;local byte hashes below,Git publication follows",
+  "source_files_sha256": {
+    "veriagent/teacher_data.py": "66b7b9c8222a5e0feeace9573e9286ada0bbee0b89d3aa1c496e59f29cb7a215",
+    "veriagent/sft_stage.py": "e1ed590888e55d0d639cf0966d515b3290b5ab8e25a3ac4bcdb795d723569fc9",
+    "scripts/prepare_sft_comparison.py": "dd0d33c9d69afe0319bc7998bcccc4a84e396634b8683f5f93a1bb0f68af3b91",
+    "scripts/show_sft_review_batch.py": "26db3d93d2094b868f6cab312f738bb4b5ed45418dbf3b339a0e7360df78f64f",
+    "scripts/run_sft_comparison.py": "16da3e6b9aa288a11ea0eb7bd5f9f69c0b5902c39e27c3f45ea3ff1b1c7adb1f",
+    "scripts/evaluate_sft_comparison.py": "95cd37a5c2f0800818fa39223ef2d0a3df282b764ca4cc9e3479170cee7deda9",
+    "scripts/compare_sft_evaluations.py": "2c8982c72ce74ffe43f2e1bbd88fd98ab32c041d8d94240adf54a390ac8ee0df",
+    "scripts/audit_sft_readiness.py": "26668a573aeecdce57728353becd8e081a76551e474f0fb97cf8dfb09064295f",
+    "scripts/github_file_sync.py": "d69fd2c079e484570b9965c5054c5c156647a0ee516d0812e0f9661462f8390e"
+  },
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "teacher_source_run": "DEEPSEEK-SFTDATA-20260917-001",
+  "teacher_execution_commit": "2ca291cde64b5c96baec2c9ebeb91e853665ae0a",
+  "seed": 42,
+  "CPU_only": true
+}

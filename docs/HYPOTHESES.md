@@ -85,3 +85,8 @@ Actual collection has started; interim reward counts do not establish semantic q
 ## 2026-09-17 completed723 acquisition
 
 Fullpool bounded-cost acquisition hypothesis supported:723completedin50m28.69s,664officialsuccesses,API2.12RMB. Semanticdatayield/studentimprovement/compositiongeneralization untested. Emptyreference80/83reward1 requires separate interpretation;mechanicalclean629 maystill contain scope/pagination/math errors.
+
+
+## 2026-09-17 pre-SFT readiness
+
+SFT-readiness hypothesis supported by137whole approvals and20CPUadmissionchecks; 3paired-statistics fixturechecks validate reporting only. MainS2>S1behaviorhypothesis remainsuntested. Bothgroups50tasks/155turns; feature score258vs339; processedtokens -0.67percent,targettokens+1.99percent. Must discloseapproximatebudget anddevelopment-only scope; no capability/causal/generalization claim from selectionscore.

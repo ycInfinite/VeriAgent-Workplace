@@ -1,0 +1,188 @@
+{
+  "1076": [
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-11-16\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"direct\"}"
+      },
+      "n": 15,
+      "sum": 82,
+      "mean": 5.466666666666667,
+      "per_month": {
+        "2023-11": 82
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-11-16\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"referral\"}"
+      },
+      "n": 15,
+      "sum": 14,
+      "mean": 0.9333333333333333,
+      "per_month": {
+        "2023-11": 14
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-11-16\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"search engine\"}"
+      },
+      "n": 15,
+      "sum": 16,
+      "mean": 1.0666666666666667,
+      "per_month": {
+        "2023-11": 16
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-11-16\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"social media\"}"
+      },
+      "n": 15,
+      "sum": 30,
+      "mean": 2.0,
+      "per_month": {
+        "2023-11": 30
+      }
+    }
+  ],
+  "802": [
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-12\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"direct\"}"
+      },
+      "n": 50,
+      "sum": 289,
+      "mean": 5.78,
+      "per_month": {
+        "2023-10": 107,
+        "2023-11": 182
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-12\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"referral\"}"
+      },
+      "n": 50,
+      "sum": 55,
+      "mean": 1.1,
+      "per_month": {
+        "2023-10": 24,
+        "2023-11": 31
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-12\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"search engine\"}"
+      },
+      "n": 50,
+      "sum": 59,
+      "mean": 1.18,
+      "per_month": {
+        "2023-10": 28,
+        "2023-11": 31
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-12\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"social media\"}"
+      },
+      "n": 50,
+      "sum": 144,
+      "mean": 2.88,
+      "per_month": {
+        "2023-10": 75,
+        "2023-11": 69
+      }
+    }
+  ],
+  "83": [
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-21\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"direct\"}"
+      },
+      "n": 41,
+      "sum": 246,
+      "mean": 6.0,
+      "per_month": {
+        "2023-10": 64,
+        "2023-11": 182
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-21\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"referral\"}"
+      },
+      "n": 41,
+      "sum": 46,
+      "mean": 1.1219512195121952,
+      "per_month": {
+        "2023-10": 15,
+        "2023-11": 31
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-21\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"search engine\"}"
+      },
+      "n": 41,
+      "sum": 48,
+      "mean": 1.170731707317073,
+      "per_month": {
+        "2023-10": 17,
+        "2023-11": 31
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_traffic_source_count",
+        "arguments": "{\"time_min\": \"2023-10-21\", \"time_max\": \"2023-11-30\", \"traffic_source\": \"social media\"}"
+      },
+      "n": 41,
+      "sum": 109,
+      "mean": 2.658536585365854,
+      "per_month": {
+        "2023-10": 40,
+        "2023-11": 69
+      }
+    }
+  ],
+  "764": [
+    {
+      "call": {
+        "name": "analytics_get_average_session_duration",
+        "arguments": "{\"time_min\": \"2023-09-16\", \"time_max\": \"2023-09-16\"}"
+      },
+      "n": 1,
+      "sum": 31.7,
+      "mean": 31.7,
+      "per_month": {
+        "2023-09": 31.7
+      }
+    },
+    {
+      "call": {
+        "name": "analytics_get_average_session_duration",
+        "arguments": "{\"time_min\": \"2023-09-17\", \"time_max\": \"2023-11-30\"}"
+      },
+      "n": 75,
+      "sum": 1449.8386138715086,
+      "mean": 19.331181518286783,
+      "per_month": {
+        "2023-09": 280.7595238095238,
+        "2023-10": 567.8751998001998,
+        "2023-11": 601.203890261785
+      }
+    }
+  ]
+}

@@ -92,3 +92,8 @@ User said开始; verified the original worker instead of launching another. Same
 ## 2026-09-17 completed723 acquisition
 
 Completed exactly723 once. Keep all59 official failures and all raw successes. Mechanical629 are NOT approvedSFT;94 flagged needreview. Noautomaticresampling/training. Savedexactarchiveplusmemberhashes,insteadofduplicating81MB expandedJSONL inGit. CPUoffandbothmonitorspaused;timerremoved.
+
+
+## 2026-09-17 pre-SFT readiness
+
+FirstboundedSFTcomparison uses fixed150manualreview candidates(30/domain),137 approved. S1/S2each50wholetrajectories/155turns,2epochs310updates;whole-target policy unchanged. Domain-stratifiedrandom versus frozenfailurecoverage heuristic;MILP onlymatchesdata/stepbudget,no modeloutcometuning.13holds include6pagination,3math,1dateboundary,1crossdomainID,1out-of-rangepage,1unexecutedverificationplan. Unreviewedremainingdata held,notdeclaredwrong. NoGPUexecutionorremotedepoyment; nextstartrequires userdirection.

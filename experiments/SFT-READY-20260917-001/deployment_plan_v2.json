@@ -1,0 +1,66 @@
+{
+  "status": "READY_FOR_EXISTING_HOST_CPU_DEPLOYMENT",
+  "expected_total_files": 54,
+  "new_files": 14,
+  "files": [
+    {
+      "path": "configs/sft_comparison_plan.json",
+      "bytes": 9104
+    },
+    {
+      "path": "veriagent/sft_stage.py",
+      "bytes": 6158
+    },
+    {
+      "path": "scripts/run_sft_comparison.py",
+      "bytes": 11664
+    },
+    {
+      "path": "scripts/evaluate_sft_comparison.py",
+      "bytes": 7934
+    },
+    {
+      "path": "scripts/validate_sft_stage_host.py",
+      "bytes": 4069
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/review_manifest.json",
+      "bytes": 81222
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/semantic_judgments.json",
+      "bytes": 38959
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/quality_approvals.json",
+      "bytes": 464468
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/corpus_manifest.json",
+      "bytes": 116956
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/selection.json",
+      "bytes": 90793
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/selection_policy.json",
+      "bytes": 1265
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/s1_examples.jsonl.gz",
+      "bytes": 628987
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/s2_examples.jsonl.gz",
+      "bytes": 628764
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/eval_dev24.jsonl.gz",
+      "bytes": 7863
+    }
+  ],
+  "host_preflight_script": "scripts/validate_sft_stage_host.py",
+  "GPU_execution": false,
+  "reason": "Complete user-requested preparation on actual existing no-card runtime before any GPU start"
+}

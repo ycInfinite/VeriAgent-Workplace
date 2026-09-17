@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "producer": "SYNTHETIC_CPU_NO_MODEL",
+  "checks": [
+    "known_paired_cluster_fixture_exact_differences_and_intervals",
+    "mismatched_eval_gpu",
+    "mismatched_training_code"
+  ],
+  "model_evaluation": false,
+  "parameter_updates": 0,
+  "gpu_hours": 0
+}

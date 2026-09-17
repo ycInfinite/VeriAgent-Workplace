@@ -1,0 +1,35 @@
+{
+  "status": "REVIEW_AND_EXPORT_READY_TRAINING_NOT_RUN",
+  "whole_reviewed": 150,
+  "approved": 137,
+  "held_all723": 586,
+  "approved_by_domain": {
+    "workplace_assistant_analytics": 27,
+    "workplace_assistant_calendar": 28,
+    "workplace_assistant_customer_relationship_manager": 30,
+    "workplace_assistant_project_management": 29,
+    "workplace_assistant_email": 23
+  },
+  "S1": {
+    "turns": 155,
+    "processed_tokens": 712720,
+    "supervised_tokens": 14273,
+    "target_score": 258
+  },
+  "S2": {
+    "turns": 155,
+    "processed_tokens": 707957,
+    "supervised_tokens": 14557,
+    "target_score": 339
+  },
+  "overlap": 16,
+  "relative_token_differences": {
+    "processed_tokens": -0.006682848804579639,
+    "supervised_tokens": 0.019897708960975268
+  },
+  "max_sequence": 7208,
+  "parameter_updates": 0,
+  "gpu_hours": 0,
+  "api_requests": 0,
+  "created_at": "2026-09-17T05:36:28.276105+00:00"
+}

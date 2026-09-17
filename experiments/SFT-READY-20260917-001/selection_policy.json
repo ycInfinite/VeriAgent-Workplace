@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_BEFORE_SELECTION_SOLVE",
+  "random_seed": 42,
+  "tasks_per_domain": 10,
+  "S1": "Uniform without-replacement draw per domain from the137 whole-approved first-stage pool; no resampling",
+  "S2": "Maximize fixed failure-coverage heuristic with binary whole-task selection and equal domain quotas",
+  "weights": {
+    "directory_grounding": 4,
+    "entity_lookup_before_action": 2,
+    "multiple_target_entities": 3,
+    "composed_scope_predicate": 2,
+    "temporal_scope": 2
+  },
+  "basis": "Day3 reviewedB0/B1 evidence: missing/incorrect identifiers,email slots,target/filter/temporal constraints and premature completion. Heuristic weights,not statistically estimated causal effects.",
+  "base_failure_source": "reports/day3-reviewed-v2/metrics.json",
+  "base_failure_sha256": "fabd38d999f062342504a0c061175bc4bc4020ac77155b5e7dfe03ba1b788ef6",
+  "equal_turns_required": true,
+  "processed_and_supervised_token_relative_tolerance": 0.02,
+  "max_overlap_tasks": 35,
+  "max_solver_seconds": 30,
+  "training_result_or_eval_used_for_selection": false,
+  "scipy_version": "1.18.0",
+  "S1_reference_totals": {
+    "turns": 155,
+    "processed_tokens": 712720,
+    "supervised_tokens": 14273,
+    "target_score": 258
+  }
+}

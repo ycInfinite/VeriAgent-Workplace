@@ -44,3 +44,8 @@ CPU 发现的 noop blindness、未评分的自然语言、plot-path simulation �
 ## 2026-09-17 completed723 acquisition
 
 Full723 acquisition preliminary diagnostics (not finalized semantictaxonomy):27 schemaargumenterrorcalls on26trajectories;unknownnames0;2samestate-repeatcalls;0three-callloops;0unobservedIDcandidates/1181(notproofnoIDerrors). Terminations702assistantfinal/15contextlimit/3roundlimit/1generationincomplete/2encodingrejected. Example751 is conditional interpretation candidate:comparesperiodaverageinstead of checkingdailythreshold,doesnotplot,reward0. Must review usersemantics/observations before finalfailurelabels.
+
+
+## 2026-09-17 pre-SFT readiness
+
+Wholeteacherreview150 finds13held despite mechanical success:263cross-domain taskID usedwithcalendartool;1160/1204/615/1100/415/1123latest-emailpaginationunproven;1045dateboundaryunresolved;1079unnecessaryout-of-rangepage;1124announcedbroaderverificationnotperformed;802/83/764faultynumericalaggregation. These teacherqualitylabels do notalterofficialreward or becomeBasefailurecounts; S2targetbasis remainspriorDay3failureevidence.

@@ -1,0 +1,50 @@
+{
+  "status": "CPU_READINESS_CHECKS_PASSED",
+  "checked_at": "2026-09-17T05:50:06.963436+00:00",
+  "checks": [
+    "S1_whole_raw_to_template_ids_labels_reconstruction",
+    "S2_whole_raw_to_template_ids_labels_reconstruction",
+    "changed_provider",
+    "changed_model",
+    "missing_whole_turn",
+    "changed_tool_observation",
+    "changed_raw_assistant",
+    "changed_wire_request_hash",
+    "wrong_pool",
+    "missing_semantic_approval",
+    "stale_approval_hash",
+    "mechanical_screen_is_not_semantic_approval",
+    "sealed_pool_metadata_refused",
+    "context_label_unmasked",
+    "selectively_removed_assistant_target",
+    "unregistered_attention_mask",
+    "fixed_dev24_disjoint_and_identical_protocol",
+    "global_split_membership_no_dev_validation_final_bfcl_training",
+    "analytic_shifted_CE_masks_context_but_includes_first_assistant_target",
+    "legacy_Bailian_two_whole_trajectory_export_unchanged_8turns582targets"
+  ],
+  "check_count": 20,
+  "arms": {
+    "S1": {
+      "tasks": 50,
+      "examples": 155,
+      "steps": 310,
+      "full_schedule_processed_tokens": 1425440,
+      "full_schedule_supervised_tokens": 28546
+    },
+    "S2": {
+      "tasks": 50,
+      "examples": 155,
+      "steps": 310,
+      "full_schedule_processed_tokens": 1415914,
+      "full_schedule_supervised_tokens": 29114
+    }
+  },
+  "model_loaded": false,
+  "model_requests": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0,
+  "real_CE_gradient_update_reload": "Not rerun; prior8-update probe evidence retained. New310-step runner runtime checks require future authorized GPU run.",
+  "semantic_review": "Codex only;150 reviewed,137 approved,13 held; no independent human review",
+  "audit_script_sha256": "26668a573aeecdce57728353becd8e081a76551e474f0fb97cf8dfb09064295f"
+}

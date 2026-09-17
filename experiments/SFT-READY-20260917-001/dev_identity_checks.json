@@ -1,0 +1,128 @@
+{
+  "status": "PASSED",
+  "actual_prior_B1_source_sha256": "aa4f14a57faad9810ee3253c4857b0bcfd2ed4cbe674f9f9fa0937b934505c51",
+  "checked_initial_prompt_tool_identities": 24,
+  "tasks": [
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:205",
+      "initial_prompt_sha256": "93b079f6c6268169f73c08d03432e4779b41cc7e81ececdb5c2ab1de0a8e8dfc",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:510",
+      "initial_prompt_sha256": "011eea691226114b6eac61f030d9d2f01b3068572eebf91f1fd3ff58cace4447",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:184",
+      "initial_prompt_sha256": "86633244ea59504894dafd278ca312e9edb70203caf0dd117dc22949e93e8c68",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:356",
+      "initial_prompt_sha256": "a13aa0c8e1985381d0ec31510c5f8078883fe91606edb8583d94d19ddb44cc01",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:414",
+      "initial_prompt_sha256": "bfd8e896c1b02b045b7a3911e9ee950e287211bc17c3d174d3e33b4de910ce45",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:669",
+      "initial_prompt_sha256": "8bab2ff339b36359da02fef9d9a56c9c65d326d7784b44aaea13a3e00f10805e",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1",
+      "initial_prompt_sha256": "b2df6c5ca2a8f0bf9a99762e03c420761445be1bf4b8c956cbfed5faafb5ebce",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:684",
+      "initial_prompt_sha256": "e37a9509eaf6af1f1a121ca2fae46a018309b6b7333cccc12bfdbc40e0b99559",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:0",
+      "initial_prompt_sha256": "cb10546b9069fd96a7673281f4fea46016a004131657ede73c6aaccef6103691",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:314",
+      "initial_prompt_sha256": "24d374759bad0430dbdb70721b63bcdff1158af20fd910213c00a12b349a36d8",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:363",
+      "initial_prompt_sha256": "352e20923abd313e1b8223b5fdf24b2123a6ccb96bc26eb75bbbeee08022ad6f",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1219",
+      "initial_prompt_sha256": "b3de8508385068599af4160985181a2dd996af95b9a02bbe5acc3edf097acc63",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:220",
+      "initial_prompt_sha256": "e7ada9fe82a21f70be0675e4f1cb7450a717a8c657b8fc1de92a44ed28f919d2",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1112",
+      "initial_prompt_sha256": "6e73a97993a340d34d0baf210b5f4bb38285e85474f8714bd93379e3d88b84fb",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:918",
+      "initial_prompt_sha256": "9f38ba19749515aca77fa8bfbc9e7878c3d4365175f70c48c562bae73a53be28",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:561",
+      "initial_prompt_sha256": "5bbd3cd2c63ab95c5ec39217dcf69eece61096a5a3a72fcf1acafa8698ead621",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:18",
+      "initial_prompt_sha256": "14da6b21e5baac7abb39aeae1064d298fa6d6abfda72f8f3f4d82161c52cf43a",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1063",
+      "initial_prompt_sha256": "24e381a664783dfd250035ab736b7216c3217ed01d8e6415a50d474521abc1d8",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:156",
+      "initial_prompt_sha256": "59ecdc2530189b5514359f96d173065dc951c8734615c0d742eb85841136b429",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:952",
+      "initial_prompt_sha256": "7815cd42f3e38de69b5bdb30fbd0fca78a8a9cdb7ee722adafcbc5e4c46cecd9",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:122",
+      "initial_prompt_sha256": "577e1f2319285494e78f18f16ed0135b410196395055a7ee12903b5c4a8e082f",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:709",
+      "initial_prompt_sha256": "23531ac81dc7432654178b315c51a41cca04b88dc48d3776df917c9990aeb5de",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:12",
+      "initial_prompt_sha256": "aea10f429a2c7742b602bf80676632c56b26943b8cede926b232c8c9ccf6f816",
+      "matches_actual_Day3_B1": true
+    },
+    {
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:385",
+      "initial_prompt_sha256": "4b98a31d81218b230ab9bd73b8603a975c28b2555111dab0d2c7f1d3e58c8e99",
+      "matches_actual_Day3_B1": true
+    }
+  ],
+  "new_rollouts": 0
+}

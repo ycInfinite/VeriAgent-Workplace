@@ -108,3 +108,8 @@ Running snapshot: 266 requests,1233564 input/30873 output,known API tariff estim
 ## 2026-09-17 completed723 acquisition
 
 Final新增723:2443calls,input11374350/output283925,cachehit10601856/miss772494,knownmodelestimate2.12023112RMB,unknownusage0. CPUwaiting+deployment+collection+retrievalapprox0.28,totalapprox2.40excludingstorage/notinvoice. Acquisition3028.688734s,modelcostperofficialsuccess0.00319312RMB;qualityapproved-costnull. GPU0/updates0. Earlier20qualificationcostseparate. OfflineUTF8auditfailurepreserved,noAPIorGPUcost.
+
+
+## 2026-09-17 pre-SFT readiness
+
+SFT-READY CPU-only actual newAPI0/GPUhours0/parameterupdates0/noinstancestart. FutureS1=1,425,440processed/28,546supervisedtokens,S2=1,415,914/29,114,310updates each. Longestsequence7208 vs priorprobe4741; newpeakVRAM/step time unknown. Planning2train+3devconditions roughly0.75-1.5GPUh,notmeasured. Hardlimits60min/trainarm,30min/evalcondition; actualhourlyprice optionalandunknowncostnull. No automatic launch,sweep,contextgrowthorbudgetchange.

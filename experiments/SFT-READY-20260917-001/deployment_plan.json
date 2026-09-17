@@ -1,0 +1,78 @@
+{
+  "status": "LOCAL_WHITELIST_PREPARED_NOT_DEPLOYED",
+  "existing_base_deployment_files": 40,
+  "new_files": 13,
+  "expected_total": 53,
+  "files": [
+    {
+      "path": "configs/sft_comparison_plan.json",
+      "bytes": 9104,
+      "sha256_local_before_git_EOL_normalization": "7ff5120062725bd4ad05cc9a473c02e64f41d03fcba35402b2576a74e78c90b0"
+    },
+    {
+      "path": "veriagent/sft_stage.py",
+      "bytes": 6158,
+      "sha256_local_before_git_EOL_normalization": "e1ed590888e55d0d639cf0966d515b3290b5ab8e25a3ac4bcdb795d723569fc9"
+    },
+    {
+      "path": "scripts/run_sft_comparison.py",
+      "bytes": 11515,
+      "sha256_local_before_git_EOL_normalization": "16da3e6b9aa288a11ea0eb7bd5f9f69c0b5902c39e27c3f45ea3ff1b1c7adb1f"
+    },
+    {
+      "path": "scripts/evaluate_sft_comparison.py",
+      "bytes": 7934,
+      "sha256_local_before_git_EOL_normalization": "95cd37a5c2f0800818fa39223ef2d0a3df282b764ca4cc9e3479170cee7deda9"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/review_manifest.json",
+      "bytes": 81222,
+      "sha256_local_before_git_EOL_normalization": "748b684f4e7ba68b4334630287740a9e20bce5e7fb63aa5423b2d6bc3143d401"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/semantic_judgments.json",
+      "bytes": 38959,
+      "sha256_local_before_git_EOL_normalization": "b3999176074e8450e772724dd5e9200f3548c044f0078b57b69ee2112d02d298"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/quality_approvals.json",
+      "bytes": 464468,
+      "sha256_local_before_git_EOL_normalization": "ddfb2657e0fd48d23353acc6eeaafa065e3fcac1ad75ea23af31e1012a54fe01"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/corpus_manifest.json",
+      "bytes": 116956,
+      "sha256_local_before_git_EOL_normalization": "5011565da71cec833232c515a2c703a160121781e8b0c6da4ce378d0c3904714"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/selection.json",
+      "bytes": 90793,
+      "sha256_local_before_git_EOL_normalization": "c5e698a78609e2637a23f1e5d0f60b7df0091c29acc6c556c2894c87af0ae78d"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/selection_policy.json",
+      "bytes": 1265,
+      "sha256_local_before_git_EOL_normalization": "5b45328371ba2c5cf3df1d57e87585f23090a973092d611f06d8e001b34663cc"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/s1_examples.jsonl.gz",
+      "bytes": 628987,
+      "sha256_local_before_git_EOL_normalization": "14686dda75f25b3677865613f4f8bf81f40a439e847a70f844b73555ff04607f"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/s2_examples.jsonl.gz",
+      "bytes": 628764,
+      "sha256_local_before_git_EOL_normalization": "2be928ba8edd2ad33540f22560c4b4f05c4d0c70e355d0fa6960872dbd02d4d4"
+    },
+    {
+      "path": "experiments/SFT-READY-20260917-001/eval_dev24.jsonl.gz",
+      "bytes": 7863,
+      "sha256_local_before_git_EOL_normalization": "01ccef315418a7653e23f48c642f7fa97f748d19911f5897786dcc9b70f085c2"
+    }
+  ],
+  "transport": "GitHub pinned commit only; existing helper obtains commit blob hashes at actual deployment",
+  "requires_existing_remote_source_run": "DEEPSEEK-SFTDATA-20260917-001 original trajectory file hash matches config",
+  "dev_payload_purpose": "evaluation only; training loader rejects development pool",
+  "startup_performed": false,
+  "credentials_required_now": false
+}

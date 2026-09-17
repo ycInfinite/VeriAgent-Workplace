@@ -1,0 +1,35 @@
+{
+  "experiment_id": "SFT-READY-20260917-001",
+  "kind": "CPU_SFT_READINESS_NO_MODEL_UPDATES",
+  "Research Question": "Can a bounded,fully-reviewed multi-domain teacher corpus be exported with intact policy-only labels and frozen S1/S2 token-matched selections?",
+  "Hypothesis": "Conservative whole-trajectory review plus strict provenance/encoding can make an executable first SFT comparison without another rollout.",
+  "Independent Variable": "Planned random versus failure-targeted whole-trajectory selection; no training in this preparation run.",
+  "Controlled Variables": [
+    "new723 source only",
+    "30 candidates/domain reviewed in frozen hash order",
+    "nonempty references; all no-op cases held",
+    "unchanged student/tokenizer/B1",
+    "complete assistant trajectories; no selective targets",
+    "no model API/GPU/updates"
+  ],
+  "Metrics": [
+    "semantic decisions and rationale",
+    "source hashes and split exclusions",
+    "context/mask/turn continuity",
+    "selection processed/target tokens and turn counts",
+    "runtime preflight checks"
+  ],
+  "Evidence Gate": "Only reviewed whole trajectories admitted; no truncation,oracle context or unreviewed admission. Prepared runner/data/config and CPU negative controls pass. Real SFT metrics remain from prior probe only.",
+  "Cost Bound": "Local CPU only; no API,no machine startup,no GPU,no parameter updates. Future single-GPU plans separately frozen,not executed.",
+  "Failure Branch": "Hold ambiguous,partially acceptable or insufficiently evidenced whole trajectories; do not broaden reviews adaptively to make an experiment pass. If domain/token-matching readiness cannot be met,report genuine blocker.",
+  "review_selection": "All629 mechanically unflagged triaged;83 empty refs held from training until dedicated semantic protocol.575 nonempty candidates; choose30/domain by SHA256(20260917-semantic:task_id),150 total,independent of later semantic decisions. Remaining unreviewed held; no claim all629 read semantically.",
+  "candidate_count": 150,
+  "planned_tasks_per_arm_per_domain": 10,
+  "planned_arms": [
+    "S1",
+    "S2"
+  ],
+  "seed": 42,
+  "reviewer": "Codex",
+  "independent_human_review": false
+}
