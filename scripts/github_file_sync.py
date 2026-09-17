@@ -91,7 +91,8 @@ try:
             else:
                 for attempt in range(3):
                     try:
-                        with urllib.request.urlopen(entry['download_url'],timeout=45) as response:
+                        request=urllib.request.Request(entry['download_url'],headers={'Cache-Control':'no-cache'})
+                        with urllib.request.urlopen(request,timeout=45) as response:
                             data=response.read(2000001)
                         break
                     except urllib.error.HTTPError as exc:
@@ -168,6 +169,9 @@ def main():
     if args.include_interactive or args.include_deepseek:additions=additions+INTERACTIVE_FILES
     if args.include_deepseek:additions=additions+DEEPSEEK_FILES
     paths=sorted(set(paths)|set(additions))
+    # Ask before requesting signed download URLs: waiting at the password prompt
+    # after metadata fetch can let short-lived private-repo links expire.
+    password=getpass.getpass('SSH password (not logged): ')
     # Capture existing Git authentication inside this process; never print it.
     credential=subprocess.run(['git','-c','credential.interactive=never','credential','fill'],cwd=ROOT,
         input='protocol=https\nhost=github.com\npath='+REPOSITORY+'.git\n\n',text=True,capture_output=True,timeout=30)
@@ -178,7 +182,8 @@ def main():
     def file_metadata(path):
         api='https://api.github.com/repos/'+REPOSITORY+'/contents/'+urllib.parse.quote(path,safe='/')+'?ref='+commit
         request=urllib.request.Request(api,headers={'Authorization':'Bearer '+token,
-            'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'VeriAgent-pinned-file-sync'})
+            'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',
+            'Cache-Control':'no-cache','User-Agent':'VeriAgent-pinned-file-sync'})
         # Retry only read-only GitHub metadata transport, never a model request.
         for attempt in range(3):
             try:
@@ -199,7 +204,6 @@ def main():
     with ThreadPoolExecutor(max_workers=4) as pool:files=list(pool.map(file_metadata,paths))
     token=None;fields.clear();credential=None
     client=paramiko.SSHClient();client.set_missing_host_key_policy(PinnedKey(args.pin))
-    password=getpass.getpass('SSH password (not logged): ')
     client.connect(args.host,port=args.port,username='root',password=password,
         look_for_keys=False,allow_agent=False,timeout=20,auth_timeout=20,banner_timeout=20)
     password=None

@@ -1,0 +1,6 @@
+{"event": "github_download_failed", "commit": "1ded6b7", "http_status": 404, "file": "configs/deepseek_acquisition_plan.json", "model_requests": 0}
+{"event": "github_download_failed", "attempt": 2, "commit": "1ded6b7", "http_status": 404, "file": "configs/deepseek_acquisition_plan.json", "model_requests": 0}
+{"event": "github_download_failed", "attempt": 3, "commit": "1ded6b7", "http_status": 404, "file": "scripts/serve_workplace_interactive.py", "model_requests": 0}
+{"event": "github_download_failed", "attempt": 4, "commit": "1ded6b7", "http_status": 404, "file": "veriagent/deepseek_teacher.py", "model_requests": 0}
+{"event": "github_sync_completed", "commit": "1ded6b7d2b1cd510dd9adf77ea8076e1e16bac83", "files": 35}
+{"event": "closure", "all_three_instances_off": true, "backup_timer_cancelled": true, "ssh_sessions_closed": true, "new_gpu_hours": 0}

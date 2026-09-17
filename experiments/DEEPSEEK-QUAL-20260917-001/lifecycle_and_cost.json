@@ -1,0 +1,17 @@
+{
+  "instance": "kl7wef5luq-6927b33c",
+  "mode": "CPU_NO_CARD",
+  "cpu_rate_rmb_hour": 0.1,
+  "start_ui_at": "2026-09-17T00:48:13.970000+00:00",
+  "shutdown_requested_ui_at": "2026-09-17T01:25:51.157000+00:00",
+  "shutdown_confirmed": true,
+  "all_three_instances_observed_off": true,
+  "cpu_session_estimated_rmb": 0.0626996388888889,
+  "model_estimated_rmb": 0.11631784,
+  "combined_estimated_rmb": 0.17901747888888891,
+  "invoice_verified": false,
+  "storage_excluded": true,
+  "gpu_hours": 0,
+  "note": "UI timestamps bracket billing approximately; model tariff based on response time. Preparation/transfer wait included in CPU uptime.",
+  "backup_shutdown_timer_cancelled_after_poweroff": true
+}

@@ -1,5 +1,7 @@
 # Failure taxonomy：Day 3 已有真实轨迹
 
+2026-09-17 DeepSeek training20（资格测试，非sealed评测）：331完整学生序列超限；1183无依据的未来截止范围；980/518分页覆盖不足但官方状态成功；1175到期日边界解释造成遗漏。保留原始reward，0基础设施无效模型轨迹。schema错误0/60不代表语义任务完整，质量通过15/20。
+
 2026-09-16 training采集补充：20条均为有效模型交互。450错误枚举后恢复、707虚构ID后恢复、1183状态正确但未来范围论证不足，均未批准整条监督；1183是过程质量暂缓，不改官方成功标签。仅Codex审核，未独立人工裁决。详见SFT_ACQUISITION_REPORT_20260916.md。
 
 以下定义最初来自 CPU 阶段；Day 3 已用 48 条 B0 和 24 条 B1 实际轨迹作逐条复核。当前计数见 reports/day3-reviewed-v2/metrics.json 和 annotations.json，reviewer=Codex，尚未独立人工复核。它们描述本 cohort 和本 harness，不是模型的一般能力结论。

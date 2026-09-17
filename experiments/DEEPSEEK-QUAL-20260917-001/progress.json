@@ -1,0 +1,22 @@
+{
+  "attempted_rollouts": 20,
+  "valid_rollouts": 20,
+  "infra_invalid_rollouts": 0,
+  "verified_successes": 19,
+  "success_rate": 0.95,
+  "tool_calls": 60,
+  "executable_tool_calls": 60,
+  "api_attempts": 65,
+  "captured_responses": 65,
+  "requests_with_unknown_usage_or_cost": 0,
+  "known_usage_estimated_rmb": 0.11631784,
+  "total_model_cost_estimate_rmb": 0.11631784,
+  "provider_input_tokens": 300129,
+  "provider_output_tokens": 7151,
+  "cache_hit_tokens": 276096,
+  "cache_miss_tokens": 24033,
+  "cost_caveat": "Official tariff at local response time; not invoice; CPU/storage excluded",
+  "training_approved_trajectories": 0,
+  "parameter_updates": 0,
+  "gpu_hours": 0
+}
