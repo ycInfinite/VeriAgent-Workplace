@@ -93,3 +93,8 @@ AutoDL 补充（2026-09-04）：实际 1×4090 24GB、并发 1 已完成测试�
 ## 2026-09-17 remaining-pool window preparation
 
 Noon723 API extrapolation from20: cache-matched2.102445RMB; no-cache11.883698RMB; runtime3184.10s. These are estimates,not caps or invoices. CPU/no-card0.10RMB/h including waiting/preflight; no GPU. At14:00 preserve partial/unknown usage. User current budget waiver retained.
+
+
+### Actual queue verified 2026-09-17
+
+Actual model/API usage at10:30:55 =0; CPU-only instance awaitingstart,0.10RMB/h. Startupapproximately10:14,shutdownlatest14:00 givesrough0.38RMB CPUwindow excludingstorage; actual end/costpending. GitHub transfersfailed once404 butrecovered; includeCPUwaitinginfinalcost.

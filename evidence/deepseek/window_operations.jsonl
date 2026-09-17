@@ -1,0 +1,6 @@
+{"recorded_at": "2026-09-17T02:28:05.658966+00:00", "event": "github_push_tls_failure", "resolved_by": "exact_same_push_retry_after_authorization_recheck"}
+{"recorded_at": "2026-09-17T02:28:05.659013+00:00", "event": "auto_review_rejected_1410_shutdown", "resolution": "safer14:00 accepted and UI verified"}
+{"recorded_at": "2026-09-17T02:28:05.659028+00:00", "event": "auto_review_rejected_push_using_old_cancelled20_scope", "resolution": "latest explicit all723/noon authorization rechecked;2ca291c published"}
+{"recorded_at": "2026-09-17T02:28:05.659037+00:00", "event": "auto_review_rejected_daily_heartbeat", "resolution": "finite_until_today14:00 supported after authorization recheck"}
+{"recorded_at": "2026-09-17T02:28:05.659045+00:00", "event": "bounded_daily_schedule_no_future_occurrence", "resolution": "finite MINUTELY schedule accepted; automation veriagent-9-17"}
+{"recorded_at": "2026-09-17T02:28:05.659052+00:00", "event": "github_sync_attempt1_failed", "commit": "2ca291c", "http_status": 404, "failed_path": "experiments/DEEPSEEK-POOL-PREP-20260917-001/tasks.jsonl", "model_requests": 0}

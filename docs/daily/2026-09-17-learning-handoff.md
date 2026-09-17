@@ -46,3 +46,8 @@
 ## 2026-09-17 remaining-pool window preparation
 
 Added noon acquisition preparation: full project training743 minus original20 =723 new tasks,83 with empty references. CPU schema roundtrip and initial student tokenizer coverage723/723,max4215. No new model data yet. Study scripts/prepare_remaining_teacher_pool.py::main (split→frozen training-only cohort),scripts/collect_deepseek_window.py::preflight (hashes/cohort→eligibility),run_worker (key in memory+clock→raw trajectories),teacher_trajectory (task→real tools/state/verifier). Question: why can empty-reference reward1 be insufficient? Why exclude prior20 without deleting their failures? Why does8192 student limit matter for an API teacher? Why record inflight unknown costs? Why is scheduling collection not permission for SFT?
+
+
+### Actual queue verified 2026-09-17
+
+Latest handoff at10:31: actual723worker nowARMED at2ca291c,notacquired. ExperimentDEEPSEEK-SFTDATA-20260917-001; configconfigs/deepseek_window_acquisition.json; queueevidence/deepseek/window_schedule_receipt.json. Timer12:00start/14:00stop. Zero new modelcalls atverification. No new representative trajectories yet; use earlier20 qualificationexamples untilthisrunfinishes. Next fork afterresults is full semantic/encoding quality review and training protocol design,notautomaticSFT. Window includes83empty-reference cases,which may reward1 without establishing requested semantic completion.
