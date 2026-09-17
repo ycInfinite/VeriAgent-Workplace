@@ -1,5 +1,7 @@
 # Decisions
 
+2026-09-17 用户改回普通API并提出DeepSeek Flash候选；停止继续投入Token Plan客户端路线。先按官方API核价并建议固定20题资格测试，不把低单价等同高质量、不自动调用API。旧Token-Plan-only偏好被覆盖，历史数据和已完成SFT不变。详见 DEEPSEEK_FLASH_ASSESSMENT_20260917.md。
+
 2026-09-16 首条官方客户端交互成功，但不扩大采样或直接入SFT。保留reward1，同时标记8K/non-thinking配置未生效和日志口径差异；事后审核不冒充B1预登记。修复--bare配置加载、关闭建议请求、紧凑化完整JSON，仅做离线/CPU验证。已有15条合格API示范不受影响。
 
 2026-09-16 交互接入完成交接：采用官方客户端真实交互入口，部署318e233，现有904仅无卡运行。Codex侧栏没有实际显示受控SSH终端，改在Edge的JupyterLab打开Qwen界面并核验workplace connected；由用户亲自发起任务，不自动发送模型提示。17:15定时关机已由AutoDL确认。没有任何新模型成绩/SFT批准，也不将此路线包装成自动采集。详见 INTERACTIVE_CLIENT_READY_20260916.md。

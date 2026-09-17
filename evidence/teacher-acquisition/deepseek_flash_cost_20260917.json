@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-17",
+  "kind": "PRICING_AND_ROUTE_ADVICE_NOT_EXPERIMENT",
+  "provider_assumption": "DeepSeek official public metered API; not Bailian/third-party reselling",
+  "model_id": "deepseek-flash",
+  "documented_current_version": "DeepSeek-V4.1-Flash",
+  "fixed_weight_revision_available": false,
+  "prices_rmb_per_million": {
+    "off_peak": {
+      "input_cache_miss": 1,
+      "input_cache_hit": 0.02,
+      "output": 4
+    },
+    "peak": {
+      "input_cache_miss": 2,
+      "input_cache_hit": 0.04,
+      "output": 8
+    }
+  },
+  "peak_hours": "Asia/Shanghai Monday-Friday 09:00-12:00 and14:00-18:00; all other times off-peak",
+  "source_run": "TEACHER-ACQUIRE-20260916-001",
+  "historical_usage": {
+    "input": 387839,
+    "output": 9023,
+    "cache": 346624,
+    "attempts": 20,
+    "approved": 15
+  },
+  "estimated_rmb_20_attempts_no_cache": {
+    "off_peak": 0.423931,
+    "peak": 0.847862
+  },
+  "illustrative_rmb_20_attempts_same_cached_tokens": {
+    "off_peak": 0.08423948,
+    "peak": 0.16847896
+  },
+  "projected_rmb_per_approved_no_cache": {
+    "off_peak": 0.028262066666666665,
+    "peak": 0.05652413333333333
+  },
+  "projected_rmb_300_approved_no_cache": {
+    "off_peak": 8.47862,
+    "peak": 16.95724
+  },
+  "projected_rmb_1000_approved_no_cache": {
+    "off_peak": 28.262066666666666,
+    "peak": 56.52413333333333
+  },
+  "assumptions": [
+    "Same cumulative token volume across model requests as the old Qwen cohort, not just final trajectory length",
+    "Same75percent full-quality yield only for the approved-data projections; DeepSeek quality not measured",
+    "Actual tokenization,trajectory lengths,cache hits,time of billing and failures may differ",
+    "Excluded CPU host/storage/review effort; no actual DeepSeek bill"
+  ],
+  "guidance": {
+    "qualification": "Use the same fixed20 training tasks/B1 and existing limits for one separately preregistered teacher qualification; no new task sampling or performance-based replacement",
+    "thinking": "Explicitly disabled via thinking.type=disabled; verify actual response fields",
+    "cost_measure": "All collection spend divided by whole-trajectory quality approvals, not just official rewards",
+    "student": "Qwen3-8B and existing training pipeline unchanged"
+  },
+  "sources": [
+    "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "https://api-docs.deepseek.com/zh-cn/updates/",
+    "https://api-docs.deepseek.com/zh-cn/guides/thinking_mode/",
+    "https://api-docs.deepseek.com/zh-cn/guides/tool_calls/",
+    "https://api-docs.deepseek.com/zh-cn/guides/kv_cache/"
+  ],
+  "new_model_calls": 0,
+  "new_gpu_hours": 0
+}
