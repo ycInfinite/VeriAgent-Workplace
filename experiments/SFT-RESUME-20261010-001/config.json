@@ -1,0 +1,98 @@
+{
+  "Research Question": "At approximately equal processed and supervised tokens,does selecting whole demonstrations for observed base failures improve development tool-agent behavior more than stratified random selection?",
+  "Hypothesis": "Grounded-identifier and multi-target/scope examples can improve the measured base failure modes; loss or teacher reward alone cannot support this.",
+  "Independent Variable": "S1 stratified random50 versus S2 failure-coverage selected50; exact10/domain,whole trajectories only.",
+  "Controlled Variables": [
+    "fresh fixedQwen3-8B base for eacharm,no reuseof8stepprobeadapter",
+    "sameB1/studenttemplate/masking",
+    "sameLoRAr16alpha32/AdamW/lr5e-5/seed42",
+    "2epochs,155turnexamples/epoch,310updates,microbatch1,noaccumulation",
+    "domainquotas,processedtokenswithin0.67percent,supervisedwithin1.99percent",
+    "samefixeddev24,seeds42/43,nonthinking8K/6rounds/2048output"
+  ],
+  "Metrics": [
+    "realCE/gradients/adapterchange/reload",
+    "tasksuccessoverallandnonempty/emptystrata",
+    "executablecalls and manuallyreviewedwrongarguments/typedgrounding/earlystop",
+    "toolsteps,tokens,latency,VRAM/GPUutilization/GPUhours/costpersuccess",
+    "pairedtask-clusterdevelopmentdifferences,notsealedgeneralizationclaims"
+  ],
+  "Evidence Gate": "Approvedwholedata and CPUadmission pass;GPUruntime must revalidate exactweights/packages/singleGPU. Every310updatevalid,savedadapterreloadagrees. Later matchedbaseline/S1/S2 Agentrollouts required forbehaviorclaim. Lastcheckpointonly,noearlystopping or per-checkpoint dev selection.",
+  "Cost Bound": "One existing80/96GB-classGPU,each training310updates/60min,each devcondition48rollouts/30min; sequential,rough0.75-1.5GPUh prior estimate(not measurement),3.5h sumofrun caps excluding setup. Actualcurrentprice unknown; userbudgetwaiver retained. No rental until current resource ownership/availability and scope resolved.",
+  "Failure Branch": "Remote access currently unavailable; do not assume oldports/instance ownership or trainblindly. No request for credentials inchat. Onceaccessible,revalidate assets/packages/hash/GPU,stop and preserve any model/CE/gradient/OOM/reload/infrafailure;noautomaticmodelretry,contextchangeorDPO/RL.",
+  "experiment_id": "SFT-RESUME-20261010-001",
+  "kind": "RESUMPTION_AND_EXECUTION_PREREGISTRATION_NOT_GPU_RUN",
+  "client_date": "2026-10-10",
+  "status": "LOCAL_REVALIDATION_PASSED_REMOTE_ACCESS_UNAVAILABLE",
+  "authorization": "User2026-10-10 requested进行下一阶段 after the frozenS1/S2 plan was explained; authorize bounded existing-single-GPU training and matched dev evaluation,not extra stages/rental/sweeps.",
+  "execution_code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "frozen_plan_path": "configs/sft_comparison_plan.json",
+  "frozen_plan_sha256_local": "7ff5120062725bd4ad05cc9a473c02e64f41d03fcba35402b2576a74e78c90b0",
+  "planned_order": [
+    {
+      "run_id": "SFT-EVAL-BASE-20261010-001",
+      "kind": "BASE_B1_dev24",
+      "rollouts": 48
+    },
+    {
+      "run_id": "SFT-S1-20261010-001",
+      "kind": "S1_training",
+      "updates": 310
+    },
+    {
+      "run_id": "SFT-EVAL-S1-20261010-001",
+      "kind": "S1_dev24",
+      "rollouts": 48
+    },
+    {
+      "run_id": "SFT-S2-20261010-001",
+      "kind": "S2_training",
+      "updates": 310
+    },
+    {
+      "run_id": "SFT-EVAL-S2-20261010-001",
+      "kind": "S2_dev24",
+      "rollouts": 48
+    }
+  ],
+  "local_checks": [
+    {
+      "command": "scripts/run_sft_comparison.py --arm S1",
+      "exit_code": 0,
+      "tasks": 50,
+      "examples": 155,
+      "planned_steps": 310
+    },
+    {
+      "command": "scripts/run_sft_comparison.py --arm S2",
+      "exit_code": 0,
+      "tasks": 50,
+      "examples": 155,
+      "planned_steps": 310
+    },
+    {
+      "command": "scripts/evaluate_sft_comparison.py --condition BASE_B1",
+      "exit_code": 0,
+      "tasks": 24,
+      "planned_rollouts": 48
+    }
+  ],
+  "failures": [
+    {
+      "kind": "browser_connection_unavailable",
+      "attempts": 3,
+      "error_type": "nodeRepl.fetch request failed",
+      "model_run_invalidated": false,
+      "remote_inventory_verified": false
+    }
+  ],
+  "actual_execution": {
+    "GPU_started": false,
+    "model_loaded": false,
+    "training_updates": 0,
+    "rollouts": 0,
+    "teacher_API_requests": 0
+  },
+  "old_monitors_status": "both_PAUSED_verified",
+  "new_automation_created": false
+}

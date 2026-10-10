@@ -118,3 +118,8 @@ SFT-READY CPU-only actual newAPI0/GPUhours0/parameterupdates0/noinstancestart. F
 ### Final actual-host SFT preparation
 
 Additional actual-host preparation:904CPU0.10RMB/h,roughly14:26–14:43plusshutdownconfirmation;estimated0.03RMBincludingGitHubretries/idle/preflight/retrieval,notinvoice/storageexcluded.52.73scheckprocessincluded. NoAPI/GPU/modelupdates.
+
+
+## 2026-10-10 resume
+
+2026-10-10resume localchecks only:GPUhours0/newAPIcalls0/updates0; noinstancestart. CurrentGPUprice/inventory/cache unknown,do not reuseSeptemberavailability ascurrentfact. Prior0.75-1.5GPUh remainsestimate,not actualusage.

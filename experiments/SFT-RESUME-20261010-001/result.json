@@ -1,0 +1,9 @@
+{
+  "status": "LOCAL_REVALIDATION_PASSED_REMOTE_ACCESS_UNAVAILABLE",
+  "local_checks_passed": 3,
+  "remote_inventory": "NOT_VERIFIED",
+  "GPU_runs_started": 0,
+  "parameter_updates": 0,
+  "blocker": "Browser connection unavailable; user chose restorebrowser,but reattempt stillfailed",
+  "pending": "Working logged-inAutoDLbrowser or current user-ownedinstance endpoint/availability"
+}
