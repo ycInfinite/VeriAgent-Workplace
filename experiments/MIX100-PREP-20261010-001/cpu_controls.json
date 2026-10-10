@@ -1,0 +1,25 @@
+{
+  "status": "CPU_CONTROLS_PASSED",
+  "checks": {
+    "all83_disposed": true,
+    "29_unique_approved": true,
+    "all_approvals_whole_semantic": true,
+    "20_approved_noops_only": true,
+    "no_held_task_selected": true,
+    "100_unique_tasks": true,
+    "five_domain_quotas": true,
+    "310_samples_once": true,
+    "S100_exact_hashes_preserved": true,
+    "8K_not_expanded": true,
+    "reject_dev": true,
+    "reject_context_loss": true,
+    "reject_partial_targets": true,
+    "optimizer_AST_identical": true,
+    "reload_AST_identical": true,
+    "rollout_AST_identical": true
+  },
+  "count": 16,
+  "model_loaded": false,
+  "parameter_updates": 0,
+  "pending": "actualHFtokenizer/GPU/CE/gradients/VRAM/adapterreload and newAgent eval"
+}

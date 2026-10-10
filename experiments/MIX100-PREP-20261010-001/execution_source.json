@@ -1,0 +1,8 @@
+{
+  "repository_base_commit": "18486681c862d445e40ab9c42945c6308fab8b8a",
+  "working_tree_dirty_during_CPU_prep": true,
+  "exact_builder_sha256": "64eb86a8871ca4d6712783a1ba35a966688f64425b450b7c3e8043b8b49e5e63",
+  "config_sha256": "509c4726f018aafdb1eb77aaf8629806e0bf913424baa948f0dd86bc20d1cebd",
+  "remote_deployment": false,
+  "model_execution": false
+}

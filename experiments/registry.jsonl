@@ -75,3 +75,5 @@
 {"experiment_id": "POSTSFT-AUDIT-20261010-001", "event": "cpu_audit_completed", "parameter_updates": 0, "candidate_pairs": 13}
 {"experiment_id": "SFT-SCALE-PREP-20261010-001", "event": "cpu_preparation_failed_preserved", "reason": "CRLF source identity mismatch", "model_run": false}
 {"experiment_id": "SFT-SCALE-PREP-20261010-002", "event": "cpu_preparation_passed_waiting_GPU_inventory", "planned_updates": 310, "actual_updates": 0}
+{"experiment_id": "NOOP-REVIEW-20261010-001", "event": "offline_review_export_complete", "approved": 29, "held": 54, "GPU_hours": 0}
+{"experiment_id": "MIX100-PREP-20261010-001", "event": "cpu_prepared_waiting_GPU", "tasks": 100, "noops": 20, "actual_updates": 0}

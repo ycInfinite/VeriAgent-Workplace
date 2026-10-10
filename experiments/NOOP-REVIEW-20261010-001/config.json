@@ -1,0 +1,21 @@
+{
+  "experiment_id": "NOOP-REVIEW-20261010-001",
+  "Research Question": "Which of all83 existing empty-reference training trajectories demonstrate evidence-based restraint,and can they form a controlled mixed100 arm?",
+  "Hypothesis": "Some reward1 no-ops are justified by complete lookups or false conditions;others are scoring false positives,ambiguous or structurally untrainable. Reviewed restraint examples may fill a data-coverage gap;no behavioral effect tested here.",
+  "Independent Variable": "Offline admission review,then proposed training composition;no model intervention.",
+  "Controlled Variables": "Original723 source,all83 empty-reference members,fixed8192studenttemplate,wholeassistantturn supervision,unchangedofficialreward and frozenS100. No dev/final/BFCL case in exports.",
+  "Metrics": "Reviewed/approved/held counts and reasons,lookup coverage,conditional arithmetic,temporal boundaries,unnecessary operations,state changes,whole encoding counts,mixed100 domains/steps/processed andtargettoken balance.",
+  "Evidence Gate": "All83 receive a disposition;structural failures remain held with semantic review scope stated. Approval requires complete visible assistant decisions,observations supporting no mutation,accurate relevant claims,no unexplained errors/redundancy,valid source/API continuity and whole8K encoding. Reward1 alone insufficient.",
+  "Cost Bound": "LocalCPU only,noGPU/API/remote startup. Review existing files. Bounded60second mixed-selection MILP after freezing judgments;no paid experiments.",
+  "Failure Branch": "Preserve failed preparations;hold ambiguous/unsupported/incomplete traces,no repairs or selected-turn supervision. If fewerthan10 eligible or matchedbudget selection infeasible,report exact limitation and best reviewable design without relaxing admission. Do not changeS100.",
+  "source_run": "DEEPSEEK-SFTDATA-20260917-001",
+  "source_repository_commit": "18486681c862d445e40ab9c42945c6308fab8b8a",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "seed": 42,
+  "max_context_tokens": 8192,
+  "mixed_selection_policy": "One proposal: retain90-to80 originalS100tasks and insert10-to20 approvedno-op tasks;100total,20/domain,310wholeturns,processed andtargettokens within2% of frozenS100. Maximize no-op count within bounds with deterministicSHA tie-break,never inspect model outcomes. No automatic fallback to unapproveddata or alteredS100.",
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "status": "REGISTERED_OFFLINE_REVIEW"
+}

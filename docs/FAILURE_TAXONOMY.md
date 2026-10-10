@@ -62,3 +62,8 @@ Fresh144validtrajectories,notreusedDay3labels. Typedcandidatecallcounts24/76(BAS
 ## 2026-10-10 全部 post-SFT 官方失败初步归因
 
 覆盖S1失败13条、S2失败15条，分母仅失败轨迹。S1：日期/时间范围/条件7，Completed目标2，过滤与放弃2，due-today归因待定2。S2：日期/条件6，排序目标3，可选属性虚构2，范围越界4。文件experiments/POSTSFT-AUDIT-20261010-001/postsft_failure_triage.json包含每条source SHA、seed、理由；Codex单审，未独立人工裁决。成功轨迹仍可包含错误，不把此次triage宣称为完整call-level语义错误率。DPO候选负例单独审核，全部属于原training20，不移用dev失败。
+
+
+## 2026-10-10 原83空reference training审核
+
+29通过，54暂缓。主要暂缓：policy非可执行15、任务计数错11、context/encoding/round不完整10、重复核验7、求和错4、错误比较并作图3，其余生成不完整/无依据表述/错误统计量/错误中间时间判断各1。80条officialsuccess中51未过整条监督门槛，不更改其reward。task44=实际48/51而非51/54；task94 Nia=6Completed/12Backlog/4Review，而非5/13/4；task17 strict<3与最低恰好3正确区分。结构暂缓与完整语义复核范围逐条记录；单Codex审核，无独立人工裁决。

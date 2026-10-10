@@ -1,0 +1,525 @@
+{
+  "555": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 5,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "santiago.martinez@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "santiago.martinez@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "1125": [
+    {
+      "turn": 3,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "yuki.tanaka@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "yuki.tanaka@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "1243": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "aisha.chen@atlas.com",
+        "page": 2,
+        "page_size": 50
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page', 'page_size' were unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "aisha.chen@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    },
+    {
+      "turn": 4,
+      "call_index": 1,
+      "step": 5,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "list_name": "In Progress",
+        "page_size": 50
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page_size' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page_size'"
+      }
+    }
+  ],
+  "1097": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 5,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "leila.azizi@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "leila.azizi@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "143": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 6,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "amir.ali@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "amir.ali@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "155": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "santiago.martinez@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "santiago.martinez@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "369": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "amir.ali@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "amir.ali@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "121": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 5,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "amir.ali@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "amir.ali@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "47": [
+    {
+      "turn": 3,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "aisha.chen@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "aisha.chen@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "831": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "amir.ali@atlas.com",
+        "page": 2,
+        "page_size": 50
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page', 'page_size' were unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "amir.ali@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "452": [
+    {
+      "turn": 3,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "aisha.chen@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "aisha.chen@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "891": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "amir.ali@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "amir.ali@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "824": [
+    {
+      "turn": 3,
+      "call_index": 0,
+      "step": 3,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "yuki.tanaka@atlas.com",
+        "list_name": "Backlog",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "yuki.tanaka@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "491": [
+    {
+      "turn": 4,
+      "call_index": 0,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "amir.ali@atlas.com",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "amir.ali@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "253": [
+    {
+      "turn": 3,
+      "call_index": 1,
+      "step": 4,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "aisha.chen@atlas.com",
+        "list_name": "Backlog",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "aisha.chen@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ],
+  "889": [
+    {
+      "turn": 3,
+      "call_index": 0,
+      "step": 3,
+      "name": "project_management_search_tasks",
+      "arguments": {
+        "assigned_to_email": "yuki.tanaka@atlas.com",
+        "list_name": "Backlog",
+        "page": 2
+      },
+      "known_tool": true,
+      "schema_errors": [
+        "Additional properties are not allowed ('page' was unexpected)"
+      ],
+      "executable_gate": false,
+      "identifiers": [
+        {
+          "argument": "assigned_to_email",
+          "value": "yuki.tanaka@atlas.com",
+          "observed_in_policy_context": true,
+          "kind": "email"
+        }
+      ],
+      "same_call_same_state_before": false,
+      "three_call_loop": false,
+      "tool_exception": {
+        "type": "TypeError",
+        "message": "ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'"
+      }
+    }
+  ]
+}

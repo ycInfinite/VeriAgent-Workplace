@@ -1,0 +1,24 @@
+{
+  "status": "MIX100_CPU_PREPARED_NOT_TRAINED",
+  "tasks": 100,
+  "noops": 20,
+  "retained_S100": 80,
+  "examples": 310,
+  "planned_updates": 310,
+  "totals": {
+    "turns": 310,
+    "processed_tokens": 1450298,
+    "supervised_tokens": 28695
+  },
+  "max_sequence": 7756,
+  "relative_tokens_vs_S100": {
+    "processed_tokens": 0.013868974923433752,
+    "supervised_tokens": 0.013706856961175573
+  },
+  "script_sha256": "64eb86a8871ca4d6712783a1ba35a966688f64425b450b7c3e8043b8b49e5e63",
+  "parameter_updates": 0,
+  "GPU_hours": 0,
+  "API_requests": 0,
+  "planned_training_id": "SFT-MIX100-20261010-001",
+  "planned_eval_id": "SFT-EVAL-MIX100-20261010-001"
+}

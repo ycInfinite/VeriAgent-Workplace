@@ -1,0 +1,10 @@
+{
+  "started_at": "2026-10-10T05:46:37.089608+00:00",
+  "repository_base": "18486681c862d445e40ab9c42945c6308fab8b8a",
+  "working_tree_dirty": true,
+  "script_sha256": "0db4af21507525e341afc1a02eb931af4d91d197149e0db10c3e3e53e92e2572",
+  "config_sha256": "85cfe95d746a3ea882322c09291c0c64623732c33ca0a713e1d36f4a2dedece7",
+  "manifest_sha256": "187b16510e8632b730d90a99527268936e1ce0312b51f318d8f19366653a607b",
+  "judgments_sha256": "46dfaa2077a2f6c58e9d3b49e87f4c2d914550228c708629875a2b0f48c45105",
+  "kind": "CPU_ONLY"
+}

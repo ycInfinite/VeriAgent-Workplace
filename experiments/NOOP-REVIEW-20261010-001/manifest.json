@@ -1,0 +1,674 @@
+{
+  "source_sha256": "cacc8fb71eb7c3efb087ba1d3b113469239e7c39a422a60f8df05aea986d0cda",
+  "tasks": [
+    {
+      "task_id": 17,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:17",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "45b5e902e3c33cd2ee500c997bdb5d0d598ccef47f1aa7ad3abb2d9e1733bdce",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 19,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:19",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "3631d0eb3b1a4ad552074ea412c667ef4eecab53dedb1d3a8093c88abd245034",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 31,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:31",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "7b6001d69f2bd8e146a8902fad07f935ad22bb5d51c9ade9d650cc6143bbd575",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 44,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:44",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "d207a4f45df5e3da67a915897a7ed32c855284b4c1d6a5e9588317d6534a6de6",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 47,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:47",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "2f395e218ecdfb4f4acdf735225f2ec03929e6428ec99f7341bd51bba904e92d",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 50,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:50",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "30cc098f855295cc704b039a759f902a93472c862c770a6866fbfbe0283d6b15",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 51,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:51",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "656e174f64bfaa5ce0a866e0809f93fa93a0e5a40a97661c3e4232b6ad753ed5",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 94,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:94",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "c3e4b2a51c1e03128849bbeacd38911419d43190e69a5c793b79da23371c3e09",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 121,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:121",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "27f7a0a0ff9483a04cece256e21b999104b98bfb06e8b2427b7326af7a878cba",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 135,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:135",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "d1ab8df57db072a62991b0229f671d11287b50e7cf147cb44c9c1af3b0654d55",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 141,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:141",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "01a40058b9b9287c164c9bc51230b747c9120557fd5b362a180ed42e4995a527",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 143,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:143",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "428ac85a2b152bde0bb8fbd5b3c8488d687b765ed9e85f4ac200de2bc56bd259",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 150,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:150",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "d0d59fb690dd0889dabd13dbac2a9714dc6f5fcef448b0ea5e90c4708f085154",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 155,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:155",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "c04325477d60743ef69c22192bc64a7d2bc23a4d5d12ec9534e41548e46b4f67",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 165,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:165",
+      "category": "workplace_assistant_email",
+      "trajectory_sha256": "003a1bf94f7bcc411aae7b43ba7a9383f2e52732f7c7ae649e3b68a13ccb8bfd",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 176,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:176",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "bc9fb69d04d6f521fd217a8e963c79af36f1aa4b86aa6b5c9b11675d497c3b38",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 182,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:182",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "58ee5c785a5f189d4cd061537ab9c8514c646771c8e29be69d4e8aa239781eda",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 201,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:201",
+      "category": "workplace_assistant_customer_relationship_manager",
+      "trajectory_sha256": "4af83b27f7171bd90492f24dd48db8ba497f94ff2c33247f14c2a193e2418fdb",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 209,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:209",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "745b3d3a7c7dba096906aed690b512ba274504fb00b8fdf0a0ebc125977f0dda",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 226,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:226",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "ab029e241888f12e67952810b1b9599955c5f05f6a6c55817f0cbc8ed2b6191e",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 227,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:227",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "c754373c25733f2598485e5d6ae1c59ec8d997e4b14fbaba209c3bdf7bac8876",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 230,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:230",
+      "category": "workplace_assistant_customer_relationship_manager",
+      "trajectory_sha256": "c966c82d291d526501f2f6a427bc600539f069ef9949db756cc2c5e6cd2dc42e",
+      "termination": "student_context_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 237,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:237",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "61f6f56b08b7d5dc8fd8e28857a13e107d4bfb3b35877deddc8c0befe540ab32",
+      "termination": "student_context_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 253,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:253",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "ea07350aff50ac329fd927bf2c6b84f34669d8ebe9aac0f8be69f5fe84560703",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 266,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:266",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "b7b798574d32692cec1d6e6bb80eb6eedc744f052ce6120385616b7908842d64",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 327,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:327",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "b4008bd9d06a1d3712355c74c965a4b4e869cee35f6e3e428ee07840aa80afb6",
+      "termination": "generation_incomplete",
+      "reward": 1.0
+    },
+    {
+      "task_id": 329,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:329",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "924c5731903d8fc0c0373de012423da2973e888a04c06d2d2c2ba320732c2fbc",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 350,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:350",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "5b2faa3ab3982b10f28f35112cba511d7b115f8111dd0124f971dbeec1f2e1e4",
+      "termination": "student_encoding_rejected",
+      "reward": 1.0
+    },
+    {
+      "task_id": 358,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:358",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "7616a6a019b69c493756cebf92a423355ed44d104cd556e2223a543bf9f18aa8",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 369,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:369",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "5d691867f4c774dcdee875f1724daff465117748087d6a10503b1a91c186dc2b",
+      "termination": "round_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 391,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:391",
+      "category": "workplace_assistant_customer_relationship_manager",
+      "trajectory_sha256": "b74921f3309bef2c7fa946da1b21e46f06c6ba09be805c120bc6a6d972825143",
+      "termination": "student_context_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 408,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:408",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "a84ce760efe0267e6170bbcba20528c4d1f5794c431e1366c4d61d0b07d49202",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 416,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:416",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "061e39cda48576a4e4c63b72a87772b5169a70b6697188c3b517e3d166520789",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 443,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:443",
+      "category": "workplace_assistant_customer_relationship_manager",
+      "trajectory_sha256": "b049e63f94c64514db2d96459ef6ca3bf9775acad3b1ea3c3765f447bff176cd",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 452,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:452",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "dbf7fc22df34a29a78860f24849a5227de3ab19d241e929c6f9ff3254dadfc82",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 481,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:481",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "4571e77a0a4cc6535932d8b86bc2c780c09c8bb54d96ce2d1f0651dfe53c721b",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 490,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:490",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "c6a5ce36bb80fe41afd7e271d52b385118ae9e9824b22cc4f89a8975b115d48d",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 491,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:491",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "1e5d5ffa0995b147c3e8080fec50cb002da6e5956a2daef441f32de038b0426c",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 511,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:511",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "2cfefbc64447992fc6a76500e702b3962861653ca55c79e7e45759a1c49e908c",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 517,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:517",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "3e025a30c391f041ccc5ed2daec3e9a5721c8968e82c54b0619dd4fabe93b8db",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 555,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:555",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "b8682fa8e8ab2c07c7ca00cd81f10cf2d70bc83ec539e7fb60d9f5244c62e29d",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 570,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:570",
+      "category": "workplace_assistant_email",
+      "trajectory_sha256": "92038d0cb8ec994f8257dea8d04ea31c9f0b3e362ab254b608f5d0d5223f197f",
+      "termination": "student_context_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 588,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:588",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "5680036e8865f98e5ce312ca2c87f7484f069b2828ab576c12683d10bb147d0a",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 589,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:589",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "1e5770c3473d65302acfd3a69bf8a1145948e8cd94e7eb1a256c472b9e263a54",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 627,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:627",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "0716d4adeda9f94a0b91b485e834c42d44b699a1215c4efbbd0e61ae55f215b1",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 665,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:665",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "6d389019ad8fd38d99868619bf096ddd91566415d094d73ab4e540901b8569a0",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 702,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:702",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "c856c7f9042fc7af9955af0f8b4ab96e3fe94099c88e93509706042fa69a3089",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 708,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:708",
+      "category": "workplace_assistant_customer_relationship_manager",
+      "trajectory_sha256": "43dca815f06bb10eb887f63ef6004914055944de0ba1d7db3864051a5ba2367b",
+      "termination": "student_context_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 712,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:712",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "44ed116b469b6e9be8c9a9f840727e730954065bafeea82c72a61ad470bb0343",
+      "termination": "assistant_final",
+      "reward": 0.0
+    },
+    {
+      "task_id": 727,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:727",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "8a30fcf8d6e5db58157ec6b835bbe529ead679a1bc782a24f17c3534c148e328",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 731,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:731",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "90b0fbfd53dc2b9a59e8b1dd66bbb028b82e7dea561fb692997984f4ef6f61f5",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 753,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:753",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "87bc9885f424aac9f4cfd7d260f01e0f46e9ab1019db3e3717f497d1bcca62d3",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 772,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:772",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "a6878eacecfc15e0e270c183d1f5d7f06f753bba59af2a338f399249ab6475d7",
+      "termination": "assistant_final",
+      "reward": 0.0
+    },
+    {
+      "task_id": 775,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:775",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "b630bbc1313957e5e28fd2577fc9af7f92bf87664fb2f1ab6f906628a75d4575",
+      "termination": "round_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 781,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:781",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "975ae791b7255b34a1875bbc2437fa5f2a8eeb699e1431d0477c46542ad2b358",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 783,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:783",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "49adceefa12c9827f3f2e050e91876d48fcadace65036ea3235bbfc6efc89de7",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 804,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:804",
+      "category": "workplace_assistant_customer_relationship_manager",
+      "trajectory_sha256": "ec63c8384da3f78125c5f532d5f6087eab0115eb0a6635b714e2180ff49be962",
+      "termination": "student_context_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 811,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:811",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "d22184c0416fc2182f0663f330ad7c5c60f5f8e866e46b5f8427172b5d01917b",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 824,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:824",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "fdd120840a7b741ae3a60ebddfa292243a69762d85ef1a37aa63e0f5b8e8cf17",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 831,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:831",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "5bf2d9b7b3df12c3ca0866f059fcac7532c5456508763b7e80bf6e56ac37e936",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 879,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:879",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "147dad862b6740d5b465187fcf35ca625c25da3baf048a4bfbb261920ba4f610",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 881,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:881",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "82e540ab6086cf68614a5a01b8f3612cfb5966a57de94a1891b25987c70c0a1b",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 889,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:889",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "a07cd70bfe863b3cd123502894ea7e6f9f8ceb8da7d9324b0a27b06de4a11807",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 891,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:891",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "8a760562b4fdf3238fdca787ab1be1aae6c6fea55dbcbc450d5c79fe2ba635d2",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 939,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:939",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "403d78018dd5966d8462b86a6f91b7797f228ba91b66aa8caac27e4198dbbd4e",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 969,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:969",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "3df624e49b6354c59b4ccc7e144fdfecc09750d446f731e9b15a27071456956d",
+      "termination": "assistant_final",
+      "reward": 0.0
+    },
+    {
+      "task_id": 978,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:978",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "723cf2e7a255081e46c9225930a48894323676d40085bd8bd175acbc0ea0e9cf",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1000,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1000",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "2f512cf08dd6331908feecbc698a24513e509d3ade80b7bc6b5fd1f4c9394c84",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1020,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1020",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "40325d1f360a0036aab1d822a4df491fc6f8b39f66ec18b337912fb8a93006b5",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1034,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1034",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "1457ad4c76cb24b69867137c08a2170e7f09c80cc8cd1efde7ad7b3bf4e20a09",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1056,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1056",
+      "category": "workplace_assistant_calendar",
+      "trajectory_sha256": "739ed3ee924255b071e6f8608609e80659ce1d3776d71249dd1b195a3e80d4a6",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1080,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1080",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "5a4abba97a74f0a72c7f13c2e8b66cb27a67e7127e5989ee3a044360288ea237",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1091,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1091",
+      "category": "workplace_assistant_customer_relationship_manager",
+      "trajectory_sha256": "36adc21c46c167809ab7f7c480ef9c689edc133b32b45b2b13baebfb34ae7184",
+      "termination": "student_context_limit",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1093,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1093",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "8cdb7f645621e4682f7da7d6615ec67102e8207e84bfd4a5577705eca872fbb5",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1097,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1097",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "f0ad56642591b3fac2a84bb22e936f89876549569db9867f416feec9ca7d0319",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1107,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1107",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "1fe5d7651fcf49fcd1721503f1ceb61f872ba2c6b10ad913b61cd765fb232ca3",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1125,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1125",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "fc597d0c83b3baf7b36e05e05595c6698baa848a5ccc5113aca11033323af329",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1134,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1134",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "acff5cefe5d1896b7f8d6c1fcc382fb435f1c936588506357e8c009a68423f04",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1135,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1135",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "5b8108be6d55dc57cf227e7bfd7430ccebe222d95bf40fe955b7602b476dc1ba",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1185,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1185",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "f6b48ae76f87e825aacdd3a97590cdc53c9d4436ad4eb4df6d8352296c6b849b",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1209,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1209",
+      "category": "workplace_assistant_analytics",
+      "trajectory_sha256": "bf73786135f58fb3b73670fcc05b8a9fbf668c7c5ca12e417e6dc06f5f0715d1",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1228,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1228",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "b4be35709029cf9892437ddb41a3d15ae7ce175d396b7c703fa44f3dcadf8cb0",
+      "termination": "assistant_final",
+      "reward": 1.0
+    },
+    {
+      "task_id": 1243,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1243",
+      "category": "workplace_assistant_project_management",
+      "trajectory_sha256": "f9d1ba329c23872f559b90492810e389575a59a73bc748887b0d89193046804f",
+      "termination": "assistant_final",
+      "reward": 1.0
+    }
+  ],
+  "frozen_S100_sha256": {
+    "configs/sft_scale_plan_v2.json": "b7796ef54c8c5457c2e4052d8e8b255c1f520d808f285c989b85979dc6f99075",
+    "experiments/SFT-SCALE-PREP-20261010-002/selection.json": "9b0b1ef20789f70a6640949955c7b8a6dc54fbefcc569f13c27cef2b95154178",
+    "experiments/SFT-SCALE-PREP-20261010-002/s100_examples.jsonl.gz": "6c777ca28d30fa966ef6603e322c5f0055c2e35b56f98be94bb0ae6710425e20"
+  }
+}

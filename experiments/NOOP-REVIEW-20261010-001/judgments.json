@@ -1,0 +1,500 @@
+{
+  "17": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CompleteSep12-Nov30 dailyseries,min3 Oct1;strict<3 nevermet;nochart,accurateexplanation.",
+    "review_scope": "full_visible_trace"
+  },
+  "19": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CorrectSundayNov26 baseline2 andMon-Thu4,8,4,4;none10%lower,justifiednochart.",
+    "review_scope": "full_visible_trace"
+  },
+  "31": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CompleteOct28-Nov30,min1Nov13,max10;strict<1 false.",
+    "review_scope": "full_visible_trace"
+  },
+  "50": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "SaturdayNov25 engaged8 tocurrent4 is-50%;duration18.14..25 correct. Conditionfalse both againstpositivedurationlevelanddurationgrowth(-13.01%).",
+    "review_scope": "full_visible_trace"
+  },
+  "141": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "Correct5weekOct26-Nov30window,max19Nov28 belowstrict>21.",
+    "review_scope": "full_visible_trace"
+  },
+  "176": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CorrectMondaysNov27/20:4vs10,-60%,not>5%increase.",
+    "review_scope": "full_visible_trace"
+  },
+  "227": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "Correct6weekOct19-Nov30,min6 atNov18/26/27,not<3.",
+    "review_scope": "full_visible_trace"
+  },
+  "408": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CorrectFridaysNov24/17:9vs7,+28.6%,not10%lower.",
+    "review_scope": "full_visible_trace"
+  },
+  "727": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "Current7vsNov21=11,-36.36%,not3%higher.",
+    "review_scope": "full_visible_trace"
+  },
+  "879": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CorrectSundaysNov26/19:25vs23.9,+4.60%,not10%lower.",
+    "review_scope": "full_visible_trace"
+  },
+  "881": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CorrectTuesdaysNov28/21:20.315789vs19.909091,+2.0428%,not10%higher.",
+    "review_scope": "full_visible_trace"
+  },
+  "1000": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "FullNov27-Nov30series18.14..22.33,never<2.",
+    "review_scope": "full_visible_trace"
+  },
+  "1020": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "FullOct24-Nov30series,maxexactly10 atfourreported dates;strict>10 false.",
+    "review_scope": "full_visible_trace"
+  },
+  "1107": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CorrectWednesdaysNov29/22:20.6667vs20.5,+0.813%,not5%lower.",
+    "review_scope": "full_visible_trace"
+  },
+  "1134": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "FullNov9-Nov30series,min6.375Nov13;remainingrange9.375..41.857correct;never<2.",
+    "review_scope": "full_visible_trace"
+  },
+  "1135": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "BaselineSep1=7,currentNov30=4;threshold7.35,range0..10,explicitcurrentcomparisonfalse. Expandedseriesreadnotexactrepeat;doesnotclaimnohistoricalexceedance.",
+    "review_scope": "full_visible_trace"
+  },
+  "1185": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "CorrectTuesdaysNov28/21 show+2.04%,not10%lower.",
+    "review_scope": "full_visible_trace"
+  },
+  "1209": {
+    "decision": "approve",
+    "category": "justified_false_condition",
+    "rationale": "Current7vsNov28=19,-63.16%,not10%higher.",
+    "review_scope": "full_visible_trace"
+  },
+  "44": {
+    "decision": "hold",
+    "category": "arithmetic_error",
+    "rationale": "Claims totals51/54;actual referral48/search51. Correctdecision doesnotexcusewrongtotals.",
+    "review_scope": "full_visible_trace"
+  },
+  "327": {
+    "decision": "hold",
+    "category": "incomplete_generation",
+    "rationale": "No completefinalassistantdecision;generation_incomplete despite reward1.",
+    "review_scope": "full_visible_trace"
+  },
+  "589": {
+    "decision": "hold",
+    "category": "arithmetic_error",
+    "rationale": "Claims37/88;actualreferral36/social89.",
+    "review_scope": "full_visible_trace"
+  },
+  "627": {
+    "decision": "hold",
+    "category": "arithmetic_error",
+    "rationale": "Claims37/43;actualreferral36/search42.",
+    "review_scope": "full_visible_trace"
+  },
+  "712": {
+    "decision": "hold",
+    "category": "wrong_comparison_and_mutation",
+    "rationale": "Comparesmulti-daysum35 toTuesday19 instead ofcurrent7;plots,officialreward0.",
+    "review_scope": "full_visible_trace"
+  },
+  "753": {
+    "decision": "hold",
+    "category": "unsupported_comparison_claim",
+    "rationale": "Usesperiodmean instead ofcurrentcomparison;claimsconsistentlyhigher despite Oct1=2 andotherbelowbaseline days.",
+    "review_scope": "full_visible_trace"
+  },
+  "772": {
+    "decision": "hold",
+    "category": "wrong_comparison_and_mutation",
+    "rationale": "Comparesmulti-daytotal tosingleSept11;plotsdespitecurrent7<9;additionalarithmeticnotneededforhold.",
+    "review_scope": "full_visible_trace"
+  },
+  "781": {
+    "decision": "hold",
+    "category": "redundant_verification",
+    "rationale": "Re-readsNov30afterexactvaluealreadyvisibleinrange;wholetrajectoryqualitynotadmitted despitecorrectfinalno-op.",
+    "review_scope": "full_visible_trace"
+  },
+  "783": {
+    "decision": "hold",
+    "category": "arithmetic_error",
+    "rationale": "Claimssearch22/direct135;actual23/132.",
+    "review_scope": "full_visible_trace"
+  },
+  "969": {
+    "decision": "hold",
+    "category": "wrong_comparison_and_mutation",
+    "rationale": "ComparespostSaturdaymulti-daysum47 withSaturday14 instead ofcurrent7;plots,officialreward0.",
+    "review_scope": "full_visible_trace"
+  },
+  "1093": {
+    "decision": "hold",
+    "category": "wrong_comparison",
+    "rationale": "Usesunweightedmeanofsubsequentdailydurations21.22 ratherthancurrent18.14;samefalseoutcomedoesnotjustifywrongstatistic.",
+    "review_scope": "full_visible_trace"
+  },
+  "51": {
+    "decision": "approve",
+    "category": "verified_no_matching_mutation",
+    "rationale": "UniqueAnayaemail plus complete2meetingsNov27/29 withinlast7days;conditionalcreationnotneeded,no mutation.",
+    "review_scope": "full_visible_trace"
+  },
+  "201": {
+    "decision": "approve",
+    "category": "verified_no_matching_mutation",
+    "rationale": "Akira identityresolved;combinedANDempty;bothProposal6 andHardware7 listsfullypaginated,disjointpredicatesverified;allreportednames/products/statusesmatch. Broader reads add independentpredicatecoverage.",
+    "review_scope": "full_visible_trace"
+  },
+  "443": {
+    "decision": "approve",
+    "category": "verified_no_matching_mutation",
+    "rationale": "Sofia identityresolved;Won5complete andTraining6completeacross2pages,neither intersection;finalcounts/statusesaccurate. Broaderreadsverifyconjunction,notexactrepeat.",
+    "review_scope": "full_visible_trace"
+  },
+  "150": {
+    "decision": "hold",
+    "category": "redundant_verification",
+    "rationale": "Afterunboundedfutureemailqueryempty,extraNov1-2024emailqueryreturnsalreadyvisiblehistoricalsubset;wholetracecontainsunnecessary repeatedverification.",
+    "review_scope": "full_visible_trace"
+  },
+  "209": {
+    "decision": "hold",
+    "category": "redundant_verification",
+    "rationale": "All21calendarrecords fetched andmatchedtoresolvedAkira;finalupcomingemailqueryrechecks alreadycompleteevidence.",
+    "review_scope": "full_visible_trace"
+  },
+  "226": {
+    "decision": "hold",
+    "category": "redundant_verification",
+    "rationale": "Reads participant_email andevent_start alreadyvisible in sole searchhit;these do not add attendanceevidence.",
+    "review_scope": "full_visible_trace"
+  },
+  "517": {
+    "decision": "hold",
+    "category": "redundant_verification",
+    "rationale": "Afterfuturebroaderqueriesempty andall4historicmatchingeventsvisible,repeatsfuturesearches overnarrowerstartdate.",
+    "review_scope": "full_visible_trace"
+  },
+  "588": {
+    "decision": "hold",
+    "category": "incorrect_intermediate_claim",
+    "rationale": "Calls09:30todayafuturemeetingat23:59,thencorrectsitand re-reads alreadyvisibleevent_start;wholetracehasincorrectintermediate targetstatement.",
+    "review_scope": "full_visible_trace"
+  },
+  "1056": {
+    "decision": "hold",
+    "category": "redundant_verification",
+    "rationale": "Re-reads participant_email andevent_start alreadyprovided bytheuniqueNov30searchhit.",
+    "review_scope": "full_visible_trace"
+  },
+  "237": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_context_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "350": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_encoding_rejected; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "775": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination round_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "230": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_context_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "391": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_context_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "708": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_context_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "804": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_context_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "1091": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_context_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "570": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination student_context_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "369": {
+    "decision": "hold",
+    "category": "incomplete_or_unencodable",
+    "rationale": "Recorded termination round_limit; no complete whole-trajectory target within frozen protocol. Reward1 does not repair completeness.",
+    "review_scope": "structural_gate;partial_visible_sequence_only;full_semantics_not_claimed"
+  },
+  "555": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "1125": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "1243": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "1097": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "143": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "155": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "121": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "47": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "831": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "452": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "891": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "824": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "491": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "253": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "889": {
+    "decision": "hold",
+    "category": "policy_nonexecutable_call",
+    "rationale": "Wholetrace contains schema/argument/exception failure. Correct finalstate afterrecovery doesnotqualify whole-errorfree SFT target. See exact badcalls in policy_error_evidence.json.",
+    "review_scope": "call-schema/execution gate;fullsemanticqualitynotclaimed"
+  },
+  "165": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "Carlosidentityresolved;date-filterqueryempty;all21unfilteredemailsfullyreadacross5pages,latestNov23. NoNov25-30matches;no deletion. Expandedreadsverifycoverage,notduplicatecalls.",
+    "review_scope": "full_visible_trace"
+  },
+  "94": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "ClaimsNiaCompleted5/Backlog13;full22recordlistactuallyCompleted6/Backlog12,InReview4. NoInProgressconclusioncorrectbutcountswrong.",
+    "review_scope": "full_visible_trace"
+  },
+  "329": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "Bothidentitiesresolved;completeNia22 andglobalInProgress13lists prove nointersection;accurate6Completed/4Review/12Backlog;doesnotmodifyotherstatuses.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "358": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "Bothidentitiesresolved;completeYuki16tasks;all10BacklogdueDec3orlater,onlyNov27/29overdueareCompleted. NoDueTodayboundaryissue;accuratelydeclinesreassignment.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "416": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "Bothidentitiesresolved;Kofi17completeplusglobal13InProgressconfirmnointersection;noincorrectcounts ormutation.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "665": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "Bothidentitiesresolved;Nia22complete andglobal13InProgressconfirmnointersection;correct6/12/4distribution,asksbeforealternatives.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "702": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "UniqueNiaidentity;full22records andglobal13InProgressconfirmnointersection;correct6Completed/4Review/12Backlog,no mutation.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "811": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "NiaandLeilaemailsresolved;full22Nia plusglobal13confirmnoInProgress;correct6/4/12counts;doesnotreassignotherstatuses.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "1080": {
+    "decision": "approve",
+    "category": "verified_empty_target",
+    "rationale": "Aishaidentityresolved;full21ownrecords plusglobal13InProgressconfirmemptyintersection;no falsecounts andno changes.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "135": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "Aishafull21hasCompleted9/Backlog9/Review3;claims8/10/3.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "182": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "Kofifull17hasBacklog13/Review3/Completed1;claims12/3/1.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "266": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "Leilafull20hasBacklog13/Review4/Completed3;claims11/4/3.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "481": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "NiahasReview4/Backlog12;claimsReview5/Backlog11 and repeats identicalfilteredsearch.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "490": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "AishahasCompleted9/Backlog9;claims8/10.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "511": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "SantiagohasBacklog15/Review2/Completed3;claimsBacklog13.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "731": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "ClaimsAishahas22tasks;actualcompleteownerlist21.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "939": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "ClaimsAishaBacklog10;actual9,withCompleted9andReview3.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "978": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "ClaimsKofiBacklog12;actual13,Review3,Completed1.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "1034": {
+    "decision": "hold",
+    "category": "counting_error",
+    "rationale": "ClaimsNiaBacklog11/Review5;actual12/4.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  },
+  "1228": {
+    "decision": "hold",
+    "category": "redundant_verification",
+    "rationale": "AfterfullYuki16listandcorrectexplicitall10Backlogenumeration,re-queriesexactknownBacklogsubset;wholetraceunnecessaryverification,doesnotaddcoverage.",
+    "review_scope": "full_visible_trace;losslessobservationdedupreferences"
+  }
+}

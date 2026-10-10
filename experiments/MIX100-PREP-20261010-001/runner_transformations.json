@@ -1,0 +1,101 @@
+{
+  "transformations": [
+    {
+      "source": "veriagent/sft_scale.py",
+      "target": "veriagent/sft_mixed.py",
+      "source_canonical_LF_sha256": "7165a3a59d536e307a06f954e4625ec56e327fef0ba6c1c0011f0a44a615bc91",
+      "target_sha256": "570ce726360422071d8d885bb2ae39bc893646704b1eaf4dad59a90e53169f57",
+      "replacements": [
+        [
+          "arm=='S100'",
+          "arm=='MIX100'"
+        ],
+        [
+          "configs/sft_scale_plan_v2.json",
+          "configs/sft_mixed100_plan.json"
+        ],
+        [
+          "s1={x['task_uid'] for x in read(ROOT/'experiments/SFT-READY-20260917-001/selection.json')['S1']['tasks']}\n    require(s1<={x['task_uid'] for x in selection['tasks']},'Not nested original S1')",
+          "base={x['task_uid'] for x in read(ROOT/'experiments/SFT-SCALE-PREP-20261010-002/selection.json')['S100']['tasks']}\n    require(len(base & {x['task_uid'] for x in selection['tasks']})==80,'Must retain80 originalS100')\n    require(sum(x['empty_reference'] for x in selection['tasks'])==20,'Must include20 reviewednoops')"
+        ]
+      ]
+    },
+    {
+      "source": "scripts/run_sft_scale.py",
+      "target": "scripts/run_sft_mixed.py",
+      "source_canonical_LF_sha256": "1318e130c390d1af74e91bfa7455af92567818b352f27b5097aa9ff05318d6e5",
+      "target_sha256": "96e597389d8775174f6dcd9c33d8ddad56ca1c64f3f580a1d2d6f428ca0b154f",
+      "replacements": [
+        [
+          "from veriagent.sft_scale import load_inputs",
+          "from veriagent.sft_mixed import load_inputs"
+        ],
+        [
+          "choices=['S100']",
+          "choices=['MIX100']"
+        ],
+        [
+          "['configs/sft_scale_plan_v2.json','veriagent/sft_scale.py','scripts/run_sft_scale.py']",
+          "['configs/sft_mixed100_plan.json','veriagent/sft_mixed.py','scripts/run_sft_mixed.py']"
+        ]
+      ]
+    },
+    {
+      "source": "scripts/evaluate_sft_scale.py",
+      "target": "scripts/evaluate_sft_mixed.py",
+      "source_canonical_LF_sha256": "94863bf542af331f0eee1d6e445f9705b7d5e1399d30892291b8626241c3ccc8",
+      "target_sha256": "418f489c1cc9794be8c6541a16801c9ba6108ab4dd2532157099aead64edad5a",
+      "replacements": [
+        [
+          "ROOT/'configs/sft_scale_plan_v2.json'",
+          "ROOT/'configs/sft_mixed100_plan.json'"
+        ],
+        [
+          "for arm in ['S100']",
+          "for arm in ['MIX100']"
+        ],
+        [
+          "choices=['S100']",
+          "choices=['MIX100']"
+        ],
+        [
+          "['configs/sft_scale_plan_v2.json','scripts/evaluate_sft_scale.py','veriagent/sft_stage.py']",
+          "['configs/sft_mixed100_plan.json','scripts/evaluate_sft_mixed.py','veriagent/sft_stage.py']"
+        ]
+      ]
+    },
+    {
+      "source": "scripts/validate_sft_scale_host.py",
+      "target": "scripts/validate_sft_mixed_host.py",
+      "source_canonical_LF_sha256": "4c3e07064b9bffd93dc4b2875841259bc85e45aa5b6e7105cc17d4f34c6274ca",
+      "target_sha256": "40199b769f296a08ba87ab642fd88c8a60b68521a0c53fba7b630b514b288bd0",
+      "replacements": [
+        [
+          "from run_sft_scale import validate_actual_tokenizer",
+          "from run_sft_mixed import validate_actual_tokenizer"
+        ],
+        [
+          "from veriagent.sft_scale import load_inputs",
+          "from veriagent.sft_mixed import load_inputs"
+        ],
+        [
+          "SFT-SCALE-REMOTE-PREP-",
+          "SFT-MIX-REMOTE-PREP-"
+        ],
+        [
+          "load_inputs('S100')",
+          "load_inputs('MIX100')"
+        ],
+        [
+          "['configs/sft_scale_plan_v2.json','veriagent/sft_scale.py','scripts/run_sft_scale.py','scripts/evaluate_sft_scale.py','scripts/validate_sft_scale_host.py']",
+          "['configs/sft_mixed100_plan.json','veriagent/sft_mixed.py','scripts/run_sft_mixed.py','scripts/evaluate_sft_mixed.py','scripts/validate_sft_mixed_host.py']"
+        ],
+        [
+          "S100_HOST_PREFLIGHT_PASSED",
+          "MIX100_HOST_PREFLIGHT_PASSED"
+        ]
+      ]
+    }
+  ],
+  "basis": "ExactS100sourceswithdeclareddata/armchangesonly"
+}

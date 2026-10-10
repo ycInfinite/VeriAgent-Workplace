@@ -238,3 +238,66 @@ require(s1 <= {x['task_uid'] for x in selection['tasks']},
 数据覆盖补充：137条已审轨迹中空reference为0；S1/S2/S100也均为0。因而100条扩充未增加空reference任务覆盖。“这可能关联无需修改时过度行动”只是待检验的机制假设，不能由相关性作因果结论。保持当前S100冻结；未来若补合法no-op/约束拒绝样本，须单独审核和登记对照，不能悄悄改变本轮100条。证据：experiments/POSTSFT-AUDIT-20261010-001/noop_coverage.json。
 
 口径注意：空reference与执行后无状态变化不是同一概念；137条中有1条教师执行没有状态变化。因此这里只确认“空reference子集未覆盖”，不声称所有合法no-op语义样本完全为零。state_change_coverage.json保留了该核验。
+
+## 当天后续：83条空reference准入审核与MIX100
+
+核心问题：能否从已有真实teacher轨迹中找出“有依据地不修改”的示范，并在不改变原S100的前提下准备混合对照？结果是29条通过、54条暂缓，混合100条已配出20条no-op+80条原S100。两组都仍未训练，GPU仍等待空位。
+
+开始前：原137条已审池没有空reference任务，S100已冻结。实际审核：83条全部有处置，其中58条完整可见语义复核，25条在结构/调用错误门槛暂缓，不能说这25条都做了完整语义复核。通过的29条全部检查完整assistant轮与观察。对完全重复的观察用精确hash引用已展示内容，保留无损观察字典和原始轨迹。
+
+主要暂缓原因：错误调用15、任务计数错11、context/encoding/round不完整10、重复核验7、求和错误4、错误比较并画图3，其余4类各1。80条官方成功中51条未通过整条SFT监督门槛。没有改reward、没有修正文案、没有把错误前缀mask掉后冒充完整好轨迹。
+
+代表性通过：task17完整查询后发现最低值恰好3，正确区分<3与<=3，不画图；task51查到Anaya近7天已有会议，不新建；task329确认Nia没有InProgress，保持其他列表不变。代表性暂缓：task44不画图的结论正确，但声称51/54、实际求和48/51；task94正确判断没有InProgress，却算错任务分类数量；task47给PM查询传了不支持的page参数。
+
+实验变量：从原S100替换20条行动任务为20条合格不修改任务。控制：100题、每域20、1epoch、310updates、同Base全新LoRA、原B1/8K/6轮/2048输出/dev24×两seed。processed1450298，相对S100+1.3869%；target28695，+1.3707%；max7756仍在8K。不能说只改变标签，实际任务内容和被移除的行动覆盖也改变了。
+
+三段今晚可直接读的代码：
+
+```python
+# scripts/prepare_noop_mixture.py → main
+# 输入：原始轨迹、人工判定和审批；输出：完整可训练样本与混合清单
+if j['decision'] != 'approve':
+    held.append(entry)
+    continue
+assert r['verifier']['official_reward'] == 1
+assert r['termination'] == 'assistant_final'
+assert r['events'] and all(not e['state_changes'] for e in r['events'])
+assert all(c['executable_gate'] for c in r['call_diagnostics'])
+```
+
+这组assert证明结构和执行事实，**并不能自动判断推理正确**；例如task44通过状态门槛仍会算错数字，需要前面的完整语义判定。
+
+```python
+# veriagent/sft_mixed.py → load_inputs
+# 输入：冻结混合数据和原S100清单；输出：通过准入的数据与训练顺序
+require(len(base & {x['task_uid'] for x in selection['tasks']}) == 80,
+        'Must retain80 originalS100')
+require(sum(x['empty_reference'] for x in selection['tasks']) == 20,
+        'Must include20 reviewednoops')
+```
+
+这些empty_reference标记用于数据审核与计数，不送进模型的input_ids。学生仍需自己根据任务和工具观察作决定。
+
+```python
+# scripts/check_noop_mixture.py → main
+# 输入：实际导出数据和代码；输出：16项CPU控制回执
+checks['no_held_task_selected'] = not (
+    {x['task_uid'] for x in quality['held']}
+    & {x['task_uid'] for x in selection['tasks']}
+)
+```
+
+另有context不计loss、dev不能训练、完整target不能选择性删减，以及训练/重载/rollout循环AST一致检查。都通过也不能替代GPU上的真实CE、梯度、显存、重载和Agent成绩。
+
+今晚三个学习点：任务成功与示范质量分开；不修改需要证据但不意味着必须零工具调用；混入no-op要同时测错误行动和错误不行动。
+
+五个追问（不给答案）：
+1. 为什么task44的reward=1仍不适合整条SFT？
+2. 直接停止和查清楚之后停止，在最终状态相同的情况下如何区分？
+3. 为什么保留原S100不变，另建MIX100，而不直接修改原训练集？
+4. 加20条no-op同时移除20条行动任务，会引入怎样的解释限制？
+5. 只有4个empty开发任务时，如何避免把一次提升夸大成普遍克制能力？
+
+下一步等资源可用：先S100，再MIX100，各自全新Base、独立实验ID。没有自动租卡、开机、库存监控、teacher采样或DPO/RL。本轮GPU/API/参数更新均0；新mix最长序列7756，显存需实机核验。
+
+证据：`experiments/NOOP-REVIEW-20261010-001/`与`experiments/MIX100-PREP-20261010-001/`；配置`configs/sft_mixed100_plan.json`；完整准备报告`docs/NOOP_MIX100_READY_20261010.md`。源仓库commit18486681c862d445e40ab9c42945c6308fab8b8a，执行过的CPU脚本SHA在identity/result中。拟GPU ID为SFT-MIX100-20261010-001、SFT-EVAL-MIX100-20261010-001，尚未执行。此前SFT学习内容全部保留。

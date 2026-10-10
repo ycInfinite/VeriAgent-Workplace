@@ -1,0 +1,19 @@
+{
+  "additional_paths": [
+    "configs/sft_mixed100_plan.json",
+    "veriagent/sft_mixed.py",
+    "scripts/run_sft_mixed.py",
+    "scripts/evaluate_sft_mixed.py",
+    "scripts/validate_sft_mixed_host.py",
+    "experiments/NOOP-REVIEW-20261010-001/quality_approvals.json",
+    "experiments/NOOP-REVIEW-20261010-001/judgments.json",
+    "experiments/NOOP-REVIEW-20261010-001/mixed100_selection.json",
+    "experiments/NOOP-REVIEW-20261010-001/mixed100_examples.jsonl.gz",
+    "experiments/MIX100-PREP-20261010-001/quality_approvals.json"
+  ],
+  "local_remote_whitelist_equal": true,
+  "files_exist": true,
+  "S100_preserved": true,
+  "deployed": false,
+  "GPU_runs_started": false
+}

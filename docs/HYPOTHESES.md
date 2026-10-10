@@ -115,3 +115,8 @@ SFT execution integrity supported for both50-task/310-updatearms,notonlyold8step
 数据覆盖补充：137条已审轨迹中空reference为0；S1/S2/S100也均为0。因而100条扩充未增加空reference任务覆盖。“这可能关联无需修改时过度行动”只是待检验的机制假设，不能由相关性作因果结论。保持当前S100冻结；未来若补合法no-op/约束拒绝样本，须单独审核和登记对照，不能悄悄改变本轮100条。证据：experiments/POSTSFT-AUDIT-20261010-001/noop_coverage.json。
 
 口径注意：空reference与执行后无状态变化不是同一概念；137条中有1条教师执行没有状态变化。因此这里只确认“空reference子集未覆盖”，不声称所有合法no-op语义样本完全为零。state_change_coverage.json保留了该核验。
+
+
+## 2026-10-10 restraint coverage准备结果
+
+29条现有wholeteacher轨迹可形成合格不修改示范，20条能在近似等预算混合100中覆盖五个业务域。只支持数据可用性，不支持能力改善。MIX100替换20行动任务，因此coverage取舍是解释的一部分。Dev仅4个empty任务簇；Nia等训练任务相似，20ID不等于20独立行为模式。需同时检查empty错误修改与nonempty错误放弃，不能用总reward宣布胜出。

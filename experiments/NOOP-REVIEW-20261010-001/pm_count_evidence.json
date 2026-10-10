@@ -1,0 +1,610 @@
+{
+  "47": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    }
+  ],
+  "94": [
+    {
+      "step": 3,
+      "records": 22,
+      "counts": {
+        "Completed": 6,
+        "Backlog": 12,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 4,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "121": [
+    {
+      "step": 4,
+      "records": 21,
+      "counts": {
+        "Backlog": 18,
+        "In Review": 2,
+        "Completed": 1
+      }
+    },
+    {
+      "step": 6,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "135": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    },
+    {
+      "step": 4,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "143": [
+    {
+      "step": 4,
+      "records": 21,
+      "counts": {
+        "Backlog": 18,
+        "In Review": 2,
+        "Completed": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "155": [
+    {
+      "step": 3,
+      "records": 20,
+      "counts": {
+        "Backlog": 15,
+        "Completed": 3,
+        "In Review": 2
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "182": [
+    {
+      "step": 4,
+      "records": 17,
+      "counts": {
+        "Backlog": 13,
+        "In Review": 3,
+        "Completed": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "253": [
+    {
+      "step": 2,
+      "records": 9,
+      "counts": {
+        "Backlog": 9
+      }
+    },
+    {
+      "step": 3,
+      "records": 1,
+      "counts": {
+        "In Review": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 2,
+      "counts": {
+        "Completed": 2
+      }
+    },
+    {
+      "step": 6,
+      "records": 2,
+      "counts": {
+        "Completed": 2
+      }
+    },
+    {
+      "step": 7,
+      "records": 3,
+      "counts": {
+        "Completed": 3
+      }
+    }
+  ],
+  "266": [
+    {
+      "step": 3,
+      "records": 20,
+      "counts": {
+        "Backlog": 13,
+        "Completed": 3,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 4,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "329": [
+    {
+      "step": 4,
+      "records": 22,
+      "counts": {
+        "Completed": 6,
+        "Backlog": 12,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "358": [
+    {
+      "step": 3,
+      "records": 16,
+      "counts": {
+        "Completed": 3,
+        "Backlog": 10,
+        "In Review": 2,
+        "In Progress": 1
+      }
+    }
+  ],
+  "369": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Backlog": 18,
+        "In Review": 2,
+        "Completed": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "416": [
+    {
+      "step": 4,
+      "records": 17,
+      "counts": {
+        "Backlog": 13,
+        "In Review": 3,
+        "Completed": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "452": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    }
+  ],
+  "481": [
+    {
+      "step": 3,
+      "records": 22,
+      "counts": {
+        "Completed": 6,
+        "Backlog": 12,
+        "In Review": 4
+      }
+    }
+  ],
+  "490": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    },
+    {
+      "step": 4,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "491": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Backlog": 18,
+        "In Review": 2,
+        "Completed": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "511": [
+    {
+      "step": 2,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    },
+    {
+      "step": 3,
+      "records": 20,
+      "counts": {
+        "Backlog": 15,
+        "Completed": 3,
+        "In Review": 2
+      }
+    }
+  ],
+  "555": [
+    {
+      "step": 4,
+      "records": 20,
+      "counts": {
+        "Backlog": 15,
+        "Completed": 3,
+        "In Review": 2
+      }
+    },
+    {
+      "step": 6,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "665": [
+    {
+      "step": 4,
+      "records": 22,
+      "counts": {
+        "Completed": 6,
+        "Backlog": 12,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "702": [
+    {
+      "step": 3,
+      "records": 22,
+      "counts": {
+        "Completed": 6,
+        "Backlog": 12,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 4,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "731": [
+    {
+      "step": 4,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "811": [
+    {
+      "step": 4,
+      "records": 22,
+      "counts": {
+        "Completed": 6,
+        "Backlog": 12,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "824": [
+    {
+      "step": 2,
+      "records": 10,
+      "counts": {
+        "Backlog": 10
+      }
+    },
+    {
+      "step": 4,
+      "records": 16,
+      "counts": {
+        "Completed": 3,
+        "Backlog": 10,
+        "In Review": 2,
+        "In Progress": 1
+      }
+    }
+  ],
+  "831": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Backlog": 18,
+        "In Review": 2,
+        "Completed": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "889": [
+    {
+      "step": 2,
+      "records": 10,
+      "counts": {
+        "Backlog": 10
+      }
+    },
+    {
+      "step": 4,
+      "records": 16,
+      "counts": {
+        "Completed": 3,
+        "Backlog": 10,
+        "In Review": 2,
+        "In Progress": 1
+      }
+    }
+  ],
+  "891": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Backlog": 18,
+        "In Review": 2,
+        "Completed": 1
+      }
+    }
+  ],
+  "939": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    }
+  ],
+  "978": [
+    {
+      "step": 3,
+      "records": 17,
+      "counts": {
+        "Backlog": 13,
+        "In Review": 3,
+        "Completed": 1
+      }
+    }
+  ],
+  "1034": [
+    {
+      "step": 3,
+      "records": 22,
+      "counts": {
+        "Completed": 6,
+        "Backlog": 12,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 4,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "1080": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    },
+    {
+      "step": 4,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "1097": [
+    {
+      "step": 4,
+      "records": 20,
+      "counts": {
+        "Backlog": 13,
+        "Completed": 3,
+        "In Review": 4
+      }
+    },
+    {
+      "step": 6,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ],
+  "1125": [
+    {
+      "step": 3,
+      "records": 16,
+      "counts": {
+        "Completed": 3,
+        "Backlog": 10,
+        "In Review": 2,
+        "In Progress": 1
+      }
+    },
+    {
+      "step": 5,
+      "records": 16,
+      "counts": {
+        "Completed": 3,
+        "Backlog": 10,
+        "In Review": 2,
+        "In Progress": 1
+      }
+    }
+  ],
+  "1228": [
+    {
+      "step": 3,
+      "records": 16,
+      "counts": {
+        "Completed": 3,
+        "Backlog": 10,
+        "In Review": 2,
+        "In Progress": 1
+      }
+    },
+    {
+      "step": 4,
+      "records": 10,
+      "counts": {
+        "Backlog": 10
+      }
+    }
+  ],
+  "1243": [
+    {
+      "step": 3,
+      "records": 21,
+      "counts": {
+        "Completed": 9,
+        "In Review": 3,
+        "Backlog": 9
+      }
+    },
+    {
+      "step": 6,
+      "records": 13,
+      "counts": {
+        "In Progress": 13
+      }
+    }
+  ]
+}

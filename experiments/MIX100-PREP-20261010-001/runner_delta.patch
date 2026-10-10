@@ -1,0 +1,123 @@
+--- sft_scale.py
++++ sft_mixed.py
+@@ -6,8 +6,8 @@
+ 
+ 
+ def load_inputs(arm,reencode=True):
+-    require(arm=='S100','Only frozen S100 supported')
+-    cfg=read(ROOT/'configs/sft_scale_plan_v2.json')
++    require(arm=='MIX100','Only frozen S100 supported')
++    cfg=read(ROOT/'configs/sft_mixed100_plan.json')
+     require(cfg['status']=='PREPARED_NOT_EXECUTED' and cfg['epochs']==1 and cfg['seed']==42,'Scale protocol changed')
+     require(cfg['max_context_tokens']==8192 and cfg['model_revision']=='b968826d9c46dd6066d109eabc6255188de91218','Model/context changed')
+     for name,h in cfg['input_artifact_sha256'].items():
+@@ -15,8 +15,9 @@
+     selection=read(ROOT/cfg['selection_manifest'])[arm]
+     require(len(selection['tasks'])==100 and len({x['task_uid'] for x in selection['tasks']})==100,'Wrong unique task count')
+     require(not set(cfg['evaluation']['task_uids']) & {x['task_uid'] for x in selection['tasks']},'Dev leakage')
+-    s1={x['task_uid'] for x in read(ROOT/'experiments/SFT-READY-20260917-001/selection.json')['S1']['tasks']}
+-    require(s1<={x['task_uid'] for x in selection['tasks']},'Not nested original S1')
++    base={x['task_uid'] for x in read(ROOT/'experiments/SFT-SCALE-PREP-20261010-002/selection.json')['S100']['tasks']}
++    require(len(base & {x['task_uid'] for x in selection['tasks']})==80,'Must retain80 originalS100')
++    require(sum(x['empty_reference'] for x in selection['tasks'])==20,'Must include20 reviewednoops')
+     require(sha(ROOT/selection['data_path'])==selection['data_sha256'],'Scale data hash mismatch')
+     with gzip.open(ROOT/selection['data_path'],'rt',encoding='utf-8') as f:examples=[json.loads(x) for x in f]
+     require([(e['task_uid'],e['turn']) for e in examples]==[(t['task_uid'],i) for t in selection['tasks'] for i in range(1,t['turns']+1)],'Whole-turn membership changed')
+--- run_sft_scale.py
++++ run_sft_mixed.py
+@@ -5,7 +5,7 @@
+ from run_day3 import ROOT,write,append,Monitor
+ from run_sft_probe import frozen_sample
+ from veriagent.sft_stage import validate_deployment,verify_weights,require,sha
+-from veriagent.sft_scale import load_inputs
++from veriagent.sft_mixed import load_inputs
+ 
+ 
+ def validate_actual_tokenizer(cfg,examples):
+@@ -26,7 +26,7 @@
+ 
+ 
+ def main():
+-    p=argparse.ArgumentParser();p.add_argument('--arm',choices=['S100'],required=True)
++    p=argparse.ArgumentParser();p.add_argument('--arm',choices=['MIX100'],required=True)
+     p.add_argument('--execute',action='store_true');p.add_argument('--run-id');p.add_argument('--hourly-rmb',type=float)
+     args=p.parse_args();cfg,selection,examples,order=load_inputs(args.arm,reencode=True)
+     if not args.execute:
+@@ -35,7 +35,7 @@
+     require(os.name=='posix' and args.run_id and args.run_id.startswith('SFT-'+args.arm+'-'),'Explicit bounded Linux run ID required')
+     require(Path(args.run_id).name==args.run_id,'Invalid run ID')
+     if args.hourly_rmb is not None:require(0<args.hourly_rmb<float('inf'),'Invalid price')
+-    build=validate_deployment(['configs/sft_scale_plan_v2.json','veriagent/sft_scale.py','scripts/run_sft_scale.py'])
++    build=validate_deployment(['configs/sft_mixed100_plan.json','veriagent/sft_mixed.py','scripts/run_sft_mixed.py'])
+     out=ROOT/'experiments'/args.run_id;out.mkdir(parents=True,exist_ok=False)
+     write(out/'config.json',{**cfg,'arm':args.arm,'status':'RUNNING','hourly_rmb':args.hourly_rmb})
+     write(out/'sample_order.json',order);write(out/'selection.json',selection)
+--- evaluate_sft_scale.py
++++ evaluate_sft_mixed.py
+@@ -8,19 +8,19 @@
+ 
+ 
+ def load_eval():
+-    cfg=read(ROOT/'configs/sft_scale_plan_v2.json');ev=cfg['evaluation'];path=ROOT/ev['data_path']
++    cfg=read(ROOT/'configs/sft_mixed100_plan.json');ev=cfg['evaluation'];path=ROOT/ev['data_path']
+     require(sha(path)==ev['data_sha256'],'Frozen dev input changed')
+     with gzip.open(path,'rt',encoding='utf-8') as f:rows=[json.loads(l) for l in f]
+     require(len(rows)==24 and [r['task_uid'] for r in rows]==ev['task_uids'],'Dev cohort changed')
+     require(all(r['source_pool']=='development' for r in rows),'Non-dev evaluation case')
+     selected=read(ROOT/cfg['selection_manifest'])
+-    training={t['task_uid'] for arm in ['S100'] for t in selected[arm]['tasks']}
++    training={t['task_uid'] for arm in ['MIX100'] for t in selected[arm]['tasks']}
+     require(not training & set(ev['task_uids']),'Train/eval overlap')
+     return cfg,ev,rows
+ 
+ 
+ def main():
+-    p=argparse.ArgumentParser();p.add_argument('--condition',choices=['S100'],required=True)
++    p=argparse.ArgumentParser();p.add_argument('--condition',choices=['MIX100'],required=True)
+     p.add_argument('--training-run');p.add_argument('--execute',action='store_true');p.add_argument('--run-id')
+     p.add_argument('--hourly-rmb',type=float);args=p.parse_args()
+     cfg,ev,rows=load_eval()
+@@ -30,7 +30,7 @@
+     require(os.name=='posix' and args.run_id and Path(args.run_id).name==args.run_id
+             and args.run_id.startswith('SFT-EVAL-'),'Explicit bounded Linux eval run ID required')
+     if args.hourly_rmb is not None:require(0<args.hourly_rmb<float('inf'),'Invalid price')
+-    build=validate_deployment(['configs/sft_scale_plan_v2.json','scripts/evaluate_sft_scale.py','veriagent/sft_stage.py'])
++    build=validate_deployment(['configs/sft_mixed100_plan.json','scripts/evaluate_sft_mixed.py','veriagent/sft_stage.py'])
+     adapter=None;policy={'condition':args.condition,'base_revision':cfg['model_revision'],'adapter':None}
+     if args.condition!='BASE_B1':
+         require(args.training_run and Path(args.training_run).name==args.training_run,'Training run required')
+--- validate_sft_scale_host.py
++++ validate_sft_mixed_host.py
+@@ -1,18 +1,18 @@
+ """Actual installed-tokenizer/GPU admission for S100; never constructs an LLM."""
+ import argparse,importlib.metadata,json,time
+ from pathlib import Path
+-from run_sft_scale import validate_actual_tokenizer
+-from veriagent.sft_scale import load_inputs
++from run_sft_mixed import validate_actual_tokenizer
++from veriagent.sft_mixed import load_inputs
+ from veriagent.sft_stage import ROOT,validate_deployment,verify_weights,require,read
+ 
+ 
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--run-id',required=True);a=p.parse_args()
+-    require(a.run_id.startswith('SFT-SCALE-REMOTE-PREP-') and Path(a.run_id).name==a.run_id,'Invalid run ID')
++    require(a.run_id.startswith('SFT-MIX-REMOTE-PREP-') and Path(a.run_id).name==a.run_id,'Invalid run ID')
+     out=ROOT/'experiments'/a.run_id;out.mkdir(exist_ok=False);start=time.perf_counter()
+     try:
+-        cfg,selection,examples,order=load_inputs('S100')
+-        build=validate_deployment(['configs/sft_scale_plan_v2.json','veriagent/sft_scale.py','scripts/run_sft_scale.py','scripts/evaluate_sft_scale.py','scripts/validate_sft_scale_host.py'])
++        cfg,selection,examples,order=load_inputs('MIX100')
++        build=validate_deployment(['configs/sft_mixed100_plan.json','veriagent/sft_mixed.py','scripts/run_sft_mixed.py','scripts/evaluate_sft_mixed.py','scripts/validate_sft_mixed_host.py'])
+         packages={n:importlib.metadata.version(n) for n in cfg['required_packages']}
+         require(packages==cfg['required_packages'],'Package mismatch')
+         weights=verify_weights(cfg);validate_actual_tokenizer(cfg,examples)
+@@ -20,7 +20,7 @@
+         require(torch.cuda.device_count()==1 and torch.cuda.is_bf16_supported(),'Single BF16 GPU required')
+         baseline=read(ROOT/'experiments/SFT-EVAL-BASE-20261010-001/identity.json')
+         require(torch.cuda.get_device_name(0)==baseline['gpu'],'Different GPU would confound latency comparison')
+-        value={'status':'S100_HOST_PREFLIGHT_PASSED','code_commit':build['code_commit'],'tasks':100,'examples':len(examples),
++        value={'status':'MIX100_HOST_PREFLIGHT_PASSED','code_commit':build['code_commit'],'tasks':100,'examples':len(examples),
+             'updates_planned':len(order),'weights':weights,'packages':packages,'GPU':torch.cuda.get_device_name(0),
+             'seconds':time.perf_counter()-start,'model_loaded':False,'parameter_updates':0}
+         (out/'config.json').write_text(json.dumps(cfg,indent=2));(out/'result.json').write_text(json.dumps(value,indent=2));print(json.dumps(value))
