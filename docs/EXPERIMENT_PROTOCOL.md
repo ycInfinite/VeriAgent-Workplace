@@ -12,3 +12,6 @@ Task success is macro pass@1 over valid task rollouts; do not substitute pass@k.
 
 No training stage starts on CPU qualification alone. Model qualification, real masking/loss/update/reload checks, and measured SFT/DPO step time need separately approved probes.
 
+
+
+2026-10-10 scale extension: S100 is a new immutable run,not amendment/retry of S1/S2. Moreunique tasks and fewerrepetitions atapproximatelyfixedtokens/updates; report both differences. Only configs/sft_scale_plan_v2.json is active;v1 belongs to preservedfailedCPUprep001. Require actualhostpreflight and source-equivalence checks beforetrain/comparison. Different codecommits require explicitshared-file and allowedrunnerdelta validation,not blanketignoringthecodecontrol.

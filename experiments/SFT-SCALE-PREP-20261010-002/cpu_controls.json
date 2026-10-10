@@ -1,0 +1,22 @@
+{
+  "status": "CPU_CONTROLS_PASSED",
+  "checks": {
+    "100_unique_whole_tasks": true,
+    "310_distinct_examples_once": true,
+    "same_original_S1_nested": true,
+    "reject_context_target": true,
+    "reject_dev_source": true,
+    "reject_selective_target": true,
+    "optimizer_loop_AST_identical": true,
+    "readout_AST_identical": true,
+    "rollout_loop_AST_identical": true,
+    "original_eval_unchanged_except_label": true,
+    "exact_local_remote_deployment_whitelist": true,
+    "only7_new_execution_files": true,
+    "failed_v1_config_not_deployable": true
+  },
+  "script_sha256": "917cdcb992a9f93407370535afd05c23070719419043e90e87e0e4c352c5c139",
+  "scope": "Data/isolation/equivalence checks; actual Transformers,CUDA,CE,gradient,VRAM/reload remain remote gates",
+  "model_loaded": false,
+  "parameter_updates": 0
+}

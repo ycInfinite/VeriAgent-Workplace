@@ -114,3 +114,8 @@ User requests nextstage; treat as authorization for the concretelyprepared S1/S2
 ## 2026-10-10 matrix completed and stopped
 
 Executed frozenBASE_B1→S1train/eval→S2train/eval once onnew user-rentedPRO6000. Keepall144rollouts and620updates;noinvalidmodelruns,noresampling. Savedbothadapterslocallywithhashes. OfficialshutdownissuedandSSHrefused;billingconsoleunavailable. Retain S1 as usefuldevelopment reference,notfinalcheckpointselection; do not proclaim S2 winner or autoexpand data/epochs/seeds. Next route needs userdecision after semantic failure audit:training-onlyDPO preparation/probe orsealedgeneralizationqualification. Dev trajectories never become trainingpairs.
+
+
+## 2026-10-10 用户选择 S100 数据多样性检查
+
+当前主线改为S100，再决定DPO。保留原S1全部50条，新增50条已审样本，固定每域20题；一遍310更新与S1两遍310更新近似等token。新增选择是SHA目标+预算约束，不标成均匀随机。GPU无空位，本轮只做离线准备，不自动新租/监控。DPO13对保留为历史Base负例的候选，不当当前S1失败分布。正式DPO需同chosen新增数据的继续SFT对照。

@@ -1,0 +1,13 @@
+{
+  "status": "OFFLINE_DATA_AND_PREFERENCE_CANDIDATES_VERIFIED",
+  "pairs": 13,
+  "chosen_target_tokens": 3489,
+  "rejected_target_tokens": 2071,
+  "max_branch_sequence": 5431,
+  "CPU_seconds": 2.2944649999999456,
+  "GPU_hours": 0,
+  "API_requests": 0,
+  "parameter_updates": 0,
+  "full_semantic_call_rates": "not established by this audit",
+  "GPU_DPO_ready": false
+}

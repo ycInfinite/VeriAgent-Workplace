@@ -1,0 +1,20 @@
+{
+  "experiment_id": "POSTSFT-AUDIT-20261010-001",
+  "Research Question": "What remains after small SFT,and can existing reviewed training data support a controlled size check and preference qualification?",
+  "Hypothesis": "Data availability exceeds the50-task training arms;some observed failures concern semantic coverage,not merely update integrity. Existing training20 may supply valid historical preference pairs.",
+  "Independent Variable": "CPU audit only,no policy intervention. Optional nested100 proposal changes unique-task coverage while approximately holding token/update budget.",
+  "Controlled Variables": "Preserve completed S1/S2 and all144 devrollouts; fixed8192tokenizer; original training cohorts and approved whole trajectories; no sealed case access.",
+  "Metrics": "Inventory,unused approved tasks,all28 postSFT official-failure triage,pair provenance/context/state/replay flags,canonical masks/lengths,nested100 token balance.",
+  "Evidence Gate": "Pair chosen hash matches earlier whole-review approval; same task/context/tools/initialstate; neither infra-invalid; valid complete visible turns and executed observations; allbranches fit8K; dev disjoint. CPU candidate status is not GPU training or numerical DPO validation.",
+  "Cost Bound": "Local CPU only; noGPU/API/startup/rental. One30second maximum MILP solve for optional100task proposal; no outcome-guided redraw.",
+  "Failure Branch": "Record partial checks and failure permanently. Hold any bad pair or infeasible scale proposal; never truncate,relax review,alter raw outputs or launch model work.",
+  "source_execution_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "parent_record_commit": "bf2bc2f8c484a2cf9b1f72b2f0fc6d3eb878208c",
+  "seed": 42,
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "max_context_tokens": 8192,
+  "scale_selection": "Keep originalS1 50; add50 of remaining approved137,exact10/domain,155extra turns,processed/target tokens within2% ofS1 oneepoch. Minimize fixedSHA256rank,notfailurecoverage or modelscore. This is budget-matched selection,notuniformrandom sampling.",
+  "GPU_training_authorized_by_this_config": false,
+  "status": "REGISTERED_CPU_AUDIT"
+}

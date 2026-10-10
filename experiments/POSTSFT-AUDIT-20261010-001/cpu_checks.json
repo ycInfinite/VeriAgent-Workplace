@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "initial_reference_equal_loss_ln2": true,
+    "better_relative_margin_lowers_loss": true,
+    "all_context_labels_ignored": true,
+    "no_dev_in_pairs": true
+  },
+  "scope": "Scalarloss/mask checks only;noTorch,gradient,referencecache orGPUvalidation"
+}

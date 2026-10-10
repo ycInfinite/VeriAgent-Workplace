@@ -1,0 +1,25 @@
+{
+  "status": "CPU_PREPARED_NOT_GPU_TRAINED",
+  "tasks": 100,
+  "examples": 310,
+  "updates_planned": 310,
+  "totals": {
+    "turns": 310,
+    "processed_tokens": 1430459,
+    "supervised_tokens": 28307
+  },
+  "maximum_sequence_tokens": 7208,
+  "relative_tokens_vs_S1": {
+    "processed_tokens": 0.00352101807161298,
+    "supervised_tokens": -0.008372451481818866
+  },
+  "reencoding_passed": true,
+  "training_loop_unchanged": true,
+  "runner_delta_sha256": "3bbb6905d3a94d99d77267d0ae1350dd1f52356c1a2b9c90f7a49699116417ef",
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "parameter_updates": 0,
+  "CPU_seconds": 12.037917899999911,
+  "planned_training_id": "SFT-S100-20261010-001",
+  "planned_eval_id": "SFT-EVAL-S100-20261010-001"
+}

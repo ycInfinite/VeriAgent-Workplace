@@ -1,0 +1,10 @@
+{
+  "status": "CPU_PREPARATION_STOPPED",
+  "error_type": "AssertionError",
+  "cause": "Local CRLF source bytes differ from frozen Linux LF source hash",
+  "stage": "before runner generation",
+  "parameter_updates": 0,
+  "GPU_hours": 0,
+  "data_files_preserved": true,
+  "successor": "SFT-SCALE-PREP-20261010-002"
+}

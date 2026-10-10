@@ -1,0 +1,7 @@
+{
+  "script_sha256": "2036843e66bdd286ce149725b75b9779132c485be832a258c859b757c924b627",
+  "parent_plan_sha256": "7ff5120062725bd4ad05cc9a473c02e64f41d03fcba35402b2576a74e78c90b0",
+  "proposal_sha256": "37da729b42dc7bdcadf6215dfd0b1c934d6a77d448bef6281448a837873aecad",
+  "execution": "CPU only",
+  "authorization": "User2026-10-10 chose 100task SFT size check;DPO deferred"
+}

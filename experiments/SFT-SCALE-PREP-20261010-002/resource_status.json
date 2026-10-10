@@ -1,0 +1,10 @@
+{
+  "status": "WAITING_USER_REPORTED_GPU_INVENTORY",
+  "browser_attempts": 2,
+  "browser_error": "nodeRepl.fetch request failed",
+  "user_direction": "No available GPU;prepare everything else",
+  "rental_started": false,
+  "remote_deployment": false,
+  "new_model_calls": 0,
+  "new_automation": false
+}

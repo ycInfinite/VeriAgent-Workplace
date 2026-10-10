@@ -44,6 +44,8 @@ WINDOW_FILES = ['configs/deepseek_window_acquisition.json','scripts/collect_deep
 
 SFT_STAGE_FILES = ['configs/sft_comparison_plan.json', 'veriagent/sft_stage.py', 'scripts/run_sft_comparison.py', 'scripts/evaluate_sft_comparison.py', 'scripts/validate_sft_stage_host.py', 'experiments/SFT-READY-20260917-001/review_manifest.json', 'experiments/SFT-READY-20260917-001/semantic_judgments.json', 'experiments/SFT-READY-20260917-001/quality_approvals.json', 'experiments/SFT-READY-20260917-001/corpus_manifest.json', 'experiments/SFT-READY-20260917-001/selection.json', 'experiments/SFT-READY-20260917-001/selection_policy.json', 'experiments/SFT-READY-20260917-001/s1_examples.jsonl.gz', 'experiments/SFT-READY-20260917-001/s2_examples.jsonl.gz', 'experiments/SFT-READY-20260917-001/eval_dev24.jsonl.gz']
 
+SFT_SCALE_FILES = ['configs/sft_scale_plan_v2.json', 'veriagent/sft_scale.py', 'scripts/run_sft_scale.py', 'scripts/evaluate_sft_scale.py', 'scripts/validate_sft_scale_host.py', 'experiments/SFT-SCALE-PREP-20261010-002/selection.json', 'experiments/SFT-SCALE-PREP-20261010-002/s100_examples.jsonl.gz']
+
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,time,urllib.request,urllib.parse,urllib.error
 from pathlib import Path
@@ -77,12 +79,14 @@ try:
                   'experiments/DEEPSEEK-POOL-PREP-20260917-001/tasks.jsonl',
                   'experiments/DEEPSEEK-POOL-PREP-20260917-001/tool_schemas.json'}
     sft_stage_files={'experiments/SFT-READY-20260917-001/semantic_judgments.json', 'experiments/SFT-READY-20260917-001/corpus_manifest.json', 'configs/sft_comparison_plan.json', 'experiments/SFT-READY-20260917-001/selection.json', 'experiments/SFT-READY-20260917-001/selection_policy.json', 'experiments/SFT-READY-20260917-001/quality_approvals.json', 'scripts/run_sft_comparison.py', 'experiments/SFT-READY-20260917-001/review_manifest.json', 'scripts/evaluate_sft_comparison.py', 'scripts/validate_sft_stage_host.py', 'experiments/SFT-READY-20260917-001/eval_dev24.jsonl.gz', 'experiments/SFT-READY-20260917-001/s2_examples.jsonl.gz', 'experiments/SFT-READY-20260917-001/s1_examples.jsonl.gz', 'veriagent/sft_stage.py'}
+    sft_scale_files={'scripts/run_sft_scale.py', 'experiments/SFT-SCALE-PREP-20261010-002/selection.json', 'scripts/validate_sft_scale_host.py', 'configs/sft_scale_plan_v2.json', 'experiments/SFT-SCALE-PREP-20261010-002/s100_examples.jsonl.gz', 'veriagent/sft_scale.py', 'scripts/evaluate_sft_scale.py'}
     additions=set(plan.get('additional_paths',[]))
     assert (not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
             or additions==teacher_files|teacher_probe_files|interactive_files
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files
-            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files)
+            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files
+            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files)
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     reused_verified=[]
@@ -174,7 +178,9 @@ def main():
     parser.add_argument('--include-deepseek',action='store_true',help='Add three reviewed ordinary DeepSeek qualification files; preserve previous deployment')
     parser.add_argument('--include-deepseek-window',action='store_true',help='Add frozen723 training payloads and one-shot window collector')
     parser.add_argument('--include-sft-stage',action='store_true',help='Add only the prepared SFT stage code and frozen reviewed data/dev-only evaluation pack')
+    parser.add_argument('--include-sft-scale',action='store_true',help='Add only authorized nested100 scale files')
     args=parser.parse_args()
+    if args.include_sft_scale:args.include_sft_stage=True
     if args.include_sft_stage:args.include_deepseek_window=True
     if args.include_deepseek_window:args.include_deepseek=True
     destination=ROOT/args.receipt
@@ -188,6 +194,7 @@ def main():
     if args.include_deepseek:additions=additions+DEEPSEEK_FILES
     if args.include_deepseek_window:additions=additions+WINDOW_FILES
     if args.include_sft_stage:additions=additions+SFT_STAGE_FILES
+    if args.include_sft_scale:additions=additions+SFT_SCALE_FILES
     paths=sorted(set(paths)|set(additions))
     # Ask before requesting signed download URLs: waiting at the password prompt
     # after metadata fetch can let short-lived private-repo links expire.

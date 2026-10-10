@@ -57,3 +57,8 @@ Fresh144validtrajectories,notreusedDay3labels. Typedcandidatecallcounts24/76(BAS
 
 
 补充诊断盲点：S2 task363/seed42重复创建同一图表直到轮数上限，但每次都会修改analytics._plots_data，所以原same-state循环检测始终为false。已人工确认该例的重复行动；“state changed”不等于“任务有进展”。原始自动指标保留，不把候选循环数0写成真实循环率0，也不在本轮中途修改harness。
+
+
+## 2026-10-10 全部 post-SFT 官方失败初步归因
+
+覆盖S1失败13条、S2失败15条，分母仅失败轨迹。S1：日期/时间范围/条件7，Completed目标2，过滤与放弃2，due-today归因待定2。S2：日期/条件6，排序目标3，可选属性虚构2，范围越界4。文件experiments/POSTSFT-AUDIT-20261010-001/postsft_failure_triage.json包含每条source SHA、seed、理由；Codex单审，未独立人工裁决。成功轨迹仍可包含错误，不把此次triage宣称为完整call-level语义错误率。DPO候选负例单独审核，全部属于原training20，不移用dev失败。

@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-10-10T04:34:26.863567+00:00",
+  "config_sha256": "317a113d5aa268467327660adc9cfe0d08be7a26b322958c43fa325bc5606b11",
+  "script_sha256": "677373949d877fc94f6d3bca68406eb7dcad596956daa0f22f8f22c8f0ff203b",
+  "source_sha256": {
+    "experiments\\SFT-READY-20260917-001\\quality_approvals.json": "ddfb2657e0fd48d23353acc6eeaafa065e3fcac1ad75ea23af31e1012a54fe01",
+    "experiments\\SFT-READY-20260917-001\\corpus_manifest.json": "5011565da71cec833232c515a2c703a160121781e8b0c6da4ce378d0c3904714",
+    "experiments\\SFT-READY-20260917-001\\selection.json": "c5e698a78609e2637a23f1e5d0f60b7df0091c29acc6c556c2894c87af0ae78d",
+    "experiments\\DEEPSEEK-QUAL-20260917-001\\quality_review.json": "27594b6815e993af149a5dea7503f3923332af551bf3346f2893a138ba2c2d10",
+    "experiments\\DEEPSEEK-QUAL-20260917-001\\trajectories.jsonl": "63f09da20bd6b3a7004ee9bf3b9cf271ab5343ff3af25274f4a6353b069f821a",
+    "experiments\\SFT-ACQUIRE-20260916-001\\trajectories.jsonl": "2b6a5995c158668372148010323403019f1db4b061d7b6213deeffdb7e36be87",
+    "experiments\\SFT-EVAL-BASE-20261010-001\\trajectories.jsonl": "86572bd50d0bc958073d38c07d10b514b94475576e4d56d56a200f8e138dd17d",
+    "experiments\\SFT-EVAL-S1-20261010-001\\trajectories.jsonl": "f2ed0724bc0f77c4c10a756294a9f7ee995ffed6a4d01a47e18a3d0c4fe38784",
+    "experiments\\SFT-EVAL-S2-20261010-001\\trajectories.jsonl": "fc5eb2020859e2121738eb79e23ed8d9570da3465c5c5841512aa5162b8e5a46"
+  },
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "kind": "CPU_ONLY"
+}

@@ -1,0 +1,12 @@
+{
+  "scripts/run_sft_comparison.py": {
+    "local_raw_sha256": "e46281c75805629530c180727271451fde78d023134c18e93e8f72e4a378a2d7",
+    "canonical_LF_sha256": "7e7cfb7a7f4483efe0b3e0a248cc02725686543acd6a14ef6bf32f15586dbbf9",
+    "frozen_remote_sha256": "7e7cfb7a7f4483efe0b3e0a248cc02725686543acd6a14ef6bf32f15586dbbf9"
+  },
+  "scripts/evaluate_sft_comparison.py": {
+    "local_raw_sha256": "95cd37a5c2f0800818fa39223ef2d0a3df282b764ca4cc9e3479170cee7deda9",
+    "canonical_LF_sha256": "95cd37a5c2f0800818fa39223ef2d0a3df282b764ca4cc9e3479170cee7deda9",
+    "frozen_remote_sha256": "95cd37a5c2f0800818fa39223ef2d0a3df282b764ca4cc9e3479170cee7deda9"
+  }
+}

@@ -132,3 +132,8 @@ Additional actual-host preparation:904CPU0.10RMB/h,roughly14:26–14:43plusshutd
 ## 2026-10-10 actual complete resource record
 
 BASEeval230.489s,S1train478.891s,S1eval630.250s,S2train474.173s,S2eval744.487s;sum2558.289s=0.710636GPUh. ContainerPID1startestimate1791594575.89 toofficialshutdownrequest1791603215.6105056 gives2.399922h;notverifiedbillingstart/end. Includes restore/install/idle/gaps/retrieval. Currenthourlyrateunknown,RMBnull. S1/S2meanstep1.419334/1.409406s;allocatedpeak32.1356/29.3690GiB,reserved81.7305/56.4648GiB. Devicepollmax82.3857/57.1201GiB;meantrainGPUutil88.83/89.60%. Actual96GBonly,notproofof80GBfit. Inferencecostperofficialsuccess inGPUh:BASE0.0042683,S1 0.0050020,S2 0.0062667;multiplyactualhourlyrate,exclude training/setup/storage. UnmergedLoRA andlongeroutputs confoundpurelatencybehaviorattribution. NoDPO/GRPOtime measured.
+
+
+## 2026-10-10 下一轮准备成本
+
+本轮本地CPU检查：新增GPU-hours0、API0、参数更新0，没有远端开机。POSTSFT审核主脚本2.29s，S100成功准备主脚本12.04s，另有格式/准入检查；这些不是整轮人工/CPU总耗时。拟执行S100训练+评估约0.3–0.4scriptGPUh，基于同卡前轮估算，不是实测；部署/预检/回收另计，时价未知。硬上限训练60min+评估30min。用户报告缺卡，尚无新增GPU费用。

@@ -72,3 +72,6 @@
 {"experiment_id": "SFT-EVAL-S2-20261010-001", "event": "started", "evidence": "evidence/sft-execution-20261010/remote_operations/experiments/registry.jsonl", "execution_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c"}
 {"experiment_id": "SFT-EVAL-S2-20261010-001", "event": "completed", "evidence": "evidence/sft-execution-20261010/remote_operations/experiments/registry.jsonl", "execution_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c"}
 {"experiment_id": "SFT-RESUME-20261010-001", "event": "matrix_complete_evidence_preserved_shutdown_requested", "next_stage_started": false}
+{"experiment_id": "POSTSFT-AUDIT-20261010-001", "event": "cpu_audit_completed", "parameter_updates": 0, "candidate_pairs": 13}
+{"experiment_id": "SFT-SCALE-PREP-20261010-001", "event": "cpu_preparation_failed_preserved", "reason": "CRLF source identity mismatch", "model_run": false}
+{"experiment_id": "SFT-SCALE-PREP-20261010-002", "event": "cpu_preparation_passed_waiting_GPU_inventory", "planned_updates": 310, "actual_updates": 0}

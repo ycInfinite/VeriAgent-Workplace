@@ -1,0 +1,16 @@
+{
+  "teacher_unique_tasks": 743,
+  "main_batch": 723,
+  "main_reviewed": 150,
+  "main_approved": 137,
+  "main_held": 13,
+  "main_unreviewed": 573,
+  "S1_tasks": 50,
+  "S2_tasks": 50,
+  "S1_S2_overlap": 16,
+  "S1_S2_unique": 84,
+  "main_approved_unused_by_both": 53,
+  "old20_whole_review_pass": 15,
+  "old20_export_was_not_admitted": true,
+  "basis": "Exact manifests,not counts inferred from reward"
+}

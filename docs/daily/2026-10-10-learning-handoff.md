@@ -185,3 +185,56 @@ S1/S2的样本平均CE都下降，S2最终CE更低但总体成功率更低；两
 
 
 补充诊断盲点：S2 task363/seed42重复创建同一图表直到轮数上限，但每次都会修改analytics._plots_data，所以原same-state循环检测始终为false。已人工确认该例的重复行动；“state changed”不等于“任务有进展”。原始自动指标保留，不把候选循环数0写成真实循环率0，也不在本轮中途修改harness。
+
+## 当天后续：已选择100条SFT，GPU缺货时完成全部本地准备
+
+当前路线以这一段为准：你明确选择先做100条SFT规模检查，DPO暂缓。随后你告知没有GPU空位，本轮没有再开机、租卡、调用API或训练。
+
+今天后半段回答的问题：不是“137条够不够”的抽象判断，而是能否用现有已审数据，准备一个近似相同预算的100条对照。结果是可行：原S1的50条保留，再加50条；100×1epoch=310steps，对比原50×2epochs=310steps。processed tokens +0.3521%，target tokens −0.8372%，max sequence7208。更改的是任务多样性与重复次数，不能称为所有其他训练维度都不变。
+
+实际执行了数据库存核验、28条SFT官方失败初步归因、13个历史training偏好对候选编码、100条完整轨迹重新导出、训练/评测入口与部署白名单准备。13项CPU控制通过，包含拒绝dev、拒绝context计入loss、拒绝选择性target、以及训练/重载/rollout循环AST一致。第一次CPU准备因CRLF/LF原始hash不同停止，保留001失败和精确脚本快照；002证明只有换行差异后通过。没有重跑任何旧模型实验。
+
+原始数字：已采集743个不同training任务（20+723）；主批723中审核150、通过137、暂缓13、未审573。原S1/S2实际各50、重叠16、合计84不同任务，主批另有53条已审且两组未用。旧20题另有15条教师质量通过记录，不等于自动加入当前训练导出。
+
+本轮没有新success/failure模型轨迹；使用已有SFT评测做分析。S1的13条官方失败中2条“今天到期是否逾期”仍归因待定；S2的15条失败主要是日期条件、排序、虚构可选属性和范围越界。不要把28条失败分母的归因，冒充全144条或所有call的语义错误率。
+
+13个DPO候选来自同一training任务的旧Base失败与DeepSeek成功；chosen/rejected监督tokens3489/2071，最长分支5431，初始上下文、工具和状态一致。它们只证明CPU格式可用，负例并非当前S1产生；没有GPU log-prob、梯度或DPO更新。后续若用这些新增任务做DPO，要设置相同chosen数据的继续SFT对照，否则新数据与偏好目标混杂。
+
+今晚额外理解三个入口即可：
+
+| 文件→函数 | 输入→输出 | pipeline作用 |
+|---|---|---|
+| scripts/prepare_sft_scale.py→main | 已冻结100条清单+原教师记录→310编码样本与v2配置 | 不重新采样，把已审完整轨迹转换为可训练输入 |
+| veriagent/sft_scale.py→load_inputs | S100配置/样本/审批→验证后的样本与一次遍历顺序 | 防止换数据、漏掉assistant轮、dev泄漏或改mask |
+| scripts/compare_sft_scale_evaluations.py→main | 未来S100与原S1结果→配对差值/区间 | 检查同条件与允许的代码差异，不因commit不同就随意比较 |
+
+关键代码节选：
+
+```python
+# S100的每个assistant样本只出现一次
+order = schedule(len(examples), cfg['epochs'], cfg['seed'])
+require(len(order) == cfg['optimizer_steps_per_arm'] == 310,
+        'Scale schedule changed')
+
+# 原S1全部任务必须留在新100条里；禁止重新挑一个更好看的50条基线
+require(s1 <= {x['task_uid'] for x in selection['tasks']},
+        'Not nested original S1')
+```
+
+新增知识点：数据条数、assistant样本数、监督tokens和processed tokens是不同量；固定预算下增加不同任务会减少重复；CPU准入与真实GPU训练完整性仍是不同证据。
+
+五个新增追问（不给答案）：
+1. 100条各看一遍与50条各看两遍，究竟控制了什么、改变了什么？
+2. 为什么已采集743条，仍只先用已审100条，而不直接训练全部官方成功轨迹？
+3. token约束下按SHA目标选出的新增50条，能否宣称是均匀随机样本？
+4. 为什么旧Base的失败不一定代表当前S1仍然会失败？
+5. 为什么DPO添加新任务时，需要同样chosen数据的继续SFT对照？
+
+下一步只等GPU资源可用，按已选S100范围部署预检→310步→48条eval→保全关机，不重新讨论是否“允许相同实验”。如果缺卡持续，不自动新租或开启库存监控。DPO/额外扩大到全部137条等路线尚未执行。
+
+证据与配置：`experiments/POSTSFT-AUDIT-20261010-001/`；`experiments/SFT-SCALE-PREP-20261010-001/invalid_run.json`；`experiments/SFT-SCALE-PREP-20261010-002/result.json`和`cpu_controls.json`；**执行配置只用`configs/sft_scale_plan_v2.json`**。完整开跑步骤见`docs/SFT_SCALE100_READY_20261010.md`。拟用GPU experiment_id为`SFT-S100-20261010-001`和`SFT-EVAL-S100-20261010-001`，目前未执行。
+
+
+数据覆盖补充：137条已审轨迹中空reference为0；S1/S2/S100也均为0。因而100条扩充未增加空reference任务覆盖。“这可能关联无需修改时过度行动”只是待检验的机制假设，不能由相关性作因果结论。保持当前S100冻结；未来若补合法no-op/约束拒绝样本，须单独审核和登记对照，不能悄悄改变本轮100条。证据：experiments/POSTSFT-AUDIT-20261010-001/noop_coverage.json。
+
+口径注意：空reference与执行后无状态变化不是同一概念；137条中有1条教师执行没有状态变化。因此这里只确认“空reference子集未覆盖”，不声称所有合法no-op语义样本完全为零。state_change_coverage.json保留了该核验。

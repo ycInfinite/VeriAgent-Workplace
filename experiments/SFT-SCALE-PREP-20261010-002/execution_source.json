@@ -1,0 +1,6 @@
+{
+  "base_repository_commit": "bf2bc2f8c484a2cf9b1f72b2f0fc6d3eb878208c",
+  "working_tree_changes_present_during_CPU_execution": true,
+  "exact_script_identity": "identity.json script_sha256; failed001 exact script snapshot retained",
+  "GPU_execution_commit": "not_deployed"
+}

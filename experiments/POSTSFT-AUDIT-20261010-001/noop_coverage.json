@@ -1,0 +1,22 @@
+{
+  "approved137": {
+    "tasks": 137,
+    "empty_reference": 0,
+    "zero_tool_steps": 0
+  },
+  "S1": {
+    "tasks": 50,
+    "empty_reference": 0,
+    "zero_tool_steps": 0
+  },
+  "S2": {
+    "tasks": 50,
+    "empty_reference": 0,
+    "zero_tool_steps": 0
+  },
+  "S100": {
+    "tasks": 100,
+    "empty_reference": 0,
+    "zero_tool_steps": 0
+  }
+}

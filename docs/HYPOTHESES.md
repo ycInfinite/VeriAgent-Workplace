@@ -105,3 +105,13 @@ Freshlocalrevalidation supports retaineddatareadiness;S2versusS1behavior hypothe
 ## 2026-10-10 completed SFT comparison
 
 SFT execution integrity supported for both50-task/310-updatearms,notonlyold8stepprobe. Development behavior improved versusmatchedBASE_B1:nonempty22.5%→75%(S1)/77.5%(S2). Primaryfailure-targeted superiority remainsunsupported:S2−S1 +2.5pp,95%task-cluster interval[-20,+25]pp. S2overall68.75% versusS1 72.92%;empty-reference25%versus62.5%. Freshcases support specificgroundingimprovement butalso scope/optionalattribute regressions. Noheld-out/generalization/multitrainseedclaim;noautotuning. Fullsemanticmetricsstillpending.
+
+
+## 2026-10-10 S100 待检验
+
+50条已支持小样本开发收益，但未测饱和。预登记检验：固定310steps/近似tokens，多样性100×1是否优于50×2；数据数与重复次数一起变化，不能声称其他所有训练维度不变。CPU准备已通过，模型结果未测。旧DPO13对可编码不代表DPO梯度/效果已验证。
+
+
+数据覆盖补充：137条已审轨迹中空reference为0；S1/S2/S100也均为0。因而100条扩充未增加空reference任务覆盖。“这可能关联无需修改时过度行动”只是待检验的机制假设，不能由相关性作因果结论。保持当前S100冻结；未来若补合法no-op/约束拒绝样本，须单独审核和登记对照，不能悄悄改变本轮100条。证据：experiments/POSTSFT-AUDIT-20261010-001/noop_coverage.json。
+
+口径注意：空reference与执行后无状态变化不是同一概念；137条中有1条教师执行没有状态变化。因此这里只确认“空reference子集未覆盖”，不声称所有合法no-op语义样本完全为零。state_change_coverage.json保留了该核验。
