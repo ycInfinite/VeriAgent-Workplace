@@ -20,7 +20,13 @@ try:
  with urllib.request.build_opener(NoRedirect()).open(urllib.request.Request(p['url'],headers={'Cache-Control':'no-cache'}),timeout=90) as r:data=r.read(16000001)
  assert len(data)<=16000000 and hashlib.sha256(data).hexdigest()==p['receipt']['archive_sha256']
  assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\x00'+data).hexdigest()==p['blob']
- expected={e['path']:e for e in p['receipt']['members']};phase='verify_archive'
+ expected={e['path']:e for e in p['receipt'].get('members',[])};phase='verify_archive'
+ if p.get('single_file'):
+  assert p['single_file']=='scripts/restore_pinned_weights_modelscope.py'
+  target=root/p['single_file'];assert target.resolve().is_relative_to(root) and not target.exists()
+  target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
+  receipt={'status':'GITHUB_OPERATIONAL_FILE_VERIFIED','git_commit':p['commit'],'path':p['single_file'],'sha256':hashlib.sha256(data).hexdigest(),'account_credential_sent_to_remote':False}
+  print(json.dumps(receipt));sys.exit(0)
  with tarfile.open(fileobj=io.BytesIO(data),mode='r:gz') as t:
   assert len(t.getmembers())==len(expected) and {m.name for m in t.getmembers()}==set(expected)
   verified=[]
@@ -45,20 +51,25 @@ except Exception as e:
 def main():
  p=argparse.ArgumentParser();p.add_argument('--host',required=True);p.add_argument('--port',type=int,required=True)
  p.add_argument('--pin',required=True);p.add_argument('--commit',required=True);p.add_argument('--receipt',required=True)
+ p.add_argument('--operational-file',action='store_true')
  a=p.parse_args();dest=ROOT/a.receipt
  if dest.exists():raise FileExistsError('Receipt already exists')
  commit=subprocess.check_output(['git','rev-parse',a.commit],cwd=ROOT).decode().strip()
- info=json.loads(subprocess.check_output(['git','show',commit+':evidence/sft-recovery-20261010/bundle_receipt.json'],cwd=ROOT))
- blob=subprocess.check_output(['git','rev-parse',commit+':'+ARTIFACT],cwd=ROOT).decode().strip()
+ artifact='scripts/restore_pinned_weights_modelscope.py' if a.operational_file else ARTIFACT
+ if a.operational_file:
+  data=subprocess.check_output(['git','show',commit+':'+artifact],cwd=ROOT)
+  info={'archive_sha256':hashlib.sha256(data).hexdigest(),'archive_bytes':len(data),'execution_commit':'transport-only'}
+ else:info=json.loads(subprocess.check_output(['git','show',commit+':evidence/sft-recovery-20261010/bundle_receipt.json'],cwd=ROOT))
+ blob=subprocess.check_output(['git','rev-parse',commit+':'+artifact],cwd=ROOT).decode().strip()
  password=getpass.getpass('SSH password (not logged): ')
  r=subprocess.run(['git','-c','credential.interactive=never','credential','fill'],cwd=ROOT,
      input='protocol=https\nhost=github.com\npath='+REPO+'.git\n\n',text=True,capture_output=True,check=True)
  fields=dict(s.split('=',1) for s in r.stdout.splitlines() if '=' in s);token=fields['password']
- req=urllib.request.Request('https://api.github.com/repos/'+REPO+'/contents/'+ARTIFACT+'?ref='+commit,
+ req=urllib.request.Request('https://api.github.com/repos/'+REPO+'/contents/'+artifact+'?ref='+commit,
      headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Cache-Control':'no-cache','User-Agent':'VeriAgent-recovery'})
  with urllib.request.urlopen(req,timeout=30) as response:meta=json.load(response)
  assert meta['sha']==blob and meta['size']==info['archive_bytes']
- url=urllib.parse.urlsplit(meta['download_url']);assert url.hostname=='raw.githubusercontent.com' and url.path=='/'+REPO+'/'+commit+'/'+ARTIFACT
+ url=urllib.parse.urlsplit(meta['download_url']);assert url.hostname=='raw.githubusercontent.com' and url.path=='/'+REPO+'/'+commit+'/'+artifact
  token=None;fields.clear();r=None;req=None
  client=paramiko.SSHClient();client.set_missing_host_key_policy(PinnedKey(a.pin))
  client.connect(a.host,port=a.port,username='root',password=password,allow_agent=False,look_for_keys=False,timeout=20)
@@ -66,7 +77,7 @@ def main():
  try:
   command='source /etc/network_turbo >/dev/null 2>&1 && /root/miniconda3/bin/python -c '+shlex.quote(REMOTE)
   stdin,stdout,stderr=client.exec_command(command,timeout=180,get_pty=False)
-  stdin.write(json.dumps({'url':meta['download_url'],'blob':blob,'commit':commit,'receipt':info,'root':'/root/autodl-tmp/veriagent-workplace-sft-20261010'}));stdin.flush();stdin.channel.shutdown_write()
+  stdin.write(json.dumps({'url':meta['download_url'],'blob':blob,'commit':commit,'receipt':info,'root':'/root/autodl-tmp/veriagent-workplace-sft-20261010','single_file':artifact if a.operational_file else None}));stdin.flush();stdin.channel.shutdown_write()
   text=stdout.read().decode();errors=stderr.read();code=stdout.channel.recv_exit_status();meta=None;errors=None
   receipt=json.loads(text)
   if code:print(json.dumps(receipt));raise RuntimeError('Recovery failed')
