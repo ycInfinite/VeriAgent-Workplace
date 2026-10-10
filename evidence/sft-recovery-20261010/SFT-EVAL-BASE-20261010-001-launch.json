@@ -1,0 +1,17 @@
+{
+  "run_id": "SFT-EVAL-BASE-20261010-001",
+  "pid": 3919,
+  "start_ticks": "1465271484",
+  "boot_id": "159b750d-339d-4dda-a47b-1298956f6c3b",
+  "launched_epoch": 1791599294.9720821,
+  "command": [
+    "/root/autodl-tmp/veriagent-workplace-sft-20261010/.venv/bin/python",
+    "scripts/evaluate_sft_comparison.py",
+    "--condition",
+    "BASE_B1",
+    "--execute",
+    "--run-id",
+    "SFT-EVAL-BASE-20261010-001"
+  ],
+  "execution_code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c"
+}

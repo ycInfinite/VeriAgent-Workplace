@@ -1,0 +1,134 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review_completed": false,
+  "scope": "Post-hoc illustrative case review,not a representative sample or full failure-rate estimate;development only",
+  "old_annotations_reused": false,
+  "cases": [
+    {
+      "task_id": 184,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-BASE-20261010-001",
+        "SFT-EVAL-S1-20261010-001"
+      ],
+      "base": "Calls delete_customer with customer_id='Quinn Taylor'; tool returns Customer not found; then stops. Official reward0.",
+      "S1": "Searches customer_name='Quinn Taylor', observes exactly one record with customer_id='00000090', deletes that observed ID, receives success. Official reward1.",
+      "interpretation": "Concrete improvement from name-as-ID/missing lookup to observed typed identifier. This case alone cannot establish population-level grounding improvement.",
+      "evidence": "Full generated turns and tool observations reviewed for both runs; initial task and final official reward retained in raw trajectories."
+    },
+    {
+      "task_id": 0,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-S1-20261010-001"
+      ],
+      "S1": "Resolves Carlos through company directory, but email_search_emails receives unsupported recipient keyword at step2. Removes it after tool error, observes all5 matching emails on one page, identifies newest Carlos email00000057, re-reads already-present sender, replies successfully. Official reward1.",
+      "confirmed_findings": [
+        "wrong_argument at step2",
+        "successful error recovery",
+        "redundant unchanged sender lookup at step4"
+      ],
+      "interpretation": "Successful final state does not imply a flawless trajectory. Schema error remains attributable to policy; it is not an infrastructure-invalid run.",
+      "evidence": "All six generated turns and all five observations reviewed; no truncated output used for this annotation."
+    },
+    {
+      "task_id": 414,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-S1-20261010-001"
+      ],
+      "S1": "Correctly resolves both employees and observes all Aisha tasks. Selects grounded ID00000061, whose visible list_name is Completed, as most urgent; official reference instead reassigns00000079. Reward0.",
+      "confirmed_findings": [
+        "wrong target selection at step4 despite correct identifier grounding"
+      ],
+      "interpretation": "Grounded ID is necessary but not sufficient for correct action; task status must constrain selection.",
+      "evidence": "All calls, final response, complete search output and official reference reviewed."
+    },
+    {
+      "task_id": 952,
+      "seeds": [
+        42,
+        43
+      ],
+      "runs": [
+        "SFT-EVAL-S1-20261010-001"
+      ],
+      "S1": "Finds Jinsoo Backlog tasks; moves the Nov27 and Nov29 tasks and explicitly leaves Nov30 due-today task unchanged. Official reference includes Nov30 task00000246, producing reward0.",
+      "classification": "attribution_pending_due_date_boundary",
+      "interpretation": "Preserve official failure; do not automatically treat today-versus-overdue ambiguity as hallucination, premature termination or valid rejected preference data.",
+      "evidence": "Call sequences and final responses for both seeds reviewed; complete search observations and reference explicitly checked for seed42."
+    },
+    {
+      "task_id": 414,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-S2-20261010-001"
+      ],
+      "S2": "Resolves both employee emails, searches Backlog across3boards, picks observed earliest task00000079 and reassigns it successfully. Reward1. This matches official goal; Backlog-only interpretation is not established as a universally correct urgency rule.",
+      "confirmed_findings": [
+        "official target achieved after excluding Completed records"
+      ],
+      "evidence": "Complete user request,all generated turns and all tool observations reviewed from new raw record."
+    },
+    {
+      "task_id": 1,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-S2-20261010-001"
+      ],
+      "S2": "Observation page1 contains15:00 event00000252 and10:00 event00000091. Calls the last displayed record most recent, updates00000091. Reward0.",
+      "confirmed_findings": [
+        "wrong target at step2",
+        "misinterprets ordering despite contradictory visible timestamps"
+      ],
+      "evidence": "Complete user request,all generated turns and all tool observations reviewed from new raw record."
+    },
+    {
+      "task_id": 220,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-S2-20261010-001"
+      ],
+      "S2": "Directory resolves Nadia correctly. Add_customer invents rahul.taylor@example.com,123-456-7890,Software interest and dates not supplied by user or observations. Reward0.",
+      "confirmed_findings": [
+        "ungrounded optional attributes at step2",
+        "valid schema does not establish semantic validity"
+      ],
+      "evidence": "Complete user request,all generated turns and all tool observations reviewed from new raw record."
+    },
+    {
+      "task_id": 12,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-S2-20261010-001"
+      ],
+      "S2": "In Progress search is empty. Agent then searches In Review and moves all4 of those records to Backlog. Reward0.",
+      "confirmed_findings": [
+        "task-scope violation at steps4-7",
+        "unnecessary mutation after valid empty result"
+      ],
+      "evidence": "Complete user request,all generated turns and all tool observations reviewed from new raw record."
+    },
+    {
+      "task_id": 363,
+      "seed": 42,
+      "runs": [
+        "SFT-EVAL-S2-20261010-001"
+      ],
+      "S2": "Uses Nov26-Nov30 for last4weeks,creates plot before condition lookup,then repeats identical create_plot at steps3-6 despite the same successful path each time; stops at round cap.",
+      "confirmed_findings": [
+        "incorrect temporal interval",
+        "condition checked after mutation",
+        "redundant repeated plotting at steps3-6",
+        "semantic action loop at steps4-6"
+      ],
+      "detector_false_negative": "All three_call_loop flags are false because each create_plot mutates analytics._plots_data; raw state change is not meaningful task progress. Preserve original diagnostics; do not report semantic retry-loop rate as zero.",
+      "evidence": "All six raw generated turns,all observations and state-change table names reviewed."
+    }
+  ],
+  "raw_source_sha256": {
+    "SFT-EVAL-BASE-20261010-001": "86572bd50d0bc958073d38c07d10b514b94475576e4d56d56a200f8e138dd17d",
+    "SFT-EVAL-S1-20261010-001": "f2ed0724bc0f77c4c10a756294a9f7ee995ffed6a4d01a47e18a3d0c4fe38784",
+    "SFT-EVAL-S2-20261010-001": "fc5eb2020859e2121738eb79e23ed8d9570da3465c5c5841512aa5162b8e5a46"
+  }
+}

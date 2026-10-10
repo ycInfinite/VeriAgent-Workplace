@@ -1,0 +1,15 @@
+{
+  "status": "ALL_FIVE_RUNS_COMPLETE_NO_GPU_COMPUTE_PROCESS",
+  "observed_epoch": 1791602868.501688,
+  "container_pid1_start_epoch_estimate": 1791594575.89,
+  "container_uptime_hours_at_snapshot": 2.30350324663851,
+  "actual_billing_start_unverified": true,
+  "hourly_rmb": null,
+  "script_gpu_hours": 0.7106359204494704,
+  "total_updates": 620,
+  "total_eval_rollouts": 144,
+  "infra_invalid_model_runs": 0,
+  "trash_absent_or_empty": true,
+  "shutdown_script_sha256": "0358e83eeeaf542aa98f64ba9e339c91df46f1e025892d52dba159f4fb1cf027",
+  "shutdown_pending_local_evidence_verification": true
+}

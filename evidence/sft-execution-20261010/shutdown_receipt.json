@@ -1,0 +1,15 @@
+{
+  "shutdown_requested_epoch": 1791603215.6105056,
+  "official_method": "bash /usr/bin/shutdown",
+  "existing_ssh_session_failed_after_shutdown": true,
+  "watchdog_cancelled": true,
+  "platform_console_unavailable": true,
+  "hourly_rmb": null,
+  "container_pid1_start_epoch_estimate": 1791594575.89,
+  "probe_result": "ConnectionRefusedError",
+  "ssh_banner_received": false,
+  "observed_epoch": 1791603265.2093918,
+  "status": "OFFICIAL_SHUTDOWN_ISSUED_SSH_UNAVAILABLE",
+  "estimated_container_hours_to_shutdown_request": 2.3999223626322217,
+  "billing_status_independently_verified": false
+}

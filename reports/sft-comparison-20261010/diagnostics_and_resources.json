@@ -1,0 +1,2186 @@
+{
+  "scope": "Fixed exposed development24; no held-out/generalization claim",
+  "semantic_review": "Full semantic rates pending; automatic and typed detectors remain candidates",
+  "typed_detector_limits": "Exact text visibility plus current domain table membership; does not prove entity resolution, correct target scope, or complete lookup",
+  "old_day3_semantic_labels_used": false,
+  "source_summary_script_sha256": "69b2bcaa83ada0b0ae2c384cb42a7a72d784b2a5caa0bad80d83c6c6c1ed9d91",
+  "typed_detector_module_sha256": "ea0a79976333eea2daf248c6114797146ebaf68fb5f38840594a73a0f6a14f32",
+  "conditions": {
+    "BASE_B1": {
+      "run_id": "SFT-EVAL-BASE-20261010-001",
+      "result": {
+        "attempted_rollouts": 48,
+        "valid_rollouts": 48,
+        "infra_invalid_rollouts": 0,
+        "verified_successes": 15,
+        "success_rate": 0.3125,
+        "strata": {
+          "nonempty_reference": {
+            "n": 40,
+            "successes": 9
+          },
+          "empty_reference": {
+            "n": 8,
+            "successes": 6
+          }
+        },
+        "tool_calls": 142,
+        "parse_error_attempts": 0,
+        "executable_tool_calls": 137,
+        "executable_tool_call_rate": 0.9647887323943662,
+        "unknown_tool_calls": 0,
+        "schema_invalid_calls": 5,
+        "identifier_bearing_calls": 70,
+        "ungrounded_identifier_candidate_calls": 16,
+        "repeated_same_state_call_candidates": 6,
+        "retry_loop_trajectories": 0,
+        "premature_termination_candidates": 26,
+        "termination_counts": {
+          "assistant_final": 41,
+          "context_limit": 4,
+          "round_limit": 3
+        },
+        "input_tokens": 731438,
+        "output_tokens": 8579,
+        "average_tool_steps": 2.9583333333333335,
+        "average_trajectory_seconds": 4.35943975187062,
+        "peak_torch_allocated_gib": 17.17368459701538,
+        "candidate_metrics_require_semantic_review": true,
+        "status": "MATCHED_DEV_EVAL_COMPLETE",
+        "condition": "BASE_B1",
+        "gpu_hours": 0.06402478181757033,
+        "wall_seconds": 230.48921454325318,
+        "cost_estimate_rmb": null,
+        "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+        "parameter_updates": 0,
+        "scope": "development24 only,not held-out or composition-generalization evidence",
+        "parameter_samples_unchanged": true,
+        "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+      },
+      "gpu_polling": {
+        "sample_count": 212,
+        "mean_utilization_pct": 76.33490566037736,
+        "max_sampled_used_gib": 19.9853515625,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      },
+      "trajectory_sha256": "86572bd50d0bc958073d38c07d10b514b94475576e4d56d56a200f8e138dd17d",
+      "typed_identifier_candidate_rate": {
+        "numerator": 24,
+        "denominator": 76,
+        "rate": 0.3157894736842105
+      },
+      "nonexistent_typed_record_id_rate": {
+        "numerator": 4,
+        "denominator": 61,
+        "rate": 0.06557377049180328
+      },
+      "email_grounding_candidate_rate": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "identifier_candidate_details": [
+        {
+          "task_id": 184,
+          "seed": 42,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "Quinn Taylor",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 356,
+          "seed": 42,
+          "step": 4,
+          "candidate_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000472",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com, carlos.gonzalez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 414,
+          "seed": 42,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 414,
+          "seed": 42,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 0,
+          "seed": 42,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "12345678",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 220,
+          "seed": 42,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "Nadia",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 1112,
+          "seed": 42,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000226",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 1112,
+          "seed": 42,
+          "step": 3,
+          "candidate_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000278",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 918,
+          "seed": 42,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 918,
+          "seed": 42,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 12,
+          "seed": 42,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 12,
+          "seed": 42,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 184,
+          "seed": 43,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "customer_id",
+              "kind": "record_id",
+              "value": "Quinn Taylor",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 356,
+          "seed": 43,
+          "step": 4,
+          "candidate_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000472",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com, carlos.gonzalez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 414,
+          "seed": 43,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 414,
+          "seed": 43,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "aisha",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 0,
+          "seed": 43,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "12345678",
+              "exists_in_current_typed_column": false,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 220,
+          "seed": 43,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "Nadia",
+              "valid_email_shape": false,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 1112,
+          "seed": 43,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "email_id",
+              "kind": "record_id",
+              "value": "00000349",
+              "exists_in_current_typed_column": true,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": false
+            },
+            {
+              "field": "recipient",
+              "kind": "email_slot",
+              "value": "lena.martinez@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 918,
+          "seed": 43,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 918,
+          "seed": 43,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 918,
+          "seed": 43,
+          "step": 3,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "carlos@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 12,
+          "seed": 43,
+          "step": 1,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 12,
+          "seed": 43,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "leila@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        }
+      ],
+      "latency_interpretation": "Measured deployment latency; SFT adapters are unmerged, BASE has no adapter; output length also differs"
+    },
+    "S1": {
+      "run_id": "SFT-EVAL-S1-20261010-001",
+      "result": {
+        "attempted_rollouts": 48,
+        "valid_rollouts": 48,
+        "infra_invalid_rollouts": 0,
+        "verified_successes": 35,
+        "success_rate": 0.7291666666666666,
+        "strata": {
+          "nonempty_reference": {
+            "n": 40,
+            "successes": 30
+          },
+          "empty_reference": {
+            "n": 8,
+            "successes": 5
+          }
+        },
+        "tool_calls": 161,
+        "parse_error_attempts": 0,
+        "executable_tool_calls": 159,
+        "executable_tool_call_rate": 0.9875776397515528,
+        "unknown_tool_calls": 0,
+        "schema_invalid_calls": 2,
+        "identifier_bearing_calls": 76,
+        "ungrounded_identifier_candidate_calls": 0,
+        "repeated_same_state_call_candidates": 3,
+        "retry_loop_trajectories": 0,
+        "premature_termination_candidates": 13,
+        "termination_counts": {
+          "assistant_final": 48
+        },
+        "input_tokens": 775142,
+        "output_tokens": 15603,
+        "average_tool_steps": 3.3541666666666665,
+        "average_trajectory_seconds": 12.637173253538398,
+        "peak_torch_allocated_gib": 17.8376522064209,
+        "candidate_metrics_require_semantic_review": true,
+        "status": "MATCHED_DEV_EVAL_COMPLETE",
+        "condition": "S1",
+        "gpu_hours": 0.17506935296994117,
+        "wall_seconds": 630.2496706917882,
+        "cost_estimate_rmb": null,
+        "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+        "parameter_updates": 0,
+        "scope": "development24 only,not held-out or composition-generalization evidence",
+        "parameter_samples_unchanged": true,
+        "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+      },
+      "gpu_polling": {
+        "sample_count": 582,
+        "mean_utilization_pct": 61.95189003436426,
+        "max_sampled_used_gib": 21.2763671875,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      },
+      "trajectory_sha256": "f2ed0724bc0f77c4c10a756294a9f7ee995ffed6a4d01a47e18a3d0c4fe38784",
+      "typed_identifier_candidate_rate": {
+        "numerator": 0,
+        "denominator": 76,
+        "rate": 0.0
+      },
+      "nonexistent_typed_record_id_rate": {
+        "numerator": 0,
+        "denominator": 50,
+        "rate": 0.0
+      },
+      "email_grounding_candidate_rate": {
+        "numerator": 0,
+        "denominator": 37,
+        "rate": 0.0
+      },
+      "identifier_candidate_details": [],
+      "latency_interpretation": "Measured deployment latency; SFT adapters are unmerged, BASE has no adapter; output length also differs"
+    },
+    "S2": {
+      "run_id": "SFT-EVAL-S2-20261010-001",
+      "result": {
+        "attempted_rollouts": 48,
+        "valid_rollouts": 48,
+        "infra_invalid_rollouts": 0,
+        "verified_successes": 33,
+        "success_rate": 0.6875,
+        "strata": {
+          "nonempty_reference": {
+            "n": 40,
+            "successes": 31
+          },
+          "empty_reference": {
+            "n": 8,
+            "successes": 2
+          }
+        },
+        "tool_calls": 229,
+        "parse_error_attempts": 0,
+        "executable_tool_calls": 224,
+        "executable_tool_call_rate": 0.9781659388646288,
+        "unknown_tool_calls": 0,
+        "schema_invalid_calls": 5,
+        "identifier_bearing_calls": 125,
+        "ungrounded_identifier_candidate_calls": 2,
+        "repeated_same_state_call_candidates": 7,
+        "retry_loop_trajectories": 0,
+        "premature_termination_candidates": 13,
+        "termination_counts": {
+          "assistant_final": 45,
+          "round_limit": 3
+        },
+        "input_tokens": 847225,
+        "output_tokens": 18730,
+        "average_tool_steps": 4.770833333333333,
+        "average_trajectory_seconds": 14.984831800839553,
+        "peak_torch_allocated_gib": 17.962467670440674,
+        "candidate_metrics_require_semantic_review": true,
+        "status": "MATCHED_DEV_EVAL_COMPLETE",
+        "condition": "S2",
+        "gpu_hours": 0.20680192275800638,
+        "wall_seconds": 744.486921928823,
+        "cost_estimate_rmb": null,
+        "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+        "parameter_updates": 0,
+        "scope": "development24 only,not held-out or composition-generalization evidence",
+        "parameter_samples_unchanged": true,
+        "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+      },
+      "gpu_polling": {
+        "sample_count": 688,
+        "mean_utilization_pct": 61.53488372093023,
+        "max_sampled_used_gib": 24.5576171875,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      },
+      "trajectory_sha256": "fc5eb2020859e2121738eb79e23ed8d9570da3465c5c5841512aa5162b8e5a46",
+      "typed_identifier_candidate_rate": {
+        "numerator": 2,
+        "denominator": 125,
+        "rate": 0.016
+      },
+      "nonexistent_typed_record_id_rate": {
+        "numerator": 0,
+        "denominator": 88,
+        "rate": 0.0
+      },
+      "email_grounding_candidate_rate": {
+        "numerator": 2,
+        "denominator": 53,
+        "rate": 0.03773584905660377
+      },
+      "identifier_candidate_details": [
+        {
+          "task_id": 220,
+          "seed": 42,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "nadia.moreau@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": false
+            },
+            {
+              "field": "customer_email",
+              "kind": "email_slot",
+              "value": "rahul.taylor@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        },
+        {
+          "task_id": 220,
+          "seed": 43,
+          "step": 2,
+          "candidate_fields": [
+            {
+              "field": "assigned_to_email",
+              "kind": "email_slot",
+              "value": "nadia.moreau@atlas.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": true,
+              "candidate_error": false
+            },
+            {
+              "field": "customer_email",
+              "kind": "email_slot",
+              "value": "rahul.taylor@example.com",
+              "valid_email_shape": true,
+              "observed_in_user_or_tool_context": false,
+              "candidate_error": true
+            }
+          ]
+        }
+      ],
+      "latency_interpretation": "Measured deployment latency; SFT adapters are unmerged, BASE has no adapter; output length also differs"
+    }
+  },
+  "training": {
+    "S1": {
+      "run_id": "SFT-S1-20261010-001",
+      "result": {
+        "status": "SFT_TRAINING_COMPLETE_RELOAD_PASSED",
+        "arm": "S1",
+        "optimizer_updates": 310,
+        "training_tasks": 50,
+        "processed_tokens": 1425440,
+        "supervised_tokens": 28546,
+        "mean_step_seconds": 1.4193341190115578,
+        "peak_training_allocated_gib": 32.1355881690979,
+        "peak_training_reserved_gib": 81.73046875,
+        "changed_adapter_tensors": 504,
+        "frozen_samples_unchanged": true,
+        "wall_seconds": 478.89088786393404,
+        "gpu_hours": 0.13302524662887058,
+        "cost_estimate_rmb": null,
+        "agent_evaluation": "NOT_RUN",
+        "checkpoint_selection": "fixed_final",
+        "generalization_claim": false,
+        "cost_scope": "Execution record creation through save/reload; earlier CPU admission/instance uptime/storage excluded and must be reported separately"
+      },
+      "gpu_polling": {
+        "sample_count": 439,
+        "mean_utilization_pct": 88.83143507972665,
+        "max_sampled_used_gib": 82.3857421875,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      },
+      "step_time_median_seconds": 1.3340737000107765,
+      "epoch_mean_sample_CE": {
+        "1": 0.31449779129827454,
+        "2": 0.1456651063891308
+      },
+      "CE_scope": "Unweighted mean of per-example target-token mean CE; not policy success or globally token-weighted loss",
+      "reload_check": {
+        "passed": true,
+        "max_logit_abs_diff": 0.0,
+        "expected_ids": [
+          40,
+          3278,
+          1492,
+          498,
+          4637,
+          1846,
+          14298,
+          13,
+          6771,
+          752,
+          1156,
+          1477,
+          1967,
+          10524,
+          594,
+          2551,
+          2621,
+          323,
+          279,
+          9760,
+          14298,
+          624,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          10139,
+          14846,
+          21814,
+          9172,
+          6744,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          606,
+          788,
+          330,
+          273,
+          10524,
+          95642,
+          151658,
+          198,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          2332,
+          10716,
+          77773,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          1631,
+          788,
+          330,
+          6262
+        ],
+        "reloaded_ids": [
+          40,
+          3278,
+          1492,
+          498,
+          4637,
+          1846,
+          14298,
+          13,
+          6771,
+          752,
+          1156,
+          1477,
+          1967,
+          10524,
+          594,
+          2551,
+          2621,
+          323,
+          279,
+          9760,
+          14298,
+          624,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          10139,
+          14846,
+          21814,
+          9172,
+          6744,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          606,
+          788,
+          330,
+          273,
+          10524,
+          95642,
+          151658,
+          198,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          2332,
+          10716,
+          77773,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          1631,
+          788,
+          330,
+          6262
+        ],
+        "interpretation": "Identity only,not Agent evaluation"
+      }
+    },
+    "S2": {
+      "run_id": "SFT-S2-20261010-001",
+      "result": {
+        "status": "SFT_TRAINING_COMPLETE_RELOAD_PASSED",
+        "arm": "S2",
+        "optimizer_updates": 310,
+        "training_tasks": 50,
+        "processed_tokens": 1415914,
+        "supervised_tokens": 29114,
+        "mean_step_seconds": 1.4094061841587386,
+        "peak_training_allocated_gib": 29.368962287902832,
+        "peak_training_reserved_gib": 56.46484375,
+        "changed_adapter_tensors": 504,
+        "frozen_samples_unchanged": true,
+        "wall_seconds": 474.1726185902953,
+        "gpu_hours": 0.13171461627508202,
+        "cost_estimate_rmb": null,
+        "agent_evaluation": "NOT_RUN",
+        "checkpoint_selection": "fixed_final",
+        "generalization_claim": false,
+        "cost_scope": "Execution record creation through save/reload; earlier CPU admission/instance uptime/storage excluded and must be reported separately"
+      },
+      "gpu_polling": {
+        "sample_count": 437,
+        "mean_utilization_pct": 89.60411899313502,
+        "max_sampled_used_gib": 57.1201171875,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      },
+      "step_time_median_seconds": 1.4301182134076953,
+      "epoch_mean_sample_CE": {
+        "1": 0.28807200803271227,
+        "2": 0.11861645371442842
+      },
+      "CE_scope": "Unweighted mean of per-example target-token mean CE; not policy success or globally token-weighted loss",
+      "reload_check": {
+        "passed": true,
+        "max_logit_abs_diff": 0.0,
+        "expected_ids": [
+          40,
+          3278,
+          1492,
+          448,
+          429,
+          13,
+          6771,
+          752,
+          1191,
+          553,
+          9271,
+          24495,
+          27105,
+          594,
+          323,
+          1967,
+          10524,
+          594,
+          2551,
+          14230,
+          624,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          10139,
+          14846,
+          21814,
+          9172,
+          6744,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          606,
+          788,
+          330,
+          7522,
+          27105,
+          95642,
+          151658,
+          198,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          10139,
+          14846,
+          21814,
+          9172,
+          6744,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          606,
+          788,
+          330
+        ],
+        "reloaded_ids": [
+          40,
+          3278,
+          1492,
+          448,
+          429,
+          13,
+          6771,
+          752,
+          1191,
+          553,
+          9271,
+          24495,
+          27105,
+          594,
+          323,
+          1967,
+          10524,
+          594,
+          2551,
+          14230,
+          624,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          10139,
+          14846,
+          21814,
+          9172,
+          6744,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          606,
+          788,
+          330,
+          7522,
+          27105,
+          95642,
+          151658,
+          198,
+          151657,
+          198,
+          4913,
+          606,
+          788,
+          330,
+          10139,
+          14846,
+          21814,
+          9172,
+          6744,
+          497,
+          330,
+          16370,
+          788,
+          5212,
+          606,
+          788,
+          330
+        ],
+        "interpretation": "Identity only,not Agent evaluation"
+      }
+    }
+  },
+  "task_pairs": [
+    {
+      "task_id": 0,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 156
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 363
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 289
+        }
+      }
+    },
+    {
+      "task_id": 0,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 145
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 328
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 295
+        }
+      }
+    },
+    {
+      "task_id": 1,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 272
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 259
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 206
+        }
+      }
+    },
+    {
+      "task_id": 1,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 274
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 218
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 218
+        }
+      }
+    },
+    {
+      "task_id": 12,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 117
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 416
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 7,
+          "output_tokens": 601
+        }
+      }
+    },
+    {
+      "task_id": 12,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 101
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 270
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 7,
+          "output_tokens": 565
+        }
+      }
+    },
+    {
+      "task_id": 18,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 275
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 310
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 234
+        }
+      }
+    },
+    {
+      "task_id": 18,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 275
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 295
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 208
+        }
+      }
+    },
+    {
+      "task_id": 122,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 182
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 193
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 346
+        }
+      }
+    },
+    {
+      "task_id": 122,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 185
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 588
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 340
+        }
+      }
+    },
+    {
+      "task_id": 156,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 109
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 330
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 329
+        }
+      }
+    },
+    {
+      "task_id": 156,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 111
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 308
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 266
+        }
+      }
+    },
+    {
+      "task_id": 184,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 58
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 135
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "task_id": 184,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 58
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 135
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "task_id": 205,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 175
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 442
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 380
+        }
+      }
+    },
+    {
+      "task_id": 205,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 172
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 473
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 294
+        }
+      }
+    },
+    {
+      "task_id": 220,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 128
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 178
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 339
+        }
+      }
+    },
+    {
+      "task_id": 220,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 128
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 178
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 260
+        }
+      }
+    },
+    {
+      "task_id": 314,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "round_limit",
+          "tool_steps": 6,
+          "output_tokens": 244
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 393
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 478
+        }
+      }
+    },
+    {
+      "task_id": 314,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "round_limit",
+          "tool_steps": 6,
+          "output_tokens": 244
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 394
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 436
+        }
+      }
+    },
+    {
+      "task_id": 356,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 176
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 322
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 314
+        }
+      }
+    },
+    {
+      "task_id": 356,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 176
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 322
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 326
+        }
+      }
+    },
+    {
+      "task_id": 363,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 309
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 266
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "round_limit",
+          "tool_steps": 6,
+          "output_tokens": 859
+        }
+      }
+    },
+    {
+      "task_id": 363,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 309
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 337
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 400
+        }
+      }
+    },
+    {
+      "task_id": 385,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 305
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 453
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 767
+        }
+      }
+    },
+    {
+      "task_id": 385,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 305
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 501
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "round_limit",
+          "tool_steps": 11,
+          "output_tokens": 691
+        }
+      }
+    },
+    {
+      "task_id": 414,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 140
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 304
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 372
+        }
+      }
+    },
+    {
+      "task_id": 414,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 158
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 305
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 15,
+          "output_tokens": 804
+        }
+      }
+    },
+    {
+      "task_id": 510,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 0,
+          "output_tokens": 64
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 346
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 307
+        }
+      }
+    },
+    {
+      "task_id": 510,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 0,
+          "output_tokens": 60
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 302
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 353
+        }
+      }
+    },
+    {
+      "task_id": 561,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 307
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 285
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 249
+        }
+      }
+    },
+    {
+      "task_id": 561,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 328
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 288
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 249
+        }
+      }
+    },
+    {
+      "task_id": 669,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "context_limit",
+          "tool_steps": 4,
+          "output_tokens": 227
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 290
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 249
+        }
+      }
+    },
+    {
+      "task_id": 669,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "context_limit",
+          "tool_steps": 4,
+          "output_tokens": 227
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 291
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 244
+        }
+      }
+    },
+    {
+      "task_id": 684,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 80
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 495
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 8,
+          "output_tokens": 577
+        }
+      }
+    },
+    {
+      "task_id": 684,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 80
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 652
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 8,
+          "output_tokens": 577
+        }
+      }
+    },
+    {
+      "task_id": 709,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 88
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 187
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 129
+        }
+      }
+    },
+    {
+      "task_id": 709,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 88
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 1,
+          "output_tokens": 141
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "round_limit",
+          "tool_steps": 6,
+          "output_tokens": 431
+        }
+      }
+    },
+    {
+      "task_id": 918,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 98
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 241
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 199
+        }
+      }
+    },
+    {
+      "task_id": 918,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 172
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 242
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 214
+        }
+      }
+    },
+    {
+      "task_id": 952,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "context_limit",
+          "tool_steps": 1,
+          "output_tokens": 24
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 491
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 16,
+          "output_tokens": 828
+        }
+      }
+    },
+    {
+      "task_id": 952,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "context_limit",
+          "tool_steps": 1,
+          "output_tokens": 24
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 484
+        },
+        "S2": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 16,
+          "output_tokens": 1045
+        }
+      }
+    },
+    {
+      "task_id": 1063,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "round_limit",
+          "tool_steps": 6,
+          "output_tokens": 187
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 301
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 298
+        }
+      }
+    },
+    {
+      "task_id": 1063,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 222
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 295
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 298
+        }
+      }
+    },
+    {
+      "task_id": 1112,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 3,
+          "output_tokens": 185
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 328
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 556
+        }
+      }
+    },
+    {
+      "task_id": 1112,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 2,
+          "output_tokens": 141
+        },
+        "S1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 6,
+          "output_tokens": 372
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 410
+        }
+      }
+    },
+    {
+      "task_id": 1219,
+      "seed": 42,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 9,
+          "output_tokens": 345
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 281
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 322
+        }
+      }
+    },
+    {
+      "task_id": 1219,
+      "seed": 43,
+      "conditions": {
+        "BASE_B1": {
+          "reward": 0.0,
+          "termination": "assistant_final",
+          "tool_steps": 9,
+          "output_tokens": 345
+        },
+        "S1": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 4,
+          "output_tokens": 275
+        },
+        "S2": {
+          "reward": 1.0,
+          "termination": "assistant_final",
+          "tool_steps": 5,
+          "output_tokens": 340
+        }
+      }
+    }
+  ],
+  "measured_script_gpu_hours": 0.7106359204494704,
+  "instance_allocation_hours": null,
+  "cost_scope": "Script GPU-hours exclude restoration and gaps; actual billing start/rate unknown. Separate instance receipt required."
+}

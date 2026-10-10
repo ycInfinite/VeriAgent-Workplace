@@ -1,0 +1,18 @@
+{
+  "run_id": "SFT-EVAL-S2-20261010-001",
+  "pid": 9075,
+  "start_ticks": "1465542176",
+  "launched_epoch": 1791602001.8882246,
+  "command": [
+    "/root/autodl-tmp/veriagent-workplace-sft-20261010/.venv/bin/python",
+    "scripts/evaluate_sft_comparison.py",
+    "--condition",
+    "S2",
+    "--training-run",
+    "SFT-S2-20261010-001",
+    "--execute",
+    "--run-id",
+    "SFT-EVAL-S2-20261010-001"
+  ],
+  "execution_code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c"
+}

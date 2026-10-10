@@ -49,3 +49,11 @@ Full723 acquisition preliminary diagnostics (not finalized semantictaxonomy):27 
 ## 2026-09-17 pre-SFT readiness
 
 Wholeteacherreview150 finds13held despite mechanical success:263cross-domain taskID usedwithcalendartool;1160/1204/615/1100/415/1123latest-emailpaginationunproven;1045dateboundaryunresolved;1079unnecessaryout-of-rangepage;1124announcedbroaderverificationnotperformed;802/83/764faultynumericalaggregation. These teacherqualitylabels do notalterofficialreward or becomeBasefailurecounts; S2targetbasis remainspriorDay3failureevidence.
+
+
+## 2026-10-10 new SFT development trajectories
+
+Fresh144validtrajectories,notreusedDay3labels. Typedcandidatecallcounts24/76(BASE),0/76(S1),2/125(S2);thesearemechanicalvisibility/currenttablechecks,notfullsemanticrates. Reviewedtask184showsname-as-ID→lookup→observedIDdeletion;S1task0recoveringunsupportedrecipientkeyword;S1task414groundedIDbutCompletedwrongtarget;S2task1wronglast-eventordering;S2task220inventedoptionalcontactattributes;S2task12mutatesInReviewafterInProgressisempty. S1task952excludesdue-todaywhileofficialreferenceincludesit:attributionpending,notautomaticDPOrejected. Officialrewardsunchanged. See reports/sft-comparison-20261010/representative_review.json;Codexsingle-reviewer,posthocillustrations,nofullwrongargument/redundancy/prematuremetricclaim.
+
+
+补充诊断盲点：S2 task363/seed42重复创建同一图表直到轮数上限，但每次都会修改analytics._plots_data，所以原same-state循环检测始终为false。已人工确认该例的重复行动；“state changed”不等于“任务有进展”。原始自动指标保留，不把候选循环数0写成真实循环率0，也不在本轮中途修改harness。

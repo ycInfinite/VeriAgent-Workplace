@@ -1,0 +1,48 @@
+{
+  "experiment_id": "SFT-RECOVERY-20261010-001",
+  "status": "RECOVERY_COMPLETE_MATRIX_COMPLETE_SSH_CLOSED",
+  "host": "connect.westd.seetacloud.com",
+  "port": 46158,
+  "hostname": "autodl-container-y4c4dlvw4m-1184c432",
+  "SSH_fingerprint": "SHA256:liZ36vNCsNcNdXeWs4f+g5ZIhPM/ZihP834vxs8Ulqc",
+  "fingerprint_verification": "First-use public handshake pinned;not independent console attestation",
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "memory_MiB": 97887,
+  "driver": "580.142",
+  "initial_disk": "empty50GiB",
+  "remote_root": "/root/autodl-tmp/veriagent-workplace-sft-20261010",
+  "execution_code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "recovery_transport_commit": "fad11e1915b4b9193b57d15a96a91a338a40a843",
+  "archive_sha256": "fd3bfc884a400e130c2804f0151b14d302e052a8ec920dfd44c12dab9c223fb1",
+  "archive_files_verified": 81,
+  "hourly_RMB": null,
+  "credentials_persisted": false,
+  "teacher_resampled": false,
+  "model_runs_started": 5,
+  "preflight": "evidence/sft-recovery-20261010/new_host_preflight.json",
+  "weight_identity_policy": "All final ModelScope mirror files must match frozen HF b968826 SHA256; no model revision change",
+  "mirror_tool_commit": "14f7e57d7349b0378c572319fc5874fdb0b07896",
+  "billing_scope": "GPU instance allocation includes setup/download/waiting; current hourly price unknown,not zero",
+  "operational_failures": [
+    {
+      "kind": "Windows ssh-keyscan no supported publickey output",
+      "resolution": "UnauthenticatedParamiko publickeyhandshake succeeded"
+    },
+    {
+      "kind": "python noton noninteractivePATH",
+      "resolution": "Use observed /root/miniconda3/bin/python explicitly"
+    },
+    {
+      "kind": "HF weight transport stalled/slow",
+      "resolution": "Stopped owned download process,retained partials/logs; official Qwen ModelScope transport with original SHA256 identity gate"
+    },
+    {
+      "kind": "Two remaining ModelScope streams slow after three verified shards",
+      "resolution": "One bounded reconnect using unchanged operational helper; keep completed files and partials; no model experiment retry"
+    }
+  ],
+  "shutdown_reference": "https://www.autodl.com/docs/save_money/",
+  "weights_verified": "evidence/sft-recovery-20261010/modelscope_restore_status.json",
+  "baseline_result": "experiments/SFT-EVAL-BASE-20261010-001/result.json",
+  "completion_receipt": "experiments/SFT-RESUME-20261010-001/execution_completion.json"
+}

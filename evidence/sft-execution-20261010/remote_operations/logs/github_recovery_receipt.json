@@ -1,0 +1,12 @@
+{
+  "status": "GITHUB_RECOVERY_VERIFIED",
+  "archive_git_commit": "fad11e1915b4b9193b57d15a96a91a338a40a843",
+  "execution_code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "archive_sha256": "fd3bfc884a400e130c2804f0151b14d302e052a8ec920dfd44c12dab9c223fb1",
+  "archive_bytes": 6372249,
+  "verified_files": 81,
+  "model_weights_in_archive": false,
+  "account_credential_sent_to_remote": false,
+  "temporary_urls_persisted": false,
+  "root": "/root/autodl-tmp/veriagent-workplace-sft-20261010"
+}

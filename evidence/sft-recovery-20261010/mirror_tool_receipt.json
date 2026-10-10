@@ -1,0 +1,7 @@
+{
+  "status": "GITHUB_OPERATIONAL_FILE_VERIFIED",
+  "git_commit": "14f7e57d7349b0378c572319fc5874fdb0b07896",
+  "path": "scripts/restore_pinned_weights_modelscope.py",
+  "sha256": "26fc24694efbbe7463e7a79c1d23f9ebcc6629df433700feaaa2169187a18c8f",
+  "account_credential_sent_to_remote": false
+}

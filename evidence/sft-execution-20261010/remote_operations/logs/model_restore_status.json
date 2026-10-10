@@ -1,0 +1,6 @@
+{
+  "status": "DOWNLOAD_FAILED",
+  "error_type": "ChunkedEncodingError",
+  "seconds": 1087.7295711040497,
+  "model_loaded": false
+}

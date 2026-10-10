@@ -1,0 +1,39 @@
+{
+  "archive": "/root/autodl-tmp/veriagent-workplace-sft-20261010/logs/SFT-EVAL-S1-20261010-001.tar.gz",
+  "bytes": 295308,
+  "sha256": "d5d45a9a0bf39b3068dd7b0c27b573fb765c15c145adab774eb5e0c997842d53",
+  "files": {
+    "experiments/SFT-EVAL-S1-20261010-001/config.json": {
+      "bytes": 10943,
+      "sha256": "cb1120a8acc6fe1d1b53b20d252132f12638a19ad4c8c3f0162bb98bdaca2e19"
+    },
+    "experiments/SFT-EVAL-S1-20261010-001/gpu_samples.jsonl": {
+      "bytes": 97678,
+      "sha256": "c5b82cdaf1fc9e55c9ec0747c8e79e2fdfe6f025623cc84fb5431c1f05d8552f"
+    },
+    "experiments/SFT-EVAL-S1-20261010-001/identity.json": {
+      "bytes": 1236,
+      "sha256": "4351c4f7c67faaa63782a7c9e5588a731aad9d9ba6fb581fbb8e3691c4addf11"
+    },
+    "experiments/SFT-EVAL-S1-20261010-001/initial_state.json": {
+      "bytes": 508460,
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958"
+    },
+    "experiments/SFT-EVAL-S1-20261010-001/progress.json": {
+      "bytes": 1001,
+      "sha256": "e99b9e8a477502e3a7603b14195cb02d3eb4534e645e23fabf19bb2e1b70a9d9"
+    },
+    "experiments/SFT-EVAL-S1-20261010-001/result.json": {
+      "bytes": 1528,
+      "sha256": "421d7fe0483b7d18881f5aad0b6932a46a2a28aa9bedce3ef8f7afbf7f5d9626"
+    },
+    "experiments/SFT-EVAL-S1-20261010-001/trajectories.jsonl": {
+      "bytes": 1998271,
+      "sha256": "f2ed0724bc0f77c4c10a756294a9f7ee995ffed6a4d01a47e18a3d0c4fe38784"
+    },
+    "experiments/SFT-EVAL-S1-20261010-001/weight_revalidation.json": {
+      "bytes": 104,
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "BOUNDED_SFT_MATRIX_COMPLETE_PRESERVED_SHUTDOWN_REQUESTED",
+  "execution_code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "updates": 620,
+  "valid_eval_rollouts": 144,
+  "infra_invalid_model_runs": 0,
+  "successes": {
+    "BASE_B1": 15,
+    "S1": 35,
+    "S2": 33
+  },
+  "script_gpu_hours": 0.7106359204494704,
+  "estimated_container_hours": 2.3999223626322217,
+  "hourly_rmb": null,
+  "shutdown_evidence": "evidence/sft-execution-20261010/shutdown_receipt.json",
+  "all_adapters_verified_locally": true,
+  "semantic_review": "fresh_illustrative_cases_complete_full_rates_pending",
+  "next_stage_started": false,
+  "local_registry_note": "Events mirrored from authoritative remote registry after execution; local append order is ingestion order,not execution ordering. See identities/launch receipts."
+}

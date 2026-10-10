@@ -1,0 +1,27 @@
+{
+  "status": "NEW_HOST_DATA_AND_CUDA_PREFLIGHT_PASSED",
+  "code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "arms": {
+    "S1": {
+      "tasks": 50,
+      "examples": 155,
+      "schedule_steps": 310
+    },
+    "S2": {
+      "tasks": 50,
+      "examples": 155,
+      "schedule_steps": 310
+    }
+  },
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "memory_total_bytes": 101973950464,
+  "memory_free_bytes": 101388648448,
+  "capability": [
+    12,
+    0
+  ],
+  "bf16_supported": true,
+  "model_loaded": false,
+  "parameter_updates": 0,
+  "epoch": 1791597574.4176235
+}

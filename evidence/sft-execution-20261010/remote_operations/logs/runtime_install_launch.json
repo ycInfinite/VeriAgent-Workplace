@@ -1,0 +1,1 @@
+{"pid": 1969, "packages": ["transformers==4.56.2", "accelerate==1.10.1", "tokenizers==0.22.2", "pandas==3.0.3", "numpy==2.3.2", "jsonschema==4.25.0", "huggingface-hub==0.36.2", "safetensors==0.8.0", "Jinja2==3.1.6", "peft==0.17.1"], "torch_reinstalled": false, "model_loaded": false}

@@ -1,0 +1,52 @@
+{
+  "archive": "/root/autodl-tmp/veriagent-workplace-sft-20261010/logs/SFT-S1-20261010-001.tar.gz",
+  "bytes": 46064,
+  "sha256": "76ad0c195793633643a0b0a863775a1bf252a0b5aacf23c3c609c4e3ab178e3f",
+  "files": {
+    "experiments/SFT-S1-20261010-001/adapter_changes.json": {
+      "bytes": 49041,
+      "sha256": "24fc74c0ca60f6c8f3ad29b9f64fcd8767e478ab6e7fa25d8c5f12142eb1e8e2"
+    },
+    "experiments/SFT-S1-20261010-001/adapter_manifest.json": {
+      "bytes": 277,
+      "sha256": "f6274c139c4f1071a138a2817e201c0b45229a21ed97d218c851ebbce571029a"
+    },
+    "experiments/SFT-S1-20261010-001/config.json": {
+      "bytes": 8975,
+      "sha256": "4b4c8df4af24d336f9be73adcd0e84b73c9ee702114e0d1501e4de75c18a317d"
+    },
+    "experiments/SFT-S1-20261010-001/gpu_samples.jsonl": {
+      "bytes": 73646,
+      "sha256": "5e402c2f8e6b2c577a22532f9daea0b6a6e4a65c1abff28d645941b2ef48019d"
+    },
+    "experiments/SFT-S1-20261010-001/identity.json": {
+      "bytes": 13396,
+      "sha256": "883ac53d86fda4a49ec70ae334731e982f65f67be612c84ddb703e2e5f11d88e"
+    },
+    "experiments/SFT-S1-20261010-001/reload_check.json": {
+      "bytes": 1409,
+      "sha256": "63fb16de404cfc0983402429ac45f9f78a22142ddd76535a9d2e840919cddab8"
+    },
+    "experiments/SFT-S1-20261010-001/result.json": {
+      "bytes": 753,
+      "sha256": "c6f7c1b57b3044f7eef344867878ddf2c6497cb656d1a24e52b52ce86d9c32ee"
+    },
+    "experiments/SFT-S1-20261010-001/sample_order.json": {
+      "bytes": 15282,
+      "sha256": "bb7fb52e24ff15cdcabaa39db6a5c5db848d70d20ec63b5a6c4710804affa03b"
+    },
+    "experiments/SFT-S1-20261010-001/selection.json": {
+      "bytes": 41711,
+      "sha256": "eb15943a85bd9daddfe6cae7fe4eec260d5fed2bca0cbf1fa245ee4715f6a70d"
+    },
+    "experiments/SFT-S1-20261010-001/steps.jsonl": {
+      "bytes": 101882,
+      "sha256": "240466f3d2be69960002aab494f4cc6c0b1a9a7e6a27a3593e0caea156de08df"
+    },
+    "experiments/SFT-S1-20261010-001/weight_revalidation.json": {
+      "bytes": 104,
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a"
+    }
+  },
+  "adapter_preservation": "separate checkpoint download required"
+}

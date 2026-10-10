@@ -1,0 +1,11 @@
+{
+  "status": "ALL_ADAPTER_FILES_MATCH_REMOTE_MANIFEST",
+  "files": {
+    "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "adapter_model.safetensors": "2312cd89d0e61e9912b77d8893d956b103047de66d2c5be7acd6ee938fad3279",
+    "adapter_config.json": "b6473e531af08057fa20bfa34ce4159d568d6d1b125c018ef11e41ba881a13d6"
+  },
+  "bytes": 174661796,
+  "path": "checkpoints/SFT-S2-20261010-001/adapter",
+  "git_ignored": true
+}

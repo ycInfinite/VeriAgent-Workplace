@@ -1,0 +1,8 @@
+{
+  "event": "transport_reconnect",
+  "pid": 2966,
+  "epoch": 1791598742.877512,
+  "reason": "3 verified shards complete; two remaining streams slow; preserve all bytes and reconnect once",
+  "parameter_updates": 0,
+  "new_pid": 3688
+}

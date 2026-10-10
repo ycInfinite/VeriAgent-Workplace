@@ -1,0 +1,24 @@
+{
+  "experiment_id": "SFT-EVAL-BASE-20261010-001",
+  "code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "policy_identity": {
+    "condition": "BASE_B1",
+    "base_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "adapter": null
+  },
+  "started_at": "2026-10-10T02:28:15.476757+00:00",
+  "seeds": [
+    42,
+    43
+  ],
+  "data_sha256": "01ccef315418a7653e23f48c642f7fa97f748d19911f5897786dcc9b70f085c2",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "parameter_sample_before": "65b7d5e06b56322e61f63154816da2ad0c11b50e0ef1da4f0ba839f9e952f15d",
+  "trainable_parameters": 0
+}

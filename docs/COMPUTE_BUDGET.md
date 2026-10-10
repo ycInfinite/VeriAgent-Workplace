@@ -123,3 +123,12 @@ Additional actual-host preparation:904CPU0.10RMB/h,roughly14:26–14:43plusshutd
 ## 2026-10-10 resume
 
 2026-10-10resume localchecks only:GPUhours0/newAPIcalls0/updates0; noinstancestart. CurrentGPUprice/inventory/cache unknown,do not reuseSeptemberavailability ascurrentfact. Prior0.75-1.5GPUh remainsestimate,not actualusage.
+
+### 2026-10-10 新租实例后续执行
+
+用户随后提供已租 PRO6000 96GB 实例，恢复代码/环境/16.38GB 原权重，10:28:14 中国时间启动新 BASE_B1。上述 resume=0 仅描述较早本地检查时点；实际 GPU 实例在恢复期间已计费，不能继续记作0。单价未知，金额 unavailable；最终分开报告脚本实测 GPU-hours 与包含安装/下载/检查/回收等待的实例占用时长。无需因旧30元门槛重复询问，用户此前的本阶段预算豁免仍有效。
+
+
+## 2026-10-10 actual complete resource record
+
+BASEeval230.489s,S1train478.891s,S1eval630.250s,S2train474.173s,S2eval744.487s;sum2558.289s=0.710636GPUh. ContainerPID1startestimate1791594575.89 toofficialshutdownrequest1791603215.6105056 gives2.399922h;notverifiedbillingstart/end. Includes restore/install/idle/gaps/retrieval. Currenthourlyrateunknown,RMBnull. S1/S2meanstep1.419334/1.409406s;allocatedpeak32.1356/29.3690GiB,reserved81.7305/56.4648GiB. Devicepollmax82.3857/57.1201GiB;meantrainGPUutil88.83/89.60%. Actual96GBonly,notproofof80GBfit. Inferencecostperofficialsuccess inGPUh:BASE0.0042683,S1 0.0050020,S2 0.0062667;multiplyactualhourlyrate,exclude training/setup/storage. UnmergedLoRA andlongeroutputs confoundpurelatencybehaviorattribution. NoDPO/GRPOtime measured.

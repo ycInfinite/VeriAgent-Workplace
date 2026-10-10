@@ -1,0 +1,51 @@
+{
+  "archive": "/root/autodl-tmp/veriagent-workplace-sft-20261010/logs/SFT-S2-20261010-001.tar.gz",
+  "bytes": 45827,
+  "sha256": "e7dc0b57129bfaf3212823625560df20d7823cdcf069bd821fe56b9fc99f9d7e",
+  "files": {
+    "experiments/SFT-S2-20261010-001/adapter_changes.json": {
+      "bytes": 49025,
+      "sha256": "34f9c4ad5e04222c750b256f9ec0589836c3cb00506b2b7ee3bbc5de2f8acbe4"
+    },
+    "experiments/SFT-S2-20261010-001/adapter_manifest.json": {
+      "bytes": 277,
+      "sha256": "7f904f73f6408ae1a48d525f72cd42b8b1a8e5883f3e9a99f277637b4bf8d469"
+    },
+    "experiments/SFT-S2-20261010-001/config.json": {
+      "bytes": 8975,
+      "sha256": "acc060e9905f27af5d6511ca4409460c3feb9fa7723fac103cdd7549afa10080"
+    },
+    "experiments/SFT-S2-20261010-001/gpu_samples.jsonl": {
+      "bytes": 73302,
+      "sha256": "988354b1ac4e34b0d68472899f47c078ab7a95e21ecfe1d276b6f488a2a3febf"
+    },
+    "experiments/SFT-S2-20261010-001/identity.json": {
+      "bytes": 13396,
+      "sha256": "54582684680e2c7129aa0f32e6603b2821f66fdc3de345014fc16b8c1be27705"
+    },
+    "experiments/SFT-S2-20261010-001/reload_check.json": {
+      "bytes": 1409,
+      "sha256": "bb7ae2e98fbf2dbb5593fa8531d6bba3cb691bde6f1c287a0f5b54c4240b444b"
+    },
+    "experiments/SFT-S2-20261010-001/result.json": {
+      "bytes": 754,
+      "sha256": "ea31db6598348a69244d6e50dbe6d3646cacfa2cebdeb1f69a25fbc7aa8114d2"
+    },
+    "experiments/SFT-S2-20261010-001/sample_order.json": {
+      "bytes": 15282,
+      "sha256": "bb7fb52e24ff15cdcabaa39db6a5c5db848d70d20ec63b5a6c4710804affa03b"
+    },
+    "experiments/SFT-S2-20261010-001/selection.json": {
+      "bytes": 41725,
+      "sha256": "f36949a4a5b84a9c769e2847794c2cb54ca93499cda6bdb29a95403949b0c788"
+    },
+    "experiments/SFT-S2-20261010-001/steps.jsonl": {
+      "bytes": 101950,
+      "sha256": "3f7c07448e1e1e865c7976e1ccab47ee5fb21453a3633d4752bd4cec151f0766"
+    },
+    "experiments/SFT-S2-20261010-001/weight_revalidation.json": {
+      "bytes": 104,
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a"
+    }
+  }
+}

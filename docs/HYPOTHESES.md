@@ -100,3 +100,8 @@ Actualhostdata/template/package/weightreadiness supported bySFT-REMOTE-PREP-2026
 ## 2026-10-10 resume
 
 Freshlocalrevalidation supports retaineddatareadiness;S2versusS1behavior hypothesis remainsuntested. No newmodel result duringholiday orresume.
+
+
+## 2026-10-10 completed SFT comparison
+
+SFT execution integrity supported for both50-task/310-updatearms,notonlyold8stepprobe. Development behavior improved versusmatchedBASE_B1:nonempty22.5%→75%(S1)/77.5%(S2). Primaryfailure-targeted superiority remainsunsupported:S2−S1 +2.5pp,95%task-cluster interval[-20,+25]pp. S2overall68.75% versusS1 72.92%;empty-reference25%versus62.5%. Freshcases support specificgroundingimprovement butalso scope/optionalattribute regressions. Noheld-out/generalization/multitrainseedclaim;noautotuning. Fullsemanticmetricsstillpending.

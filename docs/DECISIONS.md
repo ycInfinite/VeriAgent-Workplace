@@ -107,3 +107,10 @@ Finaloperationalpreparation completed on904CPU/no-card withf9d45c2.54GitHubfiles
 ## 2026-10-10 resume
 
 User requests nextstage; treat as authorization for the concretelyprepared S1/S2+matcheddev matrix. Keepall50tasks/155turns/310updates andseedprotocol frozen. PreferexistingownedGPU; no newrental inferred. Resourceaccessiscurrentlyunavailable,notadatagatefailure.
+
+用户随后自行新租并提供 SSH，改用该单张 PRO6000 96GB 实例；不再等待旧904或浏览器。项目文件通过 GitHub 固定提交恢复，权重通过官方 Qwen 镜像传输但必须匹配原 Hugging Face revision 的 SHA256。保留慢速下载中断与一次断点重连记录，算法执行代码保持 f9d45c2。完成后通过官方实例关机命令收尾。
+
+
+## 2026-10-10 matrix completed and stopped
+
+Executed frozenBASE_B1→S1train/eval→S2train/eval once onnew user-rentedPRO6000. Keepall144rollouts and620updates;noinvalidmodelruns,noresampling. Savedbothadapterslocallywithhashes. OfficialshutdownissuedandSSHrefused;billingconsoleunavailable. Retain S1 as usefuldevelopment reference,notfinalcheckpointselection; do not proclaim S2 winner or autoexpand data/epochs/seeds. Next route needs userdecision after semantic failure audit:training-onlyDPO preparation/probe orsealedgeneralizationqualification. Dev trajectories never become trainingpairs.

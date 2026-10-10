@@ -1,0 +1,316 @@
+{
+  "experiment_id": "SFT-S1-20261010-001",
+  "code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "deployment": {
+    "code_commit": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "gym_commit": "83b3980b9c04379d72bbf59592d7846630f706bf",
+    "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+    "purpose": "FROZEN_S1_S2_EXECUTION_RECOVERY",
+    "task_count": 20,
+    "source_pool": "training_candidate",
+    "seed": 42,
+    "contains_dev_tasks": true,
+    "contains_final_tasks": false,
+    "contains_bfcl_cases": false,
+    "contains_model_weights": false,
+    "contains_credentials": false,
+    "files": [
+      {
+        "path": "configs/deepseek_acquisition_plan.json",
+        "sha256": "66edb5e97c6946661accb27d0aab9f3a7e22a2b6fe46fbcd4aae3c8e044c649b"
+      },
+      {
+        "path": "configs/deepseek_window_acquisition.json",
+        "sha256": "d9a6350c573c5a3ec96ad7897cd193b7e0d2b92e18aea4e8fa3c95ec311d1309"
+      },
+      {
+        "path": "configs/qwen_code_token_plan.example.json",
+        "sha256": "d77afead6046e895e5308fddb6cac59083b7a0a901e3b9eeb014bf4d3bf40ae4"
+      },
+      {
+        "path": "configs/sft_acquisition_plan.json",
+        "sha256": "43dd7093f468e23aab443690b665a49e902d9cb418ec8662d17bbf2a1bdcc6d6"
+      },
+      {
+        "path": "configs/sft_comparison_plan.json",
+        "sha256": "f959f17192fb9ba10ef8ef2e02e1e7646fccc53623a69d680a7952fb9958ee54"
+      },
+      {
+        "path": "configs/sft_probe_plan.json",
+        "sha256": "521e70957d8e8533fa51419719208e718348667cd86be1267a7040321e2f93c5"
+      },
+      {
+        "path": "configs/sources.json",
+        "sha256": "6e89739f24c7b7f4ecadad20bc99b9cc4b647c9e39f0e8f7532a35f57fb658dc"
+      },
+      {
+        "path": "configs/teacher_acquisition_plan.json",
+        "sha256": "e1191f1370cdc9ce43040685ad935b899cfa520cb558b42dd7b0d702fcc99351"
+      },
+      {
+        "path": "configs/tokenizer.json",
+        "sha256": "bc15f350f025c9686071482519498f160f0d2168ff8638c02bdd8bc5c7a1c59a"
+      },
+      {
+        "path": "data/sft_probe_train20.jsonl",
+        "sha256": "b45deb25860d7cd247c8b2be9c865f91a1577dfa3ceecca1c0499bf1ee669ccc"
+      },
+      {
+        "path": "experiments/DEEPSEEK-POOL-PREP-20260917-001/cohort.json",
+        "sha256": "81b2bbbda58c99c67a7b664de2c5904687549b07690c3ac9f929fecd5f05c123"
+      },
+      {
+        "path": "experiments/DEEPSEEK-POOL-PREP-20260917-001/tasks.jsonl",
+        "sha256": "4a67e830b2b828651c3780f5ab5f7d7d621a670d9f7274bf3b2ab09020888c75"
+      },
+      {
+        "path": "experiments/DEEPSEEK-POOL-PREP-20260917-001/tool_schemas.json",
+        "sha256": "8219072d28e4d50c24436f9c264bf9d9286dd7fa882be56250012b680ff1e760"
+      },
+      {
+        "path": "experiments/SFT-PREP-20260910-001/acquisition_manifest.json",
+        "sha256": "3efb4d9d43a10e167be7b6ce1ca8bcacf062d936f94e3a33e23f690880429951"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/corpus_manifest.json",
+        "sha256": "5011565da71cec833232c515a2c703a160121781e8b0c6da4ce378d0c3904714"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/eval_dev24.jsonl.gz",
+        "sha256": "01ccef315418a7653e23f48c642f7fa97f748d19911f5897786dcc9b70f085c2"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/quality_approvals.json",
+        "sha256": "ddfb2657e0fd48d23353acc6eeaafa065e3fcac1ad75ea23af31e1012a54fe01"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/review_manifest.json",
+        "sha256": "748b684f4e7ba68b4334630287740a9e20bce5e7fb63aa5423b2d6bc3143d401"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/s1_examples.jsonl.gz",
+        "sha256": "14686dda75f25b3677865613f4f8bf81f40a439e847a70f844b73555ff04607f"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/s2_examples.jsonl.gz",
+        "sha256": "2be928ba8edd2ad33540f22560c4b4f05c4d0c70e355d0fa6960872dbd02d4d4"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/selection.json",
+        "sha256": "c5e698a78609e2637a23f1e5d0f60b7df0091c29acc6c556c2894c87af0ae78d"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/selection_policy.json",
+        "sha256": "5b45328371ba2c5cf3df1d57e87585f23090a973092d611f06d8e001b34663cc"
+      },
+      {
+        "path": "experiments/SFT-READY-20260917-001/semantic_judgments.json",
+        "sha256": "b3999176074e8450e772724dd5e9200f3548c044f0078b57b69ee2112d02d298"
+      },
+      {
+        "path": "experiments/TEACHER-ACQUIRE-20260916-001/config.json",
+        "sha256": "e648ae138109ec93bf0c727ef56475e274fd58e1a652a5cfe0aabac05b0794d7"
+      },
+      {
+        "path": "experiments/TEACHER-ACQUIRE-20260916-001/probe_quality_approvals.json",
+        "sha256": "059236284b89ddb49eb174ee0e91e9ca2a4935f32993e224219c0e5e6bf61150"
+      },
+      {
+        "path": "experiments/TEACHER-ACQUIRE-20260916-001/trajectories.jsonl",
+        "sha256": "cde2b4784ee533e2039eab6b2a7fd0594467607ad407753c005f730a944db207"
+      },
+      {
+        "path": "requirements-day3-remote.pinned.txt",
+        "sha256": "30f418f14dd929c28ff0a6f1b26afe04ad836c0fc1131324d005252ff2153ea7"
+      },
+      {
+        "path": "requirements-interactive.pinned.txt",
+        "sha256": "9f1869ff853c2ac4804a8d149e9d8a2ca517d2683c044f1e318936e8eb980004"
+      },
+      {
+        "path": "requirements-sft-acquisition.pinned.txt",
+        "sha256": "f524d45b0b2cc51a082267fd3d5e19e07dd56a0773d3a6340e0a3548eb332136"
+      },
+      {
+        "path": "requirements-sft-probe.pinned.txt",
+        "sha256": "3aad62152e489c42314cff0721532139464c9806366a9e720ded369a9519cb93"
+      },
+      {
+        "path": "scripts/collect_deepseek_probe.py",
+        "sha256": "a307e446cb26afbe03a6c297d0df798f65287dd4cd1952393e5c0e6493b04de4"
+      },
+      {
+        "path": "scripts/collect_deepseek_window.py",
+        "sha256": "41b4fb9d250617fb31aab834a31c579399a1fa1e6a6b10de8761f73c98fcd516"
+      },
+      {
+        "path": "scripts/collect_teacher_probe.py",
+        "sha256": "0b0759f4369d68b34495c4c2438cc289e12973aa5d35c1fc55ae2c9db360eee2"
+      },
+      {
+        "path": "scripts/collect_training_probe.py",
+        "sha256": "947404d8d0d99f857fb94097e3f21a86bccefd4bd9e85a0bc9057b802085483a"
+      },
+      {
+        "path": "scripts/evaluate_sft_comparison.py",
+        "sha256": "95cd37a5c2f0800818fa39223ef2d0a3df282b764ca4cc9e3479170cee7deda9"
+      },
+      {
+        "path": "scripts/gpu_preflight.py",
+        "sha256": "c96a477db7a0093ef03ecf8f748d9133e4865f8623d590c9eaaca18fa159d132"
+      },
+      {
+        "path": "scripts/launch_interactive_client.py",
+        "sha256": "524e82389d416d7752a465e704fef81767e3eec67363d424138afc330f1f2144"
+      },
+      {
+        "path": "scripts/prepare_sft_model_files.py",
+        "sha256": "4a61eeb5a59f2784c6c7cadec27f46c8cf9bc185b277cda61143566d0ab7f4aa"
+      },
+      {
+        "path": "scripts/run_day3.py",
+        "sha256": "b6204f780b70d8f6bdda09a878a8b793d7597ef33334282dccdbadeb6d405e90"
+      },
+      {
+        "path": "scripts/run_sft_comparison.py",
+        "sha256": "7e7cfb7a7f4483efe0b3e0a248cc02725686543acd6a14ef6bf32f15586dbbf9"
+      },
+      {
+        "path": "scripts/run_sft_probe.py",
+        "sha256": "b036576749f1cd687fffb0e8d89573e10d68d773f46971f270075d26534d65e9"
+      },
+      {
+        "path": "scripts/serve_workplace_interactive.py",
+        "sha256": "201c3a8def44738320f1cdd6b31eb3dba7f6c19817247e92f19471b65b0b1310"
+      },
+      {
+        "path": "scripts/setup_interactive_client.py",
+        "sha256": "43c2648f428c643761ebad0c1f97eef0323e8e5c46b07c98ac7265ccdcf17ab3"
+      },
+      {
+        "path": "scripts/validate_sft_no_card.py",
+        "sha256": "28ce248f416e741ca0992bbf0709515ac73253cbbe2cc1f12d426f04330bcc44"
+      },
+      {
+        "path": "scripts/validate_sft_stage_host.py",
+        "sha256": "190e5b381f7420f06c89d094d50bd024d68c7f2f153b1315d8a36a3acbd6b1bc"
+      },
+      {
+        "path": "scripts/verify_model_integrity.py",
+        "sha256": "397950f039fb685587071fd82d559bb64d239e5972eeeadb1b251269bb11270e"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/analytics_data.csv",
+        "sha256": "4a0df10aabc07980f1cc074dc9ab36406ce98dead7e14fe11f72a9f1ba788688"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/calendar_events.csv",
+        "sha256": "6c9df1872d54d0b0d068d1b066766a8ddbc29c3933f1d56c9efd554926312295"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/customer_relationship_manager_data.csv",
+        "sha256": "599057e4eec3a7c25ac04b4d655ea2c034b7b7782205dc367a28122756e04c41"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/emails.csv",
+        "sha256": "1809e341a0e4f1fd78cf1b759964a42abd28db8c9b9dca364456efc31f82bb31"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/processed/project_tasks.csv",
+        "sha256": "fa0c05d5609f49e905342bd12592b09f23eff6147dcf607b808703f45ddbeaeb"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/email_addresses.csv",
+        "sha256": "1f3465b92eb41b90a973a9b00f35757a23d16839652b5e352e9d217d8e404b0b"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/csv_data/raw/events.csv",
+        "sha256": "04ba8c0dddd619bce9683dd3f2565dc0f83ef7ebc07699b62391171df497b548"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/utils.py",
+        "sha256": "3d0f578251c25226a006c45ea2988eed61de45d8858a5eed79cc74ac63dce5d6"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/analytics.py",
+        "sha256": "96fc35e61ceed6dc323485960cdf644ec8c7390421bb65eadab86b28a6a919e0"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/calendar.py",
+        "sha256": "88016c51f7fcecc98897c1a4060bece2ee3804d60b5f85a80f85869303088fef"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/company_directory.py",
+        "sha256": "7d5f3bbe1b2e6d6f41d1b8a06db0bc1c4eaacb423915b44e058af15fcd09c7dd"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/customer_relationship_manager.py",
+        "sha256": "1db9d57324ce097aeb41cbdde06655442de0a34138293e90bdfeca6ae44a2b2c"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/email.py",
+        "sha256": "2c710f6cc5d6d7d3b2830b4567dec8ab34bb04b2249765152bc41f2864a64ac5"
+      },
+      {
+        "path": "vendor/Gym/resources_servers/workplace_assistant/workplace_assistant_tools/project_management.py",
+        "sha256": "1eccec5636e01dee6fcda583dbb6189b3a998c3f5572c2038194ac223995dbc9"
+      },
+      {
+        "path": "veriagent/__init__.py",
+        "sha256": "a9991fa4705bb728df1394a8e9594eb845524cbc517f6aef642a79aab9f99d97"
+      },
+      {
+        "path": "veriagent/deepseek_teacher.py",
+        "sha256": "c224259e48a0b3105b90a05644e7054ca1033d58cd28aca9ad82bdd5c7f611e0"
+      },
+      {
+        "path": "veriagent/environment.py",
+        "sha256": "a7b4cbf2cd2e654654da20270a50a68da0ab7d5d619f05bd1d6a3db728de5aa2"
+      },
+      {
+        "path": "veriagent/policy_protocol.py",
+        "sha256": "021846099e0ac1622e412fd4ed6127245f0b9b00983de1acc4acca65dc0e9818"
+      },
+      {
+        "path": "veriagent/sft_data.py",
+        "sha256": "01148d1c209ef02a35e672b42977e509ea13087134202b01e3efdb8f4ae2fe60"
+      },
+      {
+        "path": "veriagent/sft_stage.py",
+        "sha256": "e1ed590888e55d0d639cf0966d515b3290b5ab8e25a3ac4bcdb795d723569fc9"
+      },
+      {
+        "path": "veriagent/teacher_data.py",
+        "sha256": "66b7b9c8222a5e0feeace9573e9286ada0bbee0b89d3aa1c496e59f29cb7a215"
+      },
+      {
+        "path": "veriagent/teacher_rollout.py",
+        "sha256": "0a66ff22fea5bcb8c58e3c5f5450b574eb3a7ef69ff1a3eeeb88c1496b0f7532"
+      },
+      {
+        "path": "veriagent/token_mask.py",
+        "sha256": "4e3c73226eb147b770e43d9112e55aac03ae2255734c0c41641c727da4bd5a06"
+      }
+    ],
+    "code_transport": "GitHub fixed-ref temporary raw-file downloads",
+    "git_repository": "https://github.com/ycInfinite/VeriAgent-Workplace.git",
+    "dev_scope": "onlyfixeddev24separateevalpayload",
+    "archive_recovery_note": "Exact54 Git blob execution files fromf9d45c2 plus15 verifiedoriginalvendor/data,delivered as one privateGitHubrawarchive;codeidentity remainsf9d45c2"
+  },
+  "arm": "S1",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "data_sha256": "14686dda75f25b3677865613f4f8bf81f40a439e847a70f844b73555ff04607f",
+  "seed": 42,
+  "started_at": "2026-10-10T02:32:57.521319+00:00",
+  "initialization": "fresh_base_fresh_LoRA",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "trainable_parameters": 43646976,
+  "frozen_sample_before": "6fd95a07af94c2de640d0b9da2c33701bd2daf1a8c0721ec2b8707bf62b5d9af"
+}
