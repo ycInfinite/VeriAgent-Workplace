@@ -1,0 +1,28 @@
+{
+  "observed_at_utc": "2026-10-12T04:15:21.027438+00:00",
+  "source": "AutoDL authenticated Edge UI",
+  "instances": [
+    {
+      "id": "hfpnyex2hv-0b57ffeb",
+      "machine": "D62",
+      "required_GPU": 1,
+      "free_GPU": 0,
+      "startup_succeeded": false
+    },
+    {
+      "id": "afzl2bg1l8-cc9c6860",
+      "machine": "D47",
+      "required_GPU": 1,
+      "free_GPU": 0,
+      "startup_succeeded": false
+    }
+  ],
+  "user_decision": "Preserve preparation and wait for existing instanceGPU availability",
+  "new_rental": false,
+  "inventory_automation_created": false,
+  "model_rollouts": 0,
+  "GPU_hours_this_stage": 0,
+  "API_calls": 0,
+  "parameter_updates": 0,
+  "pair_yield": "UNMEASURED"
+}

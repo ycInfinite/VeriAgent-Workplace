@@ -16,3 +16,7 @@
 计划configs/s1_failure_acquisition.json，数据experiments/S1-FAILURE-PREP-20261012-002/。001在解析旧压缩任务时未展开tool_schema_ref而失败，永久保留；002使用原schema bank重建并与教师schema逐个相等。25初始context都可容纳，max4213，11项CPU控制通过。
 
 这些题只对当前S1的50题训练集未见，可能已被S100/MIX等其他独立adapter使用，不宣称全项目从未见过或代表全training分布。已有教师approval只是来源门槛，形成新pair时仍重新审核chosen/rejected的关键语义，不把所有reward0都当模型错。完整结束/有效context/真实观察保留，不将基础设施故障作为负例；合理的同reward语义偏好需单独明确标签，不能暗换旧12pair配置。没有使用dev/final/BFCL作训练。
+
+## 当前停点：用户选择等已有GPU
+
+D62与D47均返回空闲GPU0，未开机成功。用户选择先保留准备，等已有实例有卡再执行；不新租、不重试、不创建库存监控。采集代码/4文件白名单已推GitHub commit8ca196e1bdfbbfade4947916838065a4446a4a6e，未远端部署。既有teacher25条仅作未来chosen来源，尚无新S1 rollout，新的pair产率未测、数据对未审核，绝不以CPU准备冒充采集。审核步骤和处置标签见configs/s1_failure_pair_review_protocol.json。未来按原25题执行一次、回收后关机，再本地审核，不追加DPO更新。
