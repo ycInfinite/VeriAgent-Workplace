@@ -1,0 +1,18 @@
+{
+  "status": "ISOLATED_DEPLOYED_IMPORT_CLOSURE_PASSED",
+  "files": [
+    "scripts/check_preference_torch.py",
+    "scripts/check_dpo_torch.py",
+    "veriagent/__init__.py",
+    "veriagent/dpo.py",
+    "veriagent/sft_stage.py",
+    "veriagent/teacher_data.py",
+    "veriagent/sft_data.py",
+    "veriagent/token_mask.py"
+  ],
+  "common_py_present": false,
+  "output": {
+    "status": "IMPORT_ONLY_NO_TORCH_EXECUTION"
+  },
+  "model_loaded": false
+}

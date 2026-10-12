@@ -100,3 +100,5 @@
 {"experiment_id": "PREF-PREP-20261012-001", "event": "11CPUchecks_passed_bounded_matrix_authorized", "planned_updates": 24, "planned_eval_rollouts": 144}
 {"experiment_id": "PREF-HOST-PREFLIGHT-20261012-001", "event": "failed_CPU_entry_before_model_preserved", "parameter_updates": 0, "agent_rollouts": 0}
 {"experiment_id": "PREF-PREP-20261012-002", "event": "12CPUchecks_passed_after_entry_bootstrap_fix", "parameter_updates": 0, "agent_rollouts": 0}
+{"experiment_id": "PREF-HOST-PREFLIGHT-20261012-002", "event": "minimal_deployment_import_failed_preserved", "parameter_updates": 0}
+{"experiment_id": "PREF-PREP-20261012-003", "event": "selfcontained_import_and12CPUchecks_passed", "parameter_updates": 0}

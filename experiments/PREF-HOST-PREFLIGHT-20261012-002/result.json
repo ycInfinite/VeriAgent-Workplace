@@ -1,0 +1,10 @@
+{
+  "status": "INFRASTRUCTURE_INVALID_CPU_PREFLIGHT",
+  "kind": "common_module_not_in_remote_whitelist",
+  "execution_commit": "df1680c574ef9310f6289aa5e6e112f6d05c87ff",
+  "model_loaded": false,
+  "parameter_updates": 0,
+  "agent_rollouts": 0,
+  "fix": "selfcontained pathlib/sys.path bootstrap,isolated actual deployed dependency closure passes",
+  "cost_included_in_instance_time": true
+}

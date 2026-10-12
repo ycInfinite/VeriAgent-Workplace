@@ -18,3 +18,5 @@
 runIDs、task order、模型/data revision、12pair SHA在configs/preference_comparison_plan.json。CPU门槛与源码身份在experiments/PREF-PREP-20261012-001/。新training/eval runners独立保存，旧inference loop AST完全相同。数据少/单训练seed/已暴露开发集，不能宣布heldout泛化。没有读取BFCL或final内容。
 
 执行顺序：PREF-EVAL-S1-20261012-001 → PREF-CHOSEN-SFT-20261012-001 → PREF-EVAL-CHOSEN_SFT-20261012-001 → PREF-DPO-20261012-001 → PREF-EVAL-DPO-20261012-001。
+
+首次独立Torch预检因入口缺项目import路径失败，模型尚未加载、正式run未创建。失败在PREF-HOST-PREFLIGHT-20261012-001和first_launch/保留。修复仅新增common.ROOT导入；PREF-PREP-20261012-002通过12项CPU检查。执行版本更新为df1680c574ef9310f6289aa5e6e112f6d05c87ff，数据/超参/正式runIDs不变，使用新运行日志目录。

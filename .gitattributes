@@ -11,3 +11,5 @@ evidence/sft-extension-20261012/** -text
 configs/dpo_probe_plan.json -text
 
 evidence/dpo-execution-20261012/** -text
+
+evidence/preference-execution-20261012/** -text

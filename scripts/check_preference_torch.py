@@ -1,5 +1,7 @@
 """Torch CPU gradient equivalence for both matched preference-training arms."""
-from common import ROOT  # Establish project imports for direct script execution.
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from check_dpo_torch import run_controls as dpo_controls
 
 
@@ -32,4 +34,7 @@ def run_controls():
 
 if __name__=='__main__':
     import json
-    print(json.dumps(run_controls()))
+    if '--import-only' in sys.argv:
+        print(json.dumps({'status':'IMPORT_ONLY_NO_TORCH_EXECUTION'}))
+    else:
+        print(json.dumps(run_controls()))
