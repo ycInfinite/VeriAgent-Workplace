@@ -81,3 +81,7 @@ Fresh144validtrajectories,notreusedDay3labels. Typedcandidatecallcounts24/76(BAS
 - reference_boundary_ambiguity：952seed42做两条，官方还需当天到期第三条；分开记录语义边界与其他错误，不改官方奖励。
 
 空reference16条复核、MIX8条官方失败的决定性证据已存reports/sft-extensions-20261012/；单Codex审核无独立人工裁决。schema-valid不等于业务正确；identifier/repeat/premature自动候选不等于全人工错误率。
+
+## 2026-10-12 DPO准备
+
+DPO数据审核区分语义模型错与infra：271越权删除是有效模型失败；因round cap缺最终终止，本probe暂缓以避截断偏差。965/687/8的错误no-op来自捏造identifier/错误查找，不是真正无匹配对象；这些对不能当作正确不操作训练覆盖。所有标签来自training历史记录独立复核，dev案例不导出为pairs。

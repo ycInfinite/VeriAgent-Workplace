@@ -6,3 +6,6 @@ evidence/sft-acquisition/remote/** -text
 evidence/sft-execution-20261010/** -text
 
 evidence/sft-extension-20261012/** -text
+
+# Preserve the exact bytes audited for the frozen DPO probe config.
+configs/dpo_probe_plan.json -text

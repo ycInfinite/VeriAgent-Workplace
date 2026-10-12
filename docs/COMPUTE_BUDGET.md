@@ -148,3 +148,7 @@ BASEeval230.489s,S1train478.891s,S1eval630.250s,S2train474.173s,S2eval744.487s;s
 单PRO6000 96GB：S100 train474.931s/eval733.446s，MIX train484.854s/eval605.742s，总0.638603822GPUh。容器启动估计→官方关机请求1.015973377h；项目首次观察→请求0.949223273h。包括部署404重试/等待/回收，非平台账单。当前时价未知，RMBnull；若时价p则占用近似1.016p，存储另计，不能复用旧价格。推理GPUh/官方成功S100=.006366716、MIX=.004206543，不含训练/部署且非语义合格分母。
 
 S100/MIX step1.4082/1.4321s；allocated32.136/33.381GiB，reserved88.209/90.998GiB，设备采样used88.896/91.685GiB；train利用率采样94.19%/88.95%。96GB已验证，不能据allocated声称80GB直接可跑。当前未测DPO/GRPO。620updates/96validrollouts/0infra-invalid，0新teacherAPI。原始resource报告与关机收据位于reports和evidence/sft-extension-20261012。保护已取消、官方关机已执行、SSH不可用；控制台计费状态未独立确认。
+
+## 2026-10-12 DPO准备
+
+DPO本轮GPUh0/API0/parameterupdates0；26branch CPU回放+编码主脚本5.608s，非整个审核总耗时。8pair probe单次数据经过204089processed（chosen111571/rejected92518）、3376targets，reference/无梯度/重算需多次forward。未来0.05–0.15scriptGPUh仅估计，1800s脚本上限，部署等待另计，时价未知。只准备96GB方案，80GB未资格。无远端开机/租用，旧监控未恢复。

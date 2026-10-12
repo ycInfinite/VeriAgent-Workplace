@@ -1,0 +1,3 @@
+{
+  "note": "Pre-publication deployment review caught that DPO must retain already deployed S100/MIX100 files. Updated sync dependency to include-mixed then7DPO additions; no remote operation occurred.003 verifies final transport."
+}

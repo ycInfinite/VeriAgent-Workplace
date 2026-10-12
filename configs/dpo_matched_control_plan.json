@@ -1,0 +1,19 @@
+{
+  "status": "PROPOSED_NOT_EXECUTED",
+  "initial_policy": "S1 same pinned adapter as DPO probe",
+  "arms": [
+    "unchanged S1",
+    "S1 + chosen-only SFT",
+    "S1 + whole-trajectory DPO"
+  ],
+  "data": "same12 reviewed task/chosen trajectories;DPO additionally rejected",
+  "optimizer_updates_per_train_arm": 12,
+  "epochs": 1,
+  "learning_rate": 5e-06,
+  "seed": 42,
+  "DPO_beta": 0.1,
+  "SFT_loss": "negative sum of chosen action logp per task divided by that task target count;stream gradient over turns",
+  "control_limits": "same tasks,chosen tokens,initialization and updates;not equal total processed tokens/GPUtime because DPO sees rejected and reference scores;report both,do not call strict compute match",
+  "evaluation": "fixeddev24x42/43 after separately authorized formal stage;report strata and semantic caveats;no sealedfinal/BFCL selection",
+  "no_auto_transition_from_probe": true
+}

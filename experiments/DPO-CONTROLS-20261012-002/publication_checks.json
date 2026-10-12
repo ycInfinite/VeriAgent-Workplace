@@ -1,0 +1,9 @@
+{
+  "status": "PUBLICATION_CHECKS_PASSED",
+  "staged_files_scanned": 32,
+  "secret_pattern_hits": 0,
+  "seven_deployment_files_match_CPU_control_hashes_in_Git": true,
+  "frozen_SFT_execution_unchanged": true,
+  "config_bytes_preserved_by_gitattributes": true,
+  "weights_not_in_Git": true
+}

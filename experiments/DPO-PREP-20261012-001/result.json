@@ -1,0 +1,18 @@
+{
+  "status": "DPO_DATA_REVIEW_AND_CANONICAL_ENCODING_PASSED",
+  "approved_pairs": 12,
+  "held_pairs": 1,
+  "chosen_target_tokens": 3258,
+  "rejected_target_tokens": 1885,
+  "branch_turns": {
+    "chosen": 38,
+    "rejected": 37
+  },
+  "processed_tokens": 336711,
+  "max_sequence": 5431,
+  "seconds": 5.608376899996074,
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "parameter_updates": 0,
+  "GPU_DPO_qualified": false
+}

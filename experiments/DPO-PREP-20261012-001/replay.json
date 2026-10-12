@@ -1,0 +1,188 @@
+{
+  "branches": [
+    {
+      "task_id": 565,
+      "side": "chosen",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "5698af79f12fe58f946a02abfee9b5533809917a75090b2040dd545766e62d8a"
+    },
+    {
+      "task_id": 565,
+      "side": "rejected",
+      "events": 1,
+      "reward": 0.0,
+      "source_record_sha256": "0e2c21b5fd2fc8e9ad23e89056809140f9fc854a74828f15c516c1cdaa623636"
+    },
+    {
+      "task_id": 972,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "9474448e6240228a46c423d577dc90693678349e2a14e6e01d393517f33e0aef"
+    },
+    {
+      "task_id": 972,
+      "side": "rejected",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "5e39b504098a6398574ad5cc693409402205ecf3fea21e2ad8f20796b647e358"
+    },
+    {
+      "task_id": 247,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "bb851e9ced15cc5f5449fc33f80e66e0008abc4f0cbec6f9ce755372b178e140"
+    },
+    {
+      "task_id": 247,
+      "side": "rejected",
+      "events": 1,
+      "reward": 0.0,
+      "source_record_sha256": "a46ba8884758fbf800a3b124c7bc9ed7db84203f8b6b62df3cef35c3b923938d"
+    },
+    {
+      "task_id": 859,
+      "side": "chosen",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "0cec5b0ee440b504aba1a01f4647e677b78866c99ec41b74047c504a3048a4f6"
+    },
+    {
+      "task_id": 859,
+      "side": "rejected",
+      "events": 1,
+      "reward": 0.0,
+      "source_record_sha256": "4e7945283f1b287e7369da2b9b6987f8ac5eae644afe5b36ed4718801ea06aba"
+    },
+    {
+      "task_id": 123,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "64b79fccaf8c0d52cfc4205d0a879626eca59b886dcb103598e6c0f1bcb7fc9f"
+    },
+    {
+      "task_id": 123,
+      "side": "rejected",
+      "events": 5,
+      "reward": 0.0,
+      "source_record_sha256": "fe990f68f101df5c0310f371356eacfa7eab687a7c6421aae43d6ce98993d5f8"
+    },
+    {
+      "task_id": 770,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "17d4b33cbbaba204602e0d277ffccdfec62601886f278fb30a4f7cd8d8cf0f1a"
+    },
+    {
+      "task_id": 770,
+      "side": "rejected",
+      "events": 1,
+      "reward": 0.0,
+      "source_record_sha256": "0013d6d2e68f8929148ee9ffcab2145dd1a2e5f3c812da0273a768dcf1a57823"
+    },
+    {
+      "task_id": 271,
+      "side": "chosen",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "4f05071cac3695fa4c3299892ace8b32bef6089f814dbe5f464eb0afd2a2f27e"
+    },
+    {
+      "task_id": 271,
+      "side": "rejected",
+      "events": 6,
+      "reward": 0.0,
+      "source_record_sha256": "ecdde982f9d7a6fb5793018e74a8d5d43c4a178de60e1642aeab2a4b22d98b22"
+    },
+    {
+      "task_id": 20,
+      "side": "chosen",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "a90b516591174ed56bef120f2fc481ff098b4a2e3fcb217beed29158d9858f08"
+    },
+    {
+      "task_id": 20,
+      "side": "rejected",
+      "events": 1,
+      "reward": 0.0,
+      "source_record_sha256": "fa5460964a7c427eeba51d16432a3291c05d778f195153ce4e435046f4f97911"
+    },
+    {
+      "task_id": 177,
+      "side": "chosen",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "449a15056633b92625ac47245bf2b13232a4f621517ee0aec163bd28a10dcbe1"
+    },
+    {
+      "task_id": 177,
+      "side": "rejected",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "77b06edda526203e4d6aa506819b01adf9e0795b88a1dcde4d2254bbd37d25f6"
+    },
+    {
+      "task_id": 76,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "42f8018dd3bf54a3668bb5e7c21c2acc9a591ef21e0b90729907c016f3db6cbd"
+    },
+    {
+      "task_id": 76,
+      "side": "rejected",
+      "events": 1,
+      "reward": 0.0,
+      "source_record_sha256": "f2071c04b8810e17f6bbe4ee5faaa9b4182c074dfadf8a23e27f941ca09e99ea"
+    },
+    {
+      "task_id": 965,
+      "side": "chosen",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "d0d40e2ef521007aa65e7e25eadec8727db26ead83993b11d7a6202aaf212733"
+    },
+    {
+      "task_id": 965,
+      "side": "rejected",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "bdf682255cc765604925c1c629520f7e1f78dc72585edc351a9bc57a88ed3203"
+    },
+    {
+      "task_id": 687,
+      "side": "chosen",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "9f44d75877e65b4fe37ee6a33584d596edf1892d0e5b97868d984252e347d38a"
+    },
+    {
+      "task_id": 687,
+      "side": "rejected",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "e302807609b3e93441875f500df1b839d3f4c1ac1688be4a684a430f72cdb855"
+    },
+    {
+      "task_id": 8,
+      "side": "chosen",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "5e290ac30e0e89480234fcc865a864b4be3e3b04f54a051942f9275adadd2798"
+    },
+    {
+      "task_id": 8,
+      "side": "rejected",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "a985163ad9069c390acac65199318f08fafb8b9660303841ebfb8ae690ea3f30"
+    }
+  ],
+  "fresh_replays": 26,
+  "all_equal": true
+}

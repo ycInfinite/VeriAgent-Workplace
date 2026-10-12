@@ -1,0 +1,5 @@
+{
+  "note": "Initial CPU control passed25 checks. Runtime then gained explicit attention_dropout=0 gate; new immutable002 verifies final source identities. Original001 result retained.",
+  "authorization_and_eight_fields": "configs/dpo_preparation.json",
+  "metadata_added_after_control": true
+}

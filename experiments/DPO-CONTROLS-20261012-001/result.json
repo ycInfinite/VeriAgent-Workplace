@@ -1,0 +1,54 @@
+{
+  "status": "CPU_DATA_AND_MATH_CONTROLS_PASSED",
+  "checks": {
+    "12_unique_completed_pairs": true,
+    "five_domains": true,
+    "censored271_held": true,
+    "eight_probe_unique_tasks": true,
+    "initial_equal_ln2": true,
+    "margin_direction": true,
+    "extreme_margin_stable": true,
+    "chosen_coefficient_finite_difference": true,
+    "rejected_opposite_gradient": true,
+    "stream_chain_rule_finite_difference": true,
+    "reject_context_loss": true,
+    "reject_partial_assistant_mask": true,
+    "reject_nontraining_pool": true,
+    "reject_truncated_target": true,
+    "reject_bad_token_count": true,
+    "reference_key_binds_S1": true,
+    "reference_key_binds_actual_tokens": true,
+    "S1_adapter_local_hashes": true,
+    "DPO_local_remote_whitelist_equal": true,
+    "legacy_sync_branches_preserved": true,
+    "DPO_sync_branch_allowed": true,
+    "unknown_sync_path_rejected": true,
+    "all_deployment_files_exist": true,
+    "no_weights_in_GitHub_payload": true,
+    "syntax_passed": true
+  },
+  "torch_control": {
+    "status": "UNAVAILABLE_LOCAL_TORCH_NOT_INSTALLED",
+    "required_before_LLM_load": true
+  },
+  "source_sha256": {
+    "configs/dpo_probe_plan.json": "e7a01f7e7451666beda5311cd91a09d9ae0fe2c2cb926eb39c97f2f73a62d66f",
+    "veriagent/dpo.py": "4bcf845d7a2622ba9e7ba5625e0b3b147ab2de8319085d31217a437ed173c5b9",
+    "scripts/run_dpo_probe.py": "f28e0504f460dc7b59e8c7b16b9550d762c21b6990d4a420c8429a3c80113730",
+    "scripts/check_dpo_torch.py": "7ef5d1ee697d5e46f4bcdc5a8699ef5a4479756fb9d128ab58fe59d1ddb13daf",
+    "experiments/DPO-PREP-20261012-001/pairs.jsonl.gz": "adb8e6669b859c9893f460499e8bf19a0f6911f6d54dd08d258c7a3f938677db",
+    "experiments/DPO-PREP-20261012-001/review.json": "d68a45372c57b2e50ca1f361459b72797d82b219ce991366b00b44abf2e8ebd0",
+    "experiments/DPO-PREP-20261012-001/manifest.json": "59bf1e7c8cb1c10265c7250dd0c0fc4ea8f76728870555e82ec06dd19d622b32"
+  },
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "parameter_updates": 0,
+  "not_yet_verified": [
+    "actual Transformers on target host",
+    "real Torch autograd if unavailable above",
+    "8B reference scores",
+    "GPU memory and step time",
+    "LoRA update/reload",
+    "Agent efficacy"
+  ]
+}

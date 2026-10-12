@@ -128,3 +128,7 @@ Executed frozenBASE_B1→S1train/eval→S2train/eval once onnew user-rentedPRO60
 ## 2026-10-12 SFT扩展收尾
 
 冻结S100→MIX100已完成，原S100与旧S1/S2不改不重跑。保存两组adapter及完整证据后官方关机，不继续占GPU等待教学。MIX官方8/8空任务不能当全语义正确：同口径两组4/8有依据完成、2/8整条干净。采用官方状态结果+独立语义诊断并列，不改reward。下一路线建议已有training DPO pairs审核/单卡probe登记，尚未授权执行；dev轨迹禁止训练。旧监控暂停。结果见SFT_EXTENSIONS_20261012.md。
+
+## 2026-10-12 DPO准备
+
+DPO仅做准备：13对新鲜审核12准入、271因截断暂缓（不是infra-invalid）。从S1继续，reference也是固定S1；不因MIX分数高改anchor。保留完整assistant监督、分支自身观察context，sum logp不按长度平均。现有依赖实现两遍逐轮梯度，新增真实Torch整图对照作为上卡前必过门槛。7文件同步白名单准备；不启动GPU/API。正式chosen-only SFT对照仅方案草案。

@@ -1,0 +1,839 @@
+{
+  "pair_artifact_sha256": "adb8e6669b859c9893f460499e8bf19a0f6911f6d54dd08d258c7a3f938677db",
+  "pairs": [
+    {
+      "pair_id": "TRAIN-565-DSQUAL-vs-BASE-v1",
+      "task_id": 565,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:565",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "premature_termination",
+      "why_pair_valid": "Returns scalar average and asks whether a plot is needed despite explicit plot request.",
+      "chosen_review": {
+        "task_id": 565,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:565",
+        "trajectory_sha256": "5698af79f12fe58f946a02abfee9b5533809917a75090b2040dd545766e62d8a",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "User supplies metric/date; correct histogram action and returned simulated plot path. No physical image existence established.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_analytics",
+      "fresh_review": {
+        "pair_id": "TRAIN-565-DSQUAL-vs-BASE-v1",
+        "task_id": 565,
+        "decision": "approved_data",
+        "reason": "Chosen executes requested histogram, observes returned simulated path; rejected gives scalar then asks whether plot needed. No physical image attestation.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "5698af79f12fe58f946a02abfee9b5533809917a75090b2040dd545766e62d8a",
+        "rejected_sha256": "0e2c21b5fd2fc8e9ad23e89056809140f9fc854a74828f15c516c1cdaa623636"
+      },
+      "chosen": {
+        "source_record_sha256": "5698af79f12fe58f946a02abfee9b5533809917a75090b2040dd545766e62d8a",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.022278081625699997
+        },
+        "termination": "assistant_final",
+        "tool_steps": 1,
+        "turn_count": 2,
+        "processed_tokens": 8705,
+        "target_tokens": 223,
+        "max_sequence_tokens": 4445
+      },
+      "rejected": {
+        "source_record_sha256": "0e2c21b5fd2fc8e9ad23e89056809140f9fc854a74828f15c516c1cdaa623636",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.020441986620426178
+        },
+        "termination": "assistant_final",
+        "tool_steps": 1,
+        "turn_count": 2,
+        "processed_tokens": 8551,
+        "target_tokens": 98,
+        "max_sequence_tokens": 4322
+      }
+    },
+    {
+      "pair_id": "TRAIN-972-DSQUAL-vs-BASE-v1",
+      "task_id": 972,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:972",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "plot_type",
+      "why_pair_valid": "Uses line charts for requested distributions; reviewed teacher uses histograms and achieves reference state.",
+      "chosen_review": {
+        "task_id": 972,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:972",
+        "trajectory_sha256": "9474448e6240228a46c423d577dc90693678349e2a14e6e01d393517f33e0aef",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Both requested metrics and dates are plotted; reports the actual simulated paths.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_analytics",
+      "fresh_review": {
+        "pair_id": "TRAIN-972-DSQUAL-vs-BASE-v1",
+        "task_id": 972,
+        "decision": "approved_data",
+        "reason": "Chosen produces both requested distribution histograms/date range; rejected line charts mismatch distribution request.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "9474448e6240228a46c423d577dc90693678349e2a14e6e01d393517f33e0aef",
+        "rejected_sha256": "5e39b504098a6398574ad5cc693409402205ecf3fea21e2ad8f20796b647e358"
+      },
+      "chosen": {
+        "source_record_sha256": "9474448e6240228a46c423d577dc90693678349e2a14e6e01d393517f33e0aef",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.022082220762968063
+        },
+        "termination": "assistant_final",
+        "tool_steps": 2,
+        "turn_count": 2,
+        "processed_tokens": 8890,
+        "target_tokens": 289,
+        "max_sequence_tokens": 4555
+      },
+      "rejected": {
+        "source_record_sha256": "5e39b504098a6398574ad5cc693409402205ecf3fea21e2ad8f20796b647e358",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.022635433822870255
+        },
+        "termination": "assistant_final",
+        "tool_steps": 2,
+        "turn_count": 2,
+        "processed_tokens": 8840,
+        "target_tokens": 256,
+        "max_sequence_tokens": 4522
+      }
+    },
+    {
+      "pair_id": "TRAIN-247-DSQUAL-vs-BASE-v1",
+      "task_id": 247,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:247",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "ungrounded_recipient",
+      "why_pair_valid": "Invents lena@example.com instead of resolving actual participant; changes requested event title.",
+      "chosen_review": {
+        "task_id": 247,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:247",
+        "trajectory_sha256": "bb851e9ced15cc5f5449fc33f80e66e0008abc4f0cbec6f9ce755372b178e140",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Unique directory lookup grounds Lena; meeting name, business-hour time and duration match request. Final constraints statement is scoped to working hours, not an independent conflict audit.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_calendar",
+      "fresh_review": {
+        "pair_id": "TRAIN-247-DSQUAL-vs-BASE-v1",
+        "task_id": 247,
+        "decision": "approved_data",
+        "reason": "Directory grounds Lena; exact title/15:00/30min. Final constraints remark scoped to stated business hours, not calendar conflict clearance. Rejected invents recipient and changes title.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "bb851e9ced15cc5f5449fc33f80e66e0008abc4f0cbec6f9ce755372b178e140",
+        "rejected_sha256": "a46ba8884758fbf800a3b124c7bc9ed7db84203f8b6b62df3cef35c3b923938d"
+      },
+      "chosen": {
+        "source_record_sha256": "bb851e9ced15cc5f5449fc33f80e66e0008abc4f0cbec6f9ce755372b178e140",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.023026876151561737
+        },
+        "termination": "assistant_final",
+        "tool_steps": 2,
+        "turn_count": 3,
+        "processed_tokens": 13050,
+        "target_tokens": 247,
+        "max_sequence_tokens": 4482
+      },
+      "rejected": {
+        "source_record_sha256": "a46ba8884758fbf800a3b124c7bc9ed7db84203f8b6b62df3cef35c3b923938d",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.01913461461663246
+        },
+        "termination": "assistant_final",
+        "tool_steps": 1,
+        "turn_count": 2,
+        "processed_tokens": 8568,
+        "target_tokens": 96,
+        "max_sequence_tokens": 4309
+      }
+    },
+    {
+      "pair_id": "TRAIN-859-DSQUAL-vs-BASE-v1",
+      "task_id": 859,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:859",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "nonexistent_identifier",
+      "why_pair_valid": "Uses12345678 without lookup,then asks user for ID instead of locating event.",
+      "chosen_review": {
+        "task_id": 859,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:859",
+        "trajectory_sha256": "0cec5b0ee440b504aba1a01f4647e677b78866c99ec41b74047c504a3048a4f6",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Both calendar pages inspected; chosen latest event is observed and renamed correctly.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_calendar",
+      "fresh_review": {
+        "pair_id": "TRAIN-859-DSQUAL-vs-BASE-v1",
+        "task_id": 859,
+        "decision": "approved_data",
+        "reason": "Both pages checked; latest observed start15:00/end17:00 ID252 renamed. Rejected invents12345678 then delegates lookup to user.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "0cec5b0ee440b504aba1a01f4647e677b78866c99ec41b74047c504a3048a4f6",
+        "rejected_sha256": "4e7945283f1b287e7369da2b9b6987f8ac5eae644afe5b36ed4718801ea06aba"
+      },
+      "chosen": {
+        "source_record_sha256": "0cec5b0ee440b504aba1a01f4647e677b78866c99ec41b74047c504a3048a4f6",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.025142230093479156
+        },
+        "termination": "assistant_final",
+        "tool_steps": 3,
+        "turn_count": 4,
+        "processed_tokens": 19152,
+        "target_tokens": 411,
+        "max_sequence_tokens": 5123
+      },
+      "rejected": {
+        "source_record_sha256": "4e7945283f1b287e7369da2b9b6987f8ac5eae644afe5b36ed4718801ea06aba",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.017503533512353897
+        },
+        "termination": "assistant_final",
+        "tool_steps": 1,
+        "turn_count": 2,
+        "processed_tokens": 8511,
+        "target_tokens": 80,
+        "max_sequence_tokens": 4281
+      }
+    },
+    {
+      "pair_id": "TRAIN-123-DSQUAL-vs-BASE-v1",
+      "task_id": 123,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:123",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "wrong_lookup_predicate",
+      "why_pair_valid": "Treats first meeting as literal event text; repeatedly broadens dates instead of ordering the requested date.",
+      "chosen_review": {
+        "task_id": 123,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:123",
+        "trajectory_sha256": "64b79fccaf8c0d52cfc4205d0a879626eca59b886dcb103598e6c0f1bcb7fc9f",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "All three meetings fit one returned page; earliest event identified and deleted.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_calendar",
+      "fresh_review": {
+        "pair_id": "TRAIN-123-DSQUAL-vs-BASE-v1",
+        "task_id": 123,
+        "decision": "approved_data",
+        "reason": "Chosen earliest10:00 ID96 deleted within requested date. Rejected treats first meeting as literal name and repeatedly broadens dates.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "64b79fccaf8c0d52cfc4205d0a879626eca59b886dcb103598e6c0f1bcb7fc9f",
+        "rejected_sha256": "fe990f68f101df5c0310f371356eacfa7eab687a7c6421aae43d6ce98993d5f8"
+      },
+      "chosen": {
+        "source_record_sha256": "64b79fccaf8c0d52cfc4205d0a879626eca59b886dcb103598e6c0f1bcb7fc9f",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.025851305574178696
+        },
+        "termination": "assistant_final",
+        "tool_steps": 2,
+        "turn_count": 3,
+        "processed_tokens": 13577,
+        "target_tokens": 251,
+        "max_sequence_tokens": 4704
+      },
+      "rejected": {
+        "source_record_sha256": "fe990f68f101df5c0310f371356eacfa7eab687a7c6421aae43d6ce98993d5f8",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.022690556943416595
+        },
+        "termination": "assistant_final",
+        "tool_steps": 5,
+        "turn_count": 6,
+        "processed_tokens": 27030,
+        "target_tokens": 453,
+        "max_sequence_tokens": 4710
+      }
+    },
+    {
+      "pair_id": "TRAIN-770-DSQUAL-vs-BASE-v1",
+      "task_id": 770,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:770",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "identifier_type_confusion",
+      "why_pair_valid": "Stores display name Lena in assigned_to_email instead of resolving email.",
+      "chosen_review": {
+        "task_id": 770,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:770",
+        "trajectory_sha256": "17d4b33cbbaba204602e0d277ffccdfec62601886f278fb30a4f7cd8d8cf0f1a",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Lena email obtained from directory; Lead status and new customer match request and actual response.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_customer_relationship_manager",
+      "fresh_review": {
+        "pair_id": "TRAIN-770-DSQUAL-vs-BASE-v1",
+        "task_id": 770,
+        "decision": "approved_data",
+        "reason": "Only requested name/Lead/grounded Lena email supplied. Rejected stores display name as email and needless empty fields.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "17d4b33cbbaba204602e0d277ffccdfec62601886f278fb30a4f7cd8d8cf0f1a",
+        "rejected_sha256": "0013d6d2e68f8929148ee9ffcab2145dd1a2e5f3c812da0273a768dcf1a57823"
+      },
+      "chosen": {
+        "source_record_sha256": "17d4b33cbbaba204602e0d277ffccdfec62601886f278fb30a4f7cd8d8cf0f1a",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.023761920630931854
+        },
+        "termination": "assistant_final",
+        "tool_steps": 2,
+        "turn_count": 3,
+        "processed_tokens": 12938,
+        "target_tokens": 160,
+        "max_sequence_tokens": 4388
+      },
+      "rejected": {
+        "source_record_sha256": "0013d6d2e68f8929148ee9ffcab2145dd1a2e5f3c812da0273a768dcf1a57823",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.021898578852415085
+        },
+        "termination": "assistant_final",
+        "tool_steps": 1,
+        "turn_count": 2,
+        "processed_tokens": 8586,
+        "target_tokens": 123,
+        "max_sequence_tokens": 4329
+      }
+    },
+    {
+      "pair_id": "TRAIN-20-DSQUAL-vs-BASE-v1",
+      "task_id": 20,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:20",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "filter_composition",
+      "why_pair_valid": "Uses Qualified,Won string instead of Qualified-or-Proposal,omits owner constraint,then abandons reassignment.",
+      "chosen_review": {
+        "task_id": 20,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:20",
+        "trajectory_sha256": "a90b516591174ed56bef120f2fc481ff098b4a2e3fcb217beed29158d9858f08",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Both owners resolved; all four consulting customers observed, status predicate applied before reassignment.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_customer_relationship_manager",
+      "fresh_review": {
+        "pair_id": "TRAIN-20-DSQUAL-vs-BASE-v1",
+        "task_id": 20,
+        "decision": "approved_data",
+        "reason": "Grounded both owners; complete4customer list; only Qualified ID27 matches union, update correct. Rejected Qualified,Won literal misses owner and requested Proposal.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "a90b516591174ed56bef120f2fc481ff098b4a2e3fcb217beed29158d9858f08",
+        "rejected_sha256": "fa5460964a7c427eeba51d16432a3291c05d778f195153ce4e435046f4f97911"
+      },
+      "chosen": {
+        "source_record_sha256": "a90b516591174ed56bef120f2fc481ff098b4a2e3fcb217beed29158d9858f08",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.025042451918125153
+        },
+        "termination": "assistant_final",
+        "tool_steps": 4,
+        "turn_count": 4,
+        "processed_tokens": 19213,
+        "target_tokens": 421,
+        "max_sequence_tokens": 5356
+      },
+      "rejected": {
+        "source_record_sha256": "fa5460964a7c427eeba51d16432a3291c05d778f195153ce4e435046f4f97911",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.020696815103292465
+        },
+        "termination": "assistant_final",
+        "tool_steps": 1,
+        "turn_count": 2,
+        "processed_tokens": 8547,
+        "target_tokens": 96,
+        "max_sequence_tokens": 4305
+      }
+    },
+    {
+      "pair_id": "TRAIN-177-DSQUAL-vs-BASE-v1",
+      "task_id": 177,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:177",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "ungrounded_recipient",
+      "why_pair_valid": "Invents raj@atlas.com andolga@atlas.com; correct message ID alone is insufficient.",
+      "chosen_review": {
+        "task_id": 177,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:177",
+        "trajectory_sha256": "449a15056633b92625ac47245bf2b13232a4f621517ee0aec163bd28a10dcbe1",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "All five matching emails fit one page; newest timestamp and both resolved recipients support forwarding.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_email",
+      "fresh_review": {
+        "pair_id": "TRAIN-177-DSQUAL-vs-BASE-v1",
+        "task_id": 177,
+        "decision": "approved_data",
+        "reason": "Complete5email list identifies latest ID17, both recipient lookups precede forwarding. Rejected invents both addresses.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "449a15056633b92625ac47245bf2b13232a4f621517ee0aec163bd28a10dcbe1",
+        "rejected_sha256": "77b06edda526203e4d6aa506819b01adf9e0795b88a1dcde4d2254bbd37d25f6"
+      },
+      "chosen": {
+        "source_record_sha256": "449a15056633b92625ac47245bf2b13232a4f621517ee0aec163bd28a10dcbe1",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.04927128553390503
+        },
+        "termination": "assistant_final",
+        "tool_steps": 5,
+        "turn_count": 3,
+        "processed_tokens": 14604,
+        "target_tokens": 296,
+        "max_sequence_tokens": 5206
+      },
+      "rejected": {
+        "source_record_sha256": "77b06edda526203e4d6aa506819b01adf9e0795b88a1dcde4d2254bbd37d25f6",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.032999489456415176
+        },
+        "termination": "assistant_final",
+        "tool_steps": 3,
+        "turn_count": 4,
+        "processed_tokens": 19141,
+        "target_tokens": 132,
+        "max_sequence_tokens": 5022
+      }
+    },
+    {
+      "pair_id": "TRAIN-76-DSQUAL-vs-BASE-v1",
+      "task_id": 76,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:76",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "nonexistent_identifier",
+      "why_pair_valid": "Passes literal placeholder as email_id without searching.",
+      "chosen_review": {
+        "task_id": 76,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:76",
+        "trajectory_sha256": "42f8018dd3bf54a3668bb5e7c21c2acc9a591ef21e0b90729907c016f3db6cbd",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Both matching messages are visible and from Sofia; newest ID and exact user reply text are correct.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_email",
+      "fresh_review": {
+        "pair_id": "TRAIN-76-DSQUAL-vs-BASE-v1",
+        "task_id": 76,
+        "decision": "approved_data",
+        "reason": "Complete2email list identifies Sofia latest ID264, exact requested body. Rejected sends placeholder ID and stops.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "42f8018dd3bf54a3668bb5e7c21c2acc9a591ef21e0b90729907c016f3db6cbd",
+        "rejected_sha256": "f2071c04b8810e17f6bbe4ee5faaa9b4182c074dfadf8a23e27f941ca09e99ea"
+      },
+      "chosen": {
+        "source_record_sha256": "42f8018dd3bf54a3668bb5e7c21c2acc9a591ef21e0b90729907c016f3db6cbd",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.0320129320025444
+        },
+        "termination": "assistant_final",
+        "tool_steps": 2,
+        "turn_count": 3,
+        "processed_tokens": 13623,
+        "target_tokens": 197,
+        "max_sequence_tokens": 4722
+      },
+      "rejected": {
+        "source_record_sha256": "f2071c04b8810e17f6bbe4ee5faaa9b4182c074dfadf8a23e27f941ca09e99ea",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.01831233873963356
+        },
+        "termination": "assistant_final",
+        "tool_steps": 1,
+        "turn_count": 2,
+        "processed_tokens": 8540,
+        "target_tokens": 69,
+        "max_sequence_tokens": 4290
+      }
+    },
+    {
+      "pair_id": "TRAIN-965-DSQUAL-vs-BASE-v1",
+      "task_id": 965,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "ungrounded_recipient",
+      "why_pair_valid": "Invents dmitri@example.com; adds unsupported pagination arguments and falsely concludes no tasks.",
+      "chosen_review": {
+        "task_id": 965,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:965",
+        "trajectory_sha256": "d0d40e2ef521007aa65e7e25eadec8727db26ead83993b11d7a6202aaf212733",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Unfiltered In Progress query returns the full list (no pagination); only one item belongs to resolved Dmitri. Broader than necessary, but grounded and correct.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_project_management",
+      "fresh_review": {
+        "pair_id": "TRAIN-965-DSQUAL-vs-BASE-v1",
+        "task_id": 965,
+        "decision": "approved_data",
+        "reason": "Directory plus full13-item unpaginated In Progress list supports unique Dmitri ID9. Broad lookup is acceptable, not minimal. Rejected invents address, unsupported pagination, false no-op.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "d0d40e2ef521007aa65e7e25eadec8727db26ead83993b11d7a6202aaf212733",
+        "rejected_sha256": "bdf682255cc765604925c1c629520f7e1f78dc72585edc351a9bc57a88ed3203"
+      },
+      "chosen": {
+        "source_record_sha256": "d0d40e2ef521007aa65e7e25eadec8727db26ead83993b11d7a6202aaf212733",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.020083803683519363
+        },
+        "termination": "assistant_final",
+        "tool_steps": 3,
+        "turn_count": 3,
+        "processed_tokens": 15019,
+        "target_tokens": 256,
+        "max_sequence_tokens": 5431
+      },
+      "rejected": {
+        "source_record_sha256": "bdf682255cc765604925c1c629520f7e1f78dc72585edc351a9bc57a88ed3203",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "Error executing tool:  ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page_size'\nError executing tool:  ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page'\n",
+          "latency_seconds": 0.02171575278043747
+        },
+        "termination": "assistant_final",
+        "tool_steps": 4,
+        "turn_count": 5,
+        "processed_tokens": 21774,
+        "target_tokens": 192,
+        "max_sequence_tokens": 4478
+      }
+    },
+    {
+      "pair_id": "TRAIN-687-DSQUAL-vs-BASE-v1",
+      "task_id": 687,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:687",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "identifier_type_confusion",
+      "why_pair_valid": "Uses name then invented jinsoo@company.com; unsupported page_size and false empty-result conclusion.",
+      "chosen_review": {
+        "task_id": 687,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:687",
+        "trajectory_sha256": "9f44d75877e65b4fe37ee6a33584d596edf1892d0e5b97868d984252e347d38a",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Resolved owner and filtered full task list ground both updates to In Review.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_project_management",
+      "fresh_review": {
+        "pair_id": "TRAIN-687-DSQUAL-vs-BASE-v1",
+        "task_id": 687,
+        "decision": "approved_data",
+        "reason": "Resolved email and exact filter identify both267/214; both changed to In Review. Rejected name/email fabrication and unsupported page_size lead false no-op.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "9f44d75877e65b4fe37ee6a33584d596edf1892d0e5b97868d984252e347d38a",
+        "rejected_sha256": "e302807609b3e93441875f500df1b839d3f4c1ac1688be4a684a430f72cdb855"
+      },
+      "chosen": {
+        "source_record_sha256": "9f44d75877e65b4fe37ee6a33584d596edf1892d0e5b97868d984252e347d38a",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.020918186753988266
+        },
+        "termination": "assistant_final",
+        "tool_steps": 4,
+        "turn_count": 4,
+        "processed_tokens": 17788,
+        "target_tokens": 285,
+        "max_sequence_tokens": 4676
+      },
+      "rejected": {
+        "source_record_sha256": "e302807609b3e93441875f500df1b839d3f4c1ac1688be4a684a430f72cdb855",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "Error executing tool:  ProjectManagementTool.search_tasks() got an unexpected keyword argument 'page_size'\n",
+          "latency_seconds": 0.02304178848862648
+        },
+        "termination": "assistant_final",
+        "tool_steps": 4,
+        "turn_count": 5,
+        "processed_tokens": 21692,
+        "target_tokens": 186,
+        "max_sequence_tokens": 4454
+      }
+    },
+    {
+      "pair_id": "TRAIN-8-DSQUAL-vs-BASE-v1",
+      "task_id": 8,
+      "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:8",
+      "source_pool": "training_candidate",
+      "initial_state_sha256": "4ef95ba48ae3ec99b467c0d5a41d13788831a4bbe2bf7d2def627d2aca75c0aa",
+      "chosen_run": "DEEPSEEK-QUAL-20260917-001",
+      "rejected_run": "SFT-ACQUIRE-20260916-001",
+      "failure_category": "identifier_type_confusion",
+      "why_pair_valid": "Uses name then invented chenwei@company.com and claims no tasks.",
+      "chosen_review": {
+        "task_id": 8,
+        "task_uid": "c86a908379e0a361a573c395e175d3c1aa128e6c:train:8",
+        "trajectory_sha256": "5e290ac30e0e89480234fcc865a864b4be3e3b04f54a051942f9275adadd2798",
+        "official_reward": 1.0,
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_turns_reviewed": true,
+        "decision": "whole_trajectory_quality_pass",
+        "grounding_checked": true,
+        "target_scope_checked": true,
+        "rationale": "Resolved owner and full matching list ground the single Backlog update.",
+        "training_export_admitted": false
+      },
+      "rejected_review": "Codex full visible-message review2026-10-10;notindependenthuman",
+      "status": "OFFLINE_DATA_ADMITTED_GPU_UNQUALIFIED",
+      "rejected_policy": "original_preSFT_BASE_not_currentS1",
+      "dpo_data_admitted": true,
+      "category": "workplace_assistant_project_management",
+      "fresh_review": {
+        "pair_id": "TRAIN-8-DSQUAL-vs-BASE-v1",
+        "task_id": 8,
+        "decision": "approved_data",
+        "reason": "Resolved Chenwei, full filtered list ID137 updated. Rejected invents email and falsely concludes no work.",
+        "reviewer": "Codex",
+        "independent_human_review": false,
+        "all_visible_messages_reviewed": true,
+        "chosen_sha256": "5e290ac30e0e89480234fcc865a864b4be3e3b04f54a051942f9275adadd2798",
+        "rejected_sha256": "a985163ad9069c390acac65199318f08fafb8b9660303841ebfb8ae690ea3f30"
+      },
+      "chosen": {
+        "source_record_sha256": "5e290ac30e0e89480234fcc865a864b4be3e3b04f54a051942f9275adadd2798",
+        "verifier": {
+          "official_reward": 1.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.02057395875453949
+        },
+        "termination": "assistant_final",
+        "tool_steps": 3,
+        "turn_count": 4,
+        "processed_tokens": 17538,
+        "target_tokens": 222,
+        "max_sequence_tokens": 4538
+      },
+      "rejected": {
+        "source_record_sha256": "a985163ad9069c390acac65199318f08fafb8b9660303841ebfb8ae690ea3f30",
+        "verifier": {
+          "official_reward": 0.0,
+          "replay_stdout": "",
+          "latency_seconds": 0.01923559233546257
+        },
+        "termination": "assistant_final",
+        "tool_steps": 2,
+        "turn_count": 3,
+        "processed_tokens": 12834,
+        "target_tokens": 104,
+        "max_sequence_tokens": 4329
+      }
+    }
+  ],
+  "sources": {
+    "experiments\\POSTSFT-AUDIT-20261010-001\\preference_candidates.jsonl.gz": "26c04c2f31dd7519ec98d63af6cfff8ee2bf7100581511e25990b2df715f3547",
+    "experiments\\DEEPSEEK-QUAL-20260917-001\\trajectories.jsonl": "63f09da20bd6b3a7004ee9bf3b9cf271ab5343ff3af25274f4a6353b069f821a",
+    "experiments\\SFT-ACQUIRE-20260916-001\\trajectories.jsonl": "2b6a5995c158668372148010323403019f1db4b061d7b6213deeffdb7e36be87",
+    "experiments\\Q0-SPLIT-20260904-003\\split_manifest.json": "903683eefa576ee4da50b2e7c3755a271b30c5425326283a1c613abb1d5adfc4"
+  }
+}

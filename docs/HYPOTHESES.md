@@ -124,3 +124,7 @@ SFT execution integrity supported for both50-task/310-updatearms,notonlyold8step
 ## 2026-10-12 实测更新
 
 S100近似等预算增加覆盖未显示优于S1：总体-6.25pp CI[-14.58,2.08]；额外主机/驱动混杂，不能断言多样性有害或已饱和。MIX对S100总体+16.67pp CI[0,33.33]、非空+12.5pp[-5,27.5]、空+37.5pp[0,75]，开发集单训练seed信号，未建立显著/泛化优越。空reference诊断两组均4/8有依据完成不修改、2/8整条干净，MIX仍有错误时间锚/时间窗/聚合；“可靠条件判断改善”未获支持。非空8gain/3regression，不能声称无动作能力损害。全语义错误率与sealed泛化未测。
+
+## 2026-10-12 DPO准备
+
+12对支持离线偏好数据可用性和CPU数学准备，不支持DPO Agent收益。chosen全DeepSeek/rejected旧Base，11/12 chosen更长，风格/长度混杂；0与原S1/S2任务交集会形成新增数据效应，需chosen-only SFT控制。没有正确no-op专门pairs，不能承诺修复MIX的条件推理。未来probe只证明更新/成本，正式方法/泛化待测。

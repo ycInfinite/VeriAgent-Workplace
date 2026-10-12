@@ -1,0 +1,16 @@
+{
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "Research Question": "Can13 historical training preference candidates support a causally valid policy-token-only DPO integrity probe?",
+  "Hypothesis": "Semantically reviewed whole trajectories can supply bounded offline preference data; no capability gain claimed.",
+  "Independent Variable": "CPU review/admission only; proposed later S1+DPO versus S1+chosen-only SFT.",
+  "Controlled Variables": "Existing task/prompt/tools/state, original source records,8192tokenizer, no dev/final/BFCL content for training.",
+  "Metrics": "Fresh replay equality, semantic dispositions, complete target masks, branch lengths, DPO scalar/chain-rule controls, source/reference identity.",
+  "Evidence Gate": "Same initial context/state; reward and observation replay equal; completed branches; whole chosen reviewed; no infra failure; no fabricated observations.",
+  "Cost Bound": "Local CPU only; no remote startup/GPU/API/model download/parameter updates.",
+  "Failure Branch": "Preserve immutable invalid preparation record; fix only new prep path; no raw data editing or truncation.",
+  "parent_commit": "8890b985b504358610478d382ebe9f17b875e4fb",
+  "candidate_artifact": "experiments/POSTSFT-AUDIT-20261010-001/preference_candidates.jsonl.gz",
+  "candidate_sha256": "26c04c2f31dd7519ec98d63af6cfff8ee2bf7100581511e25990b2df715f3547",
+  "GPU_training_authorized": false
+}
