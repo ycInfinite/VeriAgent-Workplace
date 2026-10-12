@@ -1,0 +1,38 @@
+{
+  "experiment_id": "SFT-EXTENSION-RESUME-20261012-001",
+  "Research Question": "Execute frozen S100 size/diversity and MIX100 restraint-composition comparisons",
+  "Hypothesis": "More task coverage and evidence-based no-op examples may improve intended failures;effects unmeasured",
+  "Independent Variable": "S100 unique-task coverage vs historicalS1;MIX100 substitutes20 no-op tasks vsS100",
+  "Controlled Variables": "Frozen configurations,data,Base,LoRA,310updates,8192context,B1,dev24xseeds42/43;S100/MIX100 on same newPRO6000",
+  "Metrics": "Stratifiedsuccess,semantic restraint/action omissions,tokens,latency,VRAM,stepseconds,GPUhours,costestimate",
+  "Evidence Gate": "PinnedGitHubdeployment,weights/packages/actualtokenizer,singleGPU,CE/gradients,adapterchanges/reload,48validrollouts perarm",
+  "Cost Bound": "Singleprovidedclone,4hresourceguard,eachtraining<=60min/eval<=30min;estimate0.6-1.0scriptGPUh forboth,setup/idle extra;hourlyrateunknown,existingbudgetwaiver",
+  "Failure Branch": "Stop and preserve on model/infrastructure/integrityfailure,noautomaticretry/model/context/seed expansion",
+  "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9",
+  "host": "connect.westd.seetacloud.com",
+  "port": 38654,
+  "hostname": "autodl-container-afzl2bg1l8-cc9c6860",
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "memory_MiB": 97887,
+  "driver": "595.58.03",
+  "historical_S1_driver": "580.142",
+  "driver_caveat": "HistoricalS1 comparison has extra driver/hostconfound;do notattribute latency/sample differences solelytodata. S100vsMIX100 samecurrenthost/driver.",
+  "planned_run_ids": [
+    "SFT-S100-20261010-001",
+    "SFT-EVAL-S100-20261010-001",
+    "SFT-MIX100-20261010-001",
+    "SFT-EVAL-MIX100-20261010-001"
+  ],
+  "id_date_note": "Unused frozen IDs retainOct10 preregistrationdate;actualtimestamps recordOct12 execution",
+  "hourly_rmb": null,
+  "new_rental_by_agent": false,
+  "new_teacher_API": false,
+  "DPO_RL_authorized": false,
+  "operational_events": [
+    {
+      "kind": "automatic_permission_review_timeout",
+      "action": "hiddenSSHinput_to_GitHubsync",
+      "outcome": "permittedsingle_retrydelivered;notmodelrunfailure"
+    }
+  ]
+}

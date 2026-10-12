@@ -1,0 +1,37 @@
+{
+  "experiment_id": "SFT-EXTENSION-RESUME-20261012-001",
+  "status": "BOUNDED_MATRIX_COMPLETE_EVIDENCE_PRESERVED_SHUTDOWN_ISSUED",
+  "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9",
+  "actual_execution_date": "2026-10-12",
+  "recorded_at": "2026-10-12T01:35:11.621484+00:00",
+  "optimizer_updates": 620,
+  "valid_eval_rollouts": 96,
+  "infra_invalid_model_runs": 0,
+  "new_teacher_API_calls": 0,
+  "script_GPUhours": 0.6386038221605123,
+  "shutdown": {
+    "shutdown_requested_epoch": 1791768169.6041582,
+    "method": "bash /usr/bin/shutdown",
+    "existingSSH_failed_after_shutdown": true,
+    "guard_cancelled": true,
+    "console_billing_status_independently_verified": false,
+    "container_start_estimate": 1791764512.1,
+    "first_project_observation_epoch": 1791764752.4003737,
+    "hourly_rmb": null,
+    "ssh_banner_received": false,
+    "probe_result": "closed_no_banner",
+    "observed_epoch": 1791768226.5328987,
+    "status": "OFFICIAL_SHUTDOWN_ISSUED_SSH_UNAVAILABLE",
+    "estimated_container_hours_to_shutdown": 1.0159733772940105,
+    "observed_project_session_hours_to_shutdown": 0.9492232734627194
+  },
+  "result_artifact_sha256": {
+    "experiments/SFT-S100-20261010-001/result.json": "cadce1dd004de8d3f16b8b073f29e7736eb730f19d5ee10779e21e31ffc583ed",
+    "experiments/SFT-EVAL-S100-20261010-001/result.json": "fb3ec691cb7a29aaa8d50f5c355d5a757e6c2c97ce7bdc7548ee503aa3af61ca",
+    "experiments/SFT-MIX100-20261010-001/result.json": "29e7ea0a751b383b5fabdc1dbe3095b2fa52aea401b55ac768546c1ffe26ac79",
+    "experiments/SFT-EVAL-MIX100-20261010-001/result.json": "5cc70dc076d9105860d8c05500a6ebfdca582de280b369448341dd839826a38e"
+  },
+  "semantic_audit": "reports/sft-extensions-20261012/empty_reference_semantic_comparison.json",
+  "interpretation": "Official restraint state success improved;correct conditional reasoning improvement not established",
+  "next_stage_started": false
+}

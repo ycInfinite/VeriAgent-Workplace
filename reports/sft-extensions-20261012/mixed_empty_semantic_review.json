@@ -1,0 +1,120 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "criteria_frozen_before_MIX100_evaluation": "completed_supported_no_change requiresassistantfinal andevidencejustifyingnomutation;wholeclean additionallyrequiresaccurateclaims andnoobservedwrong/redundantaction. Posthocdescriptiveindicators,notsurrogateofficialreward.",
+  "scope": "All8 empty-reference generated decisions and relevant observations; fresh review, not independent human adjudication.",
+  "annotations": [
+    {
+      "arm": "MIX100",
+      "task_id": 122,
+      "seed": 42,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Uses Nov27 as Tuesday rather than Nov28; wrong temporal anchor makes unchanged state insufficient evidence of correct condition reasoning.",
+      "training_eligible": false,
+      "record_sha256": "93dc29da1ff665ab8a77dc8f3320ed133b6532e7596316f85b2515d8efeca7ea"
+    },
+    {
+      "arm": "MIX100",
+      "task_id": 709,
+      "seed": 42,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "Exact meeting query with future lower bound returns no events; truthful final answer and no mutation.",
+      "training_eligible": false,
+      "record_sha256": "5a24b8a57be77225d068ee3cc2bd5834dda4886dc53958105474e911498373d9"
+    },
+    {
+      "arm": "MIX100",
+      "task_id": 12,
+      "seed": 42,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Directory and exact In Progress search support no change. Final says all tasks Backlog or Completed, omitting four In Review tasks.",
+      "training_eligible": false,
+      "record_sha256": "da206b61a0ef2759d3be700acade5ac1234376977448e3cbcb92b0d5d4e20dd9"
+    },
+    {
+      "arm": "MIX100",
+      "task_id": 385,
+      "seed": 42,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Nov1-Nov30 is not six weeks; claims totals28/101 whereas returned observations sum69/182. No plot matches official state but does not certify reasoning.",
+      "training_eligible": false,
+      "record_sha256": "5af751bf7ac557229b66c9f149265c5e36ae171bcbda55a79ea8784b81fa02f4"
+    },
+    {
+      "arm": "MIX100",
+      "task_id": 122,
+      "seed": 43,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Queries Nov27 rather than correct Tuesday Nov28; reports zero change rather than correct 50 percent decline. No plot and official success do not repair the premise.",
+      "training_eligible": false,
+      "record_sha256": "e323b24e3ce78b567db05d1f4caf38e942a842ae6835e557f84f2060ed1c4361"
+    },
+    {
+      "arm": "MIX100",
+      "task_id": 709,
+      "seed": 43,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "Exact meeting query with future lower bound returns no events; truthful final answer and no mutation.",
+      "training_eligible": false,
+      "record_sha256": "73761ed213adb1f0fc941118847f8b42c0c98cb296172f66e7c7ebea11498d79"
+    },
+    {
+      "arm": "MIX100",
+      "task_id": 12,
+      "seed": 43,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Correct no-In-Progress decision but redundant searches and incorrect status counts (12/3/3 vs observed 13 Backlog/4 In Review/3 Completed).",
+      "training_eligible": false,
+      "record_sha256": "c3d002a69e32e3b4c2a187fed80f01614ed24c4f448b0e9d4b139a78bb36b700"
+    },
+    {
+      "arm": "MIX100",
+      "task_id": 385,
+      "seed": 43,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Wrong six-week window; substitutes day-win counts for total traffic, and claims10/20 when observed day wins2/26 with2 ties. No plot matches state by wrong reasoning.",
+      "training_eligible": false,
+      "record_sha256": "2287c578b71d4153838ecd04cb01be827703cf5634d39664fded4fce52c3f169"
+    }
+  ],
+  "counts": {
+    "official_success": 8,
+    "completed_supported_no_change": 4,
+    "whole_clean": 2,
+    "denominator": 8
+  },
+  "arithmetic_evidence": {
+    "task385_observed_November_totals": [
+      69,
+      182
+    ],
+    "social_winning_days": 2,
+    "direct_winning_days": 26,
+    "tied_days": 2
+  },
+  "record_sha256_method": "UTF-8 source JSONL line excluding line terminator"
+}

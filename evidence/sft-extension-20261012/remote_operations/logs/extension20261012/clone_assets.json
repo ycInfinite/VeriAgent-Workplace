@@ -1,0 +1,19 @@
+{
+  "status": "CLONED_ASSETS_VERIFIED",
+  "epoch": 1791765241.0211082,
+  "hostname": "autodl-container-afzl2bg1l8-cc9c6860",
+  "weights": {
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "files_verified": 9,
+    "all_match": true
+  },
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 595.58.03",
+  "seconds": 12.97273063659668,
+  "model_loaded": false
+}

@@ -4,3 +4,5 @@
 experiments/** -text
 evidence/sft-acquisition/remote/** -text
 evidence/sft-execution-20261010/** -text
+
+evidence/sft-extension-20261012/** -text

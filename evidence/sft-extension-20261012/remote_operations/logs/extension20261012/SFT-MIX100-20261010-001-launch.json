@@ -1,0 +1,16 @@
+{
+  "run_id": "SFT-MIX100-20261010-001",
+  "pid": 5340,
+  "start_ticks": "1715774212",
+  "boot_id": "58ba2520-90f9-4389-8a28-289d117a5706",
+  "epoch": 1791766854.3500862,
+  "command": [
+    "/root/autodl-tmp/veriagent-workplace-sft-20261010/.venv/bin/python",
+    "scripts/run_sft_mixed.py",
+    "--arm",
+    "MIX100",
+    "--execute",
+    "--run-id",
+    "SFT-MIX100-20261010-001"
+  ]
+}

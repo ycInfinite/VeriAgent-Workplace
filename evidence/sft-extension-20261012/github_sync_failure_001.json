@@ -1,0 +1,12 @@
+{
+  "status": "SYNC_FAILED",
+  "error_type": "RuntimeError",
+  "remote_error_type": "HTTPError",
+  "remote_phase": "download_verified_files",
+  "failed_path": "configs/sft_mixed100_plan.json",
+  "remote_http_status": 404,
+  "execution_commit_requested": "64d6610b4412a556609f51294725c3c3bb921dc9",
+  "remote_active_commit_after_failure": "f9d45c282b7cbebeedb1063e3c2c705330e0b23c",
+  "model_run_started": false,
+  "credentials_or_temporary_urls_persisted": false
+}

@@ -1,0 +1,106 @@
+{
+  "archive_sha256": "c97fad0860d353325d5e0dcc4210e0ca3ce52c1c9f4b7ab68ba50511f67a8e0f",
+  "archive_bytes": 49130,
+  "members": {
+    "logs/extension20261012/SFT-EVAL-MIX100-20261010-001-archive.json": {
+      "bytes": 1699,
+      "sha256": "1238d4d720196685e600fb78a3351cd0a561d41f5ad0994dad0e86f3fe22fab4"
+    },
+    "logs/extension20261012/SFT-EVAL-MIX100-20261010-001-launch.json": {
+      "bytes": 460,
+      "sha256": "2a5e0fc0fd21f65bf9997d1bd1395c761f2552165fa57dd185a1a1e4352ce1d3"
+    },
+    "logs/extension20261012/SFT-EVAL-MIX100-20261010-001.log": {
+      "bytes": 2037,
+      "sha256": "85e0a000da74df14b4f68c19cff1884e5fabd0d978839fdf9460a6ed5bdaa896"
+    },
+    "logs/extension20261012/SFT-EVAL-S100-20261010-001-archive.json": {
+      "bytes": 1682,
+      "sha256": "8f5eb1733cb88386a2147dab25cd2c6196ba3d3aefc546d3b16f155cab9853c2"
+    },
+    "logs/extension20261012/SFT-EVAL-S100-20261010-001-launch.json": {
+      "bytes": 452,
+      "sha256": "cf5efbf28b7ddbefc501b2c0c88784b011367290cfa0ee4e26d7cd881913b951"
+    },
+    "logs/extension20261012/SFT-EVAL-S100-20261010-001.log": {
+      "bytes": 2042,
+      "sha256": "006d2438c7943727bc34c61eadebd98549325ba11b3163a7c546b9fe54e5efdd"
+    },
+    "logs/extension20261012/SFT-MIX-REMOTE-PREP-20261012-001-launch.json": {
+      "bytes": 371,
+      "sha256": "c5fc3bb044803532bd9fc9a6bc7330374aadb01de7467773f1104a1cbbed4626"
+    },
+    "logs/extension20261012/SFT-MIX-REMOTE-PREP-20261012-001.log": {
+      "bytes": 505,
+      "sha256": "116ef4c640e94d3f8175038dd088502b2f40077516378f4993d23f23112a2308"
+    },
+    "logs/extension20261012/SFT-MIX100-20261010-001-archive.json": {
+      "bytes": 2173,
+      "sha256": "1ca711ddd3857e89c5345e809928de72fea7bf6b5cdfd06e86c074223ca96c64"
+    },
+    "logs/extension20261012/SFT-MIX100-20261010-001-launch.json": {
+      "bytes": 387,
+      "sha256": "39fe4f9c508ca72ff7252769c74527e67048b7a4c0c795c63e27fd02c3c4e54f"
+    },
+    "logs/extension20261012/SFT-MIX100-20261010-001.log": {
+      "bytes": 103912,
+      "sha256": "ab3269c8eeef875f1d4803ba3eed1f67206fde3bb6cf36802698dc842470c924"
+    },
+    "logs/extension20261012/SFT-S100-20261010-001-archive.json": {
+      "bytes": 2149,
+      "sha256": "7e3318e4b6952e41002e2d2c8701bb06fbcec64861e28d2b51ae655057054882"
+    },
+    "logs/extension20261012/SFT-S100-20261010-001-launch.json": {
+      "bytes": 380,
+      "sha256": "c0b37aca8d9b5ea9bafb7ec7225e522d156a8b62e7a963a65a8b042f140c77a4"
+    },
+    "logs/extension20261012/SFT-S100-20261010-001.log": {
+      "bytes": 103988,
+      "sha256": "ae36f3fd3a8274affdcab889a2ba252ac78f50b58d7a5e895428bfb98a0d995d"
+    },
+    "logs/extension20261012/SFT-SCALE-REMOTE-PREP-20261012-001-launch.json": {
+      "bytes": 374,
+      "sha256": "dfd9728d151cb92cd3d3dad64756dc16507322c667b3d8f1f0fbb7b71a11d401"
+    },
+    "logs/extension20261012/SFT-SCALE-REMOTE-PREP-20261012-001.log": {
+      "bytes": 503,
+      "sha256": "d0e4e0efbc09cdf1138ec8b289b9f2740e29d84b3cafa9eb35dcd4c55d5755c6"
+    },
+    "logs/extension20261012/clone_assets.json": {
+      "bytes": 516,
+      "sha256": "6695f606f41e411b9a45ff103a279ba10c60d46dae7a14930483390388191226"
+    },
+    "logs/extension20261012/guard.json": {
+      "bytes": 314,
+      "sha256": "75c25371d6fab2e911df3ee0f6d9d95eb0aab2eac3eea6b81a88ba51847c7c55"
+    },
+    "logs/extension20261012/preservation.json": {
+      "bytes": 484,
+      "sha256": "351df900151bd4c9295b5433d11255c55a38a596c7f5f90db54ac9ced2806a90"
+    },
+    "bundle_manifest.json": {
+      "bytes": 14820,
+      "sha256": "2af6b2b97a4aee3d8b704996d4012471970a4ec70a234be936d555f851d4076d"
+    },
+    "experiments/registry.jsonl": {
+      "bytes": 1194,
+      "sha256": "a056d217f0ee69922d7da2dd119534e2e4eb39890bb6825517aacba39304ea63"
+    },
+    "experiments/SFT-SCALE-REMOTE-PREP-20261012-001/config.json": {
+      "bytes": 8537,
+      "sha256": "b7796ef54c8c5457c2e4052d8e8b255c1f520d808f285c989b85979dc6f99075"
+    },
+    "experiments/SFT-SCALE-REMOTE-PREP-20261012-001/result.json": {
+      "bytes": 562,
+      "sha256": "66f69af007679b8c215cc3d8c6b999e716f39c7f6c68fd59c75ea295165879ee"
+    },
+    "experiments/SFT-MIX-REMOTE-PREP-20261012-001/config.json": {
+      "bytes": 9391,
+      "sha256": "509c4726f018aafdb1eb77aaf8629806e0bf913424baa948f0dd86bc20d1cebd"
+    },
+    "experiments/SFT-MIX-REMOTE-PREP-20261012-001/result.json": {
+      "bytes": 564,
+      "sha256": "b44783399d0b14d325d0427e8b7b79de6a48e45b493e67a47113ae33f5cf78f4"
+    }
+  }
+}

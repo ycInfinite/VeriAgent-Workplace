@@ -120,3 +120,7 @@ SFT execution integrity supported for both50-task/310-updatearms,notonlyold8step
 ## 2026-10-10 restraint coverage准备结果
 
 29条现有wholeteacher轨迹可形成合格不修改示范，20条能在近似等预算混合100中覆盖五个业务域。只支持数据可用性，不支持能力改善。MIX100替换20行动任务，因此coverage取舍是解释的一部分。Dev仅4个empty任务簇；Nia等训练任务相似，20ID不等于20独立行为模式。需同时检查empty错误修改与nonempty错误放弃，不能用总reward宣布胜出。
+
+## 2026-10-12 实测更新
+
+S100近似等预算增加覆盖未显示优于S1：总体-6.25pp CI[-14.58,2.08]；额外主机/驱动混杂，不能断言多样性有害或已饱和。MIX对S100总体+16.67pp CI[0,33.33]、非空+12.5pp[-5,27.5]、空+37.5pp[0,75]，开发集单训练seed信号，未建立显著/泛化优越。空reference诊断两组均4/8有依据完成不修改、2/8整条干净，MIX仍有错误时间锚/时间窗/聚合；“可靠条件判断改善”未获支持。非空8gain/3regression，不能声称无动作能力损害。全语义错误率与sealed泛化未测。

@@ -1,0 +1,44 @@
+{
+  "scope": "Exposeddevonly;20noopsreplace20actiontasks atnear-fixedbudget",
+  "primary": "Empty-reference tasksuccess with manual restraint audit;also report nonemptytask regression",
+  "limitations": "Only4 empty-reference taskclusters;officialreward cannot certify correctlookup orjustifiedrestraint",
+  "semantic_rates": "Require new per-trajectory review;not inferred from reward",
+  "strata": {
+    "all": {
+      "taskclusters": 24,
+      "rates": {
+        "S100": 0.6666666666666666,
+        "MIX100": 0.8333333333333334
+      },
+      "MIX100_minus_S100": 0.16666666666666666,
+      "taskcluster95CI": [
+        0.0,
+        0.3333333333333333
+      ]
+    },
+    "nonempty": {
+      "taskclusters": 20,
+      "rates": {
+        "S100": 0.675,
+        "MIX100": 0.8
+      },
+      "MIX100_minus_S100": 0.125,
+      "taskcluster95CI": [
+        -0.05,
+        0.275
+      ]
+    },
+    "empty": {
+      "taskclusters": 4,
+      "rates": {
+        "S100": 0.625,
+        "MIX100": 1.0
+      },
+      "MIX100_minus_S100": 0.375,
+      "taskcluster95CI": [
+        0.0,
+        0.75
+      ]
+    }
+  }
+}

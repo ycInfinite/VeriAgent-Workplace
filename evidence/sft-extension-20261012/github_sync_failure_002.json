@@ -1,0 +1,8 @@
+{
+  "status": "SYNC_FAILED",
+  "remote_phase": "download_verified_files",
+  "failed_path": "veriagent/sft_scale.py",
+  "remote_http_status": 404,
+  "model_run_started": false,
+  "retained_verified_staging": true
+}

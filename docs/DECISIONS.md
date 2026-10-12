@@ -124,3 +124,7 @@ Executed frozenBASE_B1→S1train/eval→S2train/eval once onnew user-rentedPRO60
 ## 2026-10-10 no-op数据组成对照
 
 全部83给出处置，完整通过29条，不修正文案/删错误前缀/改变reward。预算求解选20条替换原S100中20条，新MIX100保留80条且五域各20/310步；原S100不变。固定SHA打破并列，未看模型成绩。No-op标签和质量说明只作元数据，不进入模型输入。不同新查询可增加独立谓词覆盖；精确重读已知事实不能自动称为有效verification。未来双向检查克制与该行动时的遗漏，空reference reward1不单独证明正确克制。GPU仍缺货，不自动启动。
+
+## 2026-10-12 SFT扩展收尾
+
+冻结S100→MIX100已完成，原S100与旧S1/S2不改不重跑。保存两组adapter及完整证据后官方关机，不继续占GPU等待教学。MIX官方8/8空任务不能当全语义正确：同口径两组4/8有依据完成、2/8整条干净。采用官方状态结果+独立语义诊断并列，不改reward。下一路线建议已有training DPO pairs审核/单卡probe登记，尚未授权执行；dev轨迹禁止训练。旧监控暂停。结果见SFT_EXTENSIONS_20261012.md。

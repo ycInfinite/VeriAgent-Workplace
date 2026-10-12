@@ -1,0 +1,52 @@
+{
+  "archive": "/root/autodl-tmp/veriagent-workplace-sft-20261010/logs/extension20261012/SFT-S100-20261010-001.tar.gz",
+  "bytes": 50205,
+  "sha256": "a8653d9a2f690fe4d2ef5ae49ef9eae285256b628292883df0a334613334758c",
+  "files": {
+    "experiments/SFT-S100-20261010-001/adapter_changes.json": {
+      "bytes": 49041,
+      "sha256": "019c94d16e37c98c28056fad8adbcc953107260cd94496fe564742f798570c13"
+    },
+    "experiments/SFT-S100-20261010-001/adapter_manifest.json": {
+      "bytes": 277,
+      "sha256": "b4e9a103ae83d16dd124bf5fadfea06668818490acd44e0ed4013a3ed443571b"
+    },
+    "experiments/SFT-S100-20261010-001/config.json": {
+      "bytes": 8562,
+      "sha256": "f7a441c084ade0caa827522890ba29e9b08aea437a717c65298c2d47077548bd"
+    },
+    "experiments/SFT-S100-20261010-001/gpu_samples.jsonl": {
+      "bytes": 73513,
+      "sha256": "1673e24610c1dcf70b05b4e433d8eebd72e6e96afb0245c813f478076f574600"
+    },
+    "experiments/SFT-S100-20261010-001/identity.json": {
+      "bytes": 16267,
+      "sha256": "fdd29faecb9b488940a725d1fe2f8f35ed862351fe220ca54dbe93ba10fd482e"
+    },
+    "experiments/SFT-S100-20261010-001/reload_check.json": {
+      "bytes": 1009,
+      "sha256": "84d04d6acc95934a22fb338eaa473d228e13569a79247873e0110cccec234df3"
+    },
+    "experiments/SFT-S100-20261010-001/result.json": {
+      "bytes": 756,
+      "sha256": "cadce1dd004de8d3f16b8b073f29e7736eb730f19d5ee10779e21e31ffc583ed"
+    },
+    "experiments/SFT-S100-20261010-001/sample_order.json": {
+      "bytes": 15392,
+      "sha256": "3d2da1c459ab72e21946d677b4fb54b2777bde1cecdc54ae639b59da8b41ea30"
+    },
+    "experiments/SFT-S100-20261010-001/selection.json": {
+      "bytes": 83023,
+      "sha256": "1964357cf8854a5468b4573bfaa85a1fa875eca32e933d2a23cc58a31bd71935"
+    },
+    "experiments/SFT-S100-20261010-001/steps.jsonl": {
+      "bytes": 101949,
+      "sha256": "316f7f83dd1371e9bba829c3c8687f984bb1600b90d6eda0578588158f3e475a"
+    },
+    "experiments/SFT-S100-20261010-001/weight_revalidation.json": {
+      "bytes": 104,
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a"
+    }
+  },
+  "adapters_separate": true
+}

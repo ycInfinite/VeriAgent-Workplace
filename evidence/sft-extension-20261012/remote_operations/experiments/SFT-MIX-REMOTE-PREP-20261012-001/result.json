@@ -1,0 +1,22 @@
+{
+  "status": "MIX100_HOST_PREFLIGHT_PASSED",
+  "code_commit": "64d6610b4412a556609f51294725c3c3bb921dc9",
+  "tasks": 100,
+  "examples": 310,
+  "updates_planned": 310,
+  "weights": {
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "files_verified": 9,
+    "all_match": true
+  },
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "seconds": 24.445865496993065,
+  "model_loaded": false,
+  "parameter_updates": 0
+}

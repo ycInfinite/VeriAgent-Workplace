@@ -1,0 +1,15 @@
+{
+  "status": "ALL4_MODEL_RUNS_COMPLETE_NO_GPU_COMPUTE_PROCESS",
+  "epoch": 1791768112.4512737,
+  "container_start_estimate": 1791764512.1,
+  "container_hours_so_far": 1.0000975762473212,
+  "first_project_observation_epoch": 1791764752.4003737,
+  "billing_start_unverified": true,
+  "hourly_rmb": null,
+  "script_gpu_hours": 0.6386038221605123,
+  "total_updates": 620,
+  "valid_rollouts": 96,
+  "infra_invalid_model_runs": 0,
+  "driver": "595.58.03",
+  "trash_absent_or_empty": true
+}

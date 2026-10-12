@@ -1,0 +1,10 @@
+{
+  "status": "FOUR_HOUR_GUARD_ARMED",
+  "pid": 1593,
+  "start_ticks": "1715571273",
+  "boot_id": "58ba2520-90f9-4389-8a28-289d117a5706",
+  "deadline_epoch": 1791779224.9608145,
+  "created_epoch": 1791764824.9618435,
+  "hostname": "autodl-container-afzl2bg1l8-cc9c6860",
+  "new_session_no_old_guard_reused": true
+}

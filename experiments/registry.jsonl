@@ -77,3 +77,15 @@
 {"experiment_id": "SFT-SCALE-PREP-20261010-002", "event": "cpu_preparation_passed_waiting_GPU_inventory", "planned_updates": 310, "actual_updates": 0}
 {"experiment_id": "NOOP-REVIEW-20261010-001", "event": "offline_review_export_complete", "approved": 29, "held": 54, "GPU_hours": 0}
 {"experiment_id": "MIX100-PREP-20261010-001", "event": "cpu_prepared_waiting_GPU", "tasks": 100, "noops": 20, "actual_updates": 0}
+{"experiment_id":"SFT-EXTENSION-RESUME-20261012-001","event":"clone_verified_GitHub_deployment_pending","model_runs_started":0}
+{"experiment_id": "SFT-S100-20261010-001", "event": "started", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-S100-20261010-001", "event": "completed", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-EVAL-S100-20261010-001", "event": "started", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-EVAL-S100-20261010-001", "event": "completed", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-MIX100-20261010-001", "event": "started", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-MIX100-20261010-001", "event": "completed", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-EVAL-MIX100-20261010-001", "event": "started", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-EVAL-MIX100-20261010-001", "event": "completed", "evidence": "evidence/sft-extension-20261012/remote_operations/experiments/registry.jsonl", "execution_commit": "64d6610b4412a556609f51294725c3c3bb921dc9", "ingestion_date": "2026-10-12"}
+{"experiment_id": "SFT-SCALE-REMOTE-PREP-20261012-001", "event": "actual_HF_preflight_passed", "ingestion_date": "2026-10-12", "evidence": "experiments/SFT-SCALE-REMOTE-PREP-20261012-001/result.json"}
+{"experiment_id": "SFT-MIX-REMOTE-PREP-20261012-001", "event": "actual_HF_preflight_passed", "ingestion_date": "2026-10-12", "evidence": "experiments/SFT-MIX-REMOTE-PREP-20261012-001/result.json"}
+{"experiment_id": "SFT-EXTENSION-RESUME-20261012-001", "event": "completed_preserved_shutdown_requested", "next_stage_started": false}

@@ -1,0 +1,42 @@
+{
+  "scope": "Exposed development only,nesteddata diversity x repetition change at near-fixedbudget",
+  "comparison": "S100-S1",
+  "strata": {
+    "all": {
+      "tasks": 24,
+      "rates": {
+        "S1": 0.7291666666666666,
+        "S100": 0.6666666666666666
+      },
+      "difference": -0.0625,
+      "task_cluster95CI": [
+        -0.14583333333333334,
+        0.020833333333333332
+      ]
+    },
+    "nonempty": {
+      "tasks": 20,
+      "rates": {
+        "S1": 0.75,
+        "S100": 0.675
+      },
+      "difference": -0.075,
+      "task_cluster95CI": [
+        -0.175,
+        0.025
+      ]
+    },
+    "empty": {
+      "tasks": 4,
+      "rates": {
+        "S1": 0.625,
+        "S100": 0.625
+      },
+      "difference": 0.0,
+      "task_cluster95CI": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

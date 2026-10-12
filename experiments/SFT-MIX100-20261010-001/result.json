@@ -1,0 +1,20 @@
+{
+  "status": "SFT_TRAINING_COMPLETE_RELOAD_PASSED",
+  "arm": "MIX100",
+  "optimizer_updates": 310,
+  "training_tasks": 100,
+  "processed_tokens": 1450298,
+  "supervised_tokens": 28695,
+  "mean_step_seconds": 1.432105590763592,
+  "peak_training_allocated_gib": 33.38146924972534,
+  "peak_training_reserved_gib": 90.998046875,
+  "changed_adapter_tensors": 504,
+  "frozen_samples_unchanged": true,
+  "wall_seconds": 484.8544450029731,
+  "gpu_hours": 0.13468179027860364,
+  "cost_estimate_rmb": null,
+  "agent_evaluation": "NOT_RUN",
+  "checkpoint_selection": "fixed_final",
+  "generalization_claim": false,
+  "cost_scope": "Execution record creation through save/reload; earlier CPU admission/instance uptime/storage excluded and must be reported separately"
+}

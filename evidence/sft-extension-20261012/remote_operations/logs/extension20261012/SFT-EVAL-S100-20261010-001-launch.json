@@ -1,0 +1,18 @@
+{
+  "run_id": "SFT-EVAL-S100-20261010-001",
+  "pid": 3471,
+  "start_ticks": "1715697942",
+  "boot_id": "58ba2520-90f9-4389-8a28-289d117a5706",
+  "epoch": 1791766091.645222,
+  "command": [
+    "/root/autodl-tmp/veriagent-workplace-sft-20261010/.venv/bin/python",
+    "scripts/evaluate_sft_scale.py",
+    "--condition",
+    "S100",
+    "--training-run",
+    "SFT-S100-20261010-001",
+    "--execute",
+    "--run-id",
+    "SFT-EVAL-S100-20261010-001"
+  ]
+}

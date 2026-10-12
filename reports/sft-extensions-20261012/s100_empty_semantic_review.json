@@ -1,0 +1,111 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "scope": "All8empty-reference trajectories;fullgenerateddecisions and relevantobservations. Largeirrelevantbacklogtable notclaimedfullysemanticallyreviewed.",
+  "criteria_frozen_before_MIX100_evaluation": "completed_supported_no_change requiresassistantfinal andevidencejustifyingnomutation;wholeclean additionallyrequiresaccurateclaims andnoobservedwrong/redundantaction. Posthocdescriptiveindicators,notsurrogateofficialreward.",
+  "annotations": [
+    {
+      "arm": "S100",
+      "task_id": 122,
+      "seed": 42,
+      "official_reward": 0.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Plots despite unsupported condition:changescount intoengagementpercentage andTuesday intoNov27.",
+      "training_eligible": false,
+      "record_sha256": "488c63b8712a0f59344cbca337d7d690e3d605d33afe3e2cc761537fc4eacf44"
+    },
+    {
+      "arm": "S100",
+      "task_id": 709,
+      "seed": 42,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "Exactrequestedmeetingquerywithunboundedfuturetimefilter returnsnone;truthfulstop.",
+      "training_eligible": false,
+      "record_sha256": "646867326f12a35074c5e4499fb7813c36e5849220ab96756d4c336b126abeae"
+    },
+    {
+      "arm": "S100",
+      "task_id": 12,
+      "seed": 42,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "ResolvedLeila andemptyInProgressquerysupportnochange;repeatedqueries andclaims19tasksdespite20records.",
+      "training_eligible": false,
+      "record_sha256": "76d6504fea83b4d5fcbe6ce105c565beb96f65f87539381bdc85e9c410eefc61"
+    },
+    {
+      "arm": "S100",
+      "task_id": 385,
+      "seed": 42,
+      "official_reward": 0.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Createsbothplotswithoutcheckingcondition;Nov1-Nov30isnot6weeks.",
+      "training_eligible": false,
+      "record_sha256": "8bf026d0ecce325fd7463bab05a8e5f4451cfeccecb04bf1de39a5f9caae4e3b"
+    },
+    {
+      "arm": "S100",
+      "task_id": 122,
+      "seed": 43,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "CorrectTuesdayNov28=8,todayNov30=4;50%decline,doesnotplot.",
+      "training_eligible": false,
+      "record_sha256": "8f78905c872df971974825c125649e823aae506c50abfe992d18480663faf334"
+    },
+    {
+      "arm": "S100",
+      "task_id": 709,
+      "seed": 43,
+      "official_reward": 1.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Initialfuturequerysupportsnoremoval;extraoverlappingqueries andfalse entireweekdescriptionNov29-Dec1 dirtythetrajectory.",
+      "training_eligible": false,
+      "record_sha256": "4a4d2774915174a8fee9fa48aa3a624a77a55efbbbb488142c0e1171368cd20e"
+    },
+    {
+      "arm": "S100",
+      "task_id": 12,
+      "seed": 43,
+      "official_reward": 1.0,
+      "termination": "context_limit",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "NoInProgressLeila isestablished,butunsupported allLeilatasksBacklogclaim andbroadquerycausecontextcap;no completedfinalresponse. Reward1 fromunchangedstate.",
+      "training_eligible": false,
+      "record_sha256": "1a769b2d5b2decfca3d12319c5d27a23aa3c4494fdcd0c2961f7483a06f9542f"
+    },
+    {
+      "arm": "S100",
+      "task_id": 385,
+      "seed": 43,
+      "official_reward": 0.0,
+      "termination": "assistant_final",
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Createsplotsbeforeconditionwithwrongperiod;laterswaps sourcevalues andmisstates arithmetic.",
+      "training_eligible": false,
+      "record_sha256": "66f65eb1872aeb087a0c88b060ee704efe6dbb00c339e7182102f2af96d4e5eb"
+    }
+  ],
+  "counts": {
+    "official_success": 5,
+    "completed_supported_no_change": 4,
+    "whole_clean": 2,
+    "denominator": 8
+  },
+  "record_sha256_method": "canonical sorted JSON using veriagent.sft_data.content_sha256"
+}

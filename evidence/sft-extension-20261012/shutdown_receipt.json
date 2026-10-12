@@ -1,0 +1,16 @@
+{
+  "shutdown_requested_epoch": 1791768169.6041582,
+  "method": "bash /usr/bin/shutdown",
+  "existingSSH_failed_after_shutdown": true,
+  "guard_cancelled": true,
+  "console_billing_status_independently_verified": false,
+  "container_start_estimate": 1791764512.1,
+  "first_project_observation_epoch": 1791764752.4003737,
+  "hourly_rmb": null,
+  "ssh_banner_received": false,
+  "probe_result": "closed_no_banner",
+  "observed_epoch": 1791768226.5328987,
+  "status": "OFFICIAL_SHUTDOWN_ISSUED_SSH_UNAVAILABLE",
+  "estimated_container_hours_to_shutdown": 1.0159733772940105,
+  "observed_project_session_hours_to_shutdown": 0.9492232734627194
+}

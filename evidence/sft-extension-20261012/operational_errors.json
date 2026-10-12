@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "kind": "automatic_approval_timeout",
+      "action": "hiddenSSHpromptinput",
+      "resolution": "single permitted retry succeeded"
+    },
+    {
+      "kind": "wrong_interpreter_for_readonly_clone_check",
+      "error_type": "ModuleNotFoundError_tokenizers",
+      "resolution": "Projectvenv used;9hashes verified",
+      "model_run_invalidated": false
+    }
+  ],
+  "credentials_recorded": false
+}

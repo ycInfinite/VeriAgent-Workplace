@@ -1,0 +1,174 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "scope": "All8 MIX official failures reviewed for decisive observed failure; not full semantic rate for96 trajectories. No old labels reused.",
+  "annotations": [
+    {
+      "task_id": 1,
+      "seed": 42,
+      "official_reward": 0,
+      "termination": "assistant_final",
+      "rationale": "Treats last page as latest event; modifies09:00 event00000165 instead of15:00 event00000252.",
+      "record_sha256": "3a8fe6d28eb0df820f76dc4e9308ad044f345009c7bf35ad134850631cfa56ee",
+      "training_eligible": false
+    },
+    {
+      "task_id": 684,
+      "seed": 42,
+      "official_reward": 0,
+      "termination": "assistant_final",
+      "rationale": "Uses comma-joined status literal then substitutes add_customer for reassignment; ungrounded Akira email/phone; omits eligible customer00000096.",
+      "record_sha256": "c28deb73f8f15334f59f4c7b76e75b2703ea0f489c8b7447d285e70fb7e5b946",
+      "training_eligible": false
+    },
+    {
+      "task_id": 363,
+      "seed": 42,
+      "official_reward": 0,
+      "termination": "assistant_final",
+      "rationale": "Four weeks mapped to Nov26-Nov30; plot executes with wrong temporal range.",
+      "record_sha256": "e913a9a5168dbc3624f65369ede7f1b58ad82a7bf857ce7569dcc92a34f40eea",
+      "training_eligible": false
+    },
+    {
+      "task_id": 952,
+      "seed": 42,
+      "official_reward": 0,
+      "termination": "round_limit",
+      "rationale": "Name used in email field, unsupported due_date_min, redundant retry. Updates250/257 but official reference also includes246 due Nov30; preserves boundary-interpretation caveat rather than blaming only early termination. Round cap reached.",
+      "record_sha256": "f4995843d239cde2997dd4144d979c79f15d2902d44696566b26b54c921695e0",
+      "training_eligible": false
+    },
+    {
+      "task_id": 414,
+      "seed": 43,
+      "official_reward": 0,
+      "termination": "generation_incomplete",
+      "rationale": "Misreads task list as all Completed/In Review; repeats unsupported page after acknowledging error; generation incomplete, no reassignment.",
+      "record_sha256": "40cbeaaececea0f15e72d6e1a91f1e06c2ebf2d078b78431d972ef96c72b1ef4",
+      "training_eligible": false
+    },
+    {
+      "task_id": 1,
+      "seed": 43,
+      "official_reward": 0,
+      "termination": "assistant_final",
+      "rationale": "Same last-page versus latest-time mistake; grounded ID but wrong target selection.",
+      "record_sha256": "141a0427521ff3427c61052749f24d242d26246c3320ddbca5efa14896d4a820",
+      "training_eligible": false
+    },
+    {
+      "task_id": 363,
+      "seed": 43,
+      "official_reward": 0,
+      "termination": "assistant_final",
+      "rationale": "Same wrong four-week range despite correct greater-than10 check within that shortened range.",
+      "record_sha256": "ec177ea46def35011ef701881b4bfc27776c494a3e9c092039cb81a99d4fb875",
+      "training_eligible": false
+    },
+    {
+      "task_id": 952,
+      "seed": 43,
+      "official_reward": 0,
+      "termination": "assistant_final",
+      "rationale": "Explicitly treats Nov27/Nov29 as future relative to Nov30; abandons required updates. Business validation error initially recovered by directory lookup.",
+      "record_sha256": "40d354adcdbb9106194f2a920b6f589f688bc1ace5f5969e928450d003def97a",
+      "training_eligible": false
+    }
+  ],
+  "paired_official_changes": [
+    {
+      "task_id": 356,
+      "seed": 42,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 414,
+      "seed": 42,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 1,
+      "seed": 42,
+      "S100": 1.0,
+      "MIX100": 0.0
+    },
+    {
+      "task_id": 684,
+      "seed": 42,
+      "S100": 1.0,
+      "MIX100": 0.0
+    },
+    {
+      "task_id": 1112,
+      "seed": 42,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 122,
+      "seed": 42,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 385,
+      "seed": 42,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 1,
+      "seed": 43,
+      "S100": 1.0,
+      "MIX100": 0.0
+    },
+    {
+      "task_id": 684,
+      "seed": 43,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 314,
+      "seed": 43,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 1219,
+      "seed": 43,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 1112,
+      "seed": 43,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 918,
+      "seed": 43,
+      "S100": 0.0,
+      "MIX100": 1.0
+    },
+    {
+      "task_id": 385,
+      "seed": 43,
+      "S100": 0.0,
+      "MIX100": 1.0
+    }
+  ],
+  "limitations": "Nonempty net+5 includes8 gains and3 regressions; cannot establish no action-omission harm. Improved official cases can retain semantic errors.",
+  "representative_success": {
+    "task_id": 918,
+    "seed": 43,
+    "S100": "Unscoped In Progress search then generation incomplete",
+    "MIX100": "Directory Carlos -> exact assigned email plus In Progress -> update observed00000086 to Backlog -> truthful completion",
+    "training_eligible": false
+  },
+  "record_sha256_method": "UTF-8 source JSONL line excluding line terminator"
+}

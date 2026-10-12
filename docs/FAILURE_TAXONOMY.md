@@ -67,3 +67,17 @@ Fresh144validtrajectories,notreusedDay3labels. Typedcandidatecallcounts24/76(BAS
 ## 2026-10-10 原83空reference training审核
 
 29通过，54暂缓。主要暂缓：policy非可执行15、任务计数错11、context/encoding/round不完整10、重复核验7、求和错4、错误比较并作图3，其余生成不完整/无依据表述/错误统计量/错误中间时间判断各1。80条officialsuccess中51未过整条监督门槛，不更改其reward。task44=实际48/51而非51/54；task94 Nia=6Completed/12Backlog/4Review，而非5/13/4；task17 strict<3与最低恰好3正确区分。结构暂缓与完整语义复核范围逐条记录；单Codex审核，无独立人工裁决。
+
+## 2026-10-12 新鲜开发轨迹证据（不作训练数据）
+
+新增证据细化，而非完整96条频率统计：
+
+- temporal_anchor_or_window：MIX122两seed周二错一天；363两seed四周缩成五天；385两seed六周缩成一月。
+- aggregate_or_predicate_substitution：385seed42错误求和，seed43以错误日胜场代替总量；官方reward1仍可能出现。
+- grounded_but_wrong_target：task1两seed使用观察中真实ID，却把最后一页当最晚事件，不应计为ID hallucination。
+- wrong_operation_with_fabricated_fields：684seed42 add_customer替代reassign，编造Akira联系方式。
+- unsupported_repeated_arguments：414seed43知道page不支持仍重复；generation cap不是infra-invalid。
+- false_abstention：952seed43把Nov27/29当成Nov30之后，放弃应做更新。
+- reference_boundary_ambiguity：952seed42做两条，官方还需当天到期第三条；分开记录语义边界与其他错误，不改官方奖励。
+
+空reference16条复核、MIX8条官方失败的决定性证据已存reports/sft-extensions-20261012/；单Codex审核无独立人工裁决。schema-valid不等于业务正确；identifier/repeat/premature自动候选不等于全人工错误率。

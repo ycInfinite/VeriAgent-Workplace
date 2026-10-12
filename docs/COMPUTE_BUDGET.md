@@ -142,3 +142,9 @@ BASEeval230.489s,S1train478.891s,S1eval630.250s,S2train474.173s,S2eval744.487s;s
 ## 2026-10-10 NOOP83与MIX100离线准备
 
 本轮GPU0/API0/参数更新0。NOOP导出与一次MILP主脚本4.20s，其他审核/编码/CPU检查另有本地耗时；无付费采集。MIX100一遍310步：processed1450298,target28695,max7756。相对S100两种token分别+1.3869%/+1.3707%。未来每组train+eval估计0.3–0.5scriptGPUh（非实测），max7756显存需重新实机验证；训练<=60min、48条eval<=30min。单价未知，人民币不估造。
+
+## 2026-10-12 S100/MIX100实际资源
+
+单PRO6000 96GB：S100 train474.931s/eval733.446s，MIX train484.854s/eval605.742s，总0.638603822GPUh。容器启动估计→官方关机请求1.015973377h；项目首次观察→请求0.949223273h。包括部署404重试/等待/回收，非平台账单。当前时价未知，RMBnull；若时价p则占用近似1.016p，存储另计，不能复用旧价格。推理GPUh/官方成功S100=.006366716、MIX=.004206543，不含训练/部署且非语义合格分母。
+
+S100/MIX step1.4082/1.4321s；allocated32.136/33.381GiB，reserved88.209/90.998GiB，设备采样used88.896/91.685GiB；train利用率采样94.19%/88.95%。96GB已验证，不能据allocated声称80GB直接可跑。当前未测DPO/GRPO。620updates/96validrollouts/0infra-invalid，0新teacherAPI。原始resource报告与关机收据位于reports和evidence/sft-extension-20261012。保护已取消、官方关机已执行、SSH不可用；控制台计费状态未独立确认。

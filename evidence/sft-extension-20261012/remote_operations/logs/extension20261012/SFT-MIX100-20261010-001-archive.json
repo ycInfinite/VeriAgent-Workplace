@@ -1,0 +1,52 @@
+{
+  "archive": "/root/autodl-tmp/veriagent-workplace-sft-20261010/logs/extension20261012/SFT-MIX100-20261010-001.tar.gz",
+  "bytes": 50652,
+  "sha256": "a9dc3cfa5b48ceb4a4a032991a044ad3387b4276fb7100e357d60a81363ee4dc",
+  "files": {
+    "experiments/SFT-MIX100-20261010-001/adapter_changes.json": {
+      "bytes": 49027,
+      "sha256": "2893ba9352b6d874e9b79ec2df1af081182f6f2b50e4fac7cc64795ded8ccb49"
+    },
+    "experiments/SFT-MIX100-20261010-001/adapter_manifest.json": {
+      "bytes": 277,
+      "sha256": "397ba3e75d2fbe58b98207cebe8bc447095de4ae63516437536570d293eee70e"
+    },
+    "experiments/SFT-MIX100-20261010-001/config.json": {
+      "bytes": 9418,
+      "sha256": "edac77c11e62f1ce9ed47b05d2e5ee8abfdc27d1f78de3992d52d00797899a5d"
+    },
+    "experiments/SFT-MIX100-20261010-001/gpu_samples.jsonl": {
+      "bytes": 75127,
+      "sha256": "1d0491cb9e7c32c6c087316a8e745695c53e6009c3a32fdf86d88db04ac260ad"
+    },
+    "experiments/SFT-MIX100-20261010-001/identity.json": {
+      "bytes": 16271,
+      "sha256": "5ad6680d8993865c6e3edeb61b1d2da8604a060cd44e9407f72cc9ec1b40c4a4"
+    },
+    "experiments/SFT-MIX100-20261010-001/reload_check.json": {
+      "bytes": 1009,
+      "sha256": "84d04d6acc95934a22fb338eaa473d228e13569a79247873e0110cccec234df3"
+    },
+    "experiments/SFT-MIX100-20261010-001/result.json": {
+      "bytes": 758,
+      "sha256": "29e7ea0a751b383b5fabdc1dbe3095b2fa52aea401b55ac768546c1ffe26ac79"
+    },
+    "experiments/SFT-MIX100-20261010-001/sample_order.json": {
+      "bytes": 15392,
+      "sha256": "3d2da1c459ab72e21946d677b4fb54b2777bde1cecdc54ae639b59da8b41ea30"
+    },
+    "experiments/SFT-MIX100-20261010-001/selection.json": {
+      "bytes": 78965,
+      "sha256": "52936ef253ad98de8b446b6372f513a44fe7995a7065ba3fa96a7593d784fd28"
+    },
+    "experiments/SFT-MIX100-20261010-001/steps.jsonl": {
+      "bytes": 101871,
+      "sha256": "6a29c617cbb2d6b46dcdf6ac7be19ad8028f63d8730b9b599b2e450e0265002a"
+    },
+    "experiments/SFT-MIX100-20261010-001/weight_revalidation.json": {
+      "bytes": 104,
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a"
+    }
+  },
+  "adapters_separate": true
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Posthoc descriptive audit on4 exposed development task clusters x2 seeds; never training data; does not replace official reward",
+  "criteria": "completed_supported_no_change requiresassistantfinal andevidencejustifyingnomutation;wholeclean additionallyrequiresaccurateclaims andnoobservedwrong/redundantaction. Posthocdescriptiveindicators,notsurrogateofficialreward.",
+  "S100": {
+    "official_success": 5,
+    "completed_supported_no_change": 4,
+    "whole_clean": 2,
+    "denominator": 8
+  },
+  "MIX100": {
+    "official_success": 8,
+    "completed_supported_no_change": 4,
+    "whole_clean": 2,
+    "denominator": 8
+  },
+  "conclusion": "Official unchanged-state success improves5to8 but supported completed no-change remains4/8 and whole-clean remains2/8. Reliable restraint reasoning improvement not established."
+}
