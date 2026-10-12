@@ -1,0 +1,17 @@
+{
+  "status": "MATRIX_COMPLETE_VERIFIED_SHUTDOWN_CONFIRMED",
+  "optimizer_updates": 24,
+  "valid_eval_rollouts": 144,
+  "infra_invalid_eval_rollouts": 0,
+  "preserved_CPU_preflight_failures": 2,
+  "primary_DPO_minus_chosenSFT_nonempty_pp": 0,
+  "extra_DPO_benefit_established": false,
+  "score_overall": {
+    "S1": 35,
+    "CHOSEN_SFT": 35,
+    "DPO": 33
+  },
+  "denominator_each": 48,
+  "resource_report": "reports/preference-comparison-20261012/resources.json",
+  "next_stage_started": false
+}

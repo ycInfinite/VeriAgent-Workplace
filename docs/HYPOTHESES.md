@@ -132,3 +132,7 @@ S100近似等预算增加覆盖未显示优于S1：总体-6.25pp CI[-14.58,2.08]
 ## 2026-10-12 DPO实机8步完成
 
 首个DPO完整性假设获实机支持：Torch梯度差0、HF75轮一致、两遍logp差0、8真实更新/504tensor变化/重载差0。relative margin并不确保chosen绝对概率提升（第8对chosen更低、rejected降得更多）。每步不同task，8个loss点不是固定集前后学习曲线。任务成功率/方法优越/泛化/no-op改善仍未测。
+
+## 2026-10-12 正式小偏好对照完成
+
+H-preference-added-value在此次12对、单seed、一遍更新、暴露dev设置下未获支持；非空差0，空reference DPO退步5→3。退步集中task12在空InProgress后擅自操作InReview，另有122seed42日期解释改善。不能宣布DPO普遍无效或SFT饱和。旧Base负例与当前S1残余failure错配是下一待检验假设；当前自动grounding候选0而日期/分页/条件问题仍在，仅为线索。

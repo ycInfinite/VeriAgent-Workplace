@@ -1,0 +1,11 @@
+{
+  "status": "FINAL_INTEGRITY_PASSED",
+  "archive_members_verified": 79,
+  "valid_rollouts_rechecked": 144,
+  "empty_review_source_hashes_verified": 24,
+  "all40_nonempty_binary_outcomes_identical": true,
+  "new_adapter_files_verified": 6,
+  "secret_pattern_hits_in_archives": 0,
+  "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61",
+  "formal_model_runs_retried": false
+}

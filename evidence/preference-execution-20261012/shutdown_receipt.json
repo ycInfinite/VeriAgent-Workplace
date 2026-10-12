@@ -1,0 +1,19 @@
+{
+  "status": "OFFICIAL_SHUTDOWN_AND_AUTODL_OFF_CONFIRMED",
+  "shutdown_requested_epoch": 1791775786.5142062,
+  "guard_cancelled": true,
+  "control_and_backup_SSH_closed": true,
+  "existing_SSH_after_shutdown": "SSHException",
+  "AutoDL_UI_observed": "D62 hfpnyex2hv-0b57ffeb andD47 afzl2bg1l8-cc9c6860 bothOFF",
+  "UI_observed_local_epoch": 1791775956.2480106,
+  "hourly_rmb": 6.98,
+  "price_source": "AutoDL D62details refreshed2026-10-12;6.98 current,7.35 original",
+  "container_start_estimate": 1791772105.5877585,
+  "estimated_container_hours_to_shutdown": 1.0224795687860913,
+  "estimated_compute_rmb_to_shutdown": 7.136907390126917,
+  "first_project_SSH_observation_epoch": 1791772519.4177585,
+  "project_observed_hours_to_shutdown": 0.9075267910295063,
+  "not_invoice": true,
+  "storage_billing_not_audited": true,
+  "agent_rented_or_started_instance": false
+}

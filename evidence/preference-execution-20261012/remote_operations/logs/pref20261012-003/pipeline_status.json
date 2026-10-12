@@ -1,0 +1,44 @@
+{
+  "started_epoch": 1791773276.7659197,
+  "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61",
+  "jobs": [
+    {
+      "run_id": "PREF-EVAL-S1-20261012-001",
+      "start_epoch": 1791773278.3047278,
+      "pid": 2215,
+      "exit_code": 0,
+      "end_epoch": 1791773909.205056
+    },
+    {
+      "run_id": "PREF-CHOSEN-SFT-20261012-001",
+      "start_epoch": 1791773909.2062428,
+      "pid": 3854,
+      "exit_code": 0,
+      "end_epoch": 1791773997.7465339
+    },
+    {
+      "run_id": "PREF-EVAL-CHOSEN_SFT-20261012-001",
+      "start_epoch": 1791773997.747765,
+      "pid": 4253,
+      "exit_code": 0,
+      "end_epoch": 1791774680.7153516
+    },
+    {
+      "run_id": "PREF-DPO-20261012-001",
+      "start_epoch": 1791774680.7162595,
+      "pid": 6011,
+      "exit_code": 0,
+      "end_epoch": 1791774873.646347
+    },
+    {
+      "run_id": "PREF-EVAL-DPO-20261012-001",
+      "start_epoch": 1791774873.6472023,
+      "pid": 6646,
+      "exit_code": 0,
+      "end_epoch": 1791775575.4450269
+    }
+  ],
+  "status": "COMPLETE",
+  "current_run": "PREF-EVAL-DPO-20261012-001",
+  "finished_epoch": 1791775575.4461963
+}

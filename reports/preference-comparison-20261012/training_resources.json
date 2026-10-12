@@ -1,0 +1,70 @@
+{
+  "arms": {
+    "CHOSEN_SFT": {
+      "result": {
+        "status": "PREFERENCE_TRAINING_COMPLETE_RELOAD_PASSED",
+        "condition": "CHOSEN_SFT",
+        "optimizer_updates": 12,
+        "reference_seconds": 1.0547228157520294e-05,
+        "mean_step_seconds": 4.295800279593095,
+        "peak_allocated_GiB": 20.738898754119873,
+        "peak_reserved_GiB": 54.408203125,
+        "wall_seconds": 87.29914844874293,
+        "GPU_hours": 0.024249763457984148,
+        "estimated_rmb": 0.16926334893672937,
+        "agent_success_measured": false,
+        "reference_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+      },
+      "GPU_polling": {
+        "sample_count": 80,
+        "mean_utilization_pct": 63.525,
+        "max_sampled_used_gib": 55.0947265625,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      },
+      "changed_adapter_tensors": 504,
+      "reload_diff": 0.0,
+      "same_S1_start": "experiments/SFT-S1-20261010-001/adapter",
+      "target_tokens_chosen": 3258,
+      "target_tokens_rejected": 0,
+      "processed_token_exposures": 174097,
+      "forward_calls_from_dataset": 38,
+      "token_exposure_scope": "DPO reference/current-score/backward recompute passes;SFT chosen-only once;excludes fixedreadouts/CPUHFchecks",
+      "reference_phase_note": "No reference model scoring in CHOSEN_SFT;raw ~10microseconds is empty-loop bookkeeping"
+    },
+    "DPO": {
+      "result": {
+        "status": "PREFERENCE_TRAINING_COMPLETE_RELOAD_PASSED",
+        "condition": "DPO",
+        "optimizer_updates": 12,
+        "reference_seconds": 29.362338792532682,
+        "mean_step_seconds": 10.60814315957638,
+        "peak_allocated_GiB": 20.73889923095703,
+        "peak_reserved_GiB": 35.376953125,
+        "wall_seconds": 191.68291494529694,
+        "GPU_hours": 0.053245254151471376,
+        "estimated_rmb": 0.37165187397727023,
+        "agent_success_measured": false,
+        "reference_sha256": "75532da4fda57ef7256a87728bdaf1e790d326dc5fe065a9631fdb22c44adddc",
+        "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+      },
+      "GPU_polling": {
+        "sample_count": 177,
+        "mean_utilization_pct": 83.02824858757062,
+        "max_sampled_used_gib": 36.0634765625,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      },
+      "changed_adapter_tensors": 504,
+      "reload_diff": 0.0,
+      "same_S1_start": "experiments/SFT-S1-20261010-001/adapter",
+      "target_tokens_chosen": 3258,
+      "target_tokens_rejected": 1885,
+      "processed_token_exposures": 1010133,
+      "forward_calls_from_dataset": 225,
+      "token_exposure_scope": "DPO reference/current-score/backward recompute passes;SFT chosen-only once;excludes fixedreadouts/CPUHFchecks",
+      "reference_phase_note": "FrozenS1 precomputed once before updates"
+    }
+  },
+  "not_strict_compute_match": true,
+  "backup_overlap": "ChosenSFT weights backed up during its eval and some DPO training;DPO weights during its eval. Walltimes include possible CPU/IO contribution;not pure algorithm speed claim."
+}

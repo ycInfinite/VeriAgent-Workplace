@@ -1,0 +1,148 @@
+{
+  "model_id": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "weights_path": "models/Qwen3-8B",
+  "seed": 42,
+  "max_context_tokens": 8192,
+  "expected_trainable_parameters": 43646976,
+  "required_packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "weight_and_tokenizer_sha256": {
+    "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+    "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+    "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+    "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+    "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+  },
+  "max_grad_norm": 1.0,
+  "status": "REGISTERED_BOUNDED_COMPARISON",
+  "Research Question": "Does DPO add value beyond exposure to the same12 chosen trajectories?",
+  "Independent Variable": "CHOSEN_SFT task-mean CE versus wholetrajectory sum-logp DPO;both restart exact S1,not eight-step probe adapter",
+  "Controlled Variables": "same12 task/chosen exposure,order,12task-level updates,lr5e-6,seed42,8192,LoRA/S1;allthree evals on same qualified host/driver",
+  "Metrics": "primary nonempty paired success;overall/empty and fresh semantic review;training/eval tokens,VRAM,latency,GPUh,cost",
+  "Evidence Gate": "S1 origin and pair hashes;Torch DPO+chosenSFT gradient controls;HF75turns;12finite updates perarm;save/reload;three matched48valid evals;frozen inference loop",
+  "Cost Bound": "one existing96GB GPU;eachtrain<=1800s/eval<=1800s;~0.55-0.85scriptGPUh engineering estimate plus deployment/retrieval;4h lifecycle guard;no new rental",
+  "Failure Branch": "stop on formal run/infrastructure/integrity failure;preserve partial valid rollouts and costs;no retries/hyperparameter tuning/extra data/seeds",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "pair_artifact": "experiments/DPO-PREP-20261012-001/pairs.jsonl.gz",
+  "pair_artifact_sha256": "adb8e6669b859c9893f460499e8bf19a0f6911f6d54dd08d258c7a3f938677db",
+  "approved_pairs": 12,
+  "initial_adapter_path": "experiments/SFT-S1-20261010-001/adapter",
+  "initial_adapter_sha256": {
+    "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "adapter_model.safetensors": "e85c79de9b938093f406040ac1ad256f0e4d8b599ce06c0e7b8db5e8701680df",
+    "adapter_config.json": "a73305ac2dd22cd7923332bcc2074b12a038d5b4a4a97ac329a8d26c7344fa4b"
+  },
+  "initialization": "continue exact S1 adapter; reference=Base+same frozen S1,never bareBase/disabledadapter",
+  "scoring": "sum logp over each complete assistant turn under its own branch history;system/user/tool observations masked;no length normalization",
+  "beta": 0.1,
+  "learning_rate": 5e-06,
+  "optimizer_updates": 12,
+  "max_wall_seconds": 1800,
+  "min_gpu_memory_gib": 90,
+  "recompute_atol": 0.02,
+  "initial_margin_atol": 0.02,
+  "GPU_training_authorized": true,
+  "deployment_files": [
+    "configs/preference_comparison_plan.json",
+    "scripts/run_preference_comparison.py",
+    "scripts/evaluate_preference_comparison.py",
+    "scripts/check_preference_torch.py"
+  ],
+  "task_order": [
+    687,
+    247,
+    76,
+    770,
+    859,
+    565,
+    972,
+    123,
+    177,
+    8,
+    20,
+    965
+  ],
+  "conditions": [
+    "S1",
+    "CHOSEN_SFT",
+    "DPO"
+  ],
+  "train_conditions": [
+    "CHOSEN_SFT",
+    "DPO"
+  ],
+  "training_run_ids": {
+    "CHOSEN_SFT": "PREF-CHOSEN-SFT-20261012-001",
+    "DPO": "PREF-DPO-20261012-001"
+  },
+  "eval_run_ids": {
+    "S1": "PREF-EVAL-S1-20261012-001",
+    "CHOSEN_SFT": "PREF-EVAL-CHOSEN_SFT-20261012-001",
+    "DPO": "PREF-EVAL-DPO-20261012-001"
+  },
+  "evaluation": {
+    "data_path": "experiments/SFT-READY-20260917-001/eval_dev24.jsonl.gz",
+    "data_sha256": "01ccef315418a7653e23f48c642f7fa97f748d19911f5897786dcc9b70f085c2",
+    "task_uids": [
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:205",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:510",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:184",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:356",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:414",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:669",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:684",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:0",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:314",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:363",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1219",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:220",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1112",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:918",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:561",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:18",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1063",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:156",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:952",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:122",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:709",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:12",
+      "c86a908379e0a361a573c395e175d3c1aa128e6c:train:385"
+    ],
+    "seeds": [
+      42,
+      43
+    ],
+    "rollouts_per_condition": 48,
+    "conditions": [
+      "S1",
+      "CHOSEN_SFT",
+      "DPO"
+    ],
+    "max_wall_seconds": 1800,
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "max_model_rounds": 6,
+    "max_context_tokens": 8192,
+    "max_output_tokens_per_model_call": 768,
+    "max_output_tokens_per_trajectory": 2048,
+    "status": "PREPARED_NOT_EXECUTED",
+    "scope": "existingexposeddevelopment24only;notcheckpointselection;sealedvalidation/final/BFCLuntouched"
+  },
+  "B1_addition": "Complete the user's task with the available tools. Ground identifiers in the user's request or observed tool results. Inspect state when required to decide whether an action is appropriate. Use returned errors to correct the next action and avoid repeating a call without new evidence. Report completion only when supported by the observed outcome.",
+  "primary": "DPO minus CHOSEN_SFT nonempty-reference task success on fixeddev24x42/43",
+  "secondary": "overall/empty success,semantic review,tool validity,tokens/latency/GPUhours",
+  "selection": "fixed final12 updates,no dev checkpoint or hyperparameter tuning",
+  "Hypothesis": "Relative information from reviewed rejected branches may improve behavior beyond chosen-only SFT; uncertain with12tasks and oldBase negatives.",
+  "comparison_limits": "matched tasks/updates/chosen exposure,NOT matched total tokens/FLOPs/GPUtime;DPO sees negatives/reference;singletrainseed/exposeddevonly",
+  "condition": "DPO"
+}

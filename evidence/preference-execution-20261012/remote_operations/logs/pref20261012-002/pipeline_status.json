@@ -1,0 +1,8 @@
+{
+  "started_epoch": 1791773034.571612,
+  "execution_commit": "df1680c574ef9310f6289aa5e6e112f6d05c87ff",
+  "jobs": [],
+  "status": "STOPPED_FAILURE",
+  "traceback": "Traceback (most recent call last):\n  File \"<string>\", line 17, in <module>\nAssertionError: Torch preflight failed\n",
+  "finished_epoch": 1791773034.603115
+}

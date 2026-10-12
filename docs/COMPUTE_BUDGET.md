@@ -156,3 +156,7 @@ DPO本轮GPUh0/API0/parameterupdates0；26branch CPU回放+编码主脚本5.608s
 ## 2026-10-12 DPO实机8步完成
 
 DPO-PROBE-20261012-001：reference17.9496s、8pair平均9.64436s，总131.19964s=.03644435GPUh。allocated20.7389/reserved31.2793GiB，121采样util均87.8926%、设备used峰31.9658GiB。容器启动估计→关机请求.31416227h，项目首次观察→请求.24397338h；含部署/网络等待/约175MB权重回收，非平台账单。实际时价未知、RMBnull；若p元/h则全占用约.3142p，存储另计。单pass204089processed/3376targets，三pass612267/10128曝光，另有固定readout2×64tokens。无Agent评估，cost per verified success未定义。当前8对96GB实测，不等同80GB/全8K资格。
+
+## 2026-10-12 正式小偏好对照完成
+
+本轮五脚本GPUh.63621145，按新读AutoDL6.98/h估计4.4408元；实例启动估计→关机请求1.02247957h约7.1369元，包含部署/两CPU导入故障/等待/回收，不是账单，两数不可相加。CHOSEN_SFT/DPO训练87.299/191.683s，平均task/pair步4.2958/10.6081s；DPOreference29.3623s。allocated均20.7389GiB，reserved54.4082/35.3770，设备used55.0947/36.0635，采样util63.525%/83.028%。基线/SFT/DPO eval629.493/681.509/700.378s。备份IO与训练/评估部分重叠，时延不作纯算法因果解释；96GB当前范围实测，不推定全8K/80GB。API0，新training24updates，eval144valid0infra。

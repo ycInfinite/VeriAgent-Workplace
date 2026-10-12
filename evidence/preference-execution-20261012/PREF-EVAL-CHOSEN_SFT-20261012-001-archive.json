@@ -1,0 +1,38 @@
+{
+  "archive_sha256": "9e847a3a17fb195108b1e7198571365fb02d44cd069b3da2c10f02a31e689f76",
+  "files": {
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/config.json": {
+      "sha256": "5844b5dd735270395a3d6697256ef9ba73d0ecad233c3295ca51fbce5f589a17",
+      "bytes": 9319
+    },
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/gpu_samples.jsonl": {
+      "sha256": "980575754d6bf0f0a6fe59b827a4c13bdc4010e41d9d0c13dc20e8f50c002809",
+      "bytes": 105947
+    },
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/identity.json": {
+      "sha256": "49f8c4e167f41cf241b22d23a35636122f00e0195e05b6cd36d6b298f60fd2b3",
+      "bytes": 1118
+    },
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/initial_state.json": {
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958",
+      "bytes": 508460
+    },
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/progress.json": {
+      "sha256": "0091294e0c994f3a0a4938b545e848f6fd29e4d5a27e47bf340cee225dfd7f01",
+      "bytes": 1055
+    },
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/result.json": {
+      "sha256": "7f6ac5bfcce37488eb09a1ab47ad994b51fb268a98691a1264f94123959f5f37",
+      "bytes": 1602
+    },
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/trajectories.jsonl": {
+      "sha256": "00381fd7eac8711c4fd96da1dd0d0949b825efc794b70e9f1db09dc7539d1a41",
+      "bytes": 2023734
+    },
+    "experiments/PREF-EVAL-CHOSEN_SFT-20261012-001/weight_revalidation.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    }
+  },
+  "bytes": 288985
+}

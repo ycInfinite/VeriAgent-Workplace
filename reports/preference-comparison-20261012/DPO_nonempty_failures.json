@@ -1,0 +1,97 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "scope": "All10DPO nonempty official failures,decisive generated decisions and relevantobservations reviewed;not all144 full semantic rates",
+  "annotations": [
+    {
+      "task_id": 414,
+      "seed": 42,
+      "official_reward": 0,
+      "decisive_evidence": "Selects completed earliest-due task61 rather than referenceactive task79;seed43 additionally claimsalltasks same date. GroundedID butwrongtarget/status interpretation.",
+      "record_canonical_sha256": "0edc3ea5fb6446672905439c61c50ae3f1198ae60c258ac985f674a0e25f5be2",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": true
+    },
+    {
+      "task_id": 684,
+      "seed": 42,
+      "official_reward": 0,
+      "decisive_evidence": "seed42 wrongcomma-status thenmissespagination andupdatesonly2of4;seed43correctsplitfiltersbutstopsafterlisting,no reassignment.",
+      "record_canonical_sha256": "106ca520fba3c58fc9ab9c3842c65864bf09e8f892d5914ac9a85bf56c4c3592",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": false
+    },
+    {
+      "task_id": 363,
+      "seed": 42,
+      "official_reward": 0,
+      "decisive_evidence": "Wrong4week range:seed42 Oct26-Nov30(fiveweeks),seed43 Nov26-Nov30(fivedays),referenceNov2-Nov30.",
+      "record_canonical_sha256": "6eea189a3944b7309bff0c20453e2018e17aac491ec22244e1a0cd6d61f0a49b",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": false
+    },
+    {
+      "task_id": 1112,
+      "seed": 42,
+      "official_reward": 0,
+      "decisive_evidence": "Wronglastweek Oct23-30 relativeNov30. seed42 forwardswrong-period Luis email131;seed43 additionally forwards2Leila emails.",
+      "record_canonical_sha256": "e9dfaf745d993c0689818ccc630a92e566db38b9e69a0e61cd4a53b79779bbd3",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": false
+    },
+    {
+      "task_id": 952,
+      "seed": 42,
+      "official_reward": 0,
+      "decisive_evidence": "MovesNov27/29tasks but excludesNov30 due-today item246 requiredbyreference. Explicit due-date boundary ambiguity,not blanket model-only error.",
+      "record_canonical_sha256": "31ca4be90e442eecfb4d90d1a36aa2e6ee4045b107e86fa5bac538e66225174c",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": true
+    },
+    {
+      "task_id": 414,
+      "seed": 43,
+      "official_reward": 0,
+      "decisive_evidence": "Selects completed earliest-due task61 rather than referenceactive task79;seed43 additionally claimsalltasks same date. GroundedID butwrongtarget/status interpretation.",
+      "record_canonical_sha256": "d426043e710517739254c335df7b3ef95dd868b09a5dca00c617347e4f62050f",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": true
+    },
+    {
+      "task_id": 684,
+      "seed": 43,
+      "official_reward": 0,
+      "decisive_evidence": "seed42 wrongcomma-status thenmissespagination andupdatesonly2of4;seed43correctsplitfiltersbutstopsafterlisting,no reassignment.",
+      "record_canonical_sha256": "21b67b7bcd862505d7232672abfe13d0461e45c095c52ed628cf4345c2e73c7b",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": false
+    },
+    {
+      "task_id": 363,
+      "seed": 43,
+      "official_reward": 0,
+      "decisive_evidence": "Wrong4week range:seed42 Oct26-Nov30(fiveweeks),seed43 Nov26-Nov30(fivedays),referenceNov2-Nov30.",
+      "record_canonical_sha256": "2293f5f4332a6145792c8c178154197c83768d679b1c0cffa953dc733f4c1fab",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": false
+    },
+    {
+      "task_id": 1112,
+      "seed": 43,
+      "official_reward": 0,
+      "decisive_evidence": "Wronglastweek Oct23-30 relativeNov30. seed42 forwardswrong-period Luis email131;seed43 additionally forwards2Leila emails.",
+      "record_canonical_sha256": "4370669facf7766e90df5c335ae6c56058a7720a5bf38ae8084db2d0146a2c14",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": false
+    },
+    {
+      "task_id": 952,
+      "seed": 43,
+      "official_reward": 0,
+      "decisive_evidence": "MovesNov27/29tasks but excludesNov30 due-today item246 requiredbyreference. Explicit due-date boundary ambiguity,not blanket model-only error.",
+      "record_canonical_sha256": "781696f21d78c3c97ca41a49f12a2736cf5a54d7016a1ecaed512864f30bd637",
+      "training_eligible": false,
+      "interpretation_requires_reference_semantics": true
+    }
+  ]
+}

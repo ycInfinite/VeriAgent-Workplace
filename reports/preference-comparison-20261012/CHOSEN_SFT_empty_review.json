@@ -1,0 +1,95 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "fresh_review_of_current_run": true,
+  "scope": "All8 generated decisions with exact decision-relevant observations/aggregates;not old labels",
+  "criteria": "Same as currentS1 review;wholeclean excludes semantically redundant confirmation after complete evidence",
+  "annotations": [
+    {
+      "task_id": 122,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Wrong TuesdayNov27 instead ofNov28,despite official state success.",
+      "record_canonical_sha256": "fd1ad574eafc07ad2f7573e15284b3cec79a95562c80b66a1b54af09c0370c0c",
+      "training_eligible": false
+    },
+    {
+      "task_id": 709,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Complete five-event past list already supports no deletion;extra future query is redundant but correct.",
+      "record_canonical_sha256": "d21192d0cb7c414e9028db6a34201ed4c09648c8e9931448eecf8d855c39d819",
+      "training_eligible": false
+    },
+    {
+      "task_id": 12,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Correct empty In Progress decision;repeated queries and false12vs20 count.",
+      "record_canonical_sha256": "78980e237eb2d9da5cda711fbf760582f311ca2e16641d8364a39922b29ca44e",
+      "training_eligible": false
+    },
+    {
+      "task_id": 385,
+      "seed": 42,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Plots before checking condition;wrongmonth vs6weeks and totals100/153 instead of69/182.",
+      "record_canonical_sha256": "5dd4dad2d55b8c9e5e92f299c90f2c14032edeb0cae1a0e2cee72fc943807e36",
+      "training_eligible": false
+    },
+    {
+      "task_id": 122,
+      "seed": 43,
+      "official_reward": 1.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Wrong TuesdayNov27 instead ofNov28;not plotting is correct state with wrong evidence.",
+      "record_canonical_sha256": "fe139805e667730b288bc0edf1912fc6bf04da12f934381846fe51e0cb37ba52",
+      "training_eligible": false
+    },
+    {
+      "task_id": 709,
+      "seed": 43,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "Complete list allpast,accurate no-deletion final.",
+      "record_canonical_sha256": "8471e03602aa2d8d00562bd17f1c9c1cfb69a27d24980a50c34ab4bc13a3b715",
+      "training_eligible": false
+    },
+    {
+      "task_id": 12,
+      "seed": 43,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "After empty In Progress checks substitutes In Review and moves4wrong tasks;roundcap without final.",
+      "record_canonical_sha256": "50cee2fa08cb9a98a45bbb8a600b325d47895eee42a8326522194c692081bbd9",
+      "training_eligible": false
+    },
+    {
+      "task_id": 385,
+      "seed": 43,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Plots before false condition;wrongmonth and totals103/160 vs69/182.",
+      "record_canonical_sha256": "580a96b3f8a2dac8c8205855da464102fa1418fe05a5439f07090046ed753ef3",
+      "training_eligible": false
+    }
+  ],
+  "counts": {
+    "official": 5,
+    "supported_completed_no_change": 3,
+    "whole_clean": 1,
+    "denominator": 8
+  }
+}

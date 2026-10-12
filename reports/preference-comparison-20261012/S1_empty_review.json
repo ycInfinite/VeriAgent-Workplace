@@ -1,0 +1,95 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "fresh_review_of_current_run": true,
+  "scope": "All8 current empty-reference generated decisions and relevant observations; numeric/list observations checked via lossless decision-relevant fields and exact aggregates",
+  "criteria": "Supported completed no-change requires correct decisive evidence and terminal response;wholeclean additionally no observed wrong/redundant behavior",
+  "annotations": [
+    {
+      "task_id": 122,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Wrong Tuesday Nov27 rather than Nov28;unchanged state but incorrect decisive temporal premise.",
+      "record_canonical_sha256": "dbc9a188bf6848c45b1e3daef168da92ef817898c168fdd35a9936c6116b86f7",
+      "training_eligible": false
+    },
+    {
+      "task_id": 709,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "Complete five-event title query shows all past;truthful no deletion.",
+      "record_canonical_sha256": "c21a4ef16f45ed42ec6c4b9b01afb5f630de74d861c64f8c2c8c004a2294501f",
+      "training_eligible": false
+    },
+    {
+      "task_id": 12,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Exact grounded In Progress lookup empty,correct no-change;repeated queries and false12task count versus20.",
+      "record_canonical_sha256": "c800f0a170666425a329854dd94a52c23246605e1f3c8b321c829aa1eb70947e",
+      "training_eligible": false
+    },
+    {
+      "task_id": 385,
+      "seed": 42,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Plots before condition,uses month not6weeks,claims137/131 versus observed69/182.",
+      "record_canonical_sha256": "990d9ea0bc3198da897160e68603f9d41a21112102baa755bd58511e974a4573",
+      "training_eligible": false
+    },
+    {
+      "task_id": 122,
+      "seed": 43,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Wrong Tuesday anchor,then substitutes any-day peak for today-vs-Tuesday condition and creates plot.",
+      "record_canonical_sha256": "ff221ab683a70e28badc548cf324601c57b49cb1b2aeba5f959be10a380d42d2",
+      "training_eligible": false
+    },
+    {
+      "task_id": 709,
+      "seed": 43,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "Complete five-event title query shows all past;truthful no deletion.",
+      "record_canonical_sha256": "cb66dcdd9368d6bae94f9fce91803a357ffe0e8cbb47302c3f72188db82ea831",
+      "training_eligible": false
+    },
+    {
+      "task_id": 12,
+      "seed": 43,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Exact grounded In Progress lookup empty;claims18tasks versus20 and unnecessary broad followup.",
+      "record_canonical_sha256": "c41fd165edf5a5bf545757fb942c340d24108638ef26cab5f492470fff3199b6",
+      "training_eligible": false
+    },
+    {
+      "task_id": 385,
+      "seed": 43,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Plots before condition,wrongmonth window,claims117/83/200 whereas returned69/182/313.",
+      "record_canonical_sha256": "ac3289c5c89b3c05182c492513ff6448fd1d096a5118486d7988dcabca573634",
+      "training_eligible": false
+    }
+  ],
+  "counts": {
+    "official": 5,
+    "supported_completed_no_change": 4,
+    "whole_clean": 2,
+    "denominator": 8
+  }
+}

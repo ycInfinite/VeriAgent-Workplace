@@ -1,0 +1,31 @@
+{
+  "experiment_id": "PREF-EVAL-S1-20261012-001",
+  "code_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61",
+  "policy_identity": {
+    "condition": "S1",
+    "base_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "adapter": {
+      "training_run": "SFT-S1-20261010-001",
+      "files": {
+        "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+        "adapter_model.safetensors": "e85c79de9b938093f406040ac1ad256f0e4d8b599ce06c0e7b8db5e8701680df",
+        "adapter_config.json": "a73305ac2dd22cd7923332bcc2074b12a038d5b4a4a97ac329a8d26c7344fa4b"
+      }
+    }
+  },
+  "started_at": "2026-10-12T02:47:58.930155+00:00",
+  "seeds": [
+    42,
+    43
+  ],
+  "data_sha256": "01ccef315418a7653e23f48c642f7fa97f748d19911f5897786dcc9b70f085c2",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "parameter_sample_before": "a644567f16dcc35d0e35021f1a9a3495b2e625ff2afe7a91e51f9733ef59ed69",
+  "trainable_parameters": 0
+}

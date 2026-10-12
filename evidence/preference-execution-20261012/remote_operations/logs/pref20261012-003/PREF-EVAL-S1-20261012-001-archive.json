@@ -1,0 +1,38 @@
+{
+  "archive_sha256": "ec2a8b2f6c775ca2f9b5edbb5eb3fa5aecc9dc0d7c7391c009759153adbf83b6",
+  "files": {
+    "experiments/PREF-EVAL-S1-20261012-001/config.json": {
+      "sha256": "0e64f333cc28108a398defe2d0a85bb056c867a0ee90b97b04471d194e5835be",
+      "bytes": 9311
+    },
+    "experiments/PREF-EVAL-S1-20261012-001/gpu_samples.jsonl": {
+      "sha256": "a38fb666c7d984b03557ee71f8e6cefa0a6c6f94edd7647a7f070590a8997be1",
+      "bytes": 97756
+    },
+    "experiments/PREF-EVAL-S1-20261012-001/identity.json": {
+      "sha256": "e4038b14b2dc5cfc1808f9f9750ff1170d7f94892da7054cbf9e8e479a7b3029",
+      "bytes": 1093
+    },
+    "experiments/PREF-EVAL-S1-20261012-001/initial_state.json": {
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958",
+      "bytes": 508460
+    },
+    "experiments/PREF-EVAL-S1-20261012-001/progress.json": {
+      "sha256": "154431b67fff9662a6370112c0f6143f83770df4745a33396fb3056bf9fb57da",
+      "bytes": 1001
+    },
+    "experiments/PREF-EVAL-S1-20261012-001/result.json": {
+      "sha256": "17ceb6954851bb86daea920a04c1066f549c58891943939f518000f97513ecaf",
+      "bytes": 1542
+    },
+    "experiments/PREF-EVAL-S1-20261012-001/trajectories.jsonl": {
+      "sha256": "e2b56d5fe96b9d78c39509151ab73943999dd5615c283799ecb684c98dc94c35",
+      "bytes": 1991987
+    },
+    "experiments/PREF-EVAL-S1-20261012-001/weight_revalidation.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    }
+  },
+  "bytes": 291654
+}

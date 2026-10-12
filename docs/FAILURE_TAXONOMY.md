@@ -89,3 +89,7 @@ DPO数据审核区分语义模型错与infra：271越权删除是有效模型失
 ## 2026-10-12 DPO实机8步完成
 
 本次DPO只做完整性探针，没有新Agent失败轨迹，不能更新Agent failure rates。两个操作问题（解释器PATH、本地解包路径保护）均非模型失败，永久保留且计实例占用。固定greedy重载读出上限64token而未完成tool JSON，属于身份fixture，不计task success/failure。
+
+## 2026-10-12 正式小偏好对照完成
+
+新鲜复核三组24条空任务+10条DPO非空官方失败。关键新增证据：empty-filter后predicate_substitution（Leila InProgress为空，却改InReview）在追加SFT seed43和DPO两seed出现；这是真实状态越界，不是IDhallucination。DPO122seed42日期解释改善，不能只看reward同为1。其余DPO失败涉及completed任务选取、漏分页/只列出未执行、时间窗、错收件来源。952 due-today与overdue边界保留解释歧义，官方reward不改。全144条完整语义率仍未建立，所有dev案例不可训练。

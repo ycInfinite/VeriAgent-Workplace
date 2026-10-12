@@ -1,0 +1,247 @@
+{
+  "runs": {
+    "PREF-CHOSEN-SFT-20261012-001": {
+      "result": {
+        "status": "PREFERENCE_TRAINING_COMPLETE_RELOAD_PASSED",
+        "condition": "CHOSEN_SFT",
+        "optimizer_updates": 12,
+        "reference_seconds": 1.0547228157520294e-05,
+        "mean_step_seconds": 4.295800279593095,
+        "peak_allocated_GiB": 20.738898754119873,
+        "peak_reserved_GiB": 54.408203125,
+        "wall_seconds": 87.29914844874293,
+        "GPU_hours": 0.024249763457984148,
+        "estimated_rmb": 0.16926334893672937,
+        "agent_success_measured": false,
+        "reference_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+      },
+      "GPU_polling": {
+        "sample_count": 80,
+        "mean_utilization_pct": 63.525,
+        "max_sampled_used_gib": 55.0947265625,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      }
+    },
+    "PREF-DPO-20261012-001": {
+      "result": {
+        "status": "PREFERENCE_TRAINING_COMPLETE_RELOAD_PASSED",
+        "condition": "DPO",
+        "optimizer_updates": 12,
+        "reference_seconds": 29.362338792532682,
+        "mean_step_seconds": 10.60814315957638,
+        "peak_allocated_GiB": 20.73889923095703,
+        "peak_reserved_GiB": 35.376953125,
+        "wall_seconds": 191.68291494529694,
+        "GPU_hours": 0.053245254151471376,
+        "estimated_rmb": 0.37165187397727023,
+        "agent_success_measured": false,
+        "reference_sha256": "75532da4fda57ef7256a87728bdaf1e790d326dc5fe065a9631fdb22c44adddc",
+        "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+      },
+      "GPU_polling": {
+        "sample_count": 177,
+        "mean_utilization_pct": 83.02824858757062,
+        "max_sampled_used_gib": 36.0634765625,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      }
+    },
+    "PREF-EVAL-S1-20261012-001": {
+      "result": {
+        "attempted_rollouts": 48,
+        "valid_rollouts": 48,
+        "infra_invalid_rollouts": 0,
+        "verified_successes": 35,
+        "success_rate": 0.7291666666666666,
+        "strata": {
+          "nonempty_reference": {
+            "n": 40,
+            "successes": 30
+          },
+          "empty_reference": {
+            "n": 8,
+            "successes": 5
+          }
+        },
+        "tool_calls": 161,
+        "parse_error_attempts": 0,
+        "executable_tool_calls": 159,
+        "executable_tool_call_rate": 0.9875776397515528,
+        "unknown_tool_calls": 0,
+        "schema_invalid_calls": 2,
+        "identifier_bearing_calls": 76,
+        "ungrounded_identifier_candidate_calls": 0,
+        "repeated_same_state_call_candidates": 3,
+        "retry_loop_trajectories": 0,
+        "premature_termination_candidates": 13,
+        "termination_counts": {
+          "assistant_final": 48
+        },
+        "input_tokens": 775142,
+        "output_tokens": 15603,
+        "average_tool_steps": 3.3541666666666665,
+        "average_trajectory_seconds": 12.606553421491602,
+        "peak_torch_allocated_gib": 17.8376522064209,
+        "candidate_metrics_require_semantic_review": true,
+        "status": "MATCHED_DEV_EVAL_COMPLETE",
+        "condition": "S1",
+        "gpu_hours": 0.17485904400392124,
+        "wall_seconds": 629.4925584141165,
+        "cost_estimate_rmb": 1.2205161271473703,
+        "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+        "parameter_updates": 0,
+        "scope": "development24 only,not held-out or composition-generalization evidence",
+        "parameter_samples_unchanged": true,
+        "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+      },
+      "GPU_polling": {
+        "sample_count": 582,
+        "mean_utilization_pct": 62.266323024054984,
+        "max_sampled_used_gib": 21.3095703125,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      }
+    },
+    "PREF-EVAL-CHOSEN_SFT-20261012-001": {
+      "result": {
+        "attempted_rollouts": 48,
+        "valid_rollouts": 48,
+        "infra_invalid_rollouts": 0,
+        "verified_successes": 35,
+        "success_rate": 0.7291666666666666,
+        "strata": {
+          "nonempty_reference": {
+            "n": 40,
+            "successes": 30
+          },
+          "empty_reference": {
+            "n": 8,
+            "successes": 5
+          }
+        },
+        "tool_calls": 163,
+        "parse_error_attempts": 1,
+        "executable_tool_calls": 161,
+        "executable_tool_call_rate": 0.9817073170731707,
+        "unknown_tool_calls": 0,
+        "schema_invalid_calls": 2,
+        "identifier_bearing_calls": 78,
+        "ungrounded_identifier_candidate_calls": 0,
+        "repeated_same_state_call_candidates": 4,
+        "retry_loop_trajectories": 0,
+        "premature_termination_candidates": 11,
+        "termination_counts": {
+          "assistant_final": 46,
+          "generation_incomplete": 1,
+          "round_limit": 1
+        },
+        "input_tokens": 779922,
+        "output_tokens": 16338,
+        "average_tool_steps": 3.3958333333333335,
+        "average_trajectory_seconds": 13.696545403955193,
+        "peak_torch_allocated_gib": 17.8376522064209,
+        "candidate_metrics_require_semantic_review": true,
+        "status": "MATCHED_DEV_EVAL_COMPLETE",
+        "condition": "CHOSEN_SFT",
+        "gpu_hours": 0.18930806644441975,
+        "wall_seconds": 681.5090391999111,
+        "cost_estimate_rmb": 1.32137030378205,
+        "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+        "parameter_updates": 0,
+        "scope": "development24 only,not held-out or composition-generalization evidence",
+        "parameter_samples_unchanged": true,
+        "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+      },
+      "GPU_polling": {
+        "sample_count": 631,
+        "mean_utilization_pct": 57.96513470681458,
+        "max_sampled_used_gib": 21.3134765625,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      }
+    },
+    "PREF-EVAL-DPO-20261012-001": {
+      "result": {
+        "attempted_rollouts": 48,
+        "valid_rollouts": 48,
+        "infra_invalid_rollouts": 0,
+        "verified_successes": 33,
+        "success_rate": 0.6875,
+        "strata": {
+          "nonempty_reference": {
+            "n": 40,
+            "successes": 30
+          },
+          "empty_reference": {
+            "n": 8,
+            "successes": 3
+          }
+        },
+        "tool_calls": 168,
+        "parse_error_attempts": 0,
+        "executable_tool_calls": 166,
+        "executable_tool_call_rate": 0.9880952380952381,
+        "unknown_tool_calls": 0,
+        "schema_invalid_calls": 2,
+        "identifier_bearing_calls": 85,
+        "ungrounded_identifier_candidate_calls": 0,
+        "repeated_same_state_call_candidates": 1,
+        "retry_loop_trajectories": 0,
+        "premature_termination_candidates": 14,
+        "termination_counts": {
+          "assistant_final": 47,
+          "round_limit": 1
+        },
+        "input_tokens": 784671,
+        "output_tokens": 17285,
+        "average_tool_steps": 3.5,
+        "average_trajectory_seconds": 14.105509726466456,
+        "peak_torch_allocated_gib": 17.475368976593018,
+        "candidate_metrics_require_semantic_review": true,
+        "status": "MATCHED_DEV_EVAL_COMPLETE",
+        "condition": "DPO",
+        "gpu_hours": 0.19454932215985737,
+        "wall_seconds": 700.3775597754866,
+        "cost_estimate_rmb": 1.3579542686758046,
+        "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+        "parameter_updates": 0,
+        "scope": "development24 only,not held-out or composition-generalization evidence",
+        "parameter_samples_unchanged": true,
+        "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+      },
+      "GPU_polling": {
+        "sample_count": 649,
+        "mean_utilization_pct": 59.377503852080125,
+        "max_sampled_used_gib": 21.7900390625,
+        "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+      }
+    }
+  },
+  "total_script_GPUhours": 0.6362114502176539,
+  "total_script_rmb_at_observed_rate": 4.440755922519225,
+  "lifecycle": {
+    "status": "OFFICIAL_SHUTDOWN_AND_AUTODL_OFF_CONFIRMED",
+    "shutdown_requested_epoch": 1791775786.5142062,
+    "guard_cancelled": true,
+    "control_and_backup_SSH_closed": true,
+    "existing_SSH_after_shutdown": "SSHException",
+    "AutoDL_UI_observed": "D62 hfpnyex2hv-0b57ffeb andD47 afzl2bg1l8-cc9c6860 bothOFF",
+    "UI_observed_local_epoch": 1791775956.2480106,
+    "hourly_rmb": 6.98,
+    "price_source": "AutoDL D62details refreshed2026-10-12;6.98 current,7.35 original",
+    "container_start_estimate": 1791772105.5877585,
+    "estimated_container_hours_to_shutdown": 1.0224795687860913,
+    "estimated_compute_rmb_to_shutdown": 7.136907390126917,
+    "first_project_SSH_observation_epoch": 1791772519.4177585,
+    "project_observed_hours_to_shutdown": 0.9075267910295063,
+    "not_invoice": true,
+    "storage_billing_not_audited": true,
+    "agent_rented_or_started_instance": false
+  },
+  "cost_per_official_success_inference_only": {
+    "S1": 0.034871889347067725,
+    "CHOSEN_SFT": 0.03775343725091571,
+    "DPO": 0.04115012935381226
+  },
+  "semantic_success_not_denominator": true,
+  "costs_nested_not_additive": true,
+  "backup_overlap": "SFTP backups overlappedtrained-arm evals and someDPOtraining;walltime includespossibleCPU/IOeffects"
+}

@@ -1,0 +1,95 @@
+{
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "fresh_review_of_current_run": true,
+  "scope": "All8 generated decisions and relevant exact observations/aggregates",
+  "criteria": "Same currentS1/CHOSEN_SFT rubric;broader single lookup permitted if correct;unneeded repeated confirmation excluded fromwholeclean",
+  "annotations": [
+    {
+      "task_id": 122,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "QueriesNov27-28 but correctly selectsTuesdayNov28=8 versusNov30=4;50percentdecline andno plot.",
+      "record_canonical_sha256": "f8e2be39aa9047722ab0cf6f6c8b232cdcb4cdb43ed0a641038424f0312cf19c",
+      "training_eligible": false
+    },
+    {
+      "task_id": 709,
+      "seed": 42,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": false,
+      "rationale": "Correctfullpastlistandnoeventsfuturequery;secondqueryredundantaftercompleteevidence.",
+      "record_canonical_sha256": "f4033664fd6f821ad4bfd00e91f64dcca8074ec06a29e595fd06cd9b9faecc66",
+      "training_eligible": false
+    },
+    {
+      "task_id": 12,
+      "seed": 42,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "ExactInProgressempty then substitutesInReview;updates4wrongtasks andfalselycounts12vs20.",
+      "record_canonical_sha256": "f06aa406ad7f75406312f91fb62d421d34e3d4bef267493d797606b74030c223",
+      "training_eligible": false
+    },
+    {
+      "task_id": 385,
+      "seed": 42,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Plotsbeforecondition,wrongmonthnot6weeks;fabricatestotals1250/1100withoutcountquery.",
+      "record_canonical_sha256": "55149cf1977b0559664abb85493dfd23c476a9b815cd2dee355b0ac607bff38e",
+      "training_eligible": false
+    },
+    {
+      "task_id": 122,
+      "seed": 43,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "WrongTuesdayNov27 then substitutesanydaypeakfortodaycondition;plotsincorrectly.",
+      "record_canonical_sha256": "af7a2ee7b2f2a992cfa9874b77e041cd535480d0a5a8e29d2bea7ef13081d19d",
+      "training_eligible": false
+    },
+    {
+      "task_id": 709,
+      "seed": 43,
+      "official_reward": 1.0,
+      "completed_supported_no_change": true,
+      "whole_trajectory_clean": true,
+      "rationale": "Complete5eventlistallpast,truthfulstop.",
+      "record_canonical_sha256": "a91e6bdc28c02d65d5a6821f42595841f8b7a31bd894ac7f4e755d5e20047c26",
+      "training_eligible": false
+    },
+    {
+      "task_id": 12,
+      "seed": 43,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "RepeatedemptyInProgress thenmoves4InReviewtasksatroundcap;scopeviolation.",
+      "record_canonical_sha256": "d03dfa03611b53037918af5563c58966e5c103caefa95fae03d9398047e1e23d",
+      "training_eligible": false
+    },
+    {
+      "task_id": 385,
+      "seed": 43,
+      "official_reward": 0.0,
+      "completed_supported_no_change": false,
+      "whole_trajectory_clean": false,
+      "rationale": "Plotsbeforecondition;wrongwindowandsourcevalues/totals137/66vs69/182.",
+      "record_canonical_sha256": "dfd85ba3330cf0624f3aad843c4c734a79bb38adccd5c33c2c8c4e115d5e7b4a",
+      "training_eligible": false
+    }
+  ],
+  "counts": {
+    "official": 3,
+    "supported_completed_no_change": 3,
+    "whole_clean": 2,
+    "denominator": 8
+  }
+}

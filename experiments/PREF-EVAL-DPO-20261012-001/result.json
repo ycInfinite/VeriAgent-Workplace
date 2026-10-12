@@ -1,0 +1,48 @@
+{
+  "attempted_rollouts": 48,
+  "valid_rollouts": 48,
+  "infra_invalid_rollouts": 0,
+  "verified_successes": 33,
+  "success_rate": 0.6875,
+  "strata": {
+    "nonempty_reference": {
+      "n": 40,
+      "successes": 30
+    },
+    "empty_reference": {
+      "n": 8,
+      "successes": 3
+    }
+  },
+  "tool_calls": 168,
+  "parse_error_attempts": 0,
+  "executable_tool_calls": 166,
+  "executable_tool_call_rate": 0.9880952380952381,
+  "unknown_tool_calls": 0,
+  "schema_invalid_calls": 2,
+  "identifier_bearing_calls": 85,
+  "ungrounded_identifier_candidate_calls": 0,
+  "repeated_same_state_call_candidates": 1,
+  "retry_loop_trajectories": 0,
+  "premature_termination_candidates": 14,
+  "termination_counts": {
+    "assistant_final": 47,
+    "round_limit": 1
+  },
+  "input_tokens": 784671,
+  "output_tokens": 17285,
+  "average_tool_steps": 3.5,
+  "average_trajectory_seconds": 14.105509726466456,
+  "peak_torch_allocated_gib": 17.475368976593018,
+  "candidate_metrics_require_semantic_review": true,
+  "status": "MATCHED_DEV_EVAL_COMPLETE",
+  "condition": "DPO",
+  "gpu_hours": 0.19454932215985737,
+  "wall_seconds": 700.3775597754866,
+  "cost_estimate_rmb": 1.3579542686758046,
+  "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+  "parameter_updates": 0,
+  "scope": "development24 only,not held-out or composition-generalization evidence",
+  "parameter_samples_unchanged": true,
+  "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+}

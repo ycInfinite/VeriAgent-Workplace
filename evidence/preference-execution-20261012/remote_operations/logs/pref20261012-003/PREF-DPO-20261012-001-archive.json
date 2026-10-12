@@ -1,0 +1,54 @@
+{
+  "archive_sha256": "0c4b9528bdca6249e33a0d0dc57d73514959efc10343aa5e39980f3778fbf579",
+  "files": {
+    "experiments/PREF-DPO-20261012-001/adapter_changes.json": {
+      "sha256": "cbf29fcf6bd84d005ad7330f487ed80193a4fdd948d671572a9c3dec171e16c5",
+      "bytes": 49590
+    },
+    "experiments/PREF-DPO-20261012-001/adapter_manifest.json": {
+      "sha256": "21ce49165bb282866ad7ca0e80861fe3ea09104303d7345bef7824505681def7",
+      "bytes": 277
+    },
+    "experiments/PREF-DPO-20261012-001/config.json": {
+      "sha256": "09a4677cab6f660a8881ed33b2444d65a4e2fba0e24fbe0af9e731eb9f5e2f16",
+      "bytes": 7407
+    },
+    "experiments/PREF-DPO-20261012-001/gpu_samples.jsonl": {
+      "sha256": "25aa3d3793eeb543e6e9553614ebd0fa7426be3d8ea4ccc7ba6bf4f73f9fda55",
+      "bytes": 29737
+    },
+    "experiments/PREF-DPO-20261012-001/host_preflight.json": {
+      "sha256": "2dcc6e0ae0c61693b68a9d59484bed61ae298e13843d353b113d03cfa1cce1a8",
+      "bytes": 259
+    },
+    "experiments/PREF-DPO-20261012-001/identity.json": {
+      "sha256": "a7ffe093226e81f19947c462d8c90eeb966e5c691da97926cb8ba732ca4c7d7d",
+      "bytes": 17888
+    },
+    "experiments/PREF-DPO-20261012-001/reference_scores.json": {
+      "sha256": "75532da4fda57ef7256a87728bdaf1e790d326dc5fe065a9631fdb22c44adddc",
+      "bytes": 2330
+    },
+    "experiments/PREF-DPO-20261012-001/reload_check.json": {
+      "sha256": "de6bba3647c7c58fb2dc09e90ce284da56f56b26f83e7d9e174cb49a64da9c0a",
+      "bytes": 1161
+    },
+    "experiments/PREF-DPO-20261012-001/result.json": {
+      "sha256": "c7c041d0fc6b08c5f3a0c9ad003f2c3dafccac7e57e0a7e4c3ba89dcee4801aa",
+      "bytes": 626
+    },
+    "experiments/PREF-DPO-20261012-001/steps.jsonl": {
+      "sha256": "ac36c0942e8db2c29667b56e96b3601f99f028171dea985ea705c19a01086be7",
+      "bytes": 5542
+    },
+    "experiments/PREF-DPO-20261012-001/torch_cpu_controls.json": {
+      "sha256": "5649a58e8218dc56c3170446a40817e64ff01c9fac413d3002129f6893258b00",
+      "bytes": 498
+    },
+    "experiments/PREF-DPO-20261012-001/weights.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    }
+  },
+  "bytes": 23768
+}

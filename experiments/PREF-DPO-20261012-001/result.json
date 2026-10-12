@@ -1,0 +1,15 @@
+{
+  "status": "PREFERENCE_TRAINING_COMPLETE_RELOAD_PASSED",
+  "condition": "DPO",
+  "optimizer_updates": 12,
+  "reference_seconds": 29.362338792532682,
+  "mean_step_seconds": 10.60814315957638,
+  "peak_allocated_GiB": 20.73889923095703,
+  "peak_reserved_GiB": 35.376953125,
+  "wall_seconds": 191.68291494529694,
+  "GPU_hours": 0.053245254151471376,
+  "estimated_rmb": 0.37165187397727023,
+  "agent_success_measured": false,
+  "reference_sha256": "75532da4fda57ef7256a87728bdaf1e790d326dc5fe065a9631fdb22c44adddc",
+  "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+}

@@ -102,3 +102,14 @@
 {"experiment_id": "PREF-PREP-20261012-002", "event": "12CPUchecks_passed_after_entry_bootstrap_fix", "parameter_updates": 0, "agent_rollouts": 0}
 {"experiment_id": "PREF-HOST-PREFLIGHT-20261012-002", "event": "minimal_deployment_import_failed_preserved", "parameter_updates": 0}
 {"experiment_id": "PREF-PREP-20261012-003", "event": "selfcontained_import_and12CPUchecks_passed", "parameter_updates": 0}
+{"experiment_id": "PREF-EVAL-S1-20261012-001", "event": "started", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-EVAL-S1-20261012-001", "event": "completed", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-CHOSEN-SFT-20261012-001", "event": "started", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-CHOSEN-SFT-20261012-001", "event": "completed", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-EVAL-CHOSEN_SFT-20261012-001", "event": "started", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-EVAL-CHOSEN_SFT-20261012-001", "event": "completed", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-DPO-20261012-001", "event": "started", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-DPO-20261012-001", "event": "completed", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-EVAL-DPO-20261012-001", "event": "started", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-EVAL-DPO-20261012-001", "event": "completed", "execution_commit": "c5cad4299236cb1f0108392efb20ccd08dafdf61", "evidence": "evidence/preference-execution-20261012/operations.tar.gz"}
+{"experiment_id": "PREF-COMPARISON-20261012-001", "event": "matrix_complete_preserved_UI_shutdown_confirmed", "next_stage_started": false}

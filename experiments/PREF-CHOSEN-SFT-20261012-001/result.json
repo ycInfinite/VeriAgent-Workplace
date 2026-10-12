@@ -1,0 +1,15 @@
+{
+  "status": "PREFERENCE_TRAINING_COMPLETE_RELOAD_PASSED",
+  "condition": "CHOSEN_SFT",
+  "optimizer_updates": 12,
+  "reference_seconds": 1.0547228157520294e-05,
+  "mean_step_seconds": 4.295800279593095,
+  "peak_allocated_GiB": 20.738898754119873,
+  "peak_reserved_GiB": 54.408203125,
+  "wall_seconds": 87.29914844874293,
+  "GPU_hours": 0.024249763457984148,
+  "estimated_rmb": 0.16926334893672937,
+  "agent_success_measured": false,
+  "reference_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+}

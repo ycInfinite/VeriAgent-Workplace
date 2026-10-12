@@ -1,0 +1,8 @@
+{
+  "all3_files_SHA_verified": true,
+  "files": {
+    "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "adapter_model.safetensors": "19496db1052e8b3eb6c3f9f8151aac236f12ae0b0cb5ad0188f2dfe02af2ff0e",
+    "adapter_config.json": "e09cc2c139fdffb8f13e2e00625dbfba075d5dd2e7fd8f2a17e612fa6f5f96e0"
+  }
+}

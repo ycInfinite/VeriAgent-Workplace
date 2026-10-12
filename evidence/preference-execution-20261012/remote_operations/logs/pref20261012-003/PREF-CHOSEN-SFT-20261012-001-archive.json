@@ -1,0 +1,54 @@
+{
+  "archive_sha256": "4b0cdff08f18ab8b511f3b67f757919d5af9a975d2056f70c06788973e7c29d7",
+  "files": {
+    "experiments/PREF-CHOSEN-SFT-20261012-001/adapter_changes.json": {
+      "sha256": "1c1424993705c22e1fdee30f769b83bbf3bd08f6ad81e988c1eb9cc84b985366",
+      "bytes": 49589
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/adapter_manifest.json": {
+      "sha256": "cfb4204e0b53918b76a0df3053c05b61bb784afb4593c857ad3af8c1981c1435",
+      "bytes": 277
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/config.json": {
+      "sha256": "fe858eb688662a77004b0e5e13935ab6eca5e02d0eb459331ec02605e200c5ab",
+      "bytes": 7414
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/gpu_samples.jsonl": {
+      "sha256": "7404ddbb9a8573b5c3f665450c6a00f1457702f52dfd5055976a9872c0a67968",
+      "bytes": 13366
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/host_preflight.json": {
+      "sha256": "2dcc6e0ae0c61693b68a9d59484bed61ae298e13843d353b113d03cfa1cce1a8",
+      "bytes": 259
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/identity.json": {
+      "sha256": "78a4670f893516f55130c3d004d9622d664c633f1e4bfe8f1b36672ca42a04e6",
+      "bytes": 17895
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/reference_scores.json": {
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "bytes": 2
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/reload_check.json": {
+      "sha256": "de6bba3647c7c58fb2dc09e90ce284da56f56b26f83e7d9e174cb49a64da9c0a",
+      "bytes": 1161
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/result.json": {
+      "sha256": "e547ca299fcb0391ce1b07563811468bbda2af7f42eed7736040b91aba179384",
+      "bytes": 637
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/steps.jsonl": {
+      "sha256": "a20af817e9eb78c349ed9008857a8505ad74187d0e12a9895914258ac0248df8",
+      "bytes": 2445
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/torch_cpu_controls.json": {
+      "sha256": "5649a58e8218dc56c3170446a40817e64ff01c9fac413d3002129f6893258b00",
+      "bytes": 498
+    },
+    "experiments/PREF-CHOSEN-SFT-20261012-001/weights.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    }
+  },
+  "bytes": 20248
+}

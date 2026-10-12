@@ -1,0 +1,12 @@
+{"step": 1, "pair_id": "TRAIN-687-DSQUAL-vs-BASE-v1", "loss": 0.08363445661962032, "objective": "task_mean_chosen_CE", "target_tokens": 285, "grad_norm": 1.163633942604065, "seconds": 5.875466362573206}
+{"step": 2, "pair_id": "TRAIN-247-DSQUAL-vs-BASE-v1", "loss": 0.34166450425982475, "objective": "task_mean_chosen_CE", "target_tokens": 247, "grad_norm": 1.263231873512268, "seconds": 3.7909251553937793}
+{"step": 3, "pair_id": "TRAIN-76-DSQUAL-vs-BASE-v1", "loss": 0.2380022071301937, "objective": "task_mean_chosen_CE", "target_tokens": 197, "grad_norm": 0.9886870384216309, "seconds": 4.033443462103605}
+{"step": 4, "pair_id": "TRAIN-770-DSQUAL-vs-BASE-v1", "loss": 0.10703558335080743, "objective": "task_mean_chosen_CE", "target_tokens": 160, "grad_norm": 1.1182291507720947, "seconds": 3.681531997397542}
+{"step": 5, "pair_id": "TRAIN-859-DSQUAL-vs-BASE-v1", "loss": 0.4085257351398468, "objective": "task_mean_chosen_CE", "target_tokens": 411, "grad_norm": 1.1945085525512695, "seconds": 5.628141988068819}
+{"step": 6, "pair_id": "TRAIN-565-DSQUAL-vs-BASE-v1", "loss": 0.27277663722634315, "objective": "task_mean_chosen_CE", "target_tokens": 223, "grad_norm": 1.0777887105941772, "seconds": 2.4989152774214745}
+{"step": 7, "pair_id": "TRAIN-972-DSQUAL-vs-BASE-v1", "loss": 0.20836637914180756, "objective": "task_mean_chosen_CE", "target_tokens": 289, "grad_norm": 0.7639511227607727, "seconds": 2.6151284128427505}
+{"step": 8, "pair_id": "TRAIN-123-DSQUAL-vs-BASE-v1", "loss": 0.10680831223726273, "objective": "task_mean_chosen_CE", "target_tokens": 251, "grad_norm": 0.6963105797767639, "seconds": 4.000215386971831}
+{"step": 9, "pair_id": "TRAIN-177-DSQUAL-vs-BASE-v1", "loss": 0.17487781681120396, "objective": "task_mean_chosen_CE", "target_tokens": 296, "grad_norm": 0.7910031676292419, "seconds": 4.296303548850119}
+{"step": 10, "pair_id": "TRAIN-8-DSQUAL-vs-BASE-v1", "loss": 0.14543243683874607, "objective": "task_mean_chosen_CE", "target_tokens": 222, "grad_norm": 1.0016701221466064, "seconds": 5.080749595537782}
+{"step": 11, "pair_id": "TRAIN-20-DSQUAL-vs-BASE-v1", "loss": 0.46562132611870766, "objective": "task_mean_chosen_CE", "target_tokens": 421, "grad_norm": 1.0340687036514282, "seconds": 5.616343775764108}
+{"step": 12, "pair_id": "TRAIN-965-DSQUAL-vs-BASE-v1", "loss": 0.3961707577109337, "objective": "task_mean_chosen_CE", "target_tokens": 256, "grad_norm": 1.5106453895568848, "seconds": 4.432438392192125}

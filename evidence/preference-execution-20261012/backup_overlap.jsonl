@@ -1,0 +1,2 @@
+{"event": "chosen_adapter_download_started_during_CHOSEN_SFT_eval", "observed_local_epoch": 1791774131.4451213, "scope": "SFTP only,no additional GPU model;possible hostIO contribution to measured eval walltime must be disclosed"}
+{"event": "chosen_backup_verified_and_DPO_backup_started_during_DPO_eval", "observed_local_epoch": 1791774952.7423573}

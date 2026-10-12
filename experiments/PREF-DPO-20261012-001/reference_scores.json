@@ -1,0 +1,62 @@
+{
+  "TRAIN-687-DSQUAL-vs-BASE-v1": {
+    "cache_key": "acabe29466abd8fa3bc988d0f12253267c24aef6824ab79a7467a13aaec0da8d",
+    "chosen": -23.835819602012634,
+    "rejected": -57.83250045776367
+  },
+  "TRAIN-247-DSQUAL-vs-BASE-v1": {
+    "cache_key": "a04df1f95ae9da9bff6efbdffcbb3d9ad8211e370b8062007ce3e48a03e34ac6",
+    "chosen": -84.66159200668335,
+    "rejected": -23.655569076538086
+  },
+  "TRAIN-76-DSQUAL-vs-BASE-v1": {
+    "cache_key": "f685842b13a9743ab2e55d4064d7c91b83643d1fc23c3382f67bab92905a0723",
+    "chosen": -46.76723098754883,
+    "rejected": -40.09794998168945
+  },
+  "TRAIN-770-DSQUAL-vs-BASE-v1": {
+    "cache_key": "53731dc1071e91cac35505bcd9f43e46762c3be647b3e2c6f1046833b075292f",
+    "chosen": -17.663325428962708,
+    "rejected": -61.408477783203125
+  },
+  "TRAIN-859-DSQUAL-vs-BASE-v1": {
+    "cache_key": "6bbd72dac03a07ced5f52a9e21738ba528893f732caa48cfbe525e8a4a8f0de0",
+    "chosen": -167.77615308761597,
+    "rejected": -38.55777549743652
+  },
+  "TRAIN-565-DSQUAL-vs-BASE-v1": {
+    "cache_key": "cac0a09f8a1cb4dd7cf58aa8cfcf5ff7c28778bcec8f46cbe9b7af8d003bda25",
+    "chosen": -61.873233795166016,
+    "rejected": -44.0826358795166
+  },
+  "TRAIN-972-DSQUAL-vs-BASE-v1": {
+    "cache_key": "398c77ffd85b9bc45ad202651a9d226480665bc851ef386c24210850c5973a2b",
+    "chosen": -60.39522933959961,
+    "rejected": -47.61484622955322
+  },
+  "TRAIN-123-DSQUAL-vs-BASE-v1": {
+    "cache_key": "df644377b2fe9f1bcbfeff9243986ceffa56aa09f31dfcf8a4720b7c83de0e22",
+    "chosen": -26.61696147918701,
+    "rejected": -67.5442156791687
+  },
+  "TRAIN-177-DSQUAL-vs-BASE-v1": {
+    "cache_key": "442f54f6146a8cb70276fa3e70a03c7d7e426fa4ab3f9e74e59c0f8f20208b05",
+    "chosen": -52.78593730926514,
+    "rejected": -43.10733413696289
+  },
+  "TRAIN-8-DSQUAL-vs-BASE-v1": {
+    "cache_key": "71148d490d0c91a0244794fbf7e26adb18421cdedddd46c8403cfe20b78972a2",
+    "chosen": -33.08580255508423,
+    "rejected": -41.8056583404541
+  },
+  "TRAIN-20-DSQUAL-vs-BASE-v1": {
+    "cache_key": "f39959a650a6214a05c2e20857821203985687fd8de5d44fc45bc501876cbb9b",
+    "chosen": -197.8803596496582,
+    "rejected": -52.44909858703613
+  },
+  "TRAIN-965-DSQUAL-vs-BASE-v1": {
+    "cache_key": "246e579409c2779a9a188e0a47473827042744e893b6a2adf4f74fb8ec770191",
+    "chosen": -102.48200225830078,
+    "rejected": -54.03539991378784
+  }
+}
