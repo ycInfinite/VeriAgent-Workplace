@@ -1,4 +1,5 @@
 """Torch CPU gradient equivalence for both matched preference-training arms."""
+from common import ROOT  # Establish project imports for direct script execution.
 from check_dpo_torch import run_controls as dpo_controls
 
 

@@ -1,5 +1,5 @@
 """Freeze evidence gates for the bounded12-task two-objective comparison."""
-import ast,hashlib,json
+import argparse,ast,hashlib,json
 from pathlib import Path
 from common import ROOT
 from veriagent.dpo import load_pairs
@@ -8,7 +8,9 @@ from evaluate_preference_comparison import load_eval
 
 
 def main():
-    out=ROOT/'experiments/PREF-PREP-20261012-001';out.mkdir(exist_ok=False)
+    ap=argparse.ArgumentParser();ap.add_argument('--run-id',default='PREF-PREP-20261012-001');a=ap.parse_args()
+    assert a.run_id.startswith('PREF-PREP-') and Path(a.run_id).name==a.run_id
+    out=ROOT/'experiments'/a.run_id;out.mkdir(exist_ok=False)
     cfg,pairs=load_pairs('configs/preference_comparison_plan.json');_,ev,rows=load_eval()
     def save(name,x):(out/name).write_text(json.dumps(x,indent=2)+'\n',encoding='utf-8',newline='\n')
     save('config.json',cfg)
@@ -28,6 +30,7 @@ def main():
         checks['HF_checker_AST_unchanged']=ast.dump(node('scripts/run_dpo_probe.py',ast.FunctionDef,'def actual_tokenizer_check'))==ast.dump(node('scripts/run_preference_comparison.py',ast.FunctionDef,'def actual_tokenizer_check'))
         for p in cfg['deployment_files']:ast.parse((ROOT/p).read_text(encoding='utf-8')) if p.endswith('.py') else read(ROOT/p)
         checks['syntax_valid']=True
+        checks['standalone_Torch_entry_bootstraps_project']="from common import ROOT" in (ROOT/'scripts/check_preference_torch.py').read_text(encoding='utf-8')
         import github_file_sync as sync
         tree=ast.parse(sync.REMOTE_CODE)
         remote=next(ast.literal_eval(n.value) for n in ast.walk(tree) if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='preference_files' for t in n.targets))

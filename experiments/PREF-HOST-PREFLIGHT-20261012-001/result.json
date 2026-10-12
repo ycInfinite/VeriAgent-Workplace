@@ -1,0 +1,11 @@
+{
+  "status": "INFRASTRUCTURE_INVALID_CPU_PREFLIGHT",
+  "kind": "ModuleNotFoundError_veriagent_standalone_script_entry",
+  "execution_commit": "880ab17d773e03086384aa8ec7bb298c5812d4fe",
+  "model_loaded": false,
+  "parameter_updates": 0,
+  "agent_rollouts": 0,
+  "fix": "Add project bootstrap import to new check_preference_torch.py; preserve first pipeline and use new launch directory",
+  "record_type": "posthoc failure indexing of preregistered matrix CPU gate",
+  "cost_included_in_instance_time": true
+}
