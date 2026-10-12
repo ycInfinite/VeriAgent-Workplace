@@ -93,3 +93,7 @@
 {"experiment_id": "DPO-CONTROLS-20261012-001", "event": "25_initial_CPU_checks_passed_preserved", "GPU_hours": 0, "API_calls": 0, "parameter_updates": 0}
 {"experiment_id": "DPO-CONTROLS-20261012-002", "event": "25_final_CPU_checks_passed_GPU_unqualified", "GPU_hours": 0, "API_calls": 0, "parameter_updates": 0}
 {"experiment_id": "DPO-CONTROLS-20261012-003", "event": "25_CPU_checks_passed_final_transport_retains_existing_SFT_manifest", "GPU_hours": 0, "API_calls": 0, "parameter_updates": 0}
+{"experiment_id": "DPO-RESUME-20261012-001", "event": "new_user_clone_verified_pinned_GitHub_deployment_in_progress", "model_runs_started": 0}
+{"experiment_id": "DPO-PROBE-20261012-001", "event": "started", "execution_commit": "24fe95f5273955e153929e1d89318d8904a98b92", "evidence": "evidence/dpo-execution-20261012/remote_operations/experiments/registry.jsonl"}
+{"experiment_id": "DPO-PROBE-20261012-001", "event": "completed", "execution_commit": "24fe95f5273955e153929e1d89318d8904a98b92", "evidence": "evidence/dpo-execution-20261012/remote_operations/experiments/registry.jsonl"}
+{"experiment_id": "DPO-RESUME-20261012-001", "event": "completed_preserved_official_shutdown_requested", "next_stage_started": false}

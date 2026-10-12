@@ -1,0 +1,87 @@
+{
+  "archive_sha256": "7afdf59dbcd8caaac0e5c25f0809fb357e1c47d3cd230f83e3eaed5aa2189e15",
+  "archive_bytes": 27171,
+  "files": {
+    "bundle_manifest.json": {
+      "sha256": "e3570098b21106f5f8d987aebc2a6eb63422ed75ebbf4127e34931e71a83614f",
+      "bytes": 15851
+    },
+    "experiments/DPO-PROBE-20261012-001/adapter_changes.json": {
+      "sha256": "23fc31208734a3a8a7810ca2c437210704005efe3e18746bb661762d2dd84457",
+      "bytes": 49606
+    },
+    "experiments/DPO-PROBE-20261012-001/adapter_manifest.json": {
+      "sha256": "8eaddd28c8fffeead5012bb228a86e6268c7b5da270ba753c6947abd5b8b7395",
+      "bytes": 277
+    },
+    "experiments/DPO-PROBE-20261012-001/config.json": {
+      "sha256": "95b1630a886fc1b5c6c72ac1991147b88cc25ff0d0c5b7b78e8ab02463cb8612",
+      "bytes": 4143
+    },
+    "experiments/DPO-PROBE-20261012-001/gpu_samples.jsonl": {
+      "sha256": "815a00acea13c7755c700d66c81c8aa687b04ba913051d513046c30c3cbe0232",
+      "bytes": 20314
+    },
+    "experiments/DPO-PROBE-20261012-001/host_preflight.json": {
+      "sha256": "2dcc6e0ae0c61693b68a9d59484bed61ae298e13843d353b113d03cfa1cce1a8",
+      "bytes": 259
+    },
+    "experiments/DPO-PROBE-20261012-001/identity.json": {
+      "sha256": "4cf4af57bf54c7e724004714374e554e97a5e9433b97d875c46457fb725f7929",
+      "bytes": 17229
+    },
+    "experiments/DPO-PROBE-20261012-001/reference_scores.json": {
+      "sha256": "597053c7e045cea5d0e186de2f665d1b8aac8e81766da06f2cad47a190f36a6b",
+      "bytes": 1558
+    },
+    "experiments/DPO-PROBE-20261012-001/reload_check.json": {
+      "sha256": "1802ea4630f7f130ba3f52d6aaa703a4c0b548070851c55f38089bd692597bd1",
+      "bytes": 1253
+    },
+    "experiments/DPO-PROBE-20261012-001/result.json": {
+      "sha256": "cdf20809f9e6f677424bf6d90e90b7439888ffc82fc35d2854267641dcfda647",
+      "bytes": 576
+    },
+    "experiments/DPO-PROBE-20261012-001/steps.jsonl": {
+      "sha256": "6b9a5bb394431815849f26f9beed179cbd7cc380386a4ceb3785f890fa68109c",
+      "bytes": 3689
+    },
+    "experiments/DPO-PROBE-20261012-001/torch_cpu_controls.json": {
+      "sha256": "04936829415e91ca90b77a79b395e8750116f58007bb37259a395221b14b9070",
+      "bytes": 363
+    },
+    "experiments/DPO-PROBE-20261012-001/weights.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    },
+    "experiments/registry.jsonl": {
+      "sha256": "4fd107e35544c9f7ce44af265eb56d55f9319b15726993ba9f69a6bad36129a2",
+      "bytes": 1324
+    },
+    "logs/dpo20261012/DPO-PROBE-20261012-001-launch.json": {
+      "sha256": "3c421d679f482b0ee411e95df7f84cda1c0a9fd3659868e8ffde68b5b0d29856",
+      "bytes": 254
+    },
+    "logs/dpo20261012/DPO-PROBE-20261012-001.log": {
+      "sha256": "7e245ef56134be0899eaf824051d49afde4a778bfefb5bda7cab43987f524a4c",
+      "bytes": 5009
+    },
+    "logs/dpo20261012/guard.json": {
+      "sha256": "6b4c6d5ac07b5be455f5135c961891f3663a7977a4f83c9e99964e67c471dfb2",
+      "bytes": 199
+    },
+    "logs/dpo20261012/guard.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "logs/dpo20261012/host.json": {
+      "sha256": "ff5ff3a9b56c4a2e38e9d71d4e30201af8c3f0710b371e196d4b6f132e38ebbc",
+      "bytes": 374
+    }
+  },
+  "adapter_files": {
+    "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "adapter_model.safetensors": "a0baf8de8c285f220219130456508526455e03f3fbc76290a92a0457a1a830b6",
+    "adapter_config.json": "e36f0565970dde9c3c55c30e5a19a965c92f2ba0c7b8174b8b4eeb336c12fb4d"
+  }
+}

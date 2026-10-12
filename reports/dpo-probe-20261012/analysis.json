@@ -1,0 +1,61 @@
+{
+  "scope": "Training integrity/cost only;no Agent rollouts or capability evaluation",
+  "result": {
+    "status": "DPO_PROBE_COMPLETE_RELOAD_PASSED",
+    "optimizer_updates": 8,
+    "reference_seconds": 17.949590193107724,
+    "mean_step_seconds": 9.64435681712348,
+    "peak_allocated_GiB": 20.73889446258545,
+    "peak_reserved_GiB": 31.279296875,
+    "wall_seconds": 131.19964324496686,
+    "GPU_hours": 0.03644434534582413,
+    "estimated_rmb": null,
+    "agent_success_measured": false,
+    "reference_sha256": "597053c7e045cea5d0e186de2f665d1b8aac8e81766da06f2cad47a190f36a6b",
+    "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+  },
+  "GPU_polling": {
+    "sample_count": 121,
+    "mean_utilization_pct": 87.89256198347107,
+    "max_sampled_used_gib": 31.9658203125,
+    "scope": "Approximate one-second polling sample mean; includes loading and CPU/tool gaps"
+  },
+  "changed_adapter_tensors": 504,
+  "reload_max_logit_abs_diff": 0.0,
+  "recompute_max_logp_diff": 0.0,
+  "first_margin": 0.0,
+  "first_loss": 0.6931471805599453,
+  "step_losses": [
+    0.6931471805599453,
+    0.6682701660220277,
+    0.6618667198516608,
+    0.5867961663842658,
+    0.5310121261503544,
+    0.5577978610208574,
+    0.4548714847167902,
+    0.4827437388498866
+  ],
+  "step_margins": [
+    0.0,
+    0.5038871765136719,
+    0.6357107162475586,
+    2.2537355422973633,
+    3.557429313659668,
+    2.919290542602539,
+    5.516982555389404,
+    4.772061824798584
+  ],
+  "warning": "Different task each step;not longitudinal loss curve. Lastchosen worsens while rejected decreases more;margin is not absolute chosen quality.",
+  "token_accounting": {
+    "single_pass_processed": 204089,
+    "single_pass_assistant_targets": 3376,
+    "reference_plus_score_plus_gradient_processed": 612267,
+    "counting_basis": "45turn forwards per complete pass;three passes total;excludes HF checks and fixed reload readouts",
+    "fixed_greedy_readouts": 2,
+    "fixed_generated_tokens_each": 64,
+    "fixed_readout_is_capped_not_complete_trajectory": true
+  },
+  "reference_sha256_verified": true,
+  "source_result_sha256": "cdf20809f9e6f677424bf6d90e90b7439888ffc82fc35d2854267641dcfda647",
+  "source_steps_sha256": "6b9a5bb394431815849f26f9beed179cbd7cc380386a4ceb3785f890fa68109c"
+}

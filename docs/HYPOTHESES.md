@@ -128,3 +128,7 @@ S100近似等预算增加覆盖未显示优于S1：总体-6.25pp CI[-14.58,2.08]
 ## 2026-10-12 DPO准备
 
 12对支持离线偏好数据可用性和CPU数学准备，不支持DPO Agent收益。chosen全DeepSeek/rejected旧Base，11/12 chosen更长，风格/长度混杂；0与原S1/S2任务交集会形成新增数据效应，需chosen-only SFT控制。没有正确no-op专门pairs，不能承诺修复MIX的条件推理。未来probe只证明更新/成本，正式方法/泛化待测。
+
+## 2026-10-12 DPO实机8步完成
+
+首个DPO完整性假设获实机支持：Torch梯度差0、HF75轮一致、两遍logp差0、8真实更新/504tensor变化/重载差0。relative margin并不确保chosen绝对概率提升（第8对chosen更低、rejected降得更多）。每步不同task，8个loss点不是固定集前后学习曲线。任务成功率/方法优越/泛化/no-op改善仍未测。

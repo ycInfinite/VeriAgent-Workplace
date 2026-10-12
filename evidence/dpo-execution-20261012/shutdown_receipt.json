@@ -1,0 +1,14 @@
+{
+  "status": "OFFICIAL_SHUTDOWN_ISSUED",
+  "shutdown_requested_epoch": 1791771817.295732,
+  "shutdown_helper_pid": 2444,
+  "guard_cancelled": true,
+  "new_connection_probe": "closed_no_SSH_banner",
+  "probe_epoch": 1791771850.378444,
+  "console_billing_independently_verified": false,
+  "hourly_rmb": null,
+  "container_start_estimate_epoch": 1791770686.311561,
+  "first_project_observation_epoch": 1791770938.991561,
+  "estimated_container_hours_to_shutdown": 0.31416226969824895,
+  "project_observation_hours_to_shutdown": 0.2439733808570438
+}

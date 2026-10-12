@@ -1,0 +1,14 @@
+{
+  "status": "DPO_PROBE_COMPLETE_RELOAD_PASSED",
+  "optimizer_updates": 8,
+  "reference_seconds": 17.949590193107724,
+  "mean_step_seconds": 9.64435681712348,
+  "peak_allocated_GiB": 20.73889446258545,
+  "peak_reserved_GiB": 31.279296875,
+  "wall_seconds": 131.19964324496686,
+  "GPU_hours": 0.03644434534582413,
+  "estimated_rmb": null,
+  "agent_success_measured": false,
+  "reference_sha256": "597053c7e045cea5d0e186de2f665d1b8aac8e81766da06f2cad47a190f36a6b",
+  "note": "Includes reference passes and reload;setup/idle/storage excluded;not onlineRL or efficacy evidence"
+}

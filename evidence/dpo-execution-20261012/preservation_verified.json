@@ -1,0 +1,11 @@
+{
+  "status": "ARCHIVE19_MEMBERS_AND_ADAPTER3FILES_SHA_VERIFIED",
+  "adapter_manifest": {
+    "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "adapter_model.safetensors": "a0baf8de8c285f220219130456508526455e03f3fbc76290a92a0457a1a830b6",
+    "adapter_config.json": "e36f0565970dde9c3c55c30e5a19a965c92f2ba0c7b8174b8b4eeb336c12fb4d"
+  },
+  "adapter_bytes": 174661796,
+  "archive": "evidence.tar.gz",
+  "credentials_in_artifacts": false
+}

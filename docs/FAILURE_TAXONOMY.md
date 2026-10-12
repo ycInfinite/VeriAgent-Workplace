@@ -85,3 +85,7 @@ Fresh144validtrajectories,notreusedDay3labels. Typedcandidatecallcounts24/76(BAS
 ## 2026-10-12 DPO准备
 
 DPO数据审核区分语义模型错与infra：271越权删除是有效模型失败；因round cap缺最终终止，本probe暂缓以避截断偏差。965/687/8的错误no-op来自捏造identifier/错误查找，不是真正无匹配对象；这些对不能当作正确不操作训练覆盖。所有标签来自training历史记录独立复核，dev案例不导出为pairs。
+
+## 2026-10-12 DPO实机8步完成
+
+本次DPO只做完整性探针，没有新Agent失败轨迹，不能更新Agent failure rates。两个操作问题（解释器PATH、本地解包路径保护）均非模型失败，永久保留且计实例占用。固定greedy重载读出上限64token而未完成tool JSON，属于身份fixture，不计task success/failure。

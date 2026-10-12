@@ -1,0 +1,26 @@
+{
+  "status": "DPO_PROBE_COMPLETED_PRESERVED_SHUTDOWN_ISSUED",
+  "execution_commit": "24fe95f5273955e153929e1d89318d8904a98b92",
+  "run_id": "DPO-PROBE-20261012-001",
+  "optimizer_updates": 8,
+  "run_result_sha256": "cdf20809f9e6f677424bf6d90e90b7439888ffc82fc35d2854267641dcfda647",
+  "shutdown": {
+    "status": "OFFICIAL_SHUTDOWN_ISSUED",
+    "shutdown_requested_epoch": 1791771817.295732,
+    "shutdown_helper_pid": 2444,
+    "guard_cancelled": true,
+    "new_connection_probe": "closed_no_SSH_banner",
+    "probe_epoch": 1791771850.378444,
+    "console_billing_independently_verified": false,
+    "hourly_rmb": null,
+    "container_start_estimate_epoch": 1791770686.311561,
+    "first_project_observation_epoch": 1791770938.991561,
+    "estimated_container_hours_to_shutdown": 0.31416226969824895,
+    "project_observation_hours_to_shutdown": 0.2439733808570438
+  },
+  "local_adapter_SHA_verified": true,
+  "archive19members_verified": true,
+  "new_Agent_rollouts": 0,
+  "teacher_API_calls": 0,
+  "next_stage_started": false
+}

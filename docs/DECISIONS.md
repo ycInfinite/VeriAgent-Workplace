@@ -132,3 +132,7 @@ Executed frozenBASE_B1→S1train/eval→S2train/eval once onnew user-rentedPRO60
 ## 2026-10-12 DPO准备
 
 DPO仅做准备：13对新鲜审核12准入、271因截断暂缓（不是infra-invalid）。从S1继续，reference也是固定S1；不因MIX分数高改anchor。保留完整assistant监督、分支自身观察context，sum logp不按长度平均。现有依赖实现两遍逐轮梯度，新增真实Torch整图对照作为上卡前必过门槛。7文件同步白名单准备；不启动GPU/API。正式chosen-only SFT对照仅方案草案。
+
+## 2026-10-12 DPO实机8步完成
+
+8步DPO探针一次完成并停在完整性/成本证据。保持初始S1/ref不变、12pair数据不扩，保存新adapter及原始记录后官方关机。不给8步loss贴Agent提升标签；后续正式chosen-only SFT对照仍需完成runner/预登记并由用户选路线。不自动继续训练或采当前policy失败。

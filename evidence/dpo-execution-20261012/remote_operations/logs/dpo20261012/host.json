@@ -1,0 +1,1 @@
+{"hostname": "autodl-container-hfpnyex2hv-0b57ffeb", "epoch": 1791771068.8117735, "packages": {"torch": "2.8.0+cu128", "transformers": "4.56.2", "peft": "0.17.1", "accelerate": "1.10.1"}, "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 595.71.05\n", "first_project_observation_epoch": 1791770938.991561, "estimated_container_start_epoch": 1791770686.311561}

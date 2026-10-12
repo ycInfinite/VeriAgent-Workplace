@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "remote_python_not_on_PATH",
+    "exit_code": 127,
+    "resolution": "Used explicit /root/miniconda3/bin/python;no model run started",
+    "cost_included_in_instance_time": true
+  },
+  {
+    "kind": "local_extract_path_guard_stopped",
+    "reason": "Path dot resolve duplicated workspace name on local Python; no files extracted in failed attempt",
+    "resolution": "Anchored to actual AGENTS.md parent,all19 members hashes passed before safe extraction",
+    "model_run_invalid": false
+  }
+]

@@ -152,3 +152,7 @@ S100/MIX step1.4082/1.4321s；allocated32.136/33.381GiB，reserved88.209/90.998G
 ## 2026-10-12 DPO准备
 
 DPO本轮GPUh0/API0/parameterupdates0；26branch CPU回放+编码主脚本5.608s，非整个审核总耗时。8pair probe单次数据经过204089processed（chosen111571/rejected92518）、3376targets，reference/无梯度/重算需多次forward。未来0.05–0.15scriptGPUh仅估计，1800s脚本上限，部署等待另计，时价未知。只准备96GB方案，80GB未资格。无远端开机/租用，旧监控未恢复。
+
+## 2026-10-12 DPO实机8步完成
+
+DPO-PROBE-20261012-001：reference17.9496s、8pair平均9.64436s，总131.19964s=.03644435GPUh。allocated20.7389/reserved31.2793GiB，121采样util均87.8926%、设备used峰31.9658GiB。容器启动估计→关机请求.31416227h，项目首次观察→请求.24397338h；含部署/网络等待/约175MB权重回收，非平台账单。实际时价未知、RMBnull；若p元/h则全占用约.3142p，存储另计。单pass204089processed/3376targets，三pass612267/10128曝光，另有固定readout2×64tokens。无Agent评估，cost per verified success未定义。当前8对96GB实测，不等同80GB/全8K资格。
