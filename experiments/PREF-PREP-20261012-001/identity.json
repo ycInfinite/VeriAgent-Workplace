@@ -1,0 +1,12 @@
+{
+  "parent_commit": "f7e807f44db2dc3b6174f1d64dc89af6443acdb8",
+  "sources": {
+    "configs/preference_comparison_plan.json": "3ef6c8b5f61b07dbb016cfc202bfa8f92ab23196ec7721dba3db7b6c3fc6bc67",
+    "scripts/run_preference_comparison.py": "7285d4c4f4ed5319035402d509e72824a448203ef3efcf52df621a50b0efdd3f",
+    "scripts/evaluate_preference_comparison.py": "543cc378b1cd94f16fbdd475e161a3195eb3402578b83931b306f67dfba8d92f",
+    "scripts/check_preference_torch.py": "3efba1586d0e3f695b47bc82dbc4a647f920d11a510472aaf227a737ae2af3a1"
+  },
+  "transport_sha256": "b4cb21b3e0d4242aff363a7f13f69eb7574f91ea851396f0b4af434fc52791b0",
+  "data_sha256": "adb8e6669b859c9893f460499e8bf19a0f6911f6d54dd08d258c7a3f938677db",
+  "kind": "CPU_PREPARATION"
+}

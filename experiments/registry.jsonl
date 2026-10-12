@@ -97,3 +97,4 @@
 {"experiment_id": "DPO-PROBE-20261012-001", "event": "started", "execution_commit": "24fe95f5273955e153929e1d89318d8904a98b92", "evidence": "evidence/dpo-execution-20261012/remote_operations/experiments/registry.jsonl"}
 {"experiment_id": "DPO-PROBE-20261012-001", "event": "completed", "execution_commit": "24fe95f5273955e153929e1d89318d8904a98b92", "evidence": "evidence/dpo-execution-20261012/remote_operations/experiments/registry.jsonl"}
 {"experiment_id": "DPO-RESUME-20261012-001", "event": "completed_preserved_official_shutdown_requested", "next_stage_started": false}
+{"experiment_id": "PREF-PREP-20261012-001", "event": "11CPUchecks_passed_bounded_matrix_authorized", "planned_updates": 24, "planned_eval_rollouts": 144}

@@ -1,0 +1,21 @@
+{
+  "status": "CPU_COMPARISON_PREPARED",
+  "checks": {
+    "12distinct_pairs_once": true,
+    "train_dev_disjoint": true,
+    "unchanged12pair_archive": true,
+    "S1_not_probe_start": true,
+    "same_lr_beta_seed_context": true,
+    "all_eval_fields_unchanged_except_conditions": true,
+    "inference_loop_AST_unchanged": true,
+    "readout_AST_unchanged": true,
+    "HF_checker_AST_unchanged": true,
+    "syntax_valid": true,
+    "deployment_whitelist_matches": true
+  },
+  "actual_training_updates": 0,
+  "planned_training_updates_per_arm": 12,
+  "planned_eval_rollouts": 144,
+  "GPU_hours": 0,
+  "actual_host_Torch_controls": "required before training"
+}
