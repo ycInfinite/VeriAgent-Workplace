@@ -1,0 +1,12 @@
+{
+  "status": "COHORT25_INITIAL_TOKENIZATION_PASSED",
+  "tasks": 25,
+  "nonempty": 20,
+  "empty": 5,
+  "initial_fit": 25,
+  "max_initial_tokens": 4213,
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "parameter_updates": 0,
+  "pair_admission": false
+}

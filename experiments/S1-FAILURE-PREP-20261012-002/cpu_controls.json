@@ -1,0 +1,24 @@
+{
+  "status": "CPU_CONTROLS_PASSED",
+  "checks": {
+    "25unique_training_only": true,
+    "S1_and_dev_disjoint": true,
+    "20action5empty": true,
+    "5per_domain": true,
+    "one_seed_no_retry": true,
+    "same_S1_identity": true,
+    "generation_bounds_unchanged": true,
+    "original_inference_loop_except_pool_label": true,
+    "exact4file_whitelist": true,
+    "teacher_not_new_collector_payload": true,
+    "no_optimizer_or_generation_rewrite": true
+  },
+  "sources": {
+    "configs/s1_failure_acquisition.json": "05ddd72137c9d1c56feededc41643d05e1a2656d43e0394e7709132920e527d8",
+    "scripts/collect_s1_failures.py": "5252f4d39ec1709f0e564b0b865d8f55f98b562523da6cbbb6aa89e3411b6c96",
+    "experiments/S1-FAILURE-PREP-20261012-002/tasks.jsonl.gz": "301d7adbeb8e3f1ac932ed70ee15432be76ce84832b50943f5ba9a1b2f2fe4fc",
+    "experiments/S1-FAILURE-PREP-20261012-002/selection.json": "d5d9559c9cf2ecc75a6b26fe3762bffd6b06ed23ce48874331d99bb57b0f4cd2"
+  },
+  "actual_HF_GPU": "unmeasured_required_on_host",
+  "parameter_updates": 0
+}

@@ -1,0 +1,9 @@
+{
+  "status": "CPU_PREPARATION_FAILED_PRESERVED",
+  "error": "KeyError tools:packed teacher pool rows use tool_schema_ref;schema bank reconstruction required",
+  "selection_policy": "Unchanged SHA256 S1-TRAIN25-v1,4action+1noop/domain,excludeS1training50",
+  "model_run": false,
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "fix": "Reconstruct tools from original schema bank,then assert equality to teacher;new immutable002"
+}

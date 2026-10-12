@@ -52,6 +52,8 @@ DPO_FILES = ['configs/dpo_probe_plan.json', 'veriagent/dpo.py', 'scripts/run_dpo
 
 PREFERENCE_FILES = ['configs/preference_comparison_plan.json', 'scripts/run_preference_comparison.py', 'scripts/evaluate_preference_comparison.py', 'scripts/check_preference_torch.py']
 
+S1_FAILURE_FILES = ['configs/s1_failure_acquisition.json', 'scripts/collect_s1_failures.py', 'experiments/S1-FAILURE-PREP-20261012-002/tasks.jsonl.gz', 'experiments/S1-FAILURE-PREP-20261012-002/selection.json']
+
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,time,urllib.request,urllib.parse,urllib.error
 from pathlib import Path
@@ -89,6 +91,7 @@ try:
     sft_mixed_files={'experiments/NOOP-REVIEW-20261010-001/mixed100_selection.json', 'experiments/MIX100-PREP-20261010-001/quality_approvals.json', 'veriagent/sft_mixed.py', 'scripts/run_sft_mixed.py', 'scripts/evaluate_sft_mixed.py', 'experiments/NOOP-REVIEW-20261010-001/mixed100_examples.jsonl.gz', 'experiments/NOOP-REVIEW-20261010-001/quality_approvals.json', 'experiments/NOOP-REVIEW-20261010-001/judgments.json', 'scripts/validate_sft_mixed_host.py', 'configs/sft_mixed100_plan.json'}
     dpo_files={'experiments/DPO-PREP-20261012-001/review.json', 'experiments/DPO-PREP-20261012-001/pairs.jsonl.gz', 'experiments/DPO-PREP-20261012-001/manifest.json', 'scripts/run_dpo_probe.py', 'scripts/check_dpo_torch.py', 'veriagent/dpo.py', 'configs/dpo_probe_plan.json'}
     preference_files={'scripts/run_preference_comparison.py', 'scripts/evaluate_preference_comparison.py', 'configs/preference_comparison_plan.json', 'scripts/check_preference_torch.py'}
+    s1_failure_files={'experiments/S1-FAILURE-PREP-20261012-002/tasks.jsonl.gz', 'experiments/S1-FAILURE-PREP-20261012-002/selection.json', 'scripts/collect_s1_failures.py', 'configs/s1_failure_acquisition.json'}
     additions=set(plan.get('additional_paths',[]))
     assert (not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
             or additions==teacher_files|teacher_probe_files|interactive_files
@@ -98,7 +101,8 @@ try:
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files
-            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files)
+            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files
+            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files|s1_failure_files)
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     reused_verified=[]
@@ -194,7 +198,9 @@ def main():
     parser.add_argument('--include-sft-mixed',action='store_true',help='Add only reviewed mixed100 data and execution files')
     parser.add_argument('--include-dpo',action='store_true',help='Add reviewed training-only DPO probe payload; never starts a model')
     parser.add_argument('--include-preference',action='store_true',help='Add bounded12task preference comparison runners and config')
+    parser.add_argument('--include-s1-failures',action='store_true',help='Add frozen25trainingtask S1 acquisition only')
     args=parser.parse_args()
+    if args.include_s1_failures:args.include_preference=True
     if args.include_preference:args.include_dpo=True
     if args.include_dpo:args.include_sft_mixed=True  # Preserve the already deployed S100/MIX100 manifest.
     if args.include_sft_mixed:args.include_sft_scale=True
@@ -216,6 +222,7 @@ def main():
     if args.include_sft_mixed:additions=additions+SFT_MIXED_FILES
     if args.include_dpo:additions=additions+DPO_FILES
     if args.include_preference:additions=additions+PREFERENCE_FILES
+    if args.include_s1_failures:additions=additions+S1_FAILURE_FILES
     paths=sorted(set(paths)|set(additions))
     # Ask before requesting signed download URLs: waiting at the password prompt
     # after metadata fetch can let short-lived private-repo links expire.

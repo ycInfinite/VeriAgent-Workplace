@@ -1,0 +1,11 @@
+{
+  "parent_commit": "d4664b417e0b5e059f89d87c9bb1def4cf2d0086",
+  "script_sha256": "37f8dbba4bbac45081086c3e8a431c075458fc4d8b0a56dcff30ac3a3b556ac0",
+  "source_hashes": {
+    "experiments/SFT-READY-20260917-001/quality_approvals.json": "ddfb2657e0fd48d23353acc6eeaafa065e3fcac1ad75ea23af31e1012a54fe01",
+    "experiments/NOOP-REVIEW-20261010-001/quality_approvals.json": "742444839f8711f78db2a4c50c350aec6abf8ca4035ed3cf98de3996dbd386d5",
+    "experiments/SFT-READY-20260917-001/selection.json": "c5e698a78609e2637a23f1e5d0f60b7df0091c29acc6c556c2894c87af0ae78d",
+    "experiments/Q0-SPLIT-20260904-003/split_manifest.json": "903683eefa576ee4da50b2e7c3755a271b30c5425326283a1c613abb1d5adfc4",
+    "experiments/DEEPSEEK-POOL-PREP-20260917-001/tool_schemas.json": "8219072d28e4d50c24436f9c264bf9d9286dd7fa882be56250012b680ff1e760"
+  }
+}
