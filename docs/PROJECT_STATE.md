@@ -1,5 +1,8 @@
 # Project state
 
+2026-10-16 user continued after29pairpreflight, authorizing prepared bounded29pair CHOSEN_SFT versusDPO matrix plus same-host S1 baseline/dev24x42/43. Botharms restart originalS1,29taskupdates/oneepoch/lr5e-6/seed42,beta.1;4same-reward excluded. PREF29-PREP-20261016-001 passed14CPUcontrols;prior179HF/longestgradient qualified. New5runIDs in configs/preference29_plan.json;formalruns not yet launched. Same33142host freshlyidle/PRO6000/595.58.03;KEEP_INSTANCE_ON, no guard/rental/API/RL/test. Process9000s/eachscript1800s;rateunknown;allhistoricalruns immutable.
+
+
 2026-10-16 PREF29 zero-update preflight COMPLETE at a0a5e5edba40aea97f7058c4b151bfc8d8ae0310 on66jy6yyh5q-8afb2424/PRO6000/595.58.03. All29pairs/179actualHFturns and7Torchcontrols pass;longesttask358 chosen6365/rejected8073 completeSFT/DPOgradients finite.504LoRAtensors exactlyunchanged/frozensamples andS1files unchanged. DPOmargin0/lossln2/recomputediff0;SFTbackward5.156s/reference3.595s/DPObackward15.723s;NOToptimizerstep timings. Peakallocated22.515/reserved27.730/device28.417GiB. Wall51.072s=.01418664GPUh;priceunknown. Raw12members SHAverified;no formal invalidmodelrun,one local config syntaxerror preservedbeforeexecution. Proposed29task/29update matchedSFT/DPO plan saved,NOTexecuted/notautomatictraining;4same-reward excluded. SSHclosed/processgone/noGPUcompute;KEEP_INSTANCE_ON/no shutdown/guard. Next route is userdecision on concrete29pairmatrix;no further collection/API/RL/sealedtests. See docs/PREFERENCE29_PREFLIGHT_20261016.md and docs/daily/2026-10-16-preference29-preflight-learning-handoff.md.
 
 

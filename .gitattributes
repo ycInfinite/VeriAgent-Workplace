@@ -26,3 +26,6 @@ configs/preference_expanded_data.json -text
 
 configs/preference29*.json -text
 evidence/preference29-preflight-20261016/** -text
+
+evidence/preference29-20261016/** -text
+reports/preference29-20261016/** -text

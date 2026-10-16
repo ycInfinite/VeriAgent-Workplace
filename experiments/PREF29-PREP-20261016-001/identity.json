@@ -1,0 +1,15 @@
+{
+  "files": {
+    "configs/preference29_plan.json": "17943baef934b8c5cfc843d71b5c38affe587623a93db79a760dcd9f4d421eaf",
+    "scripts/run_preference29.py": "f42682c909900a7bb9b44810e91248c405826bad15ea7075b65a459b9037f212",
+    "scripts/evaluate_preference29.py": "a7b262d739c079ee3c9cbe93ad37292d4492b691b33b388177588a246e46735c",
+    "scripts/run_preference29_pipeline.py": "97da6ef9fa350326d5ab76ad33789a9723f234ca92472a185e04413a32dc8721",
+    "experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_reward_gap_pairs.jsonl.gz": "035c3fefc6324c7f951190923714ec66bb18c09373d10f03a1c94551550e3e63"
+  },
+  "historical_files": {
+    "scripts/run_current_s1_preference.py": "046a72d31677e69a9dea2e3bb9d45868a386b68c3e39af21ab3143edd3665369",
+    "configs/current_s1_preference_plan.json": "c5d486c7f82c94a881d1753ff95aba783b9ee01148559ea6a4b6916b9ebe455e",
+    "veriagent/dpo.py": "4bcf845d7a2622ba9e7ba5625e0b3b147ab2de8319085d31217a437ed173c5b9",
+    "scripts/run_day3.py": "b6204f780b70d8f6bdda09a878a8b793d7597ef33334282dccdbadeb6d405e90"
+  }
+}

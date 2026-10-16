@@ -1,0 +1,26 @@
+{
+  "status": "CPU_PREF29_PREPARATION_PASSED",
+  "checks": {
+    "exact29_once": true,
+    "approved_reward_gap_only": true,
+    "unchanged_proposed_order": true,
+    "train_dev_disjoint": true,
+    "same_S1_hyperparameters": true,
+    "same_eval": true,
+    "whole179_turns": true,
+    "actual_HF_longest_gradient_passed": true,
+    "run_preference29.py_only_registered_differences": true,
+    "evaluate_preference29.py_only_registered_differences": true,
+    "compare_preference29.py_only_registered_differences": true,
+    "deployment_whitelist": true,
+    "keep_on_standalone_pipeline": true,
+    "new_ids": true
+  },
+  "updates_per_arm": 29,
+  "dev_rollouts": 144,
+  "actual_updates": 0,
+  "training_targets": {
+    "chosen": 9856,
+    "rejected": 11609
+  }
+}
