@@ -1,0 +1,13 @@
+{
+  "pairs": 29,
+  "turns": 179,
+  "no_optimizer_step_in_preflight": true,
+  "syntax_passed": true,
+  "train_dev_disjoint": true,
+  "training_authorized": false,
+  "added_deployment_files": [
+    "configs/preference29_preflight.json",
+    "scripts/preflight_preference29.py",
+    "experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_reward_gap_pairs.jsonl.gz"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "adhoc_config_generation_syntax_error",
+  "error": "unmatched closing parenthesis",
+  "executed": false,
+  "GPU_or_API_calls": 0,
+  "resolution": "Corrected before config creation;not a formal model run."
+}

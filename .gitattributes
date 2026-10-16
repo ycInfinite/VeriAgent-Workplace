@@ -23,3 +23,6 @@ reports/preference-expansion-20261016/** -text
 configs/s1_preference_expansion.json -text
 configs/s1_preference_expansion_review.json -text
 configs/preference_expanded_data.json -text
+
+configs/preference29*.json -text
+evidence/preference29-preflight-20261016/** -text
