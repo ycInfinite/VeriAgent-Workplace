@@ -1,0 +1,12 @@
+{
+  "observed_epoch": 1792125214.2344081,
+  "user_instruction": "KEEP_INSTANCE_ON",
+  "shutdown_command_issued": false,
+  "shutdown_watchdog_created": false,
+  "collector_pid_2038_state": "absent",
+  "collector_start_ticks": null,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 0 %, 0 MiB\n",
+  "compute_processes": "",
+  "hourly_rmb": null,
+  "ongoing_allocation_cost": true
+}

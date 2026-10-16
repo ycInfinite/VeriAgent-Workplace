@@ -1,0 +1,14 @@
+{
+  "recorded_at_UTC": "2026-10-16T04:40:53.220285+00:00",
+  "resource_user_direction": "KEEP_INSTANCE_ON",
+  "no_shutdown_or_mode_change": true,
+  "SSH_session_closed": true,
+  "last_remote_preservation_epoch": 1792125214.2344081,
+  "last_remote_compute_processes": [],
+  "platform_power_status_not_refreshed_since_preservation": true,
+  "container_start_estimate_to_handoff_hours_if_uninterrupted": 0.5896862549914255,
+  "hourly_RMB": null,
+  "total_RMB": null,
+  "ongoing_allocation_cost": true,
+  "new_training_or_collection_after_frozen25": false
+}

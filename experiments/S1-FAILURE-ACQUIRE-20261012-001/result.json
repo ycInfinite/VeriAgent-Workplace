@@ -1,0 +1,49 @@
+{
+  "attempted_rollouts": 25,
+  "valid_rollouts": 25,
+  "infra_invalid_rollouts": 0,
+  "verified_successes": 18,
+  "success_rate": 0.72,
+  "strata": {
+    "nonempty_reference": {
+      "n": 20,
+      "successes": 15
+    },
+    "empty_reference": {
+      "n": 5,
+      "successes": 3
+    }
+  },
+  "tool_calls": 90,
+  "parse_error_attempts": 0,
+  "executable_tool_calls": 87,
+  "executable_tool_call_rate": 0.9666666666666667,
+  "unknown_tool_calls": 0,
+  "schema_invalid_calls": 3,
+  "identifier_bearing_calls": 37,
+  "ungrounded_identifier_candidate_calls": 0,
+  "repeated_same_state_call_candidates": 1,
+  "retry_loop_trajectories": 0,
+  "premature_termination_candidates": 6,
+  "termination_counts": {
+    "assistant_final": 24,
+    "round_limit": 1
+  },
+  "input_tokens": 408835,
+  "output_tokens": 8634,
+  "average_tool_steps": 3.6,
+  "average_trajectory_seconds": 12.307478935159743,
+  "peak_torch_allocated_gib": 17.36308002471924,
+  "candidate_metrics_require_semantic_review": true,
+  "status": "S1_TRAINING_COLLECTION_COMPLETE",
+  "condition": "S1",
+  "gpu_hours": 0.09145778886223625,
+  "wall_seconds": 329.24803990405053,
+  "cost_estimate_rmb": null,
+  "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+  "parameter_updates": 0,
+  "scope": "25trainingtasks only;new data candidates,not dev/test metric",
+  "DPO_data_admitted": false,
+  "parameter_samples_unchanged": true,
+  "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+}

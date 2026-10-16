@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-10-16T04:36:22.665981+00:00",
+  "execution_commit": "4efbf07e3410cad64b20989498247405e2026a0d",
+  "script_sha256": "e8abd3fb22c9c672f748667c63ae3b143bab0069ad61cbee3a95dac62c3b187c",
+  "sources": {
+    "experiments\\S1-FAILURE-ACQUIRE-20261012-001\\trajectories.jsonl": "6077a886e3173bd426a279f0f1a100a361b38a32ef77a975622745b84b852aa9",
+    "experiments\\S1-FAILURE-PREP-20261012-002\\teacher_records.jsonl.gz": "d781f4d204bc99fc3505d8826ff1dffddef27d7d1109b5cd663333a2335fd2a0",
+    "experiments\\S1-FAILURE-PREP-20261012-002\\selection.json": "d5d9559c9cf2ecc75a6b26fe3762bffd6b06ed23ce48874331d99bb57b0f4cd2",
+    "configs\\s1_failure_pair_review_protocol.json": "a13df8a799e398d348baf6d1f86fc0ab1f7cec27d7f5d3f12648ea19aef72b40",
+    "configs\\s1_failure_acquisition.json": "05ddd72137c9d1c56feededc41643d05e1a2656d43e0394e7709132920e527d8",
+    "experiments\\SFT-READY-20260917-001\\selection.json": "c5e698a78609e2637a23f1e5d0f60b7df0091c29acc6c556c2894c87af0ae78d"
+  },
+  "kind": "CPU_ONLY_OFFLINE_REVIEW"
+}

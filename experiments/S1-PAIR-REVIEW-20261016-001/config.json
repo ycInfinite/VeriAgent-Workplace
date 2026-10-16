@@ -1,0 +1,67 @@
+{
+  "Research Question": "What usable preferences do the frozen25 currentS1 rollouts yield?",
+  "Hypothesis": "Some currentS1 failures are attributable and have a superior existing teacher branch.",
+  "Independent Variable": "Fresh full-transcript semantic disposition; no policy update or new sampling.",
+  "Controlled Variables": "Exact frozen25, prior teacher sources, original prompt/tools/state, whole trajectories,8192.",
+  "Metrics": "Pair yield/reasons, fresh replay, canonical target/context tokens, source identities.",
+  "Evidence Gate": "Complete semantic review plus same-task/state/tools and exact offline replay; no partial-branch rescue.",
+  "Cost Bound": "Local CPU only; GPU/API/updates0.",
+  "Failure Branch": "Preserve failed audit and all held records; no retry of model collection.",
+  "protocol": {
+    "status": "FROZEN_REVIEW_PROTOCOL_WAITING_FOR_REAL_S1_ROLLOUTS",
+    "source_collection": "S1-FAILURE-ACQUIRE-20261012-001",
+    "teacher_source": "experiments/S1-FAILURE-PREP-20261012-002/teacher_records.jsonl.gz",
+    "task_count": 25,
+    "must_record": [
+      "task_id",
+      "task_uid",
+      "prompt_context",
+      "tools",
+      "initial_state_sha256",
+      "chosen_source_hash",
+      "rejected_source_hash",
+      "chosen_messages",
+      "rejected_messages",
+      "chosen_verifier",
+      "rejected_verifier",
+      "branch_turns",
+      "branch_tokens",
+      "termination",
+      "failure_category",
+      "why_pair_valid",
+      "reviewer",
+      "independent_review_status"
+    ],
+    "gate_order": [
+      "Check frozen task/S1/code identities and validity;never use dev/final/BFCL",
+      "Replay bothbranch tools/observations/state/verifier;match task,prompt/tools,initialstate",
+      "Review complete chosen semantics again;earlier teacherapproval not sole admission",
+      "Attribute rejected failure to policy rather than infrastructure or reference ambiguity",
+      "Hold incomplete/censored/parse-corrupted branches for this first currentS1 dataset;never rewrite/drop badprefix",
+      "For reward1 rejected branch,require explicit semantic-dominance justification;do not assume rewardgap necessary or sufficient",
+      "Canonical Qwen per-turn encoding;allcompleteassistant targets;system/user/tool observations labels=-100;no truncation",
+      "Export only explicitly approved pairs with provenance;allholds/successes retained"
+    ],
+    "outcome_labels": [
+      "approved_reward_gap_pair",
+      "approved_same_reward_semantic_pair",
+      "held_ambiguous_reference",
+      "held_infrastructure",
+      "held_censored_or_corrupted",
+      "held_chosen_quality",
+      "no_preference_signal"
+    ],
+    "not_authorized": [
+      "new teacherAPI",
+      "resamplefailedtasks",
+      "replacementtasks",
+      "DPOparameterupdates",
+      "newrental",
+      "inventorymonitor",
+      "unsealtest"
+    ],
+    "old_DPO_loader_limit": "Old frozen12-pair loader insists rejectedreward0. New same-reward pairs must not be silently inserted;future training admission/plan must explicitly support their reviewed labels."
+  },
+  "same_reward_pairs_separate": true,
+  "GPU_training_authorized": false
+}

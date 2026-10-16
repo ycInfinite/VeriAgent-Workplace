@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "incomplete_assistant_turn_rejected": true,
+    "changed_context_rejected": true,
+    "changed_observation_rejected": true,
+    "overlength_not_truncated": true,
+    "all_context_labels_ignored": true,
+    "all_assistant_tokens_targeted": true,
+    "six_gap_one_same_separate": true,
+    "censored1179_not_exported": true,
+    "ambiguous746_not_exported": true,
+    "all_complete_assistant_final": true,
+    "audit_script_identity_matches": true,
+    "all_fifty_replays_equal": true
+  },
+  "passed": 12,
+  "GPU_or_HF_runtime_validation": false
+}

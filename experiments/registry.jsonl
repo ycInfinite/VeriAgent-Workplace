@@ -117,3 +117,7 @@
 {"experiment_id": "S1-FAILURE-PREP-20261012-002", "event": "frozen25_initial_context_and11CPUcontrols_passed", "parameter_updates": 0, "API_calls": 0}
 {"experiment_id": "S1-FAILURE-PREP-20261012-002", "event": "user_chose_wait_for_existingGPU_after_two_no_stock_checks", "new_rollouts": 0, "GPU_hours": 0, "parameter_updates": 0, "pair_yield": "UNMEASURED"}
 {"experiment_id": "S1-FAILURE-RESUME-20261016-001", "event": "replacement_clone_and_frozen_inputs_verified_keep_powered_on", "model_started": false}
+{"experiment_id": "S1-FAILURE-RESUME-20261016-001", "event": "deployed_not_started_at_user_interruption_keep_instance_on", "rollouts": 0}
+{"experiment_id": "S1-FAILURE-ACQUIRE-20261012-001", "event": "actual_started_20261016", "code_commit": "4efbf07e3410cad64b20989498247405e2026a0d", "source": "remote identity.json"}
+{"experiment_id": "S1-FAILURE-ACQUIRE-20261012-001", "event": "completed_verified_archive", "valid": 25, "infra_invalid": 0, "successes": 18, "GPU_hours": 0.09145778886223625, "parameter_updates": 0, "API_calls": 0, "instance_kept_on": true}
+{"experiment_id": "S1-PAIR-REVIEW-20261016-001", "event": "offline_review_complete", "replay_branches": 50, "reward_gap_pairs": 6, "same_reward_pairs": 1, "held": 2, "no_preference_signal": 16, "CPU_controls_passed": 12, "parameter_updates": 0}

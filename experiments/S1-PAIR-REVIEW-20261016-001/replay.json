@@ -1,0 +1,355 @@
+{
+  "branches": [
+    {
+      "task_id": 1082,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "759b3868e20dc6394f39e6f2fc246847235a3aad7d8d7126d9f2d6c965d5cf56"
+    },
+    {
+      "task_id": 1082,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "0c36dd303c9e90a4e7d9ebe58c4679e9da5bc487d158810ed6d9f02c21e5d401"
+    },
+    {
+      "task_id": 795,
+      "side": "chosen",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "7b47326667a4ed73389286c76c60c5be0f7ecd6dacace5cf6b05986c5306bc82"
+    },
+    {
+      "task_id": 795,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "ba7fb355be506cb22157b17839fbb3e3f62eca071ca96e18ed105d601389466e"
+    },
+    {
+      "task_id": 1173,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "9cdbadd1ebf7821b5636e01731821d17dd37c3f5484a76bf0bfa5c64a2707538"
+    },
+    {
+      "task_id": 1173,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "1deac9171f5ef0f8fdf2a8796fcd7fc4041b7d71c7c84b283d153e271bb09b7c"
+    },
+    {
+      "task_id": 1076,
+      "side": "chosen",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "3dbe02b87574bb30de22b545b667227a9cce6ffe768f9ae662d8c33ea6d0b062"
+    },
+    {
+      "task_id": 1076,
+      "side": "rejected",
+      "events": 8,
+      "reward": 0.0,
+      "source_record_sha256": "29882f2cae4427c030dc89c93ff3f9e4c7d870391d4f6af2532c7fe31a113049"
+    },
+    {
+      "task_id": 1000,
+      "side": "chosen",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "2f512cf08dd6331908feecbc698a24513e509d3ade80b7bc6b5fd1f4c9394c84"
+    },
+    {
+      "task_id": 1000,
+      "side": "rejected",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "b50bafd9c50bfd2864c227d79e67bd52c0189ecd5fc04cc4d2c7e6e153ae2a90"
+    },
+    {
+      "task_id": 473,
+      "side": "chosen",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "6f5f4fb05d2d4221e62cb52a66b11be5ba13694b3124affd04581f78da1b2b6e"
+    },
+    {
+      "task_id": 473,
+      "side": "rejected",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "3c1b3a4713dd395d5fa4ec6d49e291f677879de3831ccc08c442ed86042065dc"
+    },
+    {
+      "task_id": 349,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "ccc912e8a48731bf85948728ddb841c2d70a62a31fca4443b23d78c5ea9cdb1c"
+    },
+    {
+      "task_id": 349,
+      "side": "rejected",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "a71f36bfb32e0c180ea3724ee1bf5b03aa7f061969dab405ac2e89371ff03c6e"
+    },
+    {
+      "task_id": 1194,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "e99f5e8a4278447ec94a8a7a8206a23251a83ce5517957015ee75617a336a7ce"
+    },
+    {
+      "task_id": 1194,
+      "side": "rejected",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "14d47333b02c8408e9741be807a54080eda676f7285cbb97505bf9f9765dd6d0"
+    },
+    {
+      "task_id": 120,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "fc6ba3245fe848fb7a42ed23171b397ac1d0ccf8a75a912f3ace8062f795b41a"
+    },
+    {
+      "task_id": 120,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "58718fca8d77e805466ba9dd1b1c5d823016e2466002c48877a11fbf5ca923d6"
+    },
+    {
+      "task_id": 51,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "656e174f64bfaa5ce0a866e0809f93fa93a0e5a40a97661c3e4232b6ad753ed5"
+    },
+    {
+      "task_id": 51,
+      "side": "rejected",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "f06b1f57ebcdd03da9abb2478b5357b7531225e5b0cbe6e2072a8641eeda229d"
+    },
+    {
+      "task_id": 79,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "e6d30c6a3adaf1720fc72ad455d832737b02e095f60ac90af2accd326e7c6047"
+    },
+    {
+      "task_id": 79,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "0fdf6649ce2a9cf17216ac204852c672183579963b97fceca83e8335532ea171"
+    },
+    {
+      "task_id": 545,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "91d69a231a3f0bb678dd1a77e14fe062cf4b36c43ca9a0a750457604333d909a"
+    },
+    {
+      "task_id": 545,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "79f1c88f93b151acd3bc87d8d05b6c304364c25b622dfeadfc643688be370f62"
+    },
+    {
+      "task_id": 91,
+      "side": "chosen",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "1dd1f67f43888320dcc2702b3b521462fa38fa419a65e3787cd1f652480b0609"
+    },
+    {
+      "task_id": 91,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "5d5bdd7338e2d4f5e2787ba6315640d5a8ba9bdb8355f538219e5c1af30f7fd4"
+    },
+    {
+      "task_id": 979,
+      "side": "chosen",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "512231d1fa10c7a679f6d4386d18df855d50057bc17c3dc2af71cb2f27396964"
+    },
+    {
+      "task_id": 979,
+      "side": "rejected",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "c7b07f552a0d9d8fd3c5421a99285279d456d90eaed5ff8b90cc9533314f68bb"
+    },
+    {
+      "task_id": 443,
+      "side": "chosen",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "b049e63f94c64514db2d96459ef6ca3bf9775acad3b1ea3c3765f447bff176cd"
+    },
+    {
+      "task_id": 443,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "cee025c644a80c2bb8060706b9ee96f4b2f36d4ef572c1590a0bc5ccf5b7b1de"
+    },
+    {
+      "task_id": 45,
+      "side": "chosen",
+      "events": 7,
+      "reward": 1.0,
+      "source_record_sha256": "41b234eb7da22aa937354b1061cc56b2b588a9e7e69b014ac21838bcd2097a2d"
+    },
+    {
+      "task_id": 45,
+      "side": "rejected",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "e50b83445b9c0bde6d7ffcf4b24ba0205f35a1fe5462fced861c21c710719fdb"
+    },
+    {
+      "task_id": 1130,
+      "side": "chosen",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "e0a852331fa5770c532293077dc4d1ab1d2f54c4f86c37bb6280772b3e75d48e"
+    },
+    {
+      "task_id": 1130,
+      "side": "rejected",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "04beeb0c11eb82349ae169ebe75be8ebc92d90ee1f5251650343f305e6100dc8"
+    },
+    {
+      "task_id": 746,
+      "side": "chosen",
+      "events": 10,
+      "reward": 1.0,
+      "source_record_sha256": "73f4d49590f0101222f785825031546bec986a8c25242c2810cd304cfac957c5"
+    },
+    {
+      "task_id": 746,
+      "side": "rejected",
+      "events": 11,
+      "reward": 1.0,
+      "source_record_sha256": "2122a6fabed7b4ab747b6011ed6f7c8acc0d87fafb18933dc9ebbc8792df2f9f"
+    },
+    {
+      "task_id": 1179,
+      "side": "chosen",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "b8b1b23560290bae670f22d8525e44a9ee004c224c8b2571729b1af2071117d1"
+    },
+    {
+      "task_id": 1179,
+      "side": "rejected",
+      "events": 7,
+      "reward": 0.0,
+      "source_record_sha256": "834278e9551a88275ecdbb6f70f931cebd0a222168eb96db348c71f355dfd3b4"
+    },
+    {
+      "task_id": 165,
+      "side": "chosen",
+      "events": 7,
+      "reward": 1.0,
+      "source_record_sha256": "003a1bf94f7bcc411aae7b43ba7a9383f2e52732f7c7ae649e3b68a13ccb8bfd"
+    },
+    {
+      "task_id": 165,
+      "side": "rejected",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "36b7b11912e7e45f52de363cffed9e4d0e546d3bed1c779ad7eed2d105b84d7f"
+    },
+    {
+      "task_id": 1146,
+      "side": "chosen",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "52a1550480c0eec7a2dc281c5b87690b567b7200c550634c608772d668a3f83f"
+    },
+    {
+      "task_id": 1146,
+      "side": "rejected",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "df235036990aafedc86046115047792c6bf70237ae9b601c4c861585daf4217f"
+    },
+    {
+      "task_id": 839,
+      "side": "chosen",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "58833045552073cc3365e2b7575b5b74fa48f8a9c7844f87db1f7b512893bf94"
+    },
+    {
+      "task_id": 839,
+      "side": "rejected",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "f10226232fbe3022d59d3645d8178c96a19be64ae24f4ca7bbfab5b421df6aa8"
+    },
+    {
+      "task_id": 902,
+      "side": "chosen",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "01e3d893a52eac2db1ea12b250761e8e15743dc7d6609c0da67960657b424475"
+    },
+    {
+      "task_id": 902,
+      "side": "rejected",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "9b8d9f98f6dc81621812bd3a2e36c0cd8f3a6d434b309f95a1268f87f31cebc3"
+    },
+    {
+      "task_id": 1114,
+      "side": "chosen",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "821517313636dcafded0a10cd3ef93fa1cc51f188aaeb99be71ade05be528cbe"
+    },
+    {
+      "task_id": 1114,
+      "side": "rejected",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "564779b75bbfc85f8e3e731a2aadd39f97b647d179c2ba57ca43a2001db0e882"
+    },
+    {
+      "task_id": 702,
+      "side": "chosen",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "c856c7f9042fc7af9955af0f8b4ab96e3fe94099c88e93509706042fa69a3089"
+    },
+    {
+      "task_id": 702,
+      "side": "rejected",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "0f839a31e7d3fd89e6065d22c6de801e67daf75d117457590d879df4883adfbe"
+    }
+  ],
+  "all_equal": true
+}

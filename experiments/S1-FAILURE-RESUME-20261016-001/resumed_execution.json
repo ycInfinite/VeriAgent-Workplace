@@ -1,0 +1,11 @@
+{
+  "status": "COLLECTOR_LAUNCHED_ONCE_AFTER_FRESH_DUPLICATE_CHECK",
+  "run_id": "S1-FAILURE-ACQUIRE-20261012-001",
+  "PID": 2038,
+  "start_ticks": "501167043",
+  "boot_id": "38f0ac18-b210-47ad-8431-8daff5970d80",
+  "epoch": 1792124859.390473,
+  "execution_commit": "4efbf07e3410cad64b20989498247405e2026a0d",
+  "keep_instance_on": true,
+  "shutdown_guard": false
+}

@@ -1,0 +1,35 @@
+{
+  "status": "CURRENT_S1_PAIR_REVIEW_COMPLETE",
+  "tasks": 25,
+  "fresh_replay_branches": 50,
+  "reward_gap_pairs": 6,
+  "same_reward_pairs": 1,
+  "held_censored": 1,
+  "held_boundary": 1,
+  "no_preference_signal": 16,
+  "chosen_target_tokens": 2207,
+  "rejected_target_tokens": 3215,
+  "processed_tokens": 229730,
+  "branch_turns": {
+    "chosen": 23,
+    "rejected": 25
+  },
+  "max_sequence_tokens": 7194,
+  "by_type": {
+    "approved_same_reward_semantic_pair": {
+      "pairs": 1,
+      "chosen_target_tokens": 433,
+      "rejected_target_tokens": 357
+    },
+    "approved_reward_gap_pair": {
+      "pairs": 6,
+      "chosen_target_tokens": 1774,
+      "rejected_target_tokens": 2858
+    }
+  },
+  "CPU_seconds": 11.780929099999412,
+  "GPU_hours": 0,
+  "API_requests": 0,
+  "parameter_updates": 0,
+  "GPU_DPO_qualified": false
+}

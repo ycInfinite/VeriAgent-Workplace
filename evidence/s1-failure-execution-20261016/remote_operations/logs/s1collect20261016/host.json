@@ -1,0 +1,17 @@
+{
+  "hostname": "autodl-container-cvxyhxpra6-2a26255e",
+  "observed_epoch": 1792124159.536709,
+  "container_start_estimate": 1792123530.3497627,
+  "first_observed_epoch": 1792124098.2597625,
+  "GPU": "RTX PRO6000 Blackwell96GB",
+  "driver": "595.71.05",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "active_project_shutdown_guards": [],
+  "user_keep_powered_on": true,
+  "hourly_rmb": null
+}

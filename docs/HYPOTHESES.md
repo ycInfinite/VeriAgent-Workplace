@@ -140,3 +140,8 @@ H-preference-added-value在此次12对、单seed、一遍更新、暴露dev设�
 ## 2026-10-12 S1新失败采集准备与等待
 
 当前策略负例更有信息的假设仍未检验。新25题覆盖5域/20action+5empty，来自teacher已审且未被当前S1训练的层；选择不是全training均匀代表样本，其他独立S100/MIX可能见过部分题。无当前S1新rollout，pair产率/失败分布未测，不能说获得0对或若干合格对。
+
+
+## 2026-10-16 当前策略负例实测
+
+固定25题一次采集18success/7failure，6个失败具有完整、无歧义的现有教师成功分支；另702可形成reward1对reward1的回答准确性偏好。支持当前S1残余失败可用于数据构建，不支持新负例更优的训练因果结论。仅seed42、教师已审分层抽样、奖励差6对集中analytics/calendar，不能外推全training或称失败已跨seed复现。总体chosen2207/rejected3215targets，5/7chosen更短，但provider/style/length仍混杂。数据少应先说明有效信号及覆盖，再决定扩样或机制验证。

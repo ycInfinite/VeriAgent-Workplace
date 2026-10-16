@@ -1,0 +1,25 @@
+{
+  "status": "DEPLOYED_NOT_STARTED_AT_USER_INTERRUPTION",
+  "recorded_at_utc": "2026-10-16T04:25:13.274524+00:00",
+  "deployment_commit": "4efbf07e3410cad64b20989498247405e2026a0d",
+  "GitHub_synced_files": 86,
+  "actual_new_rollouts": 0,
+  "parameter_updates": 0,
+  "teacher_API_calls": 0,
+  "future_run_id": "S1-FAILURE-ACQUIRE-20261012-001",
+  "collection_launch_issued": false,
+  "instance_shutdown_issued": false,
+  "user_keep_powered_on": true,
+  "SSH_control_closed": true,
+  "no_shutdown_guard_created": true,
+  "GPU_allocation_cost_continues": "Requestedkeepallocated;continueswhileplatformremainsrunning",
+  "hourly_rmb": null,
+  "not_yet_tested": [
+    "freshBase9filehashes",
+    "actualHF25contextpreflight",
+    "S1rollouts",
+    "newpairreview"
+  ],
+  "SSH_close_observation": "Socket reset10054 then localhelper exited;no powercontrol action",
+  "platform_power_state_at_handoff": "NOT_INDEPENDENTLY_RECHECKED"
+}
