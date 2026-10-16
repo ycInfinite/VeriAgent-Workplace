@@ -116,3 +116,4 @@
 {"experiment_id": "S1-FAILURE-PREP-20261012-001", "event": "CPU_schema_unpack_failure_preserved", "parameter_updates": 0, "API_calls": 0}
 {"experiment_id": "S1-FAILURE-PREP-20261012-002", "event": "frozen25_initial_context_and11CPUcontrols_passed", "parameter_updates": 0, "API_calls": 0}
 {"experiment_id": "S1-FAILURE-PREP-20261012-002", "event": "user_chose_wait_for_existingGPU_after_two_no_stock_checks", "new_rollouts": 0, "GPU_hours": 0, "parameter_updates": 0, "pair_yield": "UNMEASURED"}
+{"experiment_id": "S1-FAILURE-RESUME-20261016-001", "event": "replacement_clone_and_frozen_inputs_verified_keep_powered_on", "model_started": false}
