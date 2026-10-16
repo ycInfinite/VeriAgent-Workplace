@@ -6,7 +6,7 @@ import signal
 import subprocess
 import sys
 import time
-from common import ROOT
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
@@ -60,4 +60,7 @@ def main():
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    if sys.argv[1:] == ['--import-only']:
+        print(json.dumps({'status': 'PIPELINE_STDLIB_IMPORT_PASSED_NO_MODEL'}))
+    else:
+        raise SystemExit(main())

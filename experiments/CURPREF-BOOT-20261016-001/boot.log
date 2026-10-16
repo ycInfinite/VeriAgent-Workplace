@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/veriagent-workplace-sft-20261010/scripts/run_current_s1_preference_pipeline.py", line 9, in <module>
+    from common import ROOT
+ModuleNotFoundError: No module named 'common'

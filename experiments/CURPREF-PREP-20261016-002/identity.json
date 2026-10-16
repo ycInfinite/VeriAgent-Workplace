@@ -1,0 +1,17 @@
+{
+  "parent_commit": "121a0061130ee1ff8a7918b613676b79ad274f5b",
+  "files": {
+    "configs/current_s1_preference_plan.json": "c5d486c7f82c94a881d1753ff95aba783b9ee01148559ea6a4b6916b9ebe455e",
+    "scripts/run_current_s1_preference.py": "046a72d31677e69a9dea2e3bb9d45868a386b68c3e39af21ab3143edd3665369",
+    "scripts/evaluate_current_s1_preference.py": "960f5512ff9b160b5ec695e177cdaf798815ce7079a91f44eaa08be8d6cad56d",
+    "scripts/run_current_s1_preference_pipeline.py": "308629097553789abf046ef174f06ee83b6b9f33aa1a053f4e616a425c0eb214",
+    "experiments/S1-PAIR-REVIEW-20261016-001/reward_gap_pairs.jsonl.gz": "108250fa10ff69c1c8b25e835330ebd8d2557b0cf5c7aa3c79b6015b0c8a04b0"
+  },
+  "transport_sha256": "118386d824dda2e7625b5d94c34a55fbbb8aa33f066a5db719b0211bef09022e",
+  "old_frozen_files": {
+    "configs/preference_comparison_plan.json": "3ef6c8b5f61b07dbb016cfc202bfa8f92ab23196ec7721dba3db7b6c3fc6bc67",
+    "scripts/run_preference_comparison.py": "7285d4c4f4ed5319035402d509e72824a448203ef3efcf52df621a50b0efdd3f",
+    "scripts/evaluate_preference_comparison.py": "543cc378b1cd94f16fbdd475e161a3195eb3402578b83931b306f67dfba8d92f",
+    "veriagent/dpo.py": "4bcf845d7a2622ba9e7ba5625e0b3b147ab2de8319085d31217a437ed173c5b9"
+  }
+}

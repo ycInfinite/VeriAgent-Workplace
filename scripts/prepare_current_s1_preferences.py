@@ -1,5 +1,6 @@
 """CPU-only preregistration and unchanged-runner checks for six current-S1 pairs."""
 import ast
+import argparse
 import json
 import traceback
 from pathlib import Path
@@ -10,7 +11,9 @@ from evaluate_current_s1_preference import load_eval
 
 
 def main():
-    out = ROOT/'experiments/CURPREF-PREP-20261016-001'; out.mkdir(exist_ok=False)
+    parser = argparse.ArgumentParser(); parser.add_argument('--run-id', default='CURPREF-PREP-20261016-001'); args = parser.parse_args()
+    assert args.run_id.startswith('CURPREF-PREP-') and Path(args.run_id).name == args.run_id
+    out = ROOT/'experiments'/args.run_id; out.mkdir(exist_ok=False)
     def save(name, value):
         with (out/name).open('x', encoding='utf-8', newline='\n') as f:
             json.dump(value, f, ensure_ascii=False, indent=2)
@@ -41,6 +44,7 @@ def main():
         for path in cfg['deployment_files']:
             if path.endswith('.py'): ast.parse((ROOT/path).read_text(encoding='utf-8'))
         checks['pipeline_keeps_power_on'] = not cfg['instance_shutdown_authorized'] and 'shutdown(' not in (ROOT/'scripts/run_current_s1_preference_pipeline.py').read_text(encoding='utf-8')
+        checks['pipeline_no_undeployed_common_import'] = 'from common import' not in (ROOT/'scripts/run_current_s1_preference_pipeline.py').read_text(encoding='utf-8')
         assert all(checks.values()), checks
         save('identity.json', {'parent_commit':'121a0061130ee1ff8a7918b613676b79ad274f5b', 'files':{p:sha(ROOT/p) for p in cfg['deployment_files']},
             'transport_sha256':sha(ROOT/'scripts/github_file_sync.py'), 'old_frozen_files':{p:sha(ROOT/p) for p in ['configs/preference_comparison_plan.json','scripts/run_preference_comparison.py','scripts/evaluate_preference_comparison.py','veriagent/dpo.py']}})

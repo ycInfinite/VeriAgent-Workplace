@@ -1,0 +1,9 @@
+{
+  "PID": 3417,
+  "start_ticks": "501294075",
+  "boot_id": "38f0ac18-b210-47ad-8431-8daff5970d80",
+  "epoch": 1792126129.707373,
+  "execution_commit": "6dd617223300d496357a5455039a68022f6af3dc",
+  "keep_instance_on": true,
+  "shutdown_guard": false
+}

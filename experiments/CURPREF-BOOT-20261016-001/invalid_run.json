@@ -1,0 +1,11 @@
+{
+  "status": "CPU_BOOT_IMPORT_FAILURE_PRESERVED",
+  "execution_commit": "6dd617223300d496357a5455039a68022f6af3dc",
+  "error": "ModuleNotFoundError: common",
+  "formal_run_directories": [],
+  "model_calls": 0,
+  "parameter_updates": 0,
+  "instance_kept_on": true,
+  "allocation_cost_included": true,
+  "resolution": "Pipeline uses stdlib Path root;local isolated import passes;14 preparation checks002 pass;actual host import gate before unused formal IDs"
+}
