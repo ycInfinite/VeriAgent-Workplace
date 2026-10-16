@@ -17,3 +17,9 @@ evidence/preference-execution-20261012/** -text
 evidence/s1-failure-execution-20261016/** -text
 
 evidence/current-preference-execution-20261016/** -text
+
+evidence/preference-expansion-20261016/** -text
+reports/preference-expansion-20261016/** -text
+configs/s1_preference_expansion.json -text
+configs/s1_preference_expansion_review.json -text
+configs/preference_expanded_data.json -text

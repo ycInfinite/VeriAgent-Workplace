@@ -1,0 +1,10 @@
+{
+  "epoch": 1792132667.40008,
+  "collector_pid_exists": false,
+  "compute_processes": "",
+  "keep_instance_on": true,
+  "shutdown_command_issued": false,
+  "shutdown_guard_created": false,
+  "hourly_RMB": null,
+  "allocation_cost_continues": true
+}

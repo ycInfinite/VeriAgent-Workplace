@@ -1,0 +1,7 @@
+{
+  "kind": "LOCAL_ADHOC_SYNTAX_ERROR_BEFORE_EXECUTION",
+  "error": "unmatched closing parenthesis in statistics snippet",
+  "formal_experiment_invalid": false,
+  "model_calls": 0,
+  "result": "Corrected snippet executed;no source data modified"
+}

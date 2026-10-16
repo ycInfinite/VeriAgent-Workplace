@@ -1,0 +1,16 @@
+{
+  "status": "ALL182_BRANCHES_REPLAY_EQUAL",
+  "tasks": 91,
+  "branches": 182,
+  "review_priorities": {
+    "screened_no_reward_gap_not_admitted": 55,
+    "full_reward_gap_pair_review": 25,
+    "empty_S1_semantic_review": 7,
+    "held_censored_or_corrupted": 4
+  },
+  "CPU_seconds": 29.62747120000131,
+  "GPU_hours": 0,
+  "parameter_updates": 0,
+  "API_calls": 0,
+  "new_pairs_admitted": 0
+}

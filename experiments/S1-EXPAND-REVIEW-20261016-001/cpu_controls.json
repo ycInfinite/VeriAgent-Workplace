@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "29_rewardgap4_separate_same": true,
+    "33_unique_tasks": true,
+    "training_only_no_S1train_or_dev": true,
+    "all_six_holds_excluded": true,
+    "all_complete_and_no_truncation": true,
+    "all_context_masked": true,
+    "whole_assistant_targets": true,
+    "all182_replayed": true,
+    "prior6plus1_unmodified": true,
+    "old_loader_rejects_same_reward": true,
+    "review_snapshots_match_final_raw": true
+  },
+  "passed": 11,
+  "snapshots": [
+    {
+      "file": "evidence\\preference-expansion-20261016\\snapshots\\analytics_action.jsonl",
+      "records": 13,
+      "sha256": "07f9a09fa182bb168a68133c4fc638b55bf923dbccf350c3e27c5a629e81a3b6"
+    },
+    {
+      "file": "evidence\\preference-expansion-20261016\\snapshots\\analytics_empty.jsonl",
+      "records": 17,
+      "sha256": "be12c7d2839811733cef97be4d7630eac4c9af4ef17c60087c7dde4cfc2d749d"
+    },
+    {
+      "file": "evidence\\preference-expansion-20261016\\snapshots\\calendar_action.jsonl",
+      "records": 14,
+      "sha256": "0e7e6d072c2a392c137c831c010ae95872fbf8c710eab7a989f15a08805be0fa"
+    },
+    {
+      "file": "evidence\\preference-expansion-20261016\\snapshots\\customer_relationship_manager_action.jsonl",
+      "records": 16,
+      "sha256": "bc9cad0e64cceeee1597dd2be8639c41e1077b6f9dc4f68f1e54c41d6a2a6d7a"
+    },
+    {
+      "file": "evidence\\preference-expansion-20261016\\snapshots\\customer_relationship_manager_empty.jsonl",
+      "records": 1,
+      "sha256": "e1127b61fef18b8fe9c8dce430737b09d1a226a572e75eba7ea776144c7c13f3"
+    },
+    {
+      "file": "evidence\\preference-expansion-20261016\\snapshots\\email_action.jsonl",
+      "records": 9,
+      "sha256": "beaf49132490abccd7cf74ef591d903204991a014087f8e7536b6814eaa97ac6"
+    },
+    {
+      "file": "evidence\\preference-expansion-20261016\\snapshots\\project_management_action.jsonl",
+      "records": 15,
+      "sha256": "2d966f26ffc617c200cd374312505dbf67e1036361252485a14497e42d254bc1"
+    }
+  ],
+  "GPU_hours": 0,
+  "parameter_updates": 0,
+  "actual_HF_GPU_training_validation": false
+}

@@ -132,3 +132,7 @@
 {"experiment_id": "CURPREF-MATRIX-20261016-001", "event": "completed_analysis_and_preservation_keep_instance_on", "S1": 35, "CHOSEN_SFT": 36, "DPO": 34, "valid_trajectories": 144, "semantic_reviewed": 37, "API_calls": 0, "parameter_updates": 12, "shutdown": false}
 {"experiment_id": "S1-EXPAND-PREP-20261016-001", "event": "91frozen_11CPUchecks_passed", "actual_rollouts": 0, "actual_updates": 0}
 {"experiment_id": "S1-EXPAND-RESUME-20261016-001", "event": "userprovidedreplacement_verified_beforedeployment", "rollouts": 0, "updates": 0}
+{"experiment_id": "S1-EXPAND-ACQUIRE-20261016-001", "event": "launched_once_actual_HF91_passed", "execution_commit": "ebd0880da7cd983f51c8059d5abc35a281c39f7b", "epoch": 1792131445.442048, "PID": 1920, "keep_instance_on": true}
+{"experiment_id": "S1-EXPAND-ACQUIRE-20261016-001", "event": "completed_verified_archive", "valid": 91, "infra_invalid": 0, "official_successes": 65, "GPU_hours": 0.3201536965535747, "parameter_updates": 0, "API_calls": 0, "keep_instance_on": true}
+{"experiment_id": "S1-EXPAND-REPLAY-20261016-001", "event": "182freshbranchreplays_passed", "parameter_updates": 0}
+{"experiment_id": "S1-EXPAND-REVIEW-20261016-001", "event": "new23gap3same_cumulative29gap4same_CPU11passed", "semantic_S1": 36, "semantic_teacher": 28, "parameter_updates": 0, "GPU_training_authorized": false}

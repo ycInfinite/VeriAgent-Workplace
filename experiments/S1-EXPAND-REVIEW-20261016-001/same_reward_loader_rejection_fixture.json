@@ -1,0 +1,21 @@
+{
+  "model_id": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "max_context_tokens": 8192,
+  "initial_adapter_path": "experiments/SFT-S1-20261010-001/adapter",
+  "initial_adapter_sha256": {
+    "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "adapter_model.safetensors": "e85c79de9b938093f406040ac1ad256f0e4d8b599ce06c0e7b8db5e8701680df",
+    "adapter_config.json": "a73305ac2dd22cd7923332bcc2074b12a038d5b4a4a97ac329a8d26c7344fa4b"
+  },
+  "status": "DATA_ONLY_NOT_GPU_TRAINING_QUALIFIED",
+  "pair_artifact": "experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_same_reward_pairs.jsonl.gz",
+  "pair_artifact_sha256": "4cedac10c0e9a1f75d386d6e8e9fb4411749fb84379c14364c7e2b0b02316d4e",
+  "approved_pairs": 4,
+  "GPU_training_authorized": false,
+  "teacher_review": "Codex single reviewer;full pair review required and completed for admittedpairs",
+  "same_reward_artifact": "experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_same_reward_pairs.jsonl.gz",
+  "same_reward_policy": "Separate4;notacceptedbycurrentrewardgaploader;requiresfutureexplicitplan",
+  "next_gate": "ActualHF fullbranch,VRAM/cost andtraining schedule must be registered before updates"
+}

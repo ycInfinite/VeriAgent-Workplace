@@ -1,0 +1,72 @@
+{
+  "status": "PREFERENCE_EXPANSION_REVIEW_COMPLETE",
+  "tasks": 91,
+  "new": {
+    "approved_reward_gap_pair": {
+      "pairs": 23,
+      "domains": {
+        "workplace_assistant_analytics": 13,
+        "workplace_assistant_calendar": 3,
+        "workplace_assistant_customer_relationship_manager": 2,
+        "workplace_assistant_email": 3,
+        "workplace_assistant_project_management": 2
+      },
+      "chosen_target_tokens": 8082,
+      "rejected_target_tokens": 8751,
+      "processed_tokens": 662293,
+      "max_sequence_tokens": 8073
+    },
+    "approved_same_reward_semantic_pair": {
+      "pairs": 3,
+      "domains": {
+        "workplace_assistant_analytics": 2,
+        "workplace_assistant_project_management": 1
+      },
+      "chosen_target_tokens": 877,
+      "rejected_target_tokens": 624,
+      "processed_tokens": 80708,
+      "max_sequence_tokens": 7040
+    }
+  },
+  "cumulative": {
+    "approved_reward_gap_pair": {
+      "pairs": 29,
+      "domains": {
+        "workplace_assistant_analytics": 15,
+        "workplace_assistant_calendar": 7,
+        "workplace_assistant_customer_relationship_manager": 2,
+        "workplace_assistant_email": 3,
+        "workplace_assistant_project_management": 2
+      },
+      "chosen_target_tokens": 9856,
+      "rejected_target_tokens": 11609,
+      "processed_tokens": 846778,
+      "max_sequence_tokens": 8073
+    },
+    "approved_same_reward_semantic_pair": {
+      "pairs": 4,
+      "domains": {
+        "workplace_assistant_project_management": 2,
+        "workplace_assistant_analytics": 2
+      },
+      "chosen_target_tokens": 1310,
+      "rejected_target_tokens": 981,
+      "processed_tokens": 125953,
+      "max_sequence_tokens": 7194
+    }
+  },
+  "dispositions": {
+    "screened_no_reward_gap_not_admitted": 55,
+    "approved_reward_gap_pair": 23,
+    "approved_same_reward_semantic_pair": 3,
+    "screened_supported_S1_no_change_not_admitted": 4,
+    "held_ambiguous_reference": 1,
+    "held_chosen_quality": 1,
+    "held_censored_or_corrupted": 4
+  },
+  "CPU_seconds": 5.118341600002168,
+  "GPU_hours": 0,
+  "API_requests": 0,
+  "parameter_updates": 0,
+  "GPU_training_qualified": false
+}

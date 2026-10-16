@@ -11,7 +11,15 @@ def main():
     sys.stdout.reconfigure(encoding='utf-8')
     with gzip.open(ROOT/'experiments/S1-EXPAND-PREP-20261016-001/teacher_records.jsonl.gz','rt',encoding='utf-8') as f:teachers={x['task_id']:x for x in map(json.loads,f)}
     path=ROOT/'experiments/S1-EXPAND-ACQUIRE-20261016-001/trajectories.jsonl'
-    students={x['task_id']:x for x in map(json.loads,path.read_text(encoding='utf-8').splitlines())} if path.exists() else {}
+    if path.exists():
+        students={x['task_id']:x for x in map(json.loads,path.read_text(encoding='utf-8').splitlines())}
+    else:
+        students={}
+        for snap in (ROOT/'evidence/preference-expansion-20261016/snapshots').glob('*.jsonl'):
+            for x in map(json.loads,snap.read_text(encoding='utf-8').splitlines()):
+                if x['task_id'] in students:assert content_sha256(students[x['task_id']])==content_sha256(x)
+                students[x['task_id']]=x
+        print('REVIEW_SOURCE_COMPLETED_DOMAIN_SNAPSHOTS_NOT_FULL_COLLECTION')
     store=ROOT/'reports/preference-expansion-20261016/rendered_observations.json'
     seen=json.loads(store.read_text(encoding='utf-8')) if a.dedup and store.exists() else {}
     for tid in a.ids:

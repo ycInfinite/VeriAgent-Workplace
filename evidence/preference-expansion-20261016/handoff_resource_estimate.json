@@ -1,0 +1,10 @@
+{
+  "recorded_at_UTC": "2026-10-16T06:53:37.023517+00:00",
+  "keep_instance_on_requested": true,
+  "SSH_closed": true,
+  "no_GPU_compute_at_last_remote_receipt": true,
+  "hours_since_container_start_if_uninterrupted": 0.8193164304892222,
+  "hourly_RMB": null,
+  "cost_RMB": null,
+  "assumption": "No laterplatformrefresh;costcontinuesifinstanceremainson"
+}

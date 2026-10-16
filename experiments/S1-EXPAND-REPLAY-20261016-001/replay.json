@@ -1,0 +1,1279 @@
+{
+  "branches": [
+    {
+      "task_id": 526,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "9cdf833afbd6d02f2d02de103d3f2898770957fad9932ecca9fc8f3bfa21dc73"
+    },
+    {
+      "task_id": 526,
+      "side": "S1",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "f19ff92207d9cff3558595127c7578505fc5293f39e9e2c75e653757d26fcaac"
+    },
+    {
+      "task_id": 549,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "2daf9a03b89cdf95340f52da9b42a2312bf09fcbeb1ee571263868b4683aabb3"
+    },
+    {
+      "task_id": 549,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "e8f95f26620d704bba2391cdf94860b5946902d0fc7546ae7284f146a979eceb"
+    },
+    {
+      "task_id": 174,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "a497132f69139024082c529ff61aa9ae4c747c08adbe9f12d93f9e8aa1141bba"
+    },
+    {
+      "task_id": 174,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "e2d6132ae11b586292627c009054656866a5a8ab23724927c0401dd9a55ea259"
+    },
+    {
+      "task_id": 1099,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "29779688ebd45bc560a1dbe8cd22de73795a6e6d2f0ee01f9fc42135fa2bf0ee"
+    },
+    {
+      "task_id": 1099,
+      "side": "S1",
+      "events": 1,
+      "reward": 0.0,
+      "source_record_sha256": "afa6bb6722bbb7cea9d04ef771fa0de8c893c8cfae7451143344a32e5db757a8"
+    },
+    {
+      "task_id": 469,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "e618e2ffd5b4fb316208f1dcdcd4ca2c711c0df928f79c32de41eae93c78e2f4"
+    },
+    {
+      "task_id": 469,
+      "side": "S1",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "88d00b5dc44b66b63d9467c2f825d1b4f9bb09856223657b1e7611682bc71fde"
+    },
+    {
+      "task_id": 691,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "aefa87b15ae5bf422188904d8a93abc9c07c737f3477dd69f7798c67dd636c13"
+    },
+    {
+      "task_id": 691,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "4fc103d2967184df202b1d2609665b43671feeffb7b6dd6ed8b103997a323497"
+    },
+    {
+      "task_id": 293,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "0711720ce114264b76ab336d44d1869e5575c13a625fbe99bae242b8aa016566"
+    },
+    {
+      "task_id": 293,
+      "side": "S1",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "44c2c92dd16516e04534c9c02d3d1d4a5c92c5cfc6efd43e6642d3b8ca75a5ac"
+    },
+    {
+      "task_id": 698,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "dd38f87cb9455fd106be94d42f2b0ec300b9d7343f594ac74178e11094425fdd"
+    },
+    {
+      "task_id": 698,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "3e42a5d8594d263fdd591150a7671c0682b2e2f5e8d0fd61296d0549f5f226f6"
+    },
+    {
+      "task_id": 544,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "f66cb6cf508311cff62925ec26300de27eb818f24679ac108ed28c918d597cee"
+    },
+    {
+      "task_id": 544,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "324485d7f801f35f031b4a83d70cdabfd1ff3db2caf671af3fc498f670c76350"
+    },
+    {
+      "task_id": 847,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "9d88a08fe6ec3474918553d12f86e2027cca4f90bf3763cf14c1a17da7273346"
+    },
+    {
+      "task_id": 847,
+      "side": "S1",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "df414ba58c2c31421b289b6f08fa0d1dd2cecf6ec4d7f98b6ce3e690b59970b5"
+    },
+    {
+      "task_id": 852,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "c25138155033060f337cde3c234f781cfdfae831123ad634d4131bdbe8aad95e"
+    },
+    {
+      "task_id": 852,
+      "side": "S1",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "4b9793b9bc24e64ba08903f5d93611c4671603d37016884e7957bab455dec669"
+    },
+    {
+      "task_id": 1211,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "7d7b9be39cdbaaca1f4cf987935a51e005393e7aec96f3bcc34536d105bb8c20"
+    },
+    {
+      "task_id": 1211,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "e64de2e9c52bf55d0d74a24ac6ba9421470bd0423bf8635be7e4b825d7db125b"
+    },
+    {
+      "task_id": 34,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "151760363434b6e5d014e01924356da48f8bf72c983b82c897c7dc6cc34c6ca0"
+    },
+    {
+      "task_id": 34,
+      "side": "S1",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "64ffd6887cf41b23840ac8c9f1c2f8bc1aa54f73278ddd7372c36c94dec01a09"
+    },
+    {
+      "task_id": 1134,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "acff5cefe5d1896b7f8d6c1fcc382fb435f1c936588506357e8c009a68423f04"
+    },
+    {
+      "task_id": 1134,
+      "side": "S1",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "61b9dd4727d38a37b565a1c1134e25d6c24200bed0ca4e52feace2796df7cddf"
+    },
+    {
+      "task_id": 408,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "a84ce760efe0267e6170bbcba20528c4d1f5794c431e1366c4d61d0b07d49202"
+    },
+    {
+      "task_id": 408,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "0de9650de28803a52ce29fe96f757d4a7b95b844c8fdf374569469c124d959e5"
+    },
+    {
+      "task_id": 727,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "8a30fcf8d6e5db58157ec6b835bbe529ead679a1bc782a24f17c3534c148e328"
+    },
+    {
+      "task_id": 727,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "42b1477b64ffc1d2b70473768d769ee3dde406a7be01f8763a37bb62627782d7"
+    },
+    {
+      "task_id": 879,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "147dad862b6740d5b465187fcf35ca625c25da3baf048a4bfbb261920ba4f610"
+    },
+    {
+      "task_id": 879,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "0479c16cdc8dca0769183792d2d01bb1f07c972854fa07b5163900207e71e127"
+    },
+    {
+      "task_id": 31,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "7b6001d69f2bd8e146a8902fad07f935ad22bb5d51c9ade9d650cc6143bbd575"
+    },
+    {
+      "task_id": 31,
+      "side": "S1",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "d3c48c1c4c2908c6964b35ac70ff6d2f33087042e310556539f407fdffc192fc"
+    },
+    {
+      "task_id": 1135,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "5b8108be6d55dc57cf227e7bfd7430ccebe222d95bf40fe955b7602b476dc1ba"
+    },
+    {
+      "task_id": 1135,
+      "side": "S1",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "1254b0cc1df8256e4223ac96e64193180da9f6a35a9baf199f6f38365ced5503"
+    },
+    {
+      "task_id": 1020,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "40325d1f360a0036aab1d822a4df491fc6f8b39f66ec18b337912fb8a93006b5"
+    },
+    {
+      "task_id": 1020,
+      "side": "S1",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "e2d67284521fa6d0e550ebb46bdee886277e81e9c0998e57727a7ec77b9ad8ab"
+    },
+    {
+      "task_id": 141,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "01a40058b9b9287c164c9bc51230b747c9120557fd5b362a180ed42e4995a527"
+    },
+    {
+      "task_id": 141,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "2bd287468cfef23ec7b93429c323bb124ada0ea0878e0fdf872ebc2e818454a8"
+    },
+    {
+      "task_id": 50,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "30cc098f855295cc704b039a759f902a93472c862c770a6866fbfbe0283d6b15"
+    },
+    {
+      "task_id": 50,
+      "side": "S1",
+      "events": 6,
+      "reward": 0.0,
+      "source_record_sha256": "229e0104f42fd1d846ed9a90055454a1fd1103b91efc1f35fce0a92cf16cabf1"
+    },
+    {
+      "task_id": 19,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "3631d0eb3b1a4ad552074ea412c667ef4eecab53dedb1d3a8093c88abd245034"
+    },
+    {
+      "task_id": 19,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "65a91edabb4f07bba0fc71f29cfabcf0ebef66e5313b52395c1a624725d62481"
+    },
+    {
+      "task_id": 227,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "c754373c25733f2598485e5d6ae1c59ec8d997e4b14fbaba209c3bdf7bac8876"
+    },
+    {
+      "task_id": 227,
+      "side": "S1",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "ccd56d5fa502a238551327cc079028d3cb1c6409876852bdae7e66d480605de7"
+    },
+    {
+      "task_id": 1209,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "bf73786135f58fb3b73670fcc05b8a9fbf668c7c5ca12e417e6dc06f5f0715d1"
+    },
+    {
+      "task_id": 1209,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "91e7b8f588c0ec9cc5187be84f36ce7cebe0e484ddd76706ab5aa1daa02494b5"
+    },
+    {
+      "task_id": 176,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "bc9fb69d04d6f521fd217a8e963c79af36f1aa4b86aa6b5c9b11675d497c3b38"
+    },
+    {
+      "task_id": 176,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "b953a9acc148d8341f02b22298663ddcd92d2bc02f10c7998c99a7da167a195d"
+    },
+    {
+      "task_id": 17,
+      "side": "teacher",
+      "events": 1,
+      "reward": 1.0,
+      "source_record_sha256": "45b5e902e3c33cd2ee500c997bdb5d0d598ccef47f1aa7ad3abb2d9e1733bdce"
+    },
+    {
+      "task_id": 17,
+      "side": "S1",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "acbc50fbeb4d8fd5b4d95d6ff8bf27d5dc17a59af2b7589a9e4564892afef5a0"
+    },
+    {
+      "task_id": 1107,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "1fe5d7651fcf49fcd1721503f1ceb61f872ba2c6b10ad913b61cd765fb232ca3"
+    },
+    {
+      "task_id": 1107,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "9816d78aac1d9e346f8a2851a1f8b070eb50146c88eaedfb2abfd3b1a91e27b7"
+    },
+    {
+      "task_id": 1185,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "f6b48ae76f87e825aacdd3a97590cdc53c9d4436ad4eb4df6d8352296c6b849b"
+    },
+    {
+      "task_id": 1185,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "e2749010e06d5e5aeac64aa85e192a18c53e6fef4dab9611dc2774e8f268eaee"
+    },
+    {
+      "task_id": 881,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "82e540ab6086cf68614a5a01b8f3612cfb5966a57de94a1891b25987c70c0a1b"
+    },
+    {
+      "task_id": 881,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "1fcbb5ac2b2b7ab49aeed26fbd25b0d833ea64ea5568acb3601c04fedd9e13a2"
+    },
+    {
+      "task_id": 131,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "8d83f8d6cf622c59d5d957d84779bd90b706a4b77050f5bd38d7a6f960b516fb"
+    },
+    {
+      "task_id": 131,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "0bf8c4b3b27428acba53f7b5d18ded4fc83bc56ea1bbdb0053479ad8e4949372"
+    },
+    {
+      "task_id": 1182,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "bd77817d38a75c6581b71aa8f47d23d1f45b6d2560e074f88c49379d65b507ae"
+    },
+    {
+      "task_id": 1182,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "a73f9f9ab937dd381debcd9cd68776b6ee1adbf47d451c270a256309fa2f8fd3"
+    },
+    {
+      "task_id": 368,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "c10331dfc48d2a02261b5b494a3e0330a311327ba03aa703ff28aa12a1efa87e"
+    },
+    {
+      "task_id": 368,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "054c2e16fe71cabccd8270fc97c512866a94a99909b296a0affb9ab30a382019"
+    },
+    {
+      "task_id": 1069,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "ce9c750ee700d12350791dd961486068e4551fd764c720dbbf66c56795bbf2e2"
+    },
+    {
+      "task_id": 1069,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "c344110cb98521ba92b9fa07a807bad9dd0b5ddd91f89a0062807d83fbfd1df1"
+    },
+    {
+      "task_id": 661,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "a1003fd74bd20754e9db511a90b5507c865fd3c021205a568c25f1ac281ed2ab"
+    },
+    {
+      "task_id": 661,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "398fd3ec8fb6dd0477ce788d28e0dc5041158b77ef576a4a9a317eccf59b9446"
+    },
+    {
+      "task_id": 87,
+      "side": "teacher",
+      "events": 7,
+      "reward": 1.0,
+      "source_record_sha256": "dd75a720ee7717b4a6ad2732be909be64fd77998cfeb077d850c0da190718ec9"
+    },
+    {
+      "task_id": 87,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "85c367643c519d7b24d483216dafabbbcf0d3e0c8a06864862457db7887536b4"
+    },
+    {
+      "task_id": 1019,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "b45c86db34785424f368dbc1ba915608799ab77e7a4da1d7605ca23684bba30d"
+    },
+    {
+      "task_id": 1019,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "75160106ff85e5a634a23e1f9ede55872c0fca606973f53cfc48455af47d20dc"
+    },
+    {
+      "task_id": 228,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "4095552b6d009e276995f842fd2ecbd0ddad0748ce5e2286c5cd4b34bbecdf6e"
+    },
+    {
+      "task_id": 228,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "616663017a12e352238996227099144ddfa7c7776d1cb56719fdf6acbc6dd6bd"
+    },
+    {
+      "task_id": 956,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "5438190483386bce8a8195c12ff96cc8fdd6783118e9f05e1fb0c11ee3d49063"
+    },
+    {
+      "task_id": 956,
+      "side": "S1",
+      "events": 3,
+      "reward": 0.0,
+      "source_record_sha256": "5ef0065f8b2b1a3b3036aad20c6db2d5902dbc5bb625fd6fcefd67704680a5b5"
+    },
+    {
+      "task_id": 739,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "38809fcfabac9d0c4857574b614b530273808263e4884f11574f7b9f942287d2"
+    },
+    {
+      "task_id": 739,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "9fe114e8541f76ecfcc04434154482f4c1e32214c280704ab166fe95eda56ea6"
+    },
+    {
+      "task_id": 380,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "e3a7c7fb65e2691a1cdfa9cb24b1a1a633c1c4a5ebee77f6acc33c4fb2939ab7"
+    },
+    {
+      "task_id": 380,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "907275493eb1340c2f62080cbdcb3eb14998f155f1a1e370fa0b686d8d91c158"
+    },
+    {
+      "task_id": 1214,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "c4f302b985704e8adbe1f0f41abfb0bc9beacd047665e077463944a4521dad8a"
+    },
+    {
+      "task_id": 1214,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "51d855ce9f43eadff92dd99f068956c093fc6cf98abbe043a8c3fd49afd58f27"
+    },
+    {
+      "task_id": 1057,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "eaac23e592ff9cbd681cb0c040d53d0e85aff508d52e7d46492250165d490f67"
+    },
+    {
+      "task_id": 1057,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "a48baba0dfd19fc0e7fcdf68c2f6115f689b77466e586738320dd61f7550a8e5"
+    },
+    {
+      "task_id": 278,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "4f86702ed6117e12e9a8db0f305210f13b3b57ed20de16c77c6ae614e920f601"
+    },
+    {
+      "task_id": 278,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "a1e0bc325141e488118216bc6896cad9da61749e61e82af7f4088a432b803b67"
+    },
+    {
+      "task_id": 564,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "88d54f58fa5bd3687dee50c8ddb78cc47a7768280be2d705d1db7a70a288ed7b"
+    },
+    {
+      "task_id": 564,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "5859bf064a8e8e39c1221d1a7d09dbefa3843cfa1eb9152a91a38b37f2a0259f"
+    },
+    {
+      "task_id": 105,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "83d98bb3045a7ccf7364ef59c59373b32d4ac16b260c43c2fcb29025e7e767c6"
+    },
+    {
+      "task_id": 105,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "9f01b3b3eee5da46e4e0f953311c4b3faca93b7b5191062c42c8442cdbf1a1ad"
+    },
+    {
+      "task_id": 556,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "2c168153a99ee3f9be799a713b76702d5abe21f2a9933e2a0e28f1d1c10016b1"
+    },
+    {
+      "task_id": 556,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "8e15992db2d82074436fe1cefb62d2481162fd46c688159824f18124f45805e4"
+    },
+    {
+      "task_id": 643,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "96f37ef8a1b3e13ca8ff2da6f0fd93880dfe6585a19a1c6a3f73262032b2aee9"
+    },
+    {
+      "task_id": 643,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "4e9dec49cd6fc80c549169183d86c65d885f2b1dbdf3de7421f1252e7609be6b"
+    },
+    {
+      "task_id": 538,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "a205bfd0fb95e5c9b8ded260743ec95bb110dc667c7c613e8e8ee82520d78115"
+    },
+    {
+      "task_id": 538,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "d754c04ecb9f4efaaabcffd4b5ab21378f264bf7b26bd65690da202e80472ed9"
+    },
+    {
+      "task_id": 766,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "636ab0d9738a51416a4e0376e2f9906c35bc762f5e72caf70a8702bb201de43e"
+    },
+    {
+      "task_id": 766,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "01388343ccdf919000cbbfaa87e2ba3cc70c8772eb4843c25dfdc6f7938c078f"
+    },
+    {
+      "task_id": 973,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "b2600749ff65f78dcb008b62cafad80e41a87aa189a72558c6cea0a27ea01900"
+    },
+    {
+      "task_id": 973,
+      "side": "S1",
+      "events": 7,
+      "reward": 0.0,
+      "source_record_sha256": "33ad5cc9863de2819aba1107454f0f589ef18e6ea852b3e01b48453f97335eba"
+    },
+    {
+      "task_id": 168,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "166ab7d14f681ecf83affdc55d4e181e4ea6fc4d3cb6663c192ca261ec34c17d"
+    },
+    {
+      "task_id": 168,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "7b4ea8be88eca7b3b3b9cb56c0efef1c2c52e4cbb61a97ad3843c3125b2e3fa4"
+    },
+    {
+      "task_id": 1005,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "afa824b37357d7713e2892e14e95c21a124bd5350b7574cf136599d0efe6ecd9"
+    },
+    {
+      "task_id": 1005,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "c31af45b523280d0ccabdf44737fb5a25ae55cb2a7f6f241f1c217fce3714cac"
+    },
+    {
+      "task_id": 1068,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "648ecac2b14f971b4d95bc2fd960ce9e5bfcedcd24b403e91ee9d96421b21532"
+    },
+    {
+      "task_id": 1068,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "3612524cc2e358776812f4fb3b0529255bee26e711f5bfa2f4cf3b2ca97a9cd6"
+    },
+    {
+      "task_id": 55,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "a51e9c68bae955afa9b36a4ce9441dadaac28ef55699b6e336857843c1220dbd"
+    },
+    {
+      "task_id": 55,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "5cc1803c0bdd6072570d33c9ca2ca4d9c433c6ed912f81d4f08144543178b67e"
+    },
+    {
+      "task_id": 95,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "a2877139671dad73edac85d562406d50eb213762920a7de3b484dd0cf6c34d60"
+    },
+    {
+      "task_id": 95,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "8c767a28aa4ff3895ba2d3af8f1d0dd33149b207f85b812c3434871b82e2b0f9"
+    },
+    {
+      "task_id": 1161,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "0b00f43432eb59f4851a871d4bad449a2ad14791881f8c6d5c4b6f2e2ff71be2"
+    },
+    {
+      "task_id": 1161,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "369c998997c62d54097ad04baa6fda5bc903e9433f44488150951ceda3d28412"
+    },
+    {
+      "task_id": 823,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "da6e42a0247caff235f089f5bf3477daae7cadf6d65b5257f82e97e4f7618b02"
+    },
+    {
+      "task_id": 823,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "b8f1e64fa428c3ed279c9f30425bc902a075ade4b42a1bd748ce3175249db2d0"
+    },
+    {
+      "task_id": 689,
+      "side": "teacher",
+      "events": 6,
+      "reward": 1.0,
+      "source_record_sha256": "2e4eb9bc4daedfaee22be7a4012c1c06d4140904fcc71ec0718f5fb2e503af19"
+    },
+    {
+      "task_id": 689,
+      "side": "S1",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "93e7134989f962d6b7f896cf7dbcb594a35adfc0ef56e6fed8420fa053c52fef"
+    },
+    {
+      "task_id": 690,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "eb3295228eba9745f0e520294809166a07af8a801ed45d496dbec90e596652f5"
+    },
+    {
+      "task_id": 690,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "8bc6660b210e197541c9cc0c3dd14566b1decc5e38a653429660288ace7bb18f"
+    },
+    {
+      "task_id": 201,
+      "side": "teacher",
+      "events": 6,
+      "reward": 1.0,
+      "source_record_sha256": "4af83b27f7171bd90492f24dd48db8ba497f94ff2c33247f14c2a193e2418fdb"
+    },
+    {
+      "task_id": 201,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "7631f17e2b4478780b1b75f3f46dfc0fe95a6724530aa0bc29656860093ef4fe"
+    },
+    {
+      "task_id": 479,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "93376f4b0ff6053789d6211acc199d41388ccf709ad35652f728ec0234f01dc8"
+    },
+    {
+      "task_id": 479,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "033fa292a23d36fa32d729b187577f324d00f34d88db2cc2e8a20899b218c74a"
+    },
+    {
+      "task_id": 1108,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "6076bec40096f3f58fa07bf49f8ea9aaae385ba81892083ca5fe3e6cff507719"
+    },
+    {
+      "task_id": 1108,
+      "side": "S1",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "d29e193d90a26b40e58a09f41ed46dde8b8a8698f1f656b434546d4cc1523b55"
+    },
+    {
+      "task_id": 1036,
+      "side": "teacher",
+      "events": 6,
+      "reward": 1.0,
+      "source_record_sha256": "eeaff071227c1135874c8a52f45791603d459aed7783138c68260b7f0c3bef59"
+    },
+    {
+      "task_id": 1036,
+      "side": "S1",
+      "events": 6,
+      "reward": 0.0,
+      "source_record_sha256": "21bbe6dc070f36c45ee01f80fefccd1f502f54b6089280e0120fb13b51d34950"
+    },
+    {
+      "task_id": 1006,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "30b8eaa89d80b83324ad6ebb9f6b72d710dfd15840cc580b7c3941c993c9a345"
+    },
+    {
+      "task_id": 1006,
+      "side": "S1",
+      "events": 2,
+      "reward": 0.0,
+      "source_record_sha256": "4233f83ebf52ff8e04a9f99e4fcc4cdb50092aeaa4529cbfa7fbefca57992c5e"
+    },
+    {
+      "task_id": 30,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "4ac9f4b1da658472c31ac1d40607981e841c8e3f11de78fce60d7231127b190a"
+    },
+    {
+      "task_id": 30,
+      "side": "S1",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "3629582869550d84505065de6ff3a3513a3c255da8f60b1edebd6a50199f36eb"
+    },
+    {
+      "task_id": 1226,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "fa877ac7bd08041e823526fb808ca64b8f2844057f31b813304ae21efb309a59"
+    },
+    {
+      "task_id": 1226,
+      "side": "S1",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "1a4278a02aef7aaef46d74123f5049c5cbd31170456f329ad1fcaf7348271d5d"
+    },
+    {
+      "task_id": 46,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "c8eba12abd3ca878b488f9294b59e1c110338b7e630169eeecf29c5eb05a6e87"
+    },
+    {
+      "task_id": 46,
+      "side": "S1",
+      "events": 6,
+      "reward": 1.0,
+      "source_record_sha256": "ad69b76874a1dd40f06953ec25f8cfa4ec611df6bfd5eb0a0fb36b1f25ffa514"
+    },
+    {
+      "task_id": 406,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "dc64c073ae591999c0c8369eb5d25b93bade08dc87bcfc765a85f2b3284f5d1d"
+    },
+    {
+      "task_id": 406,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "30400c767a3283ffdad683b0ff3918253cbf290386728f53b923eba4321b860a"
+    },
+    {
+      "task_id": 1072,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "5e6e852c5833601fb93e5a193acfa79b4fd49fec2a7cd862890b5c0d13235459"
+    },
+    {
+      "task_id": 1072,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "af49f2e88d9c0a47ff72c0aa058c618b0e1d48e0c20cf74f52adb59d012939c0"
+    },
+    {
+      "task_id": 1098,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "9a37a42f83695a1926684b60a9faf1eacf3c419769b5ca7fd9916208f695c419"
+    },
+    {
+      "task_id": 1098,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "9200b2762b5770585bf599a24639a547a9a4b29a979c2ab072aee8e2c34c47ac"
+    },
+    {
+      "task_id": 1155,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "61de0ccce9d286f145d18531845e0bc8f9c6961a4d3a4b67d415b8867439d471"
+    },
+    {
+      "task_id": 1155,
+      "side": "S1",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "759799b7f8962a0cbaa257f19fefafbd3490701bad024d8be5547dc96f6289c9"
+    },
+    {
+      "task_id": 765,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "dcb6fe1f1c6584bc21c4c6636f6acc75e78d353ddeee7c5c5f81454e4c9f09b8"
+    },
+    {
+      "task_id": 765,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "d52efb741a373f6d17cfe2b9affec4116e9c8bbb155f0e4410de51736be3ee83"
+    },
+    {
+      "task_id": 666,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "1f48f7bff6e72ef817b42e3d17229e5f8352fa7b83cc9fd14aad2e886a1fccd7"
+    },
+    {
+      "task_id": 666,
+      "side": "S1",
+      "events": 4,
+      "reward": 0.0,
+      "source_record_sha256": "89b040227d40b3b3ec4cc58ee93eb934f2821e728029dbc7c8050262e642a0d4"
+    },
+    {
+      "task_id": 686,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "5f79fde7f5874a4af4422344c5aac3d4f961291393820ad5b5a000da8cdb52cf"
+    },
+    {
+      "task_id": 686,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "c3718468da339e5a660b0965ec4b5a8954c45a82920cfddd25920c8d4095436d"
+    },
+    {
+      "task_id": 848,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "7cd4233ac7995462da445c6bd9cd027b40c1fb7ba4612f318a1925145ebc17a6"
+    },
+    {
+      "task_id": 848,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "53d934e8a6febfe20a4e89611414c0d86917beb4f6afc4a01bedb7e55d1161f9"
+    },
+    {
+      "task_id": 1150,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "1d9e0c4437dd92ba0e516d964c4c22254e716d175a8d8bc85163d37fa606e3b5"
+    },
+    {
+      "task_id": 1150,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "41c0d97a70d2d35572925809526c5d1cfbbdab6ea79adaef54b6043e9aeb098a"
+    },
+    {
+      "task_id": 1047,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "92cd3093aa9995e42ed54e02e176436eae8f50e5ec58abb7bb840b86e7e4ab88"
+    },
+    {
+      "task_id": 1047,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "540b7eb3ca13de3e83519617adef47e1b84afcf986617e0cd8586a12e76497e0"
+    },
+    {
+      "task_id": 1003,
+      "side": "teacher",
+      "events": 6,
+      "reward": 1.0,
+      "source_record_sha256": "3011c45f27fc44dab9fe378c1f0edc10c63ae915ccef47f899b86690f52f2816"
+    },
+    {
+      "task_id": 1003,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "80c677dee9413aeef3839cf4bf7736936e92bb37a6a16a88c492c8005275ae52"
+    },
+    {
+      "task_id": 382,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "6f196df093dec65cb7e6fee7a82d5d0cea65fab485574934322360608f68aee9"
+    },
+    {
+      "task_id": 382,
+      "side": "S1",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "ab38e7f996a3dccb7800abb465bf27dacb719ff7f8927cb2eaa5dfc6b152a114"
+    },
+    {
+      "task_id": 10,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "5cc6540e68ecf9a6705738886a4c22d67a29290de5aaca9e52db0bf5a4b93410"
+    },
+    {
+      "task_id": 10,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "8a5490f9b620a5ce827feaa73bcc11850ecd95e14d40dc182c5866f8d07e0dd4"
+    },
+    {
+      "task_id": 260,
+      "side": "teacher",
+      "events": 6,
+      "reward": 1.0,
+      "source_record_sha256": "048deea2745673ea6ba1a9ea0e5e955323bc1d7c8a7714494bff9b7295008aa6"
+    },
+    {
+      "task_id": 260,
+      "side": "S1",
+      "events": 6,
+      "reward": 1.0,
+      "source_record_sha256": "b47e7c381cbf21ae67be7351361c3f705518fee43918faf2d5112c60b364a0dc"
+    },
+    {
+      "task_id": 907,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "761d853baaedf53348270db8a9b2b682512d61619f8174380775c8ced5968e67"
+    },
+    {
+      "task_id": 907,
+      "side": "S1",
+      "events": 8,
+      "reward": 1.0,
+      "source_record_sha256": "8ea50e39faf1ae49be387bd2765689d90e235c9f2e4f17ab586601d23a973bc3"
+    },
+    {
+      "task_id": 433,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "1b4e861ac0265c2f8e7328c4f9dd2e0a7fd2785f71b4335e899e1c45f1c5d653"
+    },
+    {
+      "task_id": 433,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "82e166434ef0bc22ea30fa7b79d18bac1f330281557423c8e8bfdbb6b4203c0c"
+    },
+    {
+      "task_id": 421,
+      "side": "teacher",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "c7b0bc481725189b9c7b7cd70681e3d7b473a3c895ce34c1db2ba2ee12111dd1"
+    },
+    {
+      "task_id": 421,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "cfa0d0122ab301a67c4c2ca495758d7d58bf48b07a9b5f9d208c6490e684cb39"
+    },
+    {
+      "task_id": 811,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "d22184c0416fc2182f0663f330ad7c5c60f5f8e866e46b5f8427172b5d01917b"
+    },
+    {
+      "task_id": 811,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "cb9e3f57c2aa309defd9847b4f7e96602fd1cc560b291749f9e2d97bc062bf5d"
+    },
+    {
+      "task_id": 416,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "061e39cda48576a4e4c63b72a87772b5169a70b6697188c3b517e3d166520789"
+    },
+    {
+      "task_id": 416,
+      "side": "S1",
+      "events": 7,
+      "reward": 1.0,
+      "source_record_sha256": "6dd40f6a6a92b03ad599cfd73d8290757abae229c0100140ae434fef7addf820"
+    },
+    {
+      "task_id": 1080,
+      "side": "teacher",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "5a4abba97a74f0a72c7f13c2e8b66cb27a67e7127e5989ee3a044360288ea237"
+    },
+    {
+      "task_id": 1080,
+      "side": "S1",
+      "events": 2,
+      "reward": 1.0,
+      "source_record_sha256": "5a519472c002b778a42848af322d4daf3ff157510bbbe11440a16cd1065c4470"
+    },
+    {
+      "task_id": 665,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "6d389019ad8fd38d99868619bf096ddd91566415d094d73ab4e540901b8569a0"
+    },
+    {
+      "task_id": 665,
+      "side": "S1",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "eb152d82b8f72b88cdb81e6c1d1befe922d695dde88e7d9b47c6475dc26c88f2"
+    },
+    {
+      "task_id": 329,
+      "side": "teacher",
+      "events": 5,
+      "reward": 1.0,
+      "source_record_sha256": "924c5731903d8fc0c0373de012423da2973e888a04c06d2d2c2ba320732c2fbc"
+    },
+    {
+      "task_id": 329,
+      "side": "S1",
+      "events": 4,
+      "reward": 1.0,
+      "source_record_sha256": "c8822c131fb48ebe707caef154d0557852e2a808cedd5b4f0f36545474492a55"
+    },
+    {
+      "task_id": 358,
+      "side": "teacher",
+      "events": 3,
+      "reward": 1.0,
+      "source_record_sha256": "7616a6a019b69c493756cebf92a423355ed44d104cd556e2223a543bf9f18aa8"
+    },
+    {
+      "task_id": 358,
+      "side": "S1",
+      "events": 6,
+      "reward": 0.0,
+      "source_record_sha256": "b40a4cd4db192158ed43896c6541f8083a468b21109c3580210cc4a93191a528"
+    }
+  ],
+  "all_equal": true
+}

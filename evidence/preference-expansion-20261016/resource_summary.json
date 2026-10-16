@@ -1,0 +1,21 @@
+{
+  "script_GPU_hours": 0.3201536965535747,
+  "script_seconds": 1152.5533075928688,
+  "container_start_estimate_to_backup_hours": 0.5771857723924849,
+  "first_observation_to_backup_hours": 0.5351056615511577,
+  "allocated_peak_GiB": 17.978039741516113,
+  "reserved_peak_GiB": 23.126953125,
+  "device_peak_GiB": 23.8056640625,
+  "mean_GPU_util_percent": 62.66381766381766,
+  "samples": 1053,
+  "GPU_hours_per_official_success": 0.00492544148543961,
+  "GPU_hours_per_new_gap_pair": 0.013919725937111943,
+  "GPU_hours_per_all_new_pairs": 0.012313603713599026,
+  "hourly_RMB": null,
+  "cost_RMB": null,
+  "invoice_verified": false,
+  "instance_kept_on": true,
+  "SSH_closed": true,
+  "cost_continues": true,
+  "partial_result_downloads_during_collection": true
+}

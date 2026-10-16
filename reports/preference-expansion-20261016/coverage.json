@@ -1,0 +1,21 @@
+{
+  "cumulative_gap_pairs": 29,
+  "domains": {
+    "workplace_assistant_analytics": 15,
+    "workplace_assistant_calendar": 7,
+    "workplace_assistant_customer_relationship_manager": 2,
+    "workplace_assistant_email": 3,
+    "workplace_assistant_project_management": 2
+  },
+  "empty_reference_pairs": 14,
+  "nonempty_reference_pairs": 15,
+  "unique_chosen_tool_sequences": 22,
+  "unique_chosen_tool_names": 16,
+  "nonempty_reference_action_duplicate_groups": [
+    [
+      1069,
+      956
+    ]
+  ],
+  "limits": "Do not collapse everyemptyreference into one semantic family;unique tool sequences are not independent skills or heldoutgeneralization."
+}

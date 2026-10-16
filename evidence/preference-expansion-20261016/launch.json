@@ -1,0 +1,10 @@
+{
+  "PID": 1920,
+  "start_ticks": "1717396675",
+  "boot_id": "4ec45e55-a7e3-4679-89a9-723e035b0ec3",
+  "epoch": 1792131445.442048,
+  "run_id": "S1-EXPAND-ACQUIRE-20261016-001",
+  "execution_commit": "ebd0880da7cd983f51c8059d5abc35a281c39f7b",
+  "keep_instance_on": true,
+  "shutdown_guard": false
+}

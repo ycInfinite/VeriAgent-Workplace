@@ -111,3 +111,10 @@ DPO数据审核区分语义模型错与infra：271越权删除是有效模型失
 37条完整轨迹（全部24empty、9条DPO非空官方失败、三组684seed42、SFT414seed42）。DPO新增明确predicate override：122seed42说条件未满足却仍画图；12seed42以InReview代替空InProgress；709seed43把Nov14相对Nov30当future。不是无依据ID错误。684seed42改善lookup之后真正执行的闭环，另一seed仍OR/分页/不执行失败。SFT414seed42认识到Completed不应选却逐日重复查询耗尽6轮；DPO414两seed直接选Completed任务。相同0reward可对应不同机制。
 
 空任务有依据完成no-change S1/SFT/DPO=4/4/2（分母各8），wholeclean2/2/1；SFT新增reward1的122seed43日期仍错。952两seed的due-today语义边界保留，官方0不改；不把全部9失败简单视为无歧义模型错。指标只覆盖声明的37条，未建全144语义错误率，不导出dev为训练。
+
+
+## 2026-10-16 training91新鲜证据
+
+新增已审核信号：严格不等式边界(31/1020/17)、已知条件不满足仍执行(176)、星期/基准日期错位(879/1107/1185/881/1209)、推迟方向反转(368)、漏Lead约束(973)、OR字符串与分页遗漏(689)、真实邮件ID配捏造收件人(1006)、错时间/发送者/接收者组合(30/1226)、观察内任务优先级排序错(666)、跨owner/同名task日期状态混淆(358)。均来自training池，不使用sealedcases。
+
+811/329产生越界多tool块但输出截断，严格gate未执行导致空reference奖励1；416查询循环耗尽同样奖励1。这3条不是正确克制，也不是infra-invalid。24空任务官方10成功，只有5有依据完整no-change，4整条语义干净；1080不改状态但错误省略InReview。全部36S1+28teacher完整可见复核，其他55非空reward1未新语义准入；全部182分支仅机械回放不等于全语义审核。

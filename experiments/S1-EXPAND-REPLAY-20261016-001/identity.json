@@ -1,0 +1,7 @@
+{
+  "source_collection": "S1-EXPAND-ACQUIRE-20261016-001",
+  "source_sha256": "0340ccf249ca5a325a445c49036fb88d2ae0efed27d43402542e921d296c2696",
+  "teacher_sha256": "c33a2e704cb91f7241e93c778517275651c5cf25e722f5838461af61f9879355",
+  "script_sha256": "f804e6a4f5acaab9f65dc989c0693663fb47f8efc3f78fd4c59fb532172e197b",
+  "scope": "CPU_only_all182_replay_not_semantic_admission"
+}

@@ -1,0 +1,40 @@
+{
+  "S1_full_visible_traces_reviewed": 36,
+  "teacher_full_visible_traces_reviewed": 28,
+  "mechanical_replay_branches": 182,
+  "nonempty_reward1_screened_not_semantically_admitted": 55,
+  "empty_reference_diagnostic": {
+    "trajectories": 24,
+    "official_success": 10,
+    "supported_completed_no_change": 5,
+    "supported_ids": [
+      727,
+      19,
+      201,
+      1080,
+      665
+    ],
+    "whole_semantic_clean": 4,
+    "whole_clean_ids": [
+      727,
+      19,
+      201,
+      665
+    ],
+    "reward1_but_incomplete_ids": [
+      811,
+      416,
+      329
+    ],
+    "reward1_wrong_temporal_scope_ids": [
+      408,
+      141
+    ],
+    "correct_no_change_but_wrong_state_summary_ids": [
+      1080
+    ]
+  },
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "no_hidden_reasoning_review": true
+}
