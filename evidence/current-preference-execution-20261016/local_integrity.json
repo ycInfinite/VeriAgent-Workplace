@@ -1,0 +1,13 @@
+{
+  "raw_archive_members_verified": 65,
+  "raw_archive_sha256": "a85985eb6d4804e10ff437c6cb38d3a2abb71def438d17d8775e118148c635e4",
+  "adapter_files_verified": {
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter/README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter/adapter_model.safetensors": "63fa62e5ebfb936361d945537ea7035ba0a6ffcabbbf07e9b762c30573cde1e2",
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter/adapter_config.json": "e9ebd2d3dd6d8d2cea6185a6b90d111a4f9f843b485e0e3e926e4e2864a19ec3",
+    "experiments/CURPREF-DPO-20261016-001/adapter/README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "experiments/CURPREF-DPO-20261016-001/adapter/adapter_model.safetensors": "b82193562d0cab54f480ee251f34dd797d83f88949e46f201911adfd470c2e8b",
+    "experiments/CURPREF-DPO-20261016-001/adapter/adapter_config.json": "130fd1200ae876e3fa5368fde11d583196a8eee48d934187ebd4607aaa45ae37"
+  },
+  "all_checks_passed": true
+}

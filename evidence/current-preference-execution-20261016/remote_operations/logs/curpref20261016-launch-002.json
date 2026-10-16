@@ -1,0 +1,10 @@
+{
+  "PID": 3576,
+  "start_ticks": "501327544",
+  "boot_id": "38f0ac18-b210-47ad-8431-8daff5970d80",
+  "epoch": 1792126464.3971393,
+  "execution_commit": "6b7898e9c9ca4d82f95e00bf40b1ec0ecbf528f7",
+  "remote_stdlib_import_gate": "passed",
+  "keep_instance_on": true,
+  "shutdown_guard": false
+}

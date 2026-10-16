@@ -1,0 +1,10 @@
+{
+  "observed_epoch": 1792128592.1835725,
+  "keep_instance_on": true,
+  "shutdown_or_mode_change": false,
+  "own_shutdown_guard": false,
+  "collector_or_pipeline_pid_alive": false,
+  "compute_processes": "",
+  "hourly_RMB": null,
+  "allocation_cost_continues": true
+}

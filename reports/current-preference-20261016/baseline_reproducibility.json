@@ -1,0 +1,6 @@
+{
+  "paired_task_seeds": 48,
+  "same_binary_outcomes": 48,
+  "same_visible_messages": 48,
+  "scope": "Reproducibility observation for originalS1 on already exposed dev;does not justify treating repeatedruns as independent samples"
+}

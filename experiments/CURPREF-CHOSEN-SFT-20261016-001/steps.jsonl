@@ -1,0 +1,6 @@
+{"step": 1, "pair_id": "CURRENT-S1-1000-20261016-v1", "loss": 0.5611101016402245, "objective": "task_mean_chosen_CE", "target_tokens": 140, "grad_norm": 2.1189041137695312, "seconds": 3.08315746486187}
+{"step": 2, "pair_id": "CURRENT-S1-51-20261016-v1", "loss": 0.42663657665252686, "objective": "task_mean_chosen_CE", "target_tokens": 236, "grad_norm": 1.3537402153015137, "seconds": 2.6282599875703454}
+{"step": 3, "pair_id": "CURRENT-S1-349-20261016-v1", "loss": 0.361764594912529, "objective": "task_mean_chosen_CE", "target_tokens": 186, "grad_norm": 2.2544732093811035, "seconds": 3.9973901575431228}
+{"step": 4, "pair_id": "CURRENT-S1-1076-20261016-v1", "loss": 0.2038413118571043, "objective": "task_mean_chosen_CE", "target_tokens": 669, "grad_norm": 0.5670486688613892, "seconds": 4.707005656324327}
+{"step": 5, "pair_id": "CURRENT-S1-1194-20261016-v1", "loss": 0.24353177845478058, "objective": "task_mean_chosen_CE", "target_tokens": 220, "grad_norm": 1.2839076519012451, "seconds": 4.0317338621243834}
+{"step": 6, "pair_id": "CURRENT-S1-473-20261016-v1", "loss": 0.251200370490551, "objective": "task_mean_chosen_CE", "target_tokens": 323, "grad_norm": 0.9426450133323669, "seconds": 6.557497280649841}

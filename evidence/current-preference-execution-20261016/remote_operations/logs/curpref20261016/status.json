@@ -1,0 +1,48 @@
+{
+  "started_epoch": 1792126464.4203734,
+  "updated_epoch": 1792128380.853114,
+  "completed": [
+    {
+      "phase": "torch_controls",
+      "ended_epoch": 1792126465.938072,
+      "exit_code": 0
+    },
+    {
+      "phase": "train_data_controls",
+      "ended_epoch": 1792126466.4042025,
+      "exit_code": 0
+    },
+    {
+      "phase": "dev_data_controls",
+      "ended_epoch": 1792126466.8702981,
+      "exit_code": 0
+    },
+    {
+      "phase": "eval_S1",
+      "ended_epoch": 1792127018.8064828,
+      "exit_code": 0
+    },
+    {
+      "phase": "train_CHOSEN_SFT",
+      "ended_epoch": 1792127076.5200899,
+      "exit_code": 0
+    },
+    {
+      "phase": "eval_CHOSEN_SFT",
+      "ended_epoch": 1792127645.7832282,
+      "exit_code": 0
+    },
+    {
+      "phase": "train_DPO",
+      "ended_epoch": 1792127768.9608335,
+      "exit_code": 0
+    },
+    {
+      "phase": "eval_DPO",
+      "ended_epoch": 1792128380.8522913,
+      "exit_code": 0
+    }
+  ],
+  "instance_shutdown_authorized": false,
+  "status": "COMPLETE_KEEP_INSTANCE_ON"
+}

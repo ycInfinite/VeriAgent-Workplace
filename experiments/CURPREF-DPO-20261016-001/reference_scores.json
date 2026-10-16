@@ -1,0 +1,32 @@
+{
+  "CURRENT-S1-1000-20261016-v1": {
+    "cache_key": "36d941ef4e7db33593760ff16d78f0958ff501e497144fc7d06ebdfcee65aaa6",
+    "chosen": -78.55541706085205,
+    "rejected": -34.1944580078125
+  },
+  "CURRENT-S1-51-20261016-v1": {
+    "cache_key": "f86440efe38f0419526776e403ed416d9b90dc386e51146ce92dd566defb8731",
+    "chosen": -100.5238208770752,
+    "rejected": -68.98383665084839
+  },
+  "CURRENT-S1-349-20261016-v1": {
+    "cache_key": "bf6f4ccffb88e3048d6ad394aa2b70a942b521883147c85bb7b0a5d5d6dca5dd",
+    "chosen": -67.23831748962402,
+    "rejected": -44.07630634307861
+  },
+  "CURRENT-S1-1076-20261016-v1": {
+    "cache_key": "dd593b43ecd7c33615ba764aa29cbf93d2e9c3d0f1d3063df73499595727afe7",
+    "chosen": -135.99505233764648,
+    "rejected": -45.18995428085327
+  },
+  "CURRENT-S1-1194-20261016-v1": {
+    "cache_key": "63a59b26ce195c14bc762585802b6e63bb9bf7bb32487d5fd4fb8bd57f7e92ad",
+    "chosen": -53.766218185424805,
+    "rejected": -48.573007106781006
+  },
+  "CURRENT-S1-473-20261016-v1": {
+    "cache_key": "6808f29e968a7952116663cf9e8815bafc1f773c0b3ac4dc08044adc24a7b9d7",
+    "chosen": -81.11563301086426,
+    "rejected": -65.4981141090393
+  }
+}

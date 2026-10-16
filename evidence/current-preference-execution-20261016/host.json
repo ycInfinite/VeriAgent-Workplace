@@ -1,0 +1,11 @@
+{
+  "observed_epoch": 1792126085.0359302,
+  "first_matrix_observed_epoch": 1792125928.5811784,
+  "container_start_estimate": 1792123530.3497627,
+  "hostname": "autodl-container-cvxyhxpra6-2a26255e",
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 595.71.05\n",
+  "hourly_rmb": null,
+  "user_keep_powered_on": true,
+  "no_shutdown_guard_created": true,
+  "new_rental": false
+}

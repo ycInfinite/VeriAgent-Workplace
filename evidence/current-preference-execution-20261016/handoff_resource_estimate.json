@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-10-16T05:36:48.291210+00:00",
+  "instance_requested_keep_on": true,
+  "SSH_closed": true,
+  "no_compute_at_last_remote_check": true,
+  "hours_since_container_start_if_uninterrupted": 1.5216503982411491,
+  "hours_since_matrix_first_observation_if_uninterrupted": 0.8554750049776502,
+  "assumption": "Instance remains ON after final remote receipt;no later independent platform refresh",
+  "hourly_RMB": null,
+  "RMB": null,
+  "ongoing_cost": true
+}

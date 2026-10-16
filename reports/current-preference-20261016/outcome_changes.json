@@ -1,0 +1,92 @@
+{
+  "outcome_changes": [
+    {
+      "task_id": 684,
+      "seed": 42,
+      "scores": {
+        "S1": 0.0,
+        "CHOSEN_SFT": 0.0,
+        "DPO": 1.0
+      },
+      "nonempty": true
+    },
+    {
+      "task_id": 122,
+      "seed": 42,
+      "scores": {
+        "S1": 1.0,
+        "CHOSEN_SFT": 1.0,
+        "DPO": 0.0
+      },
+      "nonempty": false
+    },
+    {
+      "task_id": 12,
+      "seed": 42,
+      "scores": {
+        "S1": 1.0,
+        "CHOSEN_SFT": 1.0,
+        "DPO": 0.0
+      },
+      "nonempty": false
+    },
+    {
+      "task_id": 122,
+      "seed": 43,
+      "scores": {
+        "S1": 0.0,
+        "CHOSEN_SFT": 1.0,
+        "DPO": 1.0
+      },
+      "nonempty": false
+    },
+    {
+      "task_id": 709,
+      "seed": 43,
+      "scores": {
+        "S1": 1.0,
+        "CHOSEN_SFT": 1.0,
+        "DPO": 0.0
+      },
+      "nonempty": false
+    }
+  ],
+  "DPO_nonempty_failures": [
+    [
+      414,
+      42
+    ],
+    [
+      363,
+      42
+    ],
+    [
+      1112,
+      42
+    ],
+    [
+      952,
+      42
+    ],
+    [
+      414,
+      43
+    ],
+    [
+      684,
+      43
+    ],
+    [
+      363,
+      43
+    ],
+    [
+      1112,
+      43
+    ],
+    [
+      952,
+      43
+    ]
+  ]
+}

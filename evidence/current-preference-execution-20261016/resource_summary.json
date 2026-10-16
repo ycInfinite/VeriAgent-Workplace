@@ -1,0 +1,76 @@
+{
+  "runs": {
+    "CURPREF-EVAL-S1-20261016-001": {
+      "wall_seconds": 550.6005065441132,
+      "GPU_hours": 0.15294458515114254,
+      "device_peak_GiB": 21.3095703125,
+      "mean_GPU_util_percent": 69.3249027237354,
+      "samples": 514,
+      "input_tokens": 775142,
+      "output_tokens": 15603,
+      "tool_calls": 161,
+      "executable_calls": 159,
+      "GPU_hours_per_official_success": 0.0043698452900326435
+    },
+    "CURPREF-EVAL-CHOSEN_SFT-20261016-001": {
+      "wall_seconds": 567.9415275417268,
+      "GPU_hours": 0.15776153542825747,
+      "device_peak_GiB": 22.5400390625,
+      "mean_GPU_util_percent": 66.60910815939279,
+      "samples": 527,
+      "input_tokens": 783097,
+      "output_tokens": 15798,
+      "tool_calls": 165,
+      "executable_calls": 163,
+      "GPU_hours_per_official_success": 0.004382264873007152
+    },
+    "CURPREF-EVAL-DPO-20261016-001": {
+      "wall_seconds": 610.575266495347,
+      "GPU_hours": 0.16960424069315194,
+      "device_peak_GiB": 21.1923828125,
+      "mean_GPU_util_percent": 65.93274336283186,
+      "samples": 565,
+      "input_tokens": 792247,
+      "output_tokens": 16961,
+      "tool_calls": 170,
+      "executable_calls": 168,
+      "GPU_hours_per_official_success": 0.004988360020386821
+    },
+    "CURPREF-CHOSEN-SFT-20261016-001": {
+      "wall_seconds": 56.545647331513464,
+      "GPU_hours": 0.01570712425875374,
+      "device_peak_GiB": 35.6279296875,
+      "mean_GPU_util_percent": 51.0,
+      "samples": 52,
+      "allocated_GiB": 21.07071828842163,
+      "reserved_GiB": 34.94140625,
+      "mean_step_seconds": 4.167507401512315,
+      "reference_seconds": 2.4652108550071716e-06
+    },
+    "CURPREF-DPO-20261016-001": {
+      "wall_seconds": 122.12142743635923,
+      "GPU_hours": 0.03392261873232201,
+      "device_peak_GiB": 35.3544921875,
+      "mean_GPU_util_percent": 74.60714285714286,
+      "samples": 112,
+      "allocated_GiB": 21.128328800201416,
+      "reserved_GiB": 34.66796875,
+      "mean_step_seconds": 11.791396580481281,
+      "reference_seconds": 16.46562437620014
+    }
+  },
+  "hourly_RMB": null,
+  "cost_RMB": null,
+  "instance_kept_on": true,
+  "SSH_closed": true,
+  "cost_continues_after_receipt": true,
+  "container_start_estimate_to_final_receipt_hours": 1.4060649471812778,
+  "matrix_first_observation_to_final_receipt_hours": 0.7398895539177789,
+  "invoice_verified": false,
+  "notes": [
+    "Three timing scopes are not additive. Container scope includes earlier25 collection/idle.",
+    "Adaptertransfer happenedafterallGPUruns;small completed-result downloads overlappedlatertraining/eval.",
+    "Single96GBtested;no new80GBqualification."
+  ],
+  "total_script_GPU_hours": 0.5299401042636277
+}

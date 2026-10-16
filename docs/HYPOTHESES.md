@@ -145,3 +145,8 @@ H-preference-added-value在此次12对、单seed、一遍更新、暴露dev设�
 ## 2026-10-16 当前策略负例实测
 
 固定25题一次采集18success/7failure，6个失败具有完整、无歧义的现有教师成功分支；另702可形成reward1对reward1的回答准确性偏好。支持当前S1残余失败可用于数据构建，不支持新负例更优的训练因果结论。仅seed42、教师已审分层抽样、奖励差6对集中analytics/calendar，不能外推全training或称失败已跨seed复现。总体chosen2207/rejected3215targets，5/7chosen更短，但provider/style/length仍混杂。数据少应先说明有效信号及覆盖，再决定扩样或机制验证。
+
+
+## 2026-10-16 六对当前S1偏好实测
+
+DPO相对同chosen SFT非空+2.5pp CI[0,7.5]，总体-4.17pp[-12.5,4.17]，空-37.5pp[-50,-12.5]但仅4任务簇。684seed42重新分配闭环改善；122seed42条件不满足仍作图、12seed42替换状态谓词、709seed43错把过去当未来导致退步。H-current-negative整体增益未建立；不推导DPO无效或已饱和。仅6对/两域/1774chosen targets/单trainseed，数据覆盖与更新量等机制未被消融。旧12对vs新6对同时改任务和数量，不能做负例来源的因果比较。

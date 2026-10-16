@@ -1,0 +1,292 @@
+{
+  "archive_sha256": "a85985eb6d4804e10ff437c6cb38d3a2abb71def438d17d8775e118148c635e4",
+  "archive_bytes": 929405,
+  "files": {
+    "experiments/CURPREF-EVAL-S1-20261016-001/config.json": {
+      "sha256": "8fa714471a3dbda5ae98b4996fd28e152faaf1560b685ff1a99c9fa98d8bcee0",
+      "bytes": 9657
+    },
+    "experiments/CURPREF-EVAL-S1-20261016-001/initial_state.json": {
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958",
+      "bytes": 508460
+    },
+    "experiments/CURPREF-EVAL-S1-20261016-001/identity.json": {
+      "sha256": "4a940f0c5f2169eac5eb2805cc5ed9946c7d91f89f4d12f10b26a74b2cbf4d1a",
+      "bytes": 1096
+    },
+    "experiments/CURPREF-EVAL-S1-20261016-001/gpu_samples.jsonl": {
+      "sha256": "fb2cc0c3307b01c5091926048be790c9c1b898ae58dc1c71049da1ed9e2d0089",
+      "bytes": 86313
+    },
+    "experiments/CURPREF-EVAL-S1-20261016-001/weight_revalidation.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    },
+    "experiments/CURPREF-EVAL-S1-20261016-001/trajectories.jsonl": {
+      "sha256": "ecf9c48ff5fc59703926311817158a630e1996f281020a07e01619438684a506",
+      "bytes": 1992148
+    },
+    "experiments/CURPREF-EVAL-S1-20261016-001/progress.json": {
+      "sha256": "c370d5c039efe03cffd9cb9e673f60b65a5bdf0764d613a48f4fc541a980d829",
+      "bytes": 1000
+    },
+    "experiments/CURPREF-EVAL-S1-20261016-001/result.json": {
+      "sha256": "a994e698b9bb8bc727b219483f42d2f04696902dd43b32ae2f3571850dffeb09",
+      "bytes": 1527
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/config.json": {
+      "sha256": "3dc636482c09a443fcc3b11e86b94b1edf8179cdf2e3bd7a82e7202336cc6947",
+      "bytes": 9665
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/initial_state.json": {
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958",
+      "bytes": 508460
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/identity.json": {
+      "sha256": "50c0ea6cd9c14dc999e98a2e595657267348b6439edb14641d8e3e5210cf6d18",
+      "bytes": 1124
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/gpu_samples.jsonl": {
+      "sha256": "4b06d1773a8f918382bfdef1e8d5e8a54082b50e01ddbef20bc8be21f31dc9e4",
+      "bytes": 88475
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/weight_revalidation.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/trajectories.jsonl": {
+      "sha256": "76b945313eccd9e3c25bd8fe58e8d20171f7924b6836c0d182a5be6d2ee14363",
+      "bytes": 2020898
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/progress.json": {
+      "sha256": "ee8e74fc8222d5fe2bb1a3091272f9b2c5f6f3230029aa22715464117b651ef2",
+      "bytes": 996
+    },
+    "experiments/CURPREF-EVAL-CHOSEN_SFT-20261016-001/result.json": {
+      "sha256": "8973bf2a7020c07555f9f81d55d1913d51f2153f5ad466c8540bd65eaea6f5c3",
+      "bytes": 1531
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/config.json": {
+      "sha256": "379323a4dc5624720aeffbaf052736514fbcc4e738d9fa753fe9e927589c3a18",
+      "bytes": 9658
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/initial_state.json": {
+      "sha256": "8cccad7f9c8d65b5e4caf71a8d951b46c394512014a4e363d3f6a1b84c562958",
+      "bytes": 508460
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/identity.json": {
+      "sha256": "add3bfffbc86ad193a5605828583c5f51d86a1f7ace1bdeda94d942879e3e426",
+      "bytes": 1103
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/gpu_samples.jsonl": {
+      "sha256": "f5cc658a4b6b08105bf505593134162d01aceee14091d6820f0af960628e38c7",
+      "bytes": 94869
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/weight_revalidation.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/trajectories.jsonl": {
+      "sha256": "5c38aa169e053dfc4daf28b66d207ebbad19f74c5e8f5d0b29c4f93dc45e6d4a",
+      "bytes": 2043584
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/progress.json": {
+      "sha256": "694bdd309ad2800855489830ee15fdf8665070cd5e321c86d2f1e40bd2e7e874",
+      "bytes": 1001
+    },
+    "experiments/CURPREF-EVAL-DPO-20261016-001/result.json": {
+      "sha256": "c2cfbc74ac6b2cd9b61156f4722f557b92133498eeed4d2139cfe46055ae112c",
+      "bytes": 1528
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/config.json": {
+      "sha256": "9c825f4c6c164fed43b20c017b6e8cb0aecf122a8c8b2c8de90516d7d71a01e9",
+      "bytes": 7772
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/identity.json": {
+      "sha256": "ebfe6deea4b9f012db2249d2e9114d02e5a9ea6bb743cf3f5e55adc134143e2c",
+      "bytes": 19394
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/gpu_samples.jsonl": {
+      "sha256": "bfc2df5fbcf9f4d4448f6c5ff86f3a4d316fe8c57009bae621ff3763f88e56ff",
+      "bytes": 8654
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/weights.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/torch_cpu_controls.json": {
+      "sha256": "5649a58e8218dc56c3170446a40817e64ff01c9fac413d3002129f6893258b00",
+      "bytes": 498
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/host_preflight.json": {
+      "sha256": "1d57dadbcc2e0dafae7946c13caebeff0f669ae95140d29d8ccdb5fb7786d5d2",
+      "bytes": 259
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/reference_scores.json": {
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "bytes": 2
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/steps.jsonl": {
+      "sha256": "4494b4d445a6d8b86d7962de60ea8c670399e08ab8e6fc6b081772d7c2bb7afa",
+      "bytes": 1216
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter_changes.json": {
+      "sha256": "5c97e09ba14349696f342eb9d38e78f9d4bff290e48e857a610fe2424db6a5e4",
+      "bytes": 49785
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter_manifest.json": {
+      "sha256": "177177601f92302eb5d0567b003a0e7b8dc5bd5dcd13963f62b9ada3d57b81ba",
+      "bytes": 277
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/reload_check.json": {
+      "sha256": "71dbb34c96755d4331c0363c261b2779f9e85e57edd8b292047afe5d7439cf7e",
+      "bytes": 1119
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/result.json": {
+      "sha256": "3d04dfd3fe4e4328c0c1c473fc3f453ead574f6e2e9284c36e0fbe91d439751a",
+      "bytes": 619
+    },
+    "experiments/CURPREF-DPO-20261016-001/config.json": {
+      "sha256": "39895dad48f68beb35319c6d70b4598ed5dc6455532a61ddc459e3444972d752",
+      "bytes": 7765
+    },
+    "experiments/CURPREF-DPO-20261016-001/identity.json": {
+      "sha256": "acadb05fbced8394acb7464479a21871c4dbb12cfcbc0537b8b25f40ae6dd48f",
+      "bytes": 19387
+    },
+    "experiments/CURPREF-DPO-20261016-001/gpu_samples.jsonl": {
+      "sha256": "96c17df7556f1eeb898ce9b8a6bd31a7425c28d6484beb2903a1ce2061948924",
+      "bytes": 18778
+    },
+    "experiments/CURPREF-DPO-20261016-001/weights.json": {
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    },
+    "experiments/CURPREF-DPO-20261016-001/torch_cpu_controls.json": {
+      "sha256": "5649a58e8218dc56c3170446a40817e64ff01c9fac413d3002129f6893258b00",
+      "bytes": 498
+    },
+    "experiments/CURPREF-DPO-20261016-001/host_preflight.json": {
+      "sha256": "1d57dadbcc2e0dafae7946c13caebeff0f669ae95140d29d8ccdb5fb7786d5d2",
+      "bytes": 259
+    },
+    "experiments/CURPREF-DPO-20261016-001/reference_scores.json": {
+      "sha256": "c851905200c82abccf21297cdf4945dad34b49e7922ffdb96726a3dbd790c11b",
+      "bytes": 1163
+    },
+    "experiments/CURPREF-DPO-20261016-001/steps.jsonl": {
+      "sha256": "38f18b3b1595e26c25daf4c47777c4d30eb04d49e796dba525331259a54c0c2a",
+      "bytes": 2748
+    },
+    "experiments/CURPREF-DPO-20261016-001/adapter_changes.json": {
+      "sha256": "948040bad897e57dbca32c563d4827e31efe2a5d63fef3722b4a4662f3012e52",
+      "bytes": 49770
+    },
+    "experiments/CURPREF-DPO-20261016-001/adapter_manifest.json": {
+      "sha256": "b91d2988a6c9c1ba716c327d382df2ca4f8665c64cbc90bc323309e0c1192440",
+      "bytes": 277
+    },
+    "experiments/CURPREF-DPO-20261016-001/reload_check.json": {
+      "sha256": "866d0eb900b931a619ec706ee2a40404ed4a1285983e576ada8cc838aebef925",
+      "bytes": 1243
+    },
+    "experiments/CURPREF-DPO-20261016-001/result.json": {
+      "sha256": "4e4bbd7963829c28d7bccf8a4c99c44b6be413c7c1e599ec0cafc48a706eb267",
+      "bytes": 609
+    },
+    "logs/curpref20261016/torch_controls.log": {
+      "sha256": "2be658a0ea8f23109a489385e96e777b20bed108b811cc2c9cff232f93b4ce90",
+      "bytes": 453
+    },
+    "logs/curpref20261016/status.json": {
+      "sha256": "300bcb2a67862b5fe57f485e5a37c58b65e84a5d0866e11da1cbebd5ebf5ae4d",
+      "bytes": 1038
+    },
+    "logs/curpref20261016/train_data_controls.log": {
+      "sha256": "62bb2cdcaec9aa861cb309f49d170d245598985a365e5bbe0e27b41a36efa5a8",
+      "bytes": 99
+    },
+    "logs/curpref20261016/dev_data_controls.log": {
+      "sha256": "ea829b09a528b501f37425e8aab0c869681fbc42b32ff98c291da30e2de53a9f",
+      "bytes": 168
+    },
+    "logs/curpref20261016/eval_S1.log": {
+      "sha256": "bbcf8bb035b9267ae92469a7274398a67f4620124a4c085b50eb2b084d807c04",
+      "bytes": 1986
+    },
+    "logs/curpref20261016/train_CHOSEN_SFT.log": {
+      "sha256": "ccf4216a19abc2ce1104f5b3ec1cdff58dbe0ac4554959a32b53fbb3b67d2ba5",
+      "bytes": 2536
+    },
+    "logs/curpref20261016/eval_CHOSEN_SFT.log": {
+      "sha256": "65d4c9944993e2270c0c7e772466bce10c05a12b0d8cd3f0bbd72c40b2698d48",
+      "bytes": 1986
+    },
+    "logs/curpref20261016/train_DPO.log": {
+      "sha256": "8f564803467aa199a730f46397b2c590f16e073c78ba837b28ca1a844b1ec0b4",
+      "bytes": 4068
+    },
+    "logs/curpref20261016/eval_DPO.log": {
+      "sha256": "7ef714da17d6d67c8b5ba8a054871a65f3184afce87b92700309ea11a1b30dab",
+      "bytes": 1987
+    },
+    "logs/curpref20261016/preservation.json": {
+      "sha256": "f6f9949fe94afbb589b48eb9a87a6a70ca4d5984c44755f7adb5b77a87b1c4a4",
+      "bytes": 416
+    },
+    "logs/curpref20261016-host.json": {
+      "sha256": "c7f2518e1a70cbe3d585ea5c582b50bb2908d284d371a8f6690f550a4cf152e7",
+      "bytes": 394
+    },
+    "logs/curpref20261016-launch.json": {
+      "sha256": "db1a2b8f9a751a476cb36dcbc7fc24eb137e10e1be6d3aa898f9bf87b07e9a8a",
+      "bytes": 251
+    },
+    "logs/curpref20261016-launch-002.json": {
+      "sha256": "632e9c5fe3c3f24e297f183cd16cf6f212c5cb95fbf77420b03b33773f7de7c0",
+      "bytes": 293
+    },
+    "logs/curpref20261016-boot.log": {
+      "sha256": "eb6c5b87dbc1c9e48324b271f195e2511135f6778d7b8737ec65a1ab8bc21d6e",
+      "bytes": 235
+    },
+    "logs/curpref20261016-boot-002.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "bundle_manifest.json": {
+      "sha256": "3221e8d8be2127430f54f81b534f8c760ea9d138777cb11f8aee73835f3cc565",
+      "bytes": 17883
+    },
+    "experiments/registry.jsonl": {
+      "sha256": "a0d7961ed9ca7d0f15867c6817a0de754420cc015bc6ad72533779e29f2c1ee4",
+      "bytes": 2894
+    }
+  },
+  "adapter_files": {
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter/README.md": {
+      "sha256": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+      "bytes": 5284
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter/adapter_model.safetensors": {
+      "sha256": "63fa62e5ebfb936361d945537ea7035ba0a6ffcabbbf07e9b762c30573cde1e2",
+      "bytes": 174655536
+    },
+    "experiments/CURPREF-CHOSEN-SFT-20261016-001/adapter/adapter_config.json": {
+      "sha256": "e9ebd2d3dd6d8d2cea6185a6b90d111a4f9f843b485e0e3e926e4e2864a19ec3",
+      "bytes": 976
+    },
+    "experiments/CURPREF-DPO-20261016-001/adapter/README.md": {
+      "sha256": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+      "bytes": 5284
+    },
+    "experiments/CURPREF-DPO-20261016-001/adapter/adapter_model.safetensors": {
+      "sha256": "b82193562d0cab54f480ee251f34dd797d83f88949e46f201911adfd470c2e8b",
+      "bytes": 174655536
+    },
+    "experiments/CURPREF-DPO-20261016-001/adapter/adapter_config.json": {
+      "sha256": "130fd1200ae876e3fa5368fde11d583196a8eee48d934187ebd4607aaa45ae37",
+      "bytes": 976
+    }
+  }
+}

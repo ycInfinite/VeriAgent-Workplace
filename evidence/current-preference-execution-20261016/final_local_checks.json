@@ -1,0 +1,6 @@
+{
+  "semantic_source_hashes37_match": true,
+  "old12_config_runners_and_core_unchanged": true,
+  "DPO_gain1_regression3_vs_SFT_confirmed": true,
+  "new_artifact_secret_scan_no_suspected_credentials": true
+}
