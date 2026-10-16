@@ -249,7 +249,10 @@ def main():
     token=fields.get('password')
     if not token:raise RuntimeError('Existing Git authentication incomplete')
     def file_metadata(path):
-        api='https://api.github.com/repos/'+REPOSITORY+'/contents/'+urllib.parse.quote(path,safe='/')+'?ref='+commit
+        # Private raw-file URLs expire. A unique metadata request prevents an
+        # intermediary from serving a stale signed URL for an unchanged ref.
+        # The commit, returned blob SHA and remote SHA256 gates remain unchanged.
+        api='https://api.github.com/repos/'+REPOSITORY+'/contents/'+urllib.parse.quote(path,safe='/')+'?ref='+commit+'&cache_bust='+str(time.time_ns())
         request=urllib.request.Request(api,headers={'Authorization':'Bearer '+token,
             'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',
             'Cache-Control':'no-cache','User-Agent':'VeriAgent-pinned-file-sync'})

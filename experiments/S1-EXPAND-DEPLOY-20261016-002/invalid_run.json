@@ -1,0 +1,10 @@
+{
+  "status": "GITHUB_TRANSPORT_FAILED_BEFORE_MODEL",
+  "commit": "ebd0880",
+  "path": "configs/s1_preference_expansion.json",
+  "phase": "download_verified_files",
+  "HTTP_status": 404,
+  "model_calls": 0,
+  "updates": 0,
+  "next": "Fresh metadata cache key;retain exact ref/blob/path/SHA gates"
+}
