@@ -1,0 +1,17 @@
+{
+  "parent_commit": "f894915c7a5f0f2c518e3b648f7f081181e6a199",
+  "script_sha256": "ca7c32f89ed34c73253156af64c9cf262b5e032b1e0ff2a8d9ee9c7d6e2dff28",
+  "sources": {
+    "experiments/SFT-READY-20260917-001/quality_approvals.json": "ddfb2657e0fd48d23353acc6eeaafa065e3fcac1ad75ea23af31e1012a54fe01",
+    "experiments/NOOP-REVIEW-20261010-001/quality_approvals.json": "742444839f8711f78db2a4c50c350aec6abf8ca4035ed3cf98de3996dbd386d5",
+    "experiments/SFT-READY-20260917-001/selection.json": "c5e698a78609e2637a23f1e5d0f60b7df0091c29acc6c556c2894c87af0ae78d",
+    "experiments/S1-FAILURE-PREP-20261012-002/selection.json": "d5d9559c9cf2ecc75a6b26fe3762bffd6b06ed23ce48874331d99bb57b0f4cd2",
+    "experiments/Q0-SPLIT-20260904-003/split_manifest.json": "903683eefa576ee4da50b2e7c3755a271b30c5425326283a1c613abb1d5adfc4"
+  },
+  "execution_files": {
+    "configs/s1_preference_expansion.json": "50426969201c7f102754b220806c85e4f609963c1bd31fbcd147dcffd9dafd41",
+    "scripts/collect_s1_preference_expansion.py": "c02c9c019fc4a5b87c831a0964f90cf156f141f33ade98a7ba08ecd721b1d741",
+    "experiments/S1-EXPAND-PREP-20261016-001/tasks.jsonl.gz": "833ed55c5ff912910babfb957ea90433bbacb810141887a75bcc48365b7218c0",
+    "experiments/S1-EXPAND-PREP-20261016-001/selection.json": "15e7482d3a7c99fc466ad481364d4edba70fb0fa38b62504a1f9372231a9951c"
+  }
+}

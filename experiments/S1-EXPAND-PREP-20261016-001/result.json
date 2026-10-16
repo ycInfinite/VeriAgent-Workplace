@@ -1,0 +1,25 @@
+{
+  "status": "COHORT91_FROZEN_CPU_CHECKS_PASSED",
+  "checks": {
+    "91unique_originalS1_unseen_prior25_disjoint": true,
+    "67action24empty": true,
+    "all_available_eligible_used_once": true,
+    "five_domains": true,
+    "initial_contexts_fit_without_truncation": true,
+    "exact_originalS1": true,
+    "generation_bounds_unchanged": true,
+    "collector_only_cohort_and_label_changes": true,
+    "four_file_GitHub_whitelist": true,
+    "teacher_not_in_new_collector_payload": true,
+    "no_shutdown": true
+  },
+  "tasks": 91,
+  "nonempty": 67,
+  "empty": 24,
+  "max_initial_tokens": 4203,
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "parameter_updates": 0,
+  "new_pairs_admitted": 0,
+  "pair_yield": "UNMEASURED"
+}

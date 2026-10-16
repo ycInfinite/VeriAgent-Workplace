@@ -1,0 +1,14 @@
+{
+  "host": "connect.westb.seetacloud.com",
+  "port": 33142,
+  "hostname": "autodl-container-66jy6yyh5q-8afb2424",
+  "GPU": "PRO6000 96GB",
+  "driver": "595.58.03",
+  "previous_driver": "595.71.05",
+  "run_id": "S1-EXPAND-ACQUIRE-20261016-001",
+  "keep_instance_on": true,
+  "new_rental_by_agent": false,
+  "hourly_RMB": null,
+  "preregistered_plan": "configs/s1_preference_expansion.json",
+  "old_access_failure": "20057 connection unavailable;AutoDL A61 OFF/freeGPU0;no modelcalls;later userprovidedreplacement"
+}

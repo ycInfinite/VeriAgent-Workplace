@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_EXPANSION_REVIEW_PROTOCOL",
+  "source_collection": "S1-EXPAND-ACQUIRE-20261016-001",
+  "teacher_source": "experiments/S1-EXPAND-PREP-20261016-001/teacher_records.jsonl.gz",
+  "task_count": 91,
+  "must_record": [
+    "task_id",
+    "task_uid",
+    "prompt_context",
+    "tools",
+    "initial_state_sha256",
+    "chosen_source_hash",
+    "rejected_source_hash",
+    "chosen_messages",
+    "rejected_messages",
+    "chosen_verifier",
+    "rejected_verifier",
+    "branch_turns",
+    "branch_tokens",
+    "termination",
+    "failure_category",
+    "why_pair_valid",
+    "reviewer",
+    "independent_review_status"
+  ],
+  "gate_order": [
+    "Check frozen task/S1/code identities and validity;never use dev/final/BFCL",
+    "Replay bothbranch tools/observations/state/verifier;match task,prompt/tools,initialstate",
+    "Review complete chosen semantics again;earlier teacherapproval not sole admission",
+    "Attribute rejected failure to policy rather than infrastructure or reference ambiguity",
+    "Hold incomplete/censored/parse-corrupted branches for this first currentS1 dataset;never rewrite/drop badprefix",
+    "For reward1 rejected branch,require explicit semantic-dominance justification;do not assume rewardgap necessary or sufficient",
+    "Canonical Qwen per-turn encoding;allcompleteassistant targets;system/user/tool observations labels=-100;no truncation",
+    "Export only explicitly approved pairs with provenance;allholds/successes retained"
+  ],
+  "outcome_labels": [
+    "approved_reward_gap_pair",
+    "approved_same_reward_semantic_pair",
+    "held_ambiguous_reference",
+    "held_infrastructure",
+    "held_censored_or_corrupted",
+    "held_chosen_quality",
+    "no_preference_signal",
+    "screened_no_reward_gap_not_admitted",
+    "screened_supported_S1_no_change_not_admitted"
+  ],
+  "not_authorized": [
+    "new teacherAPI",
+    "resamplefailedtasks",
+    "replacementtasks",
+    "DPOparameterupdates",
+    "newrental",
+    "inventorymonitor",
+    "unsealtest"
+  ],
+  "old_DPO_loader_limit": "Old frozen12-pair loader insists rejectedreward0. New same-reward pairs must not be silently inserted;future training admission/plan must explicitly support their reviewed labels.",
+  "review_scope": "Mechanical validity and replay for all182 branches. Fresh whole teacher+S1 review for reward-gap admission candidates and any admitted same-reward pair. All24empty S1 traces reviewed for restraint/semantic candidates. Nonemptyreward1 records without fresh pair review stay screened-not-admitted;do not claim all182 semantic approval.",
+  "prior_pairs": "Preserve existing6reward-gap+1same-reward;new exports separate and union by unique task_uid;do not mix oldBase12 negatives or train."
+}
