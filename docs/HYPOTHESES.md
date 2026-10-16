@@ -158,3 +158,6 @@ DPO相对同chosen SFT非空+2.5pp CI[0,7.5]，总体-4.17pp[-12.5,4.17]，空-3
 
 
 2026-10-16 H-PREF29-PREFLIGHT：179实际HF回合与本地编码一致、最长task358完整SFT/DPO反向可运行在当前96GB。结果：支持限定技术假设（179/179、7/7controls、两梯度有限、504LoRA不变）；不支持推断能力提升或80GB可用。正式29对DPO优于同chosen-SFT仍UNTESTED。证据experiments/PREF29-PREFLIGHT-20261016-001/result.json。
+
+
+2026-10-16 H-PREF29：扩充currentS1失败覆盖是否使DPO优于同chosen-SFT？未获支持：非空两组29/40、差0pp[-7.5,+7.5]；整体33vs34/48。技术更新/重载假设支持，但不证明DPO普遍无效或数据充分；单训练seed/已曝光dev/域不均衡。

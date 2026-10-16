@@ -1,0 +1,37 @@
+{
+  "status": "ALL_SIX_ADAPTER_FILES_SHA256_VERIFIED",
+  "files": [
+    {
+      "path": "experiments/PREF29-CHOSEN-SFT-20261016-001/adapter/README.md",
+      "status": "existing_sha256_verified"
+    },
+    {
+      "path": "experiments/PREF29-CHOSEN-SFT-20261016-001/adapter/adapter_model.safetensors",
+      "status": "four_chunk_full_SHA256_verified",
+      "sha256": "9085f5248eec40d0b20ef531231e8b23ce7a69832eee300ee3002949fcb07792",
+      "bytes": 174655536,
+      "partial_chunks_retained": true
+    },
+    {
+      "path": "experiments/PREF29-CHOSEN-SFT-20261016-001/adapter/adapter_config.json",
+      "status": "existing_sha256_verified"
+    },
+    {
+      "path": "experiments/PREF29-DPO-20261016-001/adapter/README.md",
+      "status": "existing_sha256_verified"
+    },
+    {
+      "path": "experiments/PREF29-DPO-20261016-001/adapter/adapter_model.safetensors",
+      "status": "four_chunk_full_SHA256_verified",
+      "sha256": "ac75caf208b0ddcd2d00652d9fd60df278c0e5e6c0e94f92f62f78cf7b7decd5",
+      "bytes": 174655536,
+      "partial_chunks_retained": true
+    },
+    {
+      "path": "experiments/PREF29-DPO-20261016-001/adapter/adapter_config.json",
+      "status": "existing_sha256_verified"
+    }
+  ],
+  "started_epoch": 1792138376.50794,
+  "ended_epoch": 1792138680.847317
+}

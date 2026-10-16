@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex single reviewer",
+  "fresh_complete_empty_reviews": 24,
+  "fresh_complete_nonempty_reviews": 28,
+  "DPO_nonempty_failures_reviewed": 11,
+  "definitions": {
+    "supported_completed_no_change": "Evidence supportsnochange ANDtrajectoryfinishes;roundcensorednochangestatealoneexcluded.",
+    "whole_trajectory_clean": "Supportedcompletionplusaccurateclaims/noinvalidcalls/unnecessaryrepeat-orunrelatedsearch;single-reviewerjudgment."
+  },
+  "empty_by_condition": {
+    "S1": {
+      "n": 8,
+      "official_success": 5,
+      "supported_completed_no_change": 4,
+      "whole_clean": 2
+    },
+    "CHOSEN_SFT": {
+      "n": 8,
+      "official_success": 5,
+      "supported_completed_no_change": 4,
+      "whole_clean": 2
+    },
+    "DPO": {
+      "n": 8,
+      "official_success": 4,
+      "supported_completed_no_change": 3,
+      "whole_clean": 0
+    }
+  },
+  "limits": "Notfull144trajectorysemanticmetric;noadjudicatedcomprehensivecalllevelwrongtool/wrongargumentrate."
+}

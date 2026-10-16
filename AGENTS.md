@@ -1,5 +1,14 @@
 # VeriAgent-Workplace operating contract
 
+2026-10-16 PREF29 COMPLETE at033a53f2c49d7ce134c1f24cf5dc4efa60a02907. SamehostS1/SFT29/DPO29=35/34/33of48,nonempty30/29/29of40,empty5/5/4of8;144valid0infra. PrimaryDPO-SFT0pp CI[-7.5,+7.5],overall-2.083pp[-8.333,+4.167];noDPOgainestablished. Both29updates/504changed/HF179/7Torch/reload0;DPOrecomputediff0,reference/S1intact. Fresh52traces(24empty+28nonempty),all11DPOnonemptyfailures;empty supportedcompleted4/4/3,wholeclean2/2/0. Onlybinarychanges18seed42SFTregression,1seed43DPOregression,122seed42DPOwrongplot;groundedIDsnotcorrectselection. Raw62members+6adapterfileslocallySHAverified. ScriptGPUh.743010856;backupmatrixallocation0.989213h/containerestimate2.225934h,rateunknown,overlappingnotadditive. TwointerruptedslowSFTPpartials preserved,4channelrecoverypassed;noformalrunretry. Allowncompute/SSHended,KEEP_INSTANCE_ON/no shutdown/guard;ongoingcost. Stopthisstage,noextraepochs/data/API/RL/sealedtests. Nextsuggestion:prepareindependentvalidation/compositionprotocolbeforeexecution,requiresroutedirection. See docs/PREFERENCE29_COMPARISON_20261016.md and docs/daily/2026-10-16-preference29-learning-handoff.md.
+
+
+2026-10-16 PREF29 MODEL MATRIX COMPLETE at033a53f2c49d7ce134c1f24cf5dc4efa60a02907;backup inprogress. S1/SFT29/DPO29=35/34/33of48,nonempty30/29/29of40,empty5/5/4of8;144valid0infra. DPO-SFTprimary0pp CI[-7.5,+7.5],overall-2.083pp[-8.333,+4.167];noDPOgainestablished. Both29updates/504changed/HF179/reload0,referenceintact. Fresh52tracereview(24empty+28nonempty),all11DPOnonemptyfailures;empty supportedcompleted4/4/3,wholeclean2/2/0. Raw62membersSHAverified;GPUprocessesnone. Two slowSFTPdownloadspartiallypreserved, four-channelrecoverycurrentlyactive;SFTadapterfullSHApassed,DPOadapterpending. KEEP_INSTANCE_ON;no rerun/newstage.
+
+
+2026-10-16 PREF29 matrix RUNNING at033a53f2c49d7ce134c1f24cf5dc4efa60a02907 after102GitHubfiles andremoteimport/data gates. PipelinePID6341/startticks1717764099/boot4ec45e55-a7e3-4679-89a9-723e035b0ec3,launch1792135119.6805243;logs/pref29-20261016/status.json,controlSSH40950. SequentialS1eval/CHOSEN_SFT29train+eval/DPO29train+eval;do not redeploy/relaunch or reuseIDs. OriginalS1hashes match,existingGPUidle beforelaunch,one96GB. KEEP_INSTANCE_ON/no guard;preserveevidence andcloseSSH aftermatrix.
+
+
 2026-10-16 user continued after29pairpreflight, authorizing prepared bounded29pair CHOSEN_SFT versusDPO matrix plus same-host S1 baseline/dev24x42/43. Botharms restart originalS1,29taskupdates/oneepoch/lr5e-6/seed42,beta.1;4same-reward excluded. PREF29-PREP-20261016-001 passed14CPUcontrols;prior179HF/longestgradient qualified. New5runIDs in configs/preference29_plan.json;formalruns not yet launched. Same33142host freshlyidle/PRO6000/595.58.03;KEEP_INSTANCE_ON, no guard/rental/API/RL/test. Process9000s/eachscript1800s;rateunknown;allhistoricalruns immutable.
 
 

@@ -188,3 +188,6 @@ DPO-PROBE-20261012-001：reference17.9496s、8pair平均9.64436s，总131.19964s
 
 
 2026-10-16 PREF29-PREFLIGHT-20261016-001：51.072s=.01418664scriptGPUh；device28.417GiB；前阶段回执至本轮回执.463731h，容器累计1.040917h（窗口重叠不能相加）。price/RMB unknown；KEEP_INSTANCE_ON，持续分配费用。
+
+
+2026-10-16 PREF29：训练SFT155.809s/DPO440.585s(含reference74.769s)，eval645.081/692.611/740.753s；合计0.743010856scriptGPUh。最大设备37.583GiB。RMB单价未知。回收前container累计1.990320h包含旧阶段，非独立新增费用；模型结束后仍保持GPU实例ON，含分段下载与等待，最终回执见evidence/preference29-20261016。

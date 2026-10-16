@@ -124,3 +124,6 @@ a, b = branch(c, encoder), branch(s, encoder)
 
 
 后续补充：累计29对已完成实际HF与最长pair零更新梯度检查，见 [29对训练前学习交接](2026-10-16-preference29-preflight-learning-handoff.md)。正式29对更新尚未执行。
+
+
+当日后续实验已完成：见 [29对SFT/DPO对照学习交接](2026-10-16-preference29-learning-handoff.md)。两组各29次更新，S1/SFT/DPO35/34/33，总计144有效评测；本轮未建立DPO额外收益。

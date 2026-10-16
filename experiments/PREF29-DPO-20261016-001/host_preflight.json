@@ -1,0 +1,12 @@
+{
+  "HF_turns_checked": 179,
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "torch_cuda": "12.8",
+  "single_gpu": true
+}

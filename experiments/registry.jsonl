@@ -138,3 +138,13 @@
 {"experiment_id": "S1-EXPAND-REVIEW-20261016-001", "event": "new23gap3same_cumulative29gap4same_CPU11passed", "semantic_S1": 36, "semantic_teacher": 28, "parameter_updates": 0, "GPU_training_authorized": false}
 {"experiment_id": "PREF29-PREFLIGHT-20261016-001", "event": "started", "source": "remote_verified_archive", "execution_commit": "a0a5e5edba40aea97f7058c4b151bfc8d8ae0310", "optimizer_updates": 0}
 {"experiment_id": "PREF29-PREFLIGHT-20261016-001", "event": "completed", "source": "remote_verified_archive", "execution_commit": "a0a5e5edba40aea97f7058c4b151bfc8d8ae0310", "optimizer_updates": 0}
+{"experiment_id": "PREF29-EVAL-S1-20261016-001", "event": "started", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-EVAL-S1-20261016-001", "event": "completed", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-CHOSEN-SFT-20261016-001", "event": "started", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-CHOSEN-SFT-20261016-001", "event": "completed", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-EVAL-CHOSEN_SFT-20261016-001", "event": "started", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-EVAL-CHOSEN_SFT-20261016-001", "event": "completed", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-DPO-20261016-001", "event": "started", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-DPO-20261016-001", "event": "completed", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-EVAL-DPO-20261016-001", "event": "started", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}
+{"experiment_id": "PREF29-EVAL-DPO-20261016-001", "event": "completed", "source": "SHA_verified_remote_archive", "execution_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907"}

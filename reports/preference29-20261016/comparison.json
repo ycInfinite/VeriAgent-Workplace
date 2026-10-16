@@ -1,0 +1,272 @@
+{
+  "primary": "DPO minus CHOSEN_SFT nonempty-reference task success on fixeddev24x42/43",
+  "scope": "exposeddev24,one trainingseed;notsealedgeneralization",
+  "results": {
+    "S1": {
+      "attempted_rollouts": 48,
+      "valid_rollouts": 48,
+      "infra_invalid_rollouts": 0,
+      "verified_successes": 35,
+      "success_rate": 0.7291666666666666,
+      "strata": {
+        "nonempty_reference": {
+          "n": 40,
+          "successes": 30
+        },
+        "empty_reference": {
+          "n": 8,
+          "successes": 5
+        }
+      },
+      "tool_calls": 161,
+      "parse_error_attempts": 0,
+      "executable_tool_calls": 159,
+      "executable_tool_call_rate": 0.9875776397515528,
+      "unknown_tool_calls": 0,
+      "schema_invalid_calls": 2,
+      "identifier_bearing_calls": 76,
+      "ungrounded_identifier_candidate_calls": 0,
+      "repeated_same_state_call_candidates": 3,
+      "retry_loop_trajectories": 0,
+      "premature_termination_candidates": 13,
+      "termination_counts": {
+        "assistant_final": 48
+      },
+      "input_tokens": 775142,
+      "output_tokens": 15603,
+      "average_tool_steps": 3.3541666666666665,
+      "average_trajectory_seconds": 12.914623407414183,
+      "peak_torch_allocated_gib": 17.8376522064209,
+      "candidate_metrics_require_semantic_review": true,
+      "status": "MATCHED_DEV_EVAL_COMPLETE",
+      "condition": "S1",
+      "gpu_hours": 0.17918923344773552,
+      "wall_seconds": 645.0812404118478,
+      "cost_estimate_rmb": null,
+      "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+      "parameter_updates": 0,
+      "scope": "development24 only,not held-out or composition-generalization evidence",
+      "parameter_samples_unchanged": true,
+      "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+    },
+    "CHOSEN_SFT": {
+      "attempted_rollouts": 48,
+      "valid_rollouts": 48,
+      "infra_invalid_rollouts": 0,
+      "verified_successes": 34,
+      "success_rate": 0.7083333333333334,
+      "strata": {
+        "nonempty_reference": {
+          "n": 40,
+          "successes": 29
+        },
+        "empty_reference": {
+          "n": 8,
+          "successes": 5
+        }
+      },
+      "tool_calls": 164,
+      "parse_error_attempts": 0,
+      "executable_tool_calls": 162,
+      "executable_tool_call_rate": 0.9878048780487805,
+      "unknown_tool_calls": 0,
+      "schema_invalid_calls": 2,
+      "identifier_bearing_calls": 77,
+      "ungrounded_identifier_candidate_calls": 0,
+      "repeated_same_state_call_candidates": 2,
+      "retry_loop_trajectories": 0,
+      "premature_termination_candidates": 12,
+      "termination_counts": {
+        "assistant_final": 46,
+        "generation_incomplete": 1,
+        "round_limit": 1
+      },
+      "input_tokens": 780354,
+      "output_tokens": 17099,
+      "average_tool_steps": 3.4166666666666665,
+      "average_trajectory_seconds": 13.882570999286449,
+      "peak_torch_allocated_gib": 17.492881774902344,
+      "candidate_metrics_require_semantic_review": true,
+      "status": "MATCHED_DEV_EVAL_COMPLETE",
+      "condition": "CHOSEN_SFT",
+      "gpu_hours": 0.19239184363848633,
+      "wall_seconds": 692.6106370985508,
+      "cost_estimate_rmb": null,
+      "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+      "parameter_updates": 0,
+      "scope": "development24 only,not held-out or composition-generalization evidence",
+      "parameter_samples_unchanged": true,
+      "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+    },
+    "DPO": {
+      "attempted_rollouts": 48,
+      "valid_rollouts": 48,
+      "infra_invalid_rollouts": 0,
+      "verified_successes": 33,
+      "success_rate": 0.6875,
+      "strata": {
+        "nonempty_reference": {
+          "n": 40,
+          "successes": 29
+        },
+        "empty_reference": {
+          "n": 8,
+          "successes": 4
+        }
+      },
+      "tool_calls": 179,
+      "parse_error_attempts": 1,
+      "executable_tool_calls": 177,
+      "executable_tool_call_rate": 0.9833333333333333,
+      "unknown_tool_calls": 0,
+      "schema_invalid_calls": 2,
+      "identifier_bearing_calls": 85,
+      "ungrounded_identifier_candidate_calls": 0,
+      "repeated_same_state_call_candidates": 4,
+      "retry_loop_trajectories": 1,
+      "premature_termination_candidates": 14,
+      "termination_counts": {
+        "assistant_final": 46,
+        "generation_incomplete": 1,
+        "round_limit": 1
+      },
+      "input_tokens": 815779,
+      "output_tokens": 18616,
+      "average_tool_steps": 3.7291666666666665,
+      "average_trajectory_seconds": 14.904815964245548,
+      "peak_torch_allocated_gib": 17.643895626068115,
+      "candidate_metrics_require_semantic_review": true,
+      "status": "MATCHED_DEV_EVAL_COMPLETE",
+      "condition": "DPO",
+      "gpu_hours": 0.20576462326778305,
+      "wall_seconds": 740.752643764019,
+      "cost_estimate_rmb": null,
+      "semantic_failure_metrics": "PENDING_MANUAL_REVIEW_DO_NOT_REUSE_OLD_ANNOTATIONS",
+      "parameter_updates": 0,
+      "scope": "development24 only,not held-out or composition-generalization evidence",
+      "parameter_samples_unchanged": true,
+      "cost_scope": "Execution record creation through inference completion; earlier input checks/instance uptime/storage excluded"
+    }
+  },
+  "comparisons": {
+    "DPO_minus_CHOSEN_SFT": {
+      "all": {
+        "taskclusters": 24,
+        "rates": {
+          "DPO": 0.6875,
+          "CHOSEN_SFT": 0.7083333333333334
+        },
+        "delta": -0.020833333333333332,
+        "taskcluster95CI": [
+          -0.08333333333333333,
+          0.041666666666666664
+        ]
+      },
+      "nonempty": {
+        "taskclusters": 20,
+        "rates": {
+          "DPO": 0.725,
+          "CHOSEN_SFT": 0.725
+        },
+        "delta": 0.0,
+        "taskcluster95CI": [
+          -0.075,
+          0.075
+        ]
+      },
+      "empty": {
+        "taskclusters": 4,
+        "rates": {
+          "DPO": 0.5,
+          "CHOSEN_SFT": 0.625
+        },
+        "delta": -0.125,
+        "taskcluster95CI": [
+          -0.375,
+          0.0
+        ]
+      }
+    },
+    "CHOSEN_SFT_minus_S1": {
+      "all": {
+        "taskclusters": 24,
+        "rates": {
+          "CHOSEN_SFT": 0.7083333333333334,
+          "S1": 0.7291666666666666
+        },
+        "delta": -0.020833333333333332,
+        "taskcluster95CI": [
+          -0.0625,
+          0.0
+        ]
+      },
+      "nonempty": {
+        "taskclusters": 20,
+        "rates": {
+          "CHOSEN_SFT": 0.725,
+          "S1": 0.75
+        },
+        "delta": -0.025,
+        "taskcluster95CI": [
+          -0.075,
+          0.0
+        ]
+      },
+      "empty": {
+        "taskclusters": 4,
+        "rates": {
+          "CHOSEN_SFT": 0.625,
+          "S1": 0.625
+        },
+        "delta": 0.0,
+        "taskcluster95CI": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "DPO_minus_S1": {
+      "all": {
+        "taskclusters": 24,
+        "rates": {
+          "DPO": 0.6875,
+          "S1": 0.7291666666666666
+        },
+        "delta": -0.041666666666666664,
+        "taskcluster95CI": [
+          -0.10416666666666667,
+          0.0
+        ]
+      },
+      "nonempty": {
+        "taskclusters": 20,
+        "rates": {
+          "DPO": 0.725,
+          "S1": 0.75
+        },
+        "delta": -0.025,
+        "taskcluster95CI": [
+          -0.075,
+          0.0
+        ]
+      },
+      "empty": {
+        "taskclusters": 4,
+        "rates": {
+          "DPO": 0.5,
+          "S1": 0.625
+        },
+        "delta": -0.125,
+        "taskcluster95CI": [
+          -0.375,
+          0.0
+        ]
+      }
+    }
+  },
+  "source_hashes": {
+    "S1": "8b7eee978c1ec44ce193ea06f08d1e97fb2313a92a99092801e8915717376103",
+    "CHOSEN_SFT": "c88f78f690a405ca6eb7650d530cca3e0bd630a633ee6af6bddb9ab484461d7a",
+    "DPO": "ed514b8b11cfc9390e6825fb2e423d141cd2fd4cac359db6ab76961dbc4c17ab"
+  }
+}

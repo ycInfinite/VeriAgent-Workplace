@@ -1,0 +1,70 @@
+{
+  "runs": {
+    "TRAIN_CHOSEN_SFT": {
+      "run": "PREF29-CHOSEN-SFT-20261016-001",
+      "wall_seconds": 155.80917210131884,
+      "GPU_hours": 0.04328032558369967,
+      "device_peak_GiB": 37.5830078125,
+      "utilization_sample_mean_percent": 75.73049645390071,
+      "samples": 141,
+      "mean_update_seconds": 4.003308565323723,
+      "reference_seconds": 2.7865171432495117e-06,
+      "peak_allocated_GiB": 21.53885269165039,
+      "peak_reserved_GiB": 36.896484375
+    },
+    "TRAIN_DPO": {
+      "run": "PREF29-DPO-20261016-001",
+      "wall_seconds": 440.5853883884847,
+      "GPU_hours": 0.12238483010791242,
+      "device_peak_GiB": 37.5634765625,
+      "utilization_sample_mean_percent": 91.60050251256281,
+      "samples": 398,
+      "mean_update_seconds": 11.239132675245918,
+      "reference_seconds": 74.76908431947231,
+      "peak_allocated_GiB": 23.002981185913086,
+      "peak_reserved_GiB": 36.876953125
+    },
+    "EVAL_S1": {
+      "run": "PREF29-EVAL-S1-20261016-001",
+      "wall_seconds": 645.0812404118478,
+      "GPU_hours": 0.17918923344773552,
+      "device_peak_GiB": 21.3095703125,
+      "utilization_sample_mean_percent": 58.984641638225256,
+      "samples": 586,
+      "mean_update_seconds": null,
+      "reference_seconds": null,
+      "peak_allocated_GiB": 17.8376522064209,
+      "peak_reserved_GiB": null
+    },
+    "EVAL_CHOSEN_SFT": {
+      "run": "PREF29-EVAL-CHOSEN_SFT-20261016-001",
+      "wall_seconds": 692.6106370985508,
+      "GPU_hours": 0.19239184363848633,
+      "device_peak_GiB": 21.0791015625,
+      "utilization_sample_mean_percent": 58.65923566878981,
+      "samples": 628,
+      "mean_update_seconds": null,
+      "reference_seconds": null,
+      "peak_allocated_GiB": 17.492881774902344,
+      "peak_reserved_GiB": null
+    },
+    "EVAL_DPO": {
+      "run": "PREF29-EVAL-DPO-20261016-001",
+      "wall_seconds": 740.752643764019,
+      "GPU_hours": 0.20576462326778305,
+      "device_peak_GiB": 22.8681640625,
+      "utilization_sample_mean_percent": 60.107142857142854,
+      "samples": 672,
+      "mean_update_seconds": null,
+      "reference_seconds": null,
+      "peak_allocated_GiB": 17.643895626068115,
+      "peak_reserved_GiB": null
+    }
+  },
+  "total_script_GPU_hours": 0.743010856045617,
+  "matrix_launch_to_rawarchive_hours": 0.7535991481939952,
+  "container_start_estimate_to_rawarchive_hours": 1.9903203072812823,
+  "hourly_rmb": null,
+  "rmb": null,
+  "notes": "Overlappingtimewindows,notadditive;rawarchive beforeadapterretrieval. Smallcompletedresultretrieval overlapslaterphases;alllargeadapterdownloadafterGPUdone. InstancekeptON;ongoingallocationcost;notinvoice."
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "operator_interrupted_slow_SFTP_downloads",
+  "formal_model_runs_affected": 0,
+  "reason": "Switch to boundedfourchannelread-onlycopy;remoteverifiedadapters unchanged",
+  "partial_files": [
+    {
+      "path": "experiments\\PREF29-CHOSEN-SFT-20261016-001\\adapter\\adapter_model.safetensors",
+      "partial_bytes": 68780032,
+      "partial_sha256": "44d487899ce6612a2806c974d236debff202ce07b98537a6d421f13246aea97f",
+      "preserved_as": "experiments\\PREF29-CHOSEN-SFT-20261016-001\\adapter\\adapter_model.safetensors.sftp-incomplete.part"
+    },
+    {
+      "path": "experiments\\PREF29-DPO-20261016-001\\adapter\\adapter_model.safetensors",
+      "partial_bytes": 53772288,
+      "partial_sha256": "cb8b0bcd4f225c1f4f0670f11dd2ca4c0d2476b0e495c1a7da98993593372fa1",
+      "preserved_as": "experiments\\PREF29-DPO-20261016-001\\adapter\\adapter_model.safetensors.sftp-incomplete.part"
+    }
+  ],
+  "epoch": 1792138279.016061
+}

@@ -1,0 +1,75 @@
+{
+  "S1": {
+    "valid_rollouts": 48,
+    "infra_invalid_rollouts": 0,
+    "verified_successes": 35,
+    "tool_calls": 161,
+    "parse_error_attempts": 0,
+    "executable_tool_calls": 159,
+    "unknown_tool_calls": 0,
+    "schema_invalid_calls": 2,
+    "identifier_bearing_calls": 76,
+    "ungrounded_identifier_candidate_calls": 0,
+    "repeated_same_state_call_candidates": 3,
+    "retry_loop_trajectories": 0,
+    "premature_termination_candidates": 13,
+    "input_tokens": 775142,
+    "output_tokens": 15603,
+    "average_tool_steps": 3.3541666666666665,
+    "average_trajectory_seconds": 12.914623407414183,
+    "termination_counts": {
+      "assistant_final": 48
+    },
+    "GPU_hours_per_official_success": 0.005119692384221015
+  },
+  "CHOSEN_SFT": {
+    "valid_rollouts": 48,
+    "infra_invalid_rollouts": 0,
+    "verified_successes": 34,
+    "tool_calls": 164,
+    "parse_error_attempts": 0,
+    "executable_tool_calls": 162,
+    "unknown_tool_calls": 0,
+    "schema_invalid_calls": 2,
+    "identifier_bearing_calls": 77,
+    "ungrounded_identifier_candidate_calls": 0,
+    "repeated_same_state_call_candidates": 2,
+    "retry_loop_trajectories": 0,
+    "premature_termination_candidates": 12,
+    "input_tokens": 780354,
+    "output_tokens": 17099,
+    "average_tool_steps": 3.4166666666666665,
+    "average_trajectory_seconds": 13.882570999286449,
+    "termination_counts": {
+      "assistant_final": 46,
+      "generation_incomplete": 1,
+      "round_limit": 1
+    },
+    "GPU_hours_per_official_success": 0.005658583636426068
+  },
+  "DPO": {
+    "valid_rollouts": 48,
+    "infra_invalid_rollouts": 0,
+    "verified_successes": 33,
+    "tool_calls": 179,
+    "parse_error_attempts": 1,
+    "executable_tool_calls": 177,
+    "unknown_tool_calls": 0,
+    "schema_invalid_calls": 2,
+    "identifier_bearing_calls": 85,
+    "ungrounded_identifier_candidate_calls": 0,
+    "repeated_same_state_call_candidates": 4,
+    "retry_loop_trajectories": 1,
+    "premature_termination_candidates": 14,
+    "input_tokens": 815779,
+    "output_tokens": 18616,
+    "average_tool_steps": 3.7291666666666665,
+    "average_trajectory_seconds": 14.904815964245548,
+    "termination_counts": {
+      "assistant_final": 46,
+      "generation_incomplete": 1,
+      "round_limit": 1
+    },
+    "GPU_hours_per_official_success": 0.006235291614175244
+  }
+}

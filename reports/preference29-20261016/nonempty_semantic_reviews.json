@@ -1,0 +1,254 @@
+[
+  {
+    "condition": "S1",
+    "task_id": 414,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "completed_task_selected",
+    "reason": "Reassigns completed00000061;officialreferenceexpects00000079. IgnoresCompleted status whenranking due dates;urgentselection has additionalstatus/date semantics,do notclaim00000070 isofficialanswer.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 684,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "partial_progress_without_requested_mutation",
+    "reason": "Looks up customers but never resolvesAkira orreassigns;seed42 recoversORfilter thenstops;seed43 repeatsbadOR andmisreadsonepage ascomplete.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 363,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "wrong_time_window",
+    "reason": "UsesOct26 orOct21 instead of4weeks beforeNov30;predicate>true iscorrect butplotperiodwrong.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 1112,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "wrong_time_window_and_sender_filter",
+    "reason": "UsesNov6-12 orOct23-30 aslastweek andforwardsotherpeoplesmessages;schema-validcalls do notensuresemanticarguments.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 952,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "due_date_boundary_caveat",
+    "reason": "MovesNov27/29 only,excludesNov30;officialreference alsoexpectsNov30 atsystemNov30 23:59. Date-onlydue boundaryhassemanticambiguity;retainofficialfailure withoutcallingitunambiguousplanningerror.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 414,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "completed_task_selected",
+    "reason": "Reassigns completed00000061;officialreferenceexpects00000079. IgnoresCompleted status whenranking due dates;urgentselection has additionalstatus/date semantics,do notclaim00000070 isofficialanswer.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 684,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "partial_progress_without_requested_mutation",
+    "reason": "Looks up customers but never resolvesAkira orreassigns;seed42 recoversORfilter thenstops;seed43 repeatsbadOR andmisreadsonepage ascomplete.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 363,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "wrong_time_window",
+    "reason": "UsesOct26 orOct21 instead of4weeks beforeNov30;predicate>true iscorrect butplotperiodwrong.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 1112,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "wrong_time_window_and_sender_filter",
+    "reason": "UsesNov6-12 orOct23-30 aslastweek andforwardsotherpeoplesmessages;schema-validcalls do notensuresemanticarguments.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 952,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "due_date_boundary_caveat",
+    "reason": "MovesNov27/29 only,excludesNov30;officialreference alsoexpectsNov30 atsystemNov30 23:59. Date-onlydue boundaryhassemanticambiguity;retainofficialfailure withoutcallingitunambiguousplanningerror.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 18,
+    "seed": 42,
+    "official_reward": 1,
+    "category": "correct_temporal_last_selection",
+    "reason": "Selects15:30event253 andrenames;latestevent correctdespiteresultsdescending.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "CHOSEN_SFT",
+    "task_id": 18,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "wrong_entity_temporal_order",
+    "reason": "Useslastreturnedrow09:30event200 instead oflatest15:30event253;groundedID butwrongselection.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "CHOSEN_SFT",
+    "task_id": 684,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "round_limit_after_redundant_filter",
+    "reason": "RepeatsinvalidORstatus,finallyqueriesQualified/Proposal andAkira but6roundbudgetendsbeforeassignment;validpolicyfailure.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 414,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "completed_task_selected",
+    "reason": "Selectscompleted00000000andwronglyclaimsalltasksCompleted/Backlog;reference79.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 684,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "incomplete_pagination_partial_mutation",
+    "reason": "Transfers2observedcustomerstomissing2onpage2;claimsboth/allcomplete.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 363,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "wrong_time_window",
+    "reason": "CallsNov19-30fourweeks;wrongplotperiod.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 1112,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "wrong_time_window_and_sender_filter",
+    "reason": "Nov13-20wronglastweek;forwardsRaj/Olga/Luisinstead ofonlyLuis.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 952,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "generation_censored_wrong_scope",
+    "reason": "Attemptsalsomovefutureduetasks;unterminatedmulti-callgenerationstrictlyexecutesnone;morethanjustdue-todayboundary.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 414,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "completed_task_selected",
+    "reason": "Selectscompleted61;falseall-duedatessameclaim.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 1,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "wrong_entity_temporal_order",
+    "reason": "Readsnextpageandchooseslast09:00event165insteadoflatest15:00event252.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 684,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "wrong_owner_filter_and_pagination",
+    "reason": "MissingNadiaqueryfilter;misattributesotherownersProposalrowsandtransfers7;missesremainingQualifiedpage.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 363,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "wrong_time_window",
+    "reason": "UsesOct26- Nov30instead of4weeks.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 1112,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "wrong_time_window_and_sender_filter",
+    "reason": "Oct23-30wronglastweek;forwardsLeilamessagesasLuis.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 952,
+    "seed": 43,
+    "official_reward": 0,
+    "category": "due_date_boundary_caveat",
+    "reason": "MovesNov27/29only;officialexpectstodayNov30too at23:59;retainboundaryambiguity.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "DPO",
+    "task_id": 18,
+    "seed": 42,
+    "official_reward": 1,
+    "category": "correct_temporal_last_selection",
+    "reason": "Selectslatest15:30event253;recoversSFTregression,butS1alreadycorrect.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "S1",
+    "task_id": 1,
+    "seed": 43,
+    "official_reward": 1,
+    "category": "correct_temporal_last_selection",
+    "reason": "Selectslatest15:00event252fromdescendingresult;DPOregresses.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "CHOSEN_SFT",
+    "task_id": 1,
+    "seed": 43,
+    "official_reward": 1,
+    "category": "correct_temporal_last_selection",
+    "reason": "Selectslatest15:00event252fromdescendingresult;DPOregresses.",
+    "complete_visible_review": true
+  },
+  {
+    "condition": "CHOSEN_SFT",
+    "task_id": 684,
+    "seed": 42,
+    "official_reward": 0,
+    "category": "incomplete_pagination_partial_mutation",
+    "reason": "Transferstwofirstpagecustomers,omits2onsecondpage;samemissingpaginationasDPOseed42.",
+    "complete_visible_review": true
+  }
+]

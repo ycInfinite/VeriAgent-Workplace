@@ -1,0 +1,34 @@
+{
+  "pair_artifact_sha256": "035c3fefc6324c7f951190923714ec66bb18c09373d10f03a1c94551550e3e63",
+  "pairs": 29,
+  "domains": {
+    "workplace_assistant_analytics": 15,
+    "workplace_assistant_calendar": 7,
+    "workplace_assistant_customer_relationship_manager": 2,
+    "workplace_assistant_email": 3,
+    "workplace_assistant_project_management": 2
+  },
+  "sides": {
+    "chosen": {
+      "turns": 83,
+      "targets": 9856,
+      "processed": 389709,
+      "max_sequence": 6365
+    },
+    "rejected": {
+      "turns": 96,
+      "targets": 11609,
+      "processed": 457069,
+      "max_sequence": 8073
+    }
+  },
+  "chosen_shorter_target_pairs": 20,
+  "chosen_longer_target_pairs": 9,
+  "length_normalization": false,
+  "forward_token_accounting_excluding_reload_readout": {
+    "SFT": 389709,
+    "DPO_reference": 846778,
+    "DPO_policy_scoring_and_gradient_recompute": 1693556,
+    "note": "Algorithmic input token occurrences;checkpoint backward recomputation/FLOPs not included."
+  }
+}

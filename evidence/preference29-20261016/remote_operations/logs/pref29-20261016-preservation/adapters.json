@@ -1,0 +1,26 @@
+{
+  "experiments/PREF29-CHOSEN-SFT-20261016-001/adapter/README.md": {
+    "sha256": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "bytes": 5284
+  },
+  "experiments/PREF29-CHOSEN-SFT-20261016-001/adapter/adapter_model.safetensors": {
+    "sha256": "9085f5248eec40d0b20ef531231e8b23ce7a69832eee300ee3002949fcb07792",
+    "bytes": 174655536
+  },
+  "experiments/PREF29-CHOSEN-SFT-20261016-001/adapter/adapter_config.json": {
+    "sha256": "a95ceab572432c2da008b834a81839d9625b20136536a9fa15d495f3035ab505",
+    "bytes": 976
+  },
+  "experiments/PREF29-DPO-20261016-001/adapter/README.md": {
+    "sha256": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "bytes": 5284
+  },
+  "experiments/PREF29-DPO-20261016-001/adapter/adapter_model.safetensors": {
+    "sha256": "ac75caf208b0ddcd2d00652d9fd60df278c0e5e6c0e94f92f62f78cf7b7decd5",
+    "bytes": 174655536
+  },
+  "experiments/PREF29-DPO-20261016-001/adapter/adapter_config.json": {
+    "sha256": "9aaa2ac22eed95ee619c35b22117371357e640208aee1c8c4a8ef0a59bc939fa",
+    "bytes": 976
+  }
+}

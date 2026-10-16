@@ -1,0 +1,1298 @@
+{
+  "a59704f1a6191f89346635f5fcfbfd961014102980e69cf51ce6d95bd725b563": {
+    "2023-11-27": 4
+  },
+  "9fbc8ed0c1a91c7c2ff94b7889a0c35a4abd0fcd7762bec3d289e67f6e3df29c": {
+    "2023-11-30": 4
+  },
+  "7540050835e4bbd9f3305719cc8f12bb002e2cda60b052f6e5362a2966daf052": {
+    "events": [
+      {
+        "event_id": "00000026",
+        "event_name": "Supply Chain Enhancement Workshop",
+        "participant_email": "sofia.santos@atlas.com",
+        "event_start": "2023-11-14 12:30:00",
+        "duration": "90"
+      },
+      {
+        "event_id": "00000125",
+        "event_name": "Supply Chain Enhancement Workshop",
+        "participant_email": "santiago.martinez@atlas.com",
+        "event_start": "2023-10-27 15:30:00",
+        "duration": "120"
+      },
+      {
+        "event_id": "00000221",
+        "event_name": "Supply Chain Enhancement Workshop",
+        "participant_email": "fatima.khan@atlas.com",
+        "event_start": "2023-10-12 15:00:00",
+        "duration": "90"
+      },
+      {
+        "event_id": "00000115",
+        "event_name": "Supply Chain Enhancement Workshop",
+        "participant_email": "leila.azizi@atlas.com",
+        "event_start": "2023-09-21 15:30:00",
+        "duration": "90"
+      },
+      {
+        "event_id": "00000116",
+        "event_name": "Supply Chain Enhancement Workshop",
+        "participant_email": "lena.schmidt@atlas.com",
+        "event_start": "2023-09-14 13:30:00",
+        "duration": "90"
+      }
+    ],
+    "pagination": {
+      "total_events": 5,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "7dad76f1ee2aad7d6c45f8e99a2581913cbbb5042953674eeb56eb764f39e728": [
+    "leila.azizi@atlas.com"
+  ],
+  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945": [],
+  "7a532a1aa6cf5d154162f59f8e89bb2456a8dfbe7b1a49fc3fb18ba03a285971": [
+    {
+      "task_id": "00000149",
+      "task_name": "Add animation to carousel",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-11-27",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000151",
+      "task_name": "Fix alignment issue in profile page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-11-27",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000192",
+      "task_name": "Add animation to form submission button",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-27",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000113",
+      "task_name": "Design UI for landing page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "In Review",
+      "due_date": "2023-11-29",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000190",
+      "task_name": "Fix alignment issue in dashboard",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-11-29",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000111",
+      "task_name": "Fix alignment issue in settings page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-01",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000119",
+      "task_name": "Add animation to modal window",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-02",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000177",
+      "task_name": "Implement responsive layout for profile page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-03",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000155",
+      "task_name": "Design UI for settings page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-04",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000161",
+      "task_name": "Add animation to navigation bar",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-04",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000157",
+      "task_name": "Design UI for profile page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "In Review",
+      "due_date": "2023-12-04",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000112",
+      "task_name": "Fix alignment issue in homepage",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-12-05",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000144",
+      "task_name": "Fix alignment issue in landing page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-07",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000142",
+      "task_name": "Integrate REST API with frontend",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-08",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000143",
+      "task_name": "Implement responsive layout for homepage",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-08",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000163",
+      "task_name": "Integrate Google Maps API with frontend",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-09",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000168",
+      "task_name": "Implement responsive layout for settings page",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-12",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000118",
+      "task_name": "Add animation to dropdown menu",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "In Review",
+      "due_date": "2023-12-12",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000121",
+      "task_name": "Integrate Twilio SMS API with frontend",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "In Review",
+      "due_date": "2023-12-13",
+      "board": "Front end"
+    },
+    {
+      "task_id": "00000182",
+      "task_name": "Design UI for homepage",
+      "assigned_to_email": "leila.azizi@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-12-13",
+      "board": "Front end"
+    }
+  ],
+  "965592892b653834d7954a8b6d158a3c43b09b22975786ba541660626d3d8592": "plots/2023-11-01_2023-11-30_visits_social_media_bar.png",
+  "d97daffa9c250bb4f8310d9c9dcc0a7804ad703c11b88b023a377fcb6fd61132": "plots/2023-11-01_2023-11-30_visits_direct_bar.png",
+  "a3f4391691be816815ca116ad244b4f3fbcda3c92245cb3042578eb0b7bcc75e": {
+    "2023-11-01": 15,
+    "2023-11-02": 13,
+    "2023-11-03": 12,
+    "2023-11-04": 9,
+    "2023-11-05": 10,
+    "2023-11-06": 10,
+    "2023-11-07": 12,
+    "2023-11-08": 11,
+    "2023-11-09": 12,
+    "2023-11-10": 11,
+    "2023-11-11": 10,
+    "2023-11-12": 12,
+    "2023-11-13": 8,
+    "2023-11-14": 15,
+    "2023-11-15": 11,
+    "2023-11-16": 7,
+    "2023-11-17": 7,
+    "2023-11-18": 6,
+    "2023-11-19": 10,
+    "2023-11-20": 13,
+    "2023-11-21": 11,
+    "2023-11-22": 10,
+    "2023-11-23": 8,
+    "2023-11-24": 9,
+    "2023-11-25": 14,
+    "2023-11-26": 6,
+    "2023-11-27": 6,
+    "2023-11-28": 19,
+    "2023-11-29": 9,
+    "2023-11-30": 7
+  },
+  "d194fa84f343f45123b1f683d3ae1a21787f96cd6dda3e2743063a63d2c08b69": {
+    "2023-11-01": 12,
+    "2023-11-02": 5,
+    "2023-11-03": 7,
+    "2023-11-04": 5,
+    "2023-11-05": 5,
+    "2023-11-06": 6,
+    "2023-11-07": 4,
+    "2023-11-08": 6,
+    "2023-11-09": 8,
+    "2023-11-10": 8,
+    "2023-11-11": 5,
+    "2023-11-12": 8,
+    "2023-11-13": 6,
+    "2023-11-14": 6,
+    "2023-11-15": 9,
+    "2023-11-16": 3,
+    "2023-11-17": 4,
+    "2023-11-18": 3,
+    "2023-11-19": 5,
+    "2023-11-20": 8,
+    "2023-11-21": 8,
+    "2023-11-22": 4,
+    "2023-11-23": 6,
+    "2023-11-24": 3,
+    "2023-11-25": 9,
+    "2023-11-26": 4,
+    "2023-11-27": 5,
+    "2023-11-28": 12,
+    "2023-11-29": 4,
+    "2023-11-30": 4
+  },
+  "110e786fb80b2594ff4596a199882fcbe069b1e7f1f348ea0c5795dd29fb7f82": {
+    "2023-11-01": 2,
+    "2023-11-02": 5,
+    "2023-11-03": 3,
+    "2023-11-04": 2,
+    "2023-11-05": 4,
+    "2023-11-06": 2,
+    "2023-11-07": 5,
+    "2023-11-08": 3,
+    "2023-11-09": 1,
+    "2023-11-10": 2,
+    "2023-11-11": 3,
+    "2023-11-12": 2,
+    "2023-11-13": 1,
+    "2023-11-14": 3,
+    "2023-11-15": 1,
+    "2023-11-16": 1,
+    "2023-11-17": 1,
+    "2023-11-18": 2,
+    "2023-11-19": 1,
+    "2023-11-20": 2,
+    "2023-11-21": 0,
+    "2023-11-22": 3,
+    "2023-11-23": 0,
+    "2023-11-24": 4,
+    "2023-11-25": 4,
+    "2023-11-26": 0,
+    "2023-11-27": 1,
+    "2023-11-28": 5,
+    "2023-11-29": 4,
+    "2023-11-30": 2
+  },
+  "bbe4fdc68dfce12b223c49ef054894055c3198ccd9e11e135ab9ea6f59259e21": {
+    "2023-11-27": 4,
+    "2023-11-28": 8,
+    "2023-11-29": 4,
+    "2023-11-30": 4
+  },
+  "6fbc63ca13d463be2153618efc596aa4eb17f1ace423afe751b4bf178384aa48": "plots/2023-11-27_2023-11-30_user_engaged_line.png",
+  "466314be699c78da25de534b978f45143b9d2a95075efbd75e89154b8ae967b6": [
+    "aisha.chen@atlas.com"
+  ],
+  "44ccf12fb7f56925806b462b78cf6890a5834b1b47fbec50171f8a45b6f502d1": [
+    "carlos.rodriguez@atlas.com"
+  ],
+  "ce29104b51e1eb489db474de072a9ab41b5c973f3a4a092228a9b1b577ae3ed8": [
+    {
+      "task_id": "00000061",
+      "task_name": "Update Flask to latest version",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-27",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000031",
+      "task_name": "Fix bug in user management module",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-27",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000011",
+      "task_name": "Update Django to latest version",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-27",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000000",
+      "task_name": "Implement report generation API",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-28",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000051",
+      "task_name": "Add authentication for cloud storage",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-28",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000088",
+      "task_name": "Add authentication for third-party login",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-29",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000047",
+      "task_name": "Implement login system API",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-11-29",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000070",
+      "task_name": "Implement search functionality API",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "In Review",
+      "due_date": "2023-11-30",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000079",
+      "task_name": "Fix bug in content delivery module",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-01",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000057",
+      "task_name": "Fix bug in user authentication module",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-04",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000019",
+      "task_name": "Implement data export API",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-04",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000042",
+      "task_name": "Optimize database query for search functionality",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-05",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000097",
+      "task_name": "Optimize database query for user management",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-05",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000025",
+      "task_name": "Fix bug in payment processing module",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "In Review",
+      "due_date": "2023-12-07",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000059",
+      "task_name": "Optimize database query for content delivery",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-07",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000087",
+      "task_name": "Update Node.js to latest version",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-08",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000080",
+      "task_name": "Optimize database query for report generation",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "In Review",
+      "due_date": "2023-12-09",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000026",
+      "task_name": "Implement user profile management API",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-10",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000022",
+      "task_name": "Update react to latest version",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-10",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000001",
+      "task_name": "Implement payment gateway API",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-12-11",
+      "board": "Back end"
+    },
+    {
+      "task_id": "00000033",
+      "task_name": "Fix bug in data storage module",
+      "assigned_to_email": "aisha.chen@atlas.com",
+      "list_name": "Completed",
+      "due_date": "2023-12-11",
+      "board": "Back end"
+    }
+  ],
+  "b026758fb7d487d23cacf7c383fe2b4dea3cb12eff8b5897f7076fdbda08d381": "Task updated successfully.",
+  "ae2f943a44be219b1449914e42453e1562896b6c7285202614beaad4b27cecde": [
+    "nadia.moreau@atlas.com"
+  ],
+  "330e61fcff196722b39e064e736b8d421bc0b28689d3ea55bee1164f6c2c5dd4": "No customers found.",
+  "0271c30da1de890a937012d1345867133129ded8196071368606d0a26b78dbce": {
+    "customers": [
+      {
+        "customer_id": "00000049",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Alex Garcia",
+        "customer_email": "alex.garcia@nextdynamiclabs",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-05 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-11-21 23:59:00",
+        "notes": "2023-11-10: Met in person. "
+      },
+      {
+        "customer_id": "00000162",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Jessie Brown",
+        "customer_email": "jessie.brown@cyberpeaklogics",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-10-14 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-11-06 23:59:00",
+        "notes": "2023-10-24: Had a call. 2023-11-09: Met in person. 2023-11-12: Met in person. "
+      },
+      {
+        "customer_id": "00000096",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Peyton Moore",
+        "customer_email": "peyton.moore@pointtech",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-10-05 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-10-21 23:59:00",
+        "notes": "2023-10-29: Had a call. 2023-10-04: Saw the demo. 2023-11-23: Saw the demo. "
+      }
+    ],
+    "pagination": {
+      "total_customers": 3,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "49ecb9ed9430ca8b47f123d34a6cb9cdd39ecb9e8864d1011f691f4c7ffcdd38": {
+    "customers": [
+      {
+        "customer_id": "00000198",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Angel Williams",
+        "customer_email": "angel.williams@techinteractivefoods",
+        "customer_phone": "368-320-1652",
+        "last_contact_date": "2023-11-29 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-12-07 23:59:00",
+        "notes": "2023-11-02: Saw the demo. 2023-11-10: Met in person. 2023-10-28: Met in person. "
+      }
+    ],
+    "pagination": {
+      "total_customers": 1,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "dceb87fdbf737325b3b3470beee6500222716631ef2cef8355aa81cce67067ee": {
+    "2023-10-26": 10,
+    "2023-10-27": 11,
+    "2023-10-28": 18,
+    "2023-10-29": 14,
+    "2023-10-30": 12,
+    "2023-10-31": 9,
+    "2023-11-01": 15,
+    "2023-11-02": 13,
+    "2023-11-03": 12,
+    "2023-11-04": 9,
+    "2023-11-05": 10,
+    "2023-11-06": 10,
+    "2023-11-07": 12,
+    "2023-11-08": 11,
+    "2023-11-09": 12,
+    "2023-11-10": 11,
+    "2023-11-11": 10,
+    "2023-11-12": 12,
+    "2023-11-13": 8,
+    "2023-11-14": 15,
+    "2023-11-15": 11,
+    "2023-11-16": 7,
+    "2023-11-17": 7,
+    "2023-11-18": 6,
+    "2023-11-19": 10,
+    "2023-11-20": 13,
+    "2023-11-21": 11,
+    "2023-11-22": 10,
+    "2023-11-23": 8,
+    "2023-11-24": 9,
+    "2023-11-25": 14,
+    "2023-11-26": 6,
+    "2023-11-27": 6,
+    "2023-11-28": 19,
+    "2023-11-29": 9,
+    "2023-11-30": 7
+  },
+  "0a515c2698aede79a7c4bd0b2915b9c91e8c6db2c9c67d6c9cec298b5e73bdc2": "plots/2023-10-26_2023-11-30_total_visits_line.png",
+  "d918d286568be390e9dada5fb9886cb2acb677fb7a6ac202aca9d90575b98b05": [
+    "luis.ortiz@atlas.com"
+  ],
+  "d3b0a0201c6f8d5aacc73dfe89ed360fdda56ceda133d37c9536ce41ce845be0": [
+    "lena.schmidt@atlas.com"
+  ],
+  "ff2c1cb8ff307783674aadc7ecdd350b3fc2d05323ac81c62919b2fac7814c9d": {
+    "emails": [
+      {
+        "email_id": "00000122",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "luis.ortiz@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-11-12 10:28:20",
+        "body": "Hi Sam,\\n\\nStarting on 'Add animation to form submission button' today. Any preliminary thoughts or resources you recommend before I dive in?\\n\\nRegards,\\nLuis"
+      },
+      {
+        "email_id": "00000157",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "anaya.patel@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-11-07 15:03:31",
+        "body": "Hey Sam,\\n\\nRegarding task 'Add animation to form submission button', I've made significant progress but have hit a snag with database integration. Could use a brainstorm session.\\n\\nRegards,\\nAnaya"
+      }
+    ],
+    "pagination": {
+      "total_emails": 2,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "23a29dd5b4775783bb6116896ce14ab6a295bc4351ab0967914542017d05a5ac": "Email forwarded successfully.",
+  "41d7155d7ca426fc65007a1a0ef79cb50cf0381c1852c8f8338a2a3a28596a74": [
+    "jinsoo.kim@atlas.com"
+  ],
+  "73d3e858d146724acb2a1bebbb19ebbebfb474be49f7dcffec3fcd014855c13d": [
+    {
+      "task_id": "00000250",
+      "task_name": "Develop prototype for payment gateway",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-11-27",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000257",
+      "task_name": "Develop prototype for search functionality",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-11-29",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000246",
+      "task_name": "Design logo for admin panel",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-11-30",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000290",
+      "task_name": "Update brand colors in admin panel",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-01",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000282",
+      "task_name": "Update brand colors in blog",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-04",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000283",
+      "task_name": "Create wireframe for profile page",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-04",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000206",
+      "task_name": "Improve UX of content creation",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-05",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000239",
+      "task_name": "Create wireframe for dashboard",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-05",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000212",
+      "task_name": "Improve UX of onboarding process",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-06",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000254",
+      "task_name": "Develop prototype for data export",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-06",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000298",
+      "task_name": "Create wireframe for landing page",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-10",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000285",
+      "task_name": "Create wireframe for homepage",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-11",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000281",
+      "task_name": "Develop prototype for login system",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-11",
+      "board": "Design"
+    },
+    {
+      "task_id": "00000284",
+      "task_name": "Design logo for mobile app",
+      "assigned_to_email": "jinsoo.kim@atlas.com",
+      "list_name": "Backlog",
+      "due_date": "2023-12-13",
+      "board": "Design"
+    }
+  ],
+  "8171521ee890b7fba0c948f4fdd27f1ec093e2466fd74f17398589bdc65ee947": {
+    "customers": [
+      {
+        "customer_id": "00000198",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Angel Williams",
+        "customer_email": "angel.williams@techinteractivefoods",
+        "customer_phone": "368-320-1652",
+        "last_contact_date": "2023-11-29 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-12-07 23:59:00",
+        "notes": "2023-11-02: Saw the demo. 2023-11-10: Met in person. 2023-10-28: Met in person. "
+      },
+      {
+        "customer_id": "00000076",
+        "assigned_to_email": "lena.schmidt@atlas.com",
+        "customer_name": "Dakota Wilson",
+        "customer_email": "dakota.wilson@pointsystems",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-27 23:59:00",
+        "product_interest": "Software",
+        "status": "Lead",
+        "follow_up_by": "2023-12-24 23:59:00",
+        "notes": "2023-10-04: Met in person. 2023-10-18: On holiday. "
+      },
+      {
+        "customer_id": "00000125",
+        "assigned_to_email": "sofia.santos@atlas.com",
+        "customer_name": "Morgan Robinson",
+        "customer_email": "morgan.robinson@ecoscopeinnovations",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-22 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-11-29 23:59:00",
+        "notes": NaN
+      },
+      {
+        "customer_id": "00000183",
+        "assigned_to_email": "lena.schmidt@atlas.com",
+        "customer_name": "Shannon Harris",
+        "customer_email": "shannon.harris@ecopointtech",
+        "customer_phone": "596-239-4196",
+        "last_contact_date": "2023-11-22 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-12-11 23:59:00",
+        "notes": "2023-10-27: Met in person. 2023-10-27: Met in person. 2023-11-01: On holiday. "
+      },
+      {
+        "customer_id": "00000114",
+        "assigned_to_email": "sofia.santos@atlas.com",
+        "customer_name": "Peyton Miller",
+        "customer_email": "peyton.miller@biodynamics",
+        "customer_phone": "417-627-7524",
+        "last_contact_date": "2023-11-22 23:59:00",
+        "product_interest": "Software",
+        "status": "Lost",
+        "follow_up_by": "2023-12-16 23:59:00",
+        "notes": "2023-10-17: Had a call. 2023-11-18: On holiday. 2023-10-19: Saw the demo. "
+      }
+    ],
+    "pagination": {
+      "total_customers": 39,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 8
+    }
+  },
+  "17eae9d3a3424d407ea92fa0a7107f0baf36933e9802313093f2ed27203c1bf5": {
+    "2023-10-21": 14,
+    "2023-10-22": 13,
+    "2023-10-23": 7,
+    "2023-10-24": 21,
+    "2023-10-25": 7,
+    "2023-10-26": 10,
+    "2023-10-27": 11,
+    "2023-10-28": 18,
+    "2023-10-29": 14,
+    "2023-10-30": 12,
+    "2023-10-31": 9,
+    "2023-11-01": 15,
+    "2023-11-02": 13,
+    "2023-11-03": 12,
+    "2023-11-04": 9,
+    "2023-11-05": 10,
+    "2023-11-06": 10,
+    "2023-11-07": 12,
+    "2023-11-08": 11,
+    "2023-11-09": 12,
+    "2023-11-10": 11,
+    "2023-11-11": 10,
+    "2023-11-12": 12,
+    "2023-11-13": 8,
+    "2023-11-14": 15,
+    "2023-11-15": 11,
+    "2023-11-16": 7,
+    "2023-11-17": 7,
+    "2023-11-18": 6,
+    "2023-11-19": 10,
+    "2023-11-20": 13,
+    "2023-11-21": 11,
+    "2023-11-22": 10,
+    "2023-11-23": 8,
+    "2023-11-24": 9,
+    "2023-11-25": 14,
+    "2023-11-26": 6,
+    "2023-11-27": 6,
+    "2023-11-28": 19,
+    "2023-11-29": 9,
+    "2023-11-30": 7
+  },
+  "c21d2b260ef77db354786e0a589595a06f2d21f935b1091b2152082f53c5f6d0": "plots/2023-10-21_2023-11-30_total_visits_line.png",
+  "8d37f4a414c5dac3866ab5d30292c8d6d34121c76a862efa4f4f22477c500711": {
+    "emails": [
+      {
+        "email_id": "00000493",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "leila.azizi@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-10-30 12:48:19",
+        "body": "Sam,\\n\\nCompleted task 'Add animation to form submission button' ahead of schedule. Please review and let me know if any tweaks are needed.\\n\\nRegards,\\nLeila"
+      },
+      {
+        "email_id": "00000131",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "luis.ortiz@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-10-26 09:02:38",
+        "body": "Sam,\\n\\nRegarding task 'Add animation to form submission button', I've made significant progress but have hit a snag with third-party API compatibility. Could use a brainstorm session.\\n\\nCheers,\\nLuis"
+      },
+      {
+        "email_id": "00000323",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "leila.azizi@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-10-24 15:18:39",
+        "body": "Sam,\\n\\nCompleted task 'Add animation to form submission button' ahead of schedule. Please review and let me know if any tweaks are needed.\\n\\nRegards,\\nLeila"
+      }
+    ],
+    "pagination": {
+      "total_emails": 3,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "94745f84630624df3a3fa69db6a50e80eb2c63e25e4653f1c2405f7ab0fff30a": "No events found.",
+  "a9615b8a2949a30ce611d1ef49296ed88881fe78f265cb73f1dbb93841ea6cf7": {
+    "events": [
+      {
+        "event_id": "00000253",
+        "event_name": "project progress update",
+        "participant_email": "kofi.mensah@atlas.com",
+        "event_start": "2023-11-30 15:30:00",
+        "duration": "120"
+      },
+      {
+        "event_id": "00000027",
+        "event_name": "team coordination meeting",
+        "participant_email": "sofia.santos@atlas.com",
+        "event_start": "2023-11-30 14:30:00",
+        "duration": "60"
+      },
+      {
+        "event_id": "00000225",
+        "event_name": "Risk Management Forum",
+        "participant_email": "aisha.chen@atlas.com",
+        "event_start": "2023-11-30 12:30:00",
+        "duration": "120"
+      },
+      {
+        "event_id": "00000200",
+        "event_name": "Annual Budget Planning Session",
+        "participant_email": "fatima.khan@atlas.com",
+        "event_start": "2023-11-30 09:30:00",
+        "duration": "60"
+      }
+    ],
+    "pagination": {
+      "total_events": 4,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "59baeac96b93d7961537b7fd9cf444d81d826d48cdcf3f3717118e707b75c9b5": "Event updated successfully.",
+  "90d11dfca26f2500a9011b68f57cc55ea30f76235f827fdc35da2a91a249e4f5": [
+    "akira.sato@atlas.com"
+  ],
+  "a698bfd28835f76bb9fccdca98da142bd55861cbf099d7a44cb7c6b43d5cb5d4": {
+    "2023-11-26": 2
+  },
+  "e22744e4b584b3522224d8c6b99f186a244f5317407ab5b145f838649d98899e": "plots/2023-11-26_2023-11-30_user_engaged_line.png",
+  "9c61d7013f85917ebf638daa90ea10af4316f487b60d0422ab1a96feffeddea9": {
+    "events": [
+      {
+        "event_id": "00000120",
+        "event_name": "Diversity & Inclusion Workshop",
+        "participant_email": "jinsoo.kim@atlas.com",
+        "event_start": "2023-12-13 14:30:00",
+        "duration": "30"
+      }
+    ],
+    "pagination": {
+      "total_events": 1,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "fa9dfa1d626bc30164c413574949b16e9f32204a1e3899241d523438141b4efe": {
+    "customers": [
+      {
+        "customer_id": "00000198",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Angel Williams",
+        "customer_email": "angel.williams@techinteractivefoods",
+        "customer_phone": "368-320-1652",
+        "last_contact_date": "2023-11-29 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-12-07 23:59:00",
+        "notes": "2023-11-02: Saw the demo. 2023-11-10: Met in person. 2023-10-28: Met in person. "
+      },
+      {
+        "customer_id": "00000133",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Jamie Anderson",
+        "customer_email": "jamie.anderson@ecoinnovations",
+        "customer_phone": "731-857-5902",
+        "last_contact_date": "2023-11-07 23:59:00",
+        "product_interest": "Software",
+        "status": "Lead",
+        "follow_up_by": "2023-11-24 23:59:00",
+        "notes": "2023-11-15: Saw the demo. 2023-10-31: Had a call. 2023-10-24: Saw the demo. "
+      },
+      {
+        "customer_id": "00000049",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Alex Garcia",
+        "customer_email": "alex.garcia@nextdynamiclabs",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-05 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-11-21 23:59:00",
+        "notes": "2023-11-10: Met in person. "
+      },
+      {
+        "customer_id": "00000115",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Jessie Jackson",
+        "customer_email": "jessie.jackson@solarflexdesigns",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-01 23:59:00",
+        "product_interest": "Software",
+        "status": "Lead",
+        "follow_up_by": "2023-11-30 23:59:00",
+        "notes": "2023-10-24: Saw the demo. 2023-11-21: Had a call. 2023-11-16: Met in person. "
+      },
+      {
+        "customer_id": "00000170",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Morgan White",
+        "customer_email": "morgan.white@pathsecurity",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-10-27 23:59:00",
+        "product_interest": "Software",
+        "status": "Lost",
+        "follow_up_by": "2023-11-06 23:59:00",
+        "notes": NaN
+      }
+    ],
+    "pagination": {
+      "total_customers": 8,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 2
+    }
+  },
+  "069d30739aab9f0fdaa38b4f28f41f86b6d59097645950b807b5d67ea0d0c510": "Customer updated successfully.",
+  "3646234e05e20248a8d5dc1eb4de7b574169cd9bc2dfddf5ca379f25468c35be": {
+    "2023-11-26": 6,
+    "2023-11-27": 6,
+    "2023-11-28": 19,
+    "2023-11-29": 9,
+    "2023-11-30": 7
+  },
+  "169d5de64be871ff04189d5c4f0d2ba0117258040b2bc720f7e0d47e6a19e243": {
+    "2023-11-19": 10,
+    "2023-11-20": 13,
+    "2023-11-21": 11,
+    "2023-11-22": 10,
+    "2023-11-23": 8,
+    "2023-11-24": 9,
+    "2023-11-25": 14
+  },
+  "32fe0b7c4c91f94b8cd7614c44e44010c9ffc29be6b6089def78a904e4d3efd0": "plots/2023-11-19_2023-11-30_total_visits_line.png",
+  "7960acb073d8b39ce5252f7588c3ddd8604130e76c21c7c2030f52b34e19ec87": {
+    "emails": [
+      {
+        "email_id": "00000278",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "raj.patel@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-11-18 14:45:20",
+        "body": "Dear Sam,\\n\\nCompleted task 'Add animation to form submission button' ahead of schedule. Please review and let me know if any tweaks are needed.\\n\\nBest,\\nRaj"
+      },
+      {
+        "email_id": "00000263",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "olga.petrova@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-11-16 09:02:36",
+        "body": "Dear Sam,\\n\\nStarting on 'Add animation to form submission button' today. Any preliminary thoughts or resources you recommend before I dive in?\\n\\nAdditionnally, I wanted to touch base on some other areas we've been focusing on lately. Our team has been working tirelessly on improving our project management workflows and enhancing collaboration across departments. This effort includes adopting new tools, refining our communication strategies, and ensuring that all team members are fully aligned with our objectives.\\n\\nRegards,\\nOlga"
+      },
+      {
+        "email_id": "00000241",
+        "inbox/outbox": "inbox",
+        "sender/recipient": "luis.ortiz@atlas.com",
+        "subject": "Task Update on Add animation to form submission button",
+        "sent_datetime": "2023-11-15 12:54:11",
+        "body": "Hey Sam,\\n\\nCompleted task 'Add animation to form submission button' ahead of schedule. Please review and let me know if any tweaks are needed.\\n\\nI also wanted to share some exciting news about our upcoming team-building event. We've been planning a fun and engaging day for everyone, and I'm confident it will be a great opportunity for everyone to unwind and bondd with their colleagues. I'll be sending out more details soon, so keep an eye out for that!\\n\\nCheers,\\nLuis"
+      }
+    ],
+    "pagination": {
+      "total_emails": 3,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  },
+  "28f8a5cdc5eb93a8d49378ee84b8ae86eac3e5734c7a69b843f5ca3f65dbb463": {
+    "events": [
+      {
+        "event_id": "00000252",
+        "event_name": "brainstorming session",
+        "participant_email": "aisha.chen@atlas.com",
+        "event_start": "2023-12-01 15:00:00",
+        "duration": "120"
+      },
+      {
+        "event_id": "00000261",
+        "event_name": "performance evaluation",
+        "participant_email": "amir.ali@atlas.com",
+        "event_start": "2023-12-01 14:30:00",
+        "duration": "30"
+      },
+      {
+        "event_id": "00000093",
+        "event_name": "retrospective meeting",
+        "participant_email": "raj.patel@atlas.com",
+        "event_start": "2023-12-01 13:30:00",
+        "duration": "30"
+      },
+      {
+        "event_id": "00000237",
+        "event_name": "project checkpoint",
+        "participant_email": "nia.johnson@atlas.com",
+        "event_start": "2023-12-01 12:00:00",
+        "duration": "60"
+      },
+      {
+        "event_id": "00000091",
+        "event_name": "Year-End Performance Assessment",
+        "participant_email": "leila.azizi@atlas.com",
+        "event_start": "2023-12-01 10:00:00",
+        "duration": "120"
+      }
+    ],
+    "pagination": {
+      "total_events": 6,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 2
+    }
+  },
+  "986f8bae238d107c2fee62ed9405cfdcec4d1b8ef0eb3d42d42df0ba04e44a88": {
+    "events": [
+      {
+        "event_id": "00000165",
+        "event_name": "Corporate Social Responsibility Initiative",
+        "participant_email": "olga.petrova@atlas.com",
+        "event_start": "2023-12-01 09:00:00",
+        "duration": "60"
+      }
+    ],
+    "pagination": {
+      "total_events": 6,
+      "page": 2,
+      "page_size": 5,
+      "total_pages": 2
+    }
+  },
+  "4964f7c2c7cfedad9dcc17c37dbad5772376826adc36b1a022341d15d97c3c34": {
+    "customers": [
+      {
+        "customer_id": "00000001",
+        "assigned_to_email": "akira.sato@atlas.com",
+        "customer_name": "Jessie Wilson",
+        "customer_email": "jessie.wilson@solarwavefoods",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-18 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-11-30 23:59:00",
+        "notes": "2023-10-22: Saw the demo. 2023-10-10: On holiday. 2023-11-18: Saw the demo. "
+      },
+      {
+        "customer_id": "00000011",
+        "assigned_to_email": "lena.schmidt@atlas.com",
+        "customer_name": "Dakota Thompson",
+        "customer_email": "dakota.thompson@solarlinksystems",
+        "customer_phone": "165-446-1344",
+        "last_contact_date": "2023-11-07 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-12-01 23:59:00",
+        "notes": "2023-11-07: On holiday. "
+      },
+      {
+        "customer_id": "00000049",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Alex Garcia",
+        "customer_email": "alex.garcia@nextdynamiclabs",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-05 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-11-21 23:59:00",
+        "notes": "2023-11-10: Met in person. "
+      },
+      {
+        "customer_id": "00000006",
+        "assigned_to_email": "lena.schmidt@atlas.com",
+        "customer_name": "Angel Jackson",
+        "customer_email": "angel.jackson@solarwaverobotics",
+        "customer_phone": "352-862-9830",
+        "last_contact_date": "2023-10-17 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-11-16 23:59:00",
+        "notes": "2023-11-27: Met in person. 2023-10-24: On holiday. 2023-10-09: Met in person. "
+      },
+      {
+        "customer_id": "00000162",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Jessie Brown",
+        "customer_email": "jessie.brown@cyberpeaklogics",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-10-14 23:59:00",
+        "product_interest": "Software",
+        "status": "Qualified",
+        "follow_up_by": "2023-11-06 23:59:00",
+        "notes": "2023-10-24: Had a call. 2023-11-09: Met in person. 2023-11-12: Met in person. "
+      }
+    ],
+    "pagination": {
+      "total_customers": 8,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 2
+    }
+  },
+  "74c89fc764ff56ed8493ae0721b82c444664ba3904eea56f7e16d1d5a6fae883": {
+    "customers": [
+      {
+        "customer_id": "00000198",
+        "assigned_to_email": "nadia.moreau@atlas.com",
+        "customer_name": "Angel Williams",
+        "customer_email": "angel.williams@techinteractivefoods",
+        "customer_phone": "368-320-1652",
+        "last_contact_date": "2023-11-29 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-12-07 23:59:00",
+        "notes": "2023-11-02: Saw the demo. 2023-11-10: Met in person. 2023-10-28: Met in person. "
+      },
+      {
+        "customer_id": "00000125",
+        "assigned_to_email": "sofia.santos@atlas.com",
+        "customer_name": "Morgan Robinson",
+        "customer_email": "morgan.robinson@ecoscopeinnovations",
+        "customer_phone": NaN,
+        "last_contact_date": "2023-11-22 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-11-29 23:59:00",
+        "notes": NaN
+      },
+      {
+        "customer_id": "00000183",
+        "assigned_to_email": "lena.schmidt@atlas.com",
+        "customer_name": "Shannon Harris",
+        "customer_email": "shannon.harris@ecopointtech",
+        "customer_phone": "596-239-4196",
+        "last_contact_date": "2023-11-22 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-12-11 23:59:00",
+        "notes": "2023-10-27: Met in person. 2023-10-27: Met in person. 2023-11-01: On holiday. "
+      },
+      {
+        "customer_id": "00000007",
+        "assigned_to_email": "sofia.santos@atlas.com",
+        "customer_name": "Jamie Davis",
+        "customer_email": "jamie.davis@omnibiotech",
+        "customer_phone": "490-710-8668",
+        "last_contact_date": "2023-11-03 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-11-18 23:59:00",
+        "notes": NaN
+      },
+      {
+        "customer_id": "00000147",
+        "assigned_to_email": "akira.sato@atlas.com",
+        "customer_name": "Avery Thompson",
+        "customer_email": "avery.thompson@ultrapathfoods",
+        "customer_phone": "268-435-9525",
+        "last_contact_date": "2023-10-29 23:59:00",
+        "product_interest": "Software",
+        "status": "Proposal",
+        "follow_up_by": "2023-11-08 23:59:00",
+        "notes": "2023-11-15: Met in person. "
+      }
+    ],
+    "pagination": {
+      "total_customers": 5,
+      "page": 1,
+      "page_size": 5,
+      "total_pages": 1
+    }
+  }
+}

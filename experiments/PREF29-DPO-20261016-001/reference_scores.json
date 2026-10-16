@@ -1,0 +1,147 @@
+{
+  "CURRENT-S1-EXPAND-1099-20261016-v1": {
+    "cache_key": "5be73bfb91156cae465f18dae6a6a345949737ba4b9316c8809603f0904f124e",
+    "chosen": -62.02828407287598,
+    "rejected": -16.97761631011963
+  },
+  "CURRENT-S1-1194-20261016-v1": {
+    "cache_key": "63a59b26ce195c14bc762585802b6e63bb9bf7bb32487d5fd4fb8bd57f7e92ad",
+    "chosen": -53.766218185424805,
+    "rejected": -48.573007106781006
+  },
+  "CURRENT-S1-EXPAND-17-20261016-v1": {
+    "cache_key": "fe95e85dc38f31bf88aba9a5de83392f23ed0fc13555b43e109658fc5aa8df62",
+    "chosen": -123.16745567321777,
+    "rejected": -47.78805875778198
+  },
+  "CURRENT-S1-EXPAND-358-20261016-v1": {
+    "cache_key": "49c46a47809c1184d2f120d607081819f1fa3effff2be859a3d4a627d5403750",
+    "chosen": -351.6874032020569,
+    "rejected": -122.36347723007202
+  },
+  "CURRENT-S1-51-20261016-v1": {
+    "cache_key": "f86440efe38f0419526776e403ed416d9b90dc386e51146ce92dd566defb8731",
+    "chosen": -100.5238208770752,
+    "rejected": -68.98383665084839
+  },
+  "CURRENT-S1-EXPAND-1006-20261016-v1": {
+    "cache_key": "f1ba3e8342fa7bec54addaf251f9c80fdb470aed8fc8bb3cf44b66157bcd6785",
+    "chosen": -115.1615629196167,
+    "rejected": -15.474361896514893
+  },
+  "CURRENT-S1-EXPAND-1107-20261016-v1": {
+    "cache_key": "e5e6f38ee84c756026d24c143971b92aaab8ae5615663020e94f441c62ba8f4e",
+    "chosen": -174.78665924072266,
+    "rejected": -52.45506477355957
+  },
+  "CURRENT-S1-EXPAND-176-20261016-v1": {
+    "cache_key": "6b97be2ab2626f4d3d6e63f8888dbd4a1cba6463ec1d402501e56755d2289276",
+    "chosen": -141.20073699951172,
+    "rejected": -56.51771354675293
+  },
+  "CURRENT-S1-EXPAND-227-20261016-v1": {
+    "cache_key": "9a33ce9f49cf81adbcb8deb31d3a99192454295c96bd13e255980e4c4110230c",
+    "chosen": -111.77206802368164,
+    "rejected": -50.810726165771484
+  },
+  "CURRENT-S1-EXPAND-881-20261016-v1": {
+    "cache_key": "40e608ebf8fae579041518e786447256b461490dd3bc29917fe2edcd71c587b6",
+    "chosen": -157.45163345336914,
+    "rejected": -56.73756408691406
+  },
+  "CURRENT-S1-EXPAND-1226-20261016-v1": {
+    "cache_key": "5860978970f3fb9d88957fee5d4cd3aca4a7c3c878bde754f42919ee07044035",
+    "chosen": -77.30352401733398,
+    "rejected": -45.435779094696045
+  },
+  "CURRENT-S1-EXPAND-1134-20261016-v1": {
+    "cache_key": "ca2fd1fde648189d80497b4ba914729bd4ad79902c5a2757885f4143f5015a23",
+    "chosen": -164.9347095489502,
+    "rejected": -33.56049966812134
+  },
+  "CURRENT-S1-EXPAND-1209-20261016-v1": {
+    "cache_key": "34150f18d59880f5aa56699f5d0497c920eac2fae74fda96cb16dda8c4e9fe92",
+    "chosen": -115.47430419921875,
+    "rejected": -32.39806365966797
+  },
+  "CURRENT-S1-349-20261016-v1": {
+    "cache_key": "bf6f4ccffb88e3048d6ad394aa2b70a942b521883147c85bb7b0a5d5d6dca5dd",
+    "chosen": -67.23831748962402,
+    "rejected": -44.07630634307861
+  },
+  "CURRENT-S1-1076-20261016-v1": {
+    "cache_key": "dd593b43ecd7c33615ba764aa29cbf93d2e9c3d0f1d3063df73499595727afe7",
+    "chosen": -135.99505233764648,
+    "rejected": -45.18995428085327
+  },
+  "CURRENT-S1-EXPAND-956-20261016-v1": {
+    "cache_key": "235234b5b3e20d71230e3184eead052de3b8a9462140d8777650329bba104dc4",
+    "chosen": -162.39612865447998,
+    "rejected": -27.45644521713257
+  },
+  "CURRENT-S1-EXPAND-1069-20261016-v1": {
+    "cache_key": "aeeb15ba608b9b737a2a1d2cd6122dcf77110ad307f369721fb41f0471ed2781",
+    "chosen": -87.89416599273682,
+    "rejected": -25.09006905555725
+  },
+  "CURRENT-S1-EXPAND-689-20261016-v1": {
+    "cache_key": "946a61daff54eeb4df2832bfb51c2bff5f23083ab9b79e4781eb9a264f7b665a",
+    "chosen": -62.31172847747803,
+    "rejected": -64.84039878845215
+  },
+  "CURRENT-S1-EXPAND-852-20261016-v1": {
+    "cache_key": "54a61b0d5864d113732207411a0e4f77dd813185da179e307935d7a9c48f03e4",
+    "chosen": -40.84848737716675,
+    "rejected": -12.938204765319824
+  },
+  "CURRENT-S1-473-20261016-v1": {
+    "cache_key": "6808f29e968a7952116663cf9e8815bafc1f773c0b3ac4dc08044adc24a7b9d7",
+    "chosen": -81.11563301086426,
+    "rejected": -65.4981141090393
+  },
+  "CURRENT-S1-EXPAND-1185-20261016-v1": {
+    "cache_key": "7fc38126a46274592f99e600a28392a87e64fcf2fedc7ad0c806780b9f431eca",
+    "chosen": -94.94317626953125,
+    "rejected": -46.14050483703613
+  },
+  "CURRENT-S1-EXPAND-666-20261016-v1": {
+    "cache_key": "33eb41328480e4bb180016ebe681b5fa6c9f8d5d6a6cdbef9a6c225f54b6ce87",
+    "chosen": -166.0317244529724,
+    "rejected": -12.584504127502441
+  },
+  "CURRENT-S1-EXPAND-1020-20261016-v1": {
+    "cache_key": "4e4cd88b84fa8f0429cecc98e7292fc6855b6e79f050eebd0c2120d0a3435f58",
+    "chosen": -103.8501706123352,
+    "rejected": -33.783780097961426
+  },
+  "CURRENT-S1-EXPAND-368-20261016-v1": {
+    "cache_key": "9c61ae95845b416435c11dc3e84e56d12e3949fcc70179087bda3be102dcc1bd",
+    "chosen": -99.10341930389404,
+    "rejected": -31.06160020828247
+  },
+  "CURRENT-S1-EXPAND-973-20261016-v1": {
+    "cache_key": "27e36c48c42f388bd48b2651de3b384f95cc9592a28cd8ba0774b68d120d2555",
+    "chosen": -130.85083770751953,
+    "rejected": -25.25736117362976
+  },
+  "CURRENT-S1-EXPAND-31-20261016-v1": {
+    "cache_key": "fc054f5f89733483f2381ec58da748bfeca83deb2ad8f7c895112f9fd59ea919",
+    "chosen": -82.28807783126831,
+    "rejected": -31.799295902252197
+  },
+  "CURRENT-S1-1000-20261016-v1": {
+    "cache_key": "36d941ef4e7db33593760ff16d78f0958ff501e497144fc7d06ebdfcee65aaa6",
+    "chosen": -78.55541706085205,
+    "rejected": -34.1944580078125
+  },
+  "CURRENT-S1-EXPAND-30-20261016-v1": {
+    "cache_key": "d96e43e36a99d0aa5f3d6cd41fa1d9c3e3d736f309d01e6463c0769cfc244e75",
+    "chosen": -242.23677158355713,
+    "rejected": -31.648375511169434
+  },
+  "CURRENT-S1-EXPAND-879-20261016-v1": {
+    "cache_key": "ec982376a02998ad966e348842cfd92588e6e5c015e16970764c075991cf4ec0",
+    "chosen": -169.57363891601562,
+    "rejected": -73.3812026977539
+  }
+}

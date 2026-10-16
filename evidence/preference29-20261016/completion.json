@@ -1,0 +1,17 @@
+{
+  "status": "MODEL_AND_BACKUP_COMPLETE_KEEP_INSTANCE_ON",
+  "adapter_files": 6,
+  "all_local_adapter_sha256_verified": true,
+  "raw_members": 62,
+  "script_GPU_hours": 0.743010856045617,
+  "backup_completed_epoch": 1792138680.847317,
+  "matrix_launch_to_backup_hours": 0.989212997953097,
+  "container_start_estimate_to_backup_hours": 2.225934157040384,
+  "hourly_rmb": null,
+  "rmb": null,
+  "ssh_sessions_closed": true,
+  "no_shutdown_command_or_guard": true,
+  "last_observed_gpu_processes": 0,
+  "last_gpu_observation_epoch": 1792137832.6374578,
+  "note": "Allmodelprocessesfinishedbeforecopy;connectionsclosedaftercopy. Overlappingtimewindows;notinvoice. InstanceONcontinuescost. RetainedinterruptedSFTPpartials/chunksignoredbyGit."
+}

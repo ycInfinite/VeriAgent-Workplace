@@ -118,3 +118,6 @@ DPO数据审核区分语义模型错与infra：271越权删除是有效模型失
 新增已审核信号：严格不等式边界(31/1020/17)、已知条件不满足仍执行(176)、星期/基准日期错位(879/1107/1185/881/1209)、推迟方向反转(368)、漏Lead约束(973)、OR字符串与分页遗漏(689)、真实邮件ID配捏造收件人(1006)、错时间/发送者/接收者组合(30/1226)、观察内任务优先级排序错(666)、跨owner/同名task日期状态混淆(358)。均来自training池，不使用sealedcases。
 
 811/329产生越界多tool块但输出截断，严格gate未执行导致空reference奖励1；416查询循环耗尽同样奖励1。这3条不是正确克制，也不是infra-invalid。24空任务官方10成功，只有5有依据完整no-change，4整条语义干净；1080不改状态但错误省略InReview。全部36S1+28teacher完整可见复核，其他55非空reward1未新语义准入；全部182分支仅机械回放不等于全语义审核。
+
+
+2026-10-16 PREF29新读52轨迹：保留wrong_temporal_order（已groundedID仍选错）、分页漏查/负责人谓词混淆、conditional-action-before-check、错误日期窗口、重复空查询至roundcap。DPO952/42未完成toolcall严格gate执行0修改且为有效policyfailure；952/43保留due-today边界歧义，不一律归为明确推理错误。完整标签reports/preference29-20261016/*semantic*.json；不把该选择性审核外推为144条完整语义错误率。
