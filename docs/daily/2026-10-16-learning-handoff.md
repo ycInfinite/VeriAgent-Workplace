@@ -121,3 +121,6 @@ a, b = branch(c, encoder), branch(s, encoder)
 - 原始messages：`experiments/S1-FAILURE-ACQUIRE-20261012-001/trajectories.jsonl`。
 - log与15成员SHA归档：`evidence/s1-failure-execution-20261016/raw.tar.gz`；资源汇总`resource_summary.json`。
 - 完整报告：`docs/S1_FAILURE_COLLECTION_RESULT_20261016.md`。
+
+
+后续补充：累计29对已完成实际HF与最长pair零更新梯度检查，见 [29对训练前学习交接](2026-10-16-preference29-preflight-learning-handoff.md)。正式29对更新尚未执行。

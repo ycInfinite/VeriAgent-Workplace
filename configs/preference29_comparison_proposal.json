@@ -45,7 +45,7 @@
   "teacher_review": "Codex single reviewer;full pair review required and completed for admittedpairs",
   "same_reward_artifact": "experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_same_reward_pairs.jsonl.gz",
   "same_reward_policy": "Separate4;notacceptedbycurrentrewardgaploader;requiresfutureexplicitplan",
-  "next_gate": "ActualHF fullbranch,VRAM/cost andtraining schedule must be registered before updates",
+  "next_gate": "User route decision, new immutable runIDs/runners,full29updates and matcheddev evaluation;HF/longest gradient preflight already passed.",
   "max_wall_seconds": 1800,
   "optimizer_updates": 29,
   "instance_shutdown_authorized": false,
@@ -56,7 +56,7 @@
   "Controlled Variables": "OriginalS1,29tasks/order,oneepoch29updates,lr5e-6,seed42,8192,samehost;DPOreference originalS1,beta.1.",
   "Metrics": "Primary paired nonempty DPO minus chosenSFT success;overall/empty, fresh semantic audit,tokens/VRAM/latency/GPUh;single exposed-dev experiment.",
   "Evidence Gate": "Preflight plus newly registered execution IDs;finite updates,frozen reference/save-reload,matched144valid devrollouts/fresh semantic audit.",
-  "Cost Bound": "PROPOSED rough0.7-1.2scriptGPUh+setup/preservation;refine with preflight;rateunknown.",
+  "Cost Bound": "Engineering estimate0.7-1.2scriptGPUh plus preparation/retrieval,not measured matrix. Longest-pair SFTbackward5.156s/DPO15.723s/reference3.595s withoutoptimizer;rateunknown;KEEP_INSTANCE_ON.",
   "Failure Branch": "Stop on integrity/infrastructurefailure;no retries/tuning/extra seeds;preserve IDs.",
   "task_order": [
     1099,
@@ -146,5 +146,6 @@
   "primary": "DPO minus CHOSEN_SFT nonempty-reference task success on fixeddev24x42/43",
   "same_reward_included": false,
   "comparison_limits": "Same29 tasks/order/chosen exposure and29 updates,NOT same total tokens/FLOPs/time. 15analytics/7calendar/2CRM/3email/2PM;14empty/15nonempty;1069/956 share reference;single seed/exposeddev,not generalization.",
-  "selection": "Final29updates only;no dev checkpoint selection."
+  "selection": "Final29updates only;no dev checkpoint selection.",
+  "preflight_evidence": "experiments/PREF29-PREFLIGHT-20261016-001/result.json"
 }

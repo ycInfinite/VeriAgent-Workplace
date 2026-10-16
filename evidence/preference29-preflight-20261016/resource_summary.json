@@ -1,0 +1,12 @@
+{
+  "script_GPU_hours": 0.014186640460458066,
+  "device_peak_GiB": 28.4169921875,
+  "gpu_utilization_sample_mean_percent": 46.52173913043478,
+  "device_samples": 46,
+  "launch_to_final_receipt_hours": 0.03412761410077413,
+  "previous_stage_receipt_to_final_hours": 0.46373076962100135,
+  "container_start_estimate_to_final_hours": 1.0409165420134863,
+  "hourly_rmb": null,
+  "rmb": null,
+  "note": "Overlapping windows,not additive. Container includes previous91collection/setup/idle. Previous-stage interval includes preparation/GitHubwait. Instance remainsON and accrues allocation time after receipt;notinvoice."
+}

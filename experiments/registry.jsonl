@@ -136,3 +136,5 @@
 {"experiment_id": "S1-EXPAND-ACQUIRE-20261016-001", "event": "completed_verified_archive", "valid": 91, "infra_invalid": 0, "official_successes": 65, "GPU_hours": 0.3201536965535747, "parameter_updates": 0, "API_calls": 0, "keep_instance_on": true}
 {"experiment_id": "S1-EXPAND-REPLAY-20261016-001", "event": "182freshbranchreplays_passed", "parameter_updates": 0}
 {"experiment_id": "S1-EXPAND-REVIEW-20261016-001", "event": "new23gap3same_cumulative29gap4same_CPU11passed", "semantic_S1": 36, "semantic_teacher": 28, "parameter_updates": 0, "GPU_training_authorized": false}
+{"experiment_id": "PREF29-PREFLIGHT-20261016-001", "event": "started", "source": "remote_verified_archive", "execution_commit": "a0a5e5edba40aea97f7058c4b151bfc8d8ae0310", "optimizer_updates": 0}
+{"experiment_id": "PREF29-PREFLIGHT-20261016-001", "event": "completed", "source": "remote_verified_archive", "execution_commit": "a0a5e5edba40aea97f7058c4b151bfc8d8ae0310", "optimizer_updates": 0}

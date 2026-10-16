@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/config.json",
+      "sha256": "89eee5d75480885275706bdc1417120dd00830a10dd6ebd5e1e082b6ef9cf51c",
+      "bytes": 4184
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/gpu_samples.jsonl",
+      "sha256": "c3e441d3264b3ec7aa7b4c6519eb86b6c3b4ca55199f64281dbddf8403049e68",
+      "bytes": 7629
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/host_preflight.json",
+      "sha256": "7270e39b5d6742280266f356cd937a002965c2058c832faeae281ced009af948",
+      "bytes": 343
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/identity.json",
+      "sha256": "6fcc6fdb2e34bcdc6ed21debb5d5ebeb7413ec714e7a514d79c75a51ffdf00c2",
+      "bytes": 20146
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/phases.jsonl",
+      "sha256": "0c3d82672004e243f30c1f14e116ccba6bc9655a3cc1cfc01fbbad97fb1e8c52",
+      "bytes": 981
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/reference_scores.json",
+      "sha256": "5b7f2dd421fb320f02215bb56dc12e768419387aa892aab94d9fa6871dfc22aa",
+      "bytes": 69
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/result.json",
+      "sha256": "23410af23e1e82d26a6a7d94bcdd85278e73e683927404f1467f02e41970cc27",
+      "bytes": 1628
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/torch_controls.json",
+      "sha256": "5649a58e8218dc56c3170446a40817e64ff01c9fac413d3002129f6893258b00",
+      "bytes": 498
+    },
+    {
+      "path": "experiments/PREF29-PREFLIGHT-20261016-001/weights.json",
+      "sha256": "4c706f7c48e6b74eeccdaca7e5bebf5465d14b9700204a2586155541153a0f7a",
+      "bytes": 104
+    },
+    {
+      "path": "logs/pref29-preflight-20261016/launch.json",
+      "sha256": "46ef1165d2c3c5230eb52d72dc543b78b1fb2371ace8b8f634e31227a8d70fd4",
+      "bytes": 228
+    },
+    {
+      "path": "logs/pref29-preflight-20261016/process.log",
+      "sha256": "e8c0592286fc5c4ec115987e5236b3c16e7f1d8551f010e651e88716d79f9da3",
+      "bytes": 1565
+    },
+    {
+      "path": "logs/pref29-preflight-20261016/final_resource.json",
+      "sha256": "1b2a3d3decd0c8ce10e100bd67661c9edc4c1ec90813bbe683e799c0bfc0ec13",
+      "bytes": 234
+    }
+  ],
+  "archive_sha256": "797077e2eeff0b7c574f6a66913309340f0518230275056e60645b2ad08a968d"
+}

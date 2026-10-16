@@ -185,3 +185,6 @@ DPO-PROBE-20261012-001：reference17.9496s、8pair平均9.64436s，总131.19964s
 单新PRO6000/driver595.58.03，1152.5533秒=.32015370scriptGPUh，输入1397249/输出28873tokens，allocated17.9780/reserved23.1270/device23.8057GiB，1053样本平均util62.66%。91valid0infra，0参数更新/0新teacherAPI。182分支CPU回放29.627秒，编码导出5.118秒，人工审核另计。
 
 容器估计启动→备份.57718577h；首次项目观察→备份.53510566h；不要与scriptGPUh相加。两个GitHub404/重试/等待/回收包括在实例占用，旧A61缺卡未启动不计新机GPU实验。时价未知/RMBnull/非账单；按p元/h占用估计.57719p。GPUh/官方成功.00492544，GPUh/新增奖励差pair .01391973，GPUh/全部新增pair .01231360；不含教师历史费用/人工审核。小快照下载与采集重叠，不作纯算法延迟比较。保留开机，SSH关闭，后续继续计费。
+
+
+2026-10-16 PREF29-PREFLIGHT-20261016-001：51.072s=.01418664scriptGPUh；device28.417GiB；前阶段回执至本轮回执.463731h，容器累计1.040917h（窗口重叠不能相加）。price/RMB unknown；KEEP_INSTANCE_ON，持续分配费用。

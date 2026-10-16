@@ -1,0 +1,49 @@
+{
+  "status": "FULL_HF_LONGEST_PAIR_GRADIENT_PREFLIGHT_PASSED",
+  "pairs": 29,
+  "HF_turns": 179,
+  "selected_task": 358,
+  "optimizer_updates": 0,
+  "LoRA_tensors_unchanged": 504,
+  "frozen_samples_unchanged": true,
+  "wall_seconds": 51.07190565764904,
+  "GPU_hours": 0.014186640460458066,
+  "estimated_rmb": null,
+  "sft": {
+    "phase": "chosen_full_branch_backward_no_update",
+    "seconds": 5.1562010161578655,
+    "peak_allocated_GiB": 21.051059246063232,
+    "peak_reserved_GiB": 26.2109375,
+    "loss": 0.3636891327332705,
+    "gradient_tensors": 504,
+    "grad_norm": 0.5456028580665588
+  },
+  "reference": {
+    "phase": "original_S1_reference_scores",
+    "seconds": 3.595063950866461,
+    "peak_allocated_GiB": 18.41417694091797,
+    "peak_reserved_GiB": 25.265625,
+    "chosen": -351.6874032020569,
+    "rejected": -122.36347723007202
+  },
+  "dpo": {
+    "phase": "DPO_full_pair_backward_no_update",
+    "seconds": 15.723087705671787,
+    "peak_allocated_GiB": 22.515187740325928,
+    "peak_reserved_GiB": 27.73046875,
+    "loss": 0.6931471805599453,
+    "chosen_logp": -351.6874032020569,
+    "rejected_logp": -122.36347723007202,
+    "reference_chosen_logp": -351.6874032020569,
+    "reference_rejected_logp": -122.36347723007202,
+    "relative_margin": 0.0,
+    "coefficient": -0.05,
+    "recomputed": {
+      "chosen": -351.6874032020569,
+      "rejected": -122.36347723007202
+    },
+    "gradient_tensors": 504,
+    "grad_norm": 33.295745849609375
+  },
+  "limits": "Longest sequence gradient paths only; optimizer states/update/reload/full29 training not tested. Not capability evidence or proof of80GB fit."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "BOTH_ARMS_TORCH_CPU_CONTROLS_PASSED",
+  "checks": {
+    "shifted_target_only_score": true,
+    "stream_loss_matches_full_graph": true,
+    "stream_gradient_matches_full_graph": true,
+    "context_row_has_no_direct_loss": true,
+    "gradient_finite_nonzero": true,
+    "chosen_task_mean_loss_equal": true,
+    "chosen_task_mean_gradient_equal": true
+  },
+  "gradient_max_abs_diff": 0.0,
+  "policy_model_loaded": false,
+  "optimizer_updates": 0,
+  "chosen_gradient_max_abs_diff": 0.0
+}

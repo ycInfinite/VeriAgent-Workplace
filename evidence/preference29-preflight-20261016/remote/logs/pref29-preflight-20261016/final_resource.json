@@ -1,0 +1,8 @@
+{
+  "epoch": 1792134414.783903,
+  "hostname": "autodl-container-66jy6yyh5q-8afb2424",
+  "gpu_compute": "",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 0 MiB, 595.58.03",
+  "keep_instance_on": true,
+  "process_stat": null
+}

@@ -1,5 +1,8 @@
 # Project state
 
+2026-10-16 PREF29 zero-update preflight COMPLETE at a0a5e5edba40aea97f7058c4b151bfc8d8ae0310 on66jy6yyh5q-8afb2424/PRO6000/595.58.03. All29pairs/179actualHFturns and7Torchcontrols pass;longesttask358 chosen6365/rejected8073 completeSFT/DPOgradients finite.504LoRAtensors exactlyunchanged/frozensamples andS1files unchanged. DPOmargin0/lossln2/recomputediff0;SFTbackward5.156s/reference3.595s/DPObackward15.723s;NOToptimizerstep timings. Peakallocated22.515/reserved27.730/device28.417GiB. Wall51.072s=.01418664GPUh;priceunknown. Raw12members SHAverified;no formal invalidmodelrun,one local config syntaxerror preservedbeforeexecution. Proposed29task/29update matchedSFT/DPO plan saved,NOTexecuted/notautomatictraining;4same-reward excluded. SSHclosed/processgone/noGPUcompute;KEEP_INSTANCE_ON/no shutdown/guard. Next route is userdecision on concrete29pairmatrix;no further collection/API/RL/sealedtests. See docs/PREFERENCE29_PREFLIGHT_20261016.md and docs/daily/2026-10-16-preference29-preflight-learning-handoff.md.
+
+
 2026-10-16 user continued after expansion completion: authorizes whole29 HF/mask/longest-pair GPU preflight and bounded matched-training proposal. PREF29-PREFLIGHT-20261016-001:179turns,task358 longestchosen6365/rejected8073;originalS1/96GB/BF16/8192,zero optimizer updates,1800s process bound. Samehost33142 freshly verified idle;KEEP_INSTANCE_ON/no guard. Four same-reward pairs excluded;formal29 training/eval remains proposed,not executed. See configs/preference29_preflight.json and configs/preference29_comparison_proposal.json.
 
 
