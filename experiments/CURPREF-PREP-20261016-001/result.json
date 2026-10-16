@@ -1,0 +1,28 @@
+{
+  "status": "CPU_CURRENT_S1_COMPARISON_PREPARED",
+  "checks": {
+    "six_distinct_once": true,
+    "only_six_reviewed_reward_gap": true,
+    "train_dev_disjoint": true,
+    "same_exact_S1": true,
+    "same_hyperparameters": true,
+    "same_dev_protocol": true,
+    "complete_all39_turns": true,
+    "review_cpu_controls_passed": true,
+    "run_current_s1_preference.py_only_registered_differences": true,
+    "evaluate_current_s1_preference.py_only_registered_differences": true,
+    "compare_current_s1_preferences.py_only_registered_differences": true,
+    "exact_GitHub_whitelist": true,
+    "pipeline_keeps_power_on": true
+  },
+  "planned_updates_per_arm": 6,
+  "planned_dev_rollouts": 144,
+  "training_targets": {
+    "chosen": 1774,
+    "rejected": 2858
+  },
+  "processed_tokens": 184485,
+  "actual_GPU_hours": 0,
+  "actual_parameter_updates": 0,
+  "actual_HF_Torch_checks": "pending_on_host"
+}
