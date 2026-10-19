@@ -62,6 +62,8 @@ PREFERENCE29_PREFLIGHT_FILES = ['configs/preference29_preflight.json', 'scripts/
 
 PREFERENCE29_FILES = ['configs/preference29_plan.json', 'scripts/run_preference29.py', 'scripts/evaluate_preference29.py', 'scripts/run_preference29_pipeline.py', 'experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_reward_gap_pairs.jsonl.gz']
 
+PREFERENCE_DIAGNOSTIC_FILES = ['configs/preference29_diagnostic.json', 'veriagent/preference_diagnostic.py', 'scripts/run_preference_diagnostic.py', 'scripts/run_preference_diagnostic_pipeline.py', 'experiments/PREF29-DIAG-DATA-20261019-001/tasks.jsonl.gz', 'experiments/PREF29-DIAG-DATA-20261019-001/selection.json', 'experiments/PREF29-DPO-20261016-001/reference_scores.json']
+
 REMOTE_CODE=r'''
 import hashlib,json,os,shutil,sys,time,urllib.request,urllib.parse,urllib.error
 from pathlib import Path
@@ -104,6 +106,7 @@ try:
     preference_expansion_files={'configs/s1_preference_expansion.json', 'scripts/collect_s1_preference_expansion.py', 'experiments/S1-EXPAND-PREP-20261016-001/tasks.jsonl.gz', 'experiments/S1-EXPAND-PREP-20261016-001/selection.json'}
     preference29_preflight_files={'configs/preference29_preflight.json', 'experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_reward_gap_pairs.jsonl.gz', 'scripts/preflight_preference29.py'}
     preference29_files={'experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_reward_gap_pairs.jsonl.gz', 'scripts/evaluate_preference29.py', 'scripts/run_preference29.py', 'scripts/run_preference29_pipeline.py', 'configs/preference29_plan.json'}
+    preference_diagnostic_files={'veriagent/preference_diagnostic.py', 'experiments/PREF29-DPO-20261016-001/reference_scores.json', 'experiments/PREF29-DIAG-DATA-20261019-001/selection.json', 'scripts/run_preference_diagnostic.py', 'scripts/run_preference_diagnostic_pipeline.py', 'configs/preference29_diagnostic.json', 'experiments/PREF29-DIAG-DATA-20261019-001/tasks.jsonl.gz'}
     additions=set(plan.get('additional_paths',[]))
     assert (not additions or additions==teacher_files or additions==teacher_files|teacher_probe_files
             or additions==teacher_files|teacher_probe_files|interactive_files
@@ -118,7 +121,8 @@ try:
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files|s1_failure_files|current_preference_files
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files|s1_failure_files|current_preference_files|preference_expansion_files
             or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files|s1_failure_files|current_preference_files|preference_expansion_files|preference29_preflight_files
-            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files|s1_failure_files|current_preference_files|preference_expansion_files|preference29_preflight_files|preference29_files)
+            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files|s1_failure_files|current_preference_files|preference_expansion_files|preference29_preflight_files|preference29_files
+            or additions==teacher_files|teacher_probe_files|interactive_files|deepseek_files|window_files|sft_stage_files|sft_scale_files|sft_mixed_files|dpo_files|preference_files|s1_failure_files|current_preference_files|preference_expansion_files|preference29_preflight_files|preference29_files|preference_diagnostic_files)
     assert {x['path'] for x in plan['files']}==allowed|additions
     staging=root/'.github-sync'/plan['commit'];staging.mkdir(parents=True,exist_ok=True)
     reused_verified=[]
@@ -219,7 +223,9 @@ def main():
     parser.add_argument('--include-preference-expansion',action='store_true',help='Add only frozen remaining91 currentS1 collection inputs')
     parser.add_argument('--include-preference29-preflight',action='store_true')
     parser.add_argument('--include-preference29',action='store_true')
+    parser.add_argument('--include-preference-diagnostic',action='store_true')
     args=parser.parse_args()
+    if args.include_preference_diagnostic:args.include_preference29=True
     if args.include_preference29:args.include_preference29_preflight=True
     if args.include_preference29_preflight:args.include_preference_expansion=True
     if args.include_preference_expansion:args.include_current_preference=True
@@ -251,6 +257,7 @@ def main():
     if args.include_preference_expansion:additions=additions+PREFERENCE_EXPANSION_FILES
     if args.include_preference29_preflight:additions=additions+PREFERENCE29_PREFLIGHT_FILES
     if args.include_preference29:additions=additions+PREFERENCE29_FILES
+    if args.include_preference_diagnostic:additions=additions+PREFERENCE_DIAGNOSTIC_FILES
     paths=sorted(set(paths)|set(additions))
     # Ask before requesting signed download URLs: waiting at the password prompt
     # after metadata fetch can let short-lived private-repo links expire.

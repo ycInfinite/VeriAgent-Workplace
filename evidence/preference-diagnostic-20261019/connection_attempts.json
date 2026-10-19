@@ -1,0 +1,8 @@
+{
+  "attempt1": "SSH33142 connectionfailedbeforeauthentication/no modelwork",
+  "attempt2": "User said restored;connected samepinnedhost66jy6yyh5q-8afb2424;PRO6000/595.58.03/noGPUcompute",
+  "observed_epoch": 1792370515.2034457,
+  "S1_CHOSEN_SFT_DPO_adapter_SHA_matches": true,
+  "price": null,
+  "instance_power_not_changed": true
+}

@@ -29,3 +29,7 @@ evidence/preference29-preflight-20261016/** -text
 
 evidence/preference29-20261016/** -text
 reports/preference29-20261016/** -text
+
+configs/preference29_diagnostic.json -text
+evidence/preference-diagnostic-20261019/** -text
+reports/preference-diagnostic-20261019/** -text

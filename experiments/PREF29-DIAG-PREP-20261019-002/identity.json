@@ -1,0 +1,16 @@
+{
+  "files": {
+    "configs/preference29_diagnostic.json": "74c74cc76e7074bd7134441cee282ad61508f7632e24ac1396e734224c8b0ab8",
+    "veriagent/preference_diagnostic.py": "596771d86c2595dfc2defe848b2f13bbd2cb9e1c186b366b721c95c5aa6b8b09",
+    "scripts/run_preference_diagnostic.py": "e98b87d48d9953ac4cd32272402e9c97699fe24ddb8c9e03bcc0a135b10745cc",
+    "scripts/run_preference_diagnostic_pipeline.py": "5c07d09a0d254fd314eb765cb01f84d485f64a8b5dde39690310a7ee9cd1a951",
+    "experiments/PREF29-DIAG-DATA-20261019-001/tasks.jsonl.gz": "91c0170e0ba5b92e636cce742aaedc8c93bd597cc01920f35012abb6c14f582f",
+    "experiments/PREF29-DIAG-DATA-20261019-001/selection.json": "26de788680e851e1c1b9e4ce4592aa7b1a9b64953ce1d3e1b504e7f96c772b13",
+    "experiments/PREF29-DPO-20261016-001/reference_scores.json": "6d79badc69b682874bb33b74804c9016b2f50080dd92589bac824fe2e8617907"
+  },
+  "old_core_sha256": {
+    "veriagent/dpo.py": "4bcf845d7a2622ba9e7ba5625e0b3b147ab2de8319085d31217a437ed173c5b9",
+    "scripts/run_day3.py": "b6204f780b70d8f6bdda09a878a8b793d7597ef33334282dccdbadeb6d405e90",
+    "configs/preference29_plan.json": "17943baef934b8c5cfc843d71b5c38affe587623a93db79a760dcd9f4d421eaf"
+  }
+}

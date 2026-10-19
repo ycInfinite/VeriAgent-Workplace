@@ -1,0 +1,182 @@
+{
+  "model_id": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "weights_path": "models/Qwen3-8B",
+  "seed": 42,
+  "max_context_tokens": 8192,
+  "required_packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1"
+  },
+  "weight_and_tokenizer_sha256": {
+    "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+    "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+    "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+    "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+    "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+  },
+  "dataset_revision": "c86a908379e0a361a573c395e175d3c1aa128e6c",
+  "scoring": "sum logp over each complete assistant turn under its own branch history;system/user/tool observations masked;no length normalization",
+  "beta": 0.1,
+  "min_gpu_memory_gib": 90,
+  "initial_adapter_path": "experiments/SFT-S1-20261010-001/adapter",
+  "initial_adapter_sha256": {
+    "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+    "adapter_model.safetensors": "e85c79de9b938093f406040ac1ad256f0e4d8b599ce06c0e7b8db5e8701680df",
+    "adapter_config.json": "a73305ac2dd22cd7923332bcc2074b12a038d5b4a4a97ac329a8d26c7344fa4b"
+  },
+  "pair_artifact": "experiments/S1-EXPAND-REVIEW-20261016-001/cumulative_reward_gap_pairs.jsonl.gz",
+  "pair_artifact_sha256": "035c3fefc6324c7f951190923714ec66bb18c09373d10f03a1c94551550e3e63",
+  "approved_pairs": 29,
+  "task_order": [
+    1099,
+    1194,
+    17,
+    358,
+    51,
+    1006,
+    1107,
+    176,
+    227,
+    881,
+    1226,
+    1134,
+    1209,
+    349,
+    1076,
+    956,
+    1069,
+    689,
+    852,
+    473,
+    1185,
+    666,
+    1020,
+    368,
+    973,
+    31,
+    1000,
+    30,
+    879
+  ],
+  "B1_addition": "Complete the user's task with the available tools. Ground identifiers in the user's request or observed tool results. Inspect state when required to decide whether an action is appropriate. Use returned errors to correct the next action and avoid repeating a call without new evidence. Report completion only when supported by the observed outcome.",
+  "status": "REGISTERED_INFERENCE_DIAGNOSTIC",
+  "GPU_training_authorized": false,
+  "GPU_inference_authorized": true,
+  "instance_shutdown_authorized": false,
+  "task_uids": [
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1099",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1194",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:17",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:358",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:51",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1006",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1107",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:176",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:227",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:881",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1226",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1134",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1209",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:349",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1076",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:956",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1069",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:689",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:852",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:473",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1185",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:666",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1020",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:368",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:973",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:31",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:1000",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:30",
+    "c86a908379e0a361a573c395e175d3c1aa128e6c:train:879"
+  ],
+  "data_path": "experiments/PREF29-DIAG-DATA-20261019-001/tasks.jsonl.gz",
+  "data_sha256": "91c0170e0ba5b92e636cce742aaedc8c93bd597cc01920f35012abb6c14f582f",
+  "selection_path": "experiments/PREF29-DIAG-DATA-20261019-001/selection.json",
+  "selection_sha256": "26de788680e851e1c1b9e4ce4592aa7b1a9b64953ce1d3e1b504e7f96c772b13",
+  "reference_path": "experiments/PREF29-DPO-20261016-001/reference_scores.json",
+  "expected_HF_turns": 179,
+  "cache_tolerance": 0.02,
+  "calibration_task_ids": [
+    1099,
+    358
+  ],
+  "seeds": [
+    42
+  ],
+  "max_wall_seconds": 1800,
+  "pipeline_wall_seconds": 7200,
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "max_model_rounds": 6,
+  "max_output_tokens_per_model_call": 768,
+  "max_output_tokens_per_trajectory": 2048,
+  "reference_run_id": "PREF29-DIAG-REF-20261019-001",
+  "score_run_ids": {
+    "CHOSEN_SFT": "PREF29-DIAG-SCORE-CHOSEN_SFT-20261019-001",
+    "DPO": "PREF29-DIAG-SCORE-DPO-20261019-001"
+  },
+  "rollout_run_ids": {
+    "CHOSEN_SFT": "PREF29-DIAG-ROLLOUT-CHOSEN_SFT-20261019-001",
+    "DPO": "PREF29-DIAG-ROLLOUT-DPO-20261019-001"
+  },
+  "source_training_commit": "033a53f2c49d7ce134c1f24cf5dc4efa60a02907",
+  "policies": {
+    "S1": {
+      "adapter_path": "experiments/SFT-S1-20261010-001/adapter",
+      "sha256": {
+        "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+        "adapter_model.safetensors": "e85c79de9b938093f406040ac1ad256f0e4d8b599ce06c0e7b8db5e8701680df",
+        "adapter_config.json": "a73305ac2dd22cd7923332bcc2074b12a038d5b4a4a97ac329a8d26c7344fa4b"
+      }
+    },
+    "CHOSEN_SFT": {
+      "adapter_path": "experiments/PREF29-CHOSEN-SFT-20261016-001/adapter",
+      "sha256": {
+        "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+        "adapter_model.safetensors": "9085f5248eec40d0b20ef531231e8b23ce7a69832eee300ee3002949fcb07792",
+        "adapter_config.json": "a95ceab572432c2da008b834a81839d9625b20136536a9fa15d495f3035ab505"
+      },
+      "source_run": "PREF29-CHOSEN-SFT-20261016-001"
+    },
+    "DPO": {
+      "adapter_path": "experiments/PREF29-DPO-20261016-001/adapter",
+      "sha256": {
+        "README.md": "5a0ab0fabf5193fe88b243c3c711884cdb898a576cadb7b86ae0fd826f522933",
+        "adapter_model.safetensors": "ac75caf208b0ddcd2d00652d9fd60df278c0e5e6c0e94f92f62f78cf7b7decd5",
+        "adapter_config.json": "9aaa2ac22eed95ee619c35b22117371357e640208aee1c8c4a8ef0a59bc939fa"
+      },
+      "source_run": "PREF29-DPO-20261016-001"
+    }
+  },
+  "reference_sha256": "6d79badc69b682874bb33b74804c9016b2f50080dd92589bac824fe2e8617907",
+  "Research Question": "DidfinalSFT29/DPO29fit29offlinepreferences,anddoesfittranslateintorealtrainingtaskbehavior?",
+  "Hypothesis": "Preference marginsmayimprovewithoutreliablycorrectonlineexecution;neitherunderfitnorcreditassignmentfailureispresumed.",
+  "Independent Variable": "FrozenoriginalS1reference versusfinalchosenSFT29/DPO29;nooptimization.",
+  "Controlled Variables": "Exact29pairs/taskorder/messages/tools/state;BF16/SDPA/packages;B1/seed42/8192/6rounds/768call/2048total.",
+  "Metrics": "Delta chosen/rejected sumlogp andper-target diagnostics,reference-relativemargin/loss,bydomain/empty/length;58realrollouts tasksuccess/semanticfailures/cost.",
+  "Evidence Gate": "Cachedreferencekeys/SHA and2fixedtask calibration;all179HFmasks;sourceadapterhashes/zero trainableparams;58validrealrollouts;semanticreview.",
+  "Cost Bound": "Existing96GBsingleGPU;expected0.3-0.5scriptGPUh,unknownrate;1800s/script,7200spipeline;KEEP_INSTANCE_ON.",
+  "Failure Branch": "Stoponintegrity/infra/calibrationfailure;preserveraw/noautorerun/noextraepochs/task/seed/API/RL/test.",
+  "interpretation": "Trainingmemorizationdiagnostic,notgeneralization. HistoricalS1rejectedreward0 isselectioncriterion,notfreshunbiasedbaseline. Scorelikelihoodsummayfavorlength;normalizedfiguresdiagnosticnotnewloss.",
+  "deployment_files": [
+    "configs/preference29_diagnostic.json",
+    "veriagent/preference_diagnostic.py",
+    "scripts/run_preference_diagnostic.py",
+    "scripts/run_preference_diagnostic_pipeline.py",
+    "experiments/PREF29-DIAG-DATA-20261019-001/tasks.jsonl.gz",
+    "experiments/PREF29-DIAG-DATA-20261019-001/selection.json",
+    "experiments/PREF29-DPO-20261016-001/reference_scores.json"
+  ]
+}

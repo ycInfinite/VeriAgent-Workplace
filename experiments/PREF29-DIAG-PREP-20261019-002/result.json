@@ -1,0 +1,43 @@
+{
+  "status": "CPU_DIAGNOSTIC_PREPARATION_PASSED",
+  "checks": {
+    "same29_order": true,
+    "whole179_turns": true,
+    "same14empty": true,
+    "train_dev_disjoint": true,
+    "same_hyperparameters": true,
+    "same_generation": true,
+    "cache29_keys_passed": true,
+    "two_new_adapters_locally_verified": true,
+    "S1_identity_frozen": true,
+    "identity_scores_loss_ln2": true,
+    "margin_and_loss_direction": true,
+    "suppression_is_not_chosen_improvement": true,
+    "meanlogp_diagnostic": true,
+    "new5_ids": true,
+    "no_parameter_updates": true,
+    "whitelist": true,
+    "keep_on": true
+  },
+  "local_adapter_availability": {
+    "S1": {
+      "README.md": "LOCAL_ABSENT_REMOTE_RUNTIME_REQUIRED",
+      "adapter_model.safetensors": "LOCAL_ABSENT_REMOTE_RUNTIME_REQUIRED",
+      "adapter_config.json": "LOCAL_ABSENT_REMOTE_RUNTIME_REQUIRED"
+    },
+    "CHOSEN_SFT": {
+      "README.md": "LOCAL_SHA_VERIFIED",
+      "adapter_model.safetensors": "LOCAL_SHA_VERIFIED",
+      "adapter_config.json": "LOCAL_SHA_VERIFIED"
+    },
+    "DPO": {
+      "README.md": "LOCAL_SHA_VERIFIED",
+      "adapter_model.safetensors": "LOCAL_SHA_VERIFIED",
+      "adapter_config.json": "LOCAL_SHA_VERIFIED"
+    }
+  },
+  "actual_GPU_calls": 0,
+  "actual_updates": 0,
+  "planned_scores": "29pairsx2newmodels plus2fixedS1calibrationpairs",
+  "planned_rollouts": 58
+}

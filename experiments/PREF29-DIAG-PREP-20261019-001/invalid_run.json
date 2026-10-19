@@ -1,0 +1,8 @@
+{
+  "status": "CPU_PREPARATION_FAILED_PRESERVED",
+  "error_type": "FileNotFoundError",
+  "reason": "Preparation assumed originalS1adapter is locallycached;README.md absent. Allthree remoteadapterSHA matches subsequentlyverified.",
+  "model_calls": 0,
+  "parameter_updates": 0,
+  "resolution": "Newprep002 recordslocalcacheavailability separately; runtime stillrequires exactremotehashes."
+}
