@@ -1,0 +1,48 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "mode": "rollout",
+  "condition": "CHOSEN_SFT",
+  "attempted_rollouts": 29,
+  "valid_rollouts": 29,
+  "infra_invalid_rollouts": 0,
+  "verified_successes": 5,
+  "success_rate": 0.1724137931034483,
+  "strata": {
+    "nonempty_reference": {
+      "n": 15,
+      "successes": 3
+    },
+    "empty_reference": {
+      "n": 14,
+      "successes": 2
+    }
+  },
+  "tool_calls": 102,
+  "parse_error_attempts": 0,
+  "executable_tool_calls": 99,
+  "executable_tool_call_rate": 0.9705882352941176,
+  "unknown_tool_calls": 0,
+  "schema_invalid_calls": 3,
+  "identifier_bearing_calls": 24,
+  "ungrounded_identifier_candidate_calls": 3,
+  "repeated_same_state_call_candidates": 4,
+  "retry_loop_trajectories": 1,
+  "premature_termination_candidates": 23,
+  "termination_counts": {
+    "assistant_final": 26,
+    "generation_incomplete": 1,
+    "round_limit": 2
+  },
+  "input_tokens": 483055,
+  "output_tokens": 13343,
+  "average_tool_steps": 3.5172413793103448,
+  "average_trajectory_seconds": 18.058235072498693,
+  "peak_torch_allocated_gib": 17.760684490203857,
+  "candidate_metrics_require_semantic_review": true,
+  "parameter_updates": 0,
+  "parameter_samples_unchanged": true,
+  "wall_seconds": 552.3004474379122,
+  "GPU_hours": 0.15341679095497562,
+  "estimated_rmb": null,
+  "scope": "Selected training29 only;notgeneralization;historicalS1failureisselectioncriterion"
+}

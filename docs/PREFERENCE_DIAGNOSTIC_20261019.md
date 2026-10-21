@@ -49,3 +49,6 @@ Stoponintegrity/infra/calibrationfailure;preserveraw/noautorerun/noextraepochs/t
 ## 准备状态
 
 17CPU控制通过。首个SSH连接失败，用户回复恢复后连接同一主机并验证S1/SFT29/DPO29三套adapter SHA。CPUprep001错误假设原S1存在本地，文件缺失后停止；002区分本地缓存与远端强制验证，原失败保留。模型调用0，待GitHub部署。实例不关机；时价未知，计算与等待费用分开记录。
+
+
+进度快照：S1两题缓存复算最大差0；SFT29和DPO29的完整29对重打分完成，各29/29 relative margin>0.02。平均DPO目标loss为SFT0.252519、DPO0.164948（冻结参考0.693147）。这不是任务成功率，也不代表完整拟合；58条执行仍进行中。

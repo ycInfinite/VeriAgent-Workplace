@@ -1,0 +1,17 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "mode": "score",
+  "condition": "CHOSEN_SFT",
+  "scored_pairs": 29,
+  "mean_DPO_loss": 0.2525190180956707,
+  "positive_relative_margin_pairs": 29,
+  "calibration_max_abs_diff": null,
+  "peak_allocated_GiB": 18.40624237060547,
+  "peak_reserved_GiB": 34.0703125,
+  "parameter_updates": 0,
+  "parameter_samples_unchanged": true,
+  "wall_seconds": 99.05653421580791,
+  "GPU_hours": 0.027515703948835533,
+  "estimated_rmb": null,
+  "scope": "Selected training29 only;notgeneralization;historicalS1failureisselectioncriterion"
+}

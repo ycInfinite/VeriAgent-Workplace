@@ -1,0 +1,17 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "mode": "score",
+  "condition": "DPO",
+  "scored_pairs": 29,
+  "mean_DPO_loss": 0.1649484028863605,
+  "positive_relative_margin_pairs": 29,
+  "calibration_max_abs_diff": null,
+  "peak_allocated_GiB": 18.40624237060547,
+  "peak_reserved_GiB": 34.0703125,
+  "parameter_updates": 0,
+  "parameter_samples_unchanged": true,
+  "wall_seconds": 99.24382992461324,
+  "GPU_hours": 0.02756773053461479,
+  "estimated_rmb": null,
+  "scope": "Selected training29 only;notgeneralization;historicalS1failureisselectioncriterion"
+}

@@ -1,5 +1,8 @@
 # 项目约定
 
+2026-10-21 PROJECT TERMINATED BY USER ("此项目终结"). Supersedes previous continuation/next-stage instructions. Preserve sources, checkpoints, raw outputs and failures. No new experiments, sampling, training, API calls, deployment, inventory monitoring or automatic resume. Oct19 diagnostic partly recovered: both29pair scores complete;SFTrollout5/29 locallypresent;DPOlastobserved16/29/3success INTERIM ONLY,finalresults not retrieved. Remoteprocess/platform power not freshlyverified atclosure;oldlocalSSHsession73855 unavailable. Prior KEEP_INSTANCE_ON not treatedasnewshutdownpermission. See docs/PROJECT_CLOSURE_20261021.md.
+
+
 2026-10-19 user continued afterdiscussion ofDPOdataquality/fitdiagnosis, authorizing zero-update diagnostic onexact29trainingpairs: cachedS1reference2fixedpaircalibration,finalSFT29/DPO29whole29rescoring,then29seed42realrollouts each(total58). Noextraepochs/API/RL/dev/final/BFCL. InitialSSH33142failed;userrestored,samehostPRO6000/595.58.03 idle,allthreeadapterhashes match. CPUprep001 localS1cacheassumptionfailed/preserved;002 passes17controls,newadapterslocalSHAverified,originalS1remoteSHArequired. Config preference29_diagnostic.json,5newOct19IDs;notlaunchedyet. KEEP_INSTANCE_ON/no guard/rental. Estimated.3-.5scriptGPUh,1800s/script7200spipeline;rateunknown. HistoricalS1failureisadmissioncriterion,notunbiasedbaseline;thesearetraining-fitdiagnostics,notgeneralization.
 
 
